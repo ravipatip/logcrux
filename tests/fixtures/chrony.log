@@ -1,0 +1,10 @@
+May 19 10:15:01 host chronyd[1234]: Selected source 192.168.1.1 (pool.ntp.org)
+May 19 10:15:02 host chronyd[1234]: System clock wrong by 1.234567 seconds, adjustment started
+May 19 10:15:05 host chronyd[1234]: System clock was stepped by 1.234567 seconds
+May 19 10:15:10 host chronyd[1234]: Source 10.0.0.5 unreachable
+May 19 10:15:15 host chronyd[1234]: Can't synchronise: no majority
+May 19 10:15:20 host ntpd[2345]: no servers reachable
+May 19 10:15:25 host chronyd[1234]: Forward time jump detected!
+May 19 10:15:30 host chronyd[1234]: Selected source 192.168.1.2
+May 19 10:15:35 host ntpd[2345]: frequency error -512 PPM exceeds tolerance 500 PPM
+May 19 10:15:40 host chronyd[1234]: Backward time jump detected, ignoring

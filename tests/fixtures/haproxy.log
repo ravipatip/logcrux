@@ -1,0 +1,5 @@
+Jun 19 10:00:01 web01 haproxy[1234]: 10.0.1.5:52341 [19/Jun/2026:10:00:01.123] http-in backend/srv1 0/0/1/5/6 200 1234 - - ---- 3/3/0/0/0 0/0 "GET /api/v1/status HTTP/1.1"
+Jun 19 10:00:02 web01 haproxy[1234]: 10.0.1.6:52342 [19/Jun/2026:10:00:02.456] http-in backend/srv2 0/0/1/8/9 404 512 - - ---- 3/3/0/0/0 0/0 "GET /missing HTTP/1.1"
+Jun 19 10:00:03 web01 haproxy[1234]: 10.0.1.7:52343 [19/Jun/2026:10:00:03.789] http-in backend/srv1 0/0/1/150/151 500 256 - - ---- 3/3/0/0/0 0/0 "POST /api/v1/data HTTP/1.1"
+Jun 19 10:00:04 web01 haproxy[1234]: 10.0.1.8:52344 [19/Jun/2026:10:00:04.012] http-in backend/srv2 0/0/0/0/5000 503 128 - - SC-- 3/3/0/0/1 0/0 "GET /health HTTP/1.1"
+Jun 19 10:00:05 web01 haproxy[1234]: 10.0.1.9:52345 [19/Jun/2026:10:00:05.345] tcp-in db-backend/db1 5/10/3000 9876 --

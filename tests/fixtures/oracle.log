@@ -1,0 +1,32 @@
+2026-06-20T10:15:01.123456+00:00
+Starting ORACLE instance (normal) (OS id: 1234)
+LICENSE_MAX_SESSION = 0
+LICENSE_SESSIONS_WARNING = 0
+Initial number of CPU is 8
+Using LOG_ARCHIVE_DEST_1 parameter default value as USE_DB_RECOVERY_FILE_DEST
+2026-06-20T10:15:02.000000+00:00
+Database mounted in Exclusive Mode
+Lost write protection disabled
+Completed: ALTER DATABASE MOUNT
+2026-06-20T10:15:03.500000+00:00
+Completed: ALTER DATABASE OPEN
+Starting background process CJQ0
+Completed redo application of 0.00MB
+2026-06-20T10:15:04.250000+00:00
+Errors in file /u01/app/oracle/diag/rdbms/orcl/orcl/trace/orcl_ora_1234.trc:
+ORA-00600: internal error code, arguments: [4194], [], [], [], [], [], [], []
+Incident details in: /u01/app/oracle/diag/rdbms/orcl/orcl/incident/incdir_5/orcl_ora_1234_i5.trc
+Use ADRCI or Support Workbench to package the incident.
+2026-06-20T10:15:05.750000+00:00
+ORA-01578: ORACLE data block corrupted (file # 5, block # 12345)
+ORA-01110: data file 5: '/u01/app/oracle/oradata/orcl/users01.dbf'
+Hex dump of (file 5, block 12345) in trace file
+Reading datafile '/u01/app/oracle/oradata/orcl/users01.dbf' for corruption
+Reread of blocknum=12345, file=users01.dbf. found same corrupt data
+2026-06-20T10:15:06.100000+00:00
+ORA-19809: limit exceeded for recovery files
+ORA-19804: cannot reclaim 104857600 bytes disk space from 5368709120 limit
+ARCH: Error 19809 Creating archive log file to '/u01/fra/orcl/arch'
+2026-06-20T10:15:07.300000+00:00
+Archived Log entry 42 added for thread 1 sequence 100 ID 0x1a2b3c4d dest 1
+Thread 1 advanced to log sequence 101

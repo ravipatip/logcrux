@@ -1,0 +1,5 @@
+[2026-06-28 10:15:01,123] <launcher> INFO  system - ======= Starting UniFi Network Application 8.0.24 =======
+[2026-06-28 10:15:02,234] <main> INFO  db.mongodb - mongod started, pid 4321
+[2026-06-28 10:15:03,345] <db-server-1> WARN  db.DBService - slow query took 1200ms on stat_daily
+[2026-06-28 10:15:04,456] <inform-12> ERROR api.StatusHandler - device 00:11:22:33:44:55 adopt failed
+[2026-06-28 10:15:05,567] <main> INFO  system - UniFi Network Application started successfully

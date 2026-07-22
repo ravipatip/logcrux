@@ -1,0 +1,24 @@
+analysis:
+  window_size_minutes: 5
+  burst_multiplier: 3.0
+  auth_failure_threshold: 50
+  correlation_gap_seconds: 120
+  spike_factor: 3.0
+
+inference:
+  threshold: 0.35
+  enabled: true
+
+state:
+  db_path: "~/.local/share/logcrux/state.db"
+  baseline_alpha: 0.2
+
+security:
+  allowed_log_paths:
+    - "/var/log/"
+    - "/tmp/"
+  max_file_size_mb: 2048
+
+output:
+  color: true
+  show_remediation: true

@@ -1,0 +1,6 @@
+[2026-06-20 10:23:45,123: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2026-06-20 10:23:46,456: INFO/MainProcess] celery@worker1 ready.
+[2026-06-20 10:23:47,789: WARNING/MainProcess] Substantial drift from worker2 may mean clocks are out of sync
+[2026-06-20 10:23:48,012: INFO/ForkPoolWorker-2] Task app.tasks.add[abc-123] succeeded in 0.012s: 4
+[2026-06-20 10:23:49,345: ERROR/ForkPoolWorker-3] Task app.tasks.div[def-456] raised unexpected: ZeroDivisionError('division by zero')
+[2026-06-20 10:23:50,678: CRITICAL/MainProcess] Unrecoverable error: WorkerLostError('worker exited prematurely')

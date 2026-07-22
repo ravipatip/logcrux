@@ -1,0 +1,5 @@
+level=info ts=2026-06-23T10:23:45.123Z caller=main.go:248 msg="Starting Prometheus" version=2.50.0
+level=info ts=2026-06-23T10:23:45.223Z caller=head.go:610 msg="Replaying WAL, this may take a while"
+level=warn ts=2026-06-23T10:23:46.323Z caller=scrape.go:1380 msg="Error on ingesting samples" num_dropped=12
+level=error ts=2026-06-23T10:23:47.423Z caller=notifier.go:528 msg="Error sending alerts" alertmanager=http://am:9093 err="connection refused"
+level=error ts=2026-06-23T10:23:48.523Z caller=notifier.go:528 msg="Error sending alerts" alertmanager=http://am:9093 err="context deadline exceeded"

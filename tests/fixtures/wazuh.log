@@ -1,0 +1,4 @@
+{"timestamp":"2026-06-20T10:15:01.123+0000","rule":{"level":3,"description":"Login session opened","id":"5501"},"agent":{"name":"web01"},"full_log":"session opened for user root"}
+{"timestamp":"2026-06-20T10:15:02.000+0000","rule":{"level":5,"description":"sshd: authentication failed","id":"5710"},"agent":{"name":"web01"},"data":{"srcip":"1.2.3.4"},"full_log":"Failed password for root from 1.2.3.4"}
+{"timestamp":"2026-06-20T10:15:03.000+0000","rule":{"level":10,"description":"Multiple authentication failures","id":"5712"},"agent":{"name":"web01"},"data":{"srcip":"1.2.3.4"}}
+{"timestamp":"2026-06-20T10:15:04.000+0000","rule":{"level":12,"description":"System integrity: rootkit detected","id":"510"},"agent":{"name":"web01"}}

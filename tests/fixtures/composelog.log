@@ -1,0 +1,6 @@
+web-1      | 10.0.0.1 - - [23/Jun/2026:10:23:45 +0000] "GET / HTTP/1.1" 200 612
+web-1      | 10.0.0.2 - - [23/Jun/2026:10:23:46 +0000] "GET /api HTTP/1.1" 200 88
+db-1       | 2026-06-23 10:23:47.123 UTC [42] LOG:  database system is ready to accept connections
+db-1       | 2026-06-23 10:23:48.223 UTC [55] ERROR:  could not connect to peer: connection refused
+worker-1   | 2026-06-23 10:23:49 ERROR consumer failed: redis connection reset by peer
+worker-1   | 2026-06-23 10:23:50 ERROR consumer failed: redis connection reset by peer

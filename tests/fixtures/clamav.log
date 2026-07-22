@@ -1,0 +1,10 @@
+Sat Jun 28 10:15:01 2026 -> +++ Started at Sat Jun 28 10:15:01 2026
+Sat Jun 28 10:15:02 2026 -> Received 0 file descriptor(s) from systemd.
+Sat Jun 28 10:15:03 2026 -> clamd daemon 1.0.1 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)
+Sat Jun 28 10:15:04 2026 -> Loaded 8650000 signatures.
+Sat Jun 28 10:15:05 2026 -> /home/user/Downloads/invoice.zip: Win.Trojan.Agent-1234567 FOUND
+Sat Jun 28 10:15:06 2026 -> /tmp/payload.exe: Win.Malware.Emotet-9988776 FOUND
+Sat Jun 28 10:15:07 2026 -> /var/spool/mail/user: OK
+Sat Jun 28 10:15:08 2026 -> ERROR: Can't open/parse the config file /etc/clamd.d/scan.conf
+Sat Jun 28 10:15:09 2026 -> WARNING: Your ClamAV installation is OUTDATED!
+Sat Jun 28 10:15:10 2026 -> Database correctly reloaded (8650000 signatures)

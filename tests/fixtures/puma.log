@@ -1,0 +1,6 @@
+[12345] Puma starting in cluster mode...
+[12345] * Puma version: 6.4.0 ("The Eagle of Durango")
+[12345] === puma startup ===
+[12345] - Worker 0 (PID: 12346) booted in 0.01s, phase: 0
+[12345] - Worker 1 (PID: 12347) booted in 0.01s, phase: 0
+[12345] ! Unable to load application: RuntimeError: database configuration missing

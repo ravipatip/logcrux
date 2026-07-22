@@ -1,0 +1,5 @@
+Jun 28 10:15:01 mail opendkim[1234]: OpenDKIM Filter v2.11.0 starting (args: -x /etc/opendkim.conf)
+Jun 28 10:15:02 mail opendkim[1234]: 5SAF1234: DKIM-Signature field added (s=mail, d=example.com)
+Jun 28 10:15:03 mail opendkim[1234]: 5SAF1235: no signature data
+Jun 28 10:15:04 mail opendkim[1234]: 5SAF1236: bad signature data
+Jun 28 10:15:05 mail opendkim[1234]: 5SAF1237: key retrieval failed

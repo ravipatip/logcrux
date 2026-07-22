@@ -1,0 +1,8 @@
+Jun 28 10:15:01 mx smtpd[1234]: 1a2b3c4d smtp connected address=203.0.113.5 host=client.example.com
+Jun 28 10:15:02 mx smtpd[1234]: 1a2b3c4d smtp tls ciphers=TLSv1.3:TLS_AES_256_GCM_SHA384:256
+Jun 28 10:15:03 mx smtpd[1234]: 1a2b3c4d smtp message msgid=5f6a7b8c size=2048 nrcpt=1 proto=ESMTP
+Jun 28 10:15:04 mx smtpd[1234]: 5f6a7b8c mta delivery evpid=9d0e1f2a from=<alice@example.com> to=<bob@example.org> rcpt=<-> source="198.51.100.4" relay="mx.example.org [198.51.100.7]" delay=1s result="Ok" stat="250 2.0.0 OK"
+Jun 28 10:15:05 mx smtpd[1234]: 6a7b8c9d mta delivery evpid=ae1f2a3b from=<carol@example.com> to=<ghost@bad.example> rcpt=<-> source="198.51.100.4" relay="mx.bad.example" delay=5s result="TempFail" stat="Network error"
+Jun 28 10:15:06 mx smtpd[1234]: 7b8c9d0e mta error reason="Connection timed out" relay="mx.slow.example [192.0.2.9]"
+Jun 28 10:15:07 mx smtpd[1234]: 2b3c4d5e smtp failed-command command="RCPT TO:<spam@evil.example>" result="550 Relaying denied"
+Jun 28 10:15:08 mx smtpd[1234]: 1a2b3c4d smtp disconnected reason=quit

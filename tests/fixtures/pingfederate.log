@@ -1,0 +1,6 @@
+2025-09-02 11:02:32,869 tid:Z8I1vdotGu084PB7b2HrQ0A1kKU INFO  [org.sourceid.saml20.service.impl.AuthnRequestProcessorImpl] Processing authentication request for partner urn:example:sp
+2025-09-02 11:02:33,014 tid:Z8I1vdotGu084PB7b2HrQ0A1kKU INFO  [org.sourceid.saml20.profiles.sp.HandleAuthnResponse] SSO successful for user alice@example.com
+2025-09-02 11:02:34,221 tid:A1b2C3d4E5f6G7h8I9j0K1l2M3n WARN  [org.sourceid.saml20.service.impl.AuthnRequestProcessorImpl] Invalid credentials for user bob@example.com
+2025-09-02 11:02:35,540 tid:B2c3D4e5F6g7H8i9J0k1L2m3N4o ERROR [org.sourceid.common.security.SecurityContext] Signature validation failed on inbound SAML assertion
+2025-09-02 11:02:36,101 tid:C3d4E5f6G7h8I9j0K1l2M3n4O5p ERROR [org.sourceid.saml20.service.impl.ArtifactResolver] Failed to connect to token endpoint https://idp.example.com/as/token.oauth2
+2025-09-02 11:02:37,320 tid:D4e5F6g7H8i9J0k1L2m3N4o5P6q FATAL [org.sourceid.server.ServerStart] Unable to start PingFederate: keystore password incorrect

@@ -1,0 +1,5 @@
+[2026-06-28 10:15:01.123 1234M] Starting FTL
+[2026-06-28 10:15:02.234 1234M] Resizing "/FTL-strings" from 286720 to 401408
+[2026-06-28 10:15:03.345 1234M] WARNING: Unable to read /etc/pihole/pihole-FTL.conf
+[2026-06-28 10:15:04.456 1235F] ERROR: Database query "SELECT * FROM queries" failed: database is locked
+[2026-06-28 10:15:05.567 1234M] Compiled 3 allow and 5 deny regex filters

@@ -1,0 +1,9 @@
+LEEF:1.0|Lancope|StealthWatch|1.0|41|src=10.0.0.1	dst=2.1.2.2	sev=3	msg=Flow started
+LEEF:1.0|IBM|QRadar|2.0|1002|src=10.0.0.5	dst=10.0.0.80	sev=5	cat=Firewall Permit	msg=Connection allowed
+LEEF:2.0|Lancope|StealthWatch|2.0|41|^|src=198.51.100.7^dst=10.0.0.5^sev=8^usrName=admin^msg=Possible recon
+LEEF:1.0|IBM|QRadar|2.0|3001|src=198.51.100.22	usrName=root	sev=9	cat=Authentication Failure	msg=Login failed
+LEEF:1.0|IBM|QRadar|2.0|3001|src=198.51.100.22	usrName=root	sev=9	cat=Authentication Failure	msg=Login failed
+LEEF:1.0|IBM|QRadar|2.0|3001|src=198.51.100.22	usrName=admin	sev=9	cat=Authentication Failure	msg=Login failed
+LEEF:1.0|Vendor|WAF|1.0|5005|src=203.0.113.5	dst=10.0.0.80	sev=7	msg=XSS attempt blocked
+Jun 20 10:15:05 siem1 LEEF:1.0|IBM|QRadar|2.0|4000|src=10.0.0.1	sev=6	msg=Port scan detected
+LEEF:1.0|IBM|QRadar|2.0|5000|src=10.0.0.2	sev=5	devTime=2026-06-20T10:15:01.000Z	msg=Threshold exceeded

@@ -1,0 +1,8 @@
+2026-06-19 10:00:01.123 UTC [1234] LOG:  database system is ready to accept connections
+2026-06-19 10:00:02.234 UTC [1235] appuser@myapp LOG:  connection received: host=10.0.1.5 port=54321
+2026-06-19 10:00:03.345 UTC [1236] appuser@myapp ERROR:  syntax error at or near "SELCT" at character 1
+2026-06-19 10:00:04.456 UTC [1237] root@postgres FATAL:  password authentication failed for user "hacker"
+2026-06-19 10:00:05.567 UTC [1238] appuser@myapp WARNING:  there is no unique constraint matching given keys for referenced table "users"
+2026-06-19 10:00:06.678 UTC [1239] appuser@myapp ERROR:  deadlock detected
+2026-06-19 10:00:07.789 UTC [1240] LOG:  checkpoint starting: time
+2026-06-19 10:00:08.890 UTC [1241] appuser@myapp PANIC:  could not write to file "pg_wal/00000001000000000000001": No space left on device

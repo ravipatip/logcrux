@@ -1,0 +1,5 @@
+{"level":"info","ts":"2026-06-20T10:23:45.123Z","caller":"embed/serve.go:98","msg":"ready to serve client requests"}
+{"level":"warn","ts":"2026-06-20T10:23:46.456Z","caller":"etcdserver/util.go:163","msg":"apply request took too long","took":"200ms","expected-duration":"100ms"}
+{"level":"warn","ts":"2026-06-20T10:23:47.789Z","caller":"rafthttp/peer_status.go:68","msg":"peer became inactive","peer-id":"abc","error":"failed to dial"}
+{"level":"error","ts":"2026-06-20T10:23:48.012Z","caller":"etcdserver/server.go:2042","msg":"failed to publish local member","error":"context deadline exceeded"}
+{"level":"info","ts":"2026-06-20T10:23:49.345Z","caller":"membership/cluster.go:421","msg":"added member","member":"node2"}

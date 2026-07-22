@@ -1,0 +1,5 @@
+2026-06-19T10:00:01.123456Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.36) initializing of server in progress as process 1234
+2026-06-19T10:00:02.234567Z 0 [Warning] [MY-010075] [Server] No existing UUID has been found, so we assume that this is the first time that this server has been started.
+2026-06-19T10:00:03.345678Z 1 [ERROR] [MY-000067] [Server] unknown variable 'query_cache_size=0'
+2026-06-19T10:00:04.456789Z 5 [Warning] [MY-010055] [Server] IP address '192.168.1.100' could not be resolved: Name or service not known
+2026-06-19T10:00:05.567890Z 10 [ERROR] [MY-010116] [Server] Aborted connection 10 to db: 'myapp' user: 'appuser' host: '10.0.1.5' (Got an error reading communication packets)

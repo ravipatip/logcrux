@@ -1,0 +1,5 @@
+Jun 28 10:15:01 host syslog-ng[1234]: syslog-ng starting up; version='4.5.0'
+Jun 28 10:15:02 host syslog-ng[1234]: Configuration reload request received, reloading configuration
+Jun 28 10:15:03 host syslog-ng[1234]: Syslog connection broken; fd='12', server='AF_INET(10.0.0.9:514)', time_reopen='60'
+Jun 28 10:15:04 host syslog-ng[1234]: Error opening file for reading; filename='/var/log/missing.log', error='No such file or directory'
+Jun 28 10:15:05 host syslog-ng[1234]: Destination reliable queue full, dropping messages; persist_name='disk_buffer'

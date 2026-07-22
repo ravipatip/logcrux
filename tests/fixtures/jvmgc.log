@@ -1,0 +1,7 @@
+[2026-06-28T10:15:01.123+0000][info][gc] Using G1
+[2026-06-28T10:15:02.234+0000][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 24M->8M(256M) 3.456ms
+[2026-06-28T10:15:03.345+0000][info][gc,start] GC(1) Pause Young (Concurrent Start) (G1 Humongous Allocation)
+[2026-06-28T10:15:04.456+0000][info][gc,heap] GC(1) Eden regions: 10->0(8)
+[2026-06-28T10:15:05.567+0000][info][gc] GC(2) Pause Full (System.gc()) 200M->50M(256M) 45.678ms
+[2026-06-28T10:15:06.678+0000][warning][gc,alloc] WorkerThread allocation stall detected
+[2026-06-28T10:15:07.789+0000][info][gc] GC(3) Pause Young (Mixed) (G1 Evacuation Pause) 180M->40M(256M) 5.012ms

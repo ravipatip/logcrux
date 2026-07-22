@@ -1,0 +1,7 @@
+{"log.level":"info","@timestamp":"2026-06-20T10:15:01.123Z","log.logger":"beat","log.origin":{"file.name":"instance/beat.go","file.line":827},"message":"Beat ID: abc-123","service.name":"filebeat","ecs.version":"1.6.0"}
+{"log.level":"info","@timestamp":"2026-06-20T10:15:02.456Z","log.logger":"publisher_pipeline_output","message":"Connection to backoff(elasticsearch(http://10.0.0.20:9200)) established","service.name":"filebeat","ecs.version":"1.6.0"}
+{"log.level":"warn","@timestamp":"2026-06-20T10:15:03.789Z","log.logger":"elasticsearch","message":"Cannot index event publisher.Event: 429 Too Many Requests","service.name":"filebeat","ecs.version":"1.6.0"}
+{"log.level":"warn","@timestamp":"2026-06-20T10:15:04.012Z","log.logger":"elasticsearch","message":"Cannot index event publisher.Event: 429 Too Many Requests","service.name":"filebeat","ecs.version":"1.6.0"}
+{"log.level":"error","@timestamp":"2026-06-20T10:15:05.345Z","log.logger":"publisher_pipeline_output","message":"Failed to connect to backoff(elasticsearch(http://10.0.0.20:9200)): connection refused","service.name":"filebeat","ecs.version":"1.6.0"}
+{"log.level":"error","@timestamp":"2026-06-20T10:15:06.678Z","log.logger":"input.harvester","message":"Harvester could not be started on file /var/log/app.log: permission denied","service.name":"filebeat","ecs.version":"1.6.0"}
+{"log.level":"info","@timestamp":"2026-06-20T10:15:07.901Z","log.logger":"beater","message":"filebeat stopped.","service.name":"filebeat","ecs.version":"1.6.0"}

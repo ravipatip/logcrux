@@ -1,0 +1,4 @@
+2025-09-02T11:02:32,869| exchange-41| track-9001| 12 ms| alice@example.com| OAuth| 10.0.0.5| GET| /api/v1/orders| 200
+2025-09-02T11:02:33,540| exchange-42| track-9002| 8 ms| bob@example.com| OAuth| 203.0.113.9| GET| /api/v1/orders| 401
+2025-09-02T11:02:34,120| exchange-43| track-9003| 6 ms| bob@example.com| OAuth| 203.0.113.9| GET| /api/v1/admin| 403
+2025-09-02T11:02:35,900| exchange-44| track-9004| 5010 ms| -| none| 203.0.113.9| POST| /api/v1/checkout| 502

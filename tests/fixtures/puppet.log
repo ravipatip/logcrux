@@ -1,0 +1,8 @@
+Jun 28 10:15:01 web01 puppet-agent[1234]: Starting Puppet client version 7.24.0
+Jun 28 10:15:02 web01 puppet-agent[1234]: (/Stage[main]/Ntp/Package[ntp]/ensure) created
+Jun 28 10:15:03 web01 puppet-agent[1234]: (/Stage[main]/Nginx/Service[nginx]/ensure) ensure changed 'stopped' to 'running'
+Jun 28 10:15:04 web01 puppet-agent[1234]: Could not retrieve catalog from remote server: Error 500 on SERVER
+Jun 28 10:15:05 web01 puppet-agent[1234]: Using cached catalog from environment 'production'
+Jun 28 10:15:06 web01 puppet-agent[1234]: (/Stage[main]/Sudo/File[/etc/sudoers]/content) content changed
+Jun 28 10:15:07 web01 puppet-agent[1234]: Warning: Found multiple default providers for service
+Jun 28 10:15:08 web01 puppet-agent[1234]: Applied catalog in 12.34 seconds

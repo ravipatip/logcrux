@@ -1,0 +1,5 @@
+2026/06/28 10:15:01 cmd/web.go:223:runWeb() [I] Starting Gitea on PID: 1234
+2026/06/28 10:15:02 routers/init.go:120:GlobalInit() [I] Gitea version: 1.21.3 built with GNU Make
+2026/06/28 10:15:03 routers/common/middleware.go:70:1() [W] Slow git operation took 5.2s
+2026/06/28 10:15:04 services/repository/repository.go:90:CreateRepository() [E] Unable to create repository: pq connection refused
+2026/06/28 10:15:05 modules/git/repo.go:45:OpenRepository() [I] opened repository user/test

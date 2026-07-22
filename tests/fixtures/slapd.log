@@ -1,0 +1,8 @@
+Jun 20 10:23:45 dirhost slapd[1234]: conn=1001 fd=14 ACCEPT from IP=10.0.0.5:51002 (IP=0.0.0.0:389)
+Jun 20 10:23:45 dirhost slapd[1234]: conn=1001 op=0 BIND dn="cn=admin,dc=example,dc=com" method=128
+Jun 20 10:23:45 dirhost slapd[1234]: conn=1001 op=0 RESULT tag=97 err=0 text=
+Jun 20 10:23:46 dirhost slapd[1234]: conn=1002 op=0 BIND dn="cn=eve,dc=example,dc=com" method=128
+Jun 20 10:23:46 dirhost slapd[1234]: conn=1002 op=0 RESULT tag=97 err=49 text=
+Jun 20 10:23:47 dirhost slapd[1234]: connection_read(14): no connection!
+Jun 20 10:23:48 dirhost slapd[1234]: conn=1003 op=1 SRCH base="dc=example,dc=com" scope=2 deref=0 filter="(uid=alice)"
+Jun 20 10:23:49 dirhost slapd[1234]: conn=1003 op=1 SEARCH RESULT tag=101 err=4 nentries=0 text=size limit exceeded

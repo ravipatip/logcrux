@@ -1,0 +1,5 @@
+#Version: 1.0
+#Fields: date time x-edge-location sc-bytes c-ip cs-method cs(Host) cs-uri-stem sc-status x-edge-result-type
+2026-06-20	10:15:01	IAD79-C1	1234	1.2.3.4	GET	d.cloudfront.net	/index.html	200	Hit
+2026-06-20	10:15:02	IAD79-C1	512	1.2.3.4	GET	d.cloudfront.net	/missing.html	404	Error
+2026-06-20	10:15:03	IAD79-C1	900	10.0.0.5	POST	d.cloudfront.net	/api/pay	502	Error

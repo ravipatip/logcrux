@@ -1,0 +1,17 @@
+PLAY [Deploy webservers] *******************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [web01]
+ok: [web02]
+
+TASK [Install nginx] ***********************************************************
+changed: [web01]
+changed: [web02]
+
+TASK [Start service] ***********************************************************
+ok: [web01]
+fatal: [web02]: FAILED! => {"changed": false, "msg": "Unable to start service nginx: job failed"}
+
+PLAY RECAP *********************************************************************
+web01                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0
+web02                      : ok=2    changed=1    unreachable=0    failed=1    skipped=0

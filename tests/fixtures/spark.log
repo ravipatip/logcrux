@@ -1,0 +1,7 @@
+2026-06-28 10:15:01,123 INFO  org.apache.spark.SparkContext: Running Spark version 3.5.0
+2026-06-28 10:15:02,234 INFO  org.apache.spark.resource.ResourceUtils: Resources for spark.driver
+2026-06-28 10:15:03,345 INFO  org.apache.spark.scheduler.DAGScheduler: Got job 0 (count at App.scala:20) with 4 output partitions
+2026-06-28 10:15:04,456 WARN  org.apache.spark.scheduler.TaskSetManager: Lost task 3.0 in stage 2.0 (TID 11): ExecutorLostFailure
+2026-06-28 10:15:05,567 ERROR org.apache.spark.executor.Executor: Exception in task 1.0 in stage 2.0 (TID 9)
+2026-06-28 10:15:06,678 INFO  org.apache.spark.scheduler.TaskSetManager: Finished task 0.0 in stage 3.0 (TID 12) in 102 ms
+2026-06-28 10:15:07,789 INFO  org.apache.spark.SparkContext: Successfully stopped SparkContext

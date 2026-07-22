@@ -1,0 +1,5 @@
+{"requestId":"8245be35-ec9e-40f1-a79a-80890041f4b0","timeStamp":"2023-11-14T03:21:47.734842Z","elapsedTime":22,"results":[{"attribute":"action","value":"delete","decision":"PERMIT"}]}
+{"requestId":"4da494e4-2f50-4165-b1b3-644981564196","timeStamp":"2023-11-14T03:21:48.905443Z","elapsedTime":7,"results":[{"attribute":"action","value":"edit","decision":"PERMIT"}]}
+{"requestId":"9be1c2a0-11aa-4d2e-bc31-6a4f0b2d9e77","timeStamp":"2023-11-14T03:21:49.112000Z","elapsedTime":15,"results":[{"attribute":"action","value":"read","decision":"DENY"}]}
+{"id":"cda6fd43-e9ae-49de-b822-7479ef2f2b35","timestamp":"2024-08-13T10:48:45.344117Z","elapsedTime":649161,"decision":"PERMIT","authorised":true}
+{"id":"f0b3aa21-9c7e-4c0a-8ded-2b1cd0a9f114","timestamp":"2024-08-13T10:48:46.001000Z","elapsedTime":51,"decision":"INDETERMINATE","authorised":false}
