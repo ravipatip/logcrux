@@ -1,0 +1,7 @@
+2026-06-20T10:15:01,123+0000 [main] INFO  org.apache.pulsar.broker.PulsarService - Starting Pulsar Broker service
+2026-06-20T10:15:02,456+0000 [main] INFO  org.apache.pulsar.broker.PulsarService - messaging service is ready, bootstrap service port = 8080
+2026-06-20T10:15:03,789+0000 [pulsar-io-4-2] WARN  org.apache.pulsar.broker.service.ServerCnx - [/198.51.100.7:55000] Got exception java.io.IOException: Connection reset by peer
+2026-06-20T10:15:04,012+0000 [bookie-io-1-1] WARN  org.apache.bookkeeper.proto.PerChannelBookieClient - Could not write request for adding entry: ledger 12
+2026-06-20T10:15:05,345+0000 [pulsar-load-manager-1-1] ERROR org.apache.pulsar.broker.loadbalance.impl.ModularLoadManagerImpl - Failed to update broker load
+2026-06-20T10:15:06,678+0000 [main] ERROR org.apache.pulsar.broker.PulsarService - Failed to start Pulsar service: Unable to start ZooKeeper session
+2026-06-20T10:15:07,901+0000 [main] INFO  org.apache.pulsar.broker.PulsarService - Closed

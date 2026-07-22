@@ -1,0 +1,10 @@
+CEF:0|Security|threatmanager|1.0|100|worm successfully stopped|6|src=10.0.0.1 dst=2.1.2.2 spt=1232
+CEF:0|Cisco|ASA|9.8|106023|Deny inbound|4|src=198.51.100.7 dst=10.0.0.5 spt=55000 dpt=22 act=Deny
+CEF:0|FireEye|MAS|7.5|MALWARE|Malware detected on host|9|src=10.0.0.9 suser=bob act=quarantine
+CEF:0|Imperva|SecureSphere|12|SQLi|SQL Injection attempt blocked|8|src=203.0.113.5 dst=10.0.0.80 act=block
+Jun 20 10:15:05 fw1 CEF:0|Fortinet|FortiGate|6.4|0421|IPS signature matched|7|src=203.0.113.9 dst=10.0.0.80
+CEF:0|Security|threatmanager|1.0|200|connection allowed|3|src=10.0.0.2 dst=10.0.0.3 act=allow
+CEF:0|Vendor|IDS|2.0|300|Brute force login detected|8|src=198.51.100.22 suser=admin act=alert
+CEF:0|Vendor|IDS|2.0|300|Brute force login detected|8|src=198.51.100.22 suser=admin act=alert
+CEF:0|Vendor|IDS|2.0|300|Brute force login detected|8|src=198.51.100.22 suser=root act=alert
+CEF:0|ArcSight|SIEM|1.0|400|Event with receipt time|7|src=10.0.0.5 rt=1718877301000 dst=10.0.0.80

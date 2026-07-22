@@ -1,0 +1,6 @@
+2026-06-29T08:40:14.123456789Z stdout F Starting application server on :8080
+2026-06-29T08:40:15.001122334Z stdout F Connected to postgres at db:5432
+2026-06-29T08:41:02.551239871Z stderr F ERROR could not connect to upstream payment-svc: connection refused
+2026-06-29T08:41:03.100000000Z stderr P Exception in thread "main"
+2026-06-29T08:41:03.100000111Z stderr F java.lang.OutOfMemoryError: GC overhead limit exceeded
+2026-06-29T08:41:06.000000000Z stdout F SIGTERM received, shutting down

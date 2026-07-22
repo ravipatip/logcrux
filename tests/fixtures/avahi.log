@@ -1,0 +1,5 @@
+Jun 28 10:15:01 host avahi-daemon[1234]: Server startup complete. Host name is host.local. Local service cookie is 123456
+Jun 28 10:15:02 host avahi-daemon[1234]: Joining mDNS multicast group on interface eth0.IPv4 with address 10.0.0.5
+Jun 28 10:15:03 host avahi-daemon[1234]: New relevant interface eth0.IPv4 for mDNS
+Jun 28 10:15:04 host avahi-daemon[1234]: Withdrawing address record for 10.0.0.5 on eth0
+Jun 28 10:15:05 host avahi-daemon[1234]: Failed to create client object: Daemon not running

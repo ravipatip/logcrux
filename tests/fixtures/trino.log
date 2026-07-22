@@ -1,0 +1,5 @@
+2026-06-28T10:15:01.123+0000 INFO main io.trino.server.Server ======== STARTING SERVER ========
+2026-06-28T10:15:02.234+0000 INFO main io.trino.metadata.StaticCatalogManager Added catalog hive
+2026-06-28T10:15:03.345+0000 WARN page-buffer-client-0 io.trino.execution.SqlTask Task took 12s longer than expected
+2026-06-28T10:15:04.456+0000 ERROR query-execution-1 io.trino.execution.QueryStateMachine Query 20260628_1 failed
+2026-06-28T10:15:05.567+0000 INFO main io.trino.server.Server ======== SERVER STARTED ========

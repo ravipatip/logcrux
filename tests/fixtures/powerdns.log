@@ -1,0 +1,4 @@
+Jun 20 10:15:01 ns1 pdns_server[1234]: Creating backend connection for TCP
+Jun 20 10:15:02 ns1 pdns_recursor[1234]: Inserting forward zone example.com
+Jun 20 10:15:03 ns1 pdns_server[1234]: Error: cannot bind to socket: Address already in use
+Jun 20 10:15:04 ns1 pdns_server[1234]: Remote 1.2.3.4 wants query, timeout

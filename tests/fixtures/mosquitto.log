@@ -1,0 +1,6 @@
+1718877301: mosquitto version 2.0.15 starting
+1718877302: Opening ipv4 listen socket on port 1883.
+1718877303: New connection from 1.2.3.4:5555 on port 1883.
+1718877304: New client connected from 1.2.3.4:5555 as mqtt-client-1 (p2, c1, k60).
+1718877305: Socket error on client mqtt-client-1, disconnecting.
+1718877306: Error: Unable to open log file /var/log/mosquitto/x.

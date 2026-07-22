@@ -1,0 +1,6 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2026-06-20 10:15:01 10.0.0.1 GET /index.html - 80 - 1.2.3.4 Mozilla/5.0 200 0 0 15
+2026-06-20 10:15:02 10.0.0.1 GET /missing.html - 80 - 1.2.3.4 Mozilla/5.0 404 0 2 5
+2026-06-20 10:15:03 10.0.0.1 POST /api/pay - 80 - 10.0.0.5 Mozilla/5.0 500 0 0 250

@@ -1,0 +1,4 @@
+2026-06-20 10:15:01,123 [main] INFO  com.example.App - Server started on port 8080
+2026-06-20 10:15:02,456 [pool-1-thread-2] WARN  com.example.Cache - cache eviction rate high
+2026-06-20 10:15:03,789 [http-nio-8080-exec-1] ERROR com.example.Service - connection refused to upstream
+2026-06-20 10:15:04,000 [main] FATAL com.example.App - unrecoverable error, shutting down

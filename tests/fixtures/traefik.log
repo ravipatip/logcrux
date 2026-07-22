@@ -1,0 +1,5 @@
+{"level":"info","msg":"Configuration loaded from file: /etc/traefik/traefik.yml","time":"2026-06-20T10:23:45Z"}
+{"level":"info","msg":"Starting provider *file.Provider","time":"2026-06-20T10:23:46Z"}
+{"level":"warning","msg":"No domain found in rule Host(), the TLS options applied for this router will depend on the hostSNI","time":"2026-06-20T10:23:47Z"}
+{"level":"error","error":"dial tcp 10.0.0.7:8080: connect: connection refused","msg":"Error while creating client","time":"2026-06-20T10:23:48Z"}
+{"level":"error","entryPointName":"web","msg":"accept tcp [::]:80: use of closed network connection","time":"2026-06-20T10:23:49Z"}

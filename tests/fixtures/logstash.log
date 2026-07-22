@@ -1,0 +1,7 @@
+[2026-06-20T10:15:01,123][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"8.13.0"}
+[2026-06-20T10:15:02,456][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2026-06-20T10:15:03,789][WARN ][logstash.outputs.elasticsearch] Attempted to resurrect connection to dead ES instance, but got an error {:url=>"http://10.0.0.20:9200/"}
+[2026-06-20T10:15:04,012][WARN ][logstash.outputs.elasticsearch] Attempted to resurrect connection to dead ES instance, but got an error {:url=>"http://10.0.0.20:9200/"}
+[2026-06-20T10:15:05,345][ERROR][logstash.javapipeline    ] Pipeline aborted due to error {:pipeline_id=>"main", :exception=>"LogStash::ConfigurationError"}
+[2026-06-20T10:15:06,678][ERROR][logstash.agent           ] Failed to execute action {:id=>:main, :action_type=>LogStash::ConvergeResult::FailedAction}
+[2026-06-20T10:15:07,901][INFO ][logstash.runner          ] Logstash shut down.

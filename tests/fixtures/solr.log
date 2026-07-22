@@ -1,0 +1,7 @@
+2026-06-28 10:15:01.123 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /opt/solr/server/solr/solr.xml
+2026-06-28 10:15:02.234 INFO  (main) [   ] o.a.s.c.CoreContainer Initializing CoreContainer
+2026-06-28 10:15:03.345 INFO  (coreLoadExecutor-1) [   x:books] o.a.s.c.SolrCore [[books]] Opening new SolrCore
+2026-06-28 10:15:04.456 INFO  (qtp1234567-18) [   x:books] o.a.s.c.S.Request [books] webapp=/solr path=/select params={q=*:*}
+2026-06-28 10:15:05.567 WARN  (qtp1234567-19) [   x:books] o.a.s.h.RequestHandlerBase Slow query took 5012ms
+2026-06-28 10:15:06.678 ERROR (qtp1234567-20) [   x:books] o.a.s.c.SolrCore org.apache.solr.common.SolrException: undefined field xyz
+2026-06-28 10:15:07.789 INFO  (coreCloseExecutor-5) [   x:books] o.a.s.c.SolrCore [[books]] CLOSING SolrCore

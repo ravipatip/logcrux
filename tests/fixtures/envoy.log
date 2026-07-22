@@ -1,0 +1,4 @@
+[2026-06-23T10:23:45.123Z] "GET /api/v1/users HTTP/1.1" 200 - 0 1234 5 4 "-" "curl/8.0" "req-1" "api.example.com" "10.0.0.5:8080"
+[2026-06-23T10:23:46.223Z] "POST /api/v1/orders HTTP/1.1" 503 UF 0 91 12 - "-" "curl/8.0" "req-2" "api.example.com" "10.0.0.6:8080"
+[2026-06-23T10:23:47.323Z] "GET /healthz HTTP/1.1" 200 - 0 2 0 0 "-" "kube-probe/1.29" "req-3" "api.example.com" "10.0.0.5:8080"
+[2026-06-23 10:23:48.423][14][warning][config] [source/server/config.cc:120] failed to fetch cluster

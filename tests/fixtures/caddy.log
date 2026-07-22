@@ -1,0 +1,5 @@
+{"level":"info","ts":1718880225.123,"logger":"http.log","msg":"server running","address":":443"}
+{"level":"info","ts":1718880226.456,"logger":"tls","msg":"certificate obtained successfully","identifier":"example.com"}
+{"level":"error","ts":1718880227.789,"logger":"http.log.error","msg":"dial tcp 10.0.0.9:8080: connect: connection refused","request":{"method":"GET","uri":"/api"},"status":502}
+{"level":"warn","ts":1718880228.012,"logger":"http","msg":"could not get certificate from issuer","identifier":"bad.example"}
+{"level":"info","ts":1718880229.345,"logger":"http.log.access","msg":"handled request","request":{"method":"GET","uri":"/"},"status":200}

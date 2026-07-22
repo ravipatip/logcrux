@@ -1,0 +1,5 @@
+2026-06-28T10:15:01.123Z cpu0:2097152)Boot: 1234: Vmkernel initialized
+2026-06-28T10:15:02.234Z cpu1:2097153)ScsiDeviceIO: 3024: Cmd 0x28 from world 2097153 to dev "naa.500" success
+2026-06-28T10:15:03.345Z cpu2:2097154)WARNING: NMP: nmp_PathDetermineFailure:2973: SCSI cmd RESERVE failed on path
+2026-06-28T10:15:04.456Z cpu3:2097155)ALERT: Bootbank: 1234: Unable to find a valid bootbank
+2026-06-28T10:15:05.567Z cpu0:2097152)WARNING: LinuxThread: 1234: cannot create worker world

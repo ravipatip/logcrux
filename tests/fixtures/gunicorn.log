@@ -1,0 +1,8 @@
+[2026-06-20 10:23:45 +0000] [123] [INFO] Starting gunicorn 21.2.0
+[2026-06-20 10:23:45 +0000] [123] [INFO] Listening at: http://0.0.0.0:8000 (123)
+[2026-06-20 10:23:46 +0000] [124] [INFO] Booting worker with pid: 124
+[2026-06-20 10:23:50 +0000] [123] [CRITICAL] WORKER TIMEOUT (pid:124)
+[2026-06-20 10:23:50 +0000] [124] [ERROR] Worker (pid:124) was sent SIGKILL! Perhaps out of memory?
+[2026-06-20 10:23:51 +0000] [123] [WARNING] Worker with pid 124 was terminated due to signal 9
+[2026-06-20 10:23:52 +0000] [125] [INFO] Booting worker with pid: 125
+[2026-06-20 10:23:53 +0000] [125] [ERROR] Exception in worker process

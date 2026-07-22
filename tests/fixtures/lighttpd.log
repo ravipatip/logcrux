@@ -1,0 +1,7 @@
+2026-06-28 10:15:01: (server.c.1558) server started (lighttpd/1.4.69)
+2026-06-28 10:15:02: (mod_openssl.c.1234) SSL: read certificate /etc/ssl/server.pem
+2026-06-28 10:15:03: (mod_fastcgi.c.421) FastCGI-stderr: PHP Warning: Undefined variable $x
+2026-06-28 10:15:04: (gw_backend.c.1099) backend error; we'll disable for 1 seconds and send the request to another backend instead: reconnects: 0 load: 1
+2026-06-28 10:15:05: (mod_fastcgi.c.487) FastCGI-stderr: PHP Fatal error: Uncaught Error in /var/www/app.php
+2026-06-28 10:15:06: (connections.c.999) connection closed: timeout
+2026-06-28 10:15:07: (server.c.2034) server stopped by UID = 0 PID = 1

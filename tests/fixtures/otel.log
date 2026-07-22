@@ -1,0 +1,5 @@
+{"level":"info","ts":"2026-06-23T10:23:45.123Z","caller":"service/service.go:152","msg":"Starting otelcol","version":"0.96.0"}
+{"level":"info","ts":"2026-06-23T10:23:46.223Z","caller":"service/service.go:200","msg":"Everything is ready. Begin running and processing data.","kind":"receiver","name":"otlp"}
+{"level":"warn","ts":"2026-06-23T10:23:47.323Z","caller":"batchprocessor/batch_processor.go:258","msg":"Sender failed","kind":"processor","name":"batch"}
+{"level":"error","ts":"2026-06-23T10:23:48.423Z","caller":"exporterhelper/queued_retry.go:391","msg":"Exporting failed. Will retry.","kind":"exporter","name":"otlp","error":"connection refused"}
+{"level":"error","ts":"2026-06-23T10:23:49.523Z","caller":"exporterhelper/queued_retry.go:391","msg":"Exporting failed. Will retry.","kind":"exporter","name":"otlp","error":"context deadline exceeded"}

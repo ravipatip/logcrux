@@ -1,0 +1,10 @@
+May 19 10:15:01 web01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/apt update
+May 19 10:16:01 web01 sudo:      bob : 3 incorrect password attempts ; TTY=pts/1 ; PWD=/home/bob ; USER=root ; COMMAND=/bin/cat /etc/shadow
+May 19 10:16:30 web01 sudo:      eve : user NOT in sudoers ; TTY=pts/2 ; PWD=/home/eve ; USER=root ; COMMAND=/bin/bash
+May 19 10:17:00 web01 sudo: pam_unix(sudo:auth): authentication failure; logname=eve uid=1003 euid=0 tty=/dev/pts/2 ruser=eve rhost= user=eve
+May 19 10:18:00 web01 sudo:  deploy : TTY=pts/3 ; PWD=/srv/app ; USER=root ; COMMAND=/usr/bin/systemctl restart app
+May 19 10:19:00 web01 sudo[2401]:    carol : command not allowed ; TTY=pts/4 ; PWD=/home/carol ; USER=root ; COMMAND=/sbin/reboot
+May 19 10:20:00 web01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=postgres ; COMMAND=/usr/bin/psql
+May 19 10:21:00 web01 sudo:      bob : 3 incorrect password attempts ; TTY=pts/1 ; PWD=/home/bob ; USER=root ; COMMAND=/bin/su -
+May 19 10:22:00 web01 sudo: pam_unix(sudo:session): session opened for user root by alice(uid=1001)
+May 19 10:23:00 web01 sudo:    mallory : user NOT in sudoers ; TTY=pts/5 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/id

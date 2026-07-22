@@ -1,0 +1,5 @@
+2026-06-23T10:23:45Z I! Starting AmazonCloudWatchAgent CWAgent/1.300
+2026-06-23T10:23:45Z I! [logagent] starting
+2026-06-23T10:23:46Z W! [outputs.cloudwatchlogs] queue is full, dropping log entries
+2026-06-23T10:23:47Z E! [outputs.cloudwatchlogs] Aborted batch of 100 logs: RequestError: send request failed
+2026-06-23T10:23:48Z E! [outputs.cloudwatchlogs] Aborted batch: ThrottlingException: Rate exceeded

@@ -1,0 +1,5 @@
+10:15:01,123 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.0.Final
+10:15:02,234 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0049: WildFly Full 30.0.0 starting
+10:15:03,345 WARN  [org.jboss.as.txn] (Controller Boot Thread) WFLYTX0013: The node-identifier attribute is set to default
+10:15:04,456 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation failed
+10:15:05,567 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0025: WildFly started in 4521ms

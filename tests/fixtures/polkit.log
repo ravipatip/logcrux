@@ -1,0 +1,5 @@
+Jun 28 10:15:01 host polkitd[1234]: Started polkit version 0.105
+Jun 28 10:15:02 host polkitd[1234]: Loading rules from directory /etc/polkit-1/rules.d
+Jun 28 10:15:03 host polkitd[1234]: Registered Authentication Agent for unix-session:c1 (system bus name :1.42)
+Jun 28 10:15:04 host polkitd[1234]: Operator of unix-session:c1 successfully authenticated as unix-user:root
+Jun 28 10:15:05 host polkitd[1234]: Error getting authority: Error initializing authority

@@ -1,0 +1,5 @@
+2026-06-28 10:15:01.123+0000: 1234: info : libvirt version: 9.0.0, package: 1.el9
+2026-06-28 10:15:02.234+0000: 1234: info : virStateInitialize:670 : initializing network driver
+2026-06-28 10:15:03.345+0000: 1234: warning : qemuDomainObjTaint:7521 : Domain id=3 name='vm1' tainted: high-privileges
+2026-06-28 10:15:04.456+0000: 5678: error : qemuMonitorIO:599 : internal error: End of file from qemu monitor
+2026-06-28 10:15:05.567+0000: 5678: error : virNetSocketReadWire:1791 : Cannot recv data: Connection reset by peer

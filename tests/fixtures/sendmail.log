@@ -1,0 +1,8 @@
+Jun 28 10:15:01 mail sm-mta[1234]: 5SAF11x012345: from=<alice@example.com>, size=2048, class=0, nrcpts=1, msgid=<abc@example.com>, proto=ESMTP, daemon=MTA, relay=client.example.com [203.0.113.5]
+Jun 28 10:15:02 mail sm-mta[1234]: 5SAF11x012345: to=<bob@example.org>, ctladdr=<alice@example.com>, delay=00:00:01, xdelay=00:00:01, mailer=esmtp, pri=122048, relay=mx.example.org. [198.51.100.7], dsn=2.0.0, stat=Sent (OK queued)
+Jun 28 10:15:03 mail sm-mta[1234]: 5SAF12x012346: to=<nobody@bad.example>, delay=00:05:00, mailer=esmtp, pri=120000, dsn=4.0.0, stat=Deferred: Connection timed out with mx.bad.example.
+Jun 28 10:15:04 mail sendmail[1240]: 5SAF13x012347: ruleset=check_rcpt, arg1=<spam@evil.example>, relay=[192.0.2.9], reject=550 5.7.1 <spam@evil.example>... Relaying denied
+Jun 28 10:15:05 mail sm-mta[1234]: 5SAF14x012348: from=<carol@example.com>, size=512, class=0, nrcpts=1, proto=ESMTP, daemon=MTA, relay=localhost [127.0.0.1]
+Jun 28 10:15:06 mail sm-mta[1234]: 5SAF14x012348: to=<dave@example.net>, delay=00:00:00, mailer=esmtp, pri=30512, dsn=2.0.0, stat=Sent (OK)
+Jun 28 10:15:07 mail sm-mta[1234]: 5SAF15x012349: to=<ghost@example.com>, delay=00:00:02, mailer=local, pri=30000, dsn=5.1.1, stat=User unknown
+Jun 28 10:15:08 mail sm-msp-queue[1300]: 5SAF16x012350: from=<root@mail>, size=300, class=0, nrcpts=1, msgid=<cron@mail>, relay=root@localhost

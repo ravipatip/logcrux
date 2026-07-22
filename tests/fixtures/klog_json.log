@@ -1,0 +1,3 @@
+{"ts":1782000014.047,"caller":"server/server.go:120","msg":"Starting controller","v":0,"controller":"deployment"}
+{"ts":1782000062.551,"caller":"controller/sync.go:88","msg":"Reconciler error","err":"connection refused"}
+{"ts":1782000063.100,"caller":"controller/sync.go:90","msg":"OOMKilled container payment","err":"pod terminated"}

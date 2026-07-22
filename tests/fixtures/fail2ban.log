@@ -1,0 +1,8 @@
+2026-06-19 10:00:01,305 fail2ban.actions [8765]: INFO     [sshd] Found 192.168.1.100 - 2026-06-19 10:00:01
+2026-06-19 10:00:02,410 fail2ban.actions [8765]: INFO     [sshd] Found 192.168.1.100 - 2026-06-19 10:00:02
+2026-06-19 10:00:03,515 fail2ban.actions [8765]: INFO     [sshd] Found 192.168.1.100 - 2026-06-19 10:00:03
+2026-06-19 10:00:07,305 fail2ban.actions [8765]: WARNING  [sshd] Ban 192.168.1.100
+2026-06-19 10:05:00,128 fail2ban.actions [8765]: WARNING  [sshd] Unban 192.168.1.100
+2026-06-19 10:05:01,200 fail2ban.actions [8765]: INFO     [nginx-http-auth] Found 5.6.7.8 - 2026-06-19 10:05:01
+2026-06-19 10:05:02,300 fail2ban.actions [8765]: WARNING  [nginx-http-auth] Ban 5.6.7.8
+2026-06-19 10:05:03,400 fail2ban.actions [8765]: WARNING  [nginx-http-auth] Ban 9.10.11.12

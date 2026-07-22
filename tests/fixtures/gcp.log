@@ -1,0 +1,4 @@
+{"severity":"INFO","timestamp":"2026-06-23T10:23:45.123Z","logName":"projects/p/logs/run.googleapis.com%2Fstdout","resource":{"type":"cloud_run_revision"},"textPayload":"Server listening on port 8080"}
+{"severity":"WARNING","timestamp":"2026-06-23T10:23:46.223Z","logName":"projects/p/logs/run","resource":{"type":"cloud_run_revision"},"textPayload":"high memory usage: 92%"}
+{"severity":"ERROR","timestamp":"2026-06-23T10:23:47.323Z","logName":"projects/p/logs/run","resource":{"type":"cloud_run_revision"},"jsonPayload":{"message":"connection to database refused","code":500}}
+{"severity":"CRITICAL","timestamp":"2026-06-23T10:23:48.423Z","logName":"projects/p/logs/run","resource":{"type":"cloud_run_revision"},"textPayload":"container terminated: OOMKilled"}

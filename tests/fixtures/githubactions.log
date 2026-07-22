@@ -1,0 +1,5 @@
+2026-06-20T10:15:01.1234567Z Current runner version: '2.300.0'
+2026-06-20T10:15:02.0000000Z ##[group]Run actions/checkout@v4
+2026-06-20T10:15:03.0000000Z Syncing repository: org/repo
+2026-06-20T10:15:04.0000000Z ##[warning]Node.js 16 actions are deprecated.
+2026-06-20T10:15:05.0000000Z ##[error]Process completed with exit code 1.

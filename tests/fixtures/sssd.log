@@ -1,0 +1,8 @@
+Jun 28 10:15:01 host sssd[1234]: Starting up
+Jun 28 10:15:02 host sssd[be[example.com]][1240]: Backend is online
+Jun 28 10:15:03 host sssd[pam][1241]: Requesting info for [alice@example.com]
+Jun 28 10:15:04 host sssd[nss][1242]: Enumeration requested but not enabled
+Jun 28 10:15:05 host sssd[be[example.com]][1240]: Backend is offline
+Jun 28 10:15:06 host sssd[be[example.com]][1240]: Failed to connect to LDAP server ldap://dc1.example.com
+Jun 28 10:15:07 host sssd[pam][1241]: Authentication failure for user alice
+Jun 28 10:15:08 host sssd[be[example.com]][1240]: Going offline, retrying in 30 seconds

@@ -1,0 +1,3 @@
+{"timeUnixNano":"1782000014000000000","severityNumber":9,"severityText":"INFO","body":{"stringValue":"server started on :8080"},"traceId":"abc123","resource":{"service.name":"checkout"}}
+{"timeUnixNano":"1782000062000000000","severityNumber":17,"severityText":"ERROR","body":{"stringValue":"failed to connect to payment-svc: connection refused"},"traceId":"def456","resource":{"service.name":"checkout"}}
+{"timeUnixNano":"1782000063000000000","severityNumber":21,"severityText":"FATAL","body":{"stringValue":"out of memory: killed"},"traceId":"ghi789","resource":{"service.name":"checkout"}}

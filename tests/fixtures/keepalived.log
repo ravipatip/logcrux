@@ -1,0 +1,6 @@
+Jun 20 10:23:45 lb1 Keepalived[1230]: Starting Keepalived v2.2.4
+Jun 20 10:23:46 lb1 Keepalived_vrrp[1234]: VRRP_Instance(VI_1) Transition to MASTER STATE
+Jun 20 10:23:47 lb1 Keepalived_vrrp[1234]: VRRP_Instance(VI_1) Entering MASTER STATE
+Jun 20 10:23:48 lb1 Keepalived_healthcheckers[1235]: Check failed for [10.0.0.5]:80, removing service from VS
+Jun 20 10:23:49 lb1 Keepalived_vrrp[1234]: VRRP_Instance(VI_1) Entering FAULT STATE
+Jun 20 10:23:50 lb1 Keepalived_vrrp[1234]: VRRP_Instance(VI_1) Entering BACKUP STATE

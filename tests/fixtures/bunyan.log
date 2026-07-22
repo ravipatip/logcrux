@@ -1,0 +1,3 @@
+{"name":"app","hostname":"web01","pid":1,"level":30,"msg":"started","time":"2026-06-20T10:15:01.123Z","v":0}
+{"name":"app","hostname":"web01","pid":1,"level":40,"msg":"cache miss rate high","time":"2026-06-20T10:15:02.000Z","v":0}
+{"name":"app","hostname":"web01","pid":1,"level":50,"msg":"database connection failed","time":"2026-06-20T10:15:03.000Z","v":0}

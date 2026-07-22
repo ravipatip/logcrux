@@ -1,0 +1,5 @@
+[17/Nov/2021:15:57:39.562 -0600] category=SYNC severity=INFORMATION msgID=1893728293 op=7 changeNumber=59 pipe="ds1_to_PingOne_Destination" msg="Detected MODIFY of uid=user.0,ou=People,dc=example,dc=com at ldap://localhost:1389"
+[17/Nov/2021:15:57:40.104 -0600] category=SYNC severity=INFORMATION msgID=1893728306 op=8 changeNumber=60 pipe="ds1_to_PingOne_Destination" class="ds1 Users Sync Class" msg="Synchronized ADD of uid=user.2,ou=People,dc=example,dc=com"
+[17/Nov/2021:15:57:41.220 -0600] category=SYNC severity=MILD_WARNING msgID=1893728400 op=9 changeNumber=61 pipe="ds1_to_PingOne_Destination" msg="Dropped MODIFY of uid=user.3 because the destination entry could not be found"
+[17/Nov/2021:15:57:42.880 -0600] category=SYNC severity=SEVERE_ERROR msgID=1893728512 op=10 changeNumber=62 pipe="ds1_to_PingOne_Destination" msg="Failed to apply ADD of uid=user.4: the connection to the destination server was closed"
+[17/Nov/2021:15:57:43.010 -0600] category=CORE severity=NOTICE msgID=458887 msg="The Data Sync Server has started successfully"

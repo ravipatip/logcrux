@@ -1,0 +1,5 @@
+Jun 28 10:15:01 host mdadm[1234]: NewArray event detected on md device /dev/md0
+Jun 28 10:15:02 host mdadm[1234]: RebuildStarted event detected on md device /dev/md0
+Jun 28 10:15:03 host mdadm[1234]: Fail event detected on md device /dev/md0, component device /dev/sdb1
+Jun 28 10:15:04 host mdadm[1234]: DegradedArray event detected on md device /dev/md0
+Jun 28 10:15:05 host mdadm[1234]: SpareActive event detected on md device /dev/md0

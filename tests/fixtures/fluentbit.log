@@ -1,0 +1,5 @@
+[2026/06/23 10:23:45] [ info] [fluent bit] version=2.2.0, commit=abc, pid=1
+[2026/06/23 10:23:45] [ info] [engine] started (pid=1)
+[2026/06/23 10:23:46] [ warn] [input:tail:tail.0] file rotated, dropping buffered data
+[2026/06/23 10:23:47] [error] [output:es:es.0] could not flush records, retrying in 10s
+[2026/06/23 10:23:48] [error] [output:es:es.0] HTTP status=429 Too Many Requests
