@@ -1,0 +1,5 @@
+{"time_local": "16/Jun/2026:03:41:00 +0000", "remote_addr": "10.0.1.50", "request": "GET /index.html HTTP/1.1", "status": 200, "body_bytes_sent": 1234, "http_referer": "-", "http_user_agent": "Mozilla/5.0"}
+{"time_local": "16/Jun/2026:03:41:01 +0000", "remote_addr": "10.0.1.51", "request": "GET /api/health HTTP/1.1", "status": 200, "body_bytes_sent": 18, "http_referer": "-", "http_user_agent": "curl/8.4.0"}
+{"time_local": "16/Jun/2026:03:41:02 +0000", "remote_addr": "10.0.1.52", "request": "POST /api/data HTTP/1.1", "status": 502, "body_bytes_sent": 0, "http_referer": "-", "http_user_agent": "python-requests/2.31"}
+{"time_local": "16/Jun/2026:03:41:03 +0000", "remote_addr": "10.0.1.53", "request": "GET /missing HTTP/1.1", "status": 404, "body_bytes_sent": 153, "http_referer": "-", "http_user_agent": "Mozilla/5.0"}
+{"time_local": "16/Jun/2026:03:41:04 +0000", "remote_addr": "10.0.1.54", "request": "GET /api/data HTTP/1.1", "status": 500, "body_bytes_sent": 0, "http_referer": "-", "http_user_agent": "python-requests/2.31"}

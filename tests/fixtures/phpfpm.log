@@ -1,0 +1,8 @@
+[20-Jun-2026 10:23:45] NOTICE: fpm is running, pid 1234
+[20-Jun-2026 10:23:45] NOTICE: ready to handle connections
+[20-Jun-2026 10:23:50] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[20-Jun-2026 10:23:51] WARNING: [pool www] child 4242 said into stderr: "PHP Fatal error: Allowed memory size exhausted"
+[20-Jun-2026 10:23:52] ERROR: failed to ptrace(PEEKDATA) pid 4242: Input/output error
+[20-Jun-2026 10:23:53] WARNING: [pool www] child 4243 exited on signal 11 (SIGSEGV) after 60.1 seconds
+[20-Jun-2026 10:23:54] ALERT: [pool www] child 4244 exited with code 255 after 0.1 seconds from start
+[20-Jun-2026 10:23:55] NOTICE: [pool www] child 4245 started

@@ -1,0 +1,3 @@
+{"transaction":{"time":"20/Jun/2026:10:15:01 +0000","client_ip":"1.2.3.4","request":{"method":"GET","uri":"/search?q=test"}},"audit_data":{"messages":[]}}
+{"transaction":{"time":"20/Jun/2026:10:15:02 +0000","client_ip":"9.9.9.9","request":{"method":"GET","uri":"/?id=1' OR 1=1--"}},"audit_data":{"messages":["Warning. Pattern match at ARGS:id [id \"942100\"] [msg \"SQL Injection Attack Detected\"] [severity \"CRITICAL\"]"]}}
+{"transaction":{"time":"20/Jun/2026:10:15:03 +0000","client_ip":"9.9.9.9","request":{"method":"POST","uri":"/login"}},"audit_data":{"messages":["Access denied with code 403 [id \"949110\"] [msg \"Inbound Anomaly Score Exceeded\"] [severity \"CRITICAL\"]"]}}

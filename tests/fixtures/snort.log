@@ -1,0 +1,7 @@
+06/20-10:15:01.123456  [**] [1:2001219:20] ET SCAN Potential SSH Scan [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 198.51.100.7:55000 -> 10.0.0.80:22
+06/20-10:15:02.223456  [**] [1:2001219:20] ET SCAN Potential SSH Scan [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 198.51.100.7:55001 -> 10.0.0.80:22
+06/20-10:15:03.323456  [**] [1:2001219:20] ET SCAN Potential SSH Scan [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 198.51.100.7:55002 -> 10.0.0.80:22
+06/20-10:15:04.423456  [**] [1:2010935:3] ET POLICY Suspicious inbound to mySQL port 3306 [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 198.51.100.9:44000 -> 10.0.0.81:3306
+06/20-10:15:05.523456  [**] [1:2100498:7] GPL ATTACK_RESPONSE id check returned root [**] [Classification: Potentially Bad Traffic] [Priority: 1] {TCP} 10.0.0.80:80 -> 203.0.113.5:44321
+06/20-10:15:06.623456  [**] [1:2012887:3] ET POLICY Outgoing Basic Auth Base64 HTTP Password [**] [Classification: Potential Corporate Privacy Violation] [Priority: 1] {TCP} 10.0.0.5:44322 -> 203.0.113.6:80
+06/20-10:15:07.723456  [**] [1:1000001:1] Local Rule Test informational [**] [Priority: 3] {UDP} 10.0.0.6:51000 -> 10.0.0.53:53

@@ -1,0 +1,5 @@
+{"reqId":"abc123","level":1,"time":"2026-06-28T10:15:01+00:00","remoteAddr":"10.0.0.5","user":"admin","app":"core","method":"GET","url":"/index.php/apps/files","message":"Login successful","userAgent":"Mozilla/5.0","version":"28.0.1.1"}
+{"reqId":"def456","level":0,"time":"2026-06-28T10:15:02+00:00","remoteAddr":"10.0.0.5","user":"admin","app":"files","method":"PROPFIND","url":"/remote.php/dav","message":"PROPFIND request","userAgent":"davfs2","version":"28.0.1.1"}
+{"reqId":"ghi789","level":2,"time":"2026-06-28T10:15:03+00:00","remoteAddr":"10.0.0.9","user":"--","app":"core","method":"POST","url":"/login","message":"Login failed for user admin","userAgent":"curl","version":"28.0.1.1"}
+{"reqId":"jkl012","level":3,"time":"2026-06-28T10:15:04+00:00","remoteAddr":"10.0.0.9","user":"--","app":"PHP","method":"GET","url":"/index.php","message":"Undefined array key in /var/www/file.php#42","userAgent":"curl","version":"28.0.1.1"}
+{"reqId":"mno345","level":4,"time":"2026-06-28T10:15:05+00:00","remoteAddr":"10.0.0.1","user":"admin","app":"db","method":"","url":"--","message":"Database connection lost","userAgent":"--","version":"28.0.1.1"}

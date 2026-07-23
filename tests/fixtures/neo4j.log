@@ -1,0 +1,7 @@
+2026-06-28 10:15:01.123+0000 INFO  [o.n.k.a.DbmsRuntime] Database system is ready
+2026-06-28 10:15:02.234+0000 INFO  [o.n.k.i.DatabaseManagementService] Started database neo4j
+2026-06-28 10:15:03.345+0000 WARN  [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause of 1200ms
+2026-06-28 10:15:04.456+0000 INFO  [o.n.b.r.DefaultBoltConnection] Bolt connection from 203.0.113.5
+2026-06-28 10:15:05.567+0000 ERROR [o.n.b.r.DefaultBoltConnection] Unexpected error during query execution
+2026-06-28 10:15:06.678+0000 WARN  [o.n.k.a.i.s.IndexingService] Index population failed for index 'user_email'
+2026-06-28 10:15:07.789+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler

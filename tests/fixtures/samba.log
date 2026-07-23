@@ -1,0 +1,10 @@
+May 19 10:15:01 fs01 smbd[1234]:   Auth: [SMB2,(null)] user [WORKGROUP]\[alice] at [2024-05-19 10:15:01] with [NTLMv2] status [NT_STATUS_OK]
+May 19 10:15:02 fs01 smbd[1235]:   Auth: [SMB2,(null)] user [WORKGROUP]\[bob] at [2024-05-19 10:15:02] with [NTLMv2] status [NT_STATUS_WRONG_PASSWORD]
+May 19 10:15:03 fs01 smbd[1236]:   Auth: [SMB2,(null)] user [WORKGROUP]\[administrator] status [NT_STATUS_LOGON_FAILURE]
+May 19 10:15:04 fs01 smbd[1237]: connect to service public initially as user nobody (uid=65534, gid=65534)
+May 19 10:15:05 fs01 nmbd[1240]: *****  Samba name server FS01 is now a local master browser for workgroup WORKGROUP  *****
+May 19 10:15:06 fs01 smbd[1241]:   Auth: user [WORKGROUP]\[guest] status [NT_STATUS_NO_SUCH_USER]
+May 19 10:15:07 fs01 smbd[1242]: Failed to issue startup messages: NT_STATUS_ACCESS_DENIED
+May 19 10:15:08 fs01 smbd[1243]: ../source3/smbd/service.c:1054 make_connection_snum: canonicalize_connect_path failed
+May 19 10:15:09 fs01 smbd[1244]: PANIC: internal error in smbd_smb2_request_error
+May 19 10:15:10 fs01 winbindd[1250]: failed to bind to server ldap://dc01: NT_STATUS_ACCESS_DENIED

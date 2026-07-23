@@ -1,0 +1,10 @@
+May 19 10:15:01 web01 CROND[12345]: (root) CMD (run-parts /etc/cron.hourly)
+May 19 10:17:01 web01 CROND[12350]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+May 19 10:17:01 web01 CRON[12351]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 19 10:17:01 web01 CRON[12351]: pam_unix(cron:session): session closed for user root
+May 19 10:20:01 web01 crond[1234]: (CRON) bad minute (/etc/crontab)
+May 19 10:20:01 web01 crond[1234]: (deploy) ERROR (Job execution of per-minute job scheduled for 10:20 delayed)
+May 19 10:22:01 web01 CROND[12380]: (backup) CMD (/usr/local/bin/backup.sh)
+May 19 10:25:01 web01 crond[1234]: (mail) CMD (/usr/lib/sysstat/sa1 1 1)
+May 19 10:30:01 web01 crond[1234]: cannot stat /etc/cron.d/legacy: No such file or directory
+May 19 10:30:01 web01 CROND[12399]: (root) CMD (test -x /usr/sbin/anacron || run-parts /etc/cron.daily)

@@ -1,0 +1,5 @@
+2026-06-28 10:15:01,123 INFO  [main] regionserver.HRegionServer: STARTING executorService HRegionServer
+2026-06-28 10:15:02,234 INFO  [main] org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient: Connect 0x1 to localhost:2181
+2026-06-28 10:15:03,345 WARN  [RS-EventLoopGroup-1-1] org.apache.hadoop.hbase.ipc.NettyRpcServer: Unable to accept connection
+2026-06-28 10:15:04,456 ERROR [main] master.HMaster: Failed to become active master
+2026-06-28 10:15:05,567 INFO  [main] regionserver.HRegionServer: Stopping infoServer

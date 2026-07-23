@@ -1,0 +1,9 @@
+2026/06/28 10:15:01 tailscaled starting up
+2026/06/28 10:15:02 magicsock: home is now derp-10 (sfo)
+2026/06/28 10:15:03 wgengine: Reconfig: configuring userspace WireGuard config (with 5/8 peers)
+2026/06/28 10:15:04 control: NetInfo: NetInfo{varies=false hairpin=false ipv6=true udp=true ...}
+2026/06/28 10:15:05 netcheck: report: udp=true v4=true v6=true mapvarydest=false
+2026/06/28 10:15:06 magicsock: derp-10 connected; connGen=1
+2026/06/28 10:15:07 control: control: map response long-poll timed out, will retry
+2026/06/28 10:15:08 health(warmable): overall error: not in map poll
+2026/06/28 10:15:09 wgengine: handshake failed with peer node-xyz, retrying

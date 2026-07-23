@@ -1,0 +1,4 @@
+{"time":"2026-06-23T10:23:45.123Z","type":"request","auth":{"policies":["default"]},"request":{"id":"r1","operation":"read","path":"secret/data/app/db","remote_address":"10.0.0.5"}}
+{"time":"2026-06-23T10:23:46.223Z","type":"response","auth":{"policies":["default"]},"request":{"id":"r1","operation":"read","path":"secret/data/app/db","remote_address":"10.0.0.5"},"response":{"data":{}}}
+{"time":"2026-06-23T10:23:47.323Z","type":"response","auth":{"policies":["default"]},"request":{"id":"r2","operation":"update","path":"secret/data/prod/key","remote_address":"203.0.113.4"},"error":"permission denied"}
+{"time":"2026-06-23T10:23:48.423Z","type":"response","auth":{"policies":["default"]},"request":{"id":"r3","operation":"delete","path":"secret/data/prod/key","remote_address":"203.0.113.4"},"error":"permission denied"}

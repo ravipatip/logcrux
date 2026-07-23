@@ -1,0 +1,5 @@
+Jun 28 10:15:01 host snapd[1234]: daemon.go:354: started snapd/2.61 (series 16; classic) ubuntu/22.04
+Jun 28 10:15:02 host snapd[1234]: api.go:1130: Installing snap "hello-world" revision 29
+Jun 28 10:15:03 host snapd[1234]: storehelpers.go:827: snap "core" has no updates available
+Jun 28 10:15:04 host snapd[1234]: backends.go:58: AppArmor status: apparmor is enabled and all features are available
+Jun 28 10:15:05 host snapd[1234]: daemon.go:600: error: cannot install "foo": network is unreachable

@@ -1,0 +1,9 @@
+2026-06-20 10:15:01,123 INFO: Selected new etcd server http://10.0.0.10:2379
+2026-06-20 10:15:02,456 INFO: no action. I am (node1), the leader with the lock
+2026-06-20 10:15:03,789 INFO: Lock owner: node1; I am node1
+2026-06-20 10:15:04,012 WARNING: Postgresql is not running.
+2026-06-20 10:15:05,345 ERROR: get_postgresql_status failed: connection to server at "127.0.0.1", port 5432 failed
+2026-06-20 10:15:06,678 INFO: doing crash recovery in a single user mode
+2026-06-20 10:15:07,901 WARNING: Loop time exceeded, rescheduling immediately.
+2026-06-20 10:15:08,234 ERROR: failed to start postgres
+2026-06-20 10:15:09,567 INFO: demoting self because i do not have the lock

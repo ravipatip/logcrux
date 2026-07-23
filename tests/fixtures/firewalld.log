@@ -1,0 +1,5 @@
+Jun 20 10:23:45 fwhost firewalld[1234]: INFO: Reloading firewall rules.
+Jun 20 10:23:46 fwhost firewalld[1234]: WARNING: ZONE_ALREADY_SET: public
+Jun 20 10:23:47 fwhost firewalld[1234]: WARNING: ALREADY_ENABLED: 'http' already in 'public'
+Jun 20 10:23:48 fwhost firewalld[1234]: ERROR: COMMAND_FAILED: '/usr/sbin/iptables -w10 -A IN_public_allow' failed
+Jun 20 10:23:49 fwhost firewalld[1234]: INFO: Reloading firewall complete.

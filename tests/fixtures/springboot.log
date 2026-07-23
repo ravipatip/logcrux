@@ -1,0 +1,5 @@
+2026-06-23 10:23:45.123  INFO 12345 --- [           main] com.example.App                          : Starting App v1.0
+2026-06-23 10:23:46.223  INFO 12345 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080
+2026-06-23 10:23:47.323  WARN 12345 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound           : No mapping for GET /favicon.ico
+2026-06-23 10:23:48.423 ERROR 12345 --- [http-nio-8080-exec-2] c.e.service.OrderService               : Failed to persist order: could not connect to database
+2026-06-23 10:23:49.523 ERROR 12345 --- [http-nio-8080-exec-3] c.e.service.OrderService               : Failed to persist order: connection timed out

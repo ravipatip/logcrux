@@ -1,0 +1,5 @@
+Jun 28 10:15:01 storage zed[1234]: eid=3 class=history_event pool='tank'
+Jun 28 10:15:02 storage zed[1234]: eid=4 class=scrub_start pool='tank'
+Jun 28 10:15:03 storage zed[1234]: eid=5 class=statechange pool='tank' vdev=sdb1 vdev_state=DEGRADED
+Jun 28 10:15:04 storage zed[1234]: eid=6 class=checksum pool='tank' vdev=sdb1
+Jun 28 10:15:05 storage zed[1234]: eid=7 class=data pool='tank'

@@ -1,0 +1,5 @@
+2026-06-20 10:15:01 startup archives unpack
+2026-06-20 10:15:01 install nginx:amd64 <none> 1.24.0-1
+2026-06-20 10:15:02 status unpacked nginx:amd64 1.24.0-1
+2026-06-20 10:15:02 status installed nginx:amd64 1.24.0-1
+2026-06-20 10:15:03 status half-configured openssl:amd64 3.0.7-1

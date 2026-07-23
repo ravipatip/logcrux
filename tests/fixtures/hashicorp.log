@@ -1,0 +1,5 @@
+2026-06-20T10:23:45.123Z [INFO]  agent: Started Consul agent
+2026-06-20T10:23:46.456Z [INFO]  raft: initial configuration: index=1 servers=3
+2026-06-20T10:23:47.789Z [WARN]  raft: heartbeat timeout reached, starting election: last-leader=
+2026-06-20T10:23:48.012Z [ERROR] agent: Coordinate update error: error="No cluster leader"
+2026-06-20T10:23:49.345Z [ERROR] core: failed to unseal: error="connection refused"

@@ -1,0 +1,8 @@
+2026/06/28 10:15:01 [1234] rsyncd version 3.2.7 starting, listening on port 873
+2026/06/28 10:15:02 [1240] connect from backup-client (203.0.113.5)
+2026/06/28 10:15:03 [1240] rsync allowed access on module backups from backup-client (203.0.113.5)
+2026/06/28 10:15:04 [1240] rsync to backups/daily/ from backup-client (203.0.113.5)
+2026/06/28 10:15:05 [1240] sent 1048576 bytes  received 4096 bytes  total size 524288000
+2026/06/28 10:15:06 [1241] connect from unknown (198.51.100.9)
+2026/06/28 10:15:07 [1241] rsync: auth failed on module backups from unknown (198.51.100.9): password mismatch
+2026/06/28 10:15:08 [1242] rsync error: error in rsync protocol data stream (code 12) at io.c(228)

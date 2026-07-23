@@ -1,0 +1,10 @@
+Collecting requests==2.31.0
+  Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+Collecting urllib3<3,>=1.21.1
+  Using cached urllib3-2.2.1-py3-none-any.whl (121 kB)
+Requirement already satisfied: certifi in ./venv/lib/python3.11/site-packages (from requests==2.31.0) (2024.2.2)
+Installing collected packages: urllib3, requests
+WARNING: You are using pip version 21.0; however, version 24.0 is available.
+ERROR: Could not find a version that satisfies the requirement nonexistent-pkg (from versions: none)
+ERROR: No matching distribution found for nonexistent-pkg
+Successfully installed requests-2.31.0 urllib3-2.2.1

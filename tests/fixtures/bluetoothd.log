@@ -1,0 +1,5 @@
+Jun 28 10:15:01 host bluetoothd[1234]: Bluetooth daemon 5.66
+Jun 28 10:15:02 host bluetoothd[1234]: Starting SDP server
+Jun 28 10:15:03 host bluetoothd[1234]: Endpoint registered: sender=:1.42 path=/MediaEndpoint/A2DPSink
+Jun 28 10:15:04 host bluetoothd[1234]: Failed to set mode: Blocked through rfkill (0x12)
+Jun 28 10:15:05 host bluetoothd[1234]: profiles/audio/avdtp.c:session_cb() Disconnect: Connection timed out

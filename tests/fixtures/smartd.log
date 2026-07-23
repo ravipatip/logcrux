@@ -1,0 +1,5 @@
+Jun 20 10:23:45 host smartd[1234]: Device: /dev/sda [SAT], opened
+Jun 20 10:23:46 host smartd[1234]: Device: /dev/sda [SAT], SMART Usage Attribute: 194 Temperature_Celsius changed from 35 to 41
+Jun 20 10:23:47 host smartd[1234]: Device: /dev/sda [SAT], 5 Currently unreadable (pending) sectors
+Jun 20 10:23:48 host smartd[1234]: Device: /dev/sdb [SAT], FAILED SMART self-check. BACK UP DATA NOW!
+Jun 20 10:23:49 host smartd[1234]: Device: /dev/sdb [SAT], ATA error count increased from 0 to 3

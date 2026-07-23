@@ -1,0 +1,5 @@
+2026-06-28 10:15:01.123:INFO:oejs.Server:main: jetty-11.0.15; built: 2023-04-11
+2026-06-28 10:15:02.234:INFO:oejsh.ContextHandler:main: Started o.e.j.w.WebAppContext@1a2b
+2026-06-28 10:15:03.345:WARN:oejw.WebInfConfiguration:main: Web application not unpacked, deploy slow
+2026-06-28 10:15:04.456:WARN:oejx.XmlConfiguration:main: FAILED to start connector on port 8080
+2026-06-28 10:15:05.567:INFO:oejs.AbstractConnector:main: Started ServerConnector@3c on 0.0.0.0:8080

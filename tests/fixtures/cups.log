@@ -1,0 +1,5 @@
+I [20/Jun/2026:10:23:45 +0000] Listening to 127.0.0.1:631 (IPv4)
+I [20/Jun/2026:10:23:46 +0000] Loading job cache file "/var/spool/cups/job.cache"
+W [20/Jun/2026:10:23:47 +0000] CreateProfile failed: org.freedesktop.ColorManager.AlreadyExists
+E [20/Jun/2026:10:23:48 +0000] Unable to open listen socket for address [v1.::1]:631 - Address already in use
+E [20/Jun/2026:10:23:49 +0000] [Job 42] Stopping unresponsive job
