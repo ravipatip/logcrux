@@ -1,0 +1,9 @@
+INFO: Analyzed target //src:app (45 packages loaded, 1203 targets configured).
+INFO: Found 1 target...
+INFO: From Compiling src/main.cc:
+ERROR: /workspace/src/BUILD:10:11: Compiling src/main.cc failed: (Exit 1): gcc failed: error executing command
+src/main.cc:42:5: error: 'undeclared_var' was not declared in this scope
+WARNING: /workspace/src/BUILD:20:8: target '//src:legacy' is deprecated
+INFO: Elapsed time: 12.345s, Critical Path: 5.67s
+INFO: 120 processes: 100 internal, 20 linux-sandbox.
+FAILED: Build did NOT complete successfully

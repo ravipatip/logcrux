@@ -1,0 +1,8 @@
+Jun 20 2026 10:15:01 fw1 : %ASA-6-302013: Built outbound TCP connection 12345 for outside:1.2.3.4/80 (1.2.3.4/80) to inside:10.0.0.5/44321
+Jun 20 2026 10:15:02 fw1 : %ASA-6-302014: Teardown TCP connection 12345 for outside:1.2.3.4/80 duration 0:00:05 bytes 1234
+Jun 20 2026 10:15:03 fw1 : %ASA-4-106023: Deny tcp src outside:198.51.100.7/55000 dst inside:10.0.0.5/22 by access-group "outside_in"
+Jun 20 2026 10:15:04 fw1 : %ASA-4-106023: Deny tcp src outside:198.51.100.7/55001 dst inside:10.0.0.5/22 by access-group "outside_in"
+Jun 20 2026 10:15:05 fw1 : %ASA-4-106023: Deny tcp src outside:198.51.100.7/55002 dst inside:10.0.0.5/22 by access-group "outside_in"
+Jun 20 2026 10:15:06 fw1 : %ASA-3-710003: TCP access denied by ACL from 198.51.100.7/55003 to outside:10.0.0.5/22
+Jun 20 2026 10:15:07 fw1 : %ASA-2-106001: Inbound TCP connection denied from 198.51.100.7/55004 to 10.0.0.5/22 flags SYN on interface outside
+Jun 20 2026 10:15:08 fw1 : %ASA-1-104001: (Primary) Switching to ACTIVE - failover state checking

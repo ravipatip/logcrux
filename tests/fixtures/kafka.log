@@ -1,0 +1,8 @@
+[2026-06-20 10:23:45,123] INFO Registered broker 0 at path /brokers/ids/0 (kafka.zk.KafkaZkClient)
+[2026-06-20 10:23:46,200] INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
+[2026-06-20 10:23:47,330] WARN [ReplicaManager broker=0] Produce request with correlation id 12 timed out (kafka.server.ReplicaManager)
+[2026-06-20 10:23:48,440] ERROR [KafkaApi-0] Error when handling request (kafka.server.KafkaApis)
+[2026-06-20 10:23:49,550] ERROR Closing socket for 10.0.0.5 because of error (kafka.network.Processor)
+[2026-06-20 10:23:50,660] WARN [Controller id=0] Broker 1 failed to send heartbeat (kafka.controller.KafkaController)
+[2026-06-20 10:23:51,770] FATAL [KafkaServer id=0] Fatal error during shutdown (kafka.server.KafkaServer)
+[2026-06-20 10:23:52,880] INFO [GroupCoordinator 0] Preparing to rebalance group app-consumers (kafka.coordinator.group.GroupCoordinator)

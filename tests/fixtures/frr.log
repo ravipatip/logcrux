@@ -1,0 +1,5 @@
+Jun 28 10:15:01 router bgpd[1235]: %NOTIFICATION: sent to neighbor 10.0.0.3 4/0 (Hold Timer Expired)
+Jun 28 10:15:02 router bgpd[1235]: %ADJCHANGE: neighbor 10.0.0.2(spine1) in vrf default Up
+Jun 28 10:15:03 router ospfd[1236]: interface eth0 down
+Jun 28 10:15:04 router zebra[1234]: [EC 4043309089] netlink-dp: error: No such device or address
+Jun 28 10:15:05 router staticd[1237]: route 10.1.0.0/16 installed in rib

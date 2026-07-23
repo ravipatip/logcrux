@@ -1,0 +1,4 @@
+{"level":30,"time":1718877301123,"pid":12,"hostname":"web01","msg":"server listening on :3000"}
+{"level":40,"time":1718877302456,"pid":12,"hostname":"web01","msg":"slow response detected","reqId":"a1"}
+{"level":50,"time":1718877303789,"pid":12,"hostname":"web01","msg":"unhandled rejection","err":{"type":"Error"}}
+{"level":30,"time":1718877304000,"pid":12,"hostname":"web01","msg":"request completed"}

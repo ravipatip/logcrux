@@ -1,0 +1,11 @@
+{
+  "id2label": {
+    "0": "auth_brute_force",
+    "1": "config_error",
+    "2": "disk_full",
+    "3": "http_overload",
+    "4": "network_issue",
+    "5": "oom",
+    "6": "service_crash"
+  }
+}

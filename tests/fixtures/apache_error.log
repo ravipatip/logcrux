@@ -1,0 +1,5 @@
+[Mon Jun 16 03:41:00.123456 2026] [error] [pid 1234] [client 10.0.1.52:43210] File does not exist: /var/www/html/favicon.ico
+[Mon Jun 16 03:41:01.234567 2026] [error] [pid 1235] [client 10.0.1.53:43211] AH01276: Cannot serve directory /var/www/html/uploads/: No matching DirectoryIndex
+[Mon Jun 16 03:42:00.345678 2026] [crit] [pid 1236] [client 10.0.1.54:43212] SSL handshake failed
+[Mon Jun 16 03:42:01.456789 2026] [warn] [pid 1237] mod_fcgid: read data timeout in 45 seconds
+[Mon Jun 16 03:42:02.567890 2026] [error] [pid 1238] [client 10.0.1.55:43213] Premature end of script headers: app.py

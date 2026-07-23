@@ -1,0 +1,8 @@
+{"t":{"$date":"2026-06-20T10:23:45.123+00:00"},"s":"I","c":"NETWORK","id":22943,"ctx":"listener","msg":"Connection accepted","attr":{"remote":"10.0.0.5:51002","connectionId":42}}
+{"t":{"$date":"2026-06-20T10:23:46.001+00:00"},"s":"I","c":"NETWORK","id":51800,"ctx":"conn42","msg":"client metadata","attr":{"driver":{"name":"mongo-go-driver"}}}
+{"t":{"$date":"2026-06-20T10:23:47.500+00:00"},"s":"W","c":"STORAGE","id":22347,"ctx":"conn42","msg":"Failed to start up WiredTiger under any compatibility version"}
+{"t":{"$date":"2026-06-20T10:23:48.220+00:00"},"s":"E","c":"STORAGE","id":20557,"ctx":"conn42","msg":"Assertion while reading collection","attr":{"error":"WriteConflict"}}
+{"t":{"$date":"2026-06-20T10:23:49.900+00:00"},"s":"F","c":"CONTROL","id":4757800,"ctx":"main","msg":"Wrong mongod version","attr":{"error":"UPGRADE PROBLEM"}}
+{"t":{"$date":"2026-06-20T10:23:50.010+00:00"},"s":"I","c":"REPL","id":21215,"ctx":"replication","msg":"Member is now in state PRIMARY"}
+2026-06-20T10:23:51.123+0000 I NETWORK  [listener] connection accepted from 10.0.0.6:51010 #43
+2026-06-20T10:23:52.456+0000 E STORAGE  [conn43] WiredTiger error (28) No space left on device

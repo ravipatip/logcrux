@@ -1,0 +1,5 @@
+time="2026-06-23T10:23:45.123456789Z" level=info msg="starting containerd" revision=abcdef version=v1.7.0
+time="2026-06-23T10:23:45.200000000Z" level=info msg="loading plugin" type=io.containerd.grpc.v1
+time="2026-06-23T10:23:46.300000000Z" level=warning msg="failed to load plugin io.containerd.tracing" error="no OpenTelemetry endpoint"
+time="2026-06-23T10:23:47.400000000Z" level=error msg="failed to start containerd" error="address already in use"
+time="2026-06-23T10:23:48.500000000Z" level=info msg="containerd successfully booted in 0.42s"

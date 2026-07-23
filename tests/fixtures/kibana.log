@@ -1,0 +1,5 @@
+log   [10:15:01.123] [info][listening] Server running at http://0.0.0.0:5601
+log   [10:15:02.234] [info][status][plugin:elasticsearch@7.10.0] Status changed from yellow to green
+log   [10:15:03.345] [warning][process] memwatch:leak detected, heap growth over 5 consecutive GCs
+log   [10:15:04.456] [error][elasticsearch][admin] Request error, retrying GET http://localhost:9200/.kibana
+log   [10:15:05.567] [info][server][Kibana][http] http server running at http://0.0.0.0:5601

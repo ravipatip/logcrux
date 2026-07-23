@@ -1,0 +1,8 @@
+2026/06/20 10:15:01 Interface state was Down, requested Up, now Up
+2026/06/20 10:15:02 peer(HIgo…AbCd) - Sending handshake initiation
+2026/06/20 10:15:03 peer(HIgo…AbCd) - Received handshake response
+2026/06/20 10:15:04 peer(HIgo…AbCd) - Sending keepalive packet
+2026/06/20 10:15:05 peer(Zx9q…Ef12) - Handshake did not complete after 5 seconds, retrying (try 2)
+2026/06/20 10:15:06 peer(Zx9q…Ef12) - Handshake did not complete after 5 seconds, retrying (try 3)
+2026/06/20 10:15:07 peer(Zx9q…Ef12) - Failed to send handshake initiation: no known endpoint for peer
+2026/06/20 10:15:08 peer(Zx9q…Ef12) - Received packet with invalid mac1

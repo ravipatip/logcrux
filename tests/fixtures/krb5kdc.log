@@ -1,0 +1,6 @@
+Jun 28 10:15:01 kdc1 krb5kdc[1234](info): AS_REQ (8 etypes {18 17 16 23 24 -135 3 1}) 203.0.113.5: ISSUE: authtime 1782000901, etypes {rep=18 tkt=18 ses=18}, alice@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM
+Jun 28 10:15:02 kdc1 krb5kdc[1234](info): TGS_REQ (8 etypes {18 17 16 23 24 -135 3 1}) 203.0.113.5: ISSUE: authtime 1782000901, etypes {rep=18 tkt=18 ses=18}, alice@EXAMPLE.COM for HTTP/web.example.com@EXAMPLE.COM
+Jun 28 10:15:03 kdc1 krb5kdc[1234](info): AS_REQ (8 etypes) 203.0.113.9: NEEDED_PREAUTH: bob@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM, Additional pre-authentication required
+Jun 28 10:15:04 kdc1 krb5kdc[1234](info): preauth (encrypted_timestamp) verify failure: Decrypt integrity check failed
+Jun 28 10:15:05 kdc1 krb5kdc[1234](info): AS_REQ (8 etypes) 203.0.113.9: CLIENT_NOT_FOUND: nosuch@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM, Client not found in Kerberos database
+Jun 28 10:15:06 kdc1 kadmind[1250](Notice): closing down fd 11

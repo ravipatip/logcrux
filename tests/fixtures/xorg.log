@@ -1,0 +1,9 @@
+[    12.345] (II) Server build date: 12 June 2026
+[    12.346] (II) LoadModule: "glx"
+[    12.347] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    12.348] (WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    12.349] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 12 paused 0
+[    12.350] (EE) Failed to load module "nvidia" (module does not exist, 0)
+[    12.351] (WW) NVIDIA: Falling back to the nouveau driver
+[    12.352] (II) modeset(0): Output HDMI-1 using initial mode 1920x1080
+[    12.353] (EE) systemd-logind: failed to take device /dev/dri/card1: No such device

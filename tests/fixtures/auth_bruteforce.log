@@ -1,0 +1,20 @@
+Jun 16 03:41:00 prod-web01 sshd[2001]: Failed password for root from 198.51.100.42 port 54001 ssh2
+Jun 16 03:41:01 prod-web01 sshd[2002]: Failed password for root from 198.51.100.42 port 54002 ssh2
+Jun 16 03:41:01 prod-web01 sshd[2003]: Failed password for admin from 198.51.100.42 port 54003 ssh2
+Jun 16 03:41:02 prod-web01 sshd[2004]: Failed password for ubuntu from 198.51.100.42 port 54004 ssh2
+Jun 16 03:41:02 prod-web01 sshd[2005]: Failed password for root from 198.51.100.99 port 12001 ssh2
+Jun 16 03:41:03 prod-web01 sshd[2006]: Failed password for root from 198.51.100.42 port 54005 ssh2
+Jun 16 03:41:03 prod-web01 sshd[2007]: Invalid user postgres from 198.51.100.42 port 54006
+Jun 16 03:41:04 prod-web01 sshd[2008]: Failed password for root from 198.51.100.42 port 54007 ssh2
+Jun 16 03:41:04 prod-web01 sshd[2009]: Connection closed by invalid user git 198.51.100.42 port 54008 [preauth]
+Jun 16 03:41:05 prod-web01 sshd[2010]: Failed password for root from 198.51.100.42 port 54009 ssh2
+Jun 16 03:41:05 prod-web01 sshd[2011]: Failed password for root from 198.51.100.42 port 54010 ssh2
+Jun 16 03:41:06 prod-web01 sshd[2012]: Failed password for root from 198.51.100.99 port 12002 ssh2
+Jun 16 03:41:06 prod-web01 sshd[2013]: Failed password for root from 198.51.100.42 port 54011 ssh2
+Jun 16 03:41:07 prod-web01 sshd[2014]: Failed password for root from 198.51.100.42 port 54012 ssh2
+Jun 16 03:41:07 prod-web01 sshd[2015]: Failed password for root from 198.51.100.42 port 54013 ssh2
+Jun 16 03:41:08 prod-web01 sshd[2016]: Failed password for root from 198.51.100.42 port 54014 ssh2
+Jun 16 03:41:08 prod-web01 sshd[2017]: Failed password for root from 198.51.100.42 port 54015 ssh2
+Jun 16 03:41:09 prod-web01 sshd[2018]: Failed password for root from 198.51.100.42 port 54016 ssh2
+Jun 16 03:41:09 prod-web01 sshd[2019]: Failed password for root from 198.51.100.42 port 54017 ssh2
+Jun 16 03:41:10 prod-web01 sshd[2020]: Failed password for root from 198.51.100.42 port 54018 ssh2

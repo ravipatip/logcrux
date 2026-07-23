@@ -1,0 +1,5 @@
+10:15:01.123 [info] Running MyAppWeb.Endpoint with cowboy 2.10 at 0.0.0.0:4000 (http)
+10:15:02.234 [info] Access MyAppWeb.Endpoint at http://localhost:4000
+10:15:03.345 [warning] Sending 500 (Internal Server Error) in 1ms
+10:15:04.456 [error] GenServer #PID<0.512.0> terminating ** (RuntimeError) boom
+10:15:05.567 [debug] QUERY OK source="users" db=2.1ms SELECT u0."id" FROM "users"

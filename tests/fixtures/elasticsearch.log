@@ -1,0 +1,8 @@
+[2026-06-20T10:23:45,123][INFO ][o.e.n.Node               ] [es-node-1] starting ...
+[2026-06-20T10:23:46,200][INFO ][o.e.t.TransportService   ] [es-node-1] publish_address {10.0.0.5:9300}
+[2026-06-20T10:23:47,330][WARN ][o.e.c.r.a.DiskThresholdMonitor] [es-node-1] high disk watermark [90%] exceeded on [node][/var/data] free: 4.2gb[7%]
+[2026-06-20T10:23:48,440][ERROR][o.e.b.ElasticsearchUncaughtExceptionHandler] [es-node-1] fatal error in thread [main]
+[2026-06-20T10:23:49,550][WARN ][o.e.c.c.ClusterFormationFailureHelper] [es-node-1] master not discovered yet
+[2026-06-20T10:23:50,660][INFO ][o.e.c.s.ClusterApplierService] [es-node-1] added {{es-node-2}}, reason: node join
+[2026-06-20T10:23:51,770][ERROR][o.e.x.m.e.l.LocalExporter] [es-node-1] failed to flush export bulks
+[2026-06-20T10:23:52,880][DEBUG][o.e.a.s.TransportSearchAction] [es-node-1] All shards failed for phase: [query]

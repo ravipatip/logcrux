@@ -1,0 +1,5 @@
+Jun 28 10:15:01 192.168.88.1 system,info,account user admin logged in from 10.0.0.5 via winbox
+Jun 28 10:15:02 192.168.88.1 firewall,info forward: in:ether1 out:ether2, proto TCP, 10.0.0.5:51000->1.1.1.1:443
+Jun 28 10:15:03 192.168.88.1 wireless,info wlan1: client AA:BB:CC:DD:EE:FF connected, signal -62
+Jun 28 10:15:04 192.168.88.1 dhcp,warning dhcp1 no free addresses in the pool
+Jun 28 10:15:05 192.168.88.1 system,error,critical login failure for user admin from 10.0.0.9 via ssh

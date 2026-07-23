@@ -1,0 +1,7 @@
+{"version":"1.1","host":"web01","short_message":"Started application","timestamp":1718880225.123,"level":6,"_app":"checkout"}
+{"version":"1.1","host":"web01","short_message":"Cache warmed","timestamp":1718880226.001,"level":6,"_app":"checkout"}
+{"version":"1.1","host":"web01","short_message":"Slow query detected","full_message":"SELECT ... took 5s","timestamp":1718880230.500,"level":4,"_app":"checkout","_duration_ms":5000}
+{"version":"1.1","host":"web02","short_message":"Failed to connect to database","timestamp":1718880231.000,"level":3,"_app":"checkout","_error":"timeout"}
+{"version":"1.1","host":"web02","short_message":"Failed to connect to database","timestamp":1718880232.000,"level":3,"_app":"checkout","_error":"timeout"}
+{"version":"1.1","host":"web02","short_message":"Connection pool exhausted","timestamp":1718880233.000,"level":2,"_app":"checkout"}
+{"version":"1.1","host":"web02","short_message":"Unhandled exception in request handler","timestamp":1718880234.000,"level":3,"_app":"checkout"}

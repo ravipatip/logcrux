@@ -1,0 +1,10 @@
+10.0.1.10 - - [16/Jun/2026:10:00:00 +0000] "GET http://example.com/ HTTP/1.1" 200 1234
+10.0.1.11 - johndoe [16/Jun/2026:10:00:01 +0000] "GET http://api.example.com/data HTTP/1.1" 200 5678
+10.0.1.12 - - [16/Jun/2026:10:00:02 +0000] "POST http://api.example.com/login HTTP/1.1" 200 512
+10.0.1.13 - - [16/Jun/2026:10:00:03 +0000] "GET http://cdn.example.com/app.js HTTP/1.1" 200 98765
+10.0.1.14 - - [16/Jun/2026:10:00:04 +0000] "GET http://static.example.com/style.css HTTP/1.1" 200 2048
+10.0.1.15 - - [16/Jun/2026:10:00:05 +0000] "GET http://example.com/about HTTP/1.1" 200 4321
+10.0.1.16 - - [16/Jun/2026:10:00:06 +0000] "GET http://example.com/contact HTTP/1.1" 200 3456
+10.0.1.17 - - [16/Jun/2026:10:00:07 +0000] "GET http://example.com/products HTTP/1.1" 200 6789
+10.0.1.18 - - [16/Jun/2026:10:00:08 +0000] "GET http://api.example.com/users HTTP/1.1" 200 1024
+10.0.1.19 - - [16/Jun/2026:10:00:09 +0000] "GET http://example.com/index.html HTTP/1.1" 404 512

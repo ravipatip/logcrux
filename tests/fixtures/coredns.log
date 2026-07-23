@@ -1,0 +1,5 @@
+[INFO] plugin/reload: Running configuration MD5 = abc123def456
+[INFO] CoreDNS-1.11.1
+[INFO] 10.0.0.5:5353 - 12345 "A IN example.com. udp 30 false 512" NOERROR qr,rd,ra 56 0.001s
+[ERROR] plugin/errors: 2 example.com. A: read udp 10.0.0.2:53->8.8.8.8:53: i/o timeout
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s

@@ -1,0 +1,8 @@
+2026-06-28 10:15:01,123 [salt.utils.process                          :1100][INFO    ][1234] Process manager starting
+2026-06-28 10:15:02,234 [salt.minion                                 :2300][INFO    ][1234] Minion is starting as user 'root'
+2026-06-28 10:15:03,345 [salt.minion                                 :1050][INFO    ][1234] Minion 'minion-01' trying to tune in
+2026-06-28 10:15:04,456 [salt.crypt                                  :600 ][INFO    ][1234] Generating keys: /etc/salt/pki/minion
+2026-06-28 10:15:05,567 [salt.minion                                 :2400][WARNING ][1234] Master ip address changed from 10.0.0.1 to 10.0.0.2
+2026-06-28 10:15:06,678 [salt.crypt                                  :800 ][ERROR   ][1234] Authentication attempt failed! The master key may have changed
+2026-06-28 10:15:07,789 [salt.state                                  :320 ][INFO    ][1234] Running state [nginx] at time 10:15:07
+2026-06-28 10:15:08,890 [salt.state                                  :980 ][ERROR   ][1234] The named service nginx is not available

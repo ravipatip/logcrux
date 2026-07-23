@@ -1,0 +1,5 @@
+2026-06-23 10:23:45,123 - util.py[DEBUG]: Cloud-init v. 23.4 running 'init-local'
+2026-06-23 10:23:46,223 - stages.py[INFO]: Running module set_hostname
+2026-06-23 10:23:47,323 - url_helper.py[WARNING]: Calling http://169.254.169.254/ failed [0/120s]: request error
+2026-06-23 10:23:48,423 - util.py[WARNING]: Failed to fetch metadata, retrying
+2026-06-23 10:23:49,523 - cc_final_message.py[INFO]: The system is finally up, after 14.20 seconds

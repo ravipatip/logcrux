@@ -1,0 +1,4 @@
+{"@level":"info","@message":"Terraform 1.8.0","@module":"terraform.ui","@timestamp":"2026-06-23T10:23:45.123456Z"}
+{"@level":"info","@message":"aws_instance.web: Creating...","@module":"terraform.ui","@timestamp":"2026-06-23T10:23:46.223456Z"}
+{"@level":"warn","@message":"Warning: Argument is deprecated","@module":"terraform.ui","@timestamp":"2026-06-23T10:23:47.323456Z"}
+{"@level":"error","@message":"Error: creating EC2 Instance: InsufficientInstanceCapacity","@module":"terraform.ui","@timestamp":"2026-06-23T10:23:48.423456Z","diagnostic":{"severity":"error","summary":"creating EC2 Instance","detail":"We currently do not have sufficient capacity in the requested AZ"}}

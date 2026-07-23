@@ -1,0 +1,7 @@
+I260628 10:15:01.123456 1 server/server.go:1600 ⋮ [n1] CockroachDB node starting at 2026-06-28 10:15:01
+I260628 10:15:02.234567 55 server/server.go:1700 ⋮ [n1] node connected via gossip
+W260628 10:15:03.345678 89 kv/kvserver/replica_range_lease.go:1100 ⋮ [n1,s1,r5/1:/Table/5{0-1}] have been waiting 1.0s attempting to acquire lease
+E260628 10:15:04.456789 7 server/node.go:500 ⋮ [n1] failed to gossip descriptor: connection refused
+I260628 10:15:05.567890 12 sql/sqlliveness/slinstance/slinstance.go:300 ⋮ [n1] created new SQL liveness session
+W260628 10:15:06.678901 34 kv/kvserver/store.go:2900 ⋮ [n1,s1] handle raft ready: 1.2s
+F260628 10:15:07.789012 99 server/server.go:2000 ⋮ [n1] disk full: no space left on device

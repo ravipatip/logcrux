@@ -1,0 +1,8 @@
+2026-06-20 10:23:45 1tABCD-001AB2-3C <= sender@example.com H=mail.example.com [203.0.113.5] P=esmtps S=2345 id=abc@example.com
+2026-06-20 10:23:46 1tABCD-001AB2-3C => user@dest.com R=dnslookup T=remote_smtp H=mx.dest.com [198.51.100.7]
+2026-06-20 10:23:47 1tABCD-001AB2-3C Completed
+2026-06-20 10:23:48 1tEFGH-002CD3-4D ** bad@nowhere.invalid: Unrouteable address
+2026-06-20 10:23:49 1tIJKL-003EF4-5E == slow@dest.com R=dnslookup defer (-44): SMTP timeout on connection to mx.dest.com
+2026-06-20 10:23:50 H=(spammer) [192.0.2.9] F=<phish@bad.com> rejected RCPT <victim@example.com>: relay not permitted
+2026-06-20 10:23:51 fixed_login authenticator failed for (spammer) [192.0.2.9]: 535 Incorrect authentication data
+2026-06-20 10:23:52 1tMNOP-004GH5-6F <= bounce@example.com H=localhost [127.0.0.1] P=local S=512

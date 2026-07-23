@@ -1,0 +1,5 @@
+Jun 16 09:00:00 prod-web01 sshd[5678]: Accepted publickey for deploy from 10.0.1.10 port 43210 ssh2
+Jun 16 09:00:05 prod-web01 systemd[1]: Started Session 42 of user deploy.
+Jun 16 09:01:00 prod-web01 cron[999]: (root) CMD (/usr/bin/run-parts /etc/cron.hourly)
+Jun 16 09:05:00 prod-web01 kernel: [234567.000] NET: Registered PF_INET6 protocol family
+Jun 16 09:10:00 prod-web01 sshd[5679]: Disconnected from user deploy 10.0.1.10 port 43210

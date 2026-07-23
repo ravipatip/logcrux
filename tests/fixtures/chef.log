@@ -1,0 +1,8 @@
+[2026-06-28T10:15:01+00:00] INFO: Chef Infra Client, version 18.3.0
+[2026-06-28T10:15:02+00:00] INFO: Run List is [recipe[nginx::default]]
+[2026-06-28T10:15:03+00:00] INFO: Starting Chef Infra Client Run
+[2026-06-28T10:15:04+00:00] WARN: Cookbook 'apt' is empty, skipping
+[2026-06-28T10:15:05+00:00] INFO: Processing package[nginx] action install
+[2026-06-28T10:15:06+00:00] INFO: Converging 12 resources
+[2026-06-28T10:15:07+00:00] ERROR: Running exception handlers for resource service[nginx]
+[2026-06-28T10:15:08+00:00] FATAL: Stacktrace dumped to /var/chef/cache/chef-stacktrace.out
