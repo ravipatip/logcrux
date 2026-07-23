@@ -1,0 +1,4 @@
+2026-06-20 10:15:01,123 - myapp.server - INFO - Starting application
+2026-06-20 10:15:02,456 - myapp.db - WARNING - Connection pool nearly exhausted
+2026-06-20 10:15:03,789 - myapp.db - ERROR - database connection failed: timeout
+2026-06-20 10:15:04,000 - myapp.worker - CRITICAL - worker process died unexpectedly

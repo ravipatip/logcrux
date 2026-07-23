@@ -1,0 +1,7 @@
+INFO:     Started server process [12345]
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54321 - "GET /api/health HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     127.0.0.1:54322 - "GET /missing HTTP/1.1" 404 Not Found
+ERROR:    Exception in ASGI application
+INFO:     10.0.0.5:51000 - "POST /api/pay HTTP/1.1" 500 Internal Server Error

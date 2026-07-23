@@ -1,0 +1,10 @@
+May 19 10:15:01 ns01 named[1234]: zone example.com/IN: loaded serial 2024051901
+May 19 10:15:02 ns01 named[1234]: client @0x7f1a 1.2.3.4#54321 (evil.com): query (cache) 'evil.com/A/IN' denied
+May 19 10:15:03 ns01 named[1234]: network unreachable resolving 'a.example.org/A/IN': 2001:db8::1#53
+May 19 10:15:04 ns01 named[1234]: lame server resolving 'b.example.net' (in 'example.net'?): 9.9.9.9#53
+May 19 10:15:05 ns01 named[1234]: client 5.6.7.8#1234 (x.com): query failed (SERVFAIL) for x.com/IN/A
+May 19 10:15:06 ns01 named[1234]: zone db.broken/IN: zone serial (0) unchanged. zone may fail to transfer to slaves.
+May 19 10:15:07 ns01 named[1234]: refused notify from non-master 10.0.0.9#53 for 'example.com'
+May 19 10:15:08 ns01 named[1234]: managed-keys-zone: Key download failed: timed out
+May 19 10:15:09 ns01 named[1234]: too many timeouts resolving 'slow.example.com/A' disabling EDNS
+May 19 10:15:10 ns01 named[1234]: running

@@ -1,0 +1,5 @@
+{"log":"Starting application server on port 8080\n","stream":"stdout","time":"2026-06-19T10:00:01.123456789Z"}
+{"log":"Connected to database at 10.0.1.5:5432\n","stream":"stdout","time":"2026-06-19T10:00:02.234567890Z"}
+{"log":"ERROR: Failed to connect to Redis at 10.0.1.6:6379: connection refused\n","stream":"stderr","time":"2026-06-19T10:00:03.345678901Z"}
+{"log":"WARNING: Cache miss rate above 80%, performance degraded\n","stream":"stdout","time":"2026-06-19T10:00:04.456789012Z"}
+{"log":"panic: runtime error: index out of range [5] with length 3\n","stream":"stderr","time":"2026-06-19T10:00:05.567890123Z"}

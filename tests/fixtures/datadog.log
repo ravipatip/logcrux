@@ -1,0 +1,7 @@
+2026-06-20 10:15:01 UTC | CORE | INFO | (pkg/collector/runner/runner.go:340 in work) | Running check apache
+2026-06-20 10:15:02 UTC | CORE | INFO | (pkg/forwarder/forwarder.go:412 in init) | Forwarder started, sending to 1 endpoint
+2026-06-20 10:15:03 UTC | CORE | WARN | (pkg/forwarder/transaction/transaction.go:392 in process) | Failed to post transaction, rescheduling it: dial tcp 10.0.0.30:443: connect: connection refused
+2026-06-20 10:15:04 UTC | CORE | WARN | (pkg/forwarder/transaction/transaction.go:392 in process) | Failed to post transaction, rescheduling it: dial tcp 10.0.0.30:443: connect: connection refused
+2026-06-20 10:15:05 UTC | CORE | ERROR | (pkg/aggregator/aggregator.go:721 in flush) | Error flushing series: too many metrics, dropping
+2026-06-20 10:15:06 UTC | APM | ERROR | (pkg/trace/api/api.go:213 in handleTraces) | Could not decode trace payload: unexpected EOF
+2026-06-20 10:15:07 UTC | CORE | INFO | (pkg/collector/runner/runner.go:340 in work) | Running check disk

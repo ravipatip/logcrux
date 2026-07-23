@@ -1,0 +1,6 @@
+Jun 20 10:23:45 vpngw charon[1234]: 05[IKE] initiating IKE_SA gw[1] to 5.6.7.8
+Jun 20 10:23:46 vpngw charon[1234]: 12[NET] sending packet: from 1.2.3.4[500] to 5.6.7.8[500]
+Jun 20 10:23:47 vpngw charon[1234]: 09[IKE] establishing IKE_SA failed, peer not responding
+Jun 20 10:23:48 vpngw charon[1234]: 11[IKE] retransmit 3 of request with message ID 0
+Jun 20 10:23:49 vpngw charon[1234]: 07[IKE] CHILD_SA net{2} established with SPIs c1/c2
+Jun 20 10:23:50 vpngw charon[1234]: 04[CFG] no matching peer config found for 9.9.9.9

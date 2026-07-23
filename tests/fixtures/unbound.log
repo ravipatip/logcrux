@@ -1,0 +1,4 @@
+[1718877301] unbound[12345:0] info: start of service (unbound 1.17.0).
+[1718877302] unbound[12345:0] notice: remote control failed
+[1718877303] unbound[12345:0] error: bind: address already in use
+[1718877304] unbound[12345:0] info: service stopped (unbound 1.17.0).

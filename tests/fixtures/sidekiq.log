@@ -1,0 +1,7 @@
+2026-06-28T10:15:01.123Z 1 TID-oabc12 INFO: Booting Sidekiq 7.1.0 with Sidekiq::RedisConnection::RedisAdapter options
+2026-06-28T10:15:02.234Z pid=1 tid=abc class=HardWorker jid=9f8e7d6c5b4a INFO: start
+2026-06-28T10:15:03.345Z pid=1 tid=abc class=HardWorker jid=9f8e7d6c5b4a INFO: done: 1.102 sec
+2026-06-28T10:15:04.456Z pid=1 tid=def class=MailerWorker jid=1a2b3c4d5e6f INFO: start
+2026-06-28T10:15:05.567Z pid=1 tid=def class=MailerWorker jid=1a2b3c4d5e6f WARN: Retrying job due to SMTP timeout
+2026-06-28T10:15:06.678Z pid=1 tid=def class=MailerWorker jid=1a2b3c4d5e6f ERROR: Job raised exception: Net::SMTPError
+2026-06-28T10:15:07.789Z 1 TID-oabc12 INFO: Shutting down

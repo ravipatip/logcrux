@@ -1,0 +1,5 @@
+lxc web 20260628101501.234 INFO     confile - confile.c: set_config_idmaps: 2167 - read uid map
+lxc web 20260628101502.345 NOTICE   start - start.c: lxc_init: 882 - container "web" is initialized
+lxc web 20260628101503.456 WARN     cgfsng - cgroups/cgfsng.c: mkdir_eexist_on_last: 1213 - cgroup already exists
+lxc web 20260628101504.567 ERROR    conf - conf.c: run_buffer: 322 - script exited with status 1
+lxc web 20260628101505.678 ERROR    start - start.c: __lxc_start: 2008 - failed to spawn container "web"

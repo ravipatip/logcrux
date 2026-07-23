@@ -1,0 +1,6 @@
+2026-06-28 10:15:01.123456789 +0000 UTC container create 0a1b2c3d4e5f (image=docker.io/library/nginx:latest, name=web)
+2026-06-28 10:15:02.234567890 +0000 UTC container init 0a1b2c3d4e5f (image=docker.io/library/nginx:latest, name=web)
+2026-06-28 10:15:03.345678901 +0000 UTC container start 0a1b2c3d4e5f (image=docker.io/library/nginx:latest, name=web)
+2026-06-28 10:15:04.456789012 +0000 UTC image pull docker.io/library/redis:7
+2026-06-28 10:15:05.567890123 +0000 UTC container died 0a1b2c3d4e5f (image=docker.io/library/nginx:latest, name=web, exitCode=1)
+2026-06-28 10:15:06.678901234 +0000 UTC container remove 0a1b2c3d4e5f (image=docker.io/library/nginx:latest, name=web)

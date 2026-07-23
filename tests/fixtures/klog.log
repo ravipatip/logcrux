@@ -1,0 +1,6 @@
+I0623 10:23:45.123456   12345 server.go:123] Starting kube-apiserver
+I0623 10:23:45.223456   12345 server.go:200] Serving securely on 0.0.0.0:6443
+W0623 10:23:46.323456   12345 reflector.go:138] watch of *v1.Pod ended with: too old resource version
+E0623 10:23:47.423456   12345 controller.go:310] failed to sync cache for admission
+E0623 10:23:48.523456   12345 controller.go:311] timed out waiting for caches to sync
+I0623 10:23:49.623456   12345 trace.go:205] Trace[1]: "GuaranteedUpdate etcd3" (took 800ms)

@@ -1,0 +1,5 @@
+Jun 28 10:15:01 host rsyslogd: [origin software="rsyslogd" swVersion="8.2302.0" x-pid="1234" x-info="https://www.rsyslog.com"] start
+Jun 28 10:15:02 host rsyslogd: rsyslogd's groupid changed to 110
+Jun 28 10:15:03 host rsyslogd: action 'action-0-builtin:omfwd' suspended (module 'builtin:omfwd'), retry 0
+Jun 28 10:15:04 host rsyslogd: cannot connect to 10.0.0.9:514: Connection refused [v8.2302.0 try https://www.rsyslog.com/e/2027 ]
+Jun 28 10:15:05 host rsyslogd: action 'action-0-builtin:omfwd' resumed (module 'builtin:omfwd')

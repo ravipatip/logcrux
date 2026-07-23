@@ -1,0 +1,5 @@
+2026/06/28 10:15:01 starting server on :8080
+2026/06/28 10:15:02 main.go:42: loaded 12 routes from config
+2026/06/28 10:15:03 cache.go:88: WARN cache miss for key=session:abc retrying
+2026/06/28 10:15:04 db.go:19: ERROR failed to connect to database: dial tcp 127.0.0.1:5432 connection refused
+2026/06/28 10:15:05 shutdown complete

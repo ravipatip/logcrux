@@ -1,0 +1,8 @@
+Jun 28 10:15:01 laptop wpa_supplicant[1234]: wlan0: SME: Trying to authenticate with aa:bb:cc:dd:ee:ff (SSID='HomeWiFi' freq=5180 MHz)
+Jun 28 10:15:02 laptop wpa_supplicant[1234]: wlan0: Trying to associate with aa:bb:cc:dd:ee:ff (SSID='HomeWiFi' freq=5180 MHz)
+Jun 28 10:15:03 laptop wpa_supplicant[1234]: wlan0: Associated with aa:bb:cc:dd:ee:ff
+Jun 28 10:15:04 laptop wpa_supplicant[1234]: wlan0: WPA: Key negotiation completed with aa:bb:cc:dd:ee:ff [PTK=CCMP GTK=CCMP]
+Jun 28 10:15:05 laptop wpa_supplicant[1234]: wlan0: CTRL-EVENT-CONNECTED - Connection to aa:bb:cc:dd:ee:ff completed [id=0 id_str=]
+Jun 28 10:15:06 laptop wpa_supplicant[1234]: wlan0: CTRL-EVENT-DISCONNECTED bssid=aa:bb:cc:dd:ee:ff reason=3 locally_generated=1
+Jun 28 10:15:07 laptop wpa_supplicant[1234]: wlan0: CTRL-EVENT-SSID-TEMP-DISABLED id=0 ssid="HomeWiFi" auth_failures=1 duration=10 reason=WRONG_KEY
+Jun 28 10:15:08 laptop wpa_supplicant[1234]: wlan0: CTRL-EVENT-SCAN-FAILED ret=-16 retry=1

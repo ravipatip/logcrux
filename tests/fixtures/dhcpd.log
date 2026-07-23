@@ -1,0 +1,10 @@
+May 19 10:15:01 gw01 dhcpd[1234]: DHCPDISCOVER from 00:0c:29:aa:bb:cc via eth0
+May 19 10:15:01 gw01 dhcpd[1234]: DHCPOFFER on 10.0.0.50 to 00:0c:29:aa:bb:cc via eth0
+May 19 10:15:01 gw01 dhcpd[1234]: DHCPREQUEST for 10.0.0.50 (10.0.0.1) from 00:0c:29:aa:bb:cc via eth0
+May 19 10:15:01 gw01 dhcpd[1234]: DHCPACK on 10.0.0.50 to 00:0c:29:aa:bb:cc via eth0
+May 19 10:15:05 gw01 dhcpd[1234]: DHCPNAK on 10.0.0.99 to 00:0c:29:dd:ee:ff via eth0
+May 19 10:15:10 gw01 dhcpd[1234]: no free leases on subnet 10.0.0.0/24
+May 19 10:15:11 gw01 dhcpd[1234]: DHCPDISCOVER from 00:0c:29:11:22:33 via eth0: network 10.0.0.0/24: no free leases
+May 19 10:15:20 gw01 dhcpd[1234]: DHCPRELEASE of 10.0.0.50 from 00:0c:29:aa:bb:cc via eth0 (found)
+May 19 10:15:25 gw01 dhcpd[1234]: Abandoning IP address 10.0.0.60: declined.
+May 19 10:15:30 gw01 dhcpd[1234]: ICMP Echo reply while lease 10.0.0.61 valid

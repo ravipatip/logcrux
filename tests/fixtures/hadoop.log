@@ -1,0 +1,7 @@
+2026-06-28 10:15:01,123 INFO  [main] org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: Starting NameNode
+2026-06-28 10:15:02,234 INFO  [main] org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Finished loading FSImage in 1024 msecs
+2026-06-28 10:15:03,345 INFO  [IPC Server handler 0 on 8020] org.apache.hadoop.hdfs.StateChange: BLOCK* allocate blk_1073741825_1001
+2026-06-28 10:15:04,456 WARN  [DataNode: heartbeating] org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+2026-06-28 10:15:05,567 ERROR [DataXceiver] org.apache.hadoop.hdfs.server.datanode.DataNode: Exception in receiveBlock for blk_1073741825_1001
+2026-06-28 10:15:06,678 INFO  [main] org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: registered UNIX signal handlers
+2026-06-28 10:15:07,789 WARN  [RMCommunicator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Could not contact RM after 1000 ms

@@ -1,0 +1,5 @@
+Jun 28 10:15:01 host kernel: [12345.678901] audit: type=1400 audit(1719569701.123:42): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=1234 comm="apparmor_parser"
+Jun 28 10:15:02 host kernel: [12346.111222] audit: type=1400 audit(1719569702.456:43): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/etc/shadow" pid=2222 comm="mysqld" requested_mask="r" denied_mask="r"
+Jun 28 10:15:03 host kernel: [12347.333444] audit: type=1400 audit(1719569703.789:44): apparmor="DENIED" operation="capable" profile="/usr/sbin/cupsd" pid=3333 comm="cupsd" capability=12 capname="net_admin"
+Jun 28 10:15:04 host kernel: [12348.555666] audit: type=1400 audit(1719569704.012:45): apparmor="ALLOWED" operation="exec" profile="/usr/bin/foo" name="/bin/sh" pid=4444 comm="foo"
+Jun 28 10:15:05 host kernel: [12349.777888] audit: type=1400 audit(1719569705.345:46): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/sshd"

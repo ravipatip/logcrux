@@ -1,0 +1,10 @@
+Jun 20 10:23:45 gw dnsmasq[1234]: started, version 2.85 cachesize 150
+Jun 20 10:23:46 gw dnsmasq[1234]: query[A] example.com from 10.0.0.5
+Jun 20 10:23:46 gw dnsmasq[1234]: reply example.com is 93.184.216.34
+Jun 20 10:23:47 gw dnsmasq[1234]: query[AAAA] cdn.example.net from 10.0.0.6
+Jun 20 10:23:48 gw dnsmasq[1234]: no servers reachable, all upstream DNS servers failed
+Jun 20 10:23:49 gw dnsmasq-dhcp[1234]: DHCPDISCOVER(eth0) 00:0c:29:aa:bb:cc
+Jun 20 10:23:49 gw dnsmasq-dhcp[1234]: DHCPACK(eth0) 10.0.0.50 00:0c:29:aa:bb:cc laptop
+Jun 20 10:23:50 gw dnsmasq[1234]: possible DNS-rebind attack detected: internal.corp
+Jun 20 10:23:51 gw dnsmasq-dhcp[1234]: not using configured address 10.0.0.60 because it is leased to 00:0c:29:dd:ee:ff
+Jun 20 10:23:52 gw dnsmasq[1234]: reducing DNS packet size for nameserver 8.8.8.8 to 1280

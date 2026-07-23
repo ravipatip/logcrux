@@ -1,0 +1,5 @@
+[2026-06-28 10:15:01.123456] I [MSGID: 100030] [glusterfsd.c:2867:main] 0-glusterfs: Started running version 11.0
+[2026-06-28 10:15:02.234567] I [MSGID: 0] [glusterfsd-mgmt.c:2362:mgmt_rpc_notify] 0-glusterfsd-mgmt: connected to remote
+[2026-06-28 10:15:03.345678] W [MSGID: 114031] [client-rpc-fops_v2.c:2860:client4_0_lookup_cbk] 0-gv0-client-1: remote operation failed
+[2026-06-28 10:15:04.456789] E [MSGID: 108006] [afr-common.c:5618:afr_notify] 0-gv0-replicate-0: All subvolumes are down. Going offline
+[2026-06-28 10:15:05.567890] C [MSGID: 101032] [graph.c:367:_log_subvol_failure] 0-management: caught SIGTERM, shutting down

@@ -1,0 +1,3 @@
+{"level":"INFO","errKind":"","time":"2026-06-20T10:15:01.123Z","message":"MinIO Object Storage Server started"}
+{"level":"WARNING","errKind":"ALL","time":"2026-06-20T10:15:02.000Z","message":"Disk usage above 80%"}
+{"level":"ERROR","errKind":"ALL","time":"2026-06-20T10:15:03.000Z","api":{"name":"PutObject"},"error":{"message":"disk full, cannot write object","source":["cmd/fs.go:123"]}}

@@ -1,0 +1,5 @@
+Jun 20 10:23:45 host NetworkManager[789]: <info>  [1623.4] device (eth0): state change: config -> ip-config (reason 'none')
+Jun 20 10:23:46 host NetworkManager[789]: <info>  [1623.5] dhcp4 (eth0): option ip_address => '10.0.0.50'
+Jun 20 10:23:47 host NetworkManager[789]: <warn>  [1623.7] dhcp4 (eth0): request timed out
+Jun 20 10:23:48 host NetworkManager[789]: <error> [1623.9] device (eth0): Activation: failed for connection 'Wired connection 1'
+Jun 20 10:23:49 host NetworkManager[789]: <info>  [1624.0] manager: NetworkManager state is now CONNECTED_GLOBAL

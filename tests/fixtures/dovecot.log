@@ -1,0 +1,10 @@
+May 19 10:15:01 mail01 dovecot: imap-login: Login: user=<alice>, method=PLAIN, rip=10.0.0.5, lip=10.0.0.1, mpid=2345, TLS
+May 19 10:15:02 mail01 dovecot: imap-login: Disconnected (auth failed, 1 attempts in 3 secs): user=<bob>, method=PLAIN, rip=5.6.7.8, lip=10.0.0.1
+May 19 10:15:03 mail01 dovecot: auth: passwd-file(eve,9.9.9.9): unknown user
+May 19 10:15:04 mail01 dovecot: pop3-login: Disconnected (auth failed, 3 attempts in 10 secs): user=<root>, method=PLAIN, rip=185.234.219.45
+May 19 10:15:05 mail01 dovecot: imap(alice): Connection closed (IDLE running for 0.001 + waiting input for 30.0 secs) in=123 out=456
+May 19 10:15:06 mail01 dovecot: imap-login: Aborted login (auth failed, 1 attempts): user=<admin>, rip=45.33.32.156
+May 19 10:15:07 mail01 dovecot: lmtp(2401): Error: msg id unknown: save failed to INBOX: No space left on device
+May 19 10:15:08 mail01 dovecot: imap-login: Login: user=<carol>, method=PLAIN, rip=10.0.0.6, lip=10.0.0.1, TLS
+May 19 10:15:09 mail01 dovecot: auth: Fatal: Error reading configuration: dict file not found
+May 19 10:15:10 mail01 dovecot: imap-login: Disconnected (auth failed, 2 attempts): user=<postmaster>, rip=218.92.0.56

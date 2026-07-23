@@ -1,0 +1,8 @@
+20-Jun-2026 10:23:45.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name: Apache Tomcat/9.0.71
+20-Jun-2026 10:23:46.200 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Jun-2026 10:23:47.330 WARNING [main] org.apache.catalina.startup.SetContextPropertiesRule.begin Match [Context] failed to set property
+20-Jun-2026 10:23:48.440 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] threw exception
+20-Jun-2026 10:23:49.550 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start
+20-Jun-2026 10:23:50.660 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5234] milliseconds
+20-Jun-2026 10:23:51.770 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.threadStart java.lang.OutOfMemoryError: Java heap space
+20-Jun-2026 10:23:52.880 FINE [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferences clearing references

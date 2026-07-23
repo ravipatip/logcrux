@@ -1,0 +1,7 @@
+[    0.000000] Linux version 5.15.0-91-generic (buildd@lcy02) gcc 11.4.0
+[    1.234567] usb 1-1: new high-speed USB device number 2 using ehci-pci
+[   12.345678] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[  120.500000] e1000e: eth0 NIC Link is Down
+[  121.600000] e1000e 0000:00:19.0 eth0: Detected Hardware Unit Hang
+[  300.770000] Out of memory: Killed process 9876 (mysqld) total-vm:4194304kB, anon-rss:3670016kB
+[  301.880000] general protection fault: 0000 [#1] SMP PTI

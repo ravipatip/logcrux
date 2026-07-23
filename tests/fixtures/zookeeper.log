@@ -1,0 +1,5 @@
+2026-06-20 10:23:45,123 [myid:1] - INFO  [main:QuorumPeerMain@123] - Starting quorum peer
+2026-06-20 10:23:46,456 [myid:1] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:2181
+2026-06-20 10:23:47,789 [myid:1] - WARN  [SyncThread:0:SyncRequestProcessor@189] - Too busy to snap, skipping
+2026-06-20 10:23:48,012 [myid:1] - ERROR [main:QuorumPeer@1234] - Unexpected exception, exiting abnormally
+2026-06-20 10:23:49,345 [myid:1] - WARN  [QuorumPeer[myid=1]:Follower@123] - Exception when following the leader

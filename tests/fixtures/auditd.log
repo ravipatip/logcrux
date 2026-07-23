@@ -1,0 +1,10 @@
+type=SYSCALL msg=audit(1716113701.123:456): arch=c000003e syscall=59 success=yes exit=0 a0=55c a1=55c items=2 ppid=1 pid=2345 auid=0 uid=0 comm="bash" exe="/usr/bin/bash"
+type=USER_AUTH msg=audit(1716113702.001:457): pid=1234 uid=0 auid=1001 ses=3 msg='op=PAM:authentication acct="root" exe="/usr/sbin/sshd" hostname=1.2.3.4 addr=1.2.3.4 terminal=ssh res=failed'
+type=USER_AUTH msg=audit(1716113703.500:458): pid=1235 uid=0 auid=1001 ses=3 msg='op=PAM:authentication acct="admin" exe="/usr/sbin/sshd" hostname=5.6.7.8 addr=5.6.7.8 terminal=ssh res=failed'
+type=AVC msg=audit(1716113704.700:459): avc:  denied  { read } for  pid=999 comm="nginx" name="shadow" dev="sda1" ino=12 scontext=system_u:system_r:httpd_t tcontext=system_u:object_r:shadow_t
+type=ANOM_LOGIN_FAILURES msg=audit(1716113705.900:460): pid=1236 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:auth acct="root" exe="/usr/sbin/sshd" hostname=9.9.9.9 addr=9.9.9.9 terminal=ssh res=failed'
+type=USER_LOGIN msg=audit(1716113706.100:461): pid=1237 uid=0 auid=1002 ses=5 msg='op=login id=1002 exe="/usr/sbin/sshd" hostname=10.0.0.5 addr=10.0.0.5 terminal=/dev/pts/0 res=success'
+type=CRED_ACQ msg=audit(1716113707.200:462): pid=1238 uid=0 auid=0 ses=1 msg='op=PAM:setcred acct="deploy" exe="/usr/bin/sudo" res=success'
+type=SERVICE_START msg=audit(1716113708.300:463): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=nginx comm="systemd" exe="/usr/lib/systemd/systemd" res=success'
+type=AVC msg=audit(1716113709.400:464): avc:  denied  { write } for  pid=1000 comm="postgres" name="data" scontext=system_u:system_r:postgresql_t tcontext=system_u:object_r:default_t
+type=USER_AUTH msg=audit(1716113710.600:465): pid=1240 uid=0 auid=1001 msg='op=PAM:authentication acct="postgres" addr=185.234.219.45 terminal=ssh res=failed'

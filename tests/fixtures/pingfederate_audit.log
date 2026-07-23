@@ -1,0 +1,5 @@
+2024-11-28 05:58:55,832 | Administrator | UserAdmin,Admin,CryptoAdmin | 81.2.69.142 | A-rBnNPcJffxBiizBWDOWxq | LICENSE | ROTATE | - Login was successful
+2024-11-28 06:01:12,004 | alice@example.com | - | 198.51.100.7 | txn-1001 | SSO | AUTHN_ATTEMPT | success | SP=urn:example:sp
+2024-11-28 06:01:44,918 | bob@example.com | - | 203.0.113.9 | txn-1002 | SSO | AUTHN_ATTEMPT | failure | invalid_credentials
+2024-11-28 06:01:49,220 | bob@example.com | - | 203.0.113.9 | txn-1003 | SSO | AUTHN_ATTEMPT | failure | invalid_credentials
+2024-11-28 06:01:52,551 | carol@example.com | - | 203.0.113.9 | txn-1004 | OAUTH | TOKEN_REQUEST | denied | invalid_grant

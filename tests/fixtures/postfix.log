@@ -1,0 +1,6 @@
+Jun 19 10:00:01 mail01 postfix/smtpd[1234]: connect from unknown[1.2.3.4]
+Jun 19 10:00:02 mail01 postfix/smtpd[1234]: warning: unknown[1.2.3.4]: SASL LOGIN authentication failed: authentication failure
+Jun 19 10:00:03 mail01 postfix/smtpd[1234]: NOQUEUE: reject: RCPT from unknown[1.2.3.4]: 550 5.1.1 <nobody@fake.com>: Recipient address rejected; from=<spammer@evil.com> to=<nobody@fake.com> proto=SMTP helo=<evil.com>
+Jun 19 10:00:04 mail01 postfix/qmgr[5678]: ABC123DEF456: from=<user@example.com>, size=2048, nrcpt=1 (queue active)
+Jun 19 10:00:05 mail01 postfix/smtp[9012]: ABC123DEF456: to=<recipient@example.org>, relay=mx.example.org[5.6.7.8]:25, delay=0.74, delays=0.06/0.01/0.25/0.42, dsn=2.0.0, status=sent (250 ok dirdel)
+Jun 19 10:00:06 mail01 postfix/smtp[9013]: DEF456GHI789: to=<user@bounced.com>, relay=mx.bounced.com[9.10.11.12]:25, delay=5.2, delays=0.1/0.2/4.8/0.1, dsn=5.1.1, status=bounced (host mx.bounced.com said: 550 User unknown)
