@@ -1,0 +1,7 @@
+[11/Apr/2011:10:31:53.783 -0500] category=CORE severity=NOTICE msgID=458887 msg="The Directory Server has started successfully"
+[11/Apr/2011:10:32:01.204 -0500] CONNECT conn=49 from="203.0.113.9" to="10.0.0.4" protocol="LDAP+TLS" clientConnectionPolicy="default"
+[11/Apr/2011:10:32:01.210 -0500] BIND REQUEST conn=49 op=0 msgID=1 version="3" dn="uid=alice,ou=people,dc=example,dc=com" authType="SIMPLE"
+[11/Apr/2011:10:32:01.221 -0500] BIND RESULT conn=49 op=0 msgID=1 resultCode=0 etime=0.412 authDN="uid=alice,ou=people,dc=example,dc=com"
+[11/Apr/2011:10:32:05.330 -0500] BIND REQUEST conn=50 op=0 msgID=1 version="3" dn="uid=bob,ou=people,dc=example,dc=com" authType="SIMPLE"
+[11/Apr/2011:10:32:05.339 -0500] BIND RESULT conn=50 op=0 msgID=1 resultCode=49 etime=0.288 message="Invalid credentials"
+[11/Apr/2011:10:33:14.660 -0500] category=BACKEND severity=SEVERE_ERROR msgID=1888619 msg="An error occurred while attempting to open the database environment: disk full"

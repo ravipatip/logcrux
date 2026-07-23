@@ -1,0 +1,8 @@
+INFO  [main] 2026-06-20 10:15:01,123 StorageService.java:1234 - Cassandra version: 4.1.3
+INFO  [main] 2026-06-20 10:15:02,456 StorageService.java:2789 - Node /10.0.0.5 state jump to NORMAL
+WARN  [GossipTasks:1] 2026-06-20 10:15:03,789 FailureDetector.java:288 - Not marking nodes down due to local pause of 5123456789 ns
+WARN  [GossipTasks:1] 2026-06-20 10:15:04,012 Gossiper.java:1029 - Gossip stage has 12 pending tasks; node /10.0.0.6 may be overloaded
+ERROR [MutationStage-3] 2026-06-20 10:15:05,345 JVMStabilityInspector.java:142 - JVM state determined to be unstable. Exiting forcefully due to:
+ERROR [MutationStage-3] 2026-06-20 10:15:05,346 StorageProxy.java:1746 - Failed to apply mutation locally : timeout
+WARN  [ReadStage-2] 2026-06-20 10:15:06,789 ReadCommand.java:569 - Read 5001 live rows and 12000 tombstone cells for query SELECT * FROM ks.tbl
+INFO  [CompactionExecutor:5] 2026-06-20 10:15:07,001 CompactionTask.java:255 - Compacted 4 sstables to [/var/lib/cassandra/data]

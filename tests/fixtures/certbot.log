@@ -1,0 +1,9 @@
+2026-06-28 10:15:01,123:DEBUG:certbot._internal.main:certbot version: 2.9.0
+2026-06-28 10:15:02,234:DEBUG:certbot._internal.main:Arguments: ['--nginx', '-d', 'www.example.com']
+2026-06-28 10:15:03,345:INFO:certbot._internal.auth_handler:Performing the following challenges:
+2026-06-28 10:15:04,456:INFO:certbot._internal.auth_handler:http-01 challenge for www.example.com
+2026-06-28 10:15:05,567:INFO:certbot._internal.client:Requesting a certificate for www.example.com
+2026-06-28 10:15:06,678:WARNING:certbot._internal.cli:You are running with an old copy of certbot
+2026-06-28 10:15:07,789:ERROR:certbot._internal.error_handler:Encountered exception during recovery
+2026-06-28 10:15:08,890:ERROR:certbot._internal.log:Some challenges have failed.
+2026-06-28 10:15:09,901:DEBUG:acme.client:Storing nonce: abc123

@@ -1,0 +1,5 @@
+2026-06-28T10:15:01Z I! Starting Telegraf 1.29.0
+2026-06-28T10:15:02Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"host", Flush Interval:10s
+2026-06-28T10:15:03Z I! [inputs.cpu] Loaded inputs: cpu mem disk net
+2026-06-28T10:15:04Z W! [inputs.docker] Error gathering metrics: Cannot connect to the Docker daemon
+2026-06-28T10:15:05Z E! [outputs.influxdb] When writing to [http://localhost:8086]: write failed

@@ -1,0 +1,7 @@
+2026-06-20 10:15:01,123 INFO  [org.keycloak.services] (build-1) KC-SERVICES0050: Initializing master realm
+2026-06-20 10:15:02,456 INFO  [io.quarkus] (main) Keycloak 24.0.1 on JVM started in 8.123s. Listening on: http://0.0.0.0:8080
+2026-06-20 10:15:03,789 WARN  [org.keycloak.events] (executor-thread-1) type=LOGIN_ERROR, realmId=master, clientId=account, userId=null, ipAddress=198.51.100.7, error=invalid_user_credentials, username=admin
+2026-06-20 10:15:04,012 WARN  [org.keycloak.events] (executor-thread-2) type=LOGIN_ERROR, realmId=master, clientId=account, userId=null, ipAddress=198.51.100.7, error=invalid_user_credentials, username=admin
+2026-06-20 10:15:05,345 WARN  [org.keycloak.events] (executor-thread-3) type=LOGIN_ERROR, realmId=master, clientId=account, userId=null, ipAddress=198.51.100.7, error=invalid_user_credentials, username=root
+2026-06-20 10:15:06,678 ERROR [org.keycloak.services.error.KeycloakErrorHandler] (executor-thread-4) Uncaught server error: java.lang.RuntimeException: Failed to send email
+2026-06-20 10:15:07,901 INFO  [org.keycloak.events] (executor-thread-5) type=LOGIN, realmId=master, clientId=account, userId=abc, ipAddress=10.0.0.5, username=alice

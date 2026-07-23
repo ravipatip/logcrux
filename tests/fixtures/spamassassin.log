@@ -1,0 +1,5 @@
+Jun 28 10:15:01 mail spamd[1234]: spamd: connection from localhost [127.0.0.1]:51000 to port 783
+Jun 28 10:15:02 mail spamd[1234]: spamd: processing message <msg1@example.com> for user:1000
+Jun 28 10:15:03 mail spamd[1234]: spamd: result: . 1 - ALL_TRUSTED,BAYES_00 scantime=0.4
+Jun 28 10:15:04 mail spamd[1234]: spamd: result: Y 12 - BAYES_99,HTML_MESSAGE,URIBL_BLACK scantime=1.2
+Jun 28 10:15:05 mail spamd[1234]: spamd: error: failed to load Bayes databases

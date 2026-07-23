@@ -1,0 +1,5 @@
+2026-06-28T10:15:01.123456Z qemu-system-x86_64: Started QEMU 8.2.0 monitor
+qemu-system-x86_64: -drive if=none,file=/var/lib/libvirt/images/vm1.qcow2: could not open disk image: No such file or directory
+qemu-kvm: warning: host doesn't support requested feature: CPUID.01H:ECX.vmx
+2026-06-28T10:15:04.456789Z qemu-system-x86_64: terminating on signal 15 from pid 1234 (libvirtd)
+qemu-system-aarch64: error: failed to set up guest memory 'mach-virt.ram'

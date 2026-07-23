@@ -1,0 +1,5 @@
+[Jun 20 10:15:01] NOTICE[1234] chan_sip.c: Registration from '100@example.com' succeeded
+[Jun 20 10:15:02] VERBOSE[1234][C-00000001] pbx.c: Executing Dial("SIP/100", "SIP/200")
+[Jun 20 10:15:03] WARNING[1234] app_dial.c: Unable to create channel of type 'SIP'
+[Jun 20 10:15:04] ERROR[1234] pbx.c: Error parsing dialplan extension
+[Jun 20 10:15:05] SECURITY[1234] res_security_log.c: Failed authentication for '100' from 1.2.3.4

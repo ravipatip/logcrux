@@ -1,0 +1,10 @@
+May 19 10:14:55 web01 kernel: [12340.111000] usb 1-1: new high-speed USB device number 5 using xhci_hcd
+May 19 10:15:00 web01 kernel: [12345.678901] EXT4-fs (sda1): mounted filesystem with ordered data mode
+May 19 10:15:02 web01 kernel: [12347.001200] TCP: request_sock_TCP: Possible SYN flooding on port 80. Sending cookies.
+May 19 10:15:05 web01 kernel: [12350.220000] e1000e 0000:00:19.0 eth0: Detected Hardware Unit Hang
+May 19 10:15:07 web01 kernel: [12352.330000] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #2: comm cron: reading directory lblock 0
+May 19 10:15:10 web01 kernel: [12355.440000] Out of memory: Killed process 4242 (java) total-vm:8388608kB, anon-rss:7340032kB
+May 19 10:15:10 web01 kernel: [12355.450000] oom-killer: gfp_mask=0x100cca(GFP_HIGHUSER_MOVABLE), order=0, oom_score_adj=0
+May 19 10:15:12 web01 kernel: [12357.660000] nvme nvme0: I/O 384 QID 3 timeout, aborting
+May 19 10:15:20 web01 kernel: [12365.880000] CPU3: Core temperature above threshold, cpu clock throttled
+May 19 10:15:30 web01 kernel: [12375.990000] audit: type=1400 audit(1716113730.1:99): apparmor="DENIED" operation="open"

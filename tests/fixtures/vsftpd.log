@@ -1,0 +1,8 @@
+Mon Jun 19 10:00:01 2026 [pid 1234] CONNECT: Client "192.168.1.100"
+Mon Jun 19 10:00:02 2026 [pid 1234] [bob] OK LOGIN: Client "192.168.1.100"
+Mon Jun 19 10:00:03 2026 [pid 1235] CONNECT: Client "10.0.1.5"
+Mon Jun 19 10:00:04 2026 [pid 1235] [anonymous] FAIL LOGIN: Client "10.0.1.5"
+Mon Jun 19 10:00:05 2026 [pid 1236] CONNECT: Client "1.2.3.4"
+Mon Jun 19 10:00:06 2026 [pid 1236] [root] FAIL LOGIN: Client "1.2.3.4"
+Mon Jun 19 10:00:07 2026 [pid 1237] CONNECT: Client "1.2.3.4"
+Mon Jun 19 10:00:08 2026 [pid 1237] [root] FAIL LOGIN: Client "1.2.3.4"

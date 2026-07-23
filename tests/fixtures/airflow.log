@@ -1,0 +1,7 @@
+[2026-06-28 10:15:01,123] {taskinstance.py:1234} INFO - Dependencies all met for dag_id=etl task_id=extract
+[2026-06-28 10:15:02,456] {taskinstance.py:1450} INFO - Executing <Task(PythonOperator): extract> on 2026-06-28T10:00:00
+[2026-06-28 10:15:03,789] {standard_task_runner.py:85} INFO - Running on host worker-01
+[2026-06-28 10:15:04,012] {scheduler_job.py:1234} WARNING - Killing zombie task <TaskInstance: etl.transform>
+[2026-06-28 10:15:05,345] {taskinstance.py:1900} ERROR - Task failed with exception: ValueError: bad record
+[2026-06-28 10:15:06,678] {taskinstance.py:1283} INFO - Marking task as FAILED. dag_id=etl, task_id=transform
+[2026-06-28 10:15:07,901] {local_task_job.py:212} INFO - Task exited with return code 1

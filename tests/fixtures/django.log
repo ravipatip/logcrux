@@ -1,0 +1,4 @@
+[20/Jun/2026 10:15:01] "GET /api/users/ HTTP/1.1" 200 1234
+[20/Jun/2026 10:15:02] "GET /admin/ HTTP/1.1" 302 0
+[20/Jun/2026 10:15:03] "GET /missing/ HTTP/1.1" 404 179
+[20/Jun/2026 10:15:04] "POST /api/orders/ HTTP/1.1" 500 145

@@ -1,0 +1,10 @@
+May 19 10:15:01 ftp01 vsftpd[1234]: CONNECT: Client "10.0.0.5"
+May 19 10:15:02 ftp01 vsftpd[1234]: [alice] OK LOGIN: Client "10.0.0.5"
+May 19 10:15:03 ftp01 vsftpd[1235]: [anonymous] FAIL LOGIN: Client "5.6.7.8"
+May 19 10:15:04 ftp01 vsftpd[1236]: [root] FAIL LOGIN: Client "185.234.219.45"
+May 19 10:15:05 ftp01 vsftpd[1234]: [alice] OK DOWNLOAD: Client "10.0.0.5", "/pub/report.pdf", 1048576 bytes, 5.21Kbyte/sec
+May 19 10:15:06 ftp01 vsftpd[1237]: [admin] FAIL LOGIN: Client "45.33.32.156"
+May 19 10:15:07 ftp01 vsftpd[1234]: [alice] OK UPLOAD: Client "10.0.0.5", "/incoming/data.tar.gz", 2097152 bytes, 10.4Kbyte/sec
+May 19 10:15:08 ftp01 vsftpd[1238]: [anonymous] FAIL LOGIN: Client "218.92.0.56"
+May 19 10:15:09 ftp01 vsftpd[1234]: [bob] OK LOGIN: Client "10.0.0.6"
+May 19 10:15:10 ftp01 vsftpd[1239]: [backup] FAIL LOGIN: Client "103.207.39.16"

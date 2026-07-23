@@ -1,0 +1,5 @@
+[28-Jun-2026 10:15:01 UTC] PHP Notice:  Undefined index: id in /var/www/html/index.php on line 5
+[28-Jun-2026 10:15:02 UTC] PHP Deprecated:  Function create_function() is deprecated in /var/www/html/lib.php on line 12
+[28-Jun-2026 10:15:03 UTC] PHP Warning:  fopen(/tmp/x): failed to open stream: Permission denied in /var/www/html/io.php on line 8
+[28-Jun-2026 10:15:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Foo" not found in /var/www/html/app.php on line 20
+[28-Jun-2026 10:15:05 UTC] PHP Parse error:  syntax error, unexpected token "}" in /var/www/html/bad.php on line 3

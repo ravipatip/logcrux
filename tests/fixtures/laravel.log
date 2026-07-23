@@ -1,0 +1,5 @@
+[2026-06-28 10:15:01] production.INFO: User logged in {"id":42,"email":"a@example.com"}
+[2026-06-28 10:15:02] production.DEBUG: Cache hit for key dashboard.42
+[2026-06-28 10:15:03] production.WARNING: Slow query detected (1200ms) on users table
+[2026-06-28 10:15:04] production.ERROR: SQLSTATE[HY000] [2002] Connection refused
+[2026-06-28 10:15:05] production.CRITICAL: Uncaught TypeError in App\Http\Controllers\HomeController

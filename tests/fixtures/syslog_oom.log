@@ -1,0 +1,9 @@
+Jun 16 03:41:55 prod-web01 kernel: [123456.789] oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/system.slice/java.service,task=java,pid=12345,uid=1000
+Jun 16 03:42:00 prod-web01 kernel: [123461.001] Out of memory: Killed process 12345 (java) total-vm:2048000kB, anon-rss:1536000kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:3012kB oom_score_adj:0
+Jun 16 03:42:01 prod-web01 kernel: [123462.002] oom_reaper: reaped process 12345 (java), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Jun 16 03:42:05 prod-web01 nginx: 2026/06/16 03:42:05 [error] 789#789: *1001 connect() failed (111: Connection refused) while connecting to upstream, client: 10.0.1.50, server: api.example.internal, request: "GET /api/health HTTP/1.1"
+Jun 16 03:42:06 prod-web01 nginx: 2026/06/16 03:42:06 [error] 789#789: *1002 connect() failed (111: Connection refused) while connecting to upstream, client: 10.0.1.51, server: api.example.internal, request: "POST /api/data HTTP/1.1"
+Jun 16 03:42:07 prod-web01 nginx: 2026/06/16 03:42:07 [error] 789#789: *1003 upstream timed out (110: Connection timed out) while reading response header from upstream
+Jun 16 03:42:10 prod-web01 systemd[1]: java.service: Main process exited, code=killed, status=9/KILL
+Jun 16 03:42:10 prod-web01 systemd[1]: java.service: Failed with result 'signal'.
+Jun 16 03:42:11 prod-web01 systemd[1]: Failed to start Java Application Service.

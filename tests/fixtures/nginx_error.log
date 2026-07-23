@@ -1,0 +1,4 @@
+2026/06/16 03:41:00 [error] 456#456: *101 connect() failed (111: Connection refused) while connecting to upstream, client: 10.0.1.52, server: api.example.internal, request: "GET /api/data HTTP/1.1", upstream: "http://127.0.0.1:8080/api/data", host: "api.example.internal"
+2026/06/16 03:41:01 [error] 456#456: *102 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 10.0.1.53, server: api.example.internal, request: "GET /api/data HTTP/1.1"
+2026/06/16 03:41:02 [warn] 456#456: *103 upstream server temporarily disabled while reading response header from upstream
+2026/06/16 03:42:00 [crit] 456#456: *104 SSL_do_handshake() failed (SSL: error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure)

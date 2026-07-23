@@ -1,0 +1,5 @@
+2026-06-28 10:15:01 #1234(normal) <a1b2c3>; task; rspamd_task_write_log: id: <msg1@example.com>, qid: <5SAF>, ip: 10.0.0.2, from: <a@x>, (default: F (no action): [1.20/15.00])
+2026-06-28 10:15:02 #1234(normal) <d4e5f6>; task; rspamd_task_write_log: id: <msg2@example.com>, (default: A (greylist): [6.10/15.00])
+2026-06-28 10:15:03 #1235(controller) <0a0b0c>; csession; rspamd_controller_check_password: bad authentication attempt
+2026-06-28 10:15:04 #1236(rspamd_proxy) <111213>; proxy; proxy_session_dtor: cannot connect to upstream: timeout
+2026-06-28 10:15:05 #1234(normal) <141516>; task; rspamd_task_write_log: id: <msg3>, (default: R (reject): [16.00/15.00])

@@ -1,0 +1,18 @@
+> Configure project :app
+> Task :app:compileJava
+> Task :app:processResources NO-SOURCE
+> Task :app:classes
+> Task :app:test FAILED
+> Task :app:check FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:test'.
+> There were failing tests. See the report at: file:///workspace/app/build/reports/tests/test/index.html
+
+* Try:
+Run with --stacktrace option to get the stack trace.
+
+BUILD FAILED in 12s
+5 actionable tasks: 4 executed, 1 up-to-date

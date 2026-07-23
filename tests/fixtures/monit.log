@@ -1,0 +1,8 @@
+[UTC Jun 28 10:15:01] info     : Starting Monit 5.33.0 daemon
+[UTC Jun 28 10:15:02] info     : 'system_web01' Monit started
+[UTC Jun 28 10:15:03] info     : 'nginx' process is running with pid 1234
+[UTC Jun 28 10:15:04] error    : 'rootfs' space usage 95.0% matches resource limit [space usage > 90.0%]
+[UTC Jun 28 10:15:05] error    : 'mysqld' process is not running
+[UTC Jun 28 10:15:06] info     : 'mysqld' trying to restart
+[UTC Jun 28 10:15:07] warning  : 'web01' loadavg(5min) of 8.5 matches resource limit [loadavg(5min) > 8.0]
+[UTC Jun 28 10:15:08] info     : 'mysqld' process is running with pid 5678

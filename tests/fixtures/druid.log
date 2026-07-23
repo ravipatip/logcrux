@@ -1,0 +1,5 @@
+2026-06-28 10:15:01,123 INFO [main] org.apache.druid.cli.CliBroker - Starting up with processors
+2026-06-28 10:15:02,234 INFO [Coordinator-Exec--0] org.apache.druid.server.coordinator.DruidCoordinator - I am the leader
+2026-06-28 10:15:03,345 WARN [qtp1-2] org.apache.druid.server.QueryResource - Exception while processing queryId
+2026-06-28 10:15:04,456 ERROR [main] org.apache.druid.cli.CliBroker - Error when starting up. Failing
+2026-06-28 10:15:05,567 INFO [HttpClient-1] org.apache.druid.java.util.http.client.NettyHttpClient - Negotiated TLS

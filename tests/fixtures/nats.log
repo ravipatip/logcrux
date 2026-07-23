@@ -1,0 +1,4 @@
+[1] 2026/06/20 10:15:01.123456 [INF] Starting nats-server version 2.10.0
+[1] 2026/06/20 10:15:02.000000 [INF] Listening for client connections on 0.0.0.0:4222
+[1] 2026/06/20 10:15:03.000000 [WRN] 1.2.3.4:5555 - cid:5 - authentication error
+[1] 2026/06/20 10:15:04.000000 [ERR] Error accepting client connection: too many open files

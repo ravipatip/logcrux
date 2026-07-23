@@ -1,0 +1,5 @@
+2026-06-28T10:15:01.123+0000 7f3c2b1e8700  0 mon.a@0(leader) e3 handle_command mon_command({"prefix": "status"})
+2026-06-28T10:15:02.456+0000 7f3c2b1e8701  1 osd.5 pg_epoch: 200 active+clean
+2026-06-28T10:15:03.789+0000 7f3c2b1e8702 -1 osd.5 12 log_channel(cluster) log [WRN] : slow request 30.512 seconds old
+2026-06-28T10:15:04.012+0000 7f3c2b1e8703 -1 osd.7 12 log_channel(cluster) log [ERR] : full status: pool 'data' is full (reached quota)
+2026-06-28T10:15:05.345+0000 7f3c2b1e8704  0 mgr.x ms_handle_reset con 0x5588ab

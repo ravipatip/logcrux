@@ -1,0 +1,8 @@
+Mon Jun 20 10:15:01 2026 : Info: Loaded virtual server default
+Mon Jun 20 10:15:02 2026 : Info: Ready to process requests
+Mon Jun 20 10:15:03 2026 : Auth: Login OK: [bob] (from client ap1 port 0 cli 00-11-22-33-44-55)
+Mon Jun 20 10:15:04 2026 : Auth: Login incorrect (mschap: MS-CHAP2-Response is incorrect): [admin] (from client ap1 port 12 cli 00-11-22-33-44-66)
+Mon Jun 20 10:15:05 2026 : Auth: Login incorrect (mschap: MS-CHAP2-Response is incorrect): [admin] (from client ap1 port 12 cli 00-11-22-33-44-66)
+Mon Jun 20 10:15:06 2026 : Auth: Login incorrect (mschap: MS-CHAP2-Response is incorrect): [root] (from client ap1 port 12 cli 00-11-22-33-44-77)
+Mon Jun 20 10:15:07 2026 : Error: rlm_sql (sql): Failed to connect to database: Can't connect to MySQL server
+Mon Jun 20 10:15:08 2026 : Warning: Please update your configuration, this option is deprecated

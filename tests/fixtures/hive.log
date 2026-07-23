@@ -1,0 +1,5 @@
+2026-06-28 10:15:01,123 INFO  [main] SessionState: Hive Session ID = 4f2a-1
+2026-06-28 10:15:02,234 INFO  [main] org.apache.hadoop.hive.metastore.HiveMetaStore: Starting hive metastore
+2026-06-28 10:15:03,345 WARN  [main] org.apache.hadoop.hive.conf.HiveConf: HiveConf of name hive.foo does not exist
+2026-06-28 10:15:04,456 ERROR [HiveServer2-Handler-Pool: Thread-42] org.apache.hive.service.cli.operation.Operation: FAILED: execution error
+2026-06-28 10:15:05,567 INFO  [main] ql.Driver: Completed executing command

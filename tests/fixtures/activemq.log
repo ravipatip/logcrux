@@ -1,0 +1,7 @@
+2026-06-20 10:15:01,123 | INFO  | Using Persistence Adapter: KahaDB[/opt/activemq/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2026-06-20 10:15:02,456 | INFO  | Apache ActiveMQ 5.18.3 (localhost, ID:broker-1-44321-1718880302456-0:1) started | org.apache.activemq.broker.BrokerService | main
+2026-06-20 10:15:03,789 | WARN  | Transport Connection to: tcp://198.51.100.7:55000 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport
+2026-06-20 10:15:04,012 | WARN  | Transport Connection to: tcp://198.51.100.7:55001 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport
+2026-06-20 10:15:05,345 | ERROR | Failed to start Apache ActiveMQ (localhost) | org.apache.activemq.broker.BrokerService | main
+2026-06-20 10:15:06,678 | ERROR | Store limit is 102400 mb, whilst the data directory only has 5000 mb of usable space | org.apache.activemq.broker.BrokerService | main
+2026-06-20 10:15:07,901 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | main

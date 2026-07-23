@@ -1,0 +1,4 @@
+2026-06-20 10:15:01.123 UTC [1234] LOG C-0x5577: app/user@1.2.3.4:5432 login attempt: db=app user=user
+2026-06-20 10:15:02.000 UTC [1234] LOG stats: 5 xacts/s, 10 queries/s, in 1024 B/s, out 2048 B/s
+2026-06-20 10:15:03.000 UTC [1234] WARNING C-0x5577: pooler error: server login timeout
+2026-06-20 10:15:04.000 UTC [1234] ERROR S-0x7799: closing because: server login failed (age=0s)

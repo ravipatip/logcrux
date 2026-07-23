@@ -1,0 +1,4 @@
+{"severity":"INFO","time":"2026-06-23T10:23:45.123Z","correlation_id":"a1","method":"GET","path":"/api/v4/projects","status":200,"duration_s":0.08}
+{"severity":"INFO","time":"2026-06-23T10:23:46.223Z","correlation_id":"a2","method":"POST","path":"/api/v4/jobs/request","status":204,"duration_s":0.01}
+{"severity":"WARN","time":"2026-06-23T10:23:47.323Z","correlation_id":"a3","method":"GET","path":"/api/v4/runners","status":429,"duration_s":0.02}
+{"severity":"ERROR","time":"2026-06-23T10:23:48.423Z","correlation_id":"a4","exception.class":"ActiveRecord::ConnectionNotEstablished","message":"could not connect to server"}

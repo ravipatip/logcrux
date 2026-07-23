@@ -1,0 +1,8 @@
+12345:20260628:101501.123 Starting Zabbix Server. Zabbix 6.4.0 (revision abc1234).
+12345:20260628:101502.234 server #0 started [main process]
+12350:20260628:101503.345 server #5 started [poller #1]
+12351:20260628:101504.456 [Z3005] query failed: [1146] Table 'zabbix.history' doesn't exist
+12352:20260628:101505.567 cannot connect to database: Access denied for user 'zabbix'@'localhost'
+12353:20260628:101506.678 slow query: 3.500000 sec, "select * from items where hostid=10084"
+12354:20260628:101507.789 housekeeper [deleted 1024 hist/trends, 0 events in 0.052 sec, idle for 1 hour(s)]
+12355:20260628:101508.890 [Z3001] connection to database 'zabbix' failed: server gone away

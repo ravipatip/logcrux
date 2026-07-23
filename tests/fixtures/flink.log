@@ -1,0 +1,5 @@
+2026-06-28 10:15:01,123 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint [] - Starting StandaloneSessionClusterEntrypoint
+2026-06-28 10:15:02,234 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor [] - Connecting to ResourceManager
+2026-06-28 10:15:03,345 WARN  org.apache.flink.runtime.taskmanager.Task [] - Slot allocation request timed out
+2026-06-28 10:15:04,456 ERROR org.apache.flink.runtime.jobmaster.JobMaster [] - Fatal error occurred in the cluster entrypoint
+2026-06-28 10:15:05,567 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher [] - Job reached terminal state FINISHED

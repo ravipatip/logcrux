@@ -1,0 +1,6 @@
+19-May-2024 10:15:01.123 general: info: zone example.com/IN: loaded serial 2024051901
+19-May-2024 10:15:02.456 security: info: client @0x7f 1.2.3.4#54321 (evil.com): query (cache) 'evil.com/A/IN' denied
+19-May-2024 10:15:03.789 query-errors: info: client 5.6.7.8#1234 (x.com): query failed (SERVFAIL) for x.com/IN/A
+19-May-2024 10:15:04.012 lame-servers: info: lame server resolving 'b.example.net': 9.9.9.9#53
+19-May-2024 10:15:05.345 general: error: zone db.broken/IN: loading from master file failed: file not found
+19-May-2024 10:15:06.678 resolver: warning: network unreachable resolving 'a.example.org/A/IN': 2001:db8::1#53

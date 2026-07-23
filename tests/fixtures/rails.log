@@ -1,0 +1,5 @@
+Started GET "/users/1" for 127.0.0.1 at 2026-06-20 10:15:01 +0000
+Processing by UsersController#show as HTML
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 2.1ms)
+Started POST "/orders" for 10.0.0.5 at 2026-06-20 10:15:03 +0000
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)

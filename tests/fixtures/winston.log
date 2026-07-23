@@ -1,0 +1,3 @@
+{"level":"info","message":"server started on port 8080","timestamp":"2026-06-20T10:15:01.123Z","service":"api"}
+{"level":"warn","message":"deprecated endpoint called","timestamp":"2026-06-20T10:15:02.000Z","service":"api"}
+{"level":"error","message":"payment gateway timeout","timestamp":"2026-06-20T10:15:03.000Z","service":"api","stack":"Error: timeout"}

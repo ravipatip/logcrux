@@ -1,0 +1,6 @@
+2026-06-20 10:23:45,123 INFO supervisord started with pid 1
+2026-06-20 10:23:46,456 INFO spawned: 'web' with pid 1234
+2026-06-20 10:23:47,789 INFO success: web entered RUNNING state, process has stayed up for > than 1 seconds
+2026-06-20 10:23:48,012 WARN received SIGTERM indicating exit request
+2026-06-20 10:23:49,345 INFO exited: web (exit status 1; not expected)
+2026-06-20 10:23:50,678 INFO gave up: web entered FATAL state, too many start retries too quickly
