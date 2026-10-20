@@ -321,6 +321,7 @@ logcrux auto-detects the log format from the file path and content. You can also
 | Auth / Secure | `secure` | `/var/log/auth.log`, `/var/log/secure` | SSH brute force, sudo, PAM auth failures |
 | UFW / iptables | `ufw` | `/var/log/ufw.log` | Firewall BLOCK events, port scan patterns |
 | fail2ban | `fail2ban` | `/var/log/fail2ban.log` | Ban storms, jail activity, active attack signals |
+| macOS unified log | `macos-unified` | `log show` output (default, compact, syslog styles) | Faults by subsystem, using macOS's own levels |
 
 ### Web Servers & Proxies
 
@@ -496,10 +497,19 @@ logcrux auto-detects the log format from the file path and content. You can also
 | rsyslog / syslog-ng | `rsyslog` / `syslogng` | daemon logs | Forwarding errors |
 | D-Bus / polkit | `dbus` / `polkit` | syslog-tagged | Auth denials |
 
+### Backup & Data Protection
+
+| Format | `--format` name | Default paths | Detects |
+|--------|----------------|---------------|---------|
+| restic | `restic` | `restic backup` / `check` output, text or `--json` | Failed jobs (wrong password, missing source, repository gone), partial snapshots |
+| kopia | `kopia` | `kopia snapshot create` / `repository connect` output | Failed snapshots and connections, with kopia's reason |
+| BorgBackup | `borg` | `borg create --stats` output | Wrong passphrase, missing repository, lock failures, unreadable sources |
+
 ### Application Frameworks
 
 | Format | `--format` name | Default paths | Detects |
 |--------|----------------|---------------|---------|
+| Any JSON-lines app log | `json` | One JSON object per line with a level and a message field (Python structlog, Go zap / slog / zerolog, logrus / loguru JSON) | Errors, error bursts, a fatal record as the process's last line |
 | Spring Boot (Logback) | `springboot` | Spring app logs | ERROR/FATAL events |
 | Log4j / JBoss | `log4j` | Java app logs | Error/fatal events |
 | Jetty | `jetty` | Jetty StdErr log | Server errors |
@@ -542,7 +552,11 @@ logcrux auto-detects the log format from the file path and content. You can also
 | Format | `--format` name | Default paths | Detects |
 |--------|----------------|---------------|---------|
 | dpkg / apt history | `dpkg` / `apthistory` | Debian package logs | Installation errors |
-| yum / dnf | `yum` | `/var/log/dnf.log` | Transaction errors |
+| dnf (RHEL / Rocky / Alma / CentOS 8-10) | `dnf` | `/var/log/dnf.log` | Failed transactions and commands |
+| dnf5 (Fedora 41+) | `dnf5` | `/var/log/dnf5.log` | Failed transactions |
+| yum (EL7 and older) | `yum` | `/var/log/yum.log` | Transaction errors |
+| zypper history (SLES / openSUSE) | `zypp-history` | `/var/log/zypp/history` | Install and remove history |
+| macOS installer | `macos-install` | `/var/log/install.log` | Failed installs |
 | pip | `pip` | pip install output | Installation failures |
 | npm | `npm` | npm log | Error events |
 | Maven | `maven` | Maven build output | Build failures |
