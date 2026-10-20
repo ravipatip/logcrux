@@ -1,0 +1,6 @@
+2026-04-26T07:47:38+0000 [48] INFO --- DNF5 launched with arguments: "dnf5 -y install nginx" ---
+2026-04-26T07:47:38+0000 [48] DEBUG Loading system repo rpmdb from root "/"
+2026-04-26T07:47:39+0000 [48] INFO Installing nginx-1.24.0-1.el10.x86_64 from repo "appstream"
+2026-04-26T07:47:41+0000 [48] WARNING Failed to resolve package "oldpkg"
+2026-04-26T07:47:42+0000 [48] TRACE Transaction rpm callback: close
+2026-04-26T07:47:42+0000 [48] INFO --- DNF5 finished ---

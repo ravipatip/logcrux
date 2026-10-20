@@ -1,0 +1,148 @@
+2026-10-19T18:46:59.191271967Z /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+2026-10-19T18:46:59.191313467Z /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+2026-10-19T18:46:59.191719008Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+2026-10-19T18:46:59.192399883Z 10-listen-on-ipv6-by-default.sh: info: can not modify /etc/nginx/conf.d/default.conf (read-only file system?)
+2026-10-19T18:46:59.192474508Z /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+2026-10-19T18:46:59.192541133Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+2026-10-19T18:46:59.193874217Z /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+2026-10-19T18:46:59.194890842Z /docker-entrypoint.sh: Configuration complete; ready for start up
+2026-10-19T18:46:59.199278425Z 2026/10/19 18:46:59 [notice] 1#1: using the "epoll" event method
+2026-10-19T18:46:59.199283633Z 2026/10/19 18:46:59 [notice] 1#1: nginx/1.27.5
+2026-10-19T18:46:59.199284467Z 2026/10/19 18:46:59 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) 
+2026-10-19T18:46:59.199285133Z 2026/10/19 18:46:59 [notice] 1#1: OS: Linux 6.12.76-linuxkit
+2026-10-19T18:46:59.199285717Z 2026/10/19 18:46:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026-10-19T18:46:59.199909050Z 2026/10/19 18:46:59 [notice] 1#1: start worker processes
+2026-10-19T18:46:59.200003800Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 21
+2026-10-19T18:46:59.200127842Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 22
+2026-10-19T18:46:59.200224758Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 23
+2026-10-19T18:46:59.200474592Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 24
+2026-10-19T18:46:59.200575300Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 25
+2026-10-19T18:46:59.200701592Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 26
+2026-10-19T18:46:59.200940842Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 27
+2026-10-19T18:46:59.201179300Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 28
+2026-10-19T18:46:59.201293175Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 29
+2026-10-19T18:46:59.201598092Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 30
+2026-10-19T18:46:59.201890050Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 31
+2026-10-19T18:46:59.202187050Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 32
+2026-10-19T18:46:59.202536092Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 33
+2026-10-19T18:46:59.202693842Z 2026/10/19 18:46:59 [notice] 1#1: start worker process 34
+2026-10-19T18:47:01.280213009Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=2 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280235801Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=1 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280249051Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=3 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280251051Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=5 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280413634Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=4 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280419343Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=6 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280418843Z 2026/10/19 18:47:01 [error] 21#21: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=2 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=2", host: "127.0.0.1"
+2026-10-19T18:47:01.280424218Z 2026/10/19 18:47:01 [error] 23#23: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=1 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=1", host: "127.0.0.1"
+2026-10-19T18:47:01.280426134Z 2026/10/19 18:47:01 [error] 21#21: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=3 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=3", host: "127.0.0.1"
+2026-10-19T18:47:01.280427843Z 2026/10/19 18:47:01 [error] 23#23: *7 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=5 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=5", host: "127.0.0.1"
+2026-10-19T18:47:01.280429426Z 2026/10/19 18:47:01 [error] 21#21: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=4 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=4", host: "127.0.0.1"
+2026-10-19T18:47:01.280430926Z 2026/10/19 18:47:01 [error] 22#22: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=6 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=6", host: "127.0.0.1"
+2026-10-19T18:47:01.280432593Z 2026/10/19 18:47:01 [error] 24#24: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=7 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=7", host: "127.0.0.1"
+2026-10-19T18:47:01.280468301Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=7 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280474593Z 2026/10/19 18:47:01 [error] 22#22: *14 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=8 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=8", host: "127.0.0.1"
+2026-10-19T18:47:01.280483093Z 2026/10/19 18:47:01 [error] 26#26: *17 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=9 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=9", host: "127.0.0.1"
+2026-10-19T18:47:01.280477509Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=8 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280488968Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=9 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280568218Z 2026/10/19 18:47:01 [error] 26#26: *20 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=11 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=11", host: "127.0.0.1"
+2026-10-19T18:47:01.280578426Z 2026/10/19 18:47:01 [error] 27#27: *19 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=10 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=10", host: "127.0.0.1"
+2026-10-19T18:47:01.280605884Z 2026/10/19 18:47:01 [error] 28#28: *22 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=12 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=12", host: "127.0.0.1"
+2026-10-19T18:47:01.280646176Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=11 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280654259Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=10 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280656009Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=12 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280763509Z 2026/10/19 18:47:01 [error] 29#29: *25 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=15 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=15", host: "127.0.0.1"
+2026-10-19T18:47:01.280769468Z 2026/10/19 18:47:01 [error] 25#25: *27 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=16 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=16", host: "127.0.0.1"
+2026-10-19T18:47:01.280787426Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=15 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.280793884Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=16 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281079843Z 2026/10/19 18:47:01 [error] 30#30: *29 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=14 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=14", host: "127.0.0.1"
+2026-10-19T18:47:01.281085968Z 2026/10/19 18:47:01 [error] 31#31: *30 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=13 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=13", host: "127.0.0.1"
+2026-10-19T18:47:01.281087801Z 2026/10/19 18:47:01 [error] 30#30: *33 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=19 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=19", host: "127.0.0.1"
+2026-10-19T18:47:01.281091343Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=13 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281092676Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=14 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281148218Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=19 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281151134Z 2026/10/19 18:47:01 [error] 32#32: *35 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=18 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=18", host: "127.0.0.1"
+2026-10-19T18:47:01.281359968Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=17 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281365551Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=18 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281367093Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=21 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281377009Z 2026/10/19 18:47:01 [error] 33#33: *37 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=21 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=21", host: "127.0.0.1"
+2026-10-19T18:47:01.281384759Z 2026/10/19 18:47:01 [error] 34#34: *39 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=17 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=17", host: "127.0.0.1"
+2026-10-19T18:47:01.281497468Z 2026/10/19 18:47:01 [error] 21#21: *41 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=23 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=23", host: "127.0.0.1"
+2026-10-19T18:47:01.281646968Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=23 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281657093Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=22 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281658968Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=24 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281649093Z 2026/10/19 18:47:01 [error] 23#23: *45 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=22 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=22", host: "127.0.0.1"
+2026-10-19T18:47:01.281662218Z 2026/10/19 18:47:01 [error] 21#21: *42 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=24 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=24", host: "127.0.0.1"
+2026-10-19T18:47:01.281717468Z 2026/10/19 18:47:01 [error] 21#21: *47 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=20 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=20", host: "127.0.0.1"
+2026-10-19T18:47:01.281723051Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=20 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281805426Z 2026/10/19 18:47:01 [error] 23#23: *49 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=25 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=25", host: "127.0.0.1"
+2026-10-19T18:47:01.281810426Z 2026/10/19 18:47:01 [error] 21#21: *52 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=29 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=29", host: "127.0.0.1"
+2026-10-19T18:47:01.281891926Z 2026/10/19 18:47:01 [error] 22#22: *56 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=30 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=30", host: "127.0.0.1"
+2026-10-19T18:47:01.281896509Z 2026/10/19 18:47:01 [error] 23#23: *50 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=27 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=27", host: "127.0.0.1"
+2026-10-19T18:47:01.281911218Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=25 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.281917551Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=30 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282162343Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=29 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282171926Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=27 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282173676Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=26 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282175051Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=32 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282184426Z 2026/10/19 18:47:01 [error] 21#21: *54 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=26 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=26", host: "127.0.0.1"
+2026-10-19T18:47:01.282186676Z 2026/10/19 18:47:01 [error] 23#23: *60 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=32 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=32", host: "127.0.0.1"
+2026-10-19T18:47:01.282478176Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=28 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282478093Z 2026/10/19 18:47:01 [error] 23#23: *59 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=28 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=28", host: "127.0.0.1"
+2026-10-19T18:47:01.282484259Z 2026/10/19 18:47:01 [error] 21#21: *68 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=37 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=37", host: "127.0.0.1"
+2026-10-19T18:47:01.282485634Z 2026/10/19 18:47:01 [error] 23#23: *62 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=33 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=33", host: "127.0.0.1"
+2026-10-19T18:47:01.282769343Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=37 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282774926Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=34 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282776009Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=33 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282781384Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=39 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282782884Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=38 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282783843Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=36 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282784759Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=31 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282785676Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=41 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.282776801Z 2026/10/19 18:47:01 [error] 24#24: *71 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=38 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=38", host: "127.0.0.1"
+2026-10-19T18:47:01.282788384Z 2026/10/19 18:47:01 [error] 22#22: *74 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=34 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=34", host: "127.0.0.1"
+2026-10-19T18:47:01.282789509Z 2026/10/19 18:47:01 [error] 22#22: *76 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=39 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=39", host: "127.0.0.1"
+2026-10-19T18:47:01.282790551Z 2026/10/19 18:47:01 [error] 21#21: *70 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=36 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=36", host: "127.0.0.1"
+2026-10-19T18:47:01.282791843Z 2026/10/19 18:47:01 [error] 23#23: *63 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=31 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=31", host: "127.0.0.1"
+2026-10-19T18:47:01.282794051Z 2026/10/19 18:47:01 [error] 22#22: *78 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=41 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=41", host: "127.0.0.1"
+2026-10-19T18:47:01.282791301Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=35 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.283046468Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=40 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.283049134Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=43 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.283054509Z 2026/10/19 18:47:01 [error] 23#23: *66 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=35 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=35", host: "127.0.0.1"
+2026-10-19T18:47:01.283056384Z 2026/10/19 18:47:01 [error] 21#21: *81 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=43 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=43", host: "127.0.0.1"
+2026-10-19T18:47:01.283059634Z 2026/10/19 18:47:01 [error] 23#23: *83 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=40 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=40", host: "127.0.0.1"
+2026-10-19T18:47:01.283132468Z 2026/10/19 18:47:01 [error] 21#21: *85 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=42 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=42", host: "127.0.0.1"
+2026-10-19T18:47:01.283269593Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=42 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.283456926Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=44 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.283460134Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=46 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.283459593Z 2026/10/19 18:47:01 [error] 23#23: *88 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=46 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=46", host: "127.0.0.1"
+2026-10-19T18:47:01.283464343Z 2026/10/19 18:47:01 [error] 21#21: *87 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=44 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=44", host: "127.0.0.1"
+2026-10-19T18:47:01.283467009Z 2026/10/19 18:47:01 [error] 23#23: *91 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=47 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=47", host: "127.0.0.1"
+2026-10-19T18:47:01.283655593Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=47 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.283663384Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=45 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.283668218Z 2026/10/19 18:47:01 [error] 23#23: *92 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=45 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=45", host: "127.0.0.1"
+2026-10-19T18:47:01.283669509Z 2026/10/19 18:47:01 [error] 22#22: *95 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=48 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=48", host: "127.0.0.1"
+2026-10-19T18:47:01.283834593Z 2026/10/19 18:47:01 [error] 21#21: *97 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=51 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=51", host: "127.0.0.1"
+2026-10-19T18:47:01.283837843Z 2026/10/19 18:47:01 [error] 21#21: *99 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=53 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=53", host: "127.0.0.1"
+2026-10-19T18:47:01.283840843Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=48 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.283841843Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=51 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.283846343Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=53 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.284169718Z 2026/10/19 18:47:01 [error] 22#22: *104 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=54 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=54", host: "127.0.0.1"
+2026-10-19T18:47:01.284199176Z 2026/10/19 18:47:01 [error] 21#21: *101 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=50 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=50", host: "127.0.0.1"
+2026-10-19T18:47:01.284200926Z 2026/10/19 18:47:01 [error] 23#23: *108 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=56 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=56", host: "127.0.0.1"
+2026-10-19T18:47:01.284204634Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=50 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.284205759Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=54 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.284206634Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=56 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.284244093Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=49 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.284246301Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=55 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.284247218Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=58 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.284253218Z 2026/10/19 18:47:01 [error] 24#24: *109 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=58 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=58", host: "127.0.0.1"
+2026-10-19T18:47:01.284254426Z 2026/10/19 18:47:01 [error] 21#21: *102 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=49 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=49", host: "127.0.0.1"
+2026-10-19T18:47:01.284255426Z 2026/10/19 18:47:01 [error] 22#22: *114 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=55 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=55", host: "127.0.0.1"
+2026-10-19T18:47:01.284256426Z 2026/10/19 18:47:01 [error] 22#22: *116 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=60 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=60", host: "127.0.0.1"
+2026-10-19T18:47:01.284257343Z 2026/10/19 18:47:01 [error] 21#21: *105 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=57 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=57", host: "127.0.0.1"
+2026-10-19T18:47:01.284260968Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=60 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.284380259Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=57 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.284383801Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=59 HTTP/1.1" 502 157 "-" "Wget" "-"
+2026-10-19T18:47:01.284387384Z 2026/10/19 18:47:01 [error] 21#21: *111 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=59 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=59", host: "127.0.0.1"
+2026-10-19T18:47:01.284507134Z 2026/10/19 18:47:01 [error] 23#23: *119 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /api/orders?id=52 HTTP/1.1", upstream: "http://127.0.0.1:9/api/orders?id=52", host: "127.0.0.1"
+2026-10-19T18:47:01.284513259Z 127.0.0.1 - - [19/Oct/2026:18:47:01 +0000] "GET /api/orders?id=52 HTTP/1.1" 502 157 "-" "Wget" "-"

@@ -1,0 +1,97 @@
+[19-Oct-2026 20:49:58] NOTICE: fpm is running, pid 1
+[19-Oct-2026 20:49:58] NOTICE: ready to handle connections
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /ok.php" 200
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2
+127.0.0.1 -  19/Oct/2026:20:50:04 +0000 "GET /broken.php" 200
+NOTICE: PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function load_order() in /var/www/html/broken.php:2
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/broken.php on line 2

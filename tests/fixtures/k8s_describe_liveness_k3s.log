@@ -1,0 +1,65 @@
+Name:             liveness-kill
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             a9ed302ad065/172.17.0.3
+Start Time:       Tue, 20 Oct 2026 01:42:29 +0000
+Labels:           <none>
+Annotations:      <none>
+Status:           Running
+IP:               10.42.0.4
+IPs:
+  IP:  10.42.0.4
+Containers:
+  api:
+    Container ID:  containerd://0f8d00971adf7d9075f02dd009e2a2062d881386a09ae855598f2e6622ed4c4a
+    Image:         busybox:1.36
+    Image ID:      docker.io/library/busybox@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+      touch /tmp/alive; sleep 10; rm /tmp/alive; sleep 3600
+    State:          Running
+      Started:      Tue, 20 Oct 2026 01:44:14 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Tue, 20 Oct 2026 01:43:29 +0000
+      Finished:     Tue, 20 Oct 2026 01:44:14 +0000
+    Ready:          True
+    Restart Count:  2
+    Liveness:       exec [cat /tmp/alive] delay=0s timeout=1s period=3s #success=1 #failure=2
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-262gr (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-262gr:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                 From               Message
+  ----     ------     ----                ----               -------
+  Normal   Scheduled  2m                  default-scheduler  Successfully assigned default/liveness-kill to a9ed302ad065
+  Normal   Pulling    114s                kubelet            Pulling image "busybox:1.36"
+  Normal   Pulled     104s                kubelet            Successfully pulled image "busybox:1.36" in 10.633s (10.633s including waiting). Image size: 1906887 bytes.
+  Normal   Created    15s (x3 over 104s)  kubelet            Created container api
+  Normal   Started    15s (x3 over 104s)  kubelet            Started container api
+  Normal   Pulled     15s (x2 over 60s)   kubelet            Container image "busybox:1.36" already present on machine
+  Warning  Unhealthy  0s (x6 over 93s)    kubelet            Liveness probe failed: cat: can't open '/tmp/alive': No such file or directory
+  Normal   Killing    0s (x3 over 90s)    kubelet            Container api failed liveness probe, will be restarted

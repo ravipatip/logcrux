@@ -1,0 +1,53 @@
+Name:             typo-image
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             b7e29614d729/172.17.0.3
+Start Time:       Mon, 19 Oct 2026 19:13:15 +0000
+Labels:           <none>
+Annotations:      <none>
+Status:           Pending
+IP:               10.42.0.5
+IPs:
+  IP:  10.42.0.5
+Containers:
+  app:
+    Container ID:   
+    Image:          busybox:1.36-doesnotexist
+    Image ID:       
+    Port:           <none>
+    Host Port:      <none>
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pjz8z (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-pjz8z:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                  From               Message
+  ----     ------     ----                 ----               -------
+  Normal   Scheduled  2m31s                default-scheduler  Successfully assigned default/typo-image to b7e29614d729
+  Normal   Pulling    57s (x4 over 2m27s)  kubelet            Pulling image "busybox:1.36-doesnotexist"
+  Warning  Failed     56s (x4 over 2m26s)  kubelet            Failed to pull image "busybox:1.36-doesnotexist": rpc error: code = NotFound desc = failed to pull and unpack image "docker.io/library/busybox:1.36-doesnotexist": failed to resolve reference "docker.io/library/busybox:1.36-doesnotexist": docker.io/library/busybox:1.36-doesnotexist: not found
+  Warning  Failed     56s (x4 over 2m26s)  kubelet            Error: ErrImagePull
+  Warning  Failed     42s (x6 over 2m25s)  kubelet            Error: ImagePullBackOff
+  Normal   BackOff    27s (x7 over 2m25s)  kubelet            Back-off pulling image "busybox:1.36-doesnotexist"

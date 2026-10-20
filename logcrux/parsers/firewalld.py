@@ -52,6 +52,7 @@ def _firewalld_severity(message: str) -> Severity:
 
 class FirewalldParser(LogParser):
     FORMAT_NAME = "firewalld"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

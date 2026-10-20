@@ -7,10 +7,12 @@ from pathlib import Path
 from dateutil import parser as dateparser
 
 from logcrux.models import ParsedEvent, Severity
-from logcrux.parsers.base import LogParser
+from logcrux.parsers.base import INDENTED_CONTINUATION, LogParser
 
+# The optional fraction is `journalctl -o short-precise` ("Oct 19 19:37:47.887957
+# host kernel: ..."): generic on all 6 phase-3 GCP VMs (2026-10-20) without it.
 _PATTERN = re.compile(
-    r"(?P<month>\w{3})\s+(?P<day>\d{1,2}) (?P<time>\d{2}:\d{2}:\d{2}) "
+    r"(?P<month>\w{3})\s+(?P<day>\d{1,2}) (?P<time>\d{2}:\d{2}:\d{2}(?:\.\d{1,9})?) "
     r"(?P<host>\S+) "
     r"(?P<source>[^:\[]+?)(?:\[(?P<pid>\d+)\])?: "
     r"(?P<message>.*)"
@@ -48,10 +50,26 @@ _COUNT_PREFIX = re.compile(r"\d+\s*$")
 _CODE_SUFFIX = re.compile(r"^\s*[0-9]")
 
 
+# systemd status lines quote a unit's *description*, which can contain any word:
+#   Starting grub-initrd-fallback.service - GRUB failed boot detection...
+#   apport-autoreport.timer - Process error reports when automatic reporting is enabled
+#   Started update-notifier-download.timer - Download data for packages that failed ...
+# On healthy Ubuntu 22.04/24.04 GCP boots these alone made a 12-"error" burst.
+# A unit that really fails is logged as "Failed to start", "Failed with result",
+# "Main process exited" — none of which start with these verbs.
+_SYSTEMD_STATUS_RE = re.compile(
+    r"^(?:Starting|Started|Finished|Stopping|Stopped|Reached target|Listening on|"
+    r"Mounting|Mounted|Condition check resulted in|Reloading|Reloaded)\b"
+    r"|^[\w@.\\-]+\.(?:service|timer|path|socket|target|mount) - "
+)
+
+
 def _infer_severity(source: str, message: str) -> Severity:
     text = (source + " " + message).lower()
     if any(k in text for k in _OOM_KEYWORDS):
         return Severity.CRITICAL
+    if source == "systemd" and _SYSTEMD_STATUS_RE.match(message):
+        return Severity.INFO
     combined = source + " " + message
     for pattern, sev in ((_ERROR_RE, Severity.ERROR), (_WARN_RE, Severity.WARNING)):
         for m in pattern.finditer(combined):
@@ -67,6 +85,7 @@ def _infer_severity(source: str, message: str) -> Severity:
 
 class SyslogParser(LogParser):
     FORMAT_NAME = "syslog"
+    CONTINUATION = INDENTED_CONTINUATION
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

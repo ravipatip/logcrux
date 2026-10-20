@@ -9,7 +9,12 @@ logcrux uses exit codes to indicate analysis results, enabling integration with 
 | **0** | CLEAN — No anomalies detected | Success, safe to proceed |
 | **3** | WARNING/INFO — Incidents found | Alert, but not critical |
 | **4** | CRITICAL — Severe incidents found | Escalate, take action |
-| **1** | ERROR — Analysis failed | Investigate failure |
+| **1** | Bad option or config (`--last 5x`, unknown `--format`, bad `--config`) | Fix the invocation |
+| **2** | Input missing, unreadable (permission denied), binary, or an undecompressible archive | Fix the path or run with sudo |
+
+With several files or a directory the exit code is the **worst** verdict among
+them. `--fail-on critical` exits non-zero only for CRITICAL; `--fail-on never`
+exits 0 for any completed analysis (1 and 2 still mean the run itself failed).
 
 ## Code Semantics
 

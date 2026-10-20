@@ -1,0 +1,123 @@
+[2026-10-19 20:07:35 +0000] [10] [INFO] Starting gunicorn 23.0.0
+[2026-10-19 20:07:35 +0000] [10] [INFO] Listening at: http://127.0.0.1:8000 (10)
+[2026-10-19 20:07:35 +0000] [10] [INFO] Using worker: sync
+[2026-10-19 20:07:35 +0000] [11] [INFO] Booting worker with pid: 11
+[2026-10-19 20:07:35 +0000] [12] [INFO] Booting worker with pid: 12
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+127.0.0.1 - - [19/Oct/2026:20:07:35 +0000] "GET / HTTP/1.1" 200 2 "-" "Python-urllib/3.12"
+[2026-10-19 20:07:41 +0000] [10] [CRITICAL] WORKER TIMEOUT (pid:11)
+[2026-10-19 20:07:41 +0000] [10] [CRITICAL] WORKER TIMEOUT (pid:12)
+[2026-10-19 20:07:41 +0000] [11] [ERROR] Error handling request /slow
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 4, in app
+    time.sleep(60)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+127.0.0.1 - - [19/Oct/2026:20:07:41 +0000] "GET /slow HTTP/1.1" 500 0 "-" "-"
+[2026-10-19 20:07:41 +0000] [11] [INFO] Worker exiting (pid: 11)
+[2026-10-19 20:07:41 +0000] [12] [ERROR] Error handling request /slow
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 4, in app
+    time.sleep(60)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+127.0.0.1 - - [19/Oct/2026:20:07:41 +0000] "GET /slow HTTP/1.1" 500 0 "-" "-"
+[2026-10-19 20:07:41 +0000] [12] [INFO] Worker exiting (pid: 12)
+[2026-10-19 20:07:41 +0000] [10] [ERROR] Worker (pid:11) was sent SIGKILL! Perhaps out of memory?
+[2026-10-19 20:07:41 +0000] [25] [INFO] Booting worker with pid: 25
+[2026-10-19 20:07:41 +0000] [26] [INFO] Booting worker with pid: 26
+[2026-10-19 20:07:46 +0000] [10] [CRITICAL] WORKER TIMEOUT (pid:25)
+[2026-10-19 20:07:46 +0000] [10] [CRITICAL] WORKER TIMEOUT (pid:26)
+[2026-10-19 20:07:46 +0000] [26] [ERROR] Error handling request /slow
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 4, in app
+    time.sleep(60)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-19 20:07:46 +0000] [25] [ERROR] Error handling request /slow
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 4, in app
+    time.sleep(60)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+127.0.0.1 - - [19/Oct/2026:20:07:46 +0000] "GET /slow HTTP/1.1" 500 0 "-" "-"
+127.0.0.1 - - [19/Oct/2026:20:07:46 +0000] "GET /slow HTTP/1.1" 500 0 "-" "-"
+[2026-10-19 20:07:46 +0000] [25] [INFO] Worker exiting (pid: 25)
+[2026-10-19 20:07:46 +0000] [26] [INFO] Worker exiting (pid: 26)
+[2026-10-19 20:07:46 +0000] [27] [INFO] Booting worker with pid: 27
+[2026-10-19 20:07:46 +0000] [28] [INFO] Booting worker with pid: 28
+[2026-10-19 20:07:51 +0000] [10] [CRITICAL] WORKER TIMEOUT (pid:27)
+[2026-10-19 20:07:51 +0000] [10] [CRITICAL] WORKER TIMEOUT (pid:28)
+[2026-10-19 20:07:51 +0000] [27] [ERROR] Error handling request /slow
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 4, in app
+    time.sleep(60)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-19 20:07:51 +0000] [28] [ERROR] Error handling request /slow
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 4, in app
+    time.sleep(60)
+  File "/usr/local/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+127.0.0.1 - - [19/Oct/2026:20:07:51 +0000] "GET /slow HTTP/1.1" 500 0 "-" "-"
+127.0.0.1 - - [19/Oct/2026:20:07:51 +0000] "GET /slow HTTP/1.1" 500 0 "-" "-"
+[2026-10-19 20:07:51 +0000] [27] [INFO] Worker exiting (pid: 27)
+[2026-10-19 20:07:51 +0000] [28] [INFO] Worker exiting (pid: 28)
+[2026-10-19 20:07:51 +0000] [29] [INFO] Booting worker with pid: 29
+[2026-10-19 20:07:51 +0000] [10] [ERROR] Worker (pid:27) was sent SIGKILL! Perhaps out of memory?
+[2026-10-19 20:07:51 +0000] [30] [INFO] Booting worker with pid: 30

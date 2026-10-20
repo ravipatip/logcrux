@@ -1,6 +1,6 @@
 # Supported Log Types
 
-logcrux supports **209 log format parsers** (208 format-specific + a generic fallback) covering all common Linux services, cloud-native infrastructure, security tooling, and modern observability stacks. Every one of the 209 is listed in the [complete parser index](#complete-parser-index) at the end of this document; the most commonly used formats additionally get a full worked example below (format name, file patterns, a sample log line, extracted fields, and what it detects).
+logcrux supports **218 log format parsers** (217 format-specific + a generic fallback) covering all common Linux services, cloud-native infrastructure, security tooling, and modern observability stacks. Every one of the 218 is listed in the [complete parser index](#complete-parser-index) at the end of this document; the most commonly used formats additionally get a full worked example below (format name, file patterns, a sample log line, extracted fields, and what it detects).
 
 > **This page is the canonical parser count.** Everywhere else (README, docs,
 > logcrux.com) says "200+" deliberately, so a new parser batch only needs the
@@ -14,29 +14,30 @@ logcrux supports **209 log format parsers** (208 format-specific + a generic fal
 | **Web Servers & Proxies** | 16 | alb, apache-access, apache-error, caddy, cloudfront, envoy, haproxy, iis, … |
 | **Databases** | 17 | cassandra, clickhouse, cockroachdb, druid, elasticsearch, flink, hbase, hive, … |
 | **Containers & Cloud-Native** | 17 | cloudinit, cloudtrail, cloudwatch, composelog, cri, docker, fluentbit, gcp, … |
-| **System & Auth** | 12 | apparmor, auditd, cron, fail2ban, journald, kernel, krb5kdc, secure, … |
+| **System & Auth** | 13 | apparmor, auditd, cron, fail2ban, journald, kernel, krb5kdc, macos-unified, secure, … |
 | **Security / SIEM** | 19 | azure, cef, ciscoasa, cloudflare, falco, fortigate, gelf, kubeaudit, … |
 | **Identity & Access Mgmt** | 5 | pingaccess, pingauthorize, pingdirectory, pingfederate, pingintelligence |
 | **Observability / Agents** | 16 | bunyan, datadog, filebeat, kibana, logfmt, logrus, logstash, monit, … |
 | **Mail** | 8 | dovecot, exim, opendkim, opensmtpd, postfix, rspamd, sendmail, spamassassin |
 | **Message Queues** | 6 | activemq, kafka, mosquitto, nats, pulsar, rabbitmq |
-| **Application Frameworks** | 18 | airflow, django, gostdlib, gunicorn, jetty, laravel, log4j, phoenix, … |
+| **Application Frameworks** | 19 | airflow, django, gostdlib, gunicorn, jetty, laravel, log4j, phoenix, … |
 | **Infrastructure, HA & DNS** | 17 | coredns, dnsmasq, etcd, firewalld, freeradius, hashicorp, keepalived, keycloak, … |
 | **Network / VPN** | 8 | frr, mikrotik, openvpn, pihole, tailscale, unifi, wireguard, wpa_supplicant |
 | **Storage & Virtualization** | 10 | ceph, glusterfs, libvirt, lxc, mdadm, minio, podman, qemu, … |
 | **Big Data** | 4 | hadoop, jvmgc, solr, spark |
-| **Build & Package Mgmt** | 8 | apthistory, bazel, dpkg, gradle, maven, npm, pip, yum |
+| **Build & Package Mgmt** | 12 | apthistory, bazel, dnf, dnf5, dpkg, gradle, macos-install, maven, npm, pip, yum, zypp-history |
+| **Backup & Data Protection** | 3 | borg, kopia, restic |
 | **Linux Daemons** | 16 | asterisk, avahi, bluetoothd, chrony, cups, dbus, dhcpd, ftp, … |
 | **Other Daemons** | 11 | ansible, celery, certbot, chef, clamav, jenkins, puppet, rsyncd, … |
 | **Fallback** | 1 | generic |
 
-**Total: 209 parsers**, every one listed exactly once in the [complete index](#complete-parser-index) below.
+**Total: 218 parsers**, every one listed exactly once in the [complete index](#complete-parser-index) below.
 
 ---
 
 ## Detailed Parser Reference
 
-The entries below give full worked examples for the most commonly used formats; all of them follow the same `FORMAT_NAME` / `can_parse` / `parse_line` structure. For the remaining formats — and as a complete cross-check that nothing is missing — see the [Complete Parser Index](#complete-parser-index) at the end of this document, which lists all 209 parsers with their category and source file.
+The entries below give full worked examples for the most commonly used formats; all of them follow the same `FORMAT_NAME` / `can_parse` / `parse_line` structure. For the remaining formats — and as a complete cross-check that nothing is missing — see the [Complete Parser Index](#complete-parser-index) at the end of this document, which lists all 218 parsers with their category and source file.
 
 ### Web Servers (nginx, apache, haproxy, squid, json-access — 5+)
 
@@ -1064,7 +1065,7 @@ Any log line that doesn't match a specific format
 
 ## Complete Parser Index
 
-Every one of the 209 parsers, alphabetically, with its category and source file (`logcrux/parsers/`). This is the authoritative list — if a format isn't here, logcrux doesn't have a dedicated parser for it (it will fall to `generic`).
+Every one of the 218 parsers, alphabetically, with its category and source file (`logcrux/parsers/`). This is the authoritative list — if a format isn't here, logcrux doesn't have a dedicated parser for it (it will fall to `generic`).
 
 | Format name | Category | Source file |
 |---|---|---|
@@ -1082,6 +1083,7 @@ Every one of the 209 parsers, alphabetically, with its category and source file 
 | `azure` | Security / SIEM | `logcrux/parsers/azure.py` |
 | `bazel` | Build & Package Mgmt | `logcrux/parsers/bazel.py` |
 | `bluetoothd` | Linux Daemons | `logcrux/parsers/bluetoothd.py` |
+| `borg` | Backup & Data Protection | `logcrux/parsers/borg.py` |
 | `bunyan` | Observability / Agents | `logcrux/parsers/bunyan.py` |
 | `caddy` | Web Servers & Proxies | `logcrux/parsers/caddy.py` |
 | `cassandra` | Databases | `logcrux/parsers/cassandra.py` |
@@ -1109,6 +1111,8 @@ Every one of the 209 parsers, alphabetically, with its category and source file 
 | `dbus` | Linux Daemons | `logcrux/parsers/dbus.py` |
 | `dhcpd` | Linux Daemons | `logcrux/parsers/dhcpd.py` |
 | `django` | Application Frameworks | `logcrux/parsers/django.py` |
+| `dnf` | Build & Package Mgmt | `logcrux/parsers/dnf5.py` |
+| `dnf5` | Build & Package Mgmt | `logcrux/parsers/dnf5.py` |
 | `dnsmasq` | Infrastructure, HA & DNS | `logcrux/parsers/dnsmasq.py` |
 | `docker` | Containers & Cloud-Native | `logcrux/parsers/docker.py` |
 | `dovecot` | Mail | `logcrux/parsers/dovecot.py` |
@@ -1147,6 +1151,7 @@ Every one of the 209 parsers, alphabetically, with its category and source file 
 | `jenkins` | Other Daemons | `logcrux/parsers/jenkins.py` |
 | `jetty` | Application Frameworks | `logcrux/parsers/jetty.py` |
 | `journald` | System & Auth | `logcrux/parsers/journald.py` |
+| `json` | Application Frameworks | `logcrux/parsers/jsonlines.py` |
 | `json-access` | Web Servers & Proxies | `logcrux/parsers/json_access.py` |
 | `jvmgc` | Big Data | `logcrux/parsers/jvmgc.py` |
 | `kafka` | Message Queues | `logcrux/parsers/kafka.py` |
@@ -1157,6 +1162,7 @@ Every one of the 209 parsers, alphabetically, with its category and source file 
 | `klog` | Containers & Cloud-Native | `logcrux/parsers/klog.py` |
 | `klog-json` | Containers & Cloud-Native | `logcrux/parsers/klogjson.py` |
 | `kong` | Web Servers & Proxies | `logcrux/parsers/kong.py` |
+| `kopia` | Backup & Data Protection | `logcrux/parsers/kopia.py` |
 | `krb5kdc` | System & Auth | `logcrux/parsers/krb5kdc.py` |
 | `kubeaudit` | Security / SIEM | `logcrux/parsers/kubeaudit.py` |
 | `kubernetes` | Containers & Cloud-Native | `logcrux/parsers/kubernetes.py` |
@@ -1169,6 +1175,8 @@ Every one of the 209 parsers, alphabetically, with its category and source file 
 | `logrus` | Observability / Agents | `logcrux/parsers/logrus.py` |
 | `logstash` | Observability / Agents | `logcrux/parsers/logstash.py` |
 | `lxc` | Storage & Virtualization | `logcrux/parsers/lxc.py` |
+| `macos-install` | Build & Package Mgmt | `logcrux/parsers/macosinstall.py` |
+| `macos-unified` | System & Auth | `logcrux/parsers/macos_unified.py` |
 | `maven` | Build & Package Mgmt | `logcrux/parsers/maven.py` |
 | `mdadm` | Storage & Virtualization | `logcrux/parsers/mdadm.py` |
 | `mikrotik` | Network / VPN | `logcrux/parsers/mikrotik.py` |
@@ -1224,6 +1232,7 @@ Every one of the 209 parsers, alphabetically, with its category and source file 
 | `rabbitmq` | Message Queues | `logcrux/parsers/rabbitmq.py` |
 | `rails` | Application Frameworks | `logcrux/parsers/rails.py` |
 | `redis` | Databases | `logcrux/parsers/redis.py` |
+| `restic` | Backup & Data Protection | `logcrux/parsers/restic.py` |
 | `rspamd` | Mail | `logcrux/parsers/rspamd.py` |
 | `rsyncd` | Other Daemons | `logcrux/parsers/rsyncd.py` |
 | `rsyslog` | Linux Daemons | `logcrux/parsers/rsyslog.py` |
@@ -1277,6 +1286,7 @@ Every one of the 209 parsers, alphabetically, with its category and source file 
 | `zeek` | Security / SIEM | `logcrux/parsers/zeek.py` |
 | `zfs` | Storage & Virtualization | `logcrux/parsers/zfs.py` |
 | `zookeeper` | Infrastructure, HA & DNS | `logcrux/parsers/zookeeper.py` |
+| `zypp-history` | Build & Package Mgmt | `logcrux/parsers/zypp.py` |
 
 ---
 

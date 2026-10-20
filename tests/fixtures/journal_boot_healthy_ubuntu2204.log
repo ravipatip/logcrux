@@ -1,0 +1,1597 @@
+Oct 13 08:28:28 ubuntu kernel: Linux version 6.8.0-1070-gcp (buildd@lcy02-amd64-005) (x86_64-linux-gnu-gcc-12 (Ubuntu 12.3.0-1ubuntu1~22.04.3) 12.3.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #78~22.04.1-Ubuntu SMP Thu Sep 17 21:46:54 UTC 2026 (Ubuntu 6.8.0-1070.78~22.04.1-gcp 6.8.12)
+Oct 13 08:28:28 ubuntu kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-6.8.0-1070-gcp root=PARTUUID=376eb5e1-a8bc-41fb-b85c-a3609b43ed4c ro console=ttyS0,115200 panic=-1
+Oct 13 08:28:28 ubuntu kernel: KERNEL supported cpus:
+Oct 13 08:28:28 ubuntu kernel:   Intel GenuineIntel
+Oct 13 08:28:28 ubuntu kernel:   AMD AuthenticAMD
+Oct 13 08:28:28 ubuntu kernel:   Hygon HygonGenuine
+Oct 13 08:28:28 ubuntu kernel:   Centaur CentaurHauls
+Oct 13 08:28:28 ubuntu kernel:   zhaoxin   Shanghai  
+Oct 13 08:28:28 ubuntu kernel: BIOS-provided physical RAM map:
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x0000000000000000-0x0000000000000fff] reserved
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x0000000000001000-0x0000000000054fff] usable
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x0000000000055000-0x000000000005ffff] reserved
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x0000000000060000-0x0000000000097fff] usable
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x0000000000098000-0x000000000009ffff] reserved
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000bd314fff] usable
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x00000000bd315000-0x00000000bd31dfff] ACPI data
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x00000000bd31e000-0x00000000bf8ecfff] usable
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x00000000bf8ed000-0x00000000bfb6cfff] reserved
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x00000000bfb6d000-0x00000000bfb7efff] ACPI data
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x00000000bfb7f000-0x00000000bfbfefff] ACPI NVS
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x00000000bfbff000-0x00000000bffdffff] usable
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x00000000bffe0000-0x00000000bfffffff] reserved
+Oct 13 08:28:28 ubuntu kernel: BIOS-e820: [mem 0x0000000100000000-0x000000023fffffff] usable
+Oct 13 08:28:28 ubuntu kernel: NX (Execute Disable) protection: active
+Oct 13 08:28:28 ubuntu kernel: APIC: Static calls initialized
+Oct 13 08:28:28 ubuntu kernel: efi: EFI v2.7 by EDK II
+Oct 13 08:28:28 ubuntu kernel: efi: TPMFinalLog=0xbfbf7000 ACPI=0xbfb7e000 ACPI 2.0=0xbfb7e014 SMBIOS=0xbf9ca000 MEMATTR=0xbd31e018 MOKvar=0xbf9c8000 RNG=0xbfb73018 TPMEventLog=0xbd315018 
+Oct 13 08:28:28 ubuntu kernel: random: crng init done
+Oct 13 08:28:28 ubuntu kernel: secureboot: Secure boot disabled
+Oct 13 08:28:28 ubuntu kernel: SMBIOS 2.4 present.
+Oct 13 08:28:28 ubuntu kernel: DMI: Google Google Compute Engine/Google Compute Engine, BIOS Google 07/24/2026
+Oct 13 08:28:28 ubuntu kernel: Hypervisor detected: KVM
+Oct 13 08:28:28 ubuntu kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Oct 13 08:28:28 ubuntu kernel: kvm-clock: using sched offset of 13749325410 cycles
+Oct 13 08:28:28 ubuntu kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Oct 13 08:28:28 ubuntu kernel: tsc: Detected 2200.144 MHz processor
+Oct 13 08:28:28 ubuntu kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Oct 13 08:28:28 ubuntu kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Oct 13 08:28:28 ubuntu kernel: last_pfn = 0x240000 max_arch_pfn = 0x400000000
+Oct 13 08:28:28 ubuntu kernel: MTRR map: 3 entries (2 fixed + 1 variable; max 18), built from 8 variable MTRRs
+Oct 13 08:28:28 ubuntu kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Oct 13 08:28:28 ubuntu kernel: last_pfn = 0xbffe0 max_arch_pfn = 0x400000000
+Oct 13 08:28:28 ubuntu kernel: Using GB pages for direct mapping
+Oct 13 08:28:28 ubuntu kernel: secureboot: Secure boot disabled
+Oct 13 08:28:28 ubuntu kernel: ACPI: Early table checksum verification disabled
+Oct 13 08:28:28 ubuntu kernel: ACPI: RSDP 0x00000000BFB7E014 000024 (v02 Google)
+Oct 13 08:28:28 ubuntu kernel: ACPI: XSDT 0x00000000BFB7D0E8 00005C (v01 Google GOOGFACP 00000001      01000013)
+Oct 13 08:28:28 ubuntu kernel: ACPI: FACP 0x00000000BFB78000 0000F4 (v02 Google GOOGFACP 00000001 GOOG 00000001)
+Oct 13 08:28:28 ubuntu kernel: ACPI: DSDT 0x00000000BFB79000 001A64 (v01 Google GOOGDSDT 00000001 GOOG 00000001)
+Oct 13 08:28:28 ubuntu kernel: ACPI: FACS 0x00000000BFBF2000 000040
+Oct 13 08:28:28 ubuntu kernel: ACPI: SSDT 0x00000000BFB7C000 000316 (v02 GOOGLE Tpm2Tabl 00001000 INTL 20250807)
+Oct 13 08:28:28 ubuntu kernel: ACPI: TPM2 0x00000000BFB7B000 000034 (v04 GOOGLE          00000001 GOOG 00000001)
+Oct 13 08:28:28 ubuntu kernel: ACPI: SRAT 0x00000000BFB77000 0000C8 (v03 Google GOOGSRAT 00000001 GOOG 00000001)
+Oct 13 08:28:28 ubuntu kernel: ACPI: APIC 0x00000000BFB76000 000076 (v05 Google GOOGAPIC 00000001 GOOG 00000001)
+Oct 13 08:28:28 ubuntu kernel: ACPI: SSDT 0x00000000BFB75000 000980 (v01 Google GOOGSSDT 00000001 GOOG 00000001)
+Oct 13 08:28:28 ubuntu kernel: ACPI: WAET 0x00000000BFB74000 000028 (v01 Google GOOGWAET 00000001 GOOG 00000001)
+Oct 13 08:28:28 ubuntu kernel: ACPI: Reserving FACP table memory at [mem 0xbfb78000-0xbfb780f3]
+Oct 13 08:28:28 ubuntu kernel: ACPI: Reserving DSDT table memory at [mem 0xbfb79000-0xbfb7aa63]
+Oct 13 08:28:28 ubuntu kernel: ACPI: Reserving FACS table memory at [mem 0xbfbf2000-0xbfbf203f]
+Oct 13 08:28:28 ubuntu kernel: ACPI: Reserving SSDT table memory at [mem 0xbfb7c000-0xbfb7c315]
+Oct 13 08:28:28 ubuntu kernel: ACPI: Reserving TPM2 table memory at [mem 0xbfb7b000-0xbfb7b033]
+Oct 13 08:28:28 ubuntu kernel: ACPI: Reserving SRAT table memory at [mem 0xbfb77000-0xbfb770c7]
+Oct 13 08:28:28 ubuntu kernel: ACPI: Reserving APIC table memory at [mem 0xbfb76000-0xbfb76075]
+Oct 13 08:28:28 ubuntu kernel: ACPI: Reserving SSDT table memory at [mem 0xbfb75000-0xbfb7597f]
+Oct 13 08:28:28 ubuntu kernel: ACPI: Reserving WAET table memory at [mem 0xbfb74000-0xbfb74027]
+Oct 13 08:28:28 ubuntu kernel: SRAT: PXM 0 -> APIC 0x00 -> Node 0
+Oct 13 08:28:28 ubuntu kernel: SRAT: PXM 0 -> APIC 0x01 -> Node 0
+Oct 13 08:28:28 ubuntu kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0x0009ffff]
+Oct 13 08:28:28 ubuntu kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00100000-0xbfffffff]
+Oct 13 08:28:28 ubuntu kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000-0x23fffffff]
+Oct 13 08:28:28 ubuntu kernel: NUMA: Node 0 [mem 0x00000000-0x0009ffff] + [mem 0x00100000-0xbfffffff] -> [mem 0x00000000-0xbfffffff]
+Oct 13 08:28:28 ubuntu kernel: NUMA: Node 0 [mem 0x00000000-0xbfffffff] + [mem 0x100000000-0x23fffffff] -> [mem 0x00000000-0x23fffffff]
+Oct 13 08:28:28 ubuntu kernel: NODE_DATA(0) allocated [mem 0x23ffd5000-0x23fffffff]
+Oct 13 08:28:28 ubuntu kernel: Zone ranges:
+Oct 13 08:28:28 ubuntu kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Oct 13 08:28:28 ubuntu kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Oct 13 08:28:28 ubuntu kernel:   Normal   [mem 0x0000000100000000-0x000000023fffffff]
+Oct 13 08:28:28 ubuntu kernel:   Device   empty
+Oct 13 08:28:28 ubuntu kernel: Movable zone start for each node
+Oct 13 08:28:28 ubuntu kernel: Early memory node ranges
+Oct 13 08:28:28 ubuntu kernel:   node   0: [mem 0x0000000000001000-0x0000000000054fff]
+Oct 13 08:28:28 ubuntu kernel:   node   0: [mem 0x0000000000060000-0x0000000000097fff]
+Oct 13 08:28:28 ubuntu kernel:   node   0: [mem 0x0000000000100000-0x00000000bd314fff]
+Oct 13 08:28:28 ubuntu kernel:   node   0: [mem 0x00000000bd31e000-0x00000000bf8ecfff]
+Oct 13 08:28:28 ubuntu kernel:   node   0: [mem 0x00000000bfbff000-0x00000000bffdffff]
+Oct 13 08:28:28 ubuntu kernel:   node   0: [mem 0x0000000100000000-0x000000023fffffff]
+Oct 13 08:28:28 ubuntu kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000023fffffff]
+Oct 13 08:28:28 ubuntu kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Oct 13 08:28:28 ubuntu kernel: On node 0, zone DMA: 11 pages in unavailable ranges
+Oct 13 08:28:28 ubuntu kernel: On node 0, zone DMA: 104 pages in unavailable ranges
+Oct 13 08:28:28 ubuntu kernel: On node 0, zone DMA32: 9 pages in unavailable ranges
+Oct 13 08:28:28 ubuntu kernel: On node 0, zone DMA32: 786 pages in unavailable ranges
+Oct 13 08:28:28 ubuntu kernel: On node 0, zone Normal: 32 pages in unavailable ranges
+Oct 13 08:28:28 ubuntu kernel: ACPI: PM-Timer IO Port: 0xb008
+Oct 13 08:28:28 ubuntu kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+Oct 13 08:28:28 ubuntu kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+Oct 13 08:28:28 ubuntu kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+Oct 13 08:28:28 ubuntu kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Oct 13 08:28:28 ubuntu kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+Oct 13 08:28:28 ubuntu kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+Oct 13 08:28:28 ubuntu kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Oct 13 08:28:28 ubuntu kernel: smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+Oct 13 08:28:28 ubuntu kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Oct 13 08:28:28 ubuntu kernel: PM: hibernation: Registered nosave memory: [mem 0x00055000-0x0005ffff]
+Oct 13 08:28:28 ubuntu kernel: PM: hibernation: Registered nosave memory: [mem 0x00098000-0x000fffff]
+Oct 13 08:28:28 ubuntu kernel: PM: hibernation: Registered nosave memory: [mem 0xbd315000-0xbd31dfff]
+Oct 13 08:28:28 ubuntu kernel: PM: hibernation: Registered nosave memory: [mem 0xbf8ed000-0xbfbfefff]
+Oct 13 08:28:28 ubuntu kernel: PM: hibernation: Registered nosave memory: [mem 0xbffe0000-0xffffffff]
+Oct 13 08:28:28 ubuntu kernel: [mem 0xc0000000-0xffffffff] available for PCI devices
+Oct 13 08:28:28 ubuntu kernel: Booting paravirtualized kernel on KVM
+Oct 13 08:28:28 ubuntu kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Oct 13 08:28:28 ubuntu kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+Oct 13 08:28:28 ubuntu kernel: percpu: Embedded 86 pages/cpu s229376 r8192 d114688 u1048576
+Oct 13 08:28:28 ubuntu kernel: pcpu-alloc: s229376 r8192 d114688 u1048576 alloc=1*2097152
+Oct 13 08:28:28 ubuntu kernel: pcpu-alloc: [0] 0 1 
+Oct 13 08:28:28 ubuntu kernel: kvm-guest: PV spinlocks enabled
+Oct 13 08:28:28 ubuntu kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.8.0-1070-gcp root=PARTUUID=376eb5e1-a8bc-41fb-b85c-a3609b43ed4c ro console=ttyS0,115200 panic=-1
+Oct 13 08:28:28 ubuntu kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: Fallback order for Node 0: 0 
+Oct 13 08:28:28 ubuntu kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2061295
+Oct 13 08:28:28 ubuntu kernel: Policy zone: Normal
+Oct 13 08:28:28 ubuntu kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Oct 13 08:28:28 ubuntu kernel: software IO TLB: area num 2.
+Oct 13 08:28:28 ubuntu kernel: Memory: 8065904K/8384836K available (22528K kernel code, 4487K rwdata, 14272K rodata, 5084K init, 4580K bss, 318672K reserved, 0K cma-reserved)
+Oct 13 08:28:28 ubuntu kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Oct 13 08:28:28 ubuntu kernel: Kernel/User page tables isolation: enabled
+Oct 13 08:28:28 ubuntu kernel: ftrace: allocating 59374 entries in 232 pages
+Oct 13 08:28:28 ubuntu kernel: ftrace: allocated 232 pages with 4 groups
+Oct 13 08:28:28 ubuntu kernel: rcu: Hierarchical RCU implementation.
+Oct 13 08:28:28 ubuntu kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=2.
+Oct 13 08:28:28 ubuntu kernel:         Rude variant of Tasks RCU enabled.
+Oct 13 08:28:28 ubuntu kernel:         Tracing variant of Tasks RCU enabled.
+Oct 13 08:28:28 ubuntu kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Oct 13 08:28:28 ubuntu kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+Oct 13 08:28:28 ubuntu kernel: RCU Tasks Rude: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+Oct 13 08:28:28 ubuntu kernel: RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+Oct 13 08:28:28 ubuntu kernel: NR_IRQS: 524544, nr_irqs: 440, preallocated irqs: 16
+Oct 13 08:28:28 ubuntu kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Oct 13 08:28:28 ubuntu kernel: Console: colour dummy device 80x25
+Oct 13 08:28:28 ubuntu kernel: printk: legacy console [ttyS0] enabled
+Oct 13 08:28:28 ubuntu kernel: ACPI: Core revision 20230628
+Oct 13 08:28:28 ubuntu kernel: APIC: Switch to symmetric I/O mode setup
+Oct 13 08:28:28 ubuntu kernel: x2apic enabled
+Oct 13 08:28:28 ubuntu kernel: APIC: Switched APIC routing to: physical x2apic
+Oct 13 08:28:28 ubuntu kernel: ..TIMER: vector=0x30 apic1=0 pin1=0 apic2=-1 pin2=-1
+Oct 13 08:28:28 ubuntu kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1fb6bb06dbe, max_idle_ns: 440795305109 ns
+Oct 13 08:28:28 ubuntu kernel: Calibrating delay loop (skipped) preset value.. 4400.28 BogoMIPS (lpj=2200144)
+Oct 13 08:28:28 ubuntu kernel: Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Oct 13 08:28:28 ubuntu kernel: Last level dTLB entries: 4KB 64, 2MB 32, 4MB 32, 1GB 4
+Oct 13 08:28:28 ubuntu kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Oct 13 08:28:28 ubuntu kernel: Spectre V2 : Spectre BHI mitigation: SW BHB clearing on vm exit
+Oct 13 08:28:28 ubuntu kernel: Spectre V2 : Spectre BHI mitigation: SW BHB clearing on syscall
+Oct 13 08:28:28 ubuntu kernel: Spectre V2 : Mitigation: IBRS
+Oct 13 08:28:28 ubuntu kernel: Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+Oct 13 08:28:28 ubuntu kernel: RETBleed: Mitigation: IBRS
+Oct 13 08:28:28 ubuntu kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Oct 13 08:28:28 ubuntu kernel: Spectre V2 : User space: Mitigation: STIBP via prctl
+Oct 13 08:28:28 ubuntu kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+Oct 13 08:28:28 ubuntu kernel: MDS: Mitigation: Clear CPU buffers
+Oct 13 08:28:28 ubuntu kernel: TAA: Mitigation: Clear CPU buffers
+Oct 13 08:28:28 ubuntu kernel: MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+Oct 13 08:28:28 ubuntu kernel: active return thunk: its_return_thunk
+Oct 13 08:28:28 ubuntu kernel: ITS: Mitigation: Aligned branch/return thunks
+Oct 13 08:28:28 ubuntu kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Oct 13 08:28:28 ubuntu kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Oct 13 08:28:28 ubuntu kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Oct 13 08:28:28 ubuntu kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Oct 13 08:28:28 ubuntu kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Oct 13 08:28:28 ubuntu kernel: Freeing SMP alternatives memory: 48K
+Oct 13 08:28:28 ubuntu kernel: pid_max: default: 32768 minimum: 301
+Oct 13 08:28:28 ubuntu kernel: LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,integrity
+Oct 13 08:28:28 ubuntu kernel: landlock: Up and running.
+Oct 13 08:28:28 ubuntu kernel: Yama: becoming mindful.
+Oct 13 08:28:28 ubuntu kernel: AppArmor: AppArmor initialized
+Oct 13 08:28:28 ubuntu kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: smpboot: CPU0: Intel(R) Xeon(R) CPU @ 2.20GHz (family: 0x6, model: 0x4f, stepping: 0x0)
+Oct 13 08:28:28 ubuntu kernel: Performance Events: unsupported p6 CPU model 79 no PMU driver, software events only.
+Oct 13 08:28:28 ubuntu kernel: signal: max sigframe size: 1776
+Oct 13 08:28:28 ubuntu kernel: rcu: Hierarchical SRCU implementation.
+Oct 13 08:28:28 ubuntu kernel: rcu:         Max phase no-delay instances is 400.
+Oct 13 08:28:28 ubuntu kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+Oct 13 08:28:28 ubuntu kernel: smp: Bringing up secondary CPUs ...
+Oct 13 08:28:28 ubuntu kernel: smpboot: x86: Booting SMP configuration:
+Oct 13 08:28:28 ubuntu kernel: .... node  #0, CPUs:      #1
+Oct 13 08:28:28 ubuntu kernel: Transient Scheduler Attacks: MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+Oct 13 08:28:28 ubuntu kernel: Transient Scheduler Attacks: TAA CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/tsx_async_abort.html for more details.
+Oct 13 08:28:28 ubuntu kernel: Transient Scheduler Attacks: MMIO Stale Data CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/processor_mmio_stale_data.html for more details.
+Oct 13 08:28:28 ubuntu kernel: smp: Brought up 1 node, 2 CPUs
+Oct 13 08:28:28 ubuntu kernel: smpboot: Max logical packages: 1
+Oct 13 08:28:28 ubuntu kernel: smpboot: Total of 2 processors activated (8800.57 BogoMIPS)
+Oct 13 08:28:28 ubuntu kernel: devtmpfs: initialized
+Oct 13 08:28:28 ubuntu kernel: x86/mm: Memory block size: 128MB
+Oct 13 08:28:28 ubuntu kernel: ACPI: PM: Registering ACPI NVS region [mem 0xbfb7f000-0xbfbfefff] (524288 bytes)
+Oct 13 08:28:28 ubuntu kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Oct 13 08:28:28 ubuntu kernel: futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: pinctrl core: initialized pinctrl subsystem
+Oct 13 08:28:28 ubuntu kernel: PM: RTC time: 08:28:25, date: 2026-10-13
+Oct 13 08:28:28 ubuntu kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Oct 13 08:28:28 ubuntu kernel: DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+Oct 13 08:28:28 ubuntu kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Oct 13 08:28:28 ubuntu kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Oct 13 08:28:28 ubuntu kernel: audit: initializing netlink subsys (disabled)
+Oct 13 08:28:28 ubuntu kernel: audit: type=2000 audit(1791880105.145:1): state=initialized audit_enabled=0 res=1
+Oct 13 08:28:28 ubuntu kernel: thermal_sys: Registered thermal governor 'fair_share'
+Oct 13 08:28:28 ubuntu kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Oct 13 08:28:28 ubuntu kernel: thermal_sys: Registered thermal governor 'step_wise'
+Oct 13 08:28:28 ubuntu kernel: thermal_sys: Registered thermal governor 'user_space'
+Oct 13 08:28:28 ubuntu kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Oct 13 08:28:28 ubuntu kernel: cpuidle: using governor ladder
+Oct 13 08:28:28 ubuntu kernel: cpuidle: using governor menu
+Oct 13 08:28:28 ubuntu kernel: efi: Freeing EFI boot services memory: 56236K
+Oct 13 08:28:28 ubuntu kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Oct 13 08:28:28 ubuntu kernel: PCI: Using configuration type 1 for base access
+Oct 13 08:28:28 ubuntu kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Oct 13 08:28:28 ubuntu kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+Oct 13 08:28:28 ubuntu kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+Oct 13 08:28:28 ubuntu kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Oct 13 08:28:28 ubuntu kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Oct 13 08:28:28 ubuntu kernel: ACPI: Added _OSI(Module Device)
+Oct 13 08:28:28 ubuntu kernel: ACPI: Added _OSI(Processor Device)
+Oct 13 08:28:28 ubuntu kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Oct 13 08:28:28 ubuntu kernel: ACPI: 3 ACPI AML tables successfully acquired and loaded
+Oct 13 08:28:28 ubuntu kernel: ACPI: _OSC evaluation for CPUs failed, trying _PDC
+Oct 13 08:28:28 ubuntu kernel: ACPI: Interpreter enabled
+Oct 13 08:28:28 ubuntu kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Oct 13 08:28:28 ubuntu kernel: ACPI: Using IOAPIC for interrupt routing
+Oct 13 08:28:28 ubuntu kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Oct 13 08:28:28 ubuntu kernel: PCI: Ignoring E820 reservations for host bridge windows
+Oct 13 08:28:28 ubuntu kernel: ACPI: Enabled 16 GPEs in block 00 to 0F
+Oct 13 08:28:28 ubuntu kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Oct 13 08:28:28 ubuntu kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR HPX-Type3]
+Oct 13 08:28:28 ubuntu kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Oct 13 08:28:28 ubuntu kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Oct 13 08:28:28 ubuntu kernel: PCI host bridge to bus 0000:00
+Oct 13 08:28:28 ubuntu kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Oct 13 08:28:28 ubuntu kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Oct 13 08:28:28 ubuntu kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Oct 13 08:28:28 ubuntu kernel: pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfefff window]
+Oct 13 08:28:28 ubuntu kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:01.0: [8086:7110] type 00 class 0x060100 conventional PCI endpoint
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:03.0: [1af4:1004] type 00 class 0x000000 conventional PCI endpoint
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:03.0: BAR 0 [io  0xc040-0xc07f]
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:03.0: BAR 1 [mem 0xc0001000-0xc000107f]
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:04.0: [1af4:1000] type 00 class 0x020000 conventional PCI endpoint
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:04.0: BAR 0 [io  0xc000-0xc03f]
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:04.0: BAR 1 [mem 0xc0000000-0xc000007f]
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:05.0: [1af4:1002] type 00 class 0x00ff00 conventional PCI endpoint
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:05.0: BAR 0 [io  0xc0a0-0xc0bf]
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:06.0: [1af4:1005] type 00 class 0x00ff00 conventional PCI endpoint
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:06.0: BAR 0 [io  0xc080-0xc09f]
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:06.0: BAR 1 [mem 0xc0002000-0xc000203f]
+Oct 13 08:28:28 ubuntu kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+Oct 13 08:28:28 ubuntu kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Oct 13 08:28:28 ubuntu kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Oct 13 08:28:28 ubuntu kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Oct 13 08:28:28 ubuntu kernel: ACPI: PCI: Interrupt link LNKS configured for IRQ 9
+Oct 13 08:28:28 ubuntu kernel: iommu: Default domain type: Translated
+Oct 13 08:28:28 ubuntu kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Oct 13 08:28:28 ubuntu kernel: SCSI subsystem initialized
+Oct 13 08:28:28 ubuntu kernel: libata version 3.00 loaded.
+Oct 13 08:28:28 ubuntu kernel: ACPI: bus type USB registered
+Oct 13 08:28:28 ubuntu kernel: usbcore: registered new interface driver usbfs
+Oct 13 08:28:28 ubuntu kernel: usbcore: registered new interface driver hub
+Oct 13 08:28:28 ubuntu kernel: usbcore: registered new device driver usb
+Oct 13 08:28:28 ubuntu kernel: pps_core: LinuxPPS API ver. 1 registered
+Oct 13 08:28:28 ubuntu kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 13 08:28:28 ubuntu kernel: PTP clock support registered
+Oct 13 08:28:28 ubuntu kernel: EDAC MC: Ver: 3.0.0
+Oct 13 08:28:28 ubuntu kernel: efivars: Registered efivars operations
+Oct 13 08:28:28 ubuntu kernel: NetLabel: Initializing
+Oct 13 08:28:28 ubuntu kernel: NetLabel:  domain hash size = 128
+Oct 13 08:28:28 ubuntu kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct 13 08:28:28 ubuntu kernel: NetLabel:  unlabeled traffic allowed by default
+Oct 13 08:28:28 ubuntu kernel: mctp: management component transport protocol core
+Oct 13 08:28:28 ubuntu kernel: NET: Registered PF_MCTP protocol family
+Oct 13 08:28:28 ubuntu kernel: PCI: Using ACPI for IRQ routing
+Oct 13 08:28:28 ubuntu kernel: PCI: pci_cache_line_size set to 64 bytes
+Oct 13 08:28:28 ubuntu kernel: e820: reserve RAM buffer [mem 0x00055000-0x0005ffff]
+Oct 13 08:28:28 ubuntu kernel: e820: reserve RAM buffer [mem 0x00098000-0x0009ffff]
+Oct 13 08:28:28 ubuntu kernel: e820: reserve RAM buffer [mem 0xbd315000-0xbfffffff]
+Oct 13 08:28:28 ubuntu kernel: e820: reserve RAM buffer [mem 0xbf8ed000-0xbfffffff]
+Oct 13 08:28:28 ubuntu kernel: e820: reserve RAM buffer [mem 0xbffe0000-0xbfffffff]
+Oct 13 08:28:28 ubuntu kernel: vgaarb: loaded
+Oct 13 08:28:28 ubuntu kernel: clocksource: Switched to clocksource kvm-clock
+Oct 13 08:28:28 ubuntu kernel: VFS: Disk quotas dquot_6.6.0
+Oct 13 08:28:28 ubuntu kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct 13 08:28:28 ubuntu kernel: AppArmor: AppArmor Filesystem Enabled
+Oct 13 08:28:28 ubuntu kernel: pnp: PnP ACPI init
+Oct 13 08:28:28 ubuntu kernel: pnp: PnP ACPI: found 7 devices
+Oct 13 08:28:28 ubuntu kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Oct 13 08:28:28 ubuntu kernel: NET: Registered PF_INET protocol family
+Oct 13 08:28:28 ubuntu kernel: IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: TCP: Hash tables configured (established 65536 bind 65536)
+Oct 13 08:28:28 ubuntu kernel: MPTCP token hash table entries: 8192 (order: 6, 196608 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+Oct 13 08:28:28 ubuntu kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Oct 13 08:28:28 ubuntu kernel: NET: Registered PF_XDP protocol family
+Oct 13 08:28:28 ubuntu kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Oct 13 08:28:28 ubuntu kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Oct 13 08:28:28 ubuntu kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Oct 13 08:28:28 ubuntu kernel: pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfefff window]
+Oct 13 08:28:28 ubuntu kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Oct 13 08:28:28 ubuntu kernel: PCI: CLS 0 bytes, default 64
+Oct 13 08:28:28 ubuntu kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Oct 13 08:28:28 ubuntu kernel: software IO TLB: mapped [mem 0x00000000b7f7f000-0x00000000bbf7f000] (64MB)
+Oct 13 08:28:28 ubuntu kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fb6bb06dbe, max_idle_ns: 440795305109 ns
+Oct 13 08:28:28 ubuntu kernel: clocksource: Switched to clocksource tsc
+Oct 13 08:28:28 ubuntu kernel: Initialise system trusted keyrings
+Oct 13 08:28:28 ubuntu kernel: Key type blacklist registered
+Oct 13 08:28:28 ubuntu kernel: workingset: timestamp_bits=36 max_order=21 bucket_order=0
+Oct 13 08:28:28 ubuntu kernel: zbud: loaded
+Oct 13 08:28:28 ubuntu kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Oct 13 08:28:28 ubuntu kernel: fuse: init (API version 7.39)
+Oct 13 08:28:28 ubuntu kernel: integrity: Platform Keyring initialized
+Oct 13 08:28:28 ubuntu kernel: integrity: Machine keyring initialized
+Oct 13 08:28:28 ubuntu kernel: Key type asymmetric registered
+Oct 13 08:28:28 ubuntu kernel: Asymmetric key parser 'x509' registered
+Oct 13 08:28:28 ubuntu kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+Oct 13 08:28:28 ubuntu kernel: io scheduler mq-deadline registered
+Oct 13 08:28:28 ubuntu kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Oct 13 08:28:28 ubuntu kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Oct 13 08:28:28 ubuntu kernel: ACPI: button: Power Button [PWRF]
+Oct 13 08:28:28 ubuntu kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+Oct 13 08:28:28 ubuntu kernel: ACPI: button: Sleep Button [SLPF]
+Oct 13 08:28:28 ubuntu kernel: ACPI: \_SB_.LNKC: Enabled at IRQ 11
+Oct 13 08:28:28 ubuntu kernel: virtio-pci 0000:00:03.0: virtio_pci: leaving for legacy driver
+Oct 13 08:28:28 ubuntu kernel: ACPI: \_SB_.LNKD: Enabled at IRQ 10
+Oct 13 08:28:28 ubuntu kernel: virtio-pci 0000:00:04.0: virtio_pci: leaving for legacy driver
+Oct 13 08:28:28 ubuntu kernel: ACPI: \_SB_.LNKA: Enabled at IRQ 10
+Oct 13 08:28:28 ubuntu kernel: virtio-pci 0000:00:05.0: virtio_pci: leaving for legacy driver
+Oct 13 08:28:28 ubuntu kernel: ACPI: \_SB_.LNKB: Enabled at IRQ 11
+Oct 13 08:28:28 ubuntu kernel: virtio-pci 0000:00:06.0: virtio_pci: leaving for legacy driver
+Oct 13 08:28:28 ubuntu kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Oct 13 08:28:28 ubuntu kernel: 00:03: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Oct 13 08:28:28 ubuntu kernel: 00:04: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+Oct 13 08:28:28 ubuntu kernel: 00:05: ttyS2 at I/O 0x3e8 (irq = 6, base_baud = 115200) is a 16550A
+Oct 13 08:28:28 ubuntu kernel: 00:06: ttyS3 at I/O 0x2e8 (irq = 7, base_baud = 115200) is a 16550A
+Oct 13 08:28:28 ubuntu kernel: Linux agpgart interface v0.103
+Oct 13 08:28:28 ubuntu kernel: tpm_tis MSFT0101:00: 2.0 TPM (device-id 0x9009, rev-id 0)
+Oct 13 08:28:28 ubuntu kernel: loop: module loaded
+Oct 13 08:28:28 ubuntu kernel: virtio_scsi virtio0: 1/0/0 default/read/poll queues
+Oct 13 08:28:28 ubuntu kernel: scsi host0: Virtio SCSI HBA
+Oct 13 08:28:28 ubuntu kernel: blk-mq: reduced tag depth to 10240
+Oct 13 08:28:28 ubuntu kernel: Key type psk registered
+Oct 13 08:28:28 ubuntu kernel: scsi 0:0:1:0: Direct-Access     Google   PersistentDisk   1    PQ: 0 ANSI: 6
+Oct 13 08:28:28 ubuntu kernel: ACPI: bus type drm_connector registered
+Oct 13 08:28:28 ubuntu kernel: tun: Universal TUN/TAP device driver, 1.6
+Oct 13 08:28:28 ubuntu kernel: PPP generic driver version 2.4.2
+Oct 13 08:28:28 ubuntu kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+Oct 13 08:28:28 ubuntu kernel: i8042: Warning: Keylock active
+Oct 13 08:28:28 ubuntu kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Oct 13 08:28:28 ubuntu kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Oct 13 08:28:28 ubuntu kernel: mousedev: PS/2 mouse device common for all mice
+Oct 13 08:28:28 ubuntu kernel: rtc_cmos 00:00: RTC can wake from S4
+Oct 13 08:28:28 ubuntu kernel: rtc_cmos 00:00: registered as rtc0
+Oct 13 08:28:28 ubuntu kernel: rtc_cmos 00:00: setting system clock to 2026-10-13T08:28:26 UTC (1791880106)
+Oct 13 08:28:28 ubuntu kernel: rtc_cmos 00:00: alarms up to one day, 114 bytes nvram
+Oct 13 08:28:28 ubuntu kernel: i2c_dev: i2c /dev entries driver
+Oct 13 08:28:28 ubuntu kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Oct 13 08:28:28 ubuntu kernel: device-mapper: uevent: version 1.0.3
+Oct 13 08:28:28 ubuntu kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+Oct 13 08:28:28 ubuntu kernel: intel_pstate: CPU model not supported
+Oct 13 08:28:28 ubuntu kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Oct 13 08:28:28 ubuntu kernel: drop_monitor: Initializing network drop monitor service
+Oct 13 08:28:28 ubuntu kernel: sd 0:0:1:0: [sda] 62914560 512-byte logical blocks: (32.2 GB/30.0 GiB)
+Oct 13 08:28:28 ubuntu kernel: NET: Registered PF_INET6 protocol family
+Oct 13 08:28:28 ubuntu kernel: sd 0:0:1:0: [sda] 4096-byte physical blocks
+Oct 13 08:28:28 ubuntu kernel: sd 0:0:1:0: Attached scsi generic sg0 type 0
+Oct 13 08:28:28 ubuntu kernel: sd 0:0:1:0: [sda] Write Protect is off
+Oct 13 08:28:28 ubuntu kernel: sd 0:0:1:0: [sda] Mode Sense: 1f 00 00 08
+Oct 13 08:28:28 ubuntu kernel: sd 0:0:1:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 13 08:28:28 ubuntu kernel: Segment Routing with IPv6
+Oct 13 08:28:28 ubuntu kernel: In-situ OAM (IOAM) with IPv6
+Oct 13 08:28:28 ubuntu kernel: NET: Registered PF_PACKET protocol family
+Oct 13 08:28:28 ubuntu kernel: Key type dns_resolver registered
+Oct 13 08:28:28 ubuntu kernel: No MBM correction factor available
+Oct 13 08:28:28 ubuntu kernel: IPI shorthand broadcast: enabled
+Oct 13 08:28:28 ubuntu kernel: sched_clock: Marking stable (1134006222, 461185208)->(1827027074, -231835644)
+Oct 13 08:28:28 ubuntu kernel: registered taskstats version 1
+Oct 13 08:28:28 ubuntu kernel: Loading compiled-in X.509 certificates
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Build time autogenerated kernel key: aa6d01edc715f245fcb1458f78d489ed959cb519'
+Oct 13 08:28:28 ubuntu kernel: GPT:Primary header thinks Alt. header is not at the end of the disk.
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+Oct 13 08:28:28 ubuntu kernel: GPT:8388607 != 62914559
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+Oct 13 08:28:28 ubuntu kernel: GPT:Alternate GPT header not at the end of the disk.
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'
+Oct 13 08:28:28 ubuntu kernel: GPT:8388607 != 62914559
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+Oct 13 08:28:28 ubuntu kernel: GPT: Use GNU Parted to correct GPT errors.
+Oct 13 08:28:28 ubuntu kernel: blacklist: Loading compiled-in revocation X.509 certificates
+Oct 13 08:28:28 ubuntu kernel:  sda: sda1 sda14 sda15
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+Oct 13 08:28:28 ubuntu kernel: sd 0:0:1:0: [sda] Attached SCSI disk
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+Oct 13 08:28:28 ubuntu kernel: Key type .fscrypt registered
+Oct 13 08:28:28 ubuntu kernel: Key type fscrypt-provisioning registered
+Oct 13 08:28:28 ubuntu kernel: Key type trusted registered
+Oct 13 08:28:28 ubuntu kernel: Key type encrypted registered
+Oct 13 08:28:28 ubuntu kernel: AppArmor: AppArmor sha256 policy hashing enabled
+Oct 13 08:28:28 ubuntu kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 13 08:28:28 ubuntu kernel: integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+Oct 13 08:28:28 ubuntu kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 13 08:28:28 ubuntu kernel: integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+Oct 13 08:28:28 ubuntu kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 13 08:28:28 ubuntu kernel: integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+Oct 13 08:28:28 ubuntu kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 13 08:28:28 ubuntu kernel: integrity: Loaded X.509 cert 'Microsoft UEFI CA 2023: 81aa6b3244c935bce0d6628af39827421e32497d'
+Oct 13 08:28:28 ubuntu kernel: Loading compiled-in module X.509 certificates
+Oct 13 08:28:28 ubuntu kernel: Loaded X.509 cert 'Build time autogenerated kernel key: aa6d01edc715f245fcb1458f78d489ed959cb519'
+Oct 13 08:28:28 ubuntu kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Oct 13 08:28:28 ubuntu kernel: ima: Allocated hash algorithm: sha256
+Oct 13 08:28:28 ubuntu kernel: ima: No architecture policies found
+Oct 13 08:28:28 ubuntu kernel: evm: Initialising EVM extended attributes:
+Oct 13 08:28:28 ubuntu kernel: evm: security.selinux
+Oct 13 08:28:28 ubuntu kernel: evm: security.SMACK64
+Oct 13 08:28:28 ubuntu kernel: evm: security.SMACK64EXEC
+Oct 13 08:28:28 ubuntu kernel: evm: security.SMACK64TRANSMUTE
+Oct 13 08:28:28 ubuntu kernel: evm: security.SMACK64MMAP
+Oct 13 08:28:28 ubuntu kernel: evm: security.apparmor
+Oct 13 08:28:28 ubuntu kernel: evm: security.ima
+Oct 13 08:28:28 ubuntu kernel: evm: security.capability
+Oct 13 08:28:28 ubuntu kernel: evm: HMAC attrs: 0x1
+Oct 13 08:28:28 ubuntu kernel: PM:   Magic number: 14:773:472
+Oct 13 08:28:28 ubuntu kernel: acpi LNXSYSTM:00: hash matches
+Oct 13 08:28:28 ubuntu kernel: RAS: Correctable Errors collector initialized.
+Oct 13 08:28:28 ubuntu kernel: clk: Disabling unused clocks
+Oct 13 08:28:28 ubuntu kernel: md: Waiting for all devices to be available before autodetect
+Oct 13 08:28:28 ubuntu kernel: md: If you don't use raid, use raid=noautodetect
+Oct 13 08:28:28 ubuntu kernel: md: Autodetecting RAID arrays.
+Oct 13 08:28:28 ubuntu kernel: md: autorun ...
+Oct 13 08:28:28 ubuntu kernel: md: ... autorun DONE.
+Oct 13 08:28:28 ubuntu kernel: EXT4-fs (sda1): mounted filesystem cca64451-bb3b-4227-bf8c-1af859c402e5 ro with ordered data mode. Quota mode: none.
+Oct 13 08:28:28 ubuntu kernel: VFS: Mounted root (ext4 filesystem) readonly on device 8:1.
+Oct 13 08:28:28 ubuntu kernel: devtmpfs: mounted
+Oct 13 08:28:28 ubuntu kernel: Freeing unused decrypted memory: 2028K
+Oct 13 08:28:28 ubuntu kernel: Freeing unused kernel image (initmem) memory: 5084K
+Oct 13 08:28:28 ubuntu kernel: Write protecting the kernel read-only data: 36864k
+Oct 13 08:28:28 ubuntu kernel: Freeing unused kernel image (rodata/data gap) memory: 64K
+Oct 13 08:28:28 ubuntu kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct 13 08:28:28 ubuntu kernel: x86/mm: Checking user space page tables
+Oct 13 08:28:28 ubuntu kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct 13 08:28:28 ubuntu kernel: Run /sbin/init as init process
+Oct 13 08:28:28 ubuntu kernel:   with arguments:
+Oct 13 08:28:28 ubuntu kernel:     /sbin/init
+Oct 13 08:28:28 ubuntu kernel:   with environment:
+Oct 13 08:28:28 ubuntu kernel:     HOME=/
+Oct 13 08:28:28 ubuntu kernel:     TERM=linux
+Oct 13 08:28:28 ubuntu systemd[1]: Inserted module 'autofs4'
+Oct 13 08:28:28 ubuntu systemd[1]: systemd 249.11-0ubuntu3.22 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Oct 13 08:28:28 ubuntu systemd[1]: Detected virtualization kvm.
+Oct 13 08:28:28 ubuntu systemd[1]: Detected architecture x86-64.
+Oct 13 08:28:28 ubuntu systemd[1]: Hostname set to <ubuntu>.
+Oct 13 08:28:28 ubuntu systemd[1]: Initializing machine ID from VM UUID.
+Oct 13 08:28:28 ubuntu systemd[1]: Installed transient /etc/machine-id file.
+Oct 13 08:28:28 ubuntu kernel: block sda: the capability attribute has been deprecated.
+Oct 13 08:28:28 ubuntu systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:28:28 ubuntu systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:28:28 ubuntu systemd[1]: Queued start job for default target Graphical Interface.
+Oct 13 08:28:28 ubuntu systemd[1]: Created slice Slice /system/modprobe.
+Oct 13 08:28:28 ubuntu systemd[1]: Created slice Slice /system/serial-getty.
+Oct 13 08:28:28 ubuntu systemd[1]: Created slice Slice /system/systemd-fsck.
+Oct 13 08:28:28 ubuntu systemd[1]: Created slice User and Session Slice.
+Oct 13 08:28:28 ubuntu systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Oct 13 08:28:28 ubuntu systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Oct 13 08:28:28 ubuntu systemd[1]: Reached target Slice Units.
+Oct 13 08:28:28 ubuntu systemd[1]: Reached target Mounting snaps.
+Oct 13 08:28:28 ubuntu systemd[1]: Reached target Swaps.
+Oct 13 08:28:28 ubuntu systemd[1]: Reached target System Time Set.
+Oct 13 08:28:28 ubuntu systemd[1]: Reached target Local Verity Protected Volumes.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on Device-mapper event daemon FIFOs.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on LVM2 poll daemon socket.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on multipathd control socket.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on Syslog Socket.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on fsck to fsckd communication Socket.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on initctl Compatibility Named Pipe.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on Journal Audit Socket.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on Journal Socket (/dev/log).
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on Journal Socket.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on Network Service Netlink Socket.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on udev Control Socket.
+Oct 13 08:28:28 ubuntu systemd[1]: Listening on udev Kernel Socket.
+Oct 13 08:28:28 ubuntu systemd[1]: Mounting Huge Pages File System...
+Oct 13 08:28:28 ubuntu systemd[1]: Mounting POSIX Message Queue File System...
+Oct 13 08:28:28 ubuntu systemd[1]: Mounting Kernel Debug File System...
+Oct 13 08:28:28 ubuntu systemd[1]: Mounting Kernel Trace File System...
+Oct 13 08:28:28 ubuntu systemd[1]: Starting Journal Service...
+Oct 13 08:28:28 ubuntu systemd[1]: Starting Set the console keyboard layout...
+Oct 13 08:28:28 ubuntu systemd[1]: Starting Create List of Static Device Nodes...
+Oct 13 08:28:28 ubuntu systemd-journald[129]: Journal started
+Oct 13 08:28:28 ubuntu systemd-journald[129]: Runtime Journal (/run/log/journal/eb93b0ea89e7a7a10f6f1a37cdaae1c8) is 8.0M, max 158.7M, 150.7M free.
+Oct 13 08:28:28 ubuntu systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Oct 13 08:28:28 ubuntu systemd[1]: Condition check resulted in LXD - agent being skipped.
+Oct 13 08:28:28 ubuntu systemd[1]: Starting Load Kernel Module configfs...
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Load Kernel Module drm...
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Load Kernel Module efi_pstore...
+Oct 13 08:28:29 ubuntu kernel: pstore: Using crash dump compression: deflate
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Load Kernel Module fuse...
+Oct 13 08:28:29 ubuntu kernel: pstore: Registered efi_pstore as persistent store backend
+Oct 13 08:28:29 ubuntu systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+Oct 13 08:28:29 ubuntu systemd[1]: Starting File System Check on Root Device...
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Load Kernel Modules...
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Coldplug All udev Devices...
+Oct 13 08:28:29 ubuntu systemd[1]: Started Journal Service.
+Oct 13 08:28:29 ubuntu systemd[1]: Mounted Huge Pages File System.
+Oct 13 08:28:29 ubuntu systemd[1]: Mounted POSIX Message Queue File System.
+Oct 13 08:28:29 ubuntu systemd[1]: Mounted Kernel Debug File System.
+Oct 13 08:28:29 ubuntu systemd[1]: Mounted Kernel Trace File System.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Set the console keyboard layout.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Create List of Static Device Nodes.
+Oct 13 08:28:29 ubuntu systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Load Kernel Module configfs.
+Oct 13 08:28:29 ubuntu systemd[1]: modprobe@drm.service: Deactivated successfully.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Load Kernel Module drm.
+Oct 13 08:28:29 ubuntu systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Load Kernel Module efi_pstore.
+Oct 13 08:28:29 ubuntu systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Load Kernel Module fuse.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Load Kernel Modules.
+Oct 13 08:28:29 ubuntu systemd-fsck[146]: cloudimg-rootfs: clean, 76404/516096 files, 617673/1020155 blocks
+Oct 13 08:28:29 ubuntu systemd[1]: Mounting FUSE Control File System...
+Oct 13 08:28:29 ubuntu systemd[1]: Mounting Kernel Configuration File System...
+Oct 13 08:28:29 ubuntu systemd[1]: Started File System Check Daemon to report status.
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Apply Kernel Variables...
+Oct 13 08:28:29 ubuntu systemd[1]: Finished File System Check on Root Device.
+Oct 13 08:28:29 ubuntu systemd[1]: Mounted FUSE Control File System.
+Oct 13 08:28:29 ubuntu systemd[1]: Mounted Kernel Configuration File System.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Apply Kernel Variables.
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Remount Root and Kernel File Systems...
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Coldplug All udev Devices.
+Oct 13 08:28:29 ubuntu kernel: EXT4-fs (sda1): re-mounted cca64451-bb3b-4227-bf8c-1af859c402e5 r/w.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Remount Root and Kernel File Systems.
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Device-Mapper Multipath Device Controller...
+Oct 13 08:28:29 ubuntu kernel: alua: device handler registered
+Oct 13 08:28:29 ubuntu kernel: emc: device handler registered
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Flush Journal to Persistent Storage...
+Oct 13 08:28:29 ubuntu kernel: rdac: device handler registered
+Oct 13 08:28:29 ubuntu systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+Oct 13 08:28:29 ubuntu systemd-journald[129]: Time spent on flushing to /var/log/journal/eb93b0ea89e7a7a10f6f1a37cdaae1c8 is 11.263ms for 555 entries.
+Oct 13 08:28:29 ubuntu systemd-journald[129]: System Journal (/var/log/journal/eb93b0ea89e7a7a10f6f1a37cdaae1c8) is 8.0M, max 378.6M, 370.6M free.
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Load/Save Random Seed...
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Create System Users...
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Load/Save Random Seed.
+Oct 13 08:28:29 ubuntu systemd[1]: Condition check resulted in First Boot Complete being skipped.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Flush Journal to Persistent Storage.
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Create System Users.
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Create Static Device Nodes in /dev...
+Oct 13 08:28:29 ubuntu systemd[1]: Finished Create Static Device Nodes in /dev.
+Oct 13 08:28:29 ubuntu multipathd[167]: --------start up--------
+Oct 13 08:28:29 ubuntu multipathd[167]: read /etc/multipath.conf
+Oct 13 08:28:29 ubuntu systemd[1]: Starting Rule-based Manager for Device Events and Files...
+Oct 13 08:28:29 ubuntu multipathd[167]: path checkers start up
+Oct 13 08:28:29 ubuntu systemd[1]: Started Device-Mapper Multipath Device Controller.
+Oct 13 08:28:29 ubuntu systemd[1]: Started Rule-based Manager for Device Events and Files.
+Oct 13 08:28:29 ubuntu systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+Oct 13 08:28:29 ubuntu systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Oct 13 08:28:29 ubuntu systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Oct 13 08:28:29 ubuntu systemd[1]: Reached target Local Encrypted Volumes.
+Oct 13 08:28:30 ubuntu systemd-udevd[192]: Using default interface naming scheme 'v249'.
+Oct 13 08:28:30 ubuntu kernel: virtio_net virtio1 ens4: renamed from eth0
+Oct 13 08:28:30 ubuntu kernel: cryptd: max_cpu_qlen set to 1000
+Oct 13 08:28:30 ubuntu systemd[1]: Found device /dev/ttyS0.
+Oct 13 08:28:30 ubuntu kernel: AVX2 version of gcm_enc/dec engaged.
+Oct 13 08:28:30 ubuntu kernel: AES CTR mode by8 optimization enabled
+Oct 13 08:28:30 ubuntu systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Oct 13 08:28:30 ubuntu systemd-udevd[193]: Using default interface naming scheme 'v249'.
+Oct 13 08:28:30 ubuntu systemd[1]: Found device PersistentDisk UEFI.
+Oct 13 08:28:30 ubuntu systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+Oct 13 08:28:30 ubuntu systemd[1]: Reached target Preparation for Local File Systems.
+Oct 13 08:28:30 ubuntu systemd[1]: Mounting Mount unit for core22, revision 2955...
+Oct 13 08:28:30 ubuntu kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+Oct 13 08:28:30 ubuntu kernel: loop0: detected capacity change from 0 to 151512
+Oct 13 08:28:30 ubuntu systemd[1]: Mounting Mount unit for core24, revision 2124...
+Oct 13 08:28:30 ubuntu kernel: loop1: detected capacity change from 0 to 136784
+Oct 13 08:28:30 ubuntu systemd[1]: Mounting Mount unit for google-cloud-cli, revision 509...
+Oct 13 08:28:30 ubuntu kernel: loop2: detected capacity change from 0 to 713648
+Oct 13 08:28:30 ubuntu systemd[1]: Mounting Mount unit for lxd, revision 40911...
+Oct 13 08:28:31 ubuntu kernel: loop3: detected capacity change from 0 to 235904
+Oct 13 08:28:31 ubuntu systemd[1]: Mounting Mount unit for snapd, revision 28254...
+Oct 13 08:28:31 ubuntu kernel: loop4: detected capacity change from 0 to 91568
+Oct 13 08:28:31 ubuntu systemd[1]: Starting File System Check on /dev/disk/by-label/UEFI...
+Oct 13 08:28:31 ubuntu systemd[1]: Mounted Mount unit for core22, revision 2955.
+Oct 13 08:28:31 ubuntu systemd[1]: Mounted Mount unit for core24, revision 2124.
+Oct 13 08:28:31 ubuntu systemd[1]: Mounted Mount unit for google-cloud-cli, revision 509.
+Oct 13 08:28:31 ubuntu systemd[1]: Mounted Mount unit for lxd, revision 40911.
+Oct 13 08:28:31 ubuntu systemd[1]: Mounted Mount unit for snapd, revision 28254.
+Oct 13 08:28:31 ubuntu systemd[1]: Reached target Mounted snaps.
+Oct 13 08:28:31 ubuntu systemd-fsck[264]: fsck.fat 4.2 (2021-01-31)
+Oct 13 08:28:31 ubuntu systemd-fsck[264]: /dev/sda15: 12 files, 12387/213663 clusters
+Oct 13 08:28:31 ubuntu systemd[1]: Finished File System Check on /dev/disk/by-label/UEFI.
+Oct 13 08:28:31 ubuntu systemd[1]: Mounting /boot/efi...
+Oct 13 08:28:31 ubuntu systemd[1]: Mounted /boot/efi.
+Oct 13 08:28:31 ubuntu systemd[1]: Reached target Local File Systems.
+Oct 13 08:28:31 ubuntu systemd[1]: Starting Load AppArmor profiles...
+Oct 13 08:28:31 ubuntu systemd[1]: Starting Set console font and keymap...
+Oct 13 08:28:31 ubuntu apparmor.systemd[269]: Restarting AppArmor
+Oct 13 08:28:31 ubuntu apparmor.systemd[269]: Reloading AppArmor profiles
+Oct 13 08:28:31 ubuntu systemd[1]: Starting Create final runtime dir for shutdown pivot root...
+Oct 13 08:28:31 ubuntu systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+Oct 13 08:28:31 ubuntu systemd[1]: Starting Set Up Additional Binary Formats...
+Oct 13 08:28:31 ubuntu systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+Oct 13 08:28:31 ubuntu systemd[1]: Starting Commit a transient machine-id on disk...
+Oct 13 08:28:31 ubuntu systemd[1]: Starting Create Volatile Files and Directories...
+Oct 13 08:28:31 ubuntu systemd[1]: Starting Uncomplicated firewall...
+Oct 13 08:28:31 ubuntu systemd[1]: Finished Set console font and keymap.
+Oct 13 08:28:31 ubuntu systemd[1]: Finished Create final runtime dir for shutdown pivot root.
+Oct 13 08:28:31 ubuntu systemd[1]: etc-machine\x2did.mount: Deactivated successfully.
+Oct 13 08:28:31 ubuntu systemd[1]: Finished Tell Plymouth To Write Out Runtime Data.
+Oct 13 08:28:31 ubuntu systemd[1]: Finished Commit a transient machine-id on disk.
+Oct 13 08:28:31 ubuntu systemd[1]: Finished Create Volatile Files and Directories.
+Oct 13 08:28:31 ubuntu systemd[1]: Finished Uncomplicated firewall.
+Oct 13 08:28:31 ubuntu systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 280 (systemd-binfmt)
+Oct 13 08:28:31 ubuntu systemd[1]: Mounting Arbitrary Executable File Formats File System...
+Oct 13 08:28:31 ubuntu systemd[1]: Starting Record System Boot/Shutdown in UTMP...
+Oct 13 08:28:31 ubuntu systemd[1]: Mounted Arbitrary Executable File Formats File System.
+Oct 13 08:28:31 ubuntu systemd[1]: Finished Set Up Additional Binary Formats.
+Oct 13 08:28:31 ubuntu audit[282]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=282 comm="apparmor_parser"
+Oct 13 08:28:31 ubuntu audit[281]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=281 comm="apparmor_parser"
+Oct 13 08:28:31 ubuntu kernel: audit: type=1400 audit(1791880111.604:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=282 comm="apparmor_parser"
+Oct 13 08:28:31 ubuntu kernel: audit: type=1400 audit(1791880111.604:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=281 comm="apparmor_parser"
+Oct 13 08:28:31 ubuntu systemd[1]: Finished Record System Boot/Shutdown in UTMP.
+Oct 13 08:28:31 ubuntu audit[282]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=282 comm="apparmor_parser"
+Oct 13 08:28:31 ubuntu kernel: audit: type=1400 audit(1791880111.608:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=282 comm="apparmor_parser"
+Oct 13 08:28:31 ubuntu audit[290]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=290 comm="apparmor_parser"
+Oct 13 08:28:31 ubuntu kernel: audit: type=1400 audit(1791880111.907:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_apt_news" pid=290 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu audit[289]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=289 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu kernel: audit: type=1400 audit(1791880112.056:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=289 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu audit[289]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=289 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu kernel: audit: type=1400 audit(1791880112.058:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=289 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu audit[289]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=289 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu kernel: audit: type=1400 audit(1791880112.060:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=289 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu audit[289]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=289 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu kernel: audit: type=1400 audit(1791880112.065:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=289 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu audit[292]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=292 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu kernel: audit: type=1400 audit(1791880112.271:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=292 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu audit[292]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=292 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu audit[292]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=292 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu kernel: audit: type=1400 audit(1791880112.273:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=292 comm="apparmor_parser"
+Oct 13 08:28:32 ubuntu audit[294]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=294 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu audit[295]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=295 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu audit[291]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache" pid=291 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu audit[291]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods" pid=291 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu audit[291]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//apt_methods_gpgv" pid=291 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu audit[291]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//cloud_id" pid=291 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu audit[291]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//dpkg" pid=291 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu audit[291]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//ps" pid=291 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu audit[291]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache//ubuntu_distro_info" pid=291 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu audit[291]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache_systemctl" pid=291 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu audit[291]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="ubuntu_pro_esm_cache_systemd_detect_virt" pid=291 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu apparmor.systemd[297]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+Oct 13 08:28:33 ubuntu audit[296]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/chronyd" pid=296 comm="apparmor_parser"
+Oct 13 08:28:33 ubuntu systemd[1]: Finished Load AppArmor profiles.
+Oct 13 08:28:33 ubuntu systemd[1]: Starting Load AppArmor profiles managed internally by snapd...
+Oct 13 08:28:33 ubuntu systemd[1]: Condition check resulted in Authentication service for virtual machines hosted on VMware being skipped.
+Oct 13 08:28:33 ubuntu systemd[1]: Condition check resulted in Service for virtual machines hosted on VMware being skipped.
+Oct 13 08:28:33 ubuntu systemd[1]: Starting Cloud-init: Local Stage (pre-network)...
+Oct 13 08:28:34 ubuntu snapd-apparmor[298]: main.go:146: Loading profiles [/var/lib/snapd/apparmor/profiles/snap-confine.snapd.28254 /var/lib/snapd/apparmor/profiles/snap-update-ns.google-cloud-cli /var/lib/snapd/apparmor/profiles/snap-update-ns.lxd /var/lib/snapd/apparmor/profiles/snap.google-cloud-cli.bq /var/lib/snapd/apparmor/profiles/snap.google-cloud-cli.docker-credential-gcloud /var/lib/snapd/apparmor/profiles/snap.google-cloud-cli.gcloud /var/lib/snapd/apparmor/profiles/snap.google-cloud-cli.gsutil /var/lib/snapd/apparmor/profiles/snap.google-cloud-cli.kubectl /var/lib/snapd/apparmor/profiles/snap.lxd.activate /var/lib/snapd/apparmor/profiles/snap.lxd.benchmark /var/lib/snapd/apparmor/profiles/snap.lxd.buginfo /var/lib/snapd/apparmor/profiles/snap.lxd.check-kernel /var/lib/snapd/apparmor/profiles/snap.lxd.daemon /var/lib/snapd/apparmor/profiles/snap.lxd.hook.configure /var/lib/snapd/apparmor/profiles/snap.lxd.hook.install /var/lib/snapd/apparmor/profiles/snap.lxd.hook.remove /var/lib/snapd/apparmor/profiles/snap.lxd.lxc /var/lib/snapd/apparmor/profiles/snap.lxd.lxc-to-lxd /var/lib/snapd/apparmor/profiles/snap.lxd.lxd /var/lib/snapd/apparmor/profiles/snap.lxd.migrate /var/lib/snapd/apparmor/profiles/snap.lxd.user-daemon]
+Oct 13 08:28:34 ubuntu audit[312]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.google-cloud-cli" pid=312 comm="apparmor_parser"
+Oct 13 08:28:34 ubuntu audit[313]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.lxd" pid=313 comm="apparmor_parser"
+Oct 13 08:28:34 ubuntu audit[314]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.google-cloud-cli.bq" pid=314 comm="apparmor_parser"
+Oct 13 08:28:34 ubuntu audit[315]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.google-cloud-cli.docker-credential-gcloud" pid=315 comm="apparmor_parser"
+Oct 13 08:28:34 ubuntu audit[316]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.google-cloud-cli.gcloud" pid=316 comm="apparmor_parser"
+Oct 13 08:28:34 ubuntu audit[317]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.google-cloud-cli.gsutil" pid=317 comm="apparmor_parser"
+Oct 13 08:28:34 ubuntu audit[318]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.google-cloud-cli.kubectl" pid=318 comm="apparmor_parser"
+Oct 13 08:28:34 ubuntu audit[311]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/snapd/28254/usr/lib/snapd/snap-confine" pid=311 comm="apparmor_parser"
+Oct 13 08:28:34 ubuntu audit[319]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.activate" pid=319 comm="apparmor_parser"
+Oct 13 08:28:35 ubuntu audit[320]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.benchmark" pid=320 comm="apparmor_parser"
+Oct 13 08:28:35 ubuntu audit[322]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.check-kernel" pid=322 comm="apparmor_parser"
+Oct 13 08:28:35 ubuntu audit[321]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.buginfo" pid=321 comm="apparmor_parser"
+Oct 13 08:28:36 ubuntu cloud-init[328]: Cloud-init v. 26.1-0ubuntu1~22.04.1 running 'init-local' at Tue, 13 Oct 2026 08:28:36 +0000. Up 10.65 seconds.
+Oct 13 08:28:36 ubuntu audit[323]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.daemon" pid=323 comm="apparmor_parser"
+Oct 13 08:28:36 ubuntu dhclient[332]: Internet Systems Consortium DHCP Client 4.4.1
+Oct 13 08:28:36 ubuntu dhclient[332]: Copyright 2004-2018 Internet Systems Consortium.
+Oct 13 08:28:36 ubuntu dhclient[332]: All rights reserved.
+Oct 13 08:28:36 ubuntu dhclient[332]: For info, please visit https://www.isc.org/software/dhcp/
+Oct 13 08:28:36 ubuntu dhclient[332]: 
+Oct 13 08:28:36 ubuntu audit[337]: AVC apparmor="DENIED" operation="exec" class="file" profile="/{,usr/}sbin/dhclient" name="/usr/bin/true" pid=337 comm="dhclient" requested_mask="x" denied_mask="x" fsuid=0 ouid=0
+Oct 13 08:28:36 ubuntu dhclient[337]: execve (/bin/true, ...): Permission denied
+Oct 13 08:28:36 ubuntu dhclient[332]: Listening on LPF/ens4/42:01:0a:80:00:03
+Oct 13 08:28:36 ubuntu dhclient[332]: Sending on   LPF/ens4/42:01:0a:80:00:03
+Oct 13 08:28:36 ubuntu dhclient[332]: Sending on   Socket/fallback
+Oct 13 08:28:36 ubuntu dhclient[332]: DHCPDISCOVER on ens4 to 255.255.255.255 port 67 interval 3 (xid=0x4ad59246)
+Oct 13 08:28:36 ubuntu dhclient[332]: DHCPOFFER of 10.128.0.3 from 169.254.169.254
+Oct 13 08:28:36 ubuntu dhclient[332]: DHCPREQUEST for 10.128.0.3 on ens4 to 255.255.255.255 port 67 (xid=0x4692d54a)
+Oct 13 08:28:36 ubuntu dhclient[332]: DHCPACK of 10.128.0.3 from 169.254.169.254 (xid=0x4ad59246)
+Oct 13 08:28:36 ubuntu dhclient[338]: execve (/bin/true, ...): Permission denied
+Oct 13 08:28:36 ubuntu audit[338]: AVC apparmor="DENIED" operation="exec" class="file" profile="/{,usr/}sbin/dhclient" name="/usr/bin/true" pid=338 comm="isc-worker0000" requested_mask="x" denied_mask="x" fsuid=0 ouid=0
+Oct 13 08:28:36 ubuntu dhclient[332]: bound to 10.128.0.3 -- renewal in 1713 seconds.
+Oct 13 08:28:36 ubuntu audit[324]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.configure" pid=324 comm="apparmor_parser"
+Oct 13 08:28:37 lc-ubuntu-2204 audit[334]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.install" pid=334 comm="apparmor_parser"
+Oct 13 08:28:37 lc-ubuntu-2204 kernel: kauditd_printk_skb: 29 callbacks suppressed
+Oct 13 08:28:37 lc-ubuntu-2204 kernel: audit: type=1400 audit(1791880117.333:41): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.install" pid=334 comm="apparmor_parser"
+Oct 13 08:28:37 lc-ubuntu-2204 audit[344]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.remove" pid=344 comm="apparmor_parser"
+Oct 13 08:28:37 lc-ubuntu-2204 kernel: audit: type=1400 audit(1791880117.353:42): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.remove" pid=344 comm="apparmor_parser"
+Oct 13 08:28:37 lc-ubuntu-2204 systemd[1]: Starting Load Kernel Module efi_pstore...
+Oct 13 08:28:37 lc-ubuntu-2204 systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+Oct 13 08:28:37 lc-ubuntu-2204 systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+Oct 13 08:28:37 lc-ubuntu-2204 systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Oct 13 08:28:37 lc-ubuntu-2204 systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+Oct 13 08:28:37 lc-ubuntu-2204 systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Oct 13 08:28:37 lc-ubuntu-2204 systemd[1]: Finished Load Kernel Module efi_pstore.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Starting Load Kernel Module efi_pstore...
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Condition check resulted in Show Plymouth Boot Screen being skipped.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Condition check resulted in Forward Password Requests to Plymouth Directory Watch being skipped.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Finished Load Kernel Module efi_pstore.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+Oct 13 08:28:38 lc-ubuntu-2204 audit[353]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxc-to-lxd" pid=353 comm="apparmor_parser"
+Oct 13 08:28:38 lc-ubuntu-2204 kernel: audit: type=1400 audit(1791880118.197:43): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxc-to-lxd" pid=353 comm="apparmor_parser"
+Oct 13 08:28:38 lc-ubuntu-2204 audit[352]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxc" pid=352 comm="apparmor_parser"
+Oct 13 08:28:38 lc-ubuntu-2204 kernel: audit: type=1400 audit(1791880118.234:44): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxc" pid=352 comm="apparmor_parser"
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Finished Cloud-init: Local Stage (pre-network).
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Reached target Preparation for Network.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Starting Network Configuration...
+Oct 13 08:28:38 lc-ubuntu-2204 systemd-networkd[368]: lo: Link UP
+Oct 13 08:28:38 lc-ubuntu-2204 systemd-networkd[368]: lo: Gained carrier
+Oct 13 08:28:38 lc-ubuntu-2204 systemd-networkd[368]: Enumeration completed
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Started Network Configuration.
+Oct 13 08:28:38 lc-ubuntu-2204 systemd-networkd[368]: ens4: Link UP
+Oct 13 08:28:38 lc-ubuntu-2204 systemd-networkd[368]: ens4: Gained carrier
+Oct 13 08:28:38 lc-ubuntu-2204 systemd-networkd[368]: ens4: Link DOWN
+Oct 13 08:28:38 lc-ubuntu-2204 systemd-networkd[368]: ens4: Lost carrier
+Oct 13 08:28:38 lc-ubuntu-2204 systemd-networkd[368]: ens4: Link UP
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Starting Wait for Network to be Configured...
+Oct 13 08:28:38 lc-ubuntu-2204 systemd-networkd[368]: ens4: Gained carrier
+Oct 13 08:28:38 lc-ubuntu-2204 systemd-networkd[368]: ens4: DHCPv4 address 10.128.0.3/32 via 10.128.0.1
+Oct 13 08:28:38 lc-ubuntu-2204 systemd[1]: Starting Network Name Resolution...
+Oct 13 08:28:39 lc-ubuntu-2204 kernel: audit: type=1400 audit(1791880119.034:45): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxd" pid=366 comm="apparmor_parser"
+Oct 13 08:28:39 lc-ubuntu-2204 audit[366]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxd" pid=366 comm="apparmor_parser"
+Oct 13 08:28:39 lc-ubuntu-2204 systemd-resolved[370]: Positive Trust Anchors:
+Oct 13 08:28:39 lc-ubuntu-2204 systemd-resolved[370]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+Oct 13 08:28:39 lc-ubuntu-2204 systemd-resolved[370]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+Oct 13 08:28:39 lc-ubuntu-2204 systemd-resolved[370]: Using system hostname 'lc-ubuntu-2204'.
+Oct 13 08:28:39 lc-ubuntu-2204 systemd[1]: Started Network Name Resolution.
+Oct 13 08:28:39 lc-ubuntu-2204 systemd[1]: Reached target Network.
+Oct 13 08:28:39 lc-ubuntu-2204 systemd[1]: Reached target Host and Network Name Lookups.
+Oct 13 08:28:39 lc-ubuntu-2204 audit[367]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.migrate" pid=367 comm="apparmor_parser"
+Oct 13 08:28:39 lc-ubuntu-2204 kernel: audit: type=1400 audit(1791880119.432:46): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.migrate" pid=367 comm="apparmor_parser"
+Oct 13 08:28:39 lc-ubuntu-2204 audit[371]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.user-daemon" pid=371 comm="apparmor_parser"
+Oct 13 08:28:39 lc-ubuntu-2204 kernel: audit: type=1400 audit(1791880119.877:47): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.user-daemon" pid=371 comm="apparmor_parser"
+Oct 13 08:28:39 lc-ubuntu-2204 systemd[1]: Finished Load AppArmor profiles managed internally by snapd.
+Oct 13 08:28:39 lc-ubuntu-2204 systemd-networkd[368]: ens4: Gained IPv6LL
+Oct 13 08:28:40 lc-ubuntu-2204 systemd[1]: Finished Wait for Network to be Configured.
+Oct 13 08:28:40 lc-ubuntu-2204 systemd[1]: Starting Cloud-init: Network Stage...
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: Cloud-init v. 26.1-0ubuntu1~22.04.1 running 'init' at Tue, 13 Oct 2026 08:28:40 +0000. Up 15.19 seconds.
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: +--------+------+--------------------------+-----------------+--------+-------------------+
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: | Device |  Up  |         Address          |       Mask      | Scope  |     Hw-Address    |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: +--------+------+--------------------------+-----------------+--------+-------------------+
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: |  ens4  | True |        10.128.0.3        | 255.255.255.255 | global | 42:01:0a:80:00:03 |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: |  ens4  | True | fe80::4001:aff:fe80:3/64 |        .        |  link  | 42:01:0a:80:00:03 |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: |   lo   | True |        127.0.0.1         |    255.0.0.0    |  host  |         .         |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: |   lo   | True |         ::1/128          |        .        |  host  |         .         |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: +--------+------+--------------------------+-----------------+--------+-------------------+
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: +++++++++++++++++++++++++++++++Route IPv4 info++++++++++++++++++++++++++++++++
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: +-------+-----------------+------------+-----------------+-----------+-------+
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: | Route |   Destination   |  Gateway   |     Genmask     | Interface | Flags |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: +-------+-----------------+------------+-----------------+-----------+-------+
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: |   0   |     0.0.0.0     | 10.128.0.1 |     0.0.0.0     |    ens4   |   UG  |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: |   1   |    10.128.0.1   |  0.0.0.0   | 255.255.255.255 |    ens4   |   UH  |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: |   2   | 169.254.169.254 | 10.128.0.1 | 255.255.255.255 |    ens4   |  UGH  |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: +-------+-----------------+------------+-----------------+-----------+-------+
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: +-------+-------------+---------+-----------+-------+
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: +-------+-------------+---------+-----------+-------+
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: |   1   |  fe80::/64  |    ::   |    ens4   |   U   |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: |   3   |    local    |    ::   |    ens4   |   U   |
+Oct 13 08:28:40 lc-ubuntu-2204 cloud-init[376]: ci-info: |   4   |  multicast  |    ::   |    ens4   |   U   |
+Oct 13 08:28:41 lc-ubuntu-2204 cloud-init[376]: ci-info: +-------+-------------+---------+-----------+-------+
+Oct 13 08:28:41 lc-ubuntu-2204 kernel: EXT4-fs (sda1): resizing filesystem from 1020155 to 7835899 blocks
+Oct 13 08:28:42 lc-ubuntu-2204 kernel: EXT4-fs (sda1): resized filesystem to 7835899
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: new group: name=ubuntu, GID=1000
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: new user: name=ubuntu, UID=1000, GID=1000, home=/home/ubuntu, shell=/bin/bash, from=none
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'adm'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'dialout'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'cdrom'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'floppy'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'sudo'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'audio'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'dip'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'video'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'plugdev'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'netdev'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to group 'lxd'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'adm'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'dialout'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'cdrom'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'floppy'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'sudo'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'audio'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'dip'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'video'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'plugdev'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'netdev'
+Oct 13 08:28:42 lc-ubuntu-2204 useradd[462]: add 'ubuntu' to shadow group 'lxd'
+Oct 13 08:28:42 lc-ubuntu-2204 passwd[470]: password for 'ubuntu' changed by 'root'
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: Generating public/private rsa key pair.
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: The key fingerprint is:
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: SHA256:REDACTED root@lc-ubuntu-2204
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: The key's randomart image is:
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: +---[RSA 3072]----+
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |X*o.=            |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |B**= .           |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |X.o+.   o        |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |.+o. . o .       |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |.. +.o. S   .    |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |. . = .. . . .   |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: | . o  o.+   E    |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |. o ...= .   .   |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: | ..+ooo   ...    |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: +----[SHA256]-----+
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: Generating public/private ecdsa key pair.
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: The key fingerprint is:
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: SHA256:REDACTED root@lc-ubuntu-2204
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: The key's randomart image is:
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: +---[ECDSA 256]---+
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |  .oo ..oo.      |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |   ... o o..     |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |   .o o   o      |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |   ooo +         |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: | o.o= . S .      |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |. =* .   o       |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |..o=+            |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |OB*+.            |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |@/Eo             |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: +----[SHA256]-----+
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: Generating public/private ed25519 key pair.
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: The key fingerprint is:
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: SHA256:REDACTED root@lc-ubuntu-2204
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: The key's randomart image is:
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: +--[ED25519 256]--+
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |      .o..       |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |        o.       |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |       o. .  .   |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |      .....oB    |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |        S.oO=+   |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |     = o .o*++.  |
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |    . @ + o++   .|
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |     + * o+..o oo|
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: |      . .  oo+*Eo|
+Oct 13 08:28:43 lc-ubuntu-2204 cloud-init[376]: +----[SHA256]-----+
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Finished Cloud-init: Network Stage.
+Oct 13 08:28:43 lc-ubuntu-2204 chronyd[490]: chronyd version 4.2 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +NTS +SECHASH +IPV6 -DEBUG)
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Reached target Cloud-config availability.
+Oct 13 08:28:43 lc-ubuntu-2204 chronyd[490]: Using right/UTC timezone to obtain leap second data
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Reached target Network is Online.
+Oct 13 08:28:43 lc-ubuntu-2204 chronyd[490]: Loaded seccomp filter (level 1)
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Reached target System Initialization.
+Oct 13 08:28:43 lc-ubuntu-2204 dbus-daemon[491]: [system] AppArmor D-Bus mediation is enabled
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (file watch) being skipped.
+Oct 13 08:28:43 lc-ubuntu-2204 dbus-daemon[491]: [system] Activating systemd to hand-off: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.1' (uid=100 pid=368 comm="/lib/systemd/systemd-networkd " label="unconfined")
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Condition check resulted in Process error reports when automatic reporting is enabled (timer based) being skipped.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Started GCE Workload Certificate refresh timer.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Started NSS cache refresh timer.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Started Daily Cleanup of Temporary Directories.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Condition check resulted in Ubuntu Pro Timer for running repeated jobs being skipped.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Started Download data for packages that failed at package install time.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Reached target Path Units.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Condition check resulted in Unix socket for apport crash forwarding being skipped.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Listening on cloud-init hotplug hook socket.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Listening on D-Bus System Message Bus Socket.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting Socket activation for snappy daemon...
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Listening on UUID daemon activation socket.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Condition check resulted in Login to default iSCSI targets being skipped.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Finished Availability of block devices.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Listening on Socket activation for snappy daemon.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Reached target Socket Units.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Reached target Basic System.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting chrony, an NTP client/server...
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Started D-Bus System Message Bus.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Started Save initial kernel messages after boot.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting Remove Stale Online ext4 Metadata Check Snapshots...
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting GCE Workload Certificate refresh...
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Started Google OSConfig Agent.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting NSS cache refresh...
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting Record successful boot for GRUB...
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting Dispatcher daemon for systemd-networkd...
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Condition check resulted in Auto-connect to subsystems on FC-NVME devices found during boot being skipped.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting Connect NVMe-oF subsystems automatically during boot...
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting Pollinate to seed the pseudo random number generator...
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting System Logging Service...
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting Secure Boot updates for DB and DBX...
+Oct 13 08:28:43 lc-ubuntu-2204 google_oslogin_nss_cache[500]: oslogin_cache_refresh[500]: Refreshing passwd entry cache
+Oct 13 08:28:43 lc-ubuntu-2204 oslogin_cache_refresh[500]: Refreshing passwd entry cache
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Condition check resulted in Automatically repair incorrect owner/permissions on core devices being skipped.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Condition check resulted in Wait for the Ubuntu Core chooser trigger being skipped.
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Reached target Preparation for Logins.
+Oct 13 08:28:43 lc-ubuntu-2204 google_oslogin_nss_cache[500]: oslogin_cache_refresh[500]: Refreshing group entry cache
+Oct 13 08:28:43 lc-ubuntu-2204 oslogin_cache_refresh[500]: Refreshing group entry cache
+Oct 13 08:28:43 lc-ubuntu-2204 systemd[1]: Starting Wait until snapd is fully seeded...
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Starting Snap Daemon...
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Starting User Login Management...
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Condition check resulted in Ubuntu Pro reboot cmds being skipped.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Started Ubuntu Pro Background Auto Attach.
+Oct 13 08:28:44 lc-ubuntu-2204 gce_workload_cert_refresh[497]: 2026/10/13 08:28:44: Done
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Started chrony, an NTP client/server.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: e2scrub_reap.service: Deactivated successfully.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Finished Remove Stale Online ext4 Metadata Check Snapshots.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: gce-workload-cert-refresh.service: Deactivated successfully.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Finished GCE Workload Certificate refresh.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: google-oslogin-cache.service: Deactivated successfully.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Finished NSS cache refresh.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: nvmf-autoconnect.service: Deactivated successfully.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Finished Connect NVMe-oF subsystems automatically during boot.
+Oct 13 08:28:44 lc-ubuntu-2204 networkd-dispatcher[505]: No valid path found for iwconfig
+Oct 13 08:28:44 lc-ubuntu-2204 networkd-dispatcher[505]: No valid path found for iw
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Reached target Preparation for Remote File Systems.
+Oct 13 08:28:44 lc-ubuntu-2204 dbus-daemon[491]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Oct 13 08:28:44 lc-ubuntu-2204 rsyslogd[513]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2112.0]
+Oct 13 08:28:44 lc-ubuntu-2204 rsyslogd[513]: rsyslogd's groupid changed to 111
+Oct 13 08:28:44 lc-ubuntu-2204 rsyslogd[513]: rsyslogd's userid changed to 104
+Oct 13 08:28:44 lc-ubuntu-2204 rsyslogd[513]: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="513" x-info="https://www.rsyslog.com"] start
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Reached target Remote File Systems.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Reached target System Time Synchronized.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Started Daily apt download activities.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Started Daily apt upgrade and clean activities.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Started Daily dpkg database backup timer.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems.
+Oct 13 08:28:44 lc-ubuntu-2204 pollinate[562]: client sent challenge to [https://entropy.ubuntu.com/]
+Oct 13 08:28:44 lc-ubuntu-2204 systemd-logind[517]: Watching system buttons on /dev/input/event0 (Power Button)
+Oct 13 08:28:44 lc-ubuntu-2204 systemd-logind[517]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Oct 13 08:28:44 lc-ubuntu-2204 systemd-logind[517]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Oct 13 08:28:44 lc-ubuntu-2204 systemd-logind[517]: New seat seat0.
+Oct 13 08:28:44 lc-ubuntu-2204 systemd[1]: Started Discard unused blocks once a week.
+Oct 13 08:28:45 lc-ubuntu-2204 pollinate[594]: client verified challenge/response with [https://entropy.ubuntu.com/]
+Oct 13 08:28:45 lc-ubuntu-2204 pollinate[601]: client hashed response from [https://entropy.ubuntu.com/]
+Oct 13 08:28:45 lc-ubuntu-2204 pollinate[602]: client successfully seeded [/dev/urandom]
+Oct 13 08:28:45 lc-ubuntu-2204 OSConfigAgent[499]: 2026-10-13T08:28:45.4736Z OSConfigAgent Info: OSConfig Agent (version 20251028.00-0ubuntu2~22.04.0) started.
+Oct 13 08:28:45 lc-ubuntu-2204 python3[518]: ["2026-10-13T08:28:45.558", "INFO", "ubuntupro.daemon", "main", 55, "daemon starting", {}]
+Oct 13 08:28:46 lc-ubuntu-2204 systemd[1]: Started Daily rotation of log files.
+Oct 13 08:28:46 lc-ubuntu-2204 systemd[1]: Started Daily man-db regeneration.
+Oct 13 08:28:46 lc-ubuntu-2204 systemd[1]: Started Message of the Day.
+Oct 13 08:28:46 lc-ubuntu-2204 systemd[1]: Condition check resulted in Timer to automatically fetch and run repair assertions being skipped.
+Oct 13 08:28:46 lc-ubuntu-2204 systemd[1]: Started Check to see whether there is a new version of Ubuntu available.
+Oct 13 08:28:46 lc-ubuntu-2204 systemd[1]: Reached target Timer Units.
+Oct 13 08:28:46 lc-ubuntu-2204 systemd[1]: Starting LSB: automatic crash report generation...
+Oct 13 08:28:47 lc-ubuntu-2204 snapd[516]: seclog.go:107: security logger enabled
+Oct 13 08:28:47 lc-ubuntu-2204 snapd[516]: overlord.go:316: Acquiring state lock file
+Oct 13 08:28:47 lc-ubuntu-2204 snapd[516]: overlord.go:321: Acquired state lock file
+Oct 13 08:28:48 lc-ubuntu-2204 snapd[516]: patch.go:64: Patching system state level 6 to sublevel 1...
+Oct 13 08:28:48 lc-ubuntu-2204 systemd[1]: Started Regular background program processing daemon.
+Oct 13 08:28:48 lc-ubuntu-2204 snapd[516]: patch.go:64: Patching system state level 6 to sublevel 2...
+Oct 13 08:28:48 lc-ubuntu-2204 cron[653]: (CRON) INFO (pidfile fd = 3)
+Oct 13 08:28:48 lc-ubuntu-2204 snapd[516]: patch.go:64: Patching system state level 6 to sublevel 3...
+Oct 13 08:28:48 lc-ubuntu-2204 cron[653]: (CRON) INFO (Running @reboot jobs)
+Oct 13 08:28:48 lc-ubuntu-2204 snapd[516]: daemon.go:277: started snapd/2.77.1 (series 16; classic) ubuntu/22.04 (amd64) linux/6.8.0-1070-gcp.
+Oct 13 08:28:48 lc-ubuntu-2204 kernel: loop5: detected capacity change from 0 to 8
+Oct 13 08:28:48 lc-ubuntu-2204 snapd[516]: daemon.go:371: adjusting startup timeout by 55s (pessimistic estimate of 30s plus 5s per snap)
+Oct 13 08:28:48 lc-ubuntu-2204 snapd[516]: backends.go:70: AppArmor status: apparmor is enabled and all features are available (using snapd provided apparmor_parser)
+Oct 13 08:28:48 lc-ubuntu-2204 snapd[516]: backend.go:141: delegating reload of snap-confine profiles to system snap security profiles setup
+Oct 13 08:28:48 lc-ubuntu-2204 systemd[1]: Starting Permit User Sessions...
+Oct 13 08:28:49 lc-ubuntu-2204 systemd[1]: Started System Logging Service.
+Oct 13 08:28:50 lc-ubuntu-2204 chronyd[490]: Selected source 91.189.91.157 (ntp.ubuntu.com)
+Oct 13 08:28:50 lc-ubuntu-2204 chronyd[490]: System clock TAI offset set to 37 seconds
+Oct 13 08:28:51 lc-ubuntu-2204 systemd[1]: Started Dispatcher daemon for systemd-networkd.
+Oct 13 08:28:52 lc-ubuntu-2204 systemd[1]: pollinate.service: Deactivated successfully.
+Oct 13 08:28:52 lc-ubuntu-2204 systemd[1]: Finished Pollinate to seed the pseudo random number generator.
+Oct 13 08:28:52 lc-ubuntu-2204 chronyd[490]: Selected source 209.253.210.112 (2.ubuntu.pool.ntp.org)
+Oct 13 08:28:53 lc-ubuntu-2204 systemd[1]: grub-common.service: Deactivated successfully.
+Oct 13 08:28:53 lc-ubuntu-2204 systemd[1]: Finished Record successful boot for GRUB.
+Oct 13 08:28:55 lc-ubuntu-2204 systemd[1]: Finished Permit User Sessions.
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]: Filesystem keystore:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:   /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin [7085 bytes]
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]: firmware keys:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:   PK:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     /CN=newpk
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:   KEK:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     /C=US/O=Microsoft Corporation/CN=Microsoft Corporation KEK 2K CA 2023
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     /C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=Microsoft Corporation KEK CA 2011
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:   db:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     /C=US/O=Microsoft Corporation/CN=Microsoft UEFI CA 2023
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     /C=US/O=Microsoft Corporation/CN=Windows UEFI CA 2023
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     /C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=Microsoft Windows Production PCA 2011
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     /C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=Microsoft Corporation UEFI CA 2011
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:   dbx:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     45c7c8ae750acfbb48fc37527d6412dd644daed8913ccd8a24c94d856967df8e
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     64575bd912789a2e14ad56f6341f52af6bf80cf94400785975e9f04e2d64d745
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     939aeef4f5fa51e23340c3f2e49048ce8872526afdf752c3a7f3a3f2bc9f6049
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     3b0287533e0cc3d0ec1aa823cbf0a941aad8721579d1c499802dd1c3a636b8a9
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c83cb13922ad99f560744675dd37cc94dcad5a1fcba6472fee341171d939e884
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     77dd190fa30d88ff5e3b011a0ae61e6209780c130b535ecb87e6f0888a0b6b2f
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     55b99b0de53dbcfe485aa9c737cf3fb616ef3d91fab599aa7cab19eda763b5ba
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     ca171d614a8d7e121c93948cd0fe55d39981f9d11aa96e03450a415227c2c65b
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     fecfb232d12e994b6d485d2c7167728aa5525984ad5ca61e7516221f079a1436
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     fe63a84f782cc9d3fcf2ccf9fc11fbd03760878758d26285ed12669bdc6e6d01
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     fddd6e3d29ea84c7743dad4a1bdbc700b5fec1b391f932409086acc71dd6dbd8
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     e92c22eb3b5642d65c1ec2caf247d2594738eebb7fb3841a44956f59e2b0d1fa
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     d8cbeb9735f5672b367e4f96cdc74969615d17074ae96c724d42ce0216f8f3fa
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     ce3bfabe59d67ce8ac8dfd4a16f7c43ef9c224513fbc655957d735fa29f540ce
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     cb6b858b40d3a098765815b592c1514a49604fafd60819da88d7a76e9778fef7
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c90f336617b8e7f983975413c997f10b73eb267fd8a10cb9e3bdbfc667abdb8b
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c617c1a8b1ee2a811c28b5a81b4c83d7c98b5b0c27281d610207ebe692c2967f
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c409bdac4775add8db92aa22b5b718fb8c94a1462c1fe9a416b95d8a3388c2fc
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     bc87a668e81966489cb508ee805183c19e6acd24cf17799ca062d2e384da0ea7
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     b97a0889059c035ff1d54b6db53b11b9766668d9f955247c028b2837d7a04cd9
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     b8f078d983a24ac433216393883514cd932c33af18e7dd70884c8235f4275736
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     b54f1ee636631fad68058d3b0937031ac1b90ccb17062a391cca68afdbe40d55
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     afe2030afb7d2cda13f9fa333a02e34f6751afec11b010dbcd441fdf4c4002b3
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     aeebae3151271273ed95aa2e671139ed31a98567303a332298f83709a9d55aa1
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     ad6826e1946d26d3eaf3685c88d97d85de3b4dcb3d0ee2ae81c70560d13c5720
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     a7f32f508d4eb0fead9a087ef94ed1ba0aec5de6f7ef6ff0a62b93bedf5d458d
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     a6b5151f3655d3a2af0d472759796be4a4200e5495a7d869754c4848857408a7
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     9e4a69173161682e55fde8fef560eb88ec1ffedcaf04001f66c0caf707b2b734
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     9998d363c491be16bd74ba10b94d9291001611736fdca643a36664bc0f315a42
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     8d8ea289cfe70a1c07ab7365cb28ee51edd33cf2506de888fbadd60ebf80481c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     8bf434b49e00ccf71502a2cd900865cb01ec3b3da03c35be505fdf7bd563f521
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     8ad64859f195b5f58dafaa940b6a6167acd67a886e8f469364177221c55945b9
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     895a9785f617ca1d7ed44fc1a1470b71f3f1223862d9ff9dcc3ae2df92163daf
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     82db3bceb4f60843ce9d97c3d187cd9b5941cd3de8100e586f2bda5637575f67
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     81a8b965bb84d3876b9429a95481cc955318cfaa1412d808c8a33bfd33fff0e4
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     7827af99362cfaf0717dade4b1bfe0438ad171c15addc248b75bf8caa44bb2c5
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     72e0bd1867cf5d9d56ab158adf3bddbc82bf32a8d8aa1d8c5e2f6df29428d6d8
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     726b3eb654046a30f3f83d9b96ce03f670e9a806d1708a0371e62dc49d2c23c1
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     71f2906fd222497e54a34662ab2497fcc81020770ff51368e9e3d9bfcbfd6375
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     6f1428ff71c9db0ed5af1f2e7bbfcbab647cc265ddf5b293cdb626f50a3a785e
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     6c8854478dd559e29351b826c06cb8bfef2b94ad3538358772d193f82ed1ca11
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     6b1d138078e4418aa68deb7bb35e066092cf479eeb8ce4cd12e7d072ccb42f66
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     5ae949ea8855eb93e439dbc65bda2e42852c2fdf6789fa146736e3c3410f2b5c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     518831fe7382b514d03e15c621228b8ab65479bd0cbfa3c5c1d0f48d9c306135
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     47cc086127e2069a86e03a6bef2cd410f8c55a6d6bdb362168c31b2ce32a5adf
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     4397daca839e7f63077cb50c92df43bc2d2fb2a8f59f26fc7a0e4bd4d9751692
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     3fce9b9fdf3ef09d5452b0f95ee481c2b7f06d743a737971558e70136ace3e73
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     3841d221368d1583d75c0a02e62160394d6c4e0a6760b6f607b90362bc855b02
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     3608edbaf5ad0f41a414a1777abf2faf5e670334675ec3995e6935829e0caad2
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     306628fa5477305728ba4a467de7d0387a54f569d3769fce5e75ec89d28d1593
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     2e70916786a6f773511fa7181fab0f1d70b557c6322ea923b2a8d3b92b51af7d
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     2c73d93325ba6dcbe589d4a4c63c5b935559ef92fbf050ed50c4e2085206f17d
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     2bbf2ca7b8f1d91f27ee52b6fb2a5dd049b85a2b9b529c5d6662068104b055f8
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     2b99cf26422e92fe365fbf4bc30d27086c9ee14b7a6fff44fb2f6b9001699939
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     18333429ff0562ed9f97033e1148dceee52dbe2e496d5410b5cfd6c864d2d10f
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     174e3a0b5b43c6a607bbd3404f05341e3dcf396267ce94f8b50e2e23a9da920c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     106faceacfecfd4e303b74f480a08098e2d0802b936f8ec774ce21f31686689c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     0dc9f3fb99962148c3ca833632758d3ed4fc8d0b0007b95b31e6528f2acd5bfc
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     0d0dbeca6f29eca06f331a7d72e4884b12097fb348983a2a14a0d73f4f10140f
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     0c189339762df336ab3dd006a463df715a39cfb0f492465c600e6c6bd7bd898c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     0bbb4392daac7ab89b30a4ac657531b97bfaab04f90b0dafe5f9b6eb90a06374
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     09df5f4e511208ec78b96d12d08125fdb603868de39f6f72927852599b659c26
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     07e6c6a858646fb1efc67903fe28b116011f2367fe92e6be2b36999eff39d09e
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     075eea060589548ba060b2feed10da3c20c7fe9b17cd026b94e8a683b8115238
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     90fbe70e69d633408d3e170c6832dbb2d209e0272527dfb63d49d29572a6f44c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     29c6eb52b43c3aa18b2cd8ed6ea8607cef3cfae1bafe1165755cf2e614844a44
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     d063ec28f67eba53f1642dbf7dff33c6a32add869f6013fe162e2c32f1cbe56d
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     d626157e1d6a718bc124ab8da27cbb65072ca03a7b6b257dbdcbbd60f65ef3d1
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     5391c3a2fb112102a6aa1edc25ae77e19f5d6f09cd09eeb2509922bfcd5992ea
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     58fb941aef95a25943b3fb5f2510a0df3fe44c58c95e0ab80487297568ab9771
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c3a99a460da464a057c3586d83cef5f4ae08b7103979ed8932742df0ed530c66
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     e6ca68e94146629af03f69c2f86e6bef62f930b37c6fbcc878b78df98c0334e5
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     1aec84b84b6c65a51220a9be7181965230210d62d6d33c48999c6b295a2b0a06
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     363384d14d1f2e0b7815626484c459ad57a318ef4396266048d058c5a19bbf76
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c5d9d8a186e2c82d09afaa2a6f7f2e73870d3e64f72c4e08ef67796a840f0fbd
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     f52f83a3fa9cfbd6920f722824dbe4034534d25b8507246b3b957dac6e1bce7a
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     80b4d96931bf0d02fd91a61e19d14f1da452e66db2408ca8604d411f92659f0a
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]: filesystem keys:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:   PK:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:   KEK:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:   db:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:   dbx:
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     45c7c8ae750acfbb48fc37527d6412dd644daed8913ccd8a24c94d856967df8e
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     64575bd912789a2e14ad56f6341f52af6bf80cf94400785975e9f04e2d64d745
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     939aeef4f5fa51e23340c3f2e49048ce8872526afdf752c3a7f3a3f2bc9f6049
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     3b0287533e0cc3d0ec1aa823cbf0a941aad8721579d1c499802dd1c3a636b8a9
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c83cb13922ad99f560744675dd37cc94dcad5a1fcba6472fee341171d939e884
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     77dd190fa30d88ff5e3b011a0ae61e6209780c130b535ecb87e6f0888a0b6b2f
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     55b99b0de53dbcfe485aa9c737cf3fb616ef3d91fab599aa7cab19eda763b5ba
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     ca171d614a8d7e121c93948cd0fe55d39981f9d11aa96e03450a415227c2c65b
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     fecfb232d12e994b6d485d2c7167728aa5525984ad5ca61e7516221f079a1436
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     fe63a84f782cc9d3fcf2ccf9fc11fbd03760878758d26285ed12669bdc6e6d01
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     fddd6e3d29ea84c7743dad4a1bdbc700b5fec1b391f932409086acc71dd6dbd8
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     e92c22eb3b5642d65c1ec2caf247d2594738eebb7fb3841a44956f59e2b0d1fa
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     d8cbeb9735f5672b367e4f96cdc74969615d17074ae96c724d42ce0216f8f3fa
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     ce3bfabe59d67ce8ac8dfd4a16f7c43ef9c224513fbc655957d735fa29f540ce
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     cb6b858b40d3a098765815b592c1514a49604fafd60819da88d7a76e9778fef7
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c90f336617b8e7f983975413c997f10b73eb267fd8a10cb9e3bdbfc667abdb8b
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c617c1a8b1ee2a811c28b5a81b4c83d7c98b5b0c27281d610207ebe692c2967f
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c409bdac4775add8db92aa22b5b718fb8c94a1462c1fe9a416b95d8a3388c2fc
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     bc87a668e81966489cb508ee805183c19e6acd24cf17799ca062d2e384da0ea7
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     b97a0889059c035ff1d54b6db53b11b9766668d9f955247c028b2837d7a04cd9
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     b8f078d983a24ac433216393883514cd932c33af18e7dd70884c8235f4275736
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     b54f1ee636631fad68058d3b0937031ac1b90ccb17062a391cca68afdbe40d55
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     afe2030afb7d2cda13f9fa333a02e34f6751afec11b010dbcd441fdf4c4002b3
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     aeebae3151271273ed95aa2e671139ed31a98567303a332298f83709a9d55aa1
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     ad6826e1946d26d3eaf3685c88d97d85de3b4dcb3d0ee2ae81c70560d13c5720
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     a7f32f508d4eb0fead9a087ef94ed1ba0aec5de6f7ef6ff0a62b93bedf5d458d
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     a6b5151f3655d3a2af0d472759796be4a4200e5495a7d869754c4848857408a7
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     9e4a69173161682e55fde8fef560eb88ec1ffedcaf04001f66c0caf707b2b734
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     9998d363c491be16bd74ba10b94d9291001611736fdca643a36664bc0f315a42
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     8d8ea289cfe70a1c07ab7365cb28ee51edd33cf2506de888fbadd60ebf80481c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     8bf434b49e00ccf71502a2cd900865cb01ec3b3da03c35be505fdf7bd563f521
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     8ad64859f195b5f58dafaa940b6a6167acd67a886e8f469364177221c55945b9
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     895a9785f617ca1d7ed44fc1a1470b71f3f1223862d9ff9dcc3ae2df92163daf
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     82db3bceb4f60843ce9d97c3d187cd9b5941cd3de8100e586f2bda5637575f67
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     81a8b965bb84d3876b9429a95481cc955318cfaa1412d808c8a33bfd33fff0e4
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     7827af99362cfaf0717dade4b1bfe0438ad171c15addc248b75bf8caa44bb2c5
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     72e0bd1867cf5d9d56ab158adf3bddbc82bf32a8d8aa1d8c5e2f6df29428d6d8
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     726b3eb654046a30f3f83d9b96ce03f670e9a806d1708a0371e62dc49d2c23c1
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     71f2906fd222497e54a34662ab2497fcc81020770ff51368e9e3d9bfcbfd6375
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     6f1428ff71c9db0ed5af1f2e7bbfcbab647cc265ddf5b293cdb626f50a3a785e
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     6c8854478dd559e29351b826c06cb8bfef2b94ad3538358772d193f82ed1ca11
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     6b1d138078e4418aa68deb7bb35e066092cf479eeb8ce4cd12e7d072ccb42f66
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     5ae949ea8855eb93e439dbc65bda2e42852c2fdf6789fa146736e3c3410f2b5c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     518831fe7382b514d03e15c621228b8ab65479bd0cbfa3c5c1d0f48d9c306135
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     47cc086127e2069a86e03a6bef2cd410f8c55a6d6bdb362168c31b2ce32a5adf
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     4397daca839e7f63077cb50c92df43bc2d2fb2a8f59f26fc7a0e4bd4d9751692
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     3fce9b9fdf3ef09d5452b0f95ee481c2b7f06d743a737971558e70136ace3e73
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     3841d221368d1583d75c0a02e62160394d6c4e0a6760b6f607b90362bc855b02
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     3608edbaf5ad0f41a414a1777abf2faf5e670334675ec3995e6935829e0caad2
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     306628fa5477305728ba4a467de7d0387a54f569d3769fce5e75ec89d28d1593
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     2e70916786a6f773511fa7181fab0f1d70b557c6322ea923b2a8d3b92b51af7d
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     2c73d93325ba6dcbe589d4a4c63c5b935559ef92fbf050ed50c4e2085206f17d
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     2bbf2ca7b8f1d91f27ee52b6fb2a5dd049b85a2b9b529c5d6662068104b055f8
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     2b99cf26422e92fe365fbf4bc30d27086c9ee14b7a6fff44fb2f6b9001699939
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     18333429ff0562ed9f97033e1148dceee52dbe2e496d5410b5cfd6c864d2d10f
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     174e3a0b5b43c6a607bbd3404f05341e3dcf396267ce94f8b50e2e23a9da920c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     106faceacfecfd4e303b74f480a08098e2d0802b936f8ec774ce21f31686689c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     0dc9f3fb99962148c3ca833632758d3ed4fc8d0b0007b95b31e6528f2acd5bfc
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     0d0dbeca6f29eca06f331a7d72e4884b12097fb348983a2a14a0d73f4f10140f
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     0c189339762df336ab3dd006a463df715a39cfb0f492465c600e6c6bd7bd898c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     0bbb4392daac7ab89b30a4ac657531b97bfaab04f90b0dafe5f9b6eb90a06374
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     09df5f4e511208ec78b96d12d08125fdb603868de39f6f72927852599b659c26
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     07e6c6a858646fb1efc67903fe28b116011f2367fe92e6be2b36999eff39d09e
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     075eea060589548ba060b2feed10da3c20c7fe9b17cd026b94e8a683b8115238
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     90fbe70e69d633408d3e170c6832dbb2d209e0272527dfb63d49d29572a6f44c
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     29c6eb52b43c3aa18b2cd8ed6ea8607cef3cfae1bafe1165755cf2e614844a44
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     d063ec28f67eba53f1642dbf7dff33c6a32add869f6013fe162e2c32f1cbe56d
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     d626157e1d6a718bc124ab8da27cbb65072ca03a7b6b257dbdcbbd60f65ef3d1
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     5391c3a2fb112102a6aa1edc25ae77e19f5d6f09cd09eeb2509922bfcd5992ea
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     58fb941aef95a25943b3fb5f2510a0df3fe44c58c95e0ab80487297568ab9771
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c3a99a460da464a057c3586d83cef5f4ae08b7103979ed8932742df0ed530c66
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     e6ca68e94146629af03f69c2f86e6bef62f930b37c6fbcc878b78df98c0334e5
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     1aec84b84b6c65a51220a9be7181965230210d62d6d33c48999c6b295a2b0a06
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     363384d14d1f2e0b7815626484c459ad57a318ef4396266048d058c5a19bbf76
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     c5d9d8a186e2c82d09afaa2a6f7f2e73870d3e64f72c4e08ef67796a840f0fbd
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     f52f83a3fa9cfbd6920f722824dbe4034534d25b8507246b3b957dac6e1bce7a
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:     80b4d96931bf0d02fd91a61e19d14f1da452e66db2408ca8604d411f92659f0a
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Oct 13 08:28:55 lc-ubuntu-2204 sbkeysync[681]: New keys in filesystem:
+Oct 13 08:28:56 lc-ubuntu-2204 systemd[1]: secureboot-db.service: Deactivated successfully.
+Oct 13 08:28:56 lc-ubuntu-2204 systemd[1]: Finished Secure Boot updates for DB and DBX.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: dmesg.service: Deactivated successfully.
+Oct 13 08:28:58 lc-ubuntu-2204 apport[615]:  * Starting automatic crash report generation: apport
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Started User Login Management.
+Oct 13 08:28:58 lc-ubuntu-2204 apport[615]:    ...done.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Starting Google Compute Engine Guest Agent...
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Starting GRUB failed boot detection...
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Starting Hold until boot process finishes up...
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Starting Terminate Plymouth Boot Screen...
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Starting Hostname Service...
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Started Unattended Upgrades Shutdown.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Started LSB: automatic crash report generation.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Finished Hold until boot process finishes up.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Finished Terminate Plymouth Boot Screen.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: grub-initrd-fallback.service: Deactivated successfully.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Finished GRUB failed boot detection.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Started Serial Getty on ttyS0.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Starting Set console scheme...
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Finished Set console scheme.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Created slice Slice /system/getty.
+Oct 13 08:28:58 lc-ubuntu-2204 snapd[516]: standby.go:95: will consider standby after: 5s
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Started Getty on tty1.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Reached target Login Prompts.
+Oct 13 08:28:58 lc-ubuntu-2204 systemd[1]: Started Snap Daemon.
+Oct 13 08:28:59 lc-ubuntu-2204 systemd[1]: Starting Google Compute Engine Shutdown Scripts...
+Oct 13 08:28:59 lc-ubuntu-2204 systemd[1]: Finished Google Compute Engine Shutdown Scripts.
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: GCE Agent Started (version 20250116.00-0ubuntu1~22.04.3)
+Oct 13 08:28:59 lc-ubuntu-2204 dbus-daemon[491]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Oct 13 08:28:59 lc-ubuntu-2204 systemd[1]: Started Hostname Service.
+Oct 13 08:28:59 lc-ubuntu-2204 dbus-daemon[491]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.9' (uid=0 pid=694 comm="/lib/systemd/systemd-hostnamed " label="unconfined")
+Oct 13 08:28:59 lc-ubuntu-2204 systemd[1]: Starting Authorization Manager...
+Oct 13 08:28:59 lc-ubuntu-2204 snapd[516]: autorepair.go:320: WARNING: the system booted with an old initrd without unlocked status reporting
+Oct 13 08:28:59 lc-ubuntu-2204 polkitd[716]: started daemon version 0.105 using authority implementation `local' version `0.105'
+Oct 13 08:28:59 lc-ubuntu-2204 dbus-daemon[491]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Oct 13 08:28:59 lc-ubuntu-2204 systemd[1]: Started Authorization Manager.
+Oct 13 08:28:59 lc-ubuntu-2204 systemd-hostnamed[694]: Hostname set to <lc-ubuntu-2204> (static)
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Detecting network manager...
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: rolling back regular ethernet changes for netplan
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Failed to rollback primary nic (left over) config for NetworkManager: error reloading NetworkManager config cache: exec: "nmcli": executable file not found in $PATH
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: rolling back changes for systemd-networkd
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Rolling back wicked
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Rolling back NetworkManager
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Unable to roll back config for NetworkManager: error reloading NetworkManager config cache: exec: "nmcli": executable file not found in $PATH
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Rolling back systemd-networkd
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: rolling back changes for systemd-networkd
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Rolling back dhclient
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: No dhclient process found for any of the known ethernet interfaces, skipping vlan rollback.
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Setting up netplan
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: No NICs to configure, skipping writeNetplanEthernetDropin
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Finished setting up netplan
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Completed adding/removing routes for aliases, forwarded IP and target-instance IPs
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Instance ID changed, running first-boot actions
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Initializing MDS mTLS bootstrapping handler
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Starting the scheduler to run jobs
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Scheduler - start: []
+Oct 13 08:28:59 lc-ubuntu-2204 google_guest_agent[690]: Subscribing to mdsSchedulerHandler to listen metadata-watcher,longpoll
+Oct 13 08:28:59 lc-ubuntu-2204 systemd[1]: Started Google Compute Engine Guest Agent.
+Oct 13 08:28:59 lc-ubuntu-2204 systemd[1]: Starting OpenBSD Secure Shell server...
+Oct 13 08:29:00 lc-ubuntu-2204 google_guest_agent[690]: Starting the scheduler to run jobs
+Oct 13 08:29:00 lc-ubuntu-2204 google_guest_agent[690]: Scheduling job: telemetryJobID
+Oct 13 08:29:00 lc-ubuntu-2204 google_guest_agent[690]: Scheduling job "telemetryJobID" to run at 24.000000 hr interval
+Oct 13 08:29:00 lc-ubuntu-2204 google_guest_agent[690]: Successfully scheduled job telemetryJobID
+Oct 13 08:29:00 lc-ubuntu-2204 google_guest_agent[690]: Invoking job "telemetryJobID"
+Oct 13 08:29:00 lc-ubuntu-2204 google_guest_agent[690]: Scheduler - added: [now 2026-10-13 08:29:00.121214462 +0000 UTC entry 1 next 2026-10-14 08:29:00 +0000 UTC]
+Oct 13 08:29:00 lc-ubuntu-2204 sshd[787]: Server listening on 0.0.0.0 port 22.
+Oct 13 08:29:00 lc-ubuntu-2204 sshd[787]: Server listening on :: port 22.
+Oct 13 08:29:00 lc-ubuntu-2204 systemd[1]: Started OpenBSD Secure Shell server.
+Oct 13 08:29:00 lc-ubuntu-2204 google_guest_agent[690]: Completed adding/removing routes for aliases, forwarded IP and target-instance IPs
+Oct 13 08:29:00 lc-ubuntu-2204 groupadd[784]: group added to /etc/group: name=google-sudoers, GID=1001
+Oct 13 08:29:00 lc-ubuntu-2204 groupadd[784]: group added to /etc/gshadow: name=google-sudoers
+Oct 13 08:29:00 lc-ubuntu-2204 groupadd[784]: new group: name=google-sudoers, GID=1001
+Oct 13 08:29:00 lc-ubuntu-2204 google_guest_agent[690]: Created google sudoers file
+Oct 13 08:29:00 lc-ubuntu-2204 google_guest_agent[690]: Creating user operator.
+Oct 13 08:29:00 lc-ubuntu-2204 systemd[1]: Stopping User Login Management...
+Oct 13 08:29:00 lc-ubuntu-2204 useradd[799]: new group: name=operator, GID=1002
+Oct 13 08:29:00 lc-ubuntu-2204 useradd[799]: new user: name=operator, UID=1001, GID=1002, home=/home/operator, shell=/bin/bash, from=none
+Oct 13 08:29:00 lc-ubuntu-2204 systemd[1]: systemd-logind.service: Deactivated successfully.
+Oct 13 08:29:00 lc-ubuntu-2204 systemd[1]: Stopped User Login Management.
+Oct 13 08:29:00 lc-ubuntu-2204 systemd[1]: Starting Load Kernel Module drm...
+Oct 13 08:29:00 lc-ubuntu-2204 systemd[1]: modprobe@drm.service: Deactivated successfully.
+Oct 13 08:29:00 lc-ubuntu-2204 systemd[1]: Finished Load Kernel Module drm.
+Oct 13 08:29:00 lc-ubuntu-2204 systemd[1]: Starting User Login Management...
+Oct 13 08:29:00 lc-ubuntu-2204 gpasswd[817]: user operator added by root to group ubuntu
+Oct 13 08:29:00 lc-ubuntu-2204 gpasswd[828]: user operator added by root to group adm
+Oct 13 08:29:00 lc-ubuntu-2204 gpasswd[834]: user operator added by root to group dialout
+Oct 13 08:29:01 lc-ubuntu-2204 systemd-logind[808]: Watching system buttons on /dev/input/event0 (Power Button)
+Oct 13 08:29:01 lc-ubuntu-2204 systemd-logind[808]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Oct 13 08:29:01 lc-ubuntu-2204 systemd-logind[808]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Oct 13 08:29:01 lc-ubuntu-2204 systemd-logind[808]: New seat seat0.
+Oct 13 08:29:01 lc-ubuntu-2204 systemd[1]: Started User Login Management.
+Oct 13 08:29:01 lc-ubuntu-2204 gpasswd[841]: user operator added by root to group cdrom
+Oct 13 08:29:01 lc-ubuntu-2204 systemd[1]: Stopping Regular background program processing daemon...
+Oct 13 08:29:01 lc-ubuntu-2204 systemd[1]: cron.service: Deactivated successfully.
+Oct 13 08:29:01 lc-ubuntu-2204 systemd[1]: Stopped Regular background program processing daemon.
+Oct 13 08:29:01 lc-ubuntu-2204 gpasswd[848]: user operator added by root to group floppy
+Oct 13 08:29:01 lc-ubuntu-2204 systemd[1]: Started Regular background program processing daemon.
+Oct 13 08:29:01 lc-ubuntu-2204 systemd[1]: systemd-fsckd.service: Deactivated successfully.
+Oct 13 08:29:01 lc-ubuntu-2204 cron[856]: (CRON) INFO (pidfile fd = 3)
+Oct 13 08:29:01 lc-ubuntu-2204 cron[856]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Oct 13 08:29:01 lc-ubuntu-2204 gpasswd[857]: user operator added by root to group audio
+Oct 13 08:29:01 lc-ubuntu-2204 systemd[1]: Reloading OpenBSD Secure Shell server...
+Oct 13 08:29:01 lc-ubuntu-2204 gpasswd[867]: user operator added by root to group dip
+Oct 13 08:29:01 lc-ubuntu-2204 gpasswd[874]: user operator added by root to group video
+Oct 13 08:29:01 lc-ubuntu-2204 sshd[787]: Received SIGHUP; restarting.
+Oct 13 08:29:01 lc-ubuntu-2204 systemd[1]: Reloaded OpenBSD Secure Shell server.
+Oct 13 08:29:01 lc-ubuntu-2204 gpasswd[881]: user operator added by root to group plugdev
+Oct 13 08:29:01 lc-ubuntu-2204 sshd[787]: Server listening on 0.0.0.0 port 22.
+Oct 13 08:29:01 lc-ubuntu-2204 sshd[787]: Server listening on :: port 22.
+Oct 13 08:29:01 lc-ubuntu-2204 gpasswd[888]: user operator added by root to group netdev
+Oct 13 08:29:01 lc-ubuntu-2204 gpasswd[900]: user operator added by root to group lxd
+Oct 13 08:29:01 lc-ubuntu-2204 google_guest_agent[690]: Getting current interface state and routes
+Oct 13 08:29:01 lc-ubuntu-2204 google_guest_agent[690]: Interface(lo), State: {Index:1 MTU:65536 Name:lo HardwareAddr: Flags:up|loopback|running}, Addresses: [127.0.0.1/8 ::1/128]
+Oct 13 08:29:01 lc-ubuntu-2204 google_guest_agent[690]: Interface(ens4), State: {Index:2 MTU:1460 Name:ens4 HardwareAddr:42:01:0a:80:00:03 Flags:up|broadcast|multicast|running}, Addresses: [10.128.0.3/32 fe80::4001:aff:fe80:3/64]
+Oct 13 08:29:01 lc-ubuntu-2204 google_guest_agent[690]: Currently present IP routes:
+Oct 13 08:29:01 lc-ubuntu-2204 google_guest_agent[690]:  default via 10.128.0.1 dev ens4 proto dhcp src 10.128.0.3 metric 100
+Oct 13 08:29:01 lc-ubuntu-2204 google_guest_agent[690]: 10.128.0.1 dev ens4 proto dhcp scope link src 10.128.0.3 metric 100
+Oct 13 08:29:01 lc-ubuntu-2204 google_guest_agent[690]: 169.254.169.254 via 10.128.0.1 dev ens4 proto dhcp src 10.128.0.3 metric 100
+Oct 13 08:29:01 lc-ubuntu-2204 gpasswd[909]: user operator added by root to group google-sudoers
+Oct 13 08:29:01 lc-ubuntu-2204 google_guest_agent[690]: Updating keys for user operator.
+Oct 13 08:29:02 lc-ubuntu-2204 systemd[1]: Started snap.lxd.hook.install-0f602f47-e60d-461a-ac22-713548cf8655.scope.
+Oct 13 08:29:02 lc-ubuntu-2204 google_guest_agent[690]: Updating keys for user operator.
+Oct 13 08:29:02 lc-ubuntu-2204 systemd[1]: tmp-snap\x2dprivate\x2dtmp-snap.rootfs_4vrLkf.mount: Deactivated successfully.
+Oct 13 08:29:03 lc-ubuntu-2204 rsyslogd[513]: file '/dev/console'[10] write error - see https://www.rsyslog.com/solving-rsyslog-write-errors/ for help OS error: Resource temporarily unavailable [v8.2112.0 try https://www.rsyslog.com/e/2027 ]
+Oct 13 08:29:03 lc-ubuntu-2204 kernel: fbcon: Taking over console
+Oct 13 08:29:04 lc-ubuntu-2204 systemd[1]: snap.lxd.hook.install-0f602f47-e60d-461a-ac22-713548cf8655.scope: Deactivated successfully.
+Oct 13 08:29:04 lc-ubuntu-2204 systemd[1]: snap.lxd.hook.install-0f602f47-e60d-461a-ac22-713548cf8655.scope: Consumed 1.840s CPU time.
+Oct 13 08:29:04 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:29:05 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:29:05 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:29:05 lc-ubuntu-2204 systemd[1]: Listening on Socket unix for snap application lxd.daemon.
+Oct 13 08:29:05 lc-ubuntu-2204 systemd[1]: Listening on Socket unix for snap application lxd.user-daemon.
+Oct 13 08:29:05 lc-ubuntu-2204 systemd[1]: Starting Service for snap application lxd.activate...
+Oct 13 08:29:05 lc-ubuntu-2204 sshd[943]: Accepted publickey for operator from 203.0.113.10 port 42168 ssh2: RSA SHA256:REDACTED
+Oct 13 08:29:05 lc-ubuntu-2204 sshd[943]: pam_unix(sshd:session): session opened for user operator(uid=1001) by (uid=0)
+Oct 13 08:29:05 lc-ubuntu-2204 systemd[1]: Created slice User Slice of UID 1001.
+Oct 13 08:29:05 lc-ubuntu-2204 systemd[1]: Starting User Runtime Directory /run/user/1001...
+Oct 13 08:29:06 lc-ubuntu-2204 systemd-logind[808]: New session 1 of user operator.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1]: Finished User Runtime Directory /run/user/1001.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1]: Starting User Manager for UID 1001...
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: pam_unix(systemd-user:session): session opened for user operator(uid=1001) by (uid=0)
+Oct 13 08:29:06 lc-ubuntu-2204 lxd.activate[985]: => Starting LXD activation
+Oct 13 08:29:06 lc-ubuntu-2204 lxd.activate[985]: ==> Creating missing snap configuration
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Queued start job for default target Main User Target.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Created slice User Application Slice.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Reached target Paths.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Reached target Timers.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Starting D-Bus User Message Bus Socket...
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Listening on GnuPG network certificate management daemon.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Listening on GnuPG cryptographic agent and passphrase cache.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Listening on debconf communication socket.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Listening on REST API socket for snapd user session agent.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Listening on D-Bus User Message Bus Socket.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Reached target Sockets.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Reached target Basic System.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Reached target Main User Target.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1008]: Startup finished in 572ms.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1]: Started User Manager for UID 1001.
+Oct 13 08:29:06 lc-ubuntu-2204 systemd[1]: Started Session 1 of User operator.
+Oct 13 08:29:08 lc-ubuntu-2204 sshd[1101]: Received disconnect from 203.0.113.10 port 42168:11: disconnected by user
+Oct 13 08:29:08 lc-ubuntu-2204 sshd[1101]: Disconnected from user operator 203.0.113.10 port 42168
+Oct 13 08:29:08 lc-ubuntu-2204 sshd[943]: pam_unix(sshd:session): session closed for user operator
+Oct 13 08:29:08 lc-ubuntu-2204 systemd-logind[808]: Session 1 logged out. Waiting for processes to exit.
+Oct 13 08:29:08 lc-ubuntu-2204 lxd.activate[985]: ==> Loading snap configuration
+Oct 13 08:29:08 lc-ubuntu-2204 lxd.activate[985]: ==> Checking for socket activation support
+Oct 13 08:29:08 lc-ubuntu-2204 lxd.activate[985]: ==> Creating "lxd" user
+Oct 13 08:29:08 lc-ubuntu-2204 useradd[1277]: new user: name=lxd, UID=998, GID=119, home=/var/snap/lxd/common/lxd, shell=/bin/false, from=none
+Oct 13 08:29:08 lc-ubuntu-2204 lxd.activate[985]: ==> Setting LXD socket ownership
+Oct 13 08:29:08 lc-ubuntu-2204 lxd.activate[985]: ==> Setting LXD user socket ownership
+Oct 13 08:29:08 lc-ubuntu-2204 lxd.activate[985]: ==> LXD never started on this system, no need to start it now
+Oct 13 08:29:08 lc-ubuntu-2204 systemd[1]: snap.lxd.activate.service: Deactivated successfully.
+Oct 13 08:29:08 lc-ubuntu-2204 systemd[1]: Finished Service for snap application lxd.activate.
+Oct 13 08:29:08 lc-ubuntu-2204 systemd[1]: snap.lxd.activate.service: Consumed 2.713s CPU time.
+Oct 13 08:29:09 lc-ubuntu-2204 systemd[1]: Started snap.lxd.hook.configure-ba590c65-3435-4971-9e41-4b250eb2cb13.scope.
+Oct 13 08:29:10 lc-ubuntu-2204 systemd[1]: snap.lxd.hook.configure-ba590c65-3435-4971-9e41-4b250eb2cb13.scope: Deactivated successfully.
+Oct 13 08:29:10 lc-ubuntu-2204 sshd[1263]: Accepted publickey for operator from 203.0.113.10 port 42254 ssh2: RSA SHA256:REDACTED
+Oct 13 08:29:10 lc-ubuntu-2204 sshd[1263]: pam_unix(sshd:session): session opened for user operator(uid=1001) by (uid=0)
+Oct 13 08:29:10 lc-ubuntu-2204 systemd-logind[808]: New session 3 of user operator.
+Oct 13 08:29:10 lc-ubuntu-2204 systemd[1]: Started Session 3 of User operator.
+Oct 13 08:29:10 lc-ubuntu-2204 dbus-daemon[491]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.19' (uid=0 pid=516 comm="/snap/snapd/current/usr/lib/snapd/snapd " label="unconfined")
+Oct 13 08:29:10 lc-ubuntu-2204 systemd[1]: Starting Time & Date Service...
+Oct 13 08:29:11 lc-ubuntu-2204 dbus-daemon[491]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Oct 13 08:29:11 lc-ubuntu-2204 systemd[1]: Started Time & Date Service.
+Oct 13 08:29:14 lc-ubuntu-2204 systemd[1]: session-1.scope: Deactivated successfully.
+Oct 13 08:29:14 lc-ubuntu-2204 systemd[1]: session-1.scope: Consumed 5.354s CPU time.
+Oct 13 08:29:14 lc-ubuntu-2204 systemd-logind[808]: Removed session 1.
+Oct 13 08:29:21 lc-ubuntu-2204 snapd[516]: snapmgr.go:1675: performing periodic snap downloads cache cleanup
+Oct 13 08:29:21 lc-ubuntu-2204 snapd[516]: snapmgr.go:1685: cannot clean store downloads cache: open /var/lib/snapd/cache: no such file or directory
+Oct 13 08:29:22 lc-ubuntu-2204 systemd[1]: Finished Wait until snapd is fully seeded.
+Oct 13 08:29:22 lc-ubuntu-2204 systemd[1]: Starting Cloud-init: Config Stage...
+Oct 13 08:29:22 lc-ubuntu-2204 systemd[1]: Condition check resulted in Auto import assertions from block devices being skipped.
+Oct 13 08:29:22 lc-ubuntu-2204 systemd[1]: Reached target Multi-User System.
+Oct 13 08:29:22 lc-ubuntu-2204 systemd[1]: Reached target Graphical Interface.
+Oct 13 08:29:22 lc-ubuntu-2204 systemd[1]: Starting Record Runlevel Change in UTMP...
+Oct 13 08:29:22 lc-ubuntu-2204 systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+Oct 13 08:29:22 lc-ubuntu-2204 systemd[1]: Finished Record Runlevel Change in UTMP.
+Oct 13 08:29:23 lc-ubuntu-2204 cloud-init[1592]: Cloud-init v. 26.1-0ubuntu1~22.04.1 running 'modules:config' at Tue, 13 Oct 2026 08:29:23 +0000. Up 57.60 seconds.
+Oct 13 08:29:23 lc-ubuntu-2204 chronyd[490]: chronyd exiting
+Oct 13 08:29:23 lc-ubuntu-2204 systemd[1]: Stopping chrony, an NTP client/server...
+Oct 13 08:29:23 lc-ubuntu-2204 systemd[1]: chrony.service: Deactivated successfully.
+Oct 13 08:29:23 lc-ubuntu-2204 systemd[1]: Stopped chrony, an NTP client/server.
+Oct 13 08:29:23 lc-ubuntu-2204 systemd[1]: Starting chrony, an NTP client/server...
+Oct 13 08:29:24 lc-ubuntu-2204 chronyd[1612]: chronyd version 4.2 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +NTS +SECHASH +IPV6 -DEBUG)
+Oct 13 08:29:24 lc-ubuntu-2204 chronyd[1612]: Frequency 0.000 +/- 1000000.000 ppm read from /var/lib/chrony/chrony.drift
+Oct 13 08:29:24 lc-ubuntu-2204 chronyd[1612]: Loaded seccomp filter (level 1)
+Oct 13 08:29:24 lc-ubuntu-2204 systemd[1]: Started chrony, an NTP client/server.
+Oct 13 08:29:24 lc-ubuntu-2204 systemd[1]: Finished Cloud-init: Config Stage.
+Oct 13 08:29:24 lc-ubuntu-2204 systemd[1]: Starting Cloud-init: Final Stage...
+Oct 13 08:29:24 lc-ubuntu-2204 systemd[1]: Starting Google Compute Engine Startup Scripts...
+Oct 13 08:29:24 lc-ubuntu-2204 google_metadata_script_runner[1616]: Starting startup scripts (version 20250116.00-0ubuntu1~22.04.3).
+Oct 13 08:29:24 lc-ubuntu-2204 google_metadata_script_runner[1616]: No startup scripts to run.
+Oct 13 08:29:24 lc-ubuntu-2204 systemd[1]: google-startup-scripts.service: Deactivated successfully.
+Oct 13 08:29:24 lc-ubuntu-2204 systemd[1]: Finished Google Compute Engine Startup Scripts.
+Oct 13 08:29:25 lc-ubuntu-2204 cloud-init[1625]: Cloud-init v. 26.1-0ubuntu1~22.04.1 running 'modules:final' at Tue, 13 Oct 2026 08:29:24 +0000. Up 59.47 seconds.
+Oct 13 08:29:25 lc-ubuntu-2204 cloud-init[1627]: #############################################################
+Oct 13 08:29:25 lc-ubuntu-2204 cloud-init[1628]: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+Oct 13 08:29:25 lc-ubuntu-2204 cloud-init[1630]: 256 SHA256:REDACTED root@lc-ubuntu-2204 (ECDSA)
+Oct 13 08:29:25 lc-ubuntu-2204 cloud-init[1632]: 256 SHA256:REDACTED root@lc-ubuntu-2204 (ED25519)
+Oct 13 08:29:25 lc-ubuntu-2204 cloud-init[1634]: 3072 SHA256:REDACTED root@lc-ubuntu-2204 (RSA)
+Oct 13 08:29:25 lc-ubuntu-2204 cloud-init[1635]: -----END SSH HOST KEY FINGERPRINTS-----
+Oct 13 08:29:25 lc-ubuntu-2204 cloud-init[1636]: #############################################################
+Oct 13 08:29:25 lc-ubuntu-2204 cloud-init[1625]: Cloud-init v. 26.1-0ubuntu1~22.04.1 finished at Tue, 13 Oct 2026 08:29:25 +0000. Datasource DataSourceGCELocal.  Up 59.79 seconds
+Oct 13 08:29:25 lc-ubuntu-2204 systemd[1]: Finished Cloud-init: Final Stage.
+Oct 13 08:29:25 lc-ubuntu-2204 systemd[1]: Reached target Cloud-init target.
+Oct 13 08:29:25 lc-ubuntu-2204 systemd[1]: Startup finished in 1.726s (kernel) + 58.296s (userspace) = 1min 23ms.
+Oct 13 08:29:28 lc-ubuntu-2204 chronyd[1612]: Selected source 169.254.169.254 (metadata.google.internal)
+Oct 13 08:29:28 lc-ubuntu-2204 python3[518]: ["2026-10-13T08:29:28.841", "INFO", "ubuntupro.daemon", "main", 67, "mode: poll for pro license", {}]
+Oct 13 08:29:29 lc-ubuntu-2204 systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Oct 13 08:29:29 lc-ubuntu-2204 python3[518]: ["2026-10-13T08:29:29.640", "INFO", "ubuntupro.daemon.poll_for_pro_license", "poll_for_pro_license", 82, "Configured to not poll for pro license, shutting down", {}]
+Oct 13 08:29:29 lc-ubuntu-2204 python3[518]: ["2026-10-13T08:29:29.640", "INFO", "ubuntupro.daemon", "main", 76, "daemon ending", {}]
+Oct 13 08:29:29 lc-ubuntu-2204 systemd[1]: ubuntu-advantage.service: Deactivated successfully.
+Oct 13 08:29:29 lc-ubuntu-2204 systemd[1]: ubuntu-advantage.service: Consumed 1.560s CPU time.
+Oct 13 08:29:41 lc-ubuntu-2204 systemd[1]: systemd-timedated.service: Deactivated successfully.
+Oct 13 08:32:40 lc-ubuntu-2204 sshd[1522]: Received disconnect from 203.0.113.10 port 42254:11: disconnected by user
+Oct 13 08:32:40 lc-ubuntu-2204 sshd[1522]: Disconnected from user operator 203.0.113.10 port 42254
+Oct 13 08:32:40 lc-ubuntu-2204 sshd[1263]: pam_unix(sshd:session): session closed for user operator
+Oct 13 08:32:40 lc-ubuntu-2204 systemd[1]: session-3.scope: Deactivated successfully.
+Oct 13 08:32:40 lc-ubuntu-2204 systemd[1]: session-3.scope: Consumed 1.662s CPU time.
+Oct 13 08:32:40 lc-ubuntu-2204 systemd-logind[808]: Session 3 logged out. Waiting for processes to exit.
+Oct 13 08:32:40 lc-ubuntu-2204 systemd-logind[808]: Removed session 3.
+Oct 13 08:32:45 lc-ubuntu-2204 sshd[1651]: Accepted publickey for operator from 203.0.113.10 port 41939 ssh2: RSA SHA256:REDACTED
+Oct 13 08:32:45 lc-ubuntu-2204 sshd[1651]: pam_unix(sshd:session): session opened for user operator(uid=1001) by (uid=0)
+Oct 13 08:32:45 lc-ubuntu-2204 systemd-logind[808]: New session 4 of user operator.
+Oct 13 08:32:45 lc-ubuntu-2204 systemd[1]: Started Session 4 of User operator.
+Oct 13 08:32:47 lc-ubuntu-2204 sudo[1709]: operator : PWD=/home/operator ; USER=root ; COMMAND=/usr/bin/rm -rf /lc/out /lc/out-ubuntu-2204.tgz
+Oct 13 08:32:47 lc-ubuntu-2204 sudo[1709]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct 13 08:32:47 lc-ubuntu-2204 sudo[1709]: pam_unix(sudo:session): session closed for user root
+Oct 13 08:32:47 lc-ubuntu-2204 sudo[1711]: operator : PWD=/home/operator ; USER=root ; ENV=PHASE2=1 ; COMMAND=/usr/bin/nohup bash /tmp/vm-run.sh ubuntu-2204 /tmp/logcrux-0.9.1rc3-py3-none-any.whl
+Oct 13 08:32:47 lc-ubuntu-2204 sudo[1711]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct 13 08:32:47 lc-ubuntu-2204 systemd[1]: Starting Update APT News...
+Oct 13 08:32:47 lc-ubuntu-2204 systemd[1]: Starting Update the local ESM caches...
+Oct 13 08:32:47 lc-ubuntu-2204 sshd[1707]: Received disconnect from 203.0.113.10 port 41939:11: disconnected by user
+Oct 13 08:32:47 lc-ubuntu-2204 sshd[1707]: Disconnected from user operator 203.0.113.10 port 41939
+Oct 13 08:32:47 lc-ubuntu-2204 sshd[1651]: pam_unix(sshd:session): session closed for user operator
+Oct 13 08:32:47 lc-ubuntu-2204 systemd-logind[808]: Session 4 logged out. Waiting for processes to exit.
+Oct 13 08:32:48 lc-ubuntu-2204 python3[1735]: ["2026-10-13T08:32:48.291", "INFO", "ubuntupro.system", "get_cpu_info", 296, "could not open /proc/sysinfo", {}]
+Oct 13 08:32:48 lc-ubuntu-2204 python3[1735]: ["2026-10-13T08:32:48.291", "INFO", "ubuntupro.system", "get_cpu_info", 306, "could not open /sys/firmware/devicetree/base/model", {}]
+Oct 13 08:32:49 lc-ubuntu-2204 systemd[1]: apt-news.service: Deactivated successfully.
+Oct 13 08:32:49 lc-ubuntu-2204 systemd[1]: Finished Update APT News.
+Oct 13 08:32:54 lc-ubuntu-2204 systemd[1]: esm-cache.service: Deactivated successfully.
+Oct 13 08:32:54 lc-ubuntu-2204 systemd[1]: Finished Update the local ESM caches.
+Oct 13 08:32:54 lc-ubuntu-2204 systemd[1]: esm-cache.service: Consumed 4.866s CPU time.
+Oct 13 08:32:58 lc-ubuntu-2204 dbus-daemon[491]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.24' (uid=0 pid=2032 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Oct 13 08:32:58 lc-ubuntu-2204 systemd[1]: Starting PackageKit Daemon...
+Oct 13 08:32:58 lc-ubuntu-2204 PackageKit[2035]: daemon start
+Oct 13 08:32:58 lc-ubuntu-2204 dbus-daemon[491]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Oct 13 08:32:58 lc-ubuntu-2204 systemd[1]: Started PackageKit Daemon.
+Oct 13 08:33:25 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:25 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:25 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:25 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:25 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:25 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:26 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:26 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:26 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:26 lc-ubuntu-2204 systemd[1]: Starting A high performance web server and a reverse proxy server...
+Oct 13 08:33:26 lc-ubuntu-2204 systemd[1]: Started A high performance web server and a reverse proxy server.
+Oct 13 08:33:27 lc-ubuntu-2204 systemd[1]: Starting Download data for packages that failed at package install time...
+Oct 13 08:33:27 lc-ubuntu-2204 groupadd[3492]: group added to /etc/group: name=ssl-cert, GID=121
+Oct 13 08:33:27 lc-ubuntu-2204 groupadd[3492]: group added to /etc/gshadow: name=ssl-cert
+Oct 13 08:33:27 lc-ubuntu-2204 groupadd[3492]: new group: name=ssl-cert, GID=121
+Oct 13 08:33:27 lc-ubuntu-2204 systemd[1]: update-notifier-download.service: Deactivated successfully.
+Oct 13 08:33:27 lc-ubuntu-2204 systemd[1]: Finished Download data for packages that failed at package install time.
+Oct 13 08:33:28 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:28 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:28 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:29 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:29 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:29 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:29 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:29 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:29 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:30 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:30 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:30 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:30 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:30 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:30 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:30 lc-ubuntu-2204 sshd[3651]: Accepted publickey for operator from 203.0.113.10 port 41869 ssh2: RSA SHA256:REDACTED
+Oct 13 08:33:30 lc-ubuntu-2204 sshd[3651]: pam_unix(sshd:session): session opened for user operator(uid=1001) by (uid=0)
+Oct 13 08:33:30 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:31 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:31 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:31 lc-ubuntu-2204 systemd-logind[808]: New session 5 of user operator.
+Oct 13 08:33:31 lc-ubuntu-2204 systemd[1]: Started Session 5 of User operator.
+Oct 13 08:33:31 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:31 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:31 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:31 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:31 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:31 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:32 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:32 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:32 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:32 lc-ubuntu-2204 sshd[3919]: Received disconnect from 203.0.113.10 port 41869:11: disconnected by user
+Oct 13 08:33:32 lc-ubuntu-2204 sshd[3919]: Disconnected from user operator 203.0.113.10 port 41869
+Oct 13 08:33:32 lc-ubuntu-2204 sshd[3651]: pam_unix(sshd:session): session closed for user operator
+Oct 13 08:33:32 lc-ubuntu-2204 systemd[1]: session-5.scope: Deactivated successfully.
+Oct 13 08:33:32 lc-ubuntu-2204 systemd-logind[808]: Session 5 logged out. Waiting for processes to exit.
+Oct 13 08:33:32 lc-ubuntu-2204 systemd-logind[808]: Removed session 5.
+Oct 13 08:33:33 lc-ubuntu-2204 groupadd[3999]: group added to /etc/group: name=postgres, GID=122
+Oct 13 08:33:33 lc-ubuntu-2204 groupadd[3999]: group added to /etc/gshadow: name=postgres
+Oct 13 08:33:33 lc-ubuntu-2204 groupadd[3999]: new group: name=postgres, GID=122
+Oct 13 08:33:33 lc-ubuntu-2204 useradd[4005]: new user: name=postgres, UID=113, GID=122, home=/var/lib/postgresql, shell=/bin/bash, from=none
+Oct 13 08:33:33 lc-ubuntu-2204 usermod[4012]: change user 'postgres' password
+Oct 13 08:33:33 lc-ubuntu-2204 chage[4019]: changed password expiry for postgres
+Oct 13 08:33:33 lc-ubuntu-2204 chfn[4023]: changed user 'postgres' information
+Oct 13 08:33:33 lc-ubuntu-2204 su[4035]: (to postgres) root on none
+Oct 13 08:33:33 lc-ubuntu-2204 su[4035]: pam_unix(su:session): session opened for user postgres(uid=113) by (uid=0)
+Oct 13 08:33:33 lc-ubuntu-2204 su[4035]: pam_unix(su:session): session closed for user postgres
+Oct 13 08:33:33 lc-ubuntu-2204 gpasswd[4048]: user postgres added by root to group ssl-cert
+Oct 13 08:33:33 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:33 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:33 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:34 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:34 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:34 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:34 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:34 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:34 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:36 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:37 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:37 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:37 lc-ubuntu-2204 systemd[1]: Reloading.
+Oct 13 08:33:37 lc-ubuntu-2204 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 13 08:33:37 lc-ubuntu-2204 systemd[1]: /lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.
+Oct 13 08:33:37 lc-ubuntu-2204 systemd[1]: Created slice Slice /system/postgresql.
+Oct 13 08:33:37 lc-ubuntu-2204 systemd[1]: Starting PostgreSQL Cluster 14-main...
+Oct 13 08:33:40 lc-ubuntu-2204 systemd[1]: Started PostgreSQL Cluster 14-main.
+Oct 13 08:33:40 lc-ubuntu-2204 systemd[1]: Starting PostgreSQL RDBMS...
+Oct 13 08:33:40 lc-ubuntu-2204 systemd[1]: Finished PostgreSQL RDBMS.

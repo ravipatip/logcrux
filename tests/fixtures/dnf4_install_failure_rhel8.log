@@ -1,0 +1,88 @@
+2026-10-13T07:51:43+0000 INFO --- logging initialized ---
+2026-10-13T07:51:43+0000 DDEBUG timer: config: 3 ms
+2026-10-13T07:51:43+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2026-10-13T07:51:43+0000 DEBUG DNF version: 4.7.0
+2026-10-13T07:51:43+0000 DDEBUG Command: dnf install -y lc-no-such-package-xyz 
+2026-10-13T07:51:43+0000 DDEBUG Installroot: /
+2026-10-13T07:51:43+0000 DDEBUG Releasever: 8
+2026-10-13T07:51:43+0000 DEBUG cachedir: /var/cache/dnf
+2026-10-13T07:51:43+0000 DDEBUG Base command: install
+2026-10-13T07:51:43+0000 DDEBUG Extra commands: ['install', '-y', 'lc-no-such-package-xyz']
+2026-10-13T07:51:43+0000 DEBUG User-Agent: constructed: 'libdnf (Red Hat Enterprise Linux 8.10; generic; Linux.x86_64)'
+2026-10-13T07:51:44+0000 DEBUG repo: using cache for: google-compute-engine
+2026-10-13T07:51:44+0000 DEBUG google-compute-engine: using metadata from Thu 07 Nov 1974 04:53:03 UTC.
+2026-10-13T07:51:44+0000 DEBUG repo: using cache for: google-cloud-sdk
+2026-10-13T07:51:44+0000 DEBUG google-cloud-sdk: using metadata from Fri 24 Aug 2001 04:38:29 UTC.
+2026-10-13T07:51:44+0000 DEBUG repo: using cache for: rhui-codeready-builder-for-rhel-8-aarch64-rhui-debug-rpms
+2026-10-13T07:51:44+0000 DEBUG rhui-codeready-builder-for-rhel-8-aarch64-rhui-debug-rpms: using metadata from Mon 12 Oct 2026 22:56:22 UTC.
+2026-10-13T07:51:44+0000 DEBUG repo: using cache for: rhui-codeready-builder-for-rhel-8-aarch64-rhui-rpms
+2026-10-13T07:51:44+0000 DEBUG rhui-codeready-builder-for-rhel-8-aarch64-rhui-rpms: using metadata from Mon 12 Oct 2026 22:55:11 UTC.
+2026-10-13T07:51:44+0000 DEBUG repo: using cache for: rhui-codeready-builder-for-rhel-8-aarch64-rhui-source-rpms
+2026-10-13T07:51:44+0000 DEBUG rhui-codeready-builder-for-rhel-8-aarch64-rhui-source-rpms: using metadata from Mon 14 Sep 2026 07:53:44 UTC.
+2026-10-13T07:51:44+0000 DEBUG repo: using cache for: rhui-codeready-builder-for-rhel-8-x86_64-rhui-debug-rpms
+2026-10-13T07:51:44+0000 DEBUG rhui-codeready-builder-for-rhel-8-x86_64-rhui-debug-rpms: using metadata from Mon 12 Oct 2026 22:57:35 UTC.
+2026-10-13T07:51:44+0000 DEBUG repo: using cache for: rhui-codeready-builder-for-rhel-8-x86_64-rhui-rpms
+2026-10-13T07:51:44+0000 DEBUG rhui-codeready-builder-for-rhel-8-x86_64-rhui-rpms: using metadata from Mon 12 Oct 2026 22:53:32 UTC.
+2026-10-13T07:51:44+0000 DEBUG repo: using cache for: rhui-codeready-builder-for-rhel-8-x86_64-rhui-source-rpms
+2026-10-13T07:51:44+0000 DEBUG rhui-codeready-builder-for-rhel-8-x86_64-rhui-source-rpms: using metadata from Mon 14 Sep 2026 07:52:33 UTC.
+2026-10-13T07:51:44+0000 DEBUG repo: using cache for: rhui-rhel-8-for-aarch64-appstream-debug-rhui-rpms
+2026-10-13T07:51:44+0000 DEBUG rhui-rhel-8-for-aarch64-appstream-debug-rhui-rpms: using metadata from Mon 12 Oct 2026 15:52:03 UTC.
+2026-10-13T07:51:44+0000 DEBUG repo: using cache for: rhui-rhel-8-for-aarch64-appstream-rhui-rpms
+2026-10-13T07:51:45+0000 DEBUG rhui-rhel-8-for-aarch64-appstream-rhui-rpms: using metadata from Mon 12 Oct 2026 15:49:48 UTC.
+2026-10-13T07:51:45+0000 DEBUG repo: using cache for: rhui-rhel-8-for-aarch64-appstream-source-rhui-rpms
+2026-10-13T07:51:45+0000 DEBUG rhui-rhel-8-for-aarch64-appstream-source-rhui-rpms: using metadata from Mon 12 Oct 2026 14:23:12 UTC.
+2026-10-13T07:51:45+0000 DEBUG repo: using cache for: rhui-rhel-8-for-aarch64-baseos-debug-rhui-rpms
+2026-10-13T07:51:45+0000 DEBUG rhui-rhel-8-for-aarch64-baseos-debug-rhui-rpms: using metadata from Mon 12 Oct 2026 22:54:56 UTC.
+2026-10-13T07:51:45+0000 DEBUG repo: using cache for: rhui-rhel-8-for-aarch64-baseos-rhui-rpms
+2026-10-13T07:51:45+0000 DEBUG rhui-rhel-8-for-aarch64-baseos-rhui-rpms: using metadata from Mon 12 Oct 2026 23:00:31 UTC.
+2026-10-13T07:51:45+0000 DEBUG repo: using cache for: rhui-rhel-8-for-aarch64-baseos-source-rhui-rpms
+2026-10-13T07:51:45+0000 DEBUG rhui-rhel-8-for-aarch64-baseos-source-rhui-rpms: using metadata from Mon 12 Oct 2026 22:54:00 UTC.
+2026-10-13T07:51:45+0000 DEBUG repo: using cache for: rhui-rhel-8-for-aarch64-supplementary-debug-rhui-rpms
+2026-10-13T07:51:45+0000 DEBUG rhui-rhel-8-for-aarch64-supplementary-debug-rhui-rpms: using metadata from Tue 06 Oct 2026 09:58:21 UTC.
+2026-10-13T07:51:45+0000 DEBUG repo: using cache for: rhui-rhel-8-for-aarch64-supplementary-rhui-rpms
+2026-10-13T07:51:45+0000 DEBUG rhui-rhel-8-for-aarch64-supplementary-rhui-rpms: using metadata from Fri 10 May 2024 10:11:25 UTC.
+2026-10-13T07:51:45+0000 DEBUG repo: using cache for: rhui-rhel-8-for-aarch64-supplementary-source-rhui-rpms
+2026-10-13T07:51:45+0000 DEBUG rhui-rhel-8-for-aarch64-supplementary-source-rhui-rpms: using metadata from Fri 10 May 2024 10:11:25 UTC.
+2026-10-13T07:51:45+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-appstream-rhui-debug-rpms
+2026-10-13T07:51:46+0000 DEBUG rhui-rhel-8-for-x86_64-appstream-rhui-debug-rpms: using metadata from Mon 12 Oct 2026 15:50:11 UTC.
+2026-10-13T07:51:46+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-appstream-rhui-rpms
+2026-10-13T07:51:46+0000 DEBUG rhui-rhel-8-for-x86_64-appstream-rhui-rpms: using metadata from Mon 12 Oct 2026 15:46:04 UTC.
+2026-10-13T07:51:46+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-appstream-rhui-source-rpms
+2026-10-13T07:51:46+0000 DEBUG rhui-rhel-8-for-x86_64-appstream-rhui-source-rpms: using metadata from Mon 12 Oct 2026 14:23:17 UTC.
+2026-10-13T07:51:46+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-baseos-rhui-debug-rpms
+2026-10-13T07:51:46+0000 DEBUG rhui-rhel-8-for-x86_64-baseos-rhui-debug-rpms: using metadata from Mon 12 Oct 2026 22:57:01 UTC.
+2026-10-13T07:51:46+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-baseos-rhui-rpms
+2026-10-13T07:51:47+0000 DEBUG rhui-rhel-8-for-x86_64-baseos-rhui-rpms: using metadata from Mon 12 Oct 2026 22:59:31 UTC.
+2026-10-13T07:51:47+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-baseos-rhui-source-rpms
+2026-10-13T07:51:47+0000 DEBUG rhui-rhel-8-for-x86_64-baseos-rhui-source-rpms: using metadata from Mon 12 Oct 2026 22:52:31 UTC.
+2026-10-13T07:51:47+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-highavailability-debug-rhui-rpms
+2026-10-13T07:51:47+0000 DEBUG rhui-rhel-8-for-x86_64-highavailability-debug-rhui-rpms: using metadata from Mon 21 Sep 2026 12:32:34 UTC.
+2026-10-13T07:51:47+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-highavailability-rhui-rpms
+2026-10-13T07:51:47+0000 DEBUG rhui-rhel-8-for-x86_64-highavailability-rhui-rpms: using metadata from Mon 21 Sep 2026 12:33:12 UTC.
+2026-10-13T07:51:47+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-highavailability-source-rhui-rpms
+2026-10-13T07:51:47+0000 DEBUG rhui-rhel-8-for-x86_64-highavailability-source-rhui-rpms: using metadata from Tue 11 Aug 2026 08:43:26 UTC.
+2026-10-13T07:51:47+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-supplementary-rhui-debug-rpms
+2026-10-13T07:51:47+0000 DEBUG rhui-rhel-8-for-x86_64-supplementary-rhui-debug-rpms: using metadata from Tue 06 Oct 2026 10:00:27 UTC.
+2026-10-13T07:51:47+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-supplementary-rhui-rpms
+2026-10-13T07:51:47+0000 DEBUG rhui-rhel-8-for-x86_64-supplementary-rhui-rpms: using metadata from Wed 23 Sep 2026 07:58:11 UTC.
+2026-10-13T07:51:47+0000 DEBUG repo: using cache for: rhui-rhel-8-for-x86_64-supplementary-rhui-source-rpms
+2026-10-13T07:51:47+0000 DEBUG rhui-rhel-8-for-x86_64-supplementary-rhui-source-rpms: using metadata from Fri 10 May 2024 10:11:24 UTC.
+2026-10-13T07:51:47+0000 INFO Last metadata expiration check: 0:04:21 ago on Tue 13 Oct 2026 07:47:26 UTC.
+2026-10-13T07:51:56+0000 DDEBUG timer: sack setup: 12605 ms
+2026-10-13T07:51:56+0000 INFO No match for argument: lc-no-such-package-xyz
+2026-10-13T07:51:56+0000 DDEBUG Cleaning up.
+2026-10-13T07:51:56+0000 DDEBUG Plugins were unloaded.
+2026-10-13T07:51:56+0000 SUBDEBUG 
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/dnf/cli/main.py", line 67, in main
+    return _main(base, args, cli_class, option_parser_class)
+  File "/usr/lib/python3.6/site-packages/dnf/cli/main.py", line 106, in _main
+    return cli_run(cli, base)
+  File "/usr/lib/python3.6/site-packages/dnf/cli/main.py", line 122, in cli_run
+    cli.run()
+  File "/usr/lib/python3.6/site-packages/dnf/cli/cli.py", line 1055, in run
+    return self.command.run()
+  File "/usr/lib/python3.6/site-packages/dnf/cli/commands/install.py", line 120, in run
+    packages=err_pkgs)
+dnf.exceptions.PackagesNotAvailableError: Unable to find a match: lc-no-such-package-xyz
+2026-10-13T07:51:56+0000 CRITICAL Error: Unable to find a match: lc-no-such-package-xyz

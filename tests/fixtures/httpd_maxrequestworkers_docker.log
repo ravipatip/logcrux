@@ -1,0 +1,22 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.24.0.3. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.24.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Oct 20 00:10:58.788864 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.69 (Unix) configured -- resuming normal operations
+[Tue Oct 20 00:10:58.788903 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue Oct 20 00:10:59.790867 2026] [mpm_event:error] [pid 1:tid 1] AH10159: server is within MinSpareThreads of MaxRequestWorkers, consider raising the MaxRequestWorkers setting
+[Tue Oct 20 00:11:02.812185 2026] [mpm_event:error] [pid 1:tid 1] AH00484: server reached MaxRequestWorkers setting, consider raising the MaxRequestWorkers setting
+127.0.0.1 - - [20/Oct/2026:00:11:01 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:01 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:01 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:01 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:06 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:06 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:06 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:06 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:11 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:11 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:11 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:11 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:16 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:16 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:16 +0000] "GET /slow HTTP/1.1" 200 2
+127.0.0.1 - - [20/Oct/2026:00:11:16 +0000] "GET /slow HTTP/1.1" 200 2

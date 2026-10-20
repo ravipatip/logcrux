@@ -1,0 +1,137 @@
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.utf8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/data ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... UTC
+creating configuration files ... ok
+running bootstrap script ... ok
+sh: locale: not found
+2026-10-19 18:54:09.951 UTC [36] WARNING:  no usable system locales were found
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+
+Success. You can now start the database server using:
+
+    pg_ctl -D /var/lib/postgresql/data -l logfile start
+
+initdb: warning: enabling "trust" authentication for local connections
+initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+waiting for server to start....2026-10-19 18:54:10.117 UTC [42] LOG:  starting PostgreSQL 16.15 on aarch64-unknown-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-10-19 18:54:10.117 UTC [42] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-10-19 18:54:10.118 UTC [45] LOG:  database system was shut down at 2026-10-19 18:54:10 UTC
+2026-10-19 18:54:10.120 UTC [42] LOG:  database system is ready to accept connections
+ done
+server started
+
+/usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+
+waiting for server to shut down....2026-10-19 18:54:10.228 UTC [42] LOG:  received fast shutdown request
+2026-10-19 18:54:10.230 UTC [42] LOG:  aborting any active transactions
+2026-10-19 18:54:10.231 UTC [42] LOG:  background worker "logical replication launcher" (PID 48) exited with exit code 1
+2026-10-19 18:54:10.231 UTC [43] LOG:  shutting down
+2026-10-19 18:54:10.231 UTC [43] LOG:  checkpoint starting: shutdown immediate
+2026-10-19 18:54:10.234 UTC [43] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/14F7160, redo lsn=0/14F7160
+2026-10-19 18:54:10.235 UTC [42] LOG:  database system is shut down
+ done
+server stopped
+
+PostgreSQL init process complete; ready for start up.
+
+2026-10-19 18:54:10.354 UTC [1] LOG:  starting PostgreSQL 16.15 on aarch64-unknown-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-10-19 18:54:10.354 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-10-19 18:54:10.354 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-10-19 18:54:10.355 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-10-19 18:54:10.357 UTC [56] LOG:  database system was shut down at 2026-10-19 18:54:10 UTC
+2026-10-19 18:54:10.359 UTC [1] LOG:  database system is ready to accept connections
+2026-10-19 18:54:14.061 UTC [78] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.061 UTC [78] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.067 UTC [80] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.067 UTC [80] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.072 UTC [82] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.072 UTC [82] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.078 UTC [84] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.078 UTC [84] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.083 UTC [86] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.083 UTC [86] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.088 UTC [88] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.088 UTC [88] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.093 UTC [90] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.093 UTC [90] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.098 UTC [92] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.098 UTC [92] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.103 UTC [94] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.103 UTC [94] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.107 UTC [96] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.107 UTC [96] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.112 UTC [98] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.112 UTC [98] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.116 UTC [100] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.116 UTC [100] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.121 UTC [102] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.121 UTC [102] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.125 UTC [104] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.125 UTC [104] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.130 UTC [106] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.130 UTC [106] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.134 UTC [108] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.134 UTC [108] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.139 UTC [110] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.139 UTC [110] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.143 UTC [112] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.143 UTC [112] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.147 UTC [114] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.147 UTC [114] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.152 UTC [116] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.152 UTC [116] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.157 UTC [118] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.157 UTC [118] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.161 UTC [120] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.161 UTC [120] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.166 UTC [122] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.166 UTC [122] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.171 UTC [124] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.171 UTC [124] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.176 UTC [126] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.176 UTC [126] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.180 UTC [128] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.180 UTC [128] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.185 UTC [130] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.185 UTC [130] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.189 UTC [132] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.189 UTC [132] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.194 UTC [134] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.194 UTC [134] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.198 UTC [136] FATAL:  password authentication failed for user "postgres"
+2026-10-19 18:54:14.198 UTC [136] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.203 UTC [138] FATAL:  password authentication failed for user "admin"
+2026-10-19 18:54:14.203 UTC [138] DETAIL:  Role "admin" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.207 UTC [140] FATAL:  password authentication failed for user "app"
+2026-10-19 18:54:14.207 UTC [140] DETAIL:  Role "app" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:14.211 UTC [142] FATAL:  password authentication failed for user "backup"
+2026-10-19 18:54:14.211 UTC [142] DETAIL:  Role "backup" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-10-19 18:54:16.314 UTC [1] LOG:  server process (PID 152) was terminated by signal 9: Killed
+2026-10-19 18:54:16.314 UTC [1] DETAIL:  Failed process was running: select pg_sleep(60)
+2026-10-19 18:54:16.314 UTC [1] LOG:  terminating any other active server processes
+2026-10-19 18:54:16.315 UTC [1] LOG:  all server processes terminated; reinitializing
+2026-10-19 18:54:16.325 UTC [154] LOG:  database system was interrupted; last known up at 2026-10-19 18:54:10 UTC
+2026-10-19 18:54:16.362 UTC [154] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-19 18:54:16.363 UTC [154] LOG:  redo starts at 0/14F71D8
+2026-10-19 18:54:16.363 UTC [154] LOG:  invalid record length at 0/151E078: expected at least 24, got 0
+2026-10-19 18:54:16.363 UTC [154] LOG:  redo done at 0/151DEC8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-19 18:54:16.364 UTC [155] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-19 18:54:16.369 UTC [155] LOG:  checkpoint complete: wrote 32 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.002 s, total=0.005 s; sync files=23, longest=0.001 s, average=0.001 s; distance=155 kB, estimate=155 kB; lsn=0/151E078, redo lsn=0/151E078
+2026-10-19 18:54:16.370 UTC [1] LOG:  database system is ready to accept connections

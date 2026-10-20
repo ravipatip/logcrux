@@ -28,6 +28,12 @@ TRACEBACK_CONTINUATION = re.compile(
     r"|[A-Za-z_][\w.]*(?:Error|Exception|Warning|Exit|Interrupt):?(?:\s|$))"
 )
 
+# journalctl (every short* mode) prints the 2nd+ lines of a multi-line message
+# indented under the first, and macOS system.log tab-indents ASL continuations.
+# Such a line has no timestamp of its own and belongs to the record above it —
+# e.g. the kernel's OOM `memory.stat` dump. Seen on all 12 distros, 2026-10-13.
+INDENTED_CONTINUATION = re.compile(r"^[ \t]+\S")
+
 # Cap on continuation lines appended to an event's message: keeps a deep or
 # repeated traceback from ballooning memory / classifier input. Lines past the
 # cap still count as consumed (meta_lines), just aren't stored.
@@ -182,10 +188,21 @@ class LogParser(ABC):
     # _parse_with_fallback credits them toward coverage and the CLI excludes
     # them from the "N line(s) unparsed" footer.
     meta_lines: int = 0
+    # Lines kept only through SYSLOG_FALLBACK. They are events, but not this
+    # parser's coverage: a parser that owns 3 lines of a mixed journal must
+    # still look low-coverage, so the re-detect can hand the file to syslog.
+    fallback_lines: int = 0
 
     # When set (usually to TRACEBACK_CONTINUATION), a non-parsing line that
     # matches is folded into the preceding event rather than dropped.
     CONTINUATION: ClassVar[re.Pattern[str] | None] = None
+    # A syslog-framed daemon parser (sshd/PAM, rsyslogd, kernel, cron, ...)
+    # owns a journal slice when its daemon dominates — but the slice also holds
+    # other programs' lines. Dropping them lost real faults: on a real Ubuntu
+    # 22.04 VM `rsyslog` claimed a window (25/28 lines) and discarded the one
+    # "md/raid1: Disk failure" kernel line in it. With this set, a syslog-framed
+    # line the parser does not recognise is parsed as plain syslog instead.
+    SYSLOG_FALLBACK: ClassVar[bool] = False
 
     @classmethod
     @abstractmethod
@@ -193,6 +210,15 @@ class LogParser(ABC):
 
     @abstractmethod
     def parse_line(self, line: str, line_number: int) -> ParsedEvent | None: ...
+
+    def is_continuation(self, line: str) -> bool:
+        """Whether a line ``parse_line`` rejected belongs to the event above.
+
+        Defaults to the stateless ``CONTINUATION`` regex. A parser whose
+        multi-line blocks are delimited by markers rather than by line shape
+        overrides it, tracking the block in ``parse_line`` (which always runs
+        on the line first)."""
+        return self.CONTINUATION is not None and bool(self.CONTINUATION.match(line))
 
     def parse_stream(
         self, stream: Iterable[str]
@@ -205,6 +231,10 @@ class LogParser(ABC):
                 event = self.parse_line(stripped, i)
             except Exception:
                 event = None
+            if event is None and self.SYSLOG_FALLBACK and stripped and not stripped[0].isspace():
+                event = _syslog_fallback(stripped, i)
+                if event is not None:
+                    self.fallback_lines += 1
             if event is not None:
                 if pending is not None:
                     yield pending
@@ -212,9 +242,8 @@ class LogParser(ABC):
                 continue
             if (
                 pending is not None
-                and self.CONTINUATION is not None
                 and stripped.strip()
-                and self.CONTINUATION.match(stripped)
+                and self.is_continuation(stripped)
             ):
                 if pending_extra < _MAX_CONTINUATION_LINES:
                     pending.message = f"{pending.message}\n{stripped}"
@@ -231,6 +260,8 @@ class SyslogKeywordParser(LogParser):
     ``WARN_KW`` keyword tuples. Detection is majority-gated via
     ``syslog_tag_dominant`` so a stray tagged line in a mixed syslog can't poach.
     """
+
+    SYSLOG_FALLBACK = True
 
     TAG_PATTERN: ClassVar[str]
     SOURCE: ClassVar[str]
@@ -282,3 +313,17 @@ class SyslogKeywordParser(LogParser):
             line_number=line_number,
             extra=extra,
         )
+
+
+_SYSLOG_FALLBACK_PARSER: LogParser | None = None
+
+
+def _syslog_fallback(line: str, line_number: int) -> ParsedEvent | None:
+    global _SYSLOG_FALLBACK_PARSER
+    if _SYSLOG_FALLBACK_PARSER is None:
+        from logcrux.parsers.syslog import SyslogParser  # syslog imports base
+        _SYSLOG_FALLBACK_PARSER = SyslogParser()
+    try:
+        return _SYSLOG_FALLBACK_PARSER.parse_line(line, line_number)
+    except Exception:
+        return None

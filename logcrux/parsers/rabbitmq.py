@@ -15,7 +15,10 @@ from logcrux.parsers.base import LogParser
 # The Erlang process id "<0.NNN.0>" reliably distinguishes RabbitMQ from other
 # "YYYY-MM-DD HH:MM:SS.mmm [level]" loggers.
 _PATTERN = re.compile(
-    r"(?P<ts>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d+) "
+    # RabbitMQ 3.9+ appends the UTC offset (real 3.13 container, 2026-10-20:
+    # "2026-10-19 18:54:55.922563+00:00 [notice] <0.44.0> ..."); without it
+    # the parser matched 0/202 lines of a real `docker logs` (B5).
+    r"(?P<ts>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d+(?:[+-]\d{2}:\d{2}|Z)?) "
     r"\[(?P<level>\w+)\] "
     r"(?P<pid><\d+\.\d+\.\d+>)?\s*"
     r"(?P<message>.*)"

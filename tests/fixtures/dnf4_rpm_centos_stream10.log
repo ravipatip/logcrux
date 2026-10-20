@@ -1,0 +1,53 @@
+2026-09-08T15:14:48+0000 INFO --- logging initialized ---
+2026-09-08T15:14:58+0000 SUBDEBUG Installed: boost-regex-1.83.0-8.el10.x86_64
+2026-09-08T15:14:58+0000 SUBDEBUG Installed: google-guest-agent-1:20260715.00-g1.el10.x86_64
+2026-09-08T15:14:59+0000 SUBDEBUG Installed: google-compute-engine-oslogin-1:20260605.00-g1.el10.x86_64
+2026-09-08T15:15:08+0000 INFO Installing SELinux module for OS Login.
+
+2026-09-08T15:15:08+0000 SUBDEBUG Installed: nvme-cli-2.16-2.el10.x86_64
+2026-09-08T15:15:08+0000 INFO Created symlink '/etc/systemd/system/default.target.wants/nvmefc-boot-connections.service' -> '/usr/lib/systemd/system/nvmefc-boot-connections.service'.
+Running in chroot, ignoring command 'daemon-reload'
+Running in chroot, ignoring request.
+Running in chroot, ignoring request.
+
+2026-09-08T15:15:08+0000 SUBDEBUG Installed: google-compute-engine-1:20260223.00-g1.el10.noarch
+2026-09-08T15:15:09+0000 INFO realpath: /lib/modules/6.12.0-99.el10.x86_64: No such file or directory
+dracut[F]: Cannot find module directory 
+dracut[F]: and --no-kernel was not specified
+warning: %post(google-compute-engine-1:20260223.00-g1.el10.noarch) scriptlet failed, exit status 1
+
+2026-09-08T15:15:09+0000 ERROR Error in POSTIN scriptlet in rpm package google-compute-engine
+2026-09-08T15:15:09+0000 SUBDEBUG Installed: google-osconfig-agent-1:20260624.00-g1.el10.x86_64
+2026-09-08T15:15:09+0000 INFO Created symlink '/etc/systemd/system/multi-user.target.wants/google-osconfig-agent.service' -> '/usr/lib/systemd/system/google-osconfig-agent.service'.
+Running in chroot, ignoring command 'start'
+
+2026-09-08T15:15:09+0000 SUBDEBUG Installed: gce-disk-expand-1:20250820.00-g1.el10.noarch
+2026-09-08T15:15:09+0000 INFO realpath: /lib/modules/6.12.0-99.el10.x86_64: No such file or directory
+dracut[F]: Cannot find module directory 
+dracut[F]: and --no-kernel was not specified
+warning: %post(gce-disk-expand-1:20250820.00-g1.el10.noarch) scriptlet failed, exit status 1
+
+2026-09-08T15:15:09+0000 ERROR Error in POSTIN scriptlet in rpm package gce-disk-expand
+2026-09-08T15:15:09+0000 INFO Running in chroot, ignoring request.
+
+2026-09-08T15:15:09+0000 INFO Running in chroot, ignoring command 'daemon-reload'
+Running in chroot, ignoring command 'reload-or-restart'
+
+2026-09-08T15:15:10+0000 INFO --- logging initialized ---
+2026-09-08T15:15:13+0000 SUBDEBUG Installed: google-cloud-cli-583.0.0-1.el10.x86_64
+2026-09-08T15:15:56+0000 INFO --- logging initialized ---
+2026-09-08T15:15:57+0000 INFO --- logging initialized ---
+2026-09-08T15:15:58+0000 INFO --- logging initialized ---
+2026-09-08T15:16:27+0000 INFO --- logging initialized ---
+2026-10-13T03:53:50+0000 INFO --- logging initialized ---
+2026-10-13T03:54:02+0000 SUBDEBUG Installed: postgresql-private-libs-16.14-3.el10.x86_64
+2026-10-13T03:54:02+0000 SUBDEBUG Installed: nginx-filesystem-2:1.26.3-15.el10.noarch
+2026-10-13T03:54:03+0000 SUBDEBUG Installed: nginx-core-2:1.26.3-15.el10.x86_64
+2026-10-13T03:54:03+0000 SUBDEBUG Installed: postgresql-16.14-3.el10.x86_64
+2026-10-13T03:54:03+0000 SUBDEBUG Installed: centos-logos-httpd-100.5-1.el10.noarch
+2026-10-13T03:54:03+0000 SUBDEBUG Installed: nginx-2:1.26.3-15.el10.x86_64
+2026-10-13T03:54:03+0000 SUBDEBUG Installed: postgresql-server-16.14-3.el10.x86_64
+2026-10-13T03:54:03+0000 SUBDEBUG Installed: time-1.9-25.el10.x86_64
+2026-10-13T03:54:03+0000 SUBDEBUG Installed: bzip2-1.0.8-25.el10.x86_64
+2026-10-13T03:54:05+0000 INFO --- logging initialized ---
+2026-10-13T03:54:06+0000 SUBDEBUG Installed: sshpass-1.09-9.el10.x86_64

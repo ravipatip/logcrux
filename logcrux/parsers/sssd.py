@@ -44,6 +44,7 @@ def _severity(message: str) -> Severity:
 
 class SssdParser(LogParser):
     FORMAT_NAME = "sssd"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

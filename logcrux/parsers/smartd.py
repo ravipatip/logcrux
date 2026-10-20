@@ -51,6 +51,7 @@ def _smartd_severity(message: str) -> Severity:
 
 class SmartdParser(LogParser):
     FORMAT_NAME = "smartd"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

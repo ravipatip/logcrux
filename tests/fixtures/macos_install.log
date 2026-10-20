@@ -1,0 +1,9 @@
+2026-07-27 16:16:24+10 buildhost softwareupdated[25464]: SUOSUServiceDaemon: Periodic autoupdate action called
+2026-07-27 16:16:24+10 buildhost softwareupdated[25464]: -[SUOSUServiceDaemon doPeriodicActions]: Doing periodic auto update action
+2026-07-27 16:16:25+10 buildhost installd[452]: PackageKit: Extracting file://localhost/Volumes/Installer/App.pkg
+2026-07-27 16:16:26+10 buildhost installd[452]: SUOSUMobileSoftwareUpdateController: additionalUpdates = (
+	    "<SUOSUProduct: MSU_UPDATE_25G72_patch_26.6_minor>"
+	)
+2026-07-27 16:16:27+10 buildhost installer[9001]: -[IFDInstallController(Private) _buildInstallPlanReturningError:]: location = file://localhost
+2026-07-27 16:16:28+10 buildhost installd[452]: Error getting application status info for file:///Library/Application%20Support/App.pkg
+2026-07-27 16:16:29+10 buildhost softwareupdated[25464]: Skipping update because the device is on battery power

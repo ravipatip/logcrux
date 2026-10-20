@@ -1,0 +1,400 @@
+Timestamp                       Thread     Type        Activity             PID    TTL  
+2026-10-20 06:36:28.468109+1100 0x12a1ab   Default     0x0                  356    0    watchdogd: [com.apple.watchdogd:service-monitoring-thread] 41134081897958: <private>
+2026-10-20 06:36:28.468125+1100 0x12a1ab   Default     0x0                  356    0    watchdogd: [com.apple.watchdogd:service-monitoring-thread] 41134082064666: <private>
+2026-10-20 06:36:28.468150+1100 0x12a1ab   Default     0x0                  356    0    watchdogd: [com.apple.watchdogd:service-monitoring-thread] 41134082070916: <private>
+2026-10-20 06:36:28.468152+1100 0x12a1ab   Default     0x0                  356    0    watchdogd: [com.apple.watchdogd:service-monitoring-thread] 41134082074083: <private>
+2026-10-20 06:36:28.468153+1100 0x12a1ab   Default     0x0                  356    0    watchdogd: [com.apple.watchdogd:service-monitoring-thread] 41134082075166: <private>
+2026-10-20 06:36:28.468154+1100 0x12a1ab   Default     0x0                  356    0    watchdogd: [com.apple.watchdogd:service-monitoring-thread] 41134082075916: <private>
+2026-10-20 06:36:28.860109+1100 0x1e1525   Error       0x0                  0      0    kernel: [com.apple.xnu:virtual-memory] vm: host_statistics64() count is larger than expected (actual:104 > HOST_VM_INFO64_COUNT:62). This is most likely a bug in Stats [9694] and is likely to result in memory corruption. The buffer count must be passed in units of integer_t's. HOST_VM_INFO64_COUNT may be used as shorthand.
+2026-10-20 06:36:28.860110+1100 0x1e1525   Default     0x0                  0      0    kernel: [589942.942906]: arm_cpu_init(): cpu 4 online
+2026-10-20 06:36:28.860114+1100 0x1e1525   Default     0x0                  0      0    kernel: [589942.942910]: arm_cpu_init(): cpu 7 online
+2026-10-20 06:36:28.860116+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.860235+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.860437+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.860597+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.860816+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.861080+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.861290+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.861561+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.861841+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.862061+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.862317+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.862509+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.862744+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.863055+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.863604+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.863626+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.863912+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.864167+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.864361+1100 0x1ae1c2   Default     0x0                  452    0    airportd: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET TX RATE] (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=564C5 info=(null))
+2026-10-20 06:36:28.864419+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.864620+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.864692+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.864946+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.865215+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.865415+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.865523+1100 0x1e0f7c   Default     0x0                  452    0    airportd: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET TX RATE] took 0.001103708s (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=564C5 err=0 reply=<redacted>
+2026-10-20 06:36:28.865608+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.865612+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.865798+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.865978+1100 0x1e0f7c   Default     0x0                  452    0    airportd: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET TX RATE] (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=0F60F info=(null))
+2026-10-20 06:36:28.865990+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.866416+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.866575+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.866681+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.866697+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] getSiblings: finding volumes that belong to <private>
+2026-10-20 06:36:28.866744+1100 0x1e0f7c   Default     0x0                  452    0    airportd: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET TX RATE] took 0.000717167s (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=0F60F err=0 reply=<redacted>
+2026-10-20 06:36:28.866900+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.867089+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.867278+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.867295+1100 0x1ae1c2   Default     0x0                  452    0    airportd: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET TX RATE] (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=BB555 info=(null))
+2026-10-20 06:36:28.867513+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.867745+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] GetAPFSVolumeRole error for <private>
+2026-10-20 06:36:28.867751+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.867804+1100 0x1c3144   Default     0x0                  452    0    airportd: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET TX RATE] took 0.000485583s (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=BB555 err=0 reply=<redacted>
+2026-10-20 06:36:28.867950+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.868153+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.868177+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 8
+2026-10-20 06:36:28.868343+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.868535+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.868551+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 16
+2026-10-20 06:36:28.868716+1100 0x1de5aa   Default     0x0                  0      0    kernel: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.869015+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 192
+2026-10-20 06:36:28.869413+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 256
+2026-10-20 06:36:28.869645+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 16
+2026-10-20 06:36:28.869862+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 320
+2026-10-20 06:36:28.870124+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.870834+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] GetAPFSVolumeRole error for <private>
+2026-10-20 06:36:28.871144+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] GetAPFSVolumeRole error for <private>
+2026-10-20 06:36:28.871417+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.871464+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] getSiblings: adding <private> <private>
+2026-10-20 06:36:28.871464+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] multi volume:
+2026-10-20 06:36:28.871465+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private>
+2026-10-20 06:36:28.871712+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.871956+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.872198+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.872430+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.872660+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.872914+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.873208+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.873448+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.873911+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.873935+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CacheDeleteVolume effective_size: <private> container size: <private>, effective size: <private>
+2026-10-20 06:36:28.874339+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.875298+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.875622+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.875634+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] 380 CDRecentVolumeInfo _recentInfoAtUrgency, volume: /System/Volumes/Data, urgency: 3, result:
+2026-10-20 06:36:28.875637+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.fspurgeable_data : 3468685312
+2026-10-20 06:36:28.875638+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cache_delete_app_container_caches : 603574272
+2026-10-20 06:36:28.875639+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.quicklook.ThumbnailsAgent.CacheDelete : 264006
+2026-10-20 06:36:28.875640+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cloudd.cache-delete : 0
+2026-10-20 06:36:28.875640+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.triald.cache-delete : 0
+2026-10-20 06:36:28.875641+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.VIDEO : 0
+2026-10-20 06:36:28.875642+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.TMCacheDelete : 0
+2026-10-20 06:36:28.875642+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.mobileassetd.cache-delete : 61680640
+2026-10-20 06:36:28.875643+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_SHARED_PURGEABLE : 6855002234
+2026-10-20 06:36:28.875643+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.metadata.mds.cachedelete : 659289332
+2026-10-20 06:36:28.875644+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cloudd.system.cache-delete : 0
+2026-10-20 06:36:28.875645+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.ibooks.CacheDeleteExtension : 0
+2026-10-20 06:36:28.875645+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.geod.cachedelete : 0
+2026-10-20 06:36:28.875646+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.corespotlightd.cachedelete : 0
+2026-10-20 06:36:28.875646+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.spotlightknowledged.updater.cachedelete : 0
+2026-10-20 06:36:28.875647+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.AssetCache.builtin.CacheDelete : 73728
+2026-10-20 06:36:28.875647+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.Music.MusicCacheExtension : 0
+2026-10-20 06:36:28.875648+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_VOLUME : /System/Volumes/Data
+2026-10-20 06:36:28.875649+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.managedcorespotlightd.F5757848-93C9-E333-A412-8FCF77BCDF9F.cachedelete : 0
+2026-10-20 06:36:28.875649+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cache_delete_orphan_dir_handler : 0
+2026-10-20 06:36:28.875650+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MailCacheDelete : 0
+2026-10-20 06:36:28.875650+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.TV.TVCacheExtension : 0
+2026-10-20 06:36:28.875650+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.appstoreagent.CacheDelete : 0
+2026-10-20 06:36:28.875651+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.replayd-cache-delete : 64
+2026-10-20 06:36:28.875652+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.triald.system.cache-delete : 0
+2026-10-20 06:36:28.875652+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MOVIE : 0
+2026-10-20 06:36:28.875652+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MUSIC : 0
+2026-10-20 06:36:28.875653+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.logd.cachedelete : 0
+2026-10-20 06:36:28.875653+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.Safari.CacheDeleteExtension : 0
+2026-10-20 06:36:28.875654+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.FileProvider.cache-delete : 0
+2026-10-20 06:36:28.875654+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_NAME_MAP: {
+2026-10-20 06:36:28.875668+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.fspurgeable_data : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875676+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.quicklook.ThumbnailsAgent.CacheDelete : {
+    "CACHE_DELETE_PROCNAME" = "com.apple.quicklook.ThumbnailsA";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.quicklook.ThumbnailsAgent";
+}
+2026-10-20 06:36:28.875682+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cloudd.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = cloudd;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.cloudd";
+}
+2026-10-20 06:36:28.875687+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.triald.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = triald;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.triald";
+}
+2026-10-20 06:36:28.875692+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.VIDEO : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875696+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.TMCacheDelete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.backupd-helper";
+}
+2026-10-20 06:36:28.875700+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.mobileassetd.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.mobileassetd";
+}
+2026-10-20 06:36:28.875710+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.metadata.mds.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.mds";
+}
+2026-10-20 06:36:28.875715+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cloudd.system.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.cloudd";
+}
+2026-10-20 06:36:28.875719+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.ibooks.CacheDeleteExtension : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875724+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.geod.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = geodMachServiceBridge;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.geodMachServiceBridge";
+}
+2026-10-20 06:36:28.875729+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.corespotlightd.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = corespotlightd;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.corespotlightd";
+}
+2026-10-20 06:36:28.875735+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.spotlightknowledged.updater.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = "spotlightknowledged.updater";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.spotlightknowledged.updater";
+}
+2026-10-20 06:36:28.875739+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.AssetCache.builtin.CacheDelete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.AssetCache";
+}
+2026-10-20 06:36:28.875744+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.Music.MusicCacheExtension : {
+    "CACHE_DELETE_PROCNAME" = MusicCacheExtension;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.Music.MusicCacheExtension";
+}
+2026-10-20 06:36:28.875749+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.managedcorespotlightd.F5757848-93C9-E333-A412-8FCF77BCDF9F.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = managedcorespotlightd;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.managedcorespotlightd";
+}
+2026-10-20 06:36:28.875753+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cache_delete_orphan_dir_handler : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875758+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MailCacheDelete : {
+    "CACHE_DELETE_PROCNAME" = MailCacheDelete;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.MailCacheDelete";
+}
+2026-10-20 06:36:28.875762+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.TV.TVCacheExtension : {
+    "CACHE_DELETE_PROCNAME" = TVCacheExtension;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.TV.TVCacheExtension";
+}
+2026-10-20 06:36:28.875767+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.appstoreagent.CacheDelete : {
+    "CACHE_DELETE_PROCNAME" = appstoreagent;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.appstoreagent";
+}
+2026-10-20 06:36:28.875771+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.replayd-cache-delete : {
+    "CACHE_DELETE_PROCNAME" = replayd;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.replayd";
+}
+2026-10-20 06:36:28.875775+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.triald.system.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.triald.system";
+}
+2026-10-20 06:36:28.875779+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MOVIE : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875783+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MUSIC : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875788+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.logd.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.logd";
+}
+2026-10-20 06:36:28.875792+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.Safari.CacheDeleteExtension : {
+    "CACHE_DELETE_PROCNAME" = CacheDeleteExtension;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.Safari.CacheDeleteExtension";
+}
+2026-10-20 06:36:28.875797+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.FileProvider.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = fileproviderd;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.fileproviderd";
+}
+2026-10-20 06:36:28.875801+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.imagent.cache-delete_fspurgeable : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875808+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.fspurgeable_document : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875812+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.system_installd.CacheDelete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.system_installd";
+}
+2026-10-20 06:36:28.875816+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MAIL : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875820+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.installd.CacheDelete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.installd";
+}
+2026-10-20 06:36:28.875826+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.osanalytics.user.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = "diagnostics_agent";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.diagnostics_agent";
+}
+2026-10-20 06:36:28.875830+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.photolibraryd.cacheDelete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875834+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.PODCAST : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875839+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.deleted_helper : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875839+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] }
+2026-10-20 06:36:28.875840+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.imagent.cache-delete_fspurgeable : 0
+2026-10-20 06:36:28.875840+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_NONPURGEABLE_AMOUNT : 0
+2026-10-20 06:36:28.875841+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.fspurgeable_document : 28672
+2026-10-20 06:36:28.875841+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.system_installd.CacheDelete : 0
+2026-10-20 06:36:28.875842+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_TOTAL_AVAILABLE : 6855002234
+2026-10-20 06:36:28.875842+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MAIL : 0
+2026-10-20 06:36:28.875843+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.installd.CacheDelete : 0
+2026-10-20 06:36:28.875843+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.osanalytics.user.cachedelete : 0
+2026-10-20 06:36:28.875844+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.photolibraryd.cacheDelete : 2061406208
+2026-10-20 06:36:28.875845+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.PODCAST : 0
+2026-10-20 06:36:28.875845+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.deleted_helper : 5530120192
+2026-10-20 06:36:28.875846+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] got volinfo for <private>
+2026-10-20 06:36:28.876245+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.876275+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] <<<Query Result from client cache (u: 3, ET: 0.012631875): "/System/Volumes/Data : 6.86 GB"
+2026-10-20 06:36:28.876276+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.PODCAST : 0
+2026-10-20 06:36:28.876277+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.quicklook.ThumbnailsAgent.CacheDelete : 264006
+2026-10-20 06:36:28.876277+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cloudd.cache-delete : 0
+2026-10-20 06:36:28.876278+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.triald.cache-delete : 0
+2026-10-20 06:36:28.876278+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.VIDEO : 0
+2026-10-20 06:36:28.876279+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_ELAPSED_TIME : 0.012631875
+2026-10-20 06:36:28.876280+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.TMCacheDelete : 0
+2026-10-20 06:36:28.876281+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.mobileassetd.cache-delete : 61680640
+2026-10-20 06:36:28.876281+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_SHARED_PURGEABLE : 6855002234
+2026-10-20 06:36:28.876282+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.metadata.mds.cachedelete : 659289332
+2026-10-20 06:36:28.876282+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cloudd.system.cache-delete : 0
+2026-10-20 06:36:28.876283+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.ibooks.CacheDeleteExtension : 0
+2026-10-20 06:36:28.876283+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.geod.cachedelete : 0
+2026-10-20 06:36:28.876284+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.corespotlightd.cachedelete : 0
+2026-10-20 06:36:28.876284+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_TOTAL_FSPURGEABLE : 5530120192
+2026-10-20 06:36:28.876285+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.spotlightknowledged.updater.cachedelete : 0
+2026-10-20 06:36:28.876391+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_CACHED_RESULT : 1
+2026-10-20 06:36:28.876392+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.AssetCache.builtin.CacheDelete : 73728
+2026-10-20 06:36:28.876392+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.Music.MusicCacheExtension : 0
+2026-10-20 06:36:28.876393+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_VOLUME : /System/Volumes/Data
+2026-10-20 06:36:28.876393+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.managedcorespotlightd.F5757848-93C9-E333-A412-8FCF77BCDF9F.cachedelete : 0
+2026-10-20 06:36:28.876394+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cache_delete_orphan_dir_handler : 0
+2026-10-20 06:36:28.876394+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MailCacheDelete : 0
+2026-10-20 06:36:28.876395+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.TV.TVCacheExtension : 0
+2026-10-20 06:36:28.876395+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.appstoreagent.CacheDelete : 0
+2026-10-20 06:36:28.876396+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.replayd-cache-delete : 64
+2026-10-20 06:36:28.876396+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.triald.system.cache-delete : 0
+2026-10-20 06:36:28.876397+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MOVIE : 0
+2026-10-20 06:36:28.876397+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MUSIC : 0
+2026-10-20 06:36:28.876398+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.logd.cachedelete : 0
+2026-10-20 06:36:28.876398+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.Safari.CacheDeleteExtension : 0
+2026-10-20 06:36:28.876399+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.FileProvider.cache-delete : 0
+2026-10-20 06:36:28.876622+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_NAME_MAP : {
+    "com.apple.AssetCache.builtin.CacheDelete" =     {
+        "CACHE_DELETE_PROCNAME" = "";
+        "CACHE_DELETE_SIGNING_ID" = "com.apple.AssetCache";
+    };
+    "com.apple.FileProvider.cache-delete" =     {
+        "CACHE_DELETE_PROCNAME" = fileproviderd;
+        "CACHE_DELETE_SIGNING_ID" = "com.apple.fileproviderd";
+    };
+    "com.apple.MAIL" =     {
+        "CACHE_DELETE_PROCNAME" = "";
+        "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+    };
+    "com.apple.MOVIE" =     {
+        "CACHE_DELETE_PROCNAME" = "";
+        "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+    };
+    "com.apple.MUSIC" =     {
+        "CACHE_DELETE_PROCNAME" = "";
+        "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+    };
+    "com.apple.MailCacheDelete" =     {
+        "CACHE_DELETE_PROCNAME" = MailCacheDelete;
+        "CACHE_DELETE_SIGNING_ID" = "com.apple.MailCacheDelete";
+    };
+    "com.apple.Music.MusicCacheExtension" =     {
+        "CACHE_DELETE_PROCN
+2026-10-20 06:36:28.876623+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.imagent.cache-delete_fspurgeable : 0
+2026-10-20 06:36:28.876624+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_NONPURGEABLE_AMOUNT : 0
+2026-10-20 06:36:28.876624+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.fspurgeable_document : 28672
+2026-10-20 06:36:28.876625+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_FREESPACE : 106048536576
+2026-10-20 06:36:28.876625+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.system_installd.CacheDelete : 0
+2026-10-20 06:36:28.876626+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_TOTAL_AVAILABLE : 6855002234
+2026-10-20 06:36:28.876626+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.MAIL : 0
+2026-10-20 06:36:28.876627+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.installd.CacheDelete : 0
+2026-10-20 06:36:28.876627+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.osanalytics.user.cachedelete : 0
+2026-10-20 06:36:28.876628+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.photolibraryd.cacheDelete : 2061406208
+2026-10-20 06:36:28.876628+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.fspurgeable_data : 3468685312
+2026-10-20 06:36:28.876629+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] com.apple.cache_delete_app_container_caches : 603574272
+2026-10-20 06:36:28.876629+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] Query Result>>> 6855002234 bytes on: "/System/Volumes/Data".
+2026-10-20 06:36:28.876630+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CacheDeleteCopyPurgeableSpaceWithInfo local cache result for /System/Volumes/Data : (null)
+2026-10-20 06:36:28.876653+1100 0x1cf622   Default     0x0                  9694   0    Stats: (CacheDelete) [com.apple.cache_delete:client] CacheDeleteCopyPurgeableSpaceWithInfo result for /System/Volumes/Data : {
+    "CACHE_DELETE_AMOUNT" = 6855002234;
+    "CACHE_DELETE_CACHED_RESULT" = 1;
+    "CACHE_DELETE_FREESPACE" = 106048536576;
+    "CACHE_DELETE_NONPURGEABLE_AMOUNT" = 0;
+    "CACHE_DELETE_VOLUME" = "/System/Volumes/Data";
+}
+2026-10-20 06:36:28.936076+1100 0x1e21ba   Default     0x0                  13111  0    distnoted: (libxpc.dylib) [com.apple.xpc:connection] [0xa3f03c000] invalidated because the client process (pid 48544) either cancelled the connection or exited
+2026-10-20 06:36:28.936366+1100 0x1e238e   Default     0x0                  623    0    distnoted: (libxpc.dylib) [com.apple.xpc:connection] [0x71103c000] invalidated because the client process (pid 48545) either cancelled the connection or exited
+2026-10-20 06:36:28.936467+1100 0x1e2388   Default     0x0                  554    0    distnoted: (libxpc.dylib) [com.apple.xpc:connection] [0x7b7040000] invalidated because the client process (pid 48543) either cancelled the connection or exited
+2026-10-20 06:36:28.936589+1100 0x1e231f   Default     0x0                  383    0    dasd: (libxpc.dylib) [com.apple.xpc:connection] [0xbf79bc140] Re-initialization successful; calling out to event handler with XPC_ERROR_CONNECTION_INTERRUPTED
+2026-10-20 06:36:28.936607+1100 0x1e231f   Default     0x0                  383    0    dasd: (libxpc.dylib) [com.apple.xpc:connection] [0xbf79bf700] Re-initialization successful; calling out to event handler with XPC_ERROR_CONNECTION_INTERRUPTED
+2026-10-20 06:36:28.936616+1100 0x1e231f   Default     0x0                  383    0    dasd: (libxpc.dylib) [com.apple.xpc:connection] [0xbf79bdcc0] Re-initialization successful; calling out to event handler with XPC_ERROR_CONNECTION_INTERRUPTED
+2026-10-20 06:36:28.936637+1100 0x1e231f   Default     0x0                  383    0    dasd: (libxpc.dylib) [com.apple.xpc:connection] [0xbf6ff7000] invalidated because the client process (pid 48545) either cancelled the connection or exited
+2026-10-20 06:36:28.936724+1100 0x1e231f   Default     0x0                  383    0    dasd: (libxpc.dylib) [com.apple.xpc:connection] [0xbf6ff6e80] invalidated because the client process (pid 48544) either cancelled the connection or exited
+2026-10-20 06:36:28.936790+1100 0x1e231f   Default     0x0                  383    0    dasd: (libxpc.dylib) [com.apple.xpc:connection] [0xbf6ff5c80] invalidated because the client process (pid 48543) either cancelled the connection or exited
+2026-10-20 06:36:28.937225+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/205/com.apple.contactsd [48543]:] exited due to exit(0), ran for 60290ms
+2026-10-20 06:36:28.937258+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/205/com.apple.contactsd [48543]:] service state: exited
+2026-10-20 06:36:28.937268+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/205/com.apple.contactsd [48543]:] internal event: EXITED, code = 0
+2026-10-20 06:36:28.937273+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/205/com.apple.contactsd [48543]:] job state = exited
+2026-10-20 06:36:28.937323+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/205:] service inactive: com.apple.contactsd
+2026-10-20 06:36:28.937401+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/205/com.apple.contactsd [48543]:] service state: not running
+2026-10-20 06:36:28.937434+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/55/com.apple.contactsd [48545]:] exited due to exit(0), ran for 60287ms
+2026-10-20 06:36:28.937438+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/55/com.apple.contactsd [48545]:] service state: exited
+2026-10-20 06:36:28.937443+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/55/com.apple.contactsd [48545]:] internal event: EXITED, code = 0
+2026-10-20 06:36:28.937447+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/55/com.apple.contactsd [48545]:] job state = exited
+2026-10-20 06:36:28.937476+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/55:] service inactive: com.apple.contactsd
+2026-10-20 06:36:28.937503+1100 0x1e20e2   Default     0x0                  412    0    runningboardd: (AppServerSupport) [com.apple.libxpc.OSLaunchdJob:all] E41C9527-BF69-4F1A-A91A-3CE28EF863EF monitor: got an update with info exited, wait4() status=0
+2026-10-20 06:36:28.937512+1100 0x1e20e2   Default     0x0                  412    7    runningboardd: (RunningBoard) [com.apple.runningboard:ttl] [osservice<com.apple.contactsd(205)>:48543] termination reported by launchd (0, 0, 0)
+2026-10-20 06:36:28.937540+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/55/com.apple.contactsd [48545]:] service state: not running
+2026-10-20 06:36:28.937548+1100 0x1e2196   Default     0x0                  1      0    launchd: [pid/48543 [contactsd]:] shutting down
+2026-10-20 06:36:28.937553+1100 0x1e2196   Default     0x0                  1      0    launchd: [pid/48543 [contactsd]:] cleaning up
+2026-10-20 06:36:28.937558+1100 0x1e2196   Default     0x0                  1      0    launchd: [pid/48545 [contactsd]:] shutting down
+2026-10-20 06:36:28.937561+1100 0x1e2196   Default     0x0                  1      0    launchd: [pid/48545 [contactsd]:] cleaning up
+2026-10-20 06:36:28.937565+1100 0x1e2196   Default     0x0                  1      0    launchd: [pid/48544 [contactsd]:] shutting down
+2026-10-20 06:36:28.937568+1100 0x1e2196   Default     0x0                  1      0    launchd: [pid/48544 [contactsd]:] cleaning up
+2026-10-20 06:36:28.937596+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/296/com.apple.contactsd [48544]:] exited due to exit(0), ran for 60288ms
+2026-10-20 06:36:28.937600+1100 0x1e20e2   Default     0x0                  412    0    runningboardd: (RunningBoard) [com.apple.runningboard:process] Removing process: [osservice<com.apple.contactsd(205)>:48543]
+2026-10-20 06:36:28.937601+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/296/com.apple.contactsd [48544]:] service state: exited
+2026-10-20 06:36:28.937605+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/296/com.apple.contactsd [48544]:] internal event: EXITED, code = 0
+2026-10-20 06:36:28.937608+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/296/com.apple.contactsd [48544]:] job state = exited
+2026-10-20 06:36:28.937625+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/296:] service inactive: com.apple.contactsd
+2026-10-20 06:36:28.937631+1100 0x1e20e2   Default     0x0                  412    7    runningboardd: (RunningBoard) [com.apple.runningboard:ttl] Existing process in RBProcessIndex is: (null)
+2026-10-20 06:36:28.937686+1100 0x1e2196   Default     0x0                  1      0    launchd: [user/296/com.apple.contactsd [48544]:] service state: not running
+2026-10-20 06:36:28.937695+1100 0x1e2196   Default     0x0                  1      0    launchd: [system:] removing child: pid/48543
+2026-10-20 06:36:28.937705+1100 0x1e2196   Default     0x0                  1      0    launchd: [system:] removing child: pid/48545
+2026-10-20 06:36:28.937711+1100 0x1e2196   Default     0x0                  1      0    launchd: [system:] removing child: pid/48544
+2026-10-20 06:36:28.937713+1100 0x1e20e2   Default     0x0                  412    0    runningboardd: (RunningBoard) [com.apple.runningboard:general] removeJobWithInstance called for identity without existing job [osservice<com.apple.contactsd(205)>:48543]
+2026-10-20 06:36:28.937719+1100 0x1e20e2   Default     0x0                  412    0    runningboardd: (RunningBoard) [com.apple.runningboard:process] Removing assertions for terminated process: [osservice<com.apple.contactsd(205)>:48543]
+2026-10-20 06:36:28.937738+1100 0x1e20e2   Activity    0x363ebc             412    0    runningboardd: (RunningBoard) state update
+2026-10-20 06:36:28.937825+1100 0x1e20e2   Activity    0x363ebd             412    0    runningboardd: (RunningBoard) state notification

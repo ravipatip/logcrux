@@ -1,0 +1,14 @@
+no parent snapshot found, will read all files
+
+Files:          11 new,     0 changed,     0 unmodified
+Dirs:            5 new,     0 changed,     0 unmodified
+Added to the repository: 2.469 MiB (1.930 MiB stored)
+
+processed 11 files, 2.464 MiB in 0:00
+snapshot 76c59164 saved
+ID        Time                 Host          Tags        Paths    Size
+---------------------------------------------------------------------------
+76c59164  2026-10-13 03:42:04  lc-debian-12              /lc/src  2.464 MiB
+---------------------------------------------------------------------------
+Timestamps shown in local time
+1 snapshots

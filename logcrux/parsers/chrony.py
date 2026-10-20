@@ -47,6 +47,7 @@ def _chrony_severity(message: str) -> Severity:
 
 class ChronyParser(LogParser):
     FORMAT_NAME = "chrony"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

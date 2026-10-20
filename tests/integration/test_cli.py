@@ -88,7 +88,9 @@ def test_misdetected_log_falls_back_to_generic(tmp_path):
     result = runner.invoke(app, [str(log), "--no-baseline", "--json"])
     assert result.exit_code in (0, 3, 4), result.output
     data = json.loads(result.output)
-    assert data["parser_format"] == "generic", data
+    # 0.9 fell back to generic for the whole file; now each part keeps a parser
+    # that understands it (cron+syslog) — either way no line may be lost.
+    assert data["parser_format"] != "cron", data
     assert data["parsed_count"] == 60, data
     assert data["skipped_count"] == 0, data
 
@@ -96,7 +98,7 @@ def test_misdetected_log_falls_back_to_generic(tmp_path):
 def test_version_flag():
     result = runner.invoke(app, ["--version"])
     assert result.exit_code == 0
-    assert "0.9.0" in result.output
+    assert "0.10.0" in result.output
 
 
 def test_invalid_path_exits_2():
@@ -320,3 +322,210 @@ def test_python_dash_m_entrypoint(tmp_path):
     assert proc.returncode == 0, proc.stderr
     data = json.loads(proc.stdout)
     assert data["parsed_count"] > 0
+
+
+def test_json_findings_carry_evidence(tmp_path):
+    log = _copy_to_tmp("auth_bruteforce.log", tmp_path)
+    result = runner.invoke(app, [str(log), "--no-baseline", "--json"])
+    data = json.loads(result.output)
+    assert data["schema_version"] == "2"
+    f = data["findings"][0]
+    assert f["kind"] == "auth_failure_cluster"
+    assert f["count"] >= 10 and f["first_seen"]
+    assert any(s["label"] == "source" for s in f["subjects"])
+    ev = f["evidence"][0]
+    assert ev["line"] >= 1 and ev["text"] in log.read_text()
+    assert data["coverage"]["lines"] > 0 and data["severity_counts"]
+
+
+def test_text_output_shows_evidence_line_numbers(tmp_path):
+    log = _copy_to_tmp("auth_bruteforce.log", tmp_path)
+    result = runner.invoke(app, [str(log), "--no-baseline"])
+    assert "line " in result.output and "source:" in result.output
+    assert "Checked" in result.output
+
+
+def test_empty_input_is_flagged_not_silently_clean(tmp_path):
+    safe_dir = Path(tempfile.mkdtemp(dir="/tmp"))
+    log = safe_dir / "empty.log"
+    log.write_text("")
+    result = runner.invoke(app, [str(log), "--no-baseline", "--json"])
+    data = json.loads(result.output)
+    assert data["level"] == "CLEAN"
+    assert any("empty" in w for w in data["warnings"])
+    result = runner.invoke(app, [str(log), "--no-baseline"])
+    assert "Nothing to analyze" in result.output
+
+
+def test_clean_text_says_what_was_checked(tmp_path):
+    log = _copy_to_tmp("syslog_clean.log", tmp_path)
+    result = runner.invoke(app, [str(log), "--no-baseline"])
+    assert result.exit_code == 0
+    assert "Checked" in result.output and "syslog" in result.output
+
+
+def _tmpdir() -> Path:
+    return Path(tempfile.mkdtemp(dir="/tmp"))
+
+
+def test_binary_file_is_refused_not_reported_clean():
+    d = _tmpdir()
+    wtmp = d / "wtmp"
+    wtmp.write_bytes(bytes(range(256)) * 40)
+    result = runner.invoke(app, [str(wtmp), "--no-baseline"])
+    assert result.exit_code == 2, result.output
+    assert "binary" in result.output and "last -f" in result.output
+
+
+def test_utf16_is_text_not_binary():
+    d = _tmpdir()
+    log = d / "app.log"
+    log.write_text("2026-10-13 08:00:00 ERROR boom\n" * 3, encoding="utf-16")
+    result = runner.invoke(app, [str(log), "--no-baseline", "--json"])
+    assert json.loads(result.output)["parsed_count"] == 3
+
+
+def test_nul_padded_log_still_parses():
+    src = (FIXTURES / "auth_bruteforce.log").read_text()
+    d = _tmpdir()
+    log = d / "secure"
+    log.write_text(src + "\x00" * 4096)
+    result = runner.invoke(app, [str(log), "--no-baseline", "--json"])
+    data = json.loads(result.output)
+    assert data["category"] == "auth_brute_force", data
+
+
+def test_several_files_and_a_directory():
+    d = _tmpdir()
+    shutil.copy(FIXTURES / "auth_bruteforce.log", d / "auth.log")
+    shutil.copy(FIXTURES / "syslog_clean.log", d / "syslog")
+    (d / "wtmp").write_bytes(bytes(range(256)) * 40)
+    result = runner.invoke(app, [str(d), "--no-baseline"])
+    assert result.exit_code in (3, 4), result.output
+    assert "2 file(s)" in result.output and "auth.log" in result.output
+    assert "wtmp" in result.output  # reported as skipped, not analysed
+    result = runner.invoke(app, [str(d / "syslog"), str(d / "auth.log"),
+                                 "--no-baseline", "--json"])
+    data = json.loads(result.output)
+    assert isinstance(data, list) and len(data) == 2
+    assert {x["level"] for x in data} >= {"CLEAN"}
+
+
+def test_all_clean_directory_exits_0():
+    d = _tmpdir()
+    shutil.copy(FIXTURES / "syslog_clean.log", d / "a.log")
+    shutil.copy(FIXTURES / "syslog_clean.log", d / "b.log")
+    result = runner.invoke(app, [str(d), "--no-baseline"])
+    assert result.exit_code == 0, result.output
+
+
+def test_missing_file_among_several_is_skipped():
+    d = _tmpdir()
+    shutil.copy(FIXTURES / "syslog_clean.log", d / "a.log")
+    result = runner.invoke(app, [str(d / "a.log"), str(d / "nope.log"), "--no-baseline"])
+    assert result.exit_code == 0, result.output
+    assert "nope.log" in result.output
+
+
+def test_last_reads_naive_timestamps_as_local_time(monkeypatch):
+    import time as _time
+    from datetime import datetime, timedelta
+
+    for tz in ("Australia/Sydney", "America/Los_Angeles"):
+        monkeypatch.setenv("TZ", tz)
+        _time.tzset()
+        now = datetime.now()
+        d = _tmpdir()
+        log = d / "app.log"
+        log.write_text("".join(
+            (now - timedelta(minutes=m)).strftime("%b %d %H:%M:%S") + f" host app[1]: tick {m}\n"
+            for m in range(180, 0, -1)))
+        result = runner.invoke(app, [str(log), "--last", "1h", "--no-baseline", "--json"])
+        assert 55 <= json.loads(result.output)["parsed_count"] <= 61, (tz, result.output[:300])
+    monkeypatch.delenv("TZ")
+    _time.tzset()
+
+
+def test_doctor_reports_the_install():
+    result = runner.invoke(app, ["--doctor"])
+    assert result.exit_code == 0, result.output
+    for key in ("python", "parsers", "ai models", "state db"):
+        assert key in result.output
+
+
+def test_a_file_named_doctor_is_still_analysed():
+    d = _tmpdir()
+    shutil.copy(FIXTURES / "auth_bruteforce.log", d / "doctor")
+    result = runner.invoke(app, [str(d / "doctor"), "--no-baseline", "--json"])
+    assert json.loads(result.output)["category"] == "auth_brute_force"
+
+
+def test_journalctl_permission_notice_is_flagged():
+    notice = ("Hint: You are currently not seeing messages from other users and the system.\n"
+              "      Users in groups 'adm', 'systemd-journal' can see all messages.\n"
+              "      Pass -q to turn off this notice.\n"
+              "No journal files were opened due to insufficient permissions.\n")
+    result = runner.invoke(app, ["--no-baseline", "--json"], input=notice)
+    data = json.loads(result.output)
+    assert any("permission notice" in w for w in data["warnings"]), data["warnings"]
+
+
+def test_unreadable_file_says_what_to_do(tmp_path):
+    import os
+    if os.geteuid() == 0:
+        return  # root reads everything
+    d = _tmpdir()
+    log = d / "auth.log"
+    log.write_text("x\n")
+    log.chmod(0)
+    result = runner.invoke(app, [str(log), "--no-baseline"])
+    assert result.exit_code == 2
+    assert "Permission denied" in result.output and "sudo" in result.output
+    assert "Invalid value" not in result.output
+    log.chmod(0o644)
+
+
+def test_directory_members_keep_the_named_path():
+    d = _tmpdir()
+    target = _tmpdir() / "README.logs"
+    target.write_text("plain text\n")
+    (d / "README").symlink_to(target)
+    shutil.copy(FIXTURES / "syslog_clean.log", d / "syslog")
+    result = runner.invoke(app, [str(d), "--no-baseline", "--json"])
+    paths = {x["log_path"] for x in json.loads(result.output)}
+    assert str(d / "README") in paths, paths
+
+
+def test_each_file_footer_counts_its_own_incidents():
+    d = _tmpdir()
+    shutil.copy(FIXTURES / "auth_bruteforce.log", d / "a-auth.log")
+    shutil.copy(FIXTURES / "syslog_clean.log", d / "b-clean.log")
+    result = runner.invoke(app, [str(d), "--no-baseline", "--verbose"])
+    footers = [ln for ln in result.output.splitlines() if ln.startswith("Analyzed")]
+    assert len(footers) == 2 and "0 incident(s)" in footers[1] and "0 incident" not in footers[0]
+
+
+def test_dash_means_stdin():
+    log_content = (FIXTURES / "auth_bruteforce.log").read_text()
+    result = runner.invoke(app, ["-", "--no-baseline", "--json"], input=log_content)
+    assert json.loads(result.output)["log_path"] == "<stdin>"
+
+
+def test_fail_on_controls_the_exit_code():
+    log = FIXTURES / "auth_bruteforce.log"   # a WARNING
+    assert runner.invoke(app, [str(log), "--no-baseline"]).exit_code == 3
+    assert runner.invoke(app, [str(log), "--no-baseline", "--fail-on", "critical"]).exit_code == 0
+    assert runner.invoke(app, [str(log), "--no-baseline", "--fail-on", "never"]).exit_code == 0
+    oom = FIXTURES / "syslog_oom.log"        # CRITICAL
+    assert runner.invoke(app, [str(oom), "--no-baseline", "--fail-on", "critical"]).exit_code == 4
+    assert runner.invoke(app, [str(log), "--fail-on", "bogus"]).exit_code == 1
+
+
+def test_directory_run_skips_documents_but_named_files_are_analysed():
+    d = _tmpdir()
+    shutil.copy(FIXTURES / "syslog_clean.log", d / "syslog")
+    (d / "NOTES.md").write_text("Too many open files\n" * 30)
+    result = runner.invoke(app, [str(d), "--no-baseline", "--json"])
+    assert {Path(x["log_path"]).name for x in json.loads(result.output)} == {"syslog"}
+    result = runner.invoke(app, [str(d / "NOTES.md"), "--no-baseline", "--json"])
+    assert json.loads(result.output)["parsed_count"] == 30

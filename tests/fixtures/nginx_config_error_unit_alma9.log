@@ -1,0 +1,6 @@
+Oct 13 07:37:50 lc-alma-9 systemd[1]: Starting The nginx HTTP and reverse proxy server...
+Oct 13 07:37:50 lc-alma-9 nginx[29563]: nginx: [emerg] unknown directive "lcbogus_directive" in /etc/nginx/conf.d/lc-bad.conf:1
+Oct 13 07:37:50 lc-alma-9 nginx[29563]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Oct 13 07:37:50 lc-alma-9 systemd[1]: nginx.service: Control process exited, code=exited, status=1/FAILURE
+Oct 13 07:37:50 lc-alma-9 systemd[1]: nginx.service: Failed with result 'exit-code'.
+Oct 13 07:37:50 lc-alma-9 systemd[1]: Failed to start The nginx HTTP and reverse proxy server.

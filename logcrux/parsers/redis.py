@@ -42,6 +42,7 @@ _ERROR_KEYWORDS = frozenset([
     "failed", "can't save", "fork", "rdb", "aof error",
 ])
 
+_REPORT_MARKER = re.compile(r"^=== (?:REDIS|VALKEY) BUG REPORT (?P<edge>START|END)\b")
 _DETECT = re.compile(
     r"(?:\d+:[MSCX] \d{2} \w{3} \d{4})|(?:\[\d+\] \d{2} \w{3} \d{2}:\d{2})"
 )
@@ -59,6 +60,20 @@ def _redis_severity(symbol: str, message: str) -> Severity:
 class RedisParser(LogParser):
     FORMAT_NAME = "redis"
 
+    # A crash writes a bug report — stack trace, registers, INFO sections —
+    # between "=== REDIS BUG REPORT START: ..." and "=== REDIS BUG REPORT END. ..."
+    # ("VALKEY" on Valkey). On real GCP VMs (Redis 5.0/6.2, Valkey 8) only 9 of
+    # 346 report lines had the normal log shape, so the file fell to generic.
+    # Everything inside the markers belongs to the crash event.
+    _in_report: bool = False
+    _closing: bool = False
+
+    def is_continuation(self, line: str) -> bool:
+        if self._closing:
+            self._closing = False
+            return True
+        return self._in_report or super().is_continuation(line)
+
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:
         if path:
@@ -69,6 +84,11 @@ class RedisParser(LogParser):
 
     def parse_line(self, line: str, line_number: int) -> ParsedEvent | None:
         if not line:
+            return None
+        marker = _REPORT_MARKER.match(line)
+        if marker:
+            self._in_report = marker["edge"] == "START"
+            self._closing = marker["edge"] == "END"
             return None
         m = _NEW_PATTERN.match(line)
         if m:

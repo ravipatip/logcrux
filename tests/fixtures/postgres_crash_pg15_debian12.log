@@ -1,0 +1,11 @@
+2026-10-13 03:41:39.433 UTC [1905] LOG:  server process (PID 1997) was terminated by signal 9: Killed
+2026-10-13 03:41:39.433 UTC [1905] DETAIL:  Failed process was running: select pg_sleep(60)
+2026-10-13 03:41:39.433 UTC [1905] LOG:  terminating any other active server processes
+2026-10-13 03:41:39.435 UTC [1905] LOG:  all server processes terminated; reinitializing
+2026-10-13 03:41:39.452 UTC [2002] LOG:  database system was interrupted; last known up at 2026-10-13 03:41:36 UTC
+2026-10-13 03:41:39.536 UTC [2002] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-13 03:41:39.540 UTC [2002] LOG:  invalid record length at 0/1500790: wanted 24, got 0
+2026-10-13 03:41:39.540 UTC [2002] LOG:  redo is not required
+2026-10-13 03:41:39.544 UTC [2003] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-13 03:41:39.556 UTC [2003] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.002 s, total=0.015 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2026-10-13 03:41:39.562 UTC [1905] LOG:  database system is ready to accept connections

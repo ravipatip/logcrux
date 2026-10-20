@@ -1,0 +1,10 @@
+using parent snapshot 76c59164
+error: openfile for readdirnames failed: open /lc/src/ssh: permission denied
+
+Files:           0 new,     0 changed,     1 unmodified
+Dirs:            0 new,     2 changed,     0 unmodified
+Added to the repository: 1.166 KiB (953 B stored)
+
+processed 1 files, 1.907 MiB in 0:00
+snapshot 5126d5b2 saved
+Warning: at least one source file could not be read

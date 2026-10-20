@@ -48,6 +48,7 @@ def _keepalived_severity(message: str) -> Severity:
 
 class KeepalivedParser(LogParser):
     FORMAT_NAME = "keepalived"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

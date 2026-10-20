@@ -32,6 +32,7 @@ Welcome to the **logcrux** documentation. This folder contains comprehensive gui
 
 ### Output & Integration
 - **[Output Rendering](./16-output-rendering.md)** — Terminal output, JSON export, and formatting
+- **[JSON Output, schema 2](./23-json-output.md)** — every key of `--json`, with a real example (authoritative)
 - **[Exit Codes](./17-exit-codes.md)** — What return codes mean for automation
 - **[REST API & Integration](./18-integration.md)** — Programmatic usage and library integration
 
@@ -96,6 +97,7 @@ docs/
 ├── 14-state-management.md             SQLite persistence
 ├── 15-baseline-tracking.md            Baseline computation
 ├── 16-output-rendering.md             Output formatting
+├── 23-json-output.md                  JSON schema 2 (authoritative)
 ├── 17-exit-codes.md                   Exit code semantics
 ├── 18-integration.md                  Library usage
 ├── 19-development.md                  Development setup

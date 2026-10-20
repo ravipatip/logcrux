@@ -1,0 +1,13 @@
+2026-10-19 23:26:08,814 INFO payments: payments worker started, gateway https://lc6-tls/
+2026-10-19 23:26:08,820 ERROR payments: gateway call failed (attempt 1): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:09,128 ERROR payments: gateway call failed (attempt 2): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:09,439 ERROR payments: gateway call failed (attempt 3): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:09,750 ERROR payments: gateway call failed (attempt 4): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:10,057 ERROR payments: gateway call failed (attempt 5): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:10,367 ERROR payments: gateway call failed (attempt 6): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:10,674 ERROR payments: gateway call failed (attempt 7): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:10,986 ERROR payments: gateway call failed (attempt 8): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:11,295 ERROR payments: gateway call failed (attempt 9): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:11,606 ERROR payments: gateway call failed (attempt 10): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:11,919 ERROR payments: gateway call failed (attempt 11): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>
+2026-10-19 23:26:12,230 ERROR payments: gateway call failed (attempt 12): <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)>

@@ -1,0 +1,7 @@
+cache warming started
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at Leak.main(Leak.java:6)
+	at java.base/java.lang.invoke.LambdaForm$DMH/0x000000b001031000.invokeStatic(LambdaForm$DMH)
+	at java.base/java.lang.invoke.LambdaForm$MH/0x000000b001141400.invoke(LambdaForm$MH)
+	at java.base/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)

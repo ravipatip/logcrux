@@ -24,6 +24,7 @@ _CURRENT_YEAR = datetime.now().year
 
 class PfSenseParser(LogParser):
     FORMAT_NAME = "pfsense"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

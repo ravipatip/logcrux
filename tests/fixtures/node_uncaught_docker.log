@@ -1,0 +1,11 @@
+listening on :3000
+[eval]:1
+console.log("listening on :3000"); setTimeout(()=>{ const u = undefined; console.log(u.id) }, 200)
+                                                                                       ^
+
+TypeError: Cannot read properties of undefined (reading 'id')
+    at Timeout._onTimeout ([eval]:1:88)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+
+Node.js v22.23.3

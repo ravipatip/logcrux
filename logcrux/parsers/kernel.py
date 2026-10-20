@@ -7,7 +7,7 @@ from pathlib import Path
 from dateutil import parser as dateparser
 
 from logcrux.models import ParsedEvent, Severity
-from logcrux.parsers.base import LogParser, syslog_tag_dominant
+from logcrux.parsers.base import INDENTED_CONTINUATION, LogParser, syslog_tag_dominant
 
 # Kernel ring-buffer logs (kern.log / dmesg) appear in two shapes.
 #
@@ -19,6 +19,16 @@ from logcrux.parsers.base import LogParser, syslog_tag_dominant
 #    [12345.678901] usb 1-1: new high-speed USB device number 5
 _SYSLOG_PATTERN = re.compile(
     r"(?P<month>\w{3})\s+(?P<day>\d{1,2}) (?P<time>\d{2}:\d{2}:\d{2}) "
+    r"(?P<host>\S+) "
+    r"kernel:\s*"
+    r"(?:\[\s*(?P<uptime>\d+\.\d+)\]\s*)?"
+    r"(?P<message>.*)"
+)
+# `journalctl -k -o short-iso` (and rsyslog's RFC3339 template): same shape as
+# A) but with an ISO-8601 timestamp. Captured on 12 real distros, 2026-10-13:
+#    2026-10-13T03:38:43+0000 host kernel: tail invoked oom-killer: gfp_mask=...
+_ISO_PATTERN = re.compile(
+    r"(?P<ts>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2})?) "
     r"(?P<host>\S+) "
     r"kernel:\s*"
     r"(?:\[\s*(?P<uptime>\d+\.\d+)\]\s*)?"
@@ -75,6 +85,9 @@ def _kernel_severity(message: str) -> Severity:
 
 class KernelParser(LogParser):
     FORMAT_NAME = "kernel"
+    # No SYSLOG_FALLBACK: a boot journal opens with kernel lines, and the
+    # low-coverage re-detect (-> syslog) is the better outcome for it.
+    CONTINUATION = INDENTED_CONTINUATION
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:
@@ -98,6 +111,13 @@ class KernelParser(LogParser):
                 ts = dateparser.parse(
                     f"{m['month']} {m['day']} {_CURRENT_YEAR} {m['time']}"
                 )
+            except Exception:
+                ts = None
+            return self._make(m, ts, line, line_number)
+        m = _ISO_PATTERN.match(line)
+        if m:
+            try:
+                ts = dateparser.parse(m["ts"])
             except Exception:
                 ts = None
             return self._make(m, ts, line, line_number)

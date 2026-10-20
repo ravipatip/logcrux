@@ -1,0 +1,68 @@
+Name:             hungry-worker
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             b7e29614d729/172.17.0.3
+Start Time:       Mon, 19 Oct 2026 19:13:15 +0000
+Labels:           <none>
+Annotations:      <none>
+Status:           Running
+IP:               10.42.0.6
+IPs:
+  IP:  10.42.0.6
+Containers:
+  worker:
+    Container ID:  containerd://077208e90bfaae826c9c4d8cceab075dbcc0252e3a21841f35644e99ba982739
+    Image:         python:3.12-alpine
+    Image ID:      docker.io/library/python@sha256:1b668429b3511ab407d8e00648891631b0b1a4d7e15e3ca70f38ab5b91ad4ab4
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      python
+      -c
+      print('worker started', flush=True); a=[]
+      while True: a.append(bytearray(10**6))
+    State:          Waiting
+      Reason:       CrashLoopBackOff
+    Last State:     Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Mon, 19 Oct 2026 19:15:15 +0000
+      Finished:     Mon, 19 Oct 2026 19:15:15 +0000
+    Ready:          False
+    Restart Count:  4
+    Limits:
+      memory:  48Mi
+    Requests:
+      memory:     48Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-gzx9t (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-gzx9t:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                 From               Message
+  ----     ------     ----                ----               -------
+  Normal   Scheduled  2m30s               default-scheduler  Successfully assigned default/hungry-worker to b7e29614d729
+  Normal   Pulling    2m27s               kubelet            Pulling image "python:3.12-alpine"
+  Normal   Pulled     2m                  kubelet            Successfully pulled image "python:3.12-alpine" in 27.119s (27.119s including waiting). Image size: 21423636 bytes.
+  Normal   Created    31s (x5 over 2m)    kubelet            Created container worker
+  Normal   Started    31s (x5 over 2m)    kubelet            Started container worker
+  Normal   Pulled     31s (x4 over 2m)    kubelet            Container image "python:3.12-alpine" already present on machine
+  Warning  BackOff    16s (x9 over 119s)  kubelet            Back-off restarting failed container worker in pod hungry-worker_default(18e89ec2-0437-4aeb-8329-e4076f517c4a)

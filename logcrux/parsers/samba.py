@@ -64,6 +64,7 @@ def _samba_severity(level: int | None, message: str) -> Severity:
 
 class SambaParser(LogParser):
     FORMAT_NAME = "samba"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

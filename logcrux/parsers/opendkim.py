@@ -27,6 +27,7 @@ _WARN_KW = ("not signed", "no signature", "unsigned", "skipping", "temporary")
 
 class OpenDKIMParser(LogParser):
     FORMAT_NAME = "opendkim"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

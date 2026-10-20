@@ -31,6 +31,7 @@ _WARN_KW = ("warn", "retry", "flap", "timeout", "withdraw", "notification",
 
 class FrrParser(LogParser):
     FORMAT_NAME = "frr"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

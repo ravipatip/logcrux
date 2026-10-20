@@ -1,0 +1,31 @@
+2026-10-13  7:40:23 0 [Note] Starting MariaDB 10.3.39-MariaDB source revision ca001cf2048f0152689e1895e2dc15486dd0b1af as process 32271
+2026-10-13  7:40:23 0 [Note] InnoDB: Using Linux native AIO
+2026-10-13  7:40:23 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2026-10-13  7:40:23 0 [Note] InnoDB: Uses event mutexes
+2026-10-13  7:40:23 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2026-10-13  7:40:23 0 [Note] InnoDB: Number of pools: 1
+2026-10-13  7:40:23 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2026-10-13  7:40:23 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2026-10-13  7:40:23 0 [Note] InnoDB: Completed initialization of buffer pool
+2026-10-13  7:40:23 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2026-10-13  7:40:23 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1625419
+2026-10-13  7:40:23 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2026-10-13  7:40:23 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2026-10-13  7:40:23 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2026-10-13  7:40:23 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2026-10-13  7:40:23 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2026-10-13  7:40:23 0 [Note] InnoDB: 10.3.39 started; log sequence number 1625428; transaction id 20
+2026-10-13  7:40:23 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2026-10-13  7:40:23 0 [Note] InnoDB: Buffer pool(s) load completed at 261013  7:40:23
+2026-10-13  7:40:23 0 [Note] Plugin 'FEEDBACK' is disabled.
+2026-10-13  7:40:23 0 [Warning] mysqld: GSSAPI plugin : default principal 'mariadb/lc-alma-8.us-central1-a.c.logcrux-test2-cfaf25.internal@' not found in keytab
+2026-10-13  7:40:23 0 [ERROR] mysqld: Server GSSAPI error (major 851968, minor 2529639093) : gss_acquire_cred failed -Unspecified GSS failure.  Minor code may provide more information. Keytab FILE:/etc/krb5.keytab is nonexistent or empty. 
+2026-10-13  7:40:23 0 [ERROR] Plugin 'gssapi' init function returned error.
+2026-10-13  7:40:23 0 [Note] Recovering after a crash using tc.log
+2026-10-13  7:40:23 0 [Note] Starting crash recovery...
+2026-10-13  7:40:23 0 [Note] Crash recovery finished.
+2026-10-13  7:40:23 0 [Note] Server socket created on IP: '::'.
+2026-10-13  7:40:23 0 [Note] Reading of all Master_info entries succeeded
+2026-10-13  7:40:23 0 [Note] Added new Master_info '' to hash table
+2026-10-13  7:40:23 0 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '10.3.39-MariaDB'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MariaDB Server

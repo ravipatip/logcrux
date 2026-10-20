@@ -26,6 +26,7 @@ _WARN_EVENTS = ("Rebuild", "SpareActive", "TestMessage", "MoveSpare")
 
 class MdadmParser(LogParser):
     FORMAT_NAME = "mdadm"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:
