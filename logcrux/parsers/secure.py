@@ -49,6 +49,7 @@ def _auth_severity(source: str, message: str) -> Severity:
 
 class SecureParser(LogParser):
     FORMAT_NAME = "secure"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

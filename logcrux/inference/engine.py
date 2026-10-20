@@ -3,13 +3,18 @@ from __future__ import annotations
 import importlib.resources
 import logging
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from logcrux.exceptions import InferenceError
-from logcrux.inference.classifier import IncidentClassifier
-from logcrux.inference.grouper import EventGrouper
 from logcrux.models import AnalysisResult, InferenceResult, ParsedEvent
 
+if TYPE_CHECKING:
+    from logcrux.inference.classifier import IncidentClassifier
+    from logcrux.inference.grouper import EventGrouper
+
 logger = logging.getLogger(__name__)
+# Said once per process, not once per file of a directory run.
+_warned = False
 
 
 def _bundled_path(subpath: str) -> Path:
@@ -34,9 +39,15 @@ class InferenceEngine:
         try:
             self._ensure_loaded()
         except Exception as exc:
-            logger.warning(
-                "AI inference unavailable: %s. Showing statistical findings only.", exc
-            )
+            global _warned
+            if not _warned:
+                _warned = True
+                hint = ""
+                if isinstance(exc.__cause__, ImportError) or isinstance(exc, ImportError):
+                    hint = (" onnxruntime is not installed (it has no wheel for this Python"
+                            " or platform); detection is unaffected, only incident naming"
+                            " is. For it: `uv tool install --python 3.12 logcrux`.")
+                logger.warning("AI classification unavailable: %s.%s", exc, hint)
             return None
         assert self._grouper is not None
         assert self._classifier is not None
@@ -52,6 +63,11 @@ class InferenceEngine:
         if self._classifier is not None:
             return
         try:
+            # Imported here, not at module load: onnxruntime is optional
+            # (no wheel for Python 3.15 or musl), and logcrux must still run.
+            from logcrux.inference.classifier import IncidentClassifier
+            from logcrux.inference.grouper import EventGrouper
+
             tokenizer_dir = _bundled_path("tokenizer")
             self._grouper = EventGrouper(_bundled_path("grouper"), tokenizer_dir)
             self._classifier = IncidentClassifier(_bundled_path("classifier"), tokenizer_dir)

@@ -47,6 +47,7 @@ def _sudo_severity(message: str) -> Severity:
 
 class SudoParser(LogParser):
     FORMAT_NAME = "sudo"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

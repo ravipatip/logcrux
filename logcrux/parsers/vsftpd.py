@@ -37,6 +37,7 @@ def _vsftpd_severity(status: str, event: str) -> Severity:
 
 class VsftpdParser(LogParser):
     FORMAT_NAME = "vsftpd"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

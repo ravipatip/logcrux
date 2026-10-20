@@ -63,6 +63,7 @@ def _nm_severity(message: str) -> Severity:
 
 class NetworkManagerParser(LogParser):
     FORMAT_NAME = "networkmanager"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

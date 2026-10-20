@@ -1,0 +1,6 @@
+loading config from /etc/app/config.json
+Traceback (most recent call last):
+  File "/app.py", line 3, in <module>
+    cfg = json.load(open("/etc/app/config.json"))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/etc/app/config.json'

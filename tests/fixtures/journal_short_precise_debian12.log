@@ -1,0 +1,41 @@
+Oct 19 19:37:47.887957 localhost kernel: Linux version 6.1.0-53-cloud-amd64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14+deb12u1) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Debian 6.1.187-1 (2026-09-07)
+Oct 19 19:37:47.887995 localhost kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-6.1.0-53-cloud-amd64 root=PARTUUID=1d183993-812e-44f6-a0fc-f3cece6a9e86 ro console=tty0 console=ttyS0,115200 earlyprintk=ttyS0,115200 consoleblank=0 intel_iommu=off
+Oct 19 19:37:47.888017 localhost kernel: BIOS-provided physical RAM map:
+Oct 19 19:37:47.888036 localhost kernel: BIOS-e820: [mem 0x0000000000000000-0x0000000000000fff] reserved
+Oct 19 19:37:47.888053 localhost kernel: BIOS-e820: [mem 0x0000000000001000-0x0000000000054fff] usable
+Oct 19 19:37:47.888071 localhost kernel: BIOS-e820: [mem 0x0000000000055000-0x000000000005ffff] reserved
+Oct 19 19:37:47.888097 localhost kernel: BIOS-e820: [mem 0x0000000000060000-0x0000000000097fff] usable
+Oct 19 19:37:47.888116 localhost kernel: BIOS-e820: [mem 0x0000000000098000-0x000000000009ffff] reserved
+Oct 19 19:37:47.888134 localhost kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000bf8ecfff] usable
+Oct 19 19:37:47.888156 localhost kernel: BIOS-e820: [mem 0x00000000bf8ed000-0x00000000bf9ecfff] reserved
+Oct 19 19:37:47.888174 localhost kernel: BIOS-e820: [mem 0x00000000bf9ed000-0x00000000bfaecfff] type 20
+Oct 19 19:37:47.888192 localhost kernel: BIOS-e820: [mem 0x00000000bfaed000-0x00000000bfb6cfff] reserved
+Oct 19 19:37:47.888210 localhost kernel: BIOS-e820: [mem 0x00000000bfb6d000-0x00000000bfb7efff] ACPI data
+Oct 19 19:37:47.888228 localhost kernel: BIOS-e820: [mem 0x00000000bfb7f000-0x00000000bfbfefff] ACPI NVS
+Oct 19 19:37:47.888249 localhost kernel: BIOS-e820: [mem 0x00000000bfbff000-0x00000000bffdffff] usable
+Oct 19 19:37:47.888265 localhost kernel: BIOS-e820: [mem 0x00000000bffe0000-0x00000000bfffffff] reserved
+Oct 19 19:37:47.888288 localhost kernel: BIOS-e820: [mem 0x0000000100000000-0x000000023fffffff] usable
+Oct 19 19:37:47.888307 localhost kernel: printk: bootconsole [earlyser0] enabled
+Oct 19 19:37:47.888325 localhost kernel: NX (Execute Disable) protection: active
+Oct 19 19:37:47.888340 localhost kernel: efi: EFI v2.70 by EDK II
+Oct 19 19:37:47.888356 localhost kernel: efi: TPMFinalLog=0xbfbf7000 ACPI=0xbfb7e000 ACPI 2.0=0xbfb7e014 SMBIOS=0xbf9ca000 MEMATTR=0xbd317018 MOKvar=0xbf9bf000 
+Oct 19 19:37:47.888372 localhost kernel: secureboot: Secure boot disabled
+Oct 19 19:37:47.888386 localhost kernel: SMBIOS 2.4 present.
+Oct 19 19:37:47.888401 localhost kernel: DMI: Google Google Compute Engine/Google Compute Engine, BIOS Google 07/24/2026
+Oct 19 19:37:47.888418 localhost kernel: Hypervisor detected: KVM
+Oct 19 19:37:47.888434 localhost kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Oct 19 19:37:47.888451 localhost kernel: kvm-clock: using sched offset of 8707935987 cycles
+Oct 19 19:37:47.888469 localhost kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Oct 19 19:37:47.888498 localhost kernel: tsc: Detected 2200.150 MHz processor
+Oct 19 19:37:47.888523 localhost kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Oct 19 19:39:51.891675 lc-debian-12 kernel: [   4217]     0  4217    38996    38667   356352        0             0 tail
+Oct 19 19:39:51.891983 lc-debian-12 kernel: oom-kill:constraint=CONSTRAINT_MEMCG,nodemask=(null),cpuset=/,mems_allowed=0,oom_memcg=/system.slice/lc-oom.service,task_memcg=/system.slice/lc-oom.service,task=tail,pid=4217,uid=0
+Oct 19 19:39:51.927514 lc-debian-12 kernel: Memory cgroup out of memory: Killed process 4217 (tail) total-vm:155984kB, anon-rss:153108kB, file-rss:1560kB, shmem-rss:0kB, UID:0 pgtables:348kB oom_score_adj:0
+Oct 19 19:39:51.927804 lc-debian-12 systemd[1]: lc-oom.service: A process of this unit has been killed by the OOM killer.
+Oct 19 19:39:51.939063 lc-debian-12 systemd[1]: lc-oom.service: Main process exited, code=killed, status=9/KILL
+Oct 19 19:39:51.939162 lc-debian-12 systemd[1]: lc-oom.service: Failed with result 'oom-kill'.
+Oct 19 19:39:54.017202 lc-debian-12 systemd[1]: Reloading ssh.service - OpenBSD Secure Shell server...
+Oct 19 19:39:54.037467 lc-debian-12 sshd[915]: Received SIGHUP; restarting.
+Oct 19 19:39:54.044689 lc-debian-12 systemd[1]: Reloaded ssh.service - OpenBSD Secure Shell server.
+Oct 19 19:39:54.054670 lc-debian-12 sshd[915]: Server listening on 0.0.0.0 port 22.
+Oct 19 19:39:54.054723 lc-debian-12 sshd[915]: Server listening on :: port 22.

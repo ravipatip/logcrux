@@ -1,0 +1,3 @@
+Fatal: repository does not exist: unable to open config file: stat /lc/repo/config: no such file or directory
+Is there a repository at the following location?
+/lc/repo

@@ -1,0 +1,364 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.4. Set the 'ServerName' directive globally to suppress this message
+[Mon Oct 19 18:47:14.658849 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.69 (Unix) configured -- resuming normal operations
+[Mon Oct 19 18:47:14.658875 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Oct 19 18:47:17.721512 2026] [proxy:error] [pid 10:tid 17] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.721538 2026] [proxy_http:error] [pid 10:tid 17] [client 127.0.0.1:56288] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.722094 2026] [proxy:error] [pid 11:tid 22] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.722117 2026] [proxy_http:error] [pid 11:tid 22] [client 127.0.0.1:56294] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.722571 2026] [proxy:error] [pid 10:tid 24] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.722597 2026] [proxy_http:error] [pid 10:tid 24] [client 127.0.0.1:56308] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.723042 2026] [proxy:error] [pid 10:tid 28] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.723064 2026] [proxy_http:error] [pid 10:tid 28] [client 127.0.0.1:56320] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.723479 2026] [proxy:error] [pid 11:tid 26] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.723499 2026] [proxy_http:error] [pid 11:tid 26] [client 127.0.0.1:56330] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.723994 2026] [proxy:error] [pid 9:tid 14] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.724013 2026] [proxy_http:error] [pid 9:tid 14] [client 127.0.0.1:56340] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.724446 2026] [proxy:error] [pid 11:tid 32] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.724463 2026] [proxy_http:error] [pid 11:tid 32] [client 127.0.0.1:56346] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.724912 2026] [proxy:error] [pid 11:tid 36] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.724928 2026] [proxy_http:error] [pid 11:tid 36] [client 127.0.0.1:56358] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.725349 2026] [proxy:error] [pid 11:tid 43] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.725364 2026] [proxy_http:error] [pid 11:tid 43] [client 127.0.0.1:56374] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.725742 2026] [proxy:error] [pid 11:tid 48] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.725757 2026] [proxy_http:error] [pid 11:tid 48] [client 127.0.0.1:56382] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.726184 2026] [proxy:error] [pid 11:tid 58] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.726203 2026] [proxy_http:error] [pid 11:tid 58] [client 127.0.0.1:56384] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.726561 2026] [proxy:error] [pid 11:tid 61] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.726583 2026] [proxy_http:error] [pid 11:tid 61] [client 127.0.0.1:56392] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.726993 2026] [proxy:error] [pid 11:tid 74] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.727014 2026] [proxy_http:error] [pid 11:tid 74] [client 127.0.0.1:56406] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.727472 2026] [proxy:error] [pid 11:tid 80] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.727488 2026] [proxy_http:error] [pid 11:tid 80] [client 127.0.0.1:56416] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.727937 2026] [proxy:error] [pid 10:tid 31] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.727952 2026] [proxy_http:error] [pid 10:tid 31] [client 127.0.0.1:56426] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.728376 2026] [proxy:error] [pid 11:tid 84] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.728391 2026] [proxy_http:error] [pid 11:tid 84] [client 127.0.0.1:56428] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.728740 2026] [proxy:error] [pid 11:tid 89] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.728754 2026] [proxy_http:error] [pid 11:tid 89] [client 127.0.0.1:56430] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.729183 2026] [proxy:error] [pid 10:tid 40] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.729204 2026] [proxy_http:error] [pid 10:tid 40] [client 127.0.0.1:56436] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.729592 2026] [proxy:error] [pid 11:tid 91] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.729606 2026] [proxy_http:error] [pid 11:tid 91] [client 127.0.0.1:56438] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.729993 2026] [proxy:error] [pid 11:tid 25] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.730006 2026] [proxy_http:error] [pid 11:tid 25] [client 127.0.0.1:56444] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.730385 2026] [proxy:error] [pid 11:tid 29] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.730398 2026] [proxy_http:error] [pid 11:tid 29] [client 127.0.0.1:56448] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.730822 2026] [proxy:error] [pid 11:tid 33] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.730835 2026] [proxy_http:error] [pid 11:tid 33] [client 127.0.0.1:56458] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.731294 2026] [proxy:error] [pid 11:tid 41] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.731308 2026] [proxy_http:error] [pid 11:tid 41] [client 127.0.0.1:56460] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.731686 2026] [proxy:error] [pid 11:tid 45] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.731700 2026] [proxy_http:error] [pid 11:tid 45] [client 127.0.0.1:56466] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.732090 2026] [proxy:error] [pid 10:tid 47] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.732104 2026] [proxy_http:error] [pid 10:tid 47] [client 127.0.0.1:56472] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.732446 2026] [proxy:error] [pid 11:tid 53] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.732458 2026] [proxy_http:error] [pid 11:tid 53] [client 127.0.0.1:56478] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.732824 2026] [proxy:error] [pid 11:tid 66] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.732837 2026] [proxy_http:error] [pid 11:tid 66] [client 127.0.0.1:56488] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.733260 2026] [proxy:error] [pid 11:tid 69] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.733277 2026] [proxy_http:error] [pid 11:tid 69] [client 127.0.0.1:56496] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.733626 2026] [proxy:error] [pid 11:tid 77] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.733638 2026] [proxy_http:error] [pid 11:tid 77] [client 127.0.0.1:56500] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.734043 2026] [proxy:error] [pid 10:tid 52] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.734058 2026] [proxy_http:error] [pid 10:tid 52] [client 127.0.0.1:56510] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.734462 2026] [proxy:error] [pid 11:tid 81] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.734477 2026] [proxy_http:error] [pid 11:tid 81] [client 127.0.0.1:56522] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.734946 2026] [proxy:error] [pid 11:tid 88] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.734971 2026] [proxy_http:error] [pid 11:tid 88] [client 127.0.0.1:56530] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.735336 2026] [proxy:error] [pid 11:tid 90] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.735350 2026] [proxy_http:error] [pid 11:tid 90] [client 127.0.0.1:56536] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.735681 2026] [proxy:error] [pid 11:tid 22] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.735692 2026] [proxy_http:error] [pid 11:tid 22] [client 127.0.0.1:56544] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.736110 2026] [proxy:error] [pid 11:tid 26] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.736121 2026] [proxy_http:error] [pid 11:tid 26] [client 127.0.0.1:56556] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.736476 2026] [proxy:error] [pid 11:tid 32] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.736488 2026] [proxy_http:error] [pid 11:tid 32] [client 127.0.0.1:56572] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.736809 2026] [proxy:error] [pid 11:tid 36] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.736820 2026] [proxy_http:error] [pid 11:tid 36] [client 127.0.0.1:56582] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.737157 2026] [proxy:error] [pid 11:tid 43] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.737169 2026] [proxy_http:error] [pid 11:tid 43] [client 127.0.0.1:56584] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.737519 2026] [proxy:error] [pid 11:tid 48] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.737532 2026] [proxy_http:error] [pid 11:tid 48] [client 127.0.0.1:56600] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.737913 2026] [proxy:error] [pid 11:tid 58] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.737925 2026] [proxy_http:error] [pid 11:tid 58] [client 127.0.0.1:56606] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.738371 2026] [proxy:error] [pid 11:tid 61] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.738383 2026] [proxy_http:error] [pid 11:tid 61] [client 127.0.0.1:56616] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.738728 2026] [proxy:error] [pid 11:tid 74] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.738739 2026] [proxy_http:error] [pid 11:tid 74] [client 127.0.0.1:56630] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.739156 2026] [proxy:error] [pid 11:tid 80] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.739168 2026] [proxy_http:error] [pid 11:tid 80] [client 127.0.0.1:56642] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.739608 2026] [proxy:error] [pid 11:tid 84] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.739620 2026] [proxy_http:error] [pid 11:tid 84] [client 127.0.0.1:56652] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.739957 2026] [proxy:error] [pid 11:tid 89] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.739969 2026] [proxy_http:error] [pid 11:tid 89] [client 127.0.0.1:56660] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.740296 2026] [proxy:error] [pid 11:tid 91] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.740309 2026] [proxy_http:error] [pid 11:tid 91] [client 127.0.0.1:56670] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.740662 2026] [proxy:error] [pid 11:tid 25] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.740675 2026] [proxy_http:error] [pid 11:tid 25] [client 127.0.0.1:56684] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.740998 2026] [proxy:error] [pid 11:tid 29] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.741012 2026] [proxy_http:error] [pid 11:tid 29] [client 127.0.0.1:56688] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.741394 2026] [proxy:error] [pid 11:tid 33] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.741407 2026] [proxy_http:error] [pid 11:tid 33] [client 127.0.0.1:56698] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.741768 2026] [proxy:error] [pid 11:tid 41] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.741779 2026] [proxy_http:error] [pid 11:tid 41] [client 127.0.0.1:56708] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.742109 2026] [proxy:error] [pid 11:tid 45] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.742121 2026] [proxy_http:error] [pid 11:tid 45] [client 127.0.0.1:56724] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.742504 2026] [proxy:error] [pid 11:tid 53] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.742516 2026] [proxy_http:error] [pid 11:tid 53] [client 127.0.0.1:56738] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.742839 2026] [proxy:error] [pid 11:tid 66] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.742852 2026] [proxy_http:error] [pid 11:tid 66] [client 127.0.0.1:56752] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.743165 2026] [proxy:error] [pid 11:tid 69] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.743178 2026] [proxy_http:error] [pid 11:tid 69] [client 127.0.0.1:56754] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.743498 2026] [proxy:error] [pid 11:tid 77] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.743510 2026] [proxy_http:error] [pid 11:tid 77] [client 127.0.0.1:56762] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.743844 2026] [proxy:error] [pid 11:tid 81] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.743856 2026] [proxy_http:error] [pid 11:tid 81] [client 127.0.0.1:56774] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.744220 2026] [proxy:error] [pid 11:tid 88] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.744232 2026] [proxy_http:error] [pid 11:tid 88] [client 127.0.0.1:56776] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.744607 2026] [proxy:error] [pid 11:tid 90] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.744620 2026] [proxy_http:error] [pid 11:tid 90] [client 127.0.0.1:56790] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.744995 2026] [proxy:error] [pid 10:tid 56] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.745008 2026] [proxy_http:error] [pid 10:tid 56] [client 127.0.0.1:56794] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.745435 2026] [proxy:error] [pid 11:tid 22] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.745453 2026] [proxy_http:error] [pid 11:tid 22] [client 127.0.0.1:56804] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.745888 2026] [proxy:error] [pid 11:tid 26] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.745901 2026] [proxy_http:error] [pid 11:tid 26] [client 127.0.0.1:56820] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.746292 2026] [proxy:error] [pid 11:tid 32] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.746329 2026] [proxy_http:error] [pid 11:tid 32] [client 127.0.0.1:56822] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.746748 2026] [proxy:error] [pid 11:tid 36] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.746762 2026] [proxy_http:error] [pid 11:tid 36] [client 127.0.0.1:56836] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.747161 2026] [proxy:error] [pid 11:tid 43] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.747173 2026] [proxy_http:error] [pid 11:tid 43] [client 127.0.0.1:56840] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.747495 2026] [proxy:error] [pid 11:tid 48] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.747506 2026] [proxy_http:error] [pid 11:tid 48] [client 127.0.0.1:56842] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.747870 2026] [proxy:error] [pid 11:tid 58] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.747882 2026] [proxy_http:error] [pid 11:tid 58] [client 127.0.0.1:56848] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.748237 2026] [proxy:error] [pid 11:tid 61] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.748249 2026] [proxy_http:error] [pid 11:tid 61] [client 127.0.0.1:56860] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.748631 2026] [proxy:error] [pid 11:tid 74] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.748643 2026] [proxy_http:error] [pid 11:tid 74] [client 127.0.0.1:56862] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.749018 2026] [proxy:error] [pid 11:tid 80] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.749028 2026] [proxy_http:error] [pid 11:tid 80] [client 127.0.0.1:56870] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.749361 2026] [proxy:error] [pid 11:tid 84] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.749373 2026] [proxy_http:error] [pid 11:tid 84] [client 127.0.0.1:56874] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.749742 2026] [proxy:error] [pid 11:tid 89] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.749754 2026] [proxy_http:error] [pid 11:tid 89] [client 127.0.0.1:56876] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.750098 2026] [proxy:error] [pid 11:tid 91] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.750110 2026] [proxy_http:error] [pid 11:tid 91] [client 127.0.0.1:56878] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.750508 2026] [proxy:error] [pid 11:tid 25] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.750520 2026] [proxy_http:error] [pid 11:tid 25] [client 127.0.0.1:56888] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.750839 2026] [proxy:error] [pid 11:tid 29] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.750852 2026] [proxy_http:error] [pid 11:tid 29] [client 127.0.0.1:56892] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.751206 2026] [proxy:error] [pid 11:tid 33] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.751217 2026] [proxy_http:error] [pid 11:tid 33] [client 127.0.0.1:56898] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.751564 2026] [proxy:error] [pid 11:tid 41] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.751576 2026] [proxy_http:error] [pid 11:tid 41] [client 127.0.0.1:56906] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.751930 2026] [proxy:error] [pid 11:tid 45] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.751941 2026] [proxy_http:error] [pid 11:tid 45] [client 127.0.0.1:56908] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.752305 2026] [proxy:error] [pid 11:tid 53] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.752316 2026] [proxy_http:error] [pid 11:tid 53] [client 127.0.0.1:56920] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.752647 2026] [proxy:error] [pid 11:tid 66] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.752659 2026] [proxy_http:error] [pid 11:tid 66] [client 127.0.0.1:56932] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.752986 2026] [proxy:error] [pid 11:tid 69] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.752999 2026] [proxy_http:error] [pid 11:tid 69] [client 127.0.0.1:56936] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.753434 2026] [proxy:error] [pid 11:tid 77] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.753447 2026] [proxy_http:error] [pid 11:tid 77] [client 127.0.0.1:56948] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.753801 2026] [proxy:error] [pid 10:tid 62] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.753815 2026] [proxy_http:error] [pid 10:tid 62] [client 127.0.0.1:56954] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.754171 2026] [proxy:error] [pid 11:tid 81] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.754182 2026] [proxy_http:error] [pid 11:tid 81] [client 127.0.0.1:56966] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.754536 2026] [proxy:error] [pid 11:tid 88] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.754555 2026] [proxy_http:error] [pid 11:tid 88] [client 127.0.0.1:56970] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.754901 2026] [proxy:error] [pid 11:tid 90] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.754914 2026] [proxy_http:error] [pid 11:tid 90] [client 127.0.0.1:56974] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.755295 2026] [proxy:error] [pid 11:tid 22] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.755306 2026] [proxy_http:error] [pid 11:tid 22] [client 127.0.0.1:56986] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.755647 2026] [proxy:error] [pid 11:tid 26] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.755658 2026] [proxy_http:error] [pid 11:tid 26] [client 127.0.0.1:56996] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.755965 2026] [proxy:error] [pid 11:tid 32] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.755983 2026] [proxy_http:error] [pid 11:tid 32] [client 127.0.0.1:57000] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.756364 2026] [proxy:error] [pid 11:tid 36] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.756382 2026] [proxy_http:error] [pid 11:tid 36] [client 127.0.0.1:57014] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.756759 2026] [proxy:error] [pid 11:tid 43] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.756772 2026] [proxy_http:error] [pid 11:tid 43] [client 127.0.0.1:57028] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.757153 2026] [proxy:error] [pid 11:tid 48] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.757164 2026] [proxy_http:error] [pid 11:tid 48] [client 127.0.0.1:57034] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.757484 2026] [proxy:error] [pid 11:tid 58] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.757495 2026] [proxy_http:error] [pid 11:tid 58] [client 127.0.0.1:57044] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.757850 2026] [proxy:error] [pid 11:tid 61] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.757861 2026] [proxy_http:error] [pid 11:tid 61] [client 127.0.0.1:57052] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.758233 2026] [proxy:error] [pid 11:tid 74] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.758245 2026] [proxy_http:error] [pid 11:tid 74] [client 127.0.0.1:57060] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.758698 2026] [proxy:error] [pid 11:tid 80] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.758712 2026] [proxy_http:error] [pid 11:tid 80] [client 127.0.0.1:57064] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.759073 2026] [proxy:error] [pid 11:tid 84] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.759084 2026] [proxy_http:error] [pid 11:tid 84] [client 127.0.0.1:57080] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.759444 2026] [proxy:error] [pid 11:tid 89] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.759456 2026] [proxy_http:error] [pid 11:tid 89] [client 127.0.0.1:57092] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.759812 2026] [proxy:error] [pid 11:tid 91] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.759828 2026] [proxy_http:error] [pid 11:tid 91] [client 127.0.0.1:57098] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.760142 2026] [proxy:error] [pid 11:tid 25] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.760155 2026] [proxy_http:error] [pid 11:tid 25] [client 127.0.0.1:57106] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.760500 2026] [proxy:error] [pid 11:tid 29] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.760513 2026] [proxy_http:error] [pid 11:tid 29] [client 127.0.0.1:57108] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.760821 2026] [proxy:error] [pid 11:tid 33] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.760834 2026] [proxy_http:error] [pid 11:tid 33] [client 127.0.0.1:57124] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.761214 2026] [proxy:error] [pid 11:tid 41] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.761227 2026] [proxy_http:error] [pid 11:tid 41] [client 127.0.0.1:57128] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.761661 2026] [proxy:error] [pid 10:tid 68] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.761673 2026] [proxy_http:error] [pid 10:tid 68] [client 127.0.0.1:57144] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.762038 2026] [proxy:error] [pid 11:tid 45] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.762051 2026] [proxy_http:error] [pid 11:tid 45] [client 127.0.0.1:57156] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.762436 2026] [proxy:error] [pid 10:tid 73] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.762447 2026] [proxy_http:error] [pid 10:tid 73] [client 127.0.0.1:57162] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.762840 2026] [proxy:error] [pid 10:tid 78] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.762853 2026] [proxy_http:error] [pid 10:tid 78] [client 127.0.0.1:57170] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.763222 2026] [proxy:error] [pid 11:tid 53] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.763234 2026] [proxy_http:error] [pid 11:tid 53] [client 127.0.0.1:57178] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.763620 2026] [proxy:error] [pid 11:tid 66] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.763633 2026] [proxy_http:error] [pid 11:tid 66] [client 127.0.0.1:57186] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.763960 2026] [proxy:error] [pid 11:tid 69] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.763980 2026] [proxy_http:error] [pid 11:tid 69] [client 127.0.0.1:57192] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.764290 2026] [proxy:error] [pid 11:tid 77] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.764301 2026] [proxy_http:error] [pid 11:tid 77] [client 127.0.0.1:57208] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.764611 2026] [proxy:error] [pid 10:tid 86] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.764624 2026] [proxy_http:error] [pid 10:tid 86] [client 127.0.0.1:57220] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.765001 2026] [proxy:error] [pid 11:tid 81] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.765012 2026] [proxy_http:error] [pid 11:tid 81] [client 127.0.0.1:57222] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.765410 2026] [proxy:error] [pid 11:tid 88] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.765423 2026] [proxy_http:error] [pid 11:tid 88] [client 127.0.0.1:57236] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.765776 2026] [proxy:error] [pid 11:tid 90] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.765788 2026] [proxy_http:error] [pid 11:tid 90] [client 127.0.0.1:57240] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.766236 2026] [proxy:error] [pid 10:tid 21] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.766250 2026] [proxy_http:error] [pid 10:tid 21] [client 127.0.0.1:57256] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.766580 2026] [proxy:error] [pid 10:tid 19] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.766593 2026] [proxy_http:error] [pid 10:tid 19] [client 127.0.0.1:57266] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.766955 2026] [proxy:error] [pid 11:tid 22] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.766965 2026] [proxy_http:error] [pid 11:tid 22] [client 127.0.0.1:57278] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.767314 2026] [proxy:error] [pid 11:tid 26] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.767327 2026] [proxy_http:error] [pid 11:tid 26] [client 127.0.0.1:57286] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339
+[Mon Oct 19 18:47:17.767655 2026] [proxy:error] [pid 11:tid 32] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.767665 2026] [proxy_http:error] [pid 11:tid 32] [client 127.0.0.1:57300] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+[Mon Oct 19 18:47:17.767959 2026] [proxy:error] [pid 11:tid 36] (111)Connection refused: AH00957: http: attempt to connect to 127.0.0.1:9 (127.0.0.1:9) failed
+[Mon Oct 19 18:47:17.767971 2026] [proxy_http:error] [pid 11:tid 36] [client 127.0.0.1:57306] AH01114: HTTP: failed to make connection to backend: 127.0.0.1
+127.0.0.1 - - [19/Oct/2026:18:47:17 +0000] "GET /api/orders HTTP/1.1" 503 339

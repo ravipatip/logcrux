@@ -1,0 +1,4 @@
+Snapshotting root@2bbdc9767b0e:/src/does-not-exist ...
+[31mERROR[0m encountered 2 errors:
+failed to prepare source: unable to get local filesystem entry: resolveSymlink: stat: lstat /src/does-not-exist: no such file or directory
+upload error: unsupported source: root@2bbdc9767b0e:/src/does-not-exist

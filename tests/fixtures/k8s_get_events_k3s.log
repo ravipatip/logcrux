@@ -1,0 +1,37 @@
+LAST SEEN   TYPE      REASON                           OBJECT              MESSAGE
+2m36s       Normal    Starting                         node/b7e29614d729   
+2m30s       Normal    Scheduled                        pod/hungry-worker   Successfully assigned default/hungry-worker to b7e29614d729
+2m30s       Normal    Scheduled                        pod/crashy-api      Successfully assigned default/crashy-api to b7e29614d729
+2m30s       Normal    Scheduled                        pod/healthy-web     Successfully assigned default/healthy-web to b7e29614d729
+2m30s       Normal    Scheduled                        pod/typo-image      Successfully assigned default/typo-image to b7e29614d729
+2m37s       Normal    NodeHasNoDiskPressure            node/b7e29614d729   Node b7e29614d729 status is now: NodeHasNoDiskPressure
+2m37s       Normal    NodeAllocatableEnforced          node/b7e29614d729   Updated Node Allocatable limit across pods
+2m37s       Normal    NodeReady                        node/b7e29614d729   Node b7e29614d729 status is now: NodeReady
+2m37s       Normal    Starting                         node/b7e29614d729   Starting kubelet.
+2m37s       Normal    NodeHasSufficientPID             node/b7e29614d729   Node b7e29614d729 status is now: NodeHasSufficientPID
+2m37s       Normal    NodeHasSufficientMemory          node/b7e29614d729   Node b7e29614d729 status is now: NodeHasSufficientMemory
+2m37s       Warning   InvalidDiskCapacity              node/b7e29614d729   invalid capacity 0 on image filesystem
+2m34s       Normal    NodePasswordValidationComplete   node/b7e29614d729   Deferred node password secret validation complete
+2m33s       Normal    RegisteredNode                   node/b7e29614d729   Node b7e29614d729 event: Registered Node b7e29614d729 in Controller
+2m33s       Normal    Synced                           node/b7e29614d729   Node synced successfully
+2m27s       Normal    Pulling                          pod/hungry-worker   Pulling image "python:3.12-alpine"
+2m27s       Normal    Pulling                          pod/crashy-api      Pulling image "busybox:1.36"
+2m27s       Normal    Pulling                          pod/healthy-web     Pulling image "busybox:1.36"
+2m19s       Normal    Created                          pod/healthy-web     Created container web
+2m19s       Normal    Pulled                           pod/healthy-web     Successfully pulled image "busybox:1.36" in 8.655s (8.655s including waiting). Image size: 1906887 bytes.
+2m19s       Normal    Pulled                           pod/crashy-api      Successfully pulled image "busybox:1.36" in 8.656s (8.656s including waiting). Image size: 1906887 bytes.
+2m18s       Normal    Started                          pod/healthy-web     Started container web
+2m          Normal    Pulled                           pod/hungry-worker   Successfully pulled image "python:3.12-alpine" in 27.119s (27.119s including waiting). Image size: 21423636 bytes.
+57s         Normal    Pulling                          pod/typo-image      Pulling image "busybox:1.36-doesnotexist"
+56s         Warning   Failed                           pod/typo-image      Failed to pull image "busybox:1.36-doesnotexist": rpc error: code = NotFound desc = failed to pull and unpack image "docker.io/library/busybox:1.36-doesnotexist": failed to resolve reference "docker.io/library/busybox:1.36-doesnotexist": docker.io/library/busybox:1.36-doesnotexist: not found
+56s         Warning   Failed                           pod/typo-image      Error: ErrImagePull
+44s         Normal    Created                          pod/crashy-api      Created container api
+44s         Normal    Pulled                           pod/crashy-api      Container image "busybox:1.36" already present on machine
+44s         Normal    Started                          pod/crashy-api      Started container api
+43s         Warning   BackOff                          pod/crashy-api      Back-off restarting failed container api in pod crashy-api_default(83078d5a-3552-499c-b7bc-f2c65266abad)
+42s         Warning   Failed                           pod/typo-image      Error: ImagePullBackOff
+31s         Normal    Started                          pod/hungry-worker   Started container worker
+31s         Normal    Pulled                           pod/hungry-worker   Container image "python:3.12-alpine" already present on machine
+31s         Normal    Created                          pod/hungry-worker   Created container worker
+27s         Normal    BackOff                          pod/typo-image      Back-off pulling image "busybox:1.36-doesnotexist"
+16s         Warning   BackOff                          pod/hungry-worker   Back-off restarting failed container worker in pod hungry-worker_default(18e89ec2-0437-4aeb-8329-e4076f517c4a)

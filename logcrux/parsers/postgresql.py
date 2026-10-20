@@ -6,7 +6,7 @@ from pathlib import Path
 from dateutil import parser as dateparser
 
 from logcrux.models import ParsedEvent, Severity
-from logcrux.parsers.base import LogParser
+from logcrux.parsers.base import INDENTED_CONTINUATION, LogParser
 
 # Most common log_line_prefix formats:
 # %t [%p]: [%l-1] user=%u,db=%d ...
@@ -33,6 +33,25 @@ _PATTERN_B = re.compile(
     r" *(?P<message>.*)"
 )
 
+# Variant C — SUSE's packaged default, log_line_prefix = '%m %d %u [%p]'
+# (SLES 15 SP7 / PG 17 and openSUSE Leap 16 / PG 18, real GCP VMs 2026-10-13).
+# No space between "]" and the level; empty %d/%u leave a run of spaces:
+#   2026-10-13 03:55:08.202 UTC   [4385]LOG:  server process (PID 4511) was ...
+#   2026-10-13 03:55:01.561 UTC postgres postgres [4428]FATAL:  password ...
+_PATTERN_C = re.compile(
+    r"(?P<ts>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}(?:\.\d+)?) "
+    r"(?P<tz>[A-Z]{2,5}|[+-]\d{4}) "
+    r"(?P<db>\S*) (?P<user>\S*) "
+    r"\[(?P<pid>\d+)\]"
+    r"(?P<level>LOG|INFO|NOTICE|WARNING|ERROR|FATAL|PANIC|DEBUG\d*"
+    r"|DETAIL|HINT|STATEMENT|CONTEXT|LOCATION): "
+    r" *(?P<message>.*)"
+)
+_DETECT_C = re.compile(
+    r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}(?:\.\d+)? [A-Z]{2,5} \S* \S* \[\d+\]"
+    r"(?:LOG|INFO|NOTICE|WARNING|ERROR|FATAL|PANIC|DEBUG\d*|DETAIL|HINT|STATEMENT|CONTEXT):"
+)
+
 _DETECT_A = re.compile(
     r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}(?:\.\d+)? [A-Z]{2,5} \[\d+\]"
 )
@@ -57,6 +76,8 @@ def _pg_severity(level: str) -> Severity:
 
 class PostgreSQLParser(LogParser):
     FORMAT_NAME = "postgresql"
+    # Multi-line DETAIL/STATEMENT text continues on tab-indented lines.
+    CONTINUATION = INDENTED_CONTINUATION
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:
@@ -65,14 +86,14 @@ class PostgreSQLParser(LogParser):
             if "postgres" in p or "pgsql" in p or "pg_log" in p:
                 return True
         return any(
-            _DETECT_A.match(line) or _DETECT_B.match(line)
+            _DETECT_A.match(line) or _DETECT_B.match(line) or _DETECT_C.match(line)
             for line in sample_lines[:10]
         )
 
     def parse_line(self, line: str, line_number: int) -> ParsedEvent | None:
         if not line:
             return None
-        m = _PATTERN_A.match(line) or _PATTERN_B.match(line)
+        m = _PATTERN_A.match(line) or _PATTERN_B.match(line) or _PATTERN_C.match(line)
         if not m:
             return None
         try:

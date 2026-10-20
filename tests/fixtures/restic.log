@@ -1,0 +1,30 @@
+no parent snapshot found, will read all files
+
+Files:           3 new,     0 changed,     0 unmodified
+Dirs:            2 new,     0 changed,     0 unmodified
+Added to the repository: 480.247 KiB (479.787 KiB stored)
+
+processed 3 files, 478.536 KiB in 0:00
+snapshot b252f12f saved
+ID        Time                 Host          Tags        Paths  Size
+---------------------------------------------------------------------------
+c8b4b798  2026-07-28 04:45:35  labhost              /data  0 B
+b252f12f  2026-07-28 04:46:17  labhost              /seed  478.536 KiB
+---------------------------------------------------------------------------
+Timestamps shown in UTC
+2 snapshots
+
+using parent snapshot c8b4b798
+error: failed to save /data/nested/inner.bin: read /data/nested/inner.bin: input/output error
+error: failed to save /data/blob.bin: read /data/blob.bin: input/output error
+
+Stat(<config/>) returned error, retrying after 1.117876261s: Stat: Get "http://minio:9000/restic/?location=": dial tcp: lookup minio on 127.0.0.11:53: no such host
+Stat(<config/>) returned error, retrying after 1.766505867s: Stat: Get "http://minio:9000/restic/?location=": dial tcp: lookup minio on 127.0.0.11:53: no such host
+Stat(<config/>) returned error, retrying after 2.824233598s: Stat: Get "http://minio:9000/restic/?location=": dial tcp: lookup minio on 127.0.0.11:53: no such host
+Stat(<config/>) operation successful after 1 retries
+signal terminated received, cleaning up 
+using temporary cache in /tmp/restic-check-cache-3398252977
+no errors were found
+Fatal: wrong password or no key found
+/seed/missing-dir does not exist, skipping
+Fatal: all source directories/files do not exist

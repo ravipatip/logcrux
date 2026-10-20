@@ -40,6 +40,7 @@ def _severity(message: str) -> Severity:
 
 class SendmailParser(LogParser):
     FORMAT_NAME = "sendmail"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

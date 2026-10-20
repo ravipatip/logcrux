@@ -68,7 +68,7 @@ class PinoParser(LogParser):
             except (ValueError, OSError, OverflowError):
                 ts = None
         level = int(obj["level"])
-        extra: dict[str, object] = {"level": level}
+        extra: dict[str, object] = {"level": level, "app_logger": True}
         for key in ("pid", "hostname", "name", "reqId", "req", "err"):
             if key in obj:
                 extra[key] = obj[key]

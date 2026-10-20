@@ -1,0 +1,1038 @@
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Linux version 6.12.111+deb13-cloud-amd64 (debian-kernel@lists.debian.org) (x86_64-linux-gnu-gcc-14 (Debian 14.2.0-19) 14.2.0, GNU ld (GNU Binutils for Debian) 2.44) #1 SMP PREEMPT_DYNAMIC Debian 6.12.111-1 (2026-09-28)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-6.12.111+deb13-cloud-amd64 root=PARTUUID=40274118-dd49-4068-b5d9-f2a9e69c1508 ro console=tty0 console=ttyS0,115200 earlyprintk=ttyS0,115200 consoleblank=0 intel_iommu=off
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-provided physical RAM map:
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x0000000000000000-0x0000000000000fff] reserved
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x0000000000001000-0x0000000000054fff] usable
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x0000000000055000-0x000000000005ffff] reserved
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x0000000000060000-0x0000000000097fff] usable
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x0000000000098000-0x000000000009ffff] reserved
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000bd308fff] usable
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x00000000bd309000-0x00000000bd313fff] ACPI data
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x00000000bd314000-0x00000000bf8ecfff] usable
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x00000000bf8ed000-0x00000000bfb6cfff] reserved
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x00000000bfb6d000-0x00000000bfb7efff] ACPI data
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x00000000bfb7f000-0x00000000bfbfefff] ACPI NVS
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x00000000bfbff000-0x00000000bffdffff] usable
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x00000000bffe0000-0x00000000bfffffff] reserved
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: BIOS-e820: [mem 0x0000000100000000-0x000000023fffffff] usable
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: printk: legacy bootconsole [earlyser0] enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NX (Execute Disable) protection: active
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: APIC: Static calls initialized
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: efi: EFI v2.7 by EDK II
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: efi: TPMFinalLog=0xbfbf7000 ACPI=0xbfb7e000 ACPI 2.0=0xbfb7e014 SMBIOS=0xbf9ca000 MEMATTR=0xbd318018 MOKvar=0xbf9c0000 INITRD=0xbd324318 RNG=0xbfb73018 TPMEventLog=0xbd309018 
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: random: crng init done
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: secureboot: Secure boot disabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: SMBIOS 2.4 present.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: DMI: Google Google Compute Engine/Google Compute Engine, BIOS Google 07/24/2026
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: DMI: Memory slots populated: 1/1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Hypervisor detected: KVM
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: last_pfn = 0xbffe0 max_arch_pfn = 0x400000000
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: kvm-clock: using sched offset of 13659676882 cycles
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: tsc: Detected 2200.156 MHz processor
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: last_pfn = 0x240000 max_arch_pfn = 0x400000000
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: MTRR map: 3 entries (2 fixed + 1 variable; max 18), built from 8 variable MTRRs
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: last_pfn = 0xbffe0 max_arch_pfn = 0x400000000
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Using GB pages for direct mapping
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: RAMDISK: [mem 0xb6fca000-0xb81dafff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Early table checksum verification disabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: RSDP 0x00000000BFB7E014 000024 (v02 Google)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: XSDT 0x00000000BFB7D0E8 00005C (v01 Google GOOGFACP 00000001      01000013)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: FACP 0x00000000BFB78000 0000F4 (v02 Google GOOGFACP 00000001 GOOG 00000001)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: DSDT 0x00000000BFB79000 001A64 (v01 Google GOOGDSDT 00000001 GOOG 00000001)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: FACS 0x00000000BFBF2000 000040
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: SSDT 0x00000000BFB7C000 000316 (v02 GOOGLE Tpm2Tabl 00001000 INTL 20250807)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: TPM2 0x00000000BFB7B000 000034 (v04 GOOGLE          00000001 GOOG 00000001)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: SRAT 0x00000000BFB77000 0000C8 (v03 Google GOOGSRAT 00000001 GOOG 00000001)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: APIC 0x00000000BFB76000 000076 (v05 Google GOOGAPIC 00000001 GOOG 00000001)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: SSDT 0x00000000BFB75000 000980 (v01 Google GOOGSSDT 00000001 GOOG 00000001)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: WAET 0x00000000BFB74000 000028 (v01 Google GOOGWAET 00000001 GOOG 00000001)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Reserving FACP table memory at [mem 0xbfb78000-0xbfb780f3]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Reserving DSDT table memory at [mem 0xbfb79000-0xbfb7aa63]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Reserving FACS table memory at [mem 0xbfbf2000-0xbfbf203f]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Reserving SSDT table memory at [mem 0xbfb7c000-0xbfb7c315]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Reserving TPM2 table memory at [mem 0xbfb7b000-0xbfb7b033]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Reserving SRAT table memory at [mem 0xbfb77000-0xbfb770c7]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Reserving APIC table memory at [mem 0xbfb76000-0xbfb76075]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Reserving SSDT table memory at [mem 0xbfb75000-0xbfb7597f]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Reserving WAET table memory at [mem 0xbfb74000-0xbfb74027]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0x0009ffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00100000-0xbfffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000-0x23fffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NUMA: Node 0 [mem 0x00001000-0x0009ffff] + [mem 0x00100000-0xbfffffff] -> [mem 0x00001000-0xbfffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NUMA: Node 0 [mem 0x00001000-0xbfffffff] + [mem 0x100000000-0x23fffffff] -> [mem 0x00001000-0x23fffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NODE_DATA(0) allocated [mem 0x23ffd5680-0x23fffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Zone ranges:
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   Normal   [mem 0x0000000100000000-0x000000023fffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   Device   empty
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Movable zone start for each node
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Early memory node ranges
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   node   0: [mem 0x0000000000001000-0x0000000000054fff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   node   0: [mem 0x0000000000060000-0x0000000000097fff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   node   0: [mem 0x0000000000100000-0x00000000bd308fff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   node   0: [mem 0x00000000bd314000-0x00000000bf8ecfff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   node   0: [mem 0x00000000bfbff000-0x00000000bffdffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   node   0: [mem 0x0000000100000000-0x000000023fffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000023fffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: On node 0, zone DMA: 11 pages in unavailable ranges
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: On node 0, zone DMA: 104 pages in unavailable ranges
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: On node 0, zone DMA32: 11 pages in unavailable ranges
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: On node 0, zone DMA32: 786 pages in unavailable ranges
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: On node 0, zone Normal: 32 pages in unavailable ranges
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: PM-Timer IO Port: 0xb008
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: CPU topo: Max. logical packages:   1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: CPU topo: Max. logical dies:       1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: CPU topo: Max. dies per package:   1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: CPU topo: Max. threads per core:   2
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: CPU topo: Num. cores per package:     1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: CPU topo: Num. threads per package:   2
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: CPU topo: Allowing 2 present CPUs plus 0 hotplug CPUs
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PM: hibernation: Registered nosave memory: [mem 0x00055000-0x0005ffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PM: hibernation: Registered nosave memory: [mem 0x00098000-0x000fffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PM: hibernation: Registered nosave memory: [mem 0xbd309000-0xbd313fff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PM: hibernation: Registered nosave memory: [mem 0xbf8ed000-0xbfbfefff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PM: hibernation: Registered nosave memory: [mem 0xbffe0000-0xffffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: [mem 0xc0000000-0xffffffff] available for PCI devices
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Booting paravirtualized kernel on KVM
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: percpu: Embedded 66 pages/cpu s233472 r8192 d28672 u1048576
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pcpu-alloc: s233472 r8192 d28672 u1048576 alloc=1*2097152
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pcpu-alloc: [0] 0 1 
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: kvm-guest: PV spinlocks enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.12.111+deb13-cloud-amd64 root=PARTUUID=40274118-dd49-4068-b5d9-f2a9e69c1508 ro console=tty0 console=ttyS0,115200 earlyprintk=ttyS0,115200 consoleblank=0 intel_iommu=off
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: DMAR: IOMMU disabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Fallback order for Node 0: 0 
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2096207
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Policy zone: Normal
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: software IO TLB: area num 2.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Kernel/User page tables isolation: enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ftrace: allocating 42497 entries in 168 pages
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ftrace: allocated 168 pages with 3 groups
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Dynamic Preempt: voluntary
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rcu: Preemptible hierarchical RCU implementation.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=2.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:         Trampoline variant of Tasks RCU enabled.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:         Rude variant of Tasks RCU enabled.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:         Tracing variant of Tasks RCU enabled.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: RCU Tasks Rude: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NR_IRQS: 524544, nr_irqs: 440, preallocated irqs: 16
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Console: colour dummy device 80x25
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: printk: legacy console [tty0] enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: printk: legacy console [ttyS0] enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: printk: legacy bootconsole [earlyser0] disabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Core revision 20240827
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: APIC: Switch to symmetric I/O mode setup
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x2apic enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: APIC: Switched APIC routing to: physical x2apic
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ..TIMER: vector=0x30 apic1=0 pin1=0 apic2=-1 pin2=-1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1fb6c613963, max_idle_ns: 440795245426 ns
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Calibrating delay loop (skipped) preset value.. 4400.31 BogoMIPS (lpj=8800624)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Last level dTLB entries: 4KB 64, 2MB 32, 4MB 32, 1GB 4
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Spectre V2 : Spectre BHI mitigation: SW BHB clearing on syscall and VM exit
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Spectre V2 : Mitigation: IBRS
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Spectre V2 : Enabling IBPB for BPF
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: RETBleed: Mitigation: IBRS
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Spectre V2 : User space: Mitigation: STIBP via prctl
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: MDS: Mitigation: Clear CPU buffers
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: TAA: Mitigation: Clear CPU buffers
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: active return thunk: its_return_thunk
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ITS: Mitigation: Aligned branch/return thunks
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Freeing SMP alternatives memory: 40K
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pid_max: default: 32768 minimum: 301
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,tomoyo,bpf,ipe,ima,evm
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: landlock: Up and running.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Yama: disabled by default; enable with sysctl kernel.yama.*
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: AppArmor: AppArmor initialized
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: TOMOYO Linux initialized
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: LSM support for eBPF active
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: smpboot: CPU0: Intel(R) Xeon(R) CPU @ 2.20GHz (family: 0x6, model: 0x4f, stepping: 0x0)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Performance Events: unsupported p6 CPU model 79 no PMU driver, software events only.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: signal: max sigframe size: 1776
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rcu: Hierarchical SRCU implementation.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rcu:         Max phase no-delay instances is 1000.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: smp: Bringing up secondary CPUs ...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: smpboot: x86: Booting SMP configuration:
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: .... node  #0, CPUs:      #1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: TAA CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/tsx_async_abort.html for more details.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: MMIO Stale Data CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/processor_mmio_stale_data.html for more details.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: smp: Brought up 1 node, 2 CPUs
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: smpboot: Total of 2 processors activated (8800.62 BogoMIPS)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: node 0 deferred pages initialised in 24ms
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Memory: 8049004K/8384828K available (16384K kernel code, 2506K rwdata, 11016K rodata, 3944K init, 5276K bss, 330808K reserved, 0K cma-reserved)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: devtmpfs: initialized
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x86/mm: Memory block size: 128MB
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: PM: Registering ACPI NVS region [mem 0xbfb7f000-0xbfbfefff] (524288 bytes)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: audit: initializing netlink subsys (disabled)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=2000 audit(1792439600.089:1): state=initialized audit_enabled=0 res=1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: thermal_sys: Registered thermal governor 'fair_share'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: thermal_sys: Registered thermal governor 'user_space'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: cpuidle: using governor ladder
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: cpuidle: using governor menu
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: efi: Freeing EFI boot services memory: 56232K
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PCI: Using configuration type 1 for base access
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Added _OSI(Module Device)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Added _OSI(Processor Device)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: 3 ACPI AML tables successfully acquired and loaded
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Interpreter enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Using IOAPIC for interrupt routing
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PCI: Ignoring E820 reservations for host bridge windows
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: Enabled 16 GPEs in block 00 to 0F
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PCI host bridge to bus 0000:00
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfefff window]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:01.0: [8086:7110] type 00 class 0x060100 conventional PCI endpoint
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:03.0: [1af4:1004] type 00 class 0x000000 conventional PCI endpoint
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:03.0: BAR 0 [io  0xc040-0xc07f]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:03.0: BAR 1 [mem 0xc0001000-0xc000107f]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:04.0: [1af4:1000] type 00 class 0x020000 conventional PCI endpoint
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:04.0: BAR 0 [io  0xc000-0xc03f]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:04.0: BAR 1 [mem 0xc0000000-0xc000007f]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:05.0: [1af4:1002] type 00 class 0x00ff00 conventional PCI endpoint
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:05.0: BAR 0 [io  0xc0a0-0xc0bf]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:06.0: [1af4:1005] type 00 class 0x00ff00 conventional PCI endpoint
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:06.0: BAR 0 [io  0xc080-0xc09f]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:06.0: BAR 1 [mem 0xc0002000-0xc000203f]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: PCI: Interrupt link LNKS configured for IRQ 9
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: iommu: Default domain type: Translated
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pps_core: LinuxPPS API ver. 1 registered
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PTP clock support registered
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: efivars: Registered efivars operations
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NetLabel: Initializing
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NetLabel:  domain hash size = 128
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NetLabel:  unlabeled traffic allowed by default
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PCI: Using ACPI for IRQ routing
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PCI: pci_cache_line_size set to 64 bytes
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: e820: reserve RAM buffer [mem 0x00055000-0x0005ffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: e820: reserve RAM buffer [mem 0x00098000-0x0009ffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: e820: reserve RAM buffer [mem 0xbd309000-0xbfffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: e820: reserve RAM buffer [mem 0xbf8ed000-0xbfffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: e820: reserve RAM buffer [mem 0xbffe0000-0xbfffffff]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: vgaarb: loaded
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: clocksource: Switched to clocksource kvm-clock
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: VFS: Disk quotas dquot_6.6.0
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: AppArmor: AppArmor Filesystem Enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pnp: PnP ACPI init
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pnp: PnP ACPI: found 7 devices
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NET: Registered PF_INET protocol family
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: TCP: Hash tables configured (established 65536 bind 65536)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: MPTCP token hash table entries: 8192 (order: 6, 196608 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NET: Registered PF_XDP protocol family
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfefff window]
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PCI: CLS 0 bytes, default 64
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Trying to unpack rootfs image as initramfs...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: software IO TLB: mapped [mem 0x00000000b2fca000-0x00000000b6fca000] (64MB)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fb6c613963, max_idle_ns: 440795245426 ns
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: clocksource: Switched to clocksource tsc
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Initialise system trusted keyrings
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Key type blacklist registered
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: workingset: timestamp_bits=36 max_order=21 bucket_order=0
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: fuse: init (API version 7.41)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: integrity: Platform Keyring initialized
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: integrity: Machine keyring initialized
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Key type asymmetric registered
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Asymmetric key parser 'x509' registered
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Freeing initrd memory: 18500K
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: \_SB_.LNKC: Enabled at IRQ 11
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: virtio-pci 0000:00:03.0: virtio_pci: leaving for legacy driver
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: \_SB_.LNKD: Enabled at IRQ 10
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: virtio-pci 0000:00:04.0: virtio_pci: leaving for legacy driver
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: \_SB_.LNKA: Enabled at IRQ 10
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: virtio-pci 0000:00:05.0: virtio_pci: leaving for legacy driver
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: \_SB_.LNKB: Enabled at IRQ 11
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: virtio-pci 0000:00:06.0: virtio_pci: leaving for legacy driver
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: 00:03: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: 00:04: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: 00:05: ttyS2 at I/O 0x3e8 (irq = 6, base_baud = 115200) is a 16550A
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: 00:06: ttyS3 at I/O 0x2e8 (irq = 7, base_baud = 115200) is a 16550A
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: tpm_tis MSFT0101:00: 2.0 TPM (device-id 0x9009, rev-id 0)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Key type psk registered
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: i8042: Warning: Keylock active
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rtc_cmos 00:00: RTC can wake from S4
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rtc_cmos 00:00: registered as rtc0
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rtc_cmos 00:00: setting system clock to 2026-10-19T19:53:20 UTC (1792439600)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: rtc_cmos 00:00: alarms up to one day, 114 bytes nvram
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: intel_pstate: CPU model not supported
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NET: Registered PF_INET6 protocol family
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Segment Routing with IPv6
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: In-situ OAM (IOAM) with IPv6
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: mip6: Mobile IPv6
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NET: Registered PF_PACKET protocol family
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: resctrl: No MBM correction factor available
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: IPI shorthand broadcast: enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: sched_clock: Marking stable (1317088545, 26205363)->(1352646515, -9352607)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: registered taskstats version 1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Loading compiled-in X.509 certificates
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: f60dd966f3d3bf03ad4288a967de7b8ec18fc810'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Demotion targets for Node 0: null
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Key type .fscrypt registered
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Key type fscrypt-provisioning registered
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Key type encrypted registered
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: AppArmor: AppArmor sha256 policy hashing enabled
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: integrity: Loaded X.509 cert 'Microsoft UEFI CA 2023: 81aa6b3244c935bce0d6628af39827421e32497d'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ima: Allocated hash algorithm: sha256
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: ima: No architecture policies found
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: evm: Initialising EVM extended attributes:
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: evm: security.selinux
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: evm: security.SMACK64 (disabled)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: evm: security.SMACK64EXEC (disabled)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: evm: security.SMACK64TRANSMUTE (disabled)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: evm: security.SMACK64MMAP (disabled)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: evm: security.apparmor
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: evm: security.ima
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: evm: security.capability
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: evm: HMAC attrs: 0x1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: RAS: Correctable Errors collector initialized.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Freeing unused decrypted memory: 2028K
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Freeing unused kernel image (initmem) memory: 3944K
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Write protecting the kernel read-only data: 28672k
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Freeing unused kernel image (rodata/data gap) memory: 1272K
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x86/mm: Checking user space page tables
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Run /init as init process
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   with arguments:
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:     /init
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:   with environment:
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:     HOME=/
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:     TERM=linux
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: SCSI subsystem initialized
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: virtio_scsi virtio0: 1/0/0 default/read/poll queues
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: scsi host0: Virtio SCSI HBA
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: blk-mq: reduced tag depth to 10240
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: scsi 0:0:1:0: Direct-Access     Google   PersistentDisk   1    PQ: 0 ANSI: 6
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: virtio_net virtio1 ens4: renamed from eth0
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: sd 0:0:1:0: [sda] 62914560 512-byte logical blocks: (32.2 GB/30.0 GiB)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: sd 0:0:1:0: [sda] 4096-byte physical blocks
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: sd 0:0:1:0: [sda] Write Protect is off
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: sd 0:0:1:0: [sda] Mode Sense: 1f 00 00 08
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: sd 0:0:1:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: GPT:Primary header thinks Alt. header is not at the end of the disk.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: GPT:20971519 != 62914559
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: GPT:Alternate GPT header not at the end of the disk.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: GPT:20971519 != 62914559
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: GPT: Use GNU Parted to correct GPT errors.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:  sda: sda1 sda14 sda15
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: sd 0:0:1:0: [sda] Attached SCSI disk
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 gce-disk-expand: Resizing partition on 
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 gce-disk-expand: Moving GPT header for /dev/sda with sgdisk.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:  sda: sda1 sda14 sda15
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 gce-disk-expand: Resizing /dev/sda partition 1 with parted.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 gce-disk-expand: Done
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel:  sda: sda1 sda14 sda15
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: EXT4-fs (sda1): mounted filesystem 59aae5c7-17fc-4af1-8e9d-1575bd521ea9 ro with ordered data mode. Quota mode: none.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Inserted module 'autofs4'
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd 257.13-1~deb13u1 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Detected virtualization google.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Detected architecture x86-64.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Hostname set to <inst-builder-debian-13-build-build-hj6h0>.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Initializing machine ID from random generator.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Installed transient /etc/machine-id file.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: bpf-restrict-fs: LSM BPF program attached
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Guest personality initialized and is inactive
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: VMCI host device registered (name=vmci, major=10, minor=260)
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: Initialized host personality
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: NET: Registered PF_VSOCK protocol family
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd-ssh-generator[273]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 (sd-exec-[262]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Queued start job for default target graphical.target.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Created slice user.slice - User and Session Slice.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Expecting device dev-disk-by\x2dpartuuid-ae3df7b2\x2d16b1\x2d4ff6\x2db5ac\x2d4fe7aa6a2d32.device - /dev/disk/by-partuuid/ae3df7b2-16b1-4ff6-b5ac-4fe7aa6a2d32...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target paths.target - Path Units.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target remote-fs.target - Remote File Systems.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target slices.target - Slice Units.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target swap.target - Swaps.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on syslog.socket - Syslog Socket.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-pcrextend.socket - TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-uki
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounting run-lock.mount - Legacy Locks Directory /run/lock...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounting tmp.mount - Temporary Directory /tmp...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pstore: Using crash dump compression: deflate
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 kernel: pstore: Registered efi_pstore as persistent store backend
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting modprobe@nvme_fabrics.service - Load Kernel Module nvme_fabrics...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup skipped, unmet condition check ConditionFileIsExecutable=/usr/bin/ovs-vsctl
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-fsck-root.service - File System Check on Root Device...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-journald.service - Journal Service...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-network-generator.service - Generate Network Units from Kernel Command Line...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-pcrmachine.service - TPM PCR Machine ID Measurement skipped, unmet condition check ConditionSecurity=measured-uki
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-uki
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd-journald[294]: Collecting audit messages is disabled.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd-journald[294]: Journal started
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd-journald[294]: Runtime Journal (/run/log/journal/defe32d597f0435581c19c303a152972) is 8M, max 79.4M, 71.4M free.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd-fsck[298]: /dev/sda1: clean, 90120/647168 files, 580573/2588416 blocks
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started systemd-journald.service - Journal Service.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounted run-lock.mount - Legacy Locks Directory /run/lock.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounted tmp.mount - Temporary Directory /tmp.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: modprobe@drm.service: Deactivated successfully.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished modprobe@drm.service - Load Kernel Module drm.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: modprobe@nvme_fabrics.service: Deactivated successfully.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished modprobe@nvme_fabrics.service - Load Kernel Module nvme_fabrics.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-fsck-root.service - File System Check on Root Device.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-network-generator.service - Generate Network Units from Kernel Command Line.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-udev-load-credentials.service - Load udev Rules from Credentials.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-udev-trigger.service - Coldplug All udev Devices.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target network-pre.target - Preparation for Network.
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+Oct 19 19:53:25 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 kernel: EXT4-fs (sda1): re-mounted 59aae5c7-17fc-4af1-8e9d-1575bd521ea9 r/w.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounted sys-fs-fuse-connections.mount - FUSE Control File System.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounted sys-kernel-config.mount - Kernel Configuration File System.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-sysctl.service - Apply Kernel Variables.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-growfs-root.service - Grow Root File System...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database skipped, no trigger condition checks were met.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-journal-flush.service - Flush Journal to Persistent Storage...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival skipped, unmet condition check ConditionDirectoryNotEmpty=/sys/fs/pstore
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-random-seed.service - Load/Save OS Random Seed...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd-journald[294]: Time spent on flushing to /var/log/journal/defe32d597f0435581c19c303a152972 is 427.898ms for 539 entries.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd-journald[294]: System Journal (/var/log/journal/defe32d597f0435581c19c303a152972) is 8M, max 985.2M, 977.2M free.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd-journald[294]: Received client request to flush runtime journal.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 kernel: EXT4-fs (sda1): resizing filesystem from 2588416 to 7831296 blocks
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-sysusers.service - Create System Users...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-tpm2-setup.service - TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-uki
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-sysusers.service - Create System Users.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-journal-flush.service - Flush Journal to Persistent Storage.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-random-seed.service - Load/Save OS Random Seed.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 kernel: EXT4-fs (sda1): resized filesystem to 7831296
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-resolved.service - Network Name Resolution...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd-growfs[336]: Successfully resized "/" to 29.8G bytes (512 bytes lost due to blocksize).
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-timesyncd.service - Network Time Synchronization...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-growfs-root.service - Grow Root File System.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-udevd.service - Rule-based Manager for Device Events and Files...
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started systemd-timesyncd.service - Network Time Synchronization.
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd-resolved[345]: Positive Trust Anchors:
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd-resolved[345]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd-resolved[345]: . IN DS 38696 8 2 683d2d0acb8c9b712a1948b27f741219298d0a450d612c483af444a4c0fb2b16
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd-resolved[345]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 170.0.0.192.in-addr.arpa 171.0.0.192.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa ipv4only.arpa resolver.arpa corp home internal intranet lan local private test
+Oct 19 19:53:26 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target time-set.target - System Time Set.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-resolved[345]: Using system hostname 'inst-builder-debian-13-build-build-hj6h0'.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started systemd-resolved.service - Network Name Resolution.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-udevd[355]: Using default interface naming scheme 'v257'.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target nss-lookup.target - Host and Network Name Lookups.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started systemd-udevd.service - Rule-based Manager for Device Events and Files.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: nvmefc-boot-connections.service - Auto-connect to subsystems on FC-NVME devices found during boot skipped, unmet condition check ConditionPathExists=/sys/class/fc/fc_udev_device/nvme_discovery
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target local-fs-pre.target - Preparation for Local File Systems.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-networkd.service - Network Configuration...
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Found device dev-ttyS0.device - /dev/ttyS0.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-timesyncd[347]: Network configuration changed, trying to establish connection.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-timesyncd[347]: Network configuration changed, trying to establish connection.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target tpm2.target - Trusted Platform Module.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-timesyncd[347]: Network configuration changed, trying to establish connection.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-timesyncd[347]: Network configuration changed, trying to establish connection.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 kernel: sd 0:0:1:0: Attached scsi generic sg0 type 0
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-networkd[371]: lo: Link UP
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-networkd[371]: lo: Gained carrier
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input3
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started systemd-networkd.service - Network Configuration.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-networkd[371]: ens4: Configuring with /run/systemd/network/10-netplan-all-en.network.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-networkd[371]: ens4: Link UP
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-networkd[371]: ens4: Gained carrier
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target network.target - Network.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: button: Power Button [PWRF]
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-networkd-persistent-storage.service - Enable Persistent Storage in systemd-networkd...
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input4
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-networkd[371]: ens4: DHCPv4 address 10.128.0.13/32, gateway 10.128.0.1 acquired from 169.254.169.254
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-timesyncd[347]: Network configuration changed, trying to establish connection.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-networkd-wait-online.service - Wait for Network to be Configured...
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-networkd-persistent-storage.service - Enable Persistent Storage in systemd-networkd.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 kernel: ACPI: button: Sleep Button [SLPF]
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Found device dev-disk-by\x2dpartuuid-ae3df7b2\x2d16b1\x2d4ff6\x2db5ac\x2d4fe7aa6a2d32.device - PersistentDisk 15.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-fsck@dev-disk-by\x2dpartuuid-ae3df7b2\x2d16b1\x2d4ff6\x2db5ac\x2d4fe7aa6a2d32.service - File System Check on /dev/disk/by-partuuid/ae3df7b2-16b1-4ff6-b5ac-4fe7aa6a2d32...
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 kernel: RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 kernel: cryptd: max_cpu_qlen set to 1000
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-fsck[396]: fsck.fat 4.2 (2021-01-31)
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd-fsck[396]: /dev/sda15: 12 files, 4552/63339 clusters
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-fsck@dev-disk-by\x2dpartuuid-ae3df7b2\x2d16b1\x2d4ff6\x2db5ac\x2d4fe7aa6a2d32.service - File System Check on /dev/disk/by-partuuid/ae3df7b2-16b1-4ff6-b5ac-4fe7aa6a2d32.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 kernel: AES CTR mode by8 optimization enabled
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounting boot-efi.mount - /boot/efi...
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounted boot-efi.mount - /boot/efi.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target local-fs.target - Local File Systems.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on systemd-sysext.socket - System Extension Image Management.
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting apparmor.service - Load AppArmor profiles...
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-binfmt.service - Set Up Additional Binary Formats...
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 apparmor.systemd[477]: Restarting AppArmor
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 apparmor.systemd[477]: Reloading AppArmor profiles
+Oct 19 19:53:27 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-tmpfiles-setup.service - Create System Files and Directories...
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 478 (systemd-binfmt)
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounting proc-sys-fs-binfmt_misc.mount - Arbitrary Executable File Formats File System...
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd-tmpfiles[481]: /usr/lib/tmpfiles.d/legacy.conf:14: Duplicate line for path "/run/lock", ignoring.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=1400 audit(1792439608.055:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=487 comm="apparmor_parser"
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=1400 audit(1792439608.055:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=488 comm="apparmor_parser"
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=1400 audit(1792439608.091:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=490 comm="apparmor_parser"
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Mounted proc-sys-fs-binfmt_misc.mount - Arbitrary Executable File Formats File System.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=1400 audit(1792439608.111:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=491 comm="apparmor_parser"
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=1400 audit(1792439608.131:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=493 comm="apparmor_parser"
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=1400 audit(1792439608.151:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=494 comm="apparmor_parser"
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=1400 audit(1792439608.167:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=495 comm="apparmor_parser"
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-tmpfiles-setup.service - Create System Files and Directories.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=1400 audit(1792439608.187:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="busybox" pid=496 comm="apparmor_parser"
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=1400 audit(1792439608.207:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cam" pid=497 comm="apparmor_parser"
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 kernel: audit: type=1400 audit(1792439608.223:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ch-checkns" pid=498 comm="apparmor_parser"
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-binfmt.service - Set Up Additional Binary Formats.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting ldconfig.service - Rebuild Dynamic Linker Cache...
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-firstboot.service - First Boot Wizard skipped, unmet condition check ConditionFirstBoot=yes
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: first-boot-complete.target - First Boot Complete skipped, unmet condition check ConditionFirstBoot=yes
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-journal-catalog-update.service - Rebuild Journal Catalog...
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-machine-id-commit.service - Save Transient machine-id to Disk...
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-machine-id-commit.service - Save Transient machine-id to Disk.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd-networkd[371]: ens4: Gained IPv6LL
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd-timesyncd[347]: Network configuration changed, trying to establish connection.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-journal-catalog-update.service - Rebuild Journal Catalog.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-networkd-wait-online.service - Wait for Network to be Configured.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target network-online.target - Network is Online.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: etc-machine\x2did.mount: Deactivated successfully.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished ldconfig.service - Rebuild Dynamic Linker Cache.
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-update-done.service - Update is Completed...
+Oct 19 19:53:28 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-update-done.service - Update is Completed.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished apparmor.service - Load AppArmor profiles.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started haveged.service - Entropy Daemon based on the HAVEGE algorithm.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target sysinit.target - System Initialization.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started apt-daily.timer - Daily apt download activities.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 (haveged)[605]: haveged.service: Referenced but unset environment variable evaluates to an empty string: DAEMON_ARGS
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started apt-daily-upgrade.timer - Daily apt upgrade and clean activities.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 haveged[605]: haveged: command socket is listening at fd 3
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 haveged[605]: haveged starting up
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started apt-listchanges.timer - Try hourly to initialize apt-listchanges database for APT.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started dpkg-db-backup.timer - Daily dpkg database backup timer.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started e2scrub_all.timer - Periodic ext4 Online Metadata Check for All Filesystems.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started exim4-base.timer - Daily exim4-base housekeeping.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started fstrim.timer - Discard unused filesystem blocks once a week.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started google-oslogin-cache.timer - NSS cache refresh timer.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started logrotate.timer - Daily rotation of log files.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started man-db.timer - Daily man-db regeneration.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started systemd-tmpfiles-clean.timer - Daily Cleanup of Temporary Directories.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target timers.target - Timer Units.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on dbus.socket - D-Bus System Message Bus Socket.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on sshd-unix-local.socket - OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on systemd-hostnamed.socket - Hostname Service Socket.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Listening on uuidd.socket - UUID daemon activation socket.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 haveged[605]: haveged: ver: 1.9.19; arch: x86; vend: GenuineIntel; build: (gcc 14.2.0 ITV); collect: 128K
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 haveged[605]: haveged: cpu: (L4 VC); data: 32K (L4 V); inst: 32K (L4 V); idx: 24/40; sz: 32172/54097
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 haveged[605]: haveged: tot tests(BA8): A:1/1 B:1/1 continuous tests(B):  last entropy estimate 7.99982
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 haveged[605]: haveged: fills: 0, generated: 0
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target sockets.target - Socket Units.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting google-disk-expand.service - Resize root filesystem if needed...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-pcrphase-sysinit.service - TPM PCR Barrier (Initialization) skipped, unmet condition check ConditionSecurity=measured-uki
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 google_disk_expand[606]: Checking if filesystem on /dev/sda1 needs resizing
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 google_disk_expand[609]: resize2fs 1.47.2 (1-Jan-2025)
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 google_disk_expand[609]: The filesystem is already 7831296 (4k) blocks long.  Nothing to do!
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 google_disk_expand[606]: Done.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: google-disk-expand.service: Deactivated successfully.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished google-disk-expand.service - Resize root filesystem if needed.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Reached target basic.target - Basic System.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: System is tainted: unmerged-bin
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started cron.service - Regular background program processing daemon.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting dbus.service - D-Bus System Message Bus...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 cron[612]: (CRON) INFO (pidfile fd = 3)
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 cron[612]: (CRON) INFO (Running @reboot jobs)
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting e2scrub_reap.service - Remove Stale Online ext4 Metadata Check Snapshots...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting exim4.service - exim Mail Transport Agent...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available skipped, unmet condition check ConditionPathExists=!/usr/bin/dbus-daemon
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started google-osconfig-agent.service - Google OSConfig Agent.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 dbus-daemon[613]: [system] Activating systemd to hand-off: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.0' (uid=998 pid=371 comm="/usr/lib/systemd/systemd-networkd")
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting google-oslogin-cache.service - NSS cache refresh...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting grub-common.service - Record successful boot for GRUB...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 google_oslogin_nss_cache[618]: oslogin_cache_refresh[618]: Refreshing passwd entry cache
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 oslogin_cache_refresh[618]: Refreshing passwd entry cache
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 update-exim4.conf[632]: /usr/sbin/update-exim4.conf: 154: cannot open /etc/mailname: No such file
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting networkd-dispatcher.service - Dispatcher daemon for systemd-networkd...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting nvmf-autoconnect.service - Connect NVMe-oF subsystems automatically during boot...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 google_oslogin_nss_cache[618]: oslogin_cache_refresh[618]: Refreshing group entry cache
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 oslogin_cache_refresh[618]: Refreshing group entry cache
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting rsyslog.service - System Logging Service...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: sshd-keygen.service - Generate sshd host keys on first boot skipped, unmet condition check ConditionFirstBoot=yes
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-logind.service - User Login Management...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: systemd-pcrphase.service - TPM PCR Barrier (User) skipped, unmet condition check ConditionSecurity=measured-uki
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Starting systemd-user-sessions.service - Permit User Sessions...
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started dbus.service - D-Bus System Message Bus.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: e2scrub_reap.service: Deactivated successfully.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished e2scrub_reap.service - Remove Stale Online ext4 Metadata Check Snapshots.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: google-oslogin-cache.service: Deactivated successfully.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished google-oslogin-cache.service - NSS cache refresh.
+Oct 19 19:53:29 inst-builder-debian-13-build-build-hj6h0 systemd[1]: nvmf-autoconnect.service: Deactivated successfully.
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished nvmf-autoconnect.service - Connect NVMe-oF subsystems automatically during boot.
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Finished systemd-user-sessions.service - Permit User Sessions.
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 dbus-daemon[613]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 rsyslogd[660]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2504.0]
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 rsyslogd[660]: [origin software="rsyslogd" swVersion="8.2504.0" x-pid="660" x-info="https://www.rsyslog.com"] start
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started getty@tty1.service - Getty on tty1.
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 systemd-logind[667]: Watching system buttons on /dev/input/event1 (Power Button)
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 systemd-logind[667]: Watching system buttons on /dev/input/event2 (Sleep Button)
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 systemd-logind[667]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 systemd-logind[667]: New seat seat0.
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 networkd-dispatcher[637]: No valid path found for iwconfig
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 networkd-dispatcher[637]: No valid path found for iw
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 OSConfigAgent[616]: 2026-10-19T19:53:30.4110Z OSConfigAgent Info: OSConfig Agent (version 20260928.00-g1) started.
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 networkd-dispatcher[895]:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 networkd-dispatcher[895]:                                  Dload  Upload   Total   Spent    Left  Speed
+Oct 19 19:53:30 inst-builder-debian-13-build-build-hj6h0 networkd-dispatcher[895]: [158B blob data]
+Oct 19 19:53:30 lc-debian-13 systemd-resolved[345]: System hostname changed to 'lc-debian-13'.
+Oct 19 19:53:30 lc-debian-13 systemd[1]: Reached target getty.target - Login Prompts.
+Oct 19 19:53:31 lc-debian-13 systemd[1]: Started rsyslog.service - System Logging Service.
+Oct 19 19:53:31 lc-debian-13 systemd[1]: Started systemd-logind.service - User Login Management.
+Oct 19 19:53:32 lc-debian-13 systemd[1]: Starting google-guest-agent-manager.service - Google Compute Engine Guest Agent Plugin Manager...
+Oct 19 19:53:32 lc-debian-13 systemd[1]: Starting google-guest-compat-manager.service - Google Compute Engine Guest Compat Manager...
+Oct 19 19:53:32 lc-debian-13 systemd[1]: Starting google-shutdown-scripts.service - Google Compute Engine Shutdown Scripts...
+Oct 19 19:53:33 lc-debian-13 systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+Oct 19 19:53:33 lc-debian-13 dbus-daemon[613]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Oct 19 19:53:33 lc-debian-13 dbus-daemon[613]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.8' (uid=0 pid=948 comm="/usr/lib/systemd/systemd-hostnamed")
+Oct 19 19:53:33 lc-debian-13 systemd-hostnamed[948]: Hostname set to <lc-debian-13> (static)
+Oct 19 19:53:33 lc-debian-13 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Oct 19 19:53:35 lc-debian-13 systemd[1]: Started exim4.service - exim Mail Transport Agent.
+Oct 19 19:53:35 lc-debian-13 systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: Initializing Google Guest Agent...
+Oct 19 19:53:35 lc-debian-13 google_guest_compat_manager[936]: Setting up guest compat manager
+Oct 19 19:53:35 lc-debian-13 google_guest_compat_manager[936]: Compat manager created with core plugin already enabled: true
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: Running Guest Agent setup with config: {Version:20260921.00 EnableACSWatcher:true CorePluginPath:/usr/lib/google/guest_agent/GuestAgentCorePlugin/core_plugin SkipCorePlugin:false EnableLocalPlugins:true}, runtime config: {id:5502108002628127739 svcActPresent:true}
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: Registered ACS watcher and handler
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: Initializing plugin manager for instance "5502108002628127739", agent version: "20260921.00"
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: Plugin manager initialized
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: Creating metric registry for "scheduled-job-manager" with flush interval: 1m0s, max records: 10
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: Starting local plugins
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: Installing local plugins: [GuestAgentCorePlugin GuestTelemetryExtension ManagedWorkloadIdentityExtension]
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: Installing plugin "GuestAgentCorePlugin", revision "20260921.00"
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: No config provided for plugin "GuestAgentCorePlugin", setting empty config
+Oct 19 19:53:35 lc-debian-13 google_guest_agent_manager[923]: Instance has service account: true, setting ACS client isEnabled to true
+Oct 19 19:53:35 lc-debian-13 google_guest_agent[961]: Initializing core plugin server...
+Oct 19 19:53:35 lc-debian-13 google_guest_agent[961]: Core plugin server listening on "/run/google-guest-agent/plugin-connections/GuestAgentCorePlugin_20260921.00.sock" using "unix"
+Oct 19 19:53:35 lc-debian-13 google_guest_agent[961]: Core plugin server registered. Starting to serve requests...
+Oct 19 19:53:35 lc-debian-13 systemd[1]: Started google-guest-compat-manager.service - Google Compute Engine Guest Compat Manager.
+Oct 19 19:53:36 lc-debian-13 systemd[1]: grub-common.service: Deactivated successfully.
+Oct 19 19:53:36 lc-debian-13 google_guest_compat_manager[936]: Google Guest Compat Manager (version: "20260921.00") Initialized...
+Oct 19 19:53:36 lc-debian-13 google_guest_compat_manager[936]: Creating metric registry for "events_manager" with flush interval: 1m0s, max records: 10
+Oct 19 19:53:36 lc-debian-13 systemd[1]: Finished grub-common.service - Record successful boot for GRUB.
+Oct 19 19:53:36 lc-debian-13 systemd[1]: Finished google-shutdown-scripts.service - Google Compute Engine Shutdown Scripts.
+Oct 19 19:53:36 lc-debian-13 systemd[1]: Starting polkit.service - Authorization Manager...
+Oct 19 19:53:36 lc-debian-13 systemd[1]: Stopping rsyslog.service - System Logging Service...
+Oct 19 19:53:36 lc-debian-13 rsyslogd[660]: [origin software="rsyslogd" swVersion="8.2504.0" x-pid="660" x-info="https://www.rsyslog.com"] exiting on signal 15.
+Oct 19 19:53:36 lc-debian-13 systemd[1]: Started networkd-dispatcher.service - Dispatcher daemon for systemd-networkd.
+Oct 19 19:53:36 lc-debian-13 polkitd[969]: Started polkitd version 126
+Oct 19 19:53:36 lc-debian-13 polkitd[969]: Loading rules from directory /etc/polkit-1/rules.d
+Oct 19 19:53:36 lc-debian-13 polkitd[969]: Loading rules from directory /run/polkit-1/rules.d
+Oct 19 19:53:36 lc-debian-13 polkitd[969]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+Oct 19 19:53:36 lc-debian-13 polkitd[969]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+Oct 19 19:53:36 lc-debian-13 polkitd[969]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+Oct 19 19:53:36 lc-debian-13 polkitd[969]: Loading rules from directory /usr/share/polkit-1/rules.d
+Oct 19 19:53:36 lc-debian-13 polkitd[969]: Finished loading, compiling and executing 2 rules
+Oct 19 19:53:36 lc-debian-13 systemd[1]: Started polkit.service - Authorization Manager.
+Oct 19 19:53:36 lc-debian-13 dbus-daemon[613]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Oct 19 19:53:36 lc-debian-13 polkitd[969]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Running core plugin...
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: Successfully started plugin "GuestAgentCorePlugin_20260921.00"
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: Successfully installed plugin "GuestAgentCorePlugin_20260921.00"
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: Creating metric registry for "events_manager" with flush interval: 1m0s, max records: 10
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: Installing plugin "ManagedWorkloadIdentityExtension", revision "1.0"
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: No config provided for plugin "ManagedWorkloadIdentityExtension", setting empty config
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: Starting plugin monitor job for plugin "GuestAgentCorePlugin_20260921.00"
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: Installing plugin "GuestTelemetryExtension", revision "1.1"
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: No config provided for plugin "GuestTelemetryExtension", setting empty config
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: Running in GDU universe: true
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: Starting plugin metrics monitor job for plugin "GuestAgentCorePlugin_20260921.00"
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Running firstboot setup...
+Oct 19 19:53:36 lc-debian-13 google_guest_agent_manager[923]: Cloud logging initialized (google_guest_agent_manager)
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Successfully generated ecdsa type public key at "/etc/ssh/ssh_host_ecdsa_key.pub"
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Successfully generated ed25519 type public key at "/etc/ssh/ssh_host_ed25519_key.pub"
+Oct 19 19:53:36 lc-debian-13 mwlid_extension[983]: Starting grpc server
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Successfully generated rsa type public key at "/etc/ssh/ssh_host_rsa_key.pub"
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Finished firstboot setup.
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Running linux network management module setup.
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Rolling back changes for netplan with reload [false]
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Rolling back changes for NetworkManager with reload [true].
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Rolling back changes for systemd-networkd with reload [true].
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Rolling back changes for wicked with reload [true].
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Rolling back changes for dhclient.
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Rolled back network configuration for [netplan NetworkManager systemd-networkd wicked dhclient].
+Oct 19 19:53:36 lc-debian-13 google_guest_agent[961]: Setting up netplan interfaces.
+Oct 19 19:53:37 lc-debian-13 systemd[1]: Reload requested from client PID 1008 ('systemctl') (unit google-guest-agent-manager.service)...
+Oct 19 19:53:37 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:53:37 lc-debian-13 systemd-ssh-generator[1036]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:53:37 lc-debian-13 (sd-exec-[1025]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:53:37 lc-debian-13 systemd[1]: Reloading finished in 348 ms.
+Oct 19 19:53:37 lc-debian-13 mwlid_extension[983]: Starting extension
+Oct 19 19:53:37 lc-debian-13 mwlid_extension[983]: MWLID credential refresh is not enabled, skipping run
+Oct 19 19:53:37 lc-debian-13 google_guest_agent_manager[923]: Successfully started plugin "ManagedWorkloadIdentityExtension_1.0"
+Oct 19 19:53:37 lc-debian-13 google_guest_agent_manager[923]: Successfully installed plugin "ManagedWorkloadIdentityExtension_1.0"
+Oct 19 19:53:37 lc-debian-13 google_guest_agent_manager[923]: Starting plugin monitor job for plugin "ManagedWorkloadIdentityExtension_1.0"
+Oct 19 19:53:37 lc-debian-13 google_guest_agent_manager[923]: Starting plugin metrics monitor job for plugin "ManagedWorkloadIdentityExtension_1.0"
+Oct 19 19:53:37 lc-debian-13 google_guest_agent_manager[923]: Successfully started plugin "GuestTelemetryExtension_1.1"
+Oct 19 19:53:37 lc-debian-13 google_guest_agent_manager[923]: Successfully installed plugin "GuestTelemetryExtension_1.1"
+Oct 19 19:53:37 lc-debian-13 google_guest_agent_manager[923]: Starting plugin monitor job for plugin "GuestTelemetryExtension_1.1"
+Oct 19 19:53:37 lc-debian-13 google_guest_agent_manager[923]: Starting plugin metrics monitor job for plugin "GuestTelemetryExtension_1.1"
+Oct 19 19:53:37 lc-debian-13 systemd-networkd[371]: ens4: Reconfiguring with /run/systemd/network/10-netplan-all-en.network.
+Oct 19 19:53:37 lc-debian-13 systemd-timesyncd[347]: Network configuration changed, trying to establish connection.
+Oct 19 19:53:37 lc-debian-13 systemd-timesyncd[347]: Contacted time server 169.254.169.254:123 (169.254.169.254).
+Oct 19 19:53:37 lc-debian-13 systemd-timesyncd[347]: Initial clock synchronization to Mon 2026-10-19 19:53:37.863316 UTC.
+Oct 19 19:53:37 lc-debian-13 systemd-networkd[371]: ens4: DHCPv4 address 10.128.0.13/32, gateway 10.128.0.1 acquired from 169.254.169.254
+Oct 19 19:53:37 lc-debian-13 google_guest_agent[961]: Finished setting up netplan interfaces.
+Oct 19 19:53:37 lc-debian-13 google_guest_agent[961]: Finished linux network management module setup.
+Oct 19 19:53:37 lc-debian-13 google_guest_agent[961]: Initialized (version: "20260921.00")
+Oct 19 19:53:37 lc-debian-13 google_guest_agent[961]: Adjtime file "/etc/adjtime" does not exist, checking timedatectl status for rtc mode
+Oct 19 19:53:37 lc-debian-13 google_guest_agent[961]: Instance id is already set, no update required.
+Oct 19 19:53:37 lc-debian-13 google_guest_agent[961]: Creating metric registry for "scheduled-job-manager" with flush interval: 1m0s, max records: 10
+Oct 19 19:53:37 lc-debian-13 google_guest_agent[961]: Instance has service account: true, setting ACS client isEnabled to true
+Oct 19 19:53:37 lc-debian-13 dbus-daemon[613]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.13' (uid=0 pid=1052 comm="timedatectl status")
+Oct 19 19:53:37 lc-debian-13 systemd[1]: Starting systemd-timedated.service - Time & Date Service...
+Oct 19 19:53:37 lc-debian-13 groupadd[1057]: group added to /etc/group: name=google-sudoers, GID=1000
+Oct 19 19:53:37 lc-debian-13 groupadd[1057]: group added to /etc/gshadow: name=google-sudoers
+Oct 19 19:53:37 lc-debian-13 groupadd[1057]: new group: name=google-sudoers, GID=1000
+Oct 19 19:53:37 lc-debian-13 groupadd[1070]: group added to /etc/group: name=docker, GID=1001
+Oct 19 19:53:37 lc-debian-13 groupadd[1070]: group added to /etc/gshadow: name=docker
+Oct 19 19:53:37 lc-debian-13 groupadd[1070]: new group: name=docker, GID=1001
+Oct 19 19:53:37 lc-debian-13 dbus-daemon[613]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Oct 19 19:53:37 lc-debian-13 groupadd[1077]: group added to /etc/group: name=lxd, GID=1002
+Oct 19 19:53:37 lc-debian-13 groupadd[1077]: group added to /etc/gshadow: name=lxd
+Oct 19 19:53:37 lc-debian-13 groupadd[1077]: new group: name=lxd, GID=1002
+Oct 19 19:53:37 lc-debian-13 useradd[1100]: new group: name=operator, GID=1003
+Oct 19 19:53:37 lc-debian-13 useradd[1100]: new user: name=operator, UID=1000, GID=1003, home=/home/operator, shell=/bin/bash, from=none
+Oct 19 19:53:37 lc-debian-13 gpasswd[1130]: user operator added by root to group google-sudoers
+Oct 19 19:53:37 lc-debian-13 gpasswd[1142]: user operator added by root to group adm
+Oct 19 19:53:37 lc-debian-13 gpasswd[1148]: user operator added by root to group dip
+Oct 19 19:53:38 lc-debian-13 gpasswd[1152]: user operator added by root to group docker
+Oct 19 19:53:38 lc-debian-13 systemd[1]: Started systemd-timedated.service - Time & Date Service.
+Oct 19 19:53:38 lc-debian-13 systemd[1]: rsyslog.service: Deactivated successfully.
+Oct 19 19:53:38 lc-debian-13 systemd[1]: Stopped rsyslog.service - System Logging Service.
+Oct 19 19:53:38 lc-debian-13 gpasswd[1156]: user operator added by root to group lxd
+Oct 19 19:53:38 lc-debian-13 systemd[1]: Starting rsyslog.service - System Logging Service...
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Identified RTC mode isUTC to be: [true] from "/etc/adjtime"
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Clock drift token has changed, resetting clock skew.
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Failed to run clock skew setup: failed to run hwclock: fork/exec /sbin/hwclock: no such file or directory
+Oct 19 19:53:38 lc-debian-13 gpasswd[1162]: user operator added by root to group plugdev
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Bootstrapping MDS mTLS credentials
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Installing Root CA cert...
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Successfully installed Root CA cert
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Installing client credentials...
+Oct 19 19:53:38 lc-debian-13 gpasswd[1168]: user operator added by root to group video
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Created user operator
+Oct 19 19:53:38 lc-debian-13 systemd[1]: Started rsyslog.service - System Logging Service.
+Oct 19 19:53:38 lc-debian-13 rsyslogd[1163]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2504.0]
+Oct 19 19:53:38 lc-debian-13 gpasswd[1172]: user operator added by root to group google-sudoers
+Oct 19 19:53:38 lc-debian-13 rsyslogd[1163]: [origin software="rsyslogd" swVersion="8.2504.0" x-pid="1163" x-info="https://www.rsyslog.com"] start
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Successfully installed client credentials
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Successfully bootstrapped MDS mTLS credentials
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Creating metric registry for "events_manager" with flush interval: 1m0s, max records: 10
+Oct 19 19:53:38 lc-debian-13 google_guest_agent[961]: Cloud logging initialized (core_plugin)
+Oct 19 19:53:38 lc-debian-13 systemd[1]: Started google-guest-agent-manager.service - Google Compute Engine Guest Agent Plugin Manager.
+Oct 19 19:53:38 lc-debian-13 google_guest_agent_manager[923]: Google Guest Agent (version: "20260921.00") Initialized...
+Oct 19 19:53:38 lc-debian-13 systemd[1]: Starting google-startup-scripts.service - Google Compute Engine Startup Scripts...
+Oct 19 19:53:38 lc-debian-13 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Oct 19 19:53:39 lc-debian-13 sshd[1192]: Server listening on 0.0.0.0 port 22.
+Oct 19 19:53:39 lc-debian-13 sshd[1192]: Server listening on :: port 22.
+Oct 19 19:53:39 lc-debian-13 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Oct 19 19:53:39 lc-debian-13 google_compat_metadata_script_runner[1190]: Initialized Metadata Script Runner Compat (version 20260921.00)
+Oct 19 19:53:39 lc-debian-13 google_compat_metadata_script_runner[1190]: Enable core plugin set to: [true], launching script runner for event "startup" from "/usr/bin/gce_metadata_script_runner"
+Oct 19 19:53:39 lc-debian-13 google_metadata_script_runner[1198]: Running metadata script runner (version 20260921.00) for "startup" event
+Oct 19 19:53:39 lc-debian-13 google_metadata_script_runner[1198]: No startup scripts to run
+Oct 19 19:53:39 lc-debian-13 systemd[1]: google-startup-scripts.service: Deactivated successfully.
+Oct 19 19:53:39 lc-debian-13 systemd[1]: Finished google-startup-scripts.service - Google Compute Engine Startup Scripts.
+Oct 19 19:53:39 lc-debian-13 systemd[1]: Reached target multi-user.target - Multi-User System.
+Oct 19 19:53:39 lc-debian-13 systemd[1]: Reached target graphical.target - Graphical Interface.
+Oct 19 19:53:39 lc-debian-13 systemd[1]: Startup finished in 3.852s (kernel) + 16.454s (userspace) = 20.306s.
+Oct 19 19:53:39 lc-debian-13 google_guest_agent[961]: Interface(lo) - State: {Index:1 MTU:65536 Name:lo HardwareAddr: Flags:up|loopback|running}, Addrs: [127.0.0.1/8 ::1/128]
+Oct 19 19:53:39 lc-debian-13 google_guest_agent[961]: Interface(ens4) - State: {Index:2 MTU:1460 Name:ens4 HardwareAddr:42:01:0a:80:00:0d Flags:up|broadcast|multicast|running}, Addrs: [10.128.0.13/32 fe80::4001:aff:fe80:d/64]
+Oct 19 19:53:39 lc-debian-13 google_guest_agent[961]: Local Routes: local 10.128.0.13 dev ens4 proto kernel scope host src 10.128.0.13 
+                                                      local 127.0.0.0/8 dev lo proto kernel scope host src 127.0.0.1 
+                                                      local 127.0.0.1 dev lo proto kernel scope host src 127.0.0.1 
+                                                      broadcast 127.255.255.255 dev lo proto kernel scope link src 127.0.0.1
+Oct 19 19:53:41 lc-debian-13 google_guest_agent_manager[923]: Cloud Logging Client Error: rpc error: code = PermissionDenied desc = Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist).
+                                                              error details: name = ErrorInfo reason = IAM_PERMISSION_DENIED domain = iam.googleapis.com metadata = map[permission:logging.logEntries.create resource:projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager]
+                                                              error details: name = Unknown  desc = log_entry_errors:{key:0 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:1 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/diagnostic-log' (or it may not exist)."}} log_entry_errors:{key:2 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:3 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:4 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:5 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:6 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:7 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:8 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:9 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:10 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:11 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:12 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:13 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:14 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:15 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:16 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:17 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:18 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:19 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:20 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:21 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:22 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:23 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:24 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:25 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:26 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:27 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:28 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:29 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:30 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}} log_entry_errors:{key:31 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgentManager' (or it may not exist)."}}
+Oct 19 19:53:41 lc-debian-13 mwlid_extension[983]: Cloud Logging Client Error: rpc error: code = PermissionDenied desc = Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/MWLIDExtension' (or it may not exist).
+                                                   error details: name = ErrorInfo reason = IAM_PERMISSION_DENIED domain = iam.googleapis.com metadata = map[permission:logging.logEntries.create resource:projects/logcrux-test4-c2bd49/logs/MWLIDExtension]
+                                                   error details: name = Unknown  desc = log_entry_errors:{key:0  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/MWLIDExtension' (or it may not exist)."}}  log_entry_errors:{key:1  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/diagnostic-log' (or it may not exist)."}}  log_entry_errors:{key:2  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/MWLIDExtension' (or it may not exist)."}}  log_entry_errors:{key:3  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/MWLIDExtension' (or it may not exist)."}}
+Oct 19 19:53:43 lc-debian-13 google_guest_agent[961]: Cloud Logging Client Error: rpc error: code = PermissionDenied desc = Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist).
+                                                      error details: name = ErrorInfo reason = IAM_PERMISSION_DENIED domain = iam.googleapis.com metadata = map[permission:logging.logEntries.create resource:projects/logcrux-test4-c2bd49/logs/GCEGuestAgent]
+                                                      error details: name = Unknown  desc = log_entry_errors:{key:0 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:1 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/diagnostic-log' (or it may not exist)."}} log_entry_errors:{key:2 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:3 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:4 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:5 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:6 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:7 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:8 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:9 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:10 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:11 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:12 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:13 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:14 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:15 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:16 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:17 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:18 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:19 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:20 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:21 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:22 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:23 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:24 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:25 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:26 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:27 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:28 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:29 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:30 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:31 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:32 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:33 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:34 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:35 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:36 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:37 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:38 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}} log_entry_errors:{key:39 value:{code:7 message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test4-c2bd49/logs/GCEGuestAgent' (or it may not exist)."}}
+Oct 19 19:54:07 lc-debian-13 systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Oct 19 19:54:08 lc-debian-13 systemd[1]: systemd-timedated.service: Deactivated successfully.
+Oct 19 19:54:25 lc-debian-13 sshd-session[1224]: Accepted publickey for operator from 203.0.113.10 port 50211 ssh2: RSA SHA256:REDACTED
+Oct 19 19:54:25 lc-debian-13 sshd-session[1224]: pam_unix(sshd:session): session opened for user operator(uid=1000) by operator(uid=0)
+Oct 19 19:54:25 lc-debian-13 systemd[1]: Created slice user-1000.slice - User Slice of UID 1000.
+Oct 19 19:54:25 lc-debian-13 systemd[1]: Starting user-runtime-dir@1000.service - User Runtime Directory /run/user/1000...
+Oct 19 19:54:25 lc-debian-13 systemd-logind[667]: New session 1 of user operator.
+Oct 19 19:54:25 lc-debian-13 systemd[1]: Finished user-runtime-dir@1000.service - User Runtime Directory /run/user/1000.
+Oct 19 19:54:25 lc-debian-13 systemd[1]: Starting user@1000.service - User Manager for UID 1000...
+Oct 19 19:54:25 lc-debian-13 (systemd)[1229]: pam_unix(systemd-user:session): session opened for user operator(uid=1000) by operator(uid=0)
+Oct 19 19:54:25 lc-debian-13 systemd-logind[667]: New session 2 of user operator.
+Oct 19 19:54:25 lc-debian-13 systemd[1229]: Queued start job for default target default.target.
+Oct 19 19:54:25 lc-debian-13 systemd[1229]: Created slice app.slice - User Application Slice.
+Oct 19 19:54:25 lc-debian-13 systemd[1229]: Reached target paths.target - Paths.
+Oct 19 19:54:25 lc-debian-13 systemd[1229]: Reached target timers.target - Timers.
+Oct 19 19:54:25 lc-debian-13 systemd[1229]: Starting ssh-agent.socket - OpenSSH Agent socket...
+Oct 19 19:54:25 lc-debian-13 systemd[1229]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+Oct 19 19:54:25 lc-debian-13 systemd[1229]: Reached target sockets.target - Sockets.
+Oct 19 19:54:25 lc-debian-13 systemd[1229]: Reached target basic.target - Basic System.
+Oct 19 19:54:25 lc-debian-13 systemd[1229]: Reached target default.target - Main User Target.
+Oct 19 19:54:25 lc-debian-13 systemd[1229]: Startup finished in 150ms.
+Oct 19 19:54:25 lc-debian-13 systemd[1]: Started user@1000.service - User Manager for UID 1000.
+Oct 19 19:54:25 lc-debian-13 systemd[1]: Started session-1.scope - Session 1 of User operator.
+Oct 19 19:54:31 lc-debian-13 sshd-session[1244]: Received disconnect from 203.0.113.10 port 50211:11: disconnected by user
+Oct 19 19:54:31 lc-debian-13 sshd-session[1244]: Disconnected from user operator 203.0.113.10 port 50211
+Oct 19 19:54:31 lc-debian-13 sshd-session[1224]: pam_unix(sshd:session): session closed for user operator
+Oct 19 19:54:31 lc-debian-13 systemd[1]: session-1.scope: Deactivated successfully.
+Oct 19 19:54:31 lc-debian-13 systemd-logind[667]: Session 1 logged out. Waiting for processes to exit.
+Oct 19 19:54:31 lc-debian-13 systemd-logind[667]: Removed session 1.
+Oct 19 19:54:35 lc-debian-13 sshd-session[1250]: Accepted publickey for operator from 203.0.113.10 port 50234 ssh2: RSA SHA256:REDACTED
+Oct 19 19:54:35 lc-debian-13 sshd-session[1250]: pam_unix(sshd:session): session opened for user operator(uid=1000) by operator(uid=0)
+Oct 19 19:54:35 lc-debian-13 systemd-logind[667]: New session 3 of user operator.
+Oct 19 19:54:35 lc-debian-13 systemd[1]: Started session-3.scope - Session 3 of User operator.
+Oct 19 19:54:36 lc-debian-13 sudo[1267]: operator : PWD=/home/operator ; USER=root ; COMMAND=/usr/bin/rm -rf /lc/out /lc/out-debian-13.tgz
+Oct 19 19:54:36 lc-debian-13 sudo[1267]: pam_unix(sudo:session): session opened for user root(uid=0) by operator(uid=1000)
+Oct 19 19:54:36 lc-debian-13 sudo[1267]: pam_unix(sudo:session): session closed for user root
+Oct 19 19:54:36 lc-debian-13 sudo[1270]: operator : PWD=/home/operator ; USER=root ; ENV=PHASE2=1 PHASE3=1 ; COMMAND=/usr/bin/nohup bash /tmp/vm-run.sh debian-13 /tmp/logcrux-0.10.0-py3-none-any.whl
+Oct 19 19:54:36 lc-debian-13 sudo[1270]: pam_unix(sudo:session): session opened for user root(uid=0) by operator(uid=1000)
+Oct 19 19:54:36 lc-debian-13 sshd-session[1258]: Received disconnect from 203.0.113.10 port 50234:11: disconnected by user
+Oct 19 19:54:36 lc-debian-13 sshd-session[1258]: Disconnected from user operator 203.0.113.10 port 50234
+Oct 19 19:54:36 lc-debian-13 sshd-session[1250]: pam_unix(sshd:session): session closed for user operator
+Oct 19 19:54:36 lc-debian-13 systemd-logind[667]: Session 3 logged out. Waiting for processes to exit.
+Oct 19 19:54:48 lc-debian-13 systemd[1]: Reload requested from client PID 1768 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:48 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:49 lc-debian-13 systemd-ssh-generator[1800]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:49 lc-debian-13 (sd-exec-[1787]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:49 lc-debian-13 systemd[1]: Reloading finished in 314 ms.
+Oct 19 19:54:49 lc-debian-13 systemd[1]: Reload requested from client PID 1810 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:49 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:49 lc-debian-13 systemd-ssh-generator[1842]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:49 lc-debian-13 (sd-exec-[1829]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:49 lc-debian-13 systemd[1]: Reloading finished in 309 ms.
+Oct 19 19:54:49 lc-debian-13 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Oct 19 19:54:49 lc-debian-13 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+Oct 19 19:54:50 lc-debian-13 addgroup[2412]: Selecting GID from range 100 to 999 ...
+Oct 19 19:54:50 lc-debian-13 addgroup[2412]: Adding group `ssl-cert' (GID 105) ...
+Oct 19 19:54:50 lc-debian-13 groupadd[2415]: group added to /etc/group: name=ssl-cert, GID=105
+Oct 19 19:54:50 lc-debian-13 groupadd[2415]: group added to /etc/gshadow: name=ssl-cert
+Oct 19 19:54:50 lc-debian-13 groupadd[2415]: new group: name=ssl-cert, GID=105
+Oct 19 19:54:51 lc-debian-13 systemd[1]: Reload requested from client PID 2515 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:51 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:51 lc-debian-13 systemd-ssh-generator[2547]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:51 lc-debian-13 (sd-exec-[2534]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:51 lc-debian-13 systemd[1]: Reloading finished in 315 ms.
+Oct 19 19:54:52 lc-debian-13 systemd[1]: Reload requested from client PID 2572 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:52 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:52 lc-debian-13 (sd-exec-[2591]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:52 lc-debian-13 systemd-ssh-generator[2604]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:52 lc-debian-13 systemd[1]: Reloading finished in 322 ms.
+Oct 19 19:54:53 lc-debian-13 systemd[1]: Reload requested from client PID 2611 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:53 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:53 lc-debian-13 systemd-ssh-generator[2643]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:53 lc-debian-13 (sd-exec-[2630]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:53 lc-debian-13 systemd[1]: Reloading finished in 320 ms.
+Oct 19 19:54:53 lc-debian-13 systemd[1]: Reload requested from client PID 2654 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:53 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:53 lc-debian-13 (sd-exec-[2673]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:53 lc-debian-13 systemd-ssh-generator[2685]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:53 lc-debian-13 systemd[1]: Reloading finished in 336 ms.
+Oct 19 19:54:53 lc-debian-13 systemd[1]: Reload requested from client PID 2693 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:53 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:53 lc-debian-13 systemd-ssh-generator[2725]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:54 lc-debian-13 (sd-exec-[2712]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:54 lc-debian-13 systemd[1]: Reloading finished in 317 ms.
+Oct 19 19:54:54 lc-debian-13 systemd[1]: Reload requested from client PID 2650 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:54 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:54 lc-debian-13 systemd-ssh-generator[2762]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:54 lc-debian-13 (sd-exec-[2749]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:54 lc-debian-13 systemd[1]: Reloading finished in 323 ms.
+Oct 19 19:54:56 lc-debian-13 adduser[3470]: Selecting UID from range 100 to 999 ...
+Oct 19 19:54:56 lc-debian-13 adduser[3470]: Selecting GID from range 100 to 999 ...
+Oct 19 19:54:56 lc-debian-13 adduser[3470]: Adding system user `postgres' (UID 103) ...
+Oct 19 19:54:56 lc-debian-13 adduser[3470]: Adding new group `postgres' (GID 106) ...
+Oct 19 19:54:56 lc-debian-13 groupadd[3475]: group added to /etc/group: name=postgres, GID=106
+Oct 19 19:54:56 lc-debian-13 groupadd[3475]: group added to /etc/gshadow: name=postgres
+Oct 19 19:54:56 lc-debian-13 groupadd[3475]: new group: name=postgres, GID=106
+Oct 19 19:54:56 lc-debian-13 adduser[3470]: Adding new user `postgres' (UID 103) with group `postgres' ...
+Oct 19 19:54:56 lc-debian-13 useradd[3480]: new user: name=postgres, UID=103, GID=106, home=/var/lib/postgresql, shell=/bin/bash, from=none
+Oct 19 19:54:56 lc-debian-13 adduser[3470]: Not creating home directory `/var/lib/postgresql' as requested.
+Oct 19 19:54:56 lc-debian-13 su[3497]: (to postgres) root on none
+Oct 19 19:54:56 lc-debian-13 su[3497]: pam_unix(su:session): session opened for user postgres(uid=103) by operator(uid=0)
+Oct 19 19:54:56 lc-debian-13 su[3497]: pam_unix(su:session): session closed for user postgres
+Oct 19 19:54:56 lc-debian-13 adduser[3510]: Adding user `postgres' to group `ssl-cert' ...
+Oct 19 19:54:56 lc-debian-13 usermod[3512]: add 'postgres' to group 'ssl-cert'
+Oct 19 19:54:56 lc-debian-13 usermod[3512]: add 'postgres' to shadow group 'ssl-cert'
+Oct 19 19:54:57 lc-debian-13 systemd[1]: Reload requested from client PID 3633 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:57 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:57 lc-debian-13 systemd-ssh-generator[3665]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:57 lc-debian-13 (sd-exec-[3652]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:57 lc-debian-13 systemd[1]: Reloading finished in 309 ms.
+Oct 19 19:54:57 lc-debian-13 systemd[1]: Reload requested from client PID 3682 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:57 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:57 lc-debian-13 (sd-exec-[3701]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:57 lc-debian-13 systemd-ssh-generator[3714]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:57 lc-debian-13 systemd[1]: Reloading finished in 312 ms.
+Oct 19 19:54:58 lc-debian-13 systemd[1]: Reload requested from client PID 3730 ('systemctl') (unit session-3.scope)...
+Oct 19 19:54:58 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:54:58 lc-debian-13 systemd-ssh-generator[3762]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:54:58 lc-debian-13 (sd-exec-[3749]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:54:58 lc-debian-13 systemd[1]: Reloading finished in 324 ms.
+Oct 19 19:54:58 lc-debian-13 systemd[1]: Starting postgresql.service - PostgreSQL RDBMS...
+Oct 19 19:54:58 lc-debian-13 systemd[1]: Finished postgresql.service - PostgreSQL RDBMS.
+Oct 19 19:55:00 lc-debian-13 systemd[1]: Reload requested from client PID 4509 ('systemctl') (unit session-3.scope)...
+Oct 19 19:55:00 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:55:00 lc-debian-13 systemd-ssh-generator[4540]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:55:00 lc-debian-13 (sd-exec-[4528]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:55:00 lc-debian-13 systemd[1]: Reloading finished in 322 ms.
+Oct 19 19:55:01 lc-debian-13 systemd[1]: Reload requested from client PID 4571 ('systemctl') (unit session-3.scope)...
+Oct 19 19:55:01 lc-debian-13 systemd[1]: Reloading...
+Oct 19 19:55:01 lc-debian-13 (sd-exec-[4590]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Oct 19 19:55:01 lc-debian-13 systemd-ssh-generator[4605]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Oct 19 19:55:01 lc-debian-13 systemd[1]: Reloading finished in 332 ms.
+Oct 19 19:55:01 lc-debian-13 systemd[1]: Created slice system-postgresql.slice - Slice /system/postgresql.
+Oct 19 19:55:01 lc-debian-13 systemd[1]: Starting postgresql@17-main.service - PostgreSQL Cluster 17-main...
+Oct 19 19:55:01 lc-debian-13 CRON[4630]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Oct 19 19:55:01 lc-debian-13 CRON[4632]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Oct 19 19:55:01 lc-debian-13 CRON[4630]: pam_unix(cron:session): session closed for user root
+Oct 19 19:55:03 lc-debian-13 systemd[1]: Started postgresql@17-main.service - PostgreSQL Cluster 17-main.

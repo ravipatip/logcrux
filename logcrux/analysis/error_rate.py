@@ -76,6 +76,9 @@ def analyze_error_rate(
     # Require enough errors inside one window and anchor the signal to the
     # densest window, mirroring analyze_burst's concentration test.
     densest = _densest_error_window(errors, window_size)
+    if densest is not None and _steady_state(len(densest[0]), len(errors),
+                                             t_end - t_start, window_size):
+        densest = None
     if densest is not None:
         window_events, w_start, w_end = densest
         signals.append(AnomalySignal(
@@ -91,6 +94,27 @@ def analyze_error_rate(
             representative_events=window_events[:20],
         ))
     return signals
+
+
+# A log spanning at least this many windows has a measurable normal error
+# rate; its densest window must then stand out from it by this factor.
+_STEADY_MIN_WINDOWS = 6
+_STEADY_FACTOR = 3.0
+
+
+def _steady_state(peak: int, total: int, span: timedelta, window: timedelta) -> bool:
+    """True when the densest window is just the file's normal error rate.
+
+    The absolute floor alone (10 errors in a window) flags any busy service
+    with a steady trickle: a 13-hour, 500k-line app log at a uniform 1% error
+    rate reported "Error burst detected" for an ordinary 5 minutes. A burst is
+    an excess over the log's own background — only measurable when the log is
+    much longer than one window, so short captures are judged as before.
+    """
+    if window.total_seconds() <= 0 or span < window * _STEADY_MIN_WINDOWS:
+        return False
+    expected = total * window.total_seconds() / span.total_seconds()
+    return peak < _STEADY_FACTOR * expected
 
 
 def _densest_error_window(

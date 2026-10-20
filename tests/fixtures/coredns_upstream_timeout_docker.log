@@ -1,0 +1,95 @@
+.:53
+CoreDNS-1.11.3
+linux/arm64, go1.21.11, a6338e9
+[INFO] 172.22.0.3:42925 - 48741 "A IN host1.example.com. udp 35 false 512" - - 0 6.002351586s
+[ERROR] plugin/errors: 2 host1.example.com. A: read udp 172.22.0.2:35233->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:42925 - 48825 "AAAA IN host1.example.com. udp 35 false 512" - - 0 6.002377085s
+[ERROR] plugin/errors: 2 host1.example.com. AAAA: read udp 172.22.0.2:52535->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:42925 - 48741 "A IN host1.example.com. udp 35 false 512" - - 0 6.006154877s
+[INFO] 172.22.0.3:42925 - 48825 "AAAA IN host1.example.com. udp 35 false 512" - - 0 6.006169128s
+[ERROR] plugin/errors: 2 host1.example.com. A: read udp 172.22.0.2:50746->10.255.255.1:53: i/o timeout
+[ERROR] plugin/errors: 2 host1.example.com. AAAA: read udp 172.22.0.2:55984->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:58783 - 55941 "A IN host2.example.com. udp 35 false 512" - - 0 6.017054003s
+[ERROR] plugin/errors: 2 host2.example.com. A: read udp 172.22.0.2:40621->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:58783 - 56149 "AAAA IN host2.example.com. udp 35 false 512" - - 0 6.017063461s
+[ERROR] plugin/errors: 2 host2.example.com. AAAA: read udp 172.22.0.2:47192->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:58783 - 56149 "AAAA IN host2.example.com. udp 35 false 512" - - 0 6.00349592s
+[ERROR] plugin/errors: 2 host2.example.com. AAAA: read udp 172.22.0.2:38787->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:58783 - 55941 "A IN host2.example.com. udp 35 false 512" - - 0 6.003579669s
+[ERROR] plugin/errors: 2 host2.example.com. A: read udp 172.22.0.2:58792->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:34805 - 32438 "A IN host3.example.com. udp 35 false 512" - - 0 6.004508753s
+[ERROR] plugin/errors: 2 host3.example.com. A: read udp 172.22.0.2:44411->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:34805 - 33021 "AAAA IN host3.example.com. udp 35 false 512" - - 0 6.004509753s
+[ERROR] plugin/errors: 2 host3.example.com. AAAA: read udp 172.22.0.2:49128->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:34805 - 32438 "A IN host3.example.com. udp 35 false 512" - - 0 6.011813086s
+[INFO] 172.22.0.3:34805 - 33021 "AAAA IN host3.example.com. udp 35 false 512" - - 0 6.011928461s
+[ERROR] plugin/errors: 2 host3.example.com. AAAA: read udp 172.22.0.2:47153->10.255.255.1:53: i/o timeout
+[ERROR] plugin/errors: 2 host3.example.com. A: read udp 172.22.0.2:33479->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:42122 - 17753 "AAAA IN host4.example.com. udp 35 false 512" - - 0 6.011054503s
+[INFO] 172.22.0.3:42122 - 17545 "A IN host4.example.com. udp 35 false 512" - - 0 6.010986961s
+[ERROR] plugin/errors: 2 host4.example.com. A: read udp 172.22.0.2:49577->10.255.255.1:53: i/o timeout
+[ERROR] plugin/errors: 2 host4.example.com. AAAA: read udp 172.22.0.2:60873->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:42122 - 17545 "A IN host4.example.com. udp 35 false 512" - - 0 6.006981586s
+[ERROR] plugin/errors: 2 host4.example.com. A: read udp 172.22.0.2:59339->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:42122 - 17753 "AAAA IN host4.example.com. udp 35 false 512" - - 0 6.007007419s
+[ERROR] plugin/errors: 2 host4.example.com. AAAA: read udp 172.22.0.2:57552->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:36956 - 27064 "A IN host5.example.com. udp 35 false 512" - - 0 6.009623419s
+[ERROR] plugin/errors: 2 host5.example.com. A: read udp 172.22.0.2:52382->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:36956 - 27231 "AAAA IN host5.example.com. udp 35 false 512" - - 0 6.009627253s
+[ERROR] plugin/errors: 2 host5.example.com. AAAA: read udp 172.22.0.2:43986->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:36956 - 27231 "AAAA IN host5.example.com. udp 35 false 512" - - 0 6.012944461s
+[ERROR] plugin/errors: 2 host5.example.com. AAAA: read udp 172.22.0.2:58323->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:36956 - 27064 "A IN host5.example.com. udp 35 false 512" - - 0 6.012931628s
+[ERROR] plugin/errors: 2 host5.example.com. A: read udp 172.22.0.2:45042->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:59206 - 61006 "A IN host6.example.com. udp 35 false 512" - - 0 6.007182795s
+[INFO] 172.22.0.3:59206 - 61214 "AAAA IN host6.example.com. udp 35 false 512" - - 0 6.007182628s
+[ERROR] plugin/errors: 2 host6.example.com. AAAA: read udp 172.22.0.2:34905->10.255.255.1:53: i/o timeout
+[ERROR] plugin/errors: 2 host6.example.com. A: read udp 172.22.0.2:56470->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:59206 - 61214 "AAAA IN host6.example.com. udp 35 false 512" - - 0 6.004899253s
+[INFO] 172.22.0.3:59206 - 61006 "A IN host6.example.com. udp 35 false 512" - - 0 6.00491917s
+[ERROR] plugin/errors: 2 host6.example.com. A: read udp 172.22.0.2:51711->10.255.255.1:53: i/o timeout
+[ERROR] plugin/errors: 2 host6.example.com. AAAA: read udp 172.22.0.2:46058->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:38453 - 45639 "A IN host7.example.com. udp 35 false 512" - - 0 6.01608642s
+[ERROR] plugin/errors: 2 host7.example.com. A: read udp 172.22.0.2:54191->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:38453 - 45722 "AAAA IN host7.example.com. udp 35 false 512" - - 0 6.016670169s
+[ERROR] plugin/errors: 2 host7.example.com. AAAA: read udp 172.22.0.2:46409->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:38453 - 45722 "AAAA IN host7.example.com. udp 35 false 512" - - 0 6.004434503s
+[ERROR] plugin/errors: 2 host7.example.com. AAAA: read udp 172.22.0.2:43568->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:38453 - 45639 "A IN host7.example.com. udp 35 false 512" - - 0 6.004431669s
+[ERROR] plugin/errors: 2 host7.example.com. A: read udp 172.22.0.2:53439->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:34790 - 22357 "A IN host8.example.com. udp 35 false 512" - - 0 6.005873503s
+[INFO] 172.22.0.3:34790 - 22774 "AAAA IN host8.example.com. udp 35 false 512" - - 0 6.005963919s
+[ERROR] plugin/errors: 2 host8.example.com. A: read udp 172.22.0.2:47084->10.255.255.1:53: i/o timeout
+[ERROR] plugin/errors: 2 host8.example.com. AAAA: read udp 172.22.0.2:49468->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:34790 - 22774 "AAAA IN host8.example.com. udp 35 false 512" - - 0 6.004757586s
+[ERROR] plugin/errors: 2 host8.example.com. AAAA: read udp 172.22.0.2:57236->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:34790 - 22357 "A IN host8.example.com. udp 35 false 512" - - 0 6.004731962s
+[ERROR] plugin/errors: 2 host8.example.com. A: read udp 172.22.0.2:47510->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:52636 - 45238 "A IN host9.example.com. udp 35 false 512" - - 0 6.00843892s
+[INFO] 172.22.0.3:52636 - 45488 "AAAA IN host9.example.com. udp 35 false 512" - - 0 6.008628003s
+[ERROR] plugin/errors: 2 host9.example.com. AAAA: read udp 172.22.0.2:52001->10.255.255.1:53: i/o timeout
+[ERROR] plugin/errors: 2 host9.example.com. A: read udp 172.22.0.2:39237->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:52636 - 45238 "A IN host9.example.com. udp 35 false 512" - - 0 6.01013917s
+[ERROR] plugin/errors: 2 host9.example.com. A: read udp 172.22.0.2:54829->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:52636 - 45488 "AAAA IN host9.example.com. udp 35 false 512" - - 0 6.010172378s
+[ERROR] plugin/errors: 2 host9.example.com. AAAA: read udp 172.22.0.2:52252->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:52003 - 40291 "AAAA IN host10.example.com. udp 36 false 512" - - 0 6.011702087s
+[ERROR] plugin/errors: 2 host10.example.com. AAAA: read udp 172.22.0.2:57948->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:52003 - 39958 "A IN host10.example.com. udp 36 false 512" - - 0 6.013074295s
+[ERROR] plugin/errors: 2 host10.example.com. A: read udp 172.22.0.2:48781->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:52003 - 39958 "A IN host10.example.com. udp 36 false 512" - - 0 6.003328544s
+[INFO] 172.22.0.3:52003 - 40291 "AAAA IN host10.example.com. udp 36 false 512" - - 0 6.003346794s
+[ERROR] plugin/errors: 2 host10.example.com. A: read udp 172.22.0.2:37795->10.255.255.1:53: i/o timeout
+[ERROR] plugin/errors: 2 host10.example.com. AAAA: read udp 172.22.0.2:56645->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:34991 - 55995 "AAAA IN host11.example.com. udp 36 false 512" - - 0 6.011738127s
+[ERROR] plugin/errors: 2 host11.example.com. AAAA: read udp 172.22.0.2:36899->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:34991 - 55786 "A IN host11.example.com. udp 36 false 512" - - 0 6.011738419s
+[ERROR] plugin/errors: 2 host11.example.com. A: read udp 172.22.0.2:41026->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:34991 - 55786 "A IN host11.example.com. udp 36 false 512" - - 0 6.003244627s
+[ERROR] plugin/errors: 2 host11.example.com. A: read udp 172.22.0.2:45809->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:34991 - 55995 "AAAA IN host11.example.com. udp 36 false 512" - - 0 6.003259378s
+[ERROR] plugin/errors: 2 host11.example.com. AAAA: read udp 172.22.0.2:32770->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:58143 - 63523 "A IN host12.example.com. udp 36 false 512" - - 0 6.012036211s
+[ERROR] plugin/errors: 2 host12.example.com. A: read udp 172.22.0.2:52257->10.255.255.1:53: i/o timeout
+[INFO] 172.22.0.3:58143 - 63814 "AAAA IN host12.example.com. udp 36 false 512" - - 0 6.012062502s
+[ERROR] plugin/errors: 2 host12.example.com. AAAA: read udp 172.22.0.2:43040->10.255.255.1:53: i/o timeout

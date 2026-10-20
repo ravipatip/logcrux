@@ -1,0 +1,111 @@
+19-Oct-2026 20:39:14.548 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/leak] threw exception [An exception occurred processing [/leak.jsp] at line [1]
+
+1: <% java.util.List l = new java.util.ArrayList(); for (int i = 0; i < Integer.MAX_VALUE; i++) { l.add(new byte[1 << 20]); } %>
+
+
+Stacktrace:] with root cause
+	java.lang.OutOfMemoryError: Java heap space
+		at org.apache.jsp.leak_jsp._jspService(leak_jsp.java:121)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:65)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:500)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:359)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:310)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:197)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:57)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:164)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:348)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:413)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1308)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2198)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:974)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:492)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:80)
+		at java.base/java.lang.Thread.runWith(Unknown Source)
+		at java.base/java.lang.Thread.run(Unknown Source)
+19-Oct-2026 20:39:14.579 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/leak] threw exception [An exception occurred processing [/leak.jsp] at line [1]
+
+1: <% java.util.List l = new java.util.ArrayList(); for (int i = 0; i < Integer.MAX_VALUE; i++) { l.add(new byte[1 << 20]); } %>
+
+
+Stacktrace:] with root cause
+	java.lang.OutOfMemoryError: Java heap space
+		at org.apache.jsp.leak_jsp._jspService(leak_jsp.java:121)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:65)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:500)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:359)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:310)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:197)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:57)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:164)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:348)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:413)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1308)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2198)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:974)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:492)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:80)
+		at java.base/java.lang.Thread.runWith(Unknown Source)
+		at java.base/java.lang.Thread.run(Unknown Source)
+19-Oct-2026 20:39:14.607 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/leak] threw exception [An exception occurred processing [/leak.jsp] at line [1]
+
+1: <% java.util.List l = new java.util.ArrayList(); for (int i = 0; i < Integer.MAX_VALUE; i++) { l.add(new byte[1 << 20]); } %>
+
+
+Stacktrace:] with root cause
+	java.lang.OutOfMemoryError: Java heap space
+		at org.apache.jsp.leak_jsp._jspService(leak_jsp.java:121)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:65)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:500)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:359)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:310)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:197)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:57)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:164)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:348)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:413)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1308)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2198)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:974)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:492)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:80)
+		at java.base/java.lang.Thread.runWith(Unknown Source)
+		at java.base/java.lang.Thread.run(Unknown Source)

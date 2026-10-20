@@ -20,6 +20,7 @@ from logcrux.parsers.azure import AzureParser
 from logcrux.parsers.base import LogParser
 from logcrux.parsers.bazel import BazelParser
 from logcrux.parsers.bluetoothd import BluetoothdParser
+from logcrux.parsers.borg import BorgParser
 from logcrux.parsers.bunyan import BunyanParser
 from logcrux.parsers.caddy import CaddyParser
 from logcrux.parsers.cassandra import CassandraParser
@@ -47,6 +48,7 @@ from logcrux.parsers.datadog import DatadogParser
 from logcrux.parsers.dbus import DBusParser
 from logcrux.parsers.dhcpd import DhcpdParser
 from logcrux.parsers.django import DjangoParser
+from logcrux.parsers.dnf5 import Dnf5Parser, DnfParser
 from logcrux.parsers.dnsmasq import DnsmasqParser
 from logcrux.parsers.docker import DockerParser
 from logcrux.parsers.dovecot import DovecotParser
@@ -86,6 +88,7 @@ from logcrux.parsers.jenkins import JenkinsParser
 from logcrux.parsers.jetty import JettyParser
 from logcrux.parsers.journald import JournaldParser
 from logcrux.parsers.json_access import JsonAccessParser
+from logcrux.parsers.jsonlines import JsonLinesParser
 from logcrux.parsers.jvmgc import JvmGcParser
 from logcrux.parsers.kafka import KafkaParser
 from logcrux.parsers.keepalived import KeepalivedParser
@@ -95,6 +98,7 @@ from logcrux.parsers.kibana import KibanaParser
 from logcrux.parsers.klog import KlogParser
 from logcrux.parsers.klogjson import KlogJsonParser
 from logcrux.parsers.kong import KongParser
+from logcrux.parsers.kopia import KopiaParser
 from logcrux.parsers.krb5kdc import Krb5KdcParser
 from logcrux.parsers.kubeaudit import KubeAuditParser
 from logcrux.parsers.kubernetes import KubernetesParser
@@ -107,6 +111,8 @@ from logcrux.parsers.logfmt import LogfmtParser
 from logcrux.parsers.logrus import LogrusParser
 from logcrux.parsers.logstash import LogstashParser
 from logcrux.parsers.lxc import LxcParser
+from logcrux.parsers.macos_unified import MacOSUnifiedParser
+from logcrux.parsers.macosinstall import MacOSInstallParser
 from logcrux.parsers.maven import MavenParser
 from logcrux.parsers.mdadm import MdadmParser
 from logcrux.parsers.mikrotik import MikroTikParser
@@ -162,6 +168,7 @@ from logcrux.parsers.qemu import QemuParser
 from logcrux.parsers.rabbitmq import RabbitMQParser
 from logcrux.parsers.rails import RailsParser
 from logcrux.parsers.redis import RedisParser
+from logcrux.parsers.restic import ResticParser
 from logcrux.parsers.rspamd import RspamdParser
 from logcrux.parsers.rsyncd import RsyncdParser
 from logcrux.parsers.rsyslog import RsyslogParser
@@ -215,6 +222,7 @@ from logcrux.parsers.zabbix import ZabbixParser
 from logcrux.parsers.zeek import ZeekParser
 from logcrux.parsers.zfs import ZfsParser
 from logcrux.parsers.zookeeper import ZookeeperParser
+from logcrux.parsers.zypp import ZyppHistoryParser
 
 _PARSERS: list[type[LogParser]] = [
     # Path-specific parsers first (most precise detection)
@@ -535,7 +543,27 @@ _PARSERS: list[type[LogParser]] = [
     IISParser,
     AptHistoryParser,
     DpkgParser,
+    # dnf5 precedes yum: RHEL 10 / Fedora 41+ replaced yum.log's "Mon DD
+    # Installed:" shape with an ISO-8601 + [pid] + LEVEL line that no other
+    # package-manager parser matches (it used to land on syslog at <1% coverage).
+    Dnf5Parser,
+    DnfParser,
     YumParser,
+    ZyppHistoryParser,
+    MacOSInstallParser,
+    # `log show` (default/compact/syslog styles): gated on its header or on the
+    # thread-id + macOS log-type columns no other format has.
+    MacOSUnifiedParser,
+    # Backup / data protection. restic's plain output has no timestamps at all,
+    # so it is gated on markers only restic emits ("snapshot <id> saved",
+    # "<op>(...) returned error, retrying after ...") rather than on line shape.
+    ResticParser,
+    # kopia: gated on its snapshot/maintenance lines and its repository error
+    # chains, never on a bare "ERROR " prefix.
+    KopiaParser,
+    # borg: gated on its stats block (Archive fingerprint) and its own error
+    # sentences (BORG_PASSPHRASE, "Repository X does not exist.").
+    BorgParser,
     # Distinctive application / orchestration / build / desktop formats. Each
     # owns a unique line shape (airflow {file:line}, sidekiq pid=/tid=, saltstack
     # [salt.*][LEVEL], certbot ts:LEVEL:module, monit [TZ date] level:, zabbix
@@ -587,6 +615,9 @@ _PARSERS: list[type[LogParser]] = [
     GiteaParser,
     GoStdlibParser,
     PhoenixParser,
+    # Any other JSON-lines app log with a level and a message key (structlog,
+    # zap, slog, logrus/loguru JSON): after every format-specific JSON parser.
+    JsonLinesParser,
     # System catch-alls
     SyslogParser,
     GenericParser,
@@ -606,7 +637,9 @@ _FORMAT_ALIASES: dict[str, str] = {
     "dmesg": "kernel",
     "ssh": "secure",
     "auth": "secure",
-    "dnf": "yum",
+    "zypp": "zypp-history",
+    "zypper": "zypp-history",
+    "install.log": "macos-install",
     "journal": "journald",
     # Ping Identity product names → the parser that handles that product's logs.
     # The Ping Data platform products share one server/access/error log format
@@ -646,3 +679,36 @@ def detect_parser(
         if cls.can_parse(path, sample_lines):
             return cls()
     raise RuntimeError("unreachable: GenericParser must always match")
+
+
+def redetect_candidates(
+    lines: list[str], exclude: type[LogParser]
+) -> list[tuple[type[LogParser], int]]:
+    """Parsers that claim some *region* of a file whose head misled detection.
+
+    Detection looks at the first 20 lines, so a file that opens with an
+    atypical block — a boot journal's hundreds of ``kernel:`` lines, an
+    image-build preamble — latches onto a parser that then covers only part of
+    the file. Re-run first-hit detection on 20-line windows spread across the
+    whole file (content only: ``path`` is deliberately not passed, or a
+    filename-matched parser would win every window again) and return each
+    distinct claimant with the number of windows it claimed. The caller ranks
+    by that breadth first, then coverage: a parser that accepts any line (pip)
+    reaches "100% coverage" on anything once one window lets it in.
+    """
+    non_blank = [ln.rstrip("\n")[:8192] for ln in lines if ln.strip()]
+    n = len(non_blank)
+    if n == 0:
+        return []
+    starts = sorted({int(n * f) for f in (0.0, 0.1, 0.25, 0.5, 0.75, 0.9)} | {max(0, n - 20)})
+    claims: dict[type[LogParser], int] = {}
+    for s in starts:
+        window = non_blank[s:s + 20]
+        # Every claimant, not just the first: the first-hit order is what put
+        # the wrong parser in front in the first place.
+        for cls in _PARSERS:
+            if cls is exclude or cls.FORMAT_NAME == "generic":
+                continue
+            if cls.can_parse(None, window):
+                claims[cls] = claims.get(cls, 0) + 1
+    return list(claims.items())

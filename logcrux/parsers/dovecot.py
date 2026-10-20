@@ -48,6 +48,7 @@ def _dovecot_severity(message: str) -> Severity:
 
 class DovecotParser(LogParser):
     FORMAT_NAME = "dovecot"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

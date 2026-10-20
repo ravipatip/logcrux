@@ -1,0 +1,13 @@
+Oct 13 07:35:45 lc-rocky-10 kernel: md127: detected capacity change from 129024 to 0
+Oct 13 07:35:45 lc-rocky-10 kernel: md: md127 stopped.
+Oct 13 07:35:45 lc-rocky-10 kernel: loop0: detected capacity change from 0 to 262144
+Oct 13 07:35:45 lc-rocky-10 kernel: EXT4-fs (dm-0): mounted filesystem 8f528ba3-cb8a-4910-a795-ea2c8199a828 r/w with ordered data mode. Quota mode: none.
+Oct 13 07:35:45 lc-rocky-10 kernel: Buffer I/O error on dev dm-0, logical block 1, lost sync page write
+Oct 13 07:35:45 lc-rocky-10 kernel: EXT4-fs (dm-0): I/O error while writing superblock
+Oct 13 07:35:45 lc-rocky-10 kernel: Aborting journal on device dm-0-8.
+Oct 13 07:35:45 lc-rocky-10 kernel: Buffer I/O error on dev dm-0, logical block 49153, lost sync page write
+Oct 13 07:35:45 lc-rocky-10 kernel: JBD2: I/O error when updating journal superblock for dm-0-8.
+Oct 13 07:35:45 lc-rocky-10 kernel: EXT4-fs error (device dm-0) in __ext4_new_inode:1093: IO failure
+Oct 13 07:35:45 lc-rocky-10 kernel: Buffer I/O error on dev dm-0, logical block 1, lost sync page write
+Oct 13 07:35:45 lc-rocky-10 kernel: EXT4-fs (dm-0): I/O error while writing superblock
+Oct 13 07:35:45 lc-rocky-10 kernel: EXT4-fs (dm-0): Remounting filesystem read-only

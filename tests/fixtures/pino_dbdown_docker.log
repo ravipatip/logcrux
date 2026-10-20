@@ -1,0 +1,57 @@
+{"level":30,"time":1792453210322,"service":"checkout","msg":"checkout service started"}
+{"level":30,"time":1792453210322,"service":"checkout","order":1000,"ms":20,"msg":"order placed"}
+{"level":30,"time":1792453210322,"service":"checkout","order":1001,"ms":21,"msg":"order placed"}
+{"level":30,"time":1792453210322,"service":"checkout","order":1002,"ms":22,"msg":"order placed"}
+{"level":30,"time":1792453210322,"service":"checkout","order":1003,"ms":23,"msg":"order placed"}
+{"level":30,"time":1792453210322,"service":"checkout","order":1004,"ms":24,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1005,"ms":25,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1006,"ms":26,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1007,"ms":27,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1008,"ms":28,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1009,"ms":20,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1010,"ms":21,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1011,"ms":22,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1012,"ms":23,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1013,"ms":24,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1014,"ms":25,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1015,"ms":26,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1016,"ms":27,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1017,"ms":28,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1018,"ms":20,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1019,"ms":21,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1020,"ms":22,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1021,"ms":23,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1022,"ms":24,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1023,"ms":25,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1024,"ms":26,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1025,"ms":27,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1026,"ms":28,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1027,"ms":20,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1028,"ms":21,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1029,"ms":22,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1030,"ms":23,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1031,"ms":24,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1032,"ms":25,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1033,"ms":26,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1034,"ms":27,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1035,"ms":28,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1036,"ms":20,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1037,"ms":21,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1038,"ms":22,"msg":"order placed"}
+{"level":30,"time":1792453210323,"service":"checkout","order":1039,"ms":23,"msg":"order placed"}
+{"level":50,"time":1792453210374,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":1,"msg":"database connection failed"}
+{"level":50,"time":1792453210428,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":2,"msg":"database connection failed"}
+{"level":50,"time":1792453210480,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":3,"msg":"database connection failed"}
+{"level":50,"time":1792453210540,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":4,"msg":"database connection failed"}
+{"level":50,"time":1792453210602,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":5,"msg":"database connection failed"}
+{"level":50,"time":1792453210654,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":6,"msg":"database connection failed"}
+{"level":50,"time":1792453210710,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":7,"msg":"database connection failed"}
+{"level":50,"time":1792453210761,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":8,"msg":"database connection failed"}
+{"level":50,"time":1792453210818,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":9,"msg":"database connection failed"}
+{"level":50,"time":1792453210883,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":10,"msg":"database connection failed"}
+{"level":50,"time":1792453210931,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":11,"msg":"database connection failed"}
+{"level":50,"time":1792453210990,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":12,"msg":"database connection failed"}
+{"level":50,"time":1792453211047,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":13,"msg":"database connection failed"}
+{"level":50,"time":1792453211107,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":14,"msg":"database connection failed"}
+{"level":50,"time":1792453211167,"service":"checkout","err":{"type":"Object","message":"connect ECONNREFUSED 127.0.0.1:5432","stack":"","code":"ECONNREFUSED"},"attempt":15,"msg":"database connection failed"}
+{"level":60,"time":1792453211168,"service":"checkout","msg":"giving up: database unreachable"}

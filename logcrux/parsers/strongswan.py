@@ -50,6 +50,7 @@ def _strongswan_severity(message: str) -> Severity:
 
 class StrongSwanParser(LogParser):
     FORMAT_NAME = "strongswan"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

@@ -9,7 +9,7 @@ from dateutil import parser as dateparser
 from logcrux.models import ParsedEvent, Severity
 from logcrux.parsers.base import LogParser
 
-# RHEL/CentOS yum.log (and dnf.log legacy form):
+# RHEL/CentOS 7 yum.log:
 #   Jun 20 10:15:01 Installed: nginx-1.24.0-1.el9.x86_64
 #   Jun 20 10:15:02 Updated: openssl-3.0.7-1.el9.x86_64
 #   Jun 20 10:15:03 Erased: oldpkg-1.0.x86_64
@@ -29,7 +29,10 @@ class YumParser(LogParser):
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:
-        if path and re.search(r"(yum|dnf)\.log", path.name.lower()):
+        # Only yum.log by name. dnf.log was routed here too, on the belief that
+        # it keeps the yum shape; on real EL9/EL10 it is dnf 4's own ISO-8601
+        # debug log (DnfParser) and this parser matched 0/1720 of its lines.
+        if path and re.search(r"yum\.log", path.name.lower()):
             return True
         matched = sum(1 for ln in sample_lines[:20] if _PATTERN.match(ln))
         nonblank = sum(1 for ln in sample_lines[:20] if ln.strip())

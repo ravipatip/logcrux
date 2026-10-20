@@ -28,7 +28,10 @@ class PipParser(LogParser):
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:
-        return any(any(mk in ln for mk in _MARKERS) for ln in sample_lines[:30])
+        # pip prints these at the start of a line. Anywhere-in-line matching let
+        # journald's "Collecting audit messages is disabled." claim real RHEL 8 /
+        # Rocky 8 boot journals (GCP, 2026-10-13).
+        return any(ln.lstrip().startswith(_MARKERS) for ln in sample_lines[:30])
 
     def parse_line(self, line: str, line_number: int) -> ParsedEvent | None:
         if not line.strip():

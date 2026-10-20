@@ -1,0 +1,9 @@
+2026/10/20 01:26:47 worker starting, queue=orders
+2026/10/20 01:26:47 processing job 1
+2026/10/20 01:26:47 processing job 2
+2026/10/20 01:26:47 processing job 3
+panic: runtime error: index out of range [3] with length 3
+
+goroutine 1 [running]:
+main.main()
+	/src/main.go:12 +0x15c

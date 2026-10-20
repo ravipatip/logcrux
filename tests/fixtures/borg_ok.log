@@ -1,0 +1,21 @@
+A /src/a.bin
+A /src/b.txt
+d /src
+------------------------------------------------------------------------------
+Repository: /repo
+Archive name: nightly-1
+Archive fingerprint: 89f3c8175124dba8d142f4e68dad3fe47a226410db1e7871f0be07d7fedddf78
+Time (start): Mon, 2026-10-19 23:26:34
+Time (end):   Mon, 2026-10-19 23:26:34
+Duration: 0.00 seconds
+Number of files: 2
+Utilization of max. archive size: 0%
+------------------------------------------------------------------------------
+                       Original size      Compressed size    Deduplicated size
+This archive:              200.52 kB            200.61 kB            200.61 kB
+All archives:              200.00 kB            200.09 kB            200.89 kB
+
+                       Unique chunks         Total chunks
+Chunk index:                       4                    4
+------------------------------------------------------------------------------
+nightly-1                            Mon, 2026-10-19 23:26:34 [89f3c8175124dba8d142f4e68dad3fe47a226410db1e7871f0be07d7fedddf78]

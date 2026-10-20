@@ -67,6 +67,7 @@ def _msg_severity(message: str) -> Severity:
 
 class NamedParser(LogParser):
     FORMAT_NAME = "named"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

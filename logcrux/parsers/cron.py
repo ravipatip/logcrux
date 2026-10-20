@@ -46,6 +46,7 @@ def _cron_severity(action: str, message: str) -> Severity:
 
 class CronParser(LogParser):
     FORMAT_NAME = "cron"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

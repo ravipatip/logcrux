@@ -1,0 +1,8 @@
+2026-10-13 03:42:21.254 UTC [2161] LOG:  starting PostgreSQL 14.24 (Ubuntu 14.24-0ubuntu0.22.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0, 64-bit
+2026-10-13 03:42:21.254 UTC [2161] LOG:  listening on IPv4 address "127.0.0.1", port 55433
+2026-10-13 03:42:21.262 UTC [2161] LOG:  listening on Unix socket "/tmp/.s.PGSQL.55433"
+2026-10-13 03:42:21.275 UTC [2162] LOG:  database system was shut down at 2026-10-13 03:42:20 UTC
+2026-10-13 03:42:21.287 UTC [2161] LOG:  database system is ready to accept connections
+2026-10-13 03:42:21.581 UTC [2172] ERROR:  could not extend file "base/13761/16384": wrote only 4096 of 8192 bytes at block 1394
+2026-10-13 03:42:21.581 UTC [2172] HINT:  Check free disk space.
+2026-10-13 03:42:21.581 UTC [2172] STATEMENT:  create table t(x text); insert into t select repeat(md5(g::text),40) from generate_series(1,2000000) g;

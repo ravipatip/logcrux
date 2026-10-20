@@ -1,0 +1,54 @@
+Oct 13 08:36:30 lc-sles-15-sp5 nscd[2087]: 2087 monitoring file `/etc/group` (23)
+Oct 13 08:36:30 lc-sles-15-sp5 nscd[2087]: 2087 monitoring directory `/etc` (2)
+Oct 13 08:36:30 lc-sles-15-sp5 chpasswd[6540]: pam_unix(chpasswd:chauthtok): password changed for lcop
+Oct 13 08:36:30 lc-sles-15-sp5 nscd[2087]: 2087 monitoring file `/etc/passwd` (24)
+Oct 13 08:36:30 lc-sles-15-sp5 nscd[2087]: 2087 monitoring directory `/etc` (2)
+Oct 13 08:36:30 lc-sles-15-sp5 su[6545]: (to lcop) root on none
+Oct 13 08:36:30 lc-sles-15-sp5 su[6545]: pam_unix(su-l:session): session opened for user lcop by (uid=0)
+Oct 13 08:36:30 lc-sles-15-sp5 sudo[6571]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=root
+Oct 13 08:36:30 lc-sles-15-sp5 sshd[6520]: Received disconnect from 203.0.113.10 port 42008:11: disconnected by user
+Oct 13 08:36:30 lc-sles-15-sp5 sshd[6520]: Disconnected from user operator 203.0.113.10 port 42008
+Oct 13 08:36:30 lc-sles-15-sp5 sshd[6518]: pam_unix(sshd:session): session closed for user operator
+Oct 13 08:36:30 lc-sles-15-sp5 systemd[1]: session-10.scope: Deactivated successfully.
+Oct 13 08:36:30 lc-sles-15-sp5 systemd-logind[2109]: Session 10 logged out. Waiting for processes to exit.
+Oct 13 08:36:30 lc-sles-15-sp5 systemd-logind[2109]: Removed session 10.
+Oct 13 08:36:37 lc-sles-15-sp5 sudo[6571]:     lcop : 3 incorrect password attempts ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:36:37 lc-sles-15-sp5 su[6545]: pam_unix(su-l:session): session closed for user lcop
+Oct 13 08:36:37 lc-sles-15-sp5 su[6598]: (to lcop) root on none
+Oct 13 08:36:37 lc-sles-15-sp5 su[6598]: pam_unix(su-l:session): session opened for user lcop by (uid=0)
+Oct 13 08:36:37 lc-sles-15-sp5 sudo[6624]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=root
+Oct 13 08:36:42 lc-sles-15-sp5 sudo[6624]:     lcop : 3 incorrect password attempts ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:36:42 lc-sles-15-sp5 su[6598]: pam_unix(su-l:session): session closed for user lcop
+Oct 13 08:36:42 lc-sles-15-sp5 su[6625]: (to lcop) root on none
+Oct 13 08:36:42 lc-sles-15-sp5 su[6625]: pam_unix(su-l:session): session opened for user lcop by (uid=0)
+Oct 13 08:36:42 lc-sles-15-sp5 sudo[6651]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=root
+Oct 13 08:36:49 lc-sles-15-sp5 sudo[6651]:     lcop : 3 incorrect password attempts ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:36:49 lc-sles-15-sp5 su[6625]: pam_unix(su-l:session): session closed for user lcop
+Oct 13 08:36:49 lc-sles-15-sp5 su[6652]: (to lcop) root on none
+Oct 13 08:36:49 lc-sles-15-sp5 su[6652]: pam_unix(su-l:session): session opened for user lcop by (uid=0)
+Oct 13 08:36:49 lc-sles-15-sp5 sudo[6678]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=root
+Oct 13 08:36:53 lc-sles-15-sp5 sudo[6678]:     lcop : 3 incorrect password attempts ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:36:53 lc-sles-15-sp5 su[6652]: pam_unix(su-l:session): session closed for user lcop
+Oct 13 08:36:53 lc-sles-15-sp5 su[6679]: (to lcop) root on none
+Oct 13 08:36:53 lc-sles-15-sp5 su[6679]: pam_unix(su-l:session): session opened for user lcop by (uid=0)
+Oct 13 08:36:53 lc-sles-15-sp5 sudo[6705]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=root
+Oct 13 08:37:00 lc-sles-15-sp5 systemd[1]: Started Enable/Disable Guest Registration for running instances.
+Oct 13 08:37:00 lc-sles-15-sp5 sudo[6705]:     lcop : 3 incorrect password attempts ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:37:00 lc-sles-15-sp5 su[6679]: pam_unix(su-l:session): session closed for user lcop
+Oct 13 08:37:00 lc-sles-15-sp5 su[6707]: (to lcop) root on none
+Oct 13 08:37:00 lc-sles-15-sp5 su[6707]: pam_unix(su-l:session): session opened for user lcop by (uid=0)
+Oct 13 08:37:00 lc-sles-15-sp5 sudo[6734]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=root
+Oct 13 08:37:00 lc-sles-15-sp5 cloudguest-lic-watcher[6706]: 2026-10-13 08:37:00,669: INFO: Successful server query: PAYG
+Oct 13 08:37:00 lc-sles-15-sp5 systemd[1]: guestregister-lic-watcher.service: Deactivated successfully.
+Oct 13 08:37:05 lc-sles-15-sp5 sshd[6737]: Accepted publickey for operator from 203.0.113.10 port 41783 ssh2: RSA SHA256:REDACTED
+Oct 13 08:37:05 lc-sles-15-sp5 systemd[1]: Started Session 11 of User operator.
+Oct 13 08:37:05 lc-sles-15-sp5 systemd-logind[2109]: New session 11 of user operator.
+Oct 13 08:37:05 lc-sles-15-sp5 sshd[6737]: pam_unix(sshd:session): session opened for user operator by (uid=0)
+Oct 13 08:37:05 lc-sles-15-sp5 sshd[6739]: Received disconnect from 203.0.113.10 port 41783:11: disconnected by user
+Oct 13 08:37:05 lc-sles-15-sp5 sshd[6739]: Disconnected from user operator 203.0.113.10 port 41783
+Oct 13 08:37:05 lc-sles-15-sp5 sshd[6737]: pam_unix(sshd:session): session closed for user operator
+Oct 13 08:37:05 lc-sles-15-sp5 systemd[1]: session-11.scope: Deactivated successfully.
+Oct 13 08:37:05 lc-sles-15-sp5 systemd-logind[2109]: Session 11 logged out. Waiting for processes to exit.
+Oct 13 08:37:05 lc-sles-15-sp5 systemd-logind[2109]: Removed session 11.
+Oct 13 08:37:06 lc-sles-15-sp5 sudo[6734]:     lcop : 3 incorrect password attempts ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:37:06 lc-sles-15-sp5 su[6707]: pam_unix(su-l:session): session closed for user lcop

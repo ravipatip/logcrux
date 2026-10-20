@@ -46,6 +46,7 @@ def _dhcpd_severity(mtype: str, message: str) -> Severity:
 
 class DhcpdParser(LogParser):
     FORMAT_NAME = "dhcpd"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

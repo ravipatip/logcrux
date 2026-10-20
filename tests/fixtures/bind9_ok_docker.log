@@ -1,0 +1,87 @@
+20-Oct-2026 00:29:38.208 starting BIND 9.20.29 (Stable Release) <id:c3d4465>
+20-Oct-2026 00:29:38.209 running on Linux x86_64 6.12.76-linuxkit #1 SMP Sat Jul 11 11:18:11 UTC 2026 (Alpine Linux v3.24)
+20-Oct-2026 00:29:38.209 built with  '--prefix' '/usr' '--sysconfdir=/etc/bind' '--localstatedir=/' '--enable-shared' '--disable-static' '--with-gssapi' '--with-libidn2' '--with-json-c' '--with-lmdb=/usr' '--with-gnu-ld' '--with-maxminddb' '--enable-dnstap'
+20-Oct-2026 00:29:38.209 running as: named -u bind -g -c /etc/bind/named.conf
+20-Oct-2026 00:29:38.209 compiled by GCC 15.2.0
+20-Oct-2026 00:29:38.209 compiled with OpenSSL version: OpenSSL 3.5.9 29 Sep 2026
+20-Oct-2026 00:29:38.209 linked to OpenSSL version: OpenSSL 3.5.9 29 Sep 2026
+20-Oct-2026 00:29:38.209 compiled with libuv version: 1.52.1
+20-Oct-2026 00:29:38.209 linked to libuv version: 1.52.1
+20-Oct-2026 00:29:38.209 compiled with liburcu version: 0.15.3
+20-Oct-2026 00:29:38.209 compiled with jemalloc version: 5.3.0
+20-Oct-2026 00:29:38.209 compiled with libnghttp2 version: 1.69.0
+20-Oct-2026 00:29:38.209 linked to libnghttp2 version: 1.69.0
+20-Oct-2026 00:29:38.209 compiled with libxml2 version: 2.13.9
+20-Oct-2026 00:29:38.209 linked to libxml2 version: 21309
+20-Oct-2026 00:29:38.209 compiled with json-c version: 0.18
+20-Oct-2026 00:29:38.209 linked to json-c version: 0.18
+20-Oct-2026 00:29:38.209 compiled with zlib version: 1.3.2
+20-Oct-2026 00:29:38.209 linked to zlib version: 1.3.2
+20-Oct-2026 00:29:38.209 linked to maxminddb version: 1.13.3
+20-Oct-2026 00:29:38.209 compiled with protobuf-c version: 1.5.2
+20-Oct-2026 00:29:38.209 linked to protobuf-c version: 1.5.2
+20-Oct-2026 00:29:38.209 ----------------------------------------------------
+20-Oct-2026 00:29:38.209 BIND 9 is maintained by Internet Systems Consortium,
+20-Oct-2026 00:29:38.209 Inc. (ISC), a non-profit 501(c)(3) public-benefit 
+20-Oct-2026 00:29:38.209 corporation.  Support and training for BIND 9 are 
+20-Oct-2026 00:29:38.209 available at https://www.isc.org/support
+20-Oct-2026 00:29:38.209 ----------------------------------------------------
+20-Oct-2026 00:29:38.209 the limit on open files is already at the maximum allowed value: 1048576
+20-Oct-2026 00:29:38.209 found 14 CPUs, using 14 worker threads
+20-Oct-2026 00:29:38.245 DNSSEC algorithms: RSASHA1 NSEC3RSASHA1 RSASHA256 RSASHA512 ECDSAP256SHA256 ECDSAP384SHA384 ED25519 ED448
+20-Oct-2026 00:29:38.245 DS algorithms: SHA-1 SHA-256 SHA-384
+20-Oct-2026 00:29:38.246 HMAC algorithms: HMAC-MD5 HMAC-SHA1 HMAC-SHA224 HMAC-SHA256 HMAC-SHA384 HMAC-SHA512
+20-Oct-2026 00:29:38.246 TKEY mode 2 support (Diffie-Hellman): no
+20-Oct-2026 00:29:38.246 TKEY mode 3 support (GSS-API): yes
+20-Oct-2026 00:29:38.279 the initial working directory is '/'
+20-Oct-2026 00:29:38.279 loading configuration from '/etc/bind/named.conf'
+20-Oct-2026 00:29:38.280 the working directory is now '/var/cache/bind'
+20-Oct-2026 00:29:38.287 looking for GeoIP2 databases in '/usr/share/GeoIP'
+20-Oct-2026 00:29:38.289 using default UDP/IPv4 port range: [32768, 60999]
+20-Oct-2026 00:29:38.289 using default UDP/IPv6 port range: [32768, 60999]
+20-Oct-2026 00:29:38.296 listening on IPv4 interface lo, 127.0.0.1#53
+20-Oct-2026 00:29:38.304 listening on IPv4 interface eth0, 172.17.0.3#53
+20-Oct-2026 00:29:38.326 IPv6 socket API is incomplete; explicitly binding to each IPv6 address separately
+20-Oct-2026 00:29:38.326 listening on IPv6 interface lo, ::1#53
+20-Oct-2026 00:29:38.328 Disabling periodic interface re-scans timer
+20-Oct-2026 00:29:38.331 generating session key for dynamic DNS
+20-Oct-2026 00:29:38.358 using built-in root key for view _default
+20-Oct-2026 00:29:38.361 set up managed keys zone for view _default, file 'managed-keys.bind'
+20-Oct-2026 00:29:38.364 not using config file logging statement for logging due to -g option
+20-Oct-2026 00:29:38.366 configuring command channel from '/etc/bind/rndc.key'
+20-Oct-2026 00:29:38.366 command channel listening on 127.0.0.1#953
+20-Oct-2026 00:29:38.366 configuring command channel from '/etc/bind/rndc.key'
+20-Oct-2026 00:29:38.366 command channel listening on ::1#953
+20-Oct-2026 00:29:38.372 managed-keys-zone: loaded serial 0
+20-Oct-2026 00:29:38.386 zone example.lan/IN: loaded serial 1
+20-Oct-2026 00:29:38.387 all zones loaded
+20-Oct-2026 00:29:38.395 FIPS mode is disabled
+20-Oct-2026 00:29:38.395 running
+20-Oct-2026 00:29:38.403 network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:500:9f::42#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:500:2d::d#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:500:a8::e#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2801:1b8:10::b#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2801:1b8:10::b#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:7fe::53#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:500:2f::f#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:500:2::c#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:7fd::1#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:503:c27::2:30#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:dc3::35#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+20-Oct-2026 00:29:38.406 network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+20-Oct-2026 00:29:38.700 network unreachable resolving './DNSKEY/IN': 2801:1b8:10::b#53
+20-Oct-2026 00:29:38.749 managed-keys-zone: Initializing automatic trust anchor management for zone '.'; DNSKEY ID 20326 is now trusted, waiving the normal 30-day waiting period.
+20-Oct-2026 00:29:38.749 managed-keys-zone: Initializing automatic trust anchor management for zone '.'; DNSKEY ID 38696 is now trusted, waiving the normal 30-day waiting period.

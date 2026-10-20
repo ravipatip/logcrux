@@ -1,0 +1,44 @@
+Oct 13 08:39:03 lc-debian-12 useradd[16476]: new group: name=lcop, GID=1005
+Oct 13 08:39:03 lc-debian-12 useradd[16476]: new user: name=lcop, UID=1002, GID=1005, home=/home/lcop, shell=/bin/sh, from=none
+Oct 13 08:39:03 lc-debian-12 chpasswd[16484]: pam_unix(chpasswd:chauthtok): password changed for lcop
+Oct 13 08:39:03 lc-debian-12 su[16488]: (to lcop) root on none
+Oct 13 08:39:03 lc-debian-12 su[16488]: pam_unix(su-l:session): session opened for user lcop(uid=1002) by (uid=0)
+Oct 13 08:39:03 lc-debian-12 sudo[16493]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=lcop
+Oct 13 08:39:09 lc-debian-12 sudo[16493]:     lcop : user NOT in sudoers ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:39:09 lc-debian-12 su[16488]: pam_unix(su-l:session): session closed for user lcop
+Oct 13 08:39:09 lc-debian-12 su[16500]: (to lcop) root on none
+Oct 13 08:39:09 lc-debian-12 su[16500]: pam_unix(su-l:session): session opened for user lcop(uid=1002) by (uid=0)
+Oct 13 08:39:09 lc-debian-12 sudo[16506]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=lcop
+Oct 13 08:39:14 lc-debian-12 sudo[16506]:     lcop : user NOT in sudoers ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:39:14 lc-debian-12 su[16500]: pam_unix(su-l:session): session closed for user lcop
+Oct 13 08:39:14 lc-debian-12 su[16512]: (to lcop) root on none
+Oct 13 08:39:14 lc-debian-12 su[16512]: pam_unix(su-l:session): session opened for user lcop(uid=1002) by (uid=0)
+Oct 13 08:39:14 lc-debian-12 sudo[16518]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=lcop
+Oct 13 08:39:20 lc-debian-12 sudo[16518]:     lcop : user NOT in sudoers ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:39:20 lc-debian-12 su[16512]: pam_unix(su-l:session): session closed for user lcop
+Oct 13 08:39:20 lc-debian-12 su[16527]: (to lcop) root on none
+Oct 13 08:39:20 lc-debian-12 su[16527]: pam_unix(su-l:session): session opened for user lcop(uid=1002) by (uid=0)
+Oct 13 08:39:20 lc-debian-12 sudo[16532]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=lcop
+Oct 13 08:39:26 lc-debian-12 sudo[16532]:     lcop : user NOT in sudoers ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:39:26 lc-debian-12 su[16527]: pam_unix(su-l:session): session closed for user lcop
+Oct 13 08:39:26 lc-debian-12 su[16542]: (to lcop) root on none
+Oct 13 08:39:26 lc-debian-12 su[16542]: pam_unix(su-l:session): session opened for user lcop(uid=1002) by (uid=0)
+Oct 13 08:39:26 lc-debian-12 sudo[16548]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=lcop
+Oct 13 08:39:31 lc-debian-12 sshd[16551]: Accepted publickey for operator from 203.0.113.10 port 41732 ssh2: RSA SHA256:REDACTED
+Oct 13 08:39:31 lc-debian-12 sshd[16551]: pam_unix(sshd:session): session opened for user operator(uid=1000) by (uid=0)
+Oct 13 08:39:31 lc-debian-12 systemd-logind[402]: New session 16 of user operator.
+Oct 13 08:39:32 lc-debian-12 systemd[1]: Started session-16.scope - Session 16 of User operator.
+Oct 13 08:39:32 lc-debian-12 sshd[16551]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 13 08:39:32 lc-debian-12 sudo[16548]:     lcop : user NOT in sudoers ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:39:32 lc-debian-12 su[16542]: pam_unix(su-l:session): session closed for user lcop
+Oct 13 08:39:32 lc-debian-12 su[16563]: (to lcop) root on none
+Oct 13 08:39:32 lc-debian-12 su[16563]: pam_unix(su-l:session): session opened for user lcop(uid=1002) by (uid=0)
+Oct 13 08:39:32 lc-debian-12 sudo[16568]: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=lcop rhost=  user=lcop
+Oct 13 08:39:32 lc-debian-12 sshd[16558]: Received disconnect from 203.0.113.10 port 41732:11: disconnected by user
+Oct 13 08:39:32 lc-debian-12 sshd[16558]: Disconnected from user operator 203.0.113.10 port 41732
+Oct 13 08:39:32 lc-debian-12 sshd[16551]: pam_unix(sshd:session): session closed for user operator
+Oct 13 08:39:32 lc-debian-12 systemd[1]: session-16.scope: Deactivated successfully.
+Oct 13 08:39:32 lc-debian-12 systemd-logind[402]: Session 16 logged out. Waiting for processes to exit.
+Oct 13 08:39:32 lc-debian-12 systemd-logind[402]: Removed session 16.
+Oct 13 08:39:38 lc-debian-12 sudo[16568]:     lcop : user NOT in sudoers ; PWD=/home/lcop ; USER=root ; COMMAND=/usr/bin/true
+Oct 13 08:39:38 lc-debian-12 su[16563]: pam_unix(su-l:session): session closed for user lcop

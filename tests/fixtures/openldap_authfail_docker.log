@@ -1,0 +1,165 @@
+[38;5;6m [38;5;5m20:50:48.82 [0m[38;5;2mINFO [0m ==> ** Starting LDAP setup **
+[38;5;6m [38;5;5m20:50:48.83 [0m[38;5;2mINFO [0m ==> Validating settings in LDAP_* env vars
+[38;5;6m [38;5;5m20:50:48.83 [0m[38;5;2mINFO [0m ==> Initializing OpenLDAP...
+[38;5;6m [38;5;5m20:50:48.84 [0m[38;5;2mINFO [0m ==> Creating LDAP online configuration
+[38;5;6m [38;5;5m20:50:48.84 [0m[38;5;2mINFO [0m ==> Creating slapd.ldif
+[38;5;6m [38;5;5m20:50:48.85 [0m[38;5;2mINFO [0m ==> Starting OpenLDAP server in background
+[38;5;6m [38;5;5m20:50:49.86 [0m[38;5;2mINFO [0m ==> Configure LDAP credentials for admin user
+[38;5;6m [38;5;5m20:50:49.87 [0m[38;5;2mINFO [0m ==> Adding LDAP extra schemas
+[38;5;6m [38;5;5m20:50:49.89 [0m[38;5;2mINFO [0m ==> Creating LDAP default tree
+[38;5;6m [38;5;5m20:50:50.93 [0m[38;5;2mINFO [0m ==> ** LDAP setup finished! **
+
+[38;5;6m [38;5;5m20:50:50.95 [0m[38;5;2mINFO [0m ==> ** Starting slapd **
+6ad682aa.38f5dfd0 0xffff8df6a020 @(#) $OpenLDAP: slapd 2.6.10 (May 23 2025 04:20:00) $
+	@43ba6722b7a3:/bitnami/blacksmith-sandox/openldap-2.6.10/servers/slapd
+6ad682aa.394672ed 0xffff8df6a020 slapd starting
+6ad682b1.059ee161 0xffff47fff160 conn=1000 fd=12 ACCEPT from IP=127.0.0.1:49092 (IP=0.0.0.0:1389)
+6ad682b1.05a0cf31 0xffff477ef160 conn=1000 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.05a1e55a 0xffff477ef160 conn=1000 op=0 RESULT tag=97 err=49 qtime=0.000011 etime=0.000104 text=
+6ad682b1.05a390c2 0xffff47fff160 conn=1000 op=1 UNBIND
+6ad682b1.05a408b7 0xffff47fff160 conn=1000 fd=12 closed
+6ad682b1.0922e777 0xffff477ef160 conn=1001 fd=12 ACCEPT from IP=127.0.0.1:49096 (IP=0.0.0.0:1389)
+6ad682b1.09238e75 0xffff477ef160 conn=1001 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.09242215 0xffff477ef160 conn=1001 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000056 text=
+6ad682b1.09257f5d 0xffff47fff160 conn=1001 op=1 UNBIND
+6ad682b1.09260169 0xffff47fff160 conn=1001 fd=12 closed
+6ad682b1.0c039fba 0xffff477ef160 conn=1002 fd=12 ACCEPT from IP=127.0.0.1:49100 (IP=0.0.0.0:1389)
+6ad682b1.0c0472d3 0xffff477ef160 conn=1002 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.0c052b12 0xffff477ef160 conn=1002 op=0 RESULT tag=97 err=49 qtime=0.000015 etime=0.000078 text=
+6ad682b1.0c065516 0xffff47fff160 conn=1002 op=1 UNBIND
+6ad682b1.0c06bba0 0xffff47fff160 conn=1002 fd=12 closed
+6ad682b1.0f0bc087 0xffff477ef160 conn=1003 fd=12 ACCEPT from IP=127.0.0.1:49116 (IP=0.0.0.0:1389)
+6ad682b1.0f0c6d61 0xffff477ef160 conn=1003 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.0f0cf931 0xffff477ef160 conn=1003 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000055 text=
+6ad682b1.0f0e417a 0xffff47fff160 conn=1003 op=1 UNBIND
+6ad682b1.0f0ea4c3 0xffff47fff160 conn=1003 fd=12 closed
+6ad682b1.12e2ed13 0xffff477ef160 conn=1004 fd=12 ACCEPT from IP=127.0.0.1:49122 (IP=0.0.0.0:1389)
+6ad682b1.12e39658 0xffff477ef160 conn=1004 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.12e42927 0xffff477ef160 conn=1004 op=0 RESULT tag=97 err=49 qtime=0.000007 etime=0.000058 text=
+6ad682b1.12e55161 0xffff47fff160 conn=1004 op=1 UNBIND
+6ad682b1.12e5c9d2 0xffff47fff160 conn=1004 fd=12 closed
+6ad682b1.166619b6 0xffff477ef160 conn=1005 fd=12 ACCEPT from IP=127.0.0.1:49132 (IP=0.0.0.0:1389)
+6ad682b1.1666bfe4 0xffff477ef160 conn=1005 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.16675e6b 0xffff477ef160 conn=1005 op=0 RESULT tag=97 err=49 qtime=0.000006 etime=0.000061 text=
+6ad682b1.166a2a67 0xffff47fff160 conn=1005 op=1 UNBIND
+6ad682b1.166b1d91 0xffff47fff160 conn=1005 fd=12 closed
+6ad682b1.193a8ff4 0xffff477ef160 conn=1006 fd=12 ACCEPT from IP=127.0.0.1:49146 (IP=0.0.0.0:1389)
+6ad682b1.193b3a33 0xffff477ef160 conn=1006 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.193bcd02 0xffff477ef160 conn=1006 op=0 RESULT tag=97 err=49 qtime=0.000007 etime=0.000058 text=
+6ad682b1.193ce160 0xffff47fff160 conn=1006 op=1 UNBIND
+6ad682b1.193d54f0 0xffff47fff160 conn=1006 fd=12 closed
+6ad682b1.1c7d0bb8 0xffff477ef160 conn=1007 fd=12 ACCEPT from IP=127.0.0.1:49160 (IP=0.0.0.0:1389)
+6ad682b1.1c7dfa00 0xffff47fff160 conn=1007 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.1c7ebd26 0xffff47fff160 conn=1007 op=0 RESULT tag=97 err=49 qtime=0.000009 etime=0.000074 text=
+6ad682b1.1c7fcfe4 0xffff477ef160 conn=1007 op=1 UNBIND
+6ad682b1.1c802d7a 0xffff477ef160 conn=1007 fd=12 closed
+6ad682b1.1f455edd 0xffff47fff160 conn=1008 fd=12 ACCEPT from IP=127.0.0.1:49170 (IP=0.0.0.0:1389)
+6ad682b1.1f46a7a3 0xffff477ef160 conn=1008 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.1f477876 0xffff477ef160 conn=1008 op=0 RESULT tag=97 err=49 qtime=0.000012 etime=0.000080 text=
+6ad682b1.1f490809 0xffff47fff160 conn=1008 op=1 UNBIND
+6ad682b1.1f49a63d 0xffff47fff160 conn=1008 fd=12 closed
+6ad682b1.224a1c51 0xffff477ef160 conn=1009 fd=12 ACCEPT from IP=127.0.0.1:49182 (IP=0.0.0.0:1389)
+6ad682b1.224abba8 0xffff477ef160 conn=1009 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.224b4e24 0xffff477ef160 conn=1009 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000056 text=
+6ad682b1.224c758d 0xffff47fff160 conn=1009 op=1 UNBIND
+6ad682b1.224d6288 0xffff47fff160 conn=1009 fd=12 closed
+6ad682b1.25deab7a 0xffff477ef160 conn=1010 fd=12 ACCEPT from IP=127.0.0.1:49194 (IP=0.0.0.0:1389)
+6ad682b1.25df553c 0xffff477ef160 conn=1010 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.25dfe78e 0xffff477ef160 conn=1010 op=0 RESULT tag=97 err=49 qtime=0.000006 etime=0.000057 text=
+6ad682b1.25e100a5 0xffff47fff160 conn=1010 op=1 UNBIND
+6ad682b1.25e1873f 0xffff47fff160 conn=1010 fd=12 closed
+6ad682b1.29595ed8 0xffff477ef160 conn=1011 fd=12 ACCEPT from IP=127.0.0.1:49206 (IP=0.0.0.0:1389)
+6ad682b1.2959fc65 0xffff477ef160 conn=1011 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.295a98f9 0xffff477ef160 conn=1011 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000058 text=
+6ad682b1.295c0e58 0xffff47fff160 conn=1011 op=1 UNBIND
+6ad682b1.295cd94e 0xffff47fff160 conn=1011 fd=12 closed
+6ad682b1.2c680497 0xffff477ef160 conn=1012 fd=12 ACCEPT from IP=127.0.0.1:49220 (IP=0.0.0.0:1389)
+6ad682b1.2c68b7f4 0xffff477ef160 conn=1012 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.2c6947ac 0xffff477ef160 conn=1012 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000056 text=
+6ad682b1.2c6a7885 0xffff47fff160 conn=1012 op=1 UNBIND
+6ad682b1.2c6ad1b7 0xffff47fff160 conn=1012 fd=12 closed
+6ad682b1.2fe05a7e 0xffff477ef160 conn=1013 fd=12 ACCEPT from IP=127.0.0.1:49222 (IP=0.0.0.0:1389)
+6ad682b1.2fe0fcc3 0xffff477ef160 conn=1013 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.2fe194f2 0xffff477ef160 conn=1013 op=0 RESULT tag=97 err=49 qtime=0.000006 etime=0.000058 text=
+6ad682b1.2fe2c578 0xffff47fff160 conn=1013 op=1 UNBIND
+6ad682b1.2fe33837 0xffff47fff160 conn=1013 fd=12 closed
+6ad682b1.3310a14a 0xffff477ef160 conn=1014 fd=12 ACCEPT from IP=127.0.0.1:49224 (IP=0.0.0.0:1389)
+6ad682b1.33113cb9 0xffff477ef160 conn=1014 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.3311c10c 0xffff477ef160 conn=1014 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000052 text=
+6ad682b1.3312ca83 0xffff47fff160 conn=1014 op=1 UNBIND
+6ad682b1.33134800 0xffff47fff160 conn=1014 fd=12 closed
+6ad682b1.36842bd0 0xffff477ef160 conn=1015 fd=12 ACCEPT from IP=127.0.0.1:49234 (IP=0.0.0.0:1389)
+6ad682b1.3684ca04 0xffff477ef160 conn=1015 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.36854efd 0xffff477ef160 conn=1015 op=0 RESULT tag=97 err=49 qtime=0.000006 etime=0.000053 text=
+6ad682b1.36866c25 0xffff47fff160 conn=1015 op=1 UNBIND
+6ad682b1.3686d644 0xffff47fff160 conn=1015 fd=12 closed
+6ad682b1.3a62568f 0xffff477ef160 conn=1016 fd=12 ACCEPT from IP=127.0.0.1:49246 (IP=0.0.0.0:1389)
+6ad682b1.3a6305da 0xffff477ef160 conn=1016 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b1.3a6392a4 0xffff477ef160 conn=1016 op=0 RESULT tag=97 err=49 qtime=0.000007 etime=0.000058 text=
+6ad682b1.3a6495c1 0xffff47fff160 conn=1016 op=1 UNBIND
+6ad682b1.3a656b9f 0xffff47fff160 conn=1016 fd=12 closed
+6ad682b2.02349976 0xffff477ef160 conn=1017 fd=12 ACCEPT from IP=127.0.0.1:49252 (IP=0.0.0.0:1389)
+6ad682b2.023538ce 0xffff477ef160 conn=1017 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.0235bdf1 0xffff477ef160 conn=1017 op=0 RESULT tag=97 err=49 qtime=0.000004 etime=0.000052 text=
+6ad682b2.0236f69b 0xffff47fff160 conn=1017 op=1 UNBIND
+6ad682b2.023762ad 0xffff47fff160 conn=1017 fd=12 closed
+6ad682b2.0561f0f5 0xffff477ef160 conn=1018 fd=12 ACCEPT from IP=127.0.0.1:49266 (IP=0.0.0.0:1389)
+6ad682b2.05629ec9 0xffff477ef160 conn=1018 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.05633774 0xffff477ef160 conn=1018 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000058 text=
+6ad682b2.05642b6e 0xffff47fff160 conn=1018 op=1 UNBIND
+6ad682b2.0564dd54 0xffff47fff160 conn=1018 fd=12 closed
+6ad682b2.08ea7c45 0xffff477ef160 conn=1019 fd=12 ACCEPT from IP=127.0.0.1:49276 (IP=0.0.0.0:1389)
+6ad682b2.08eb531d 0xffff477ef160 conn=1019 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.08ec03df 0xffff477ef160 conn=1019 op=0 RESULT tag=97 err=49 qtime=0.000014 etime=0.000074 text=
+6ad682b2.08ed42b8 0xffff47fff160 conn=1019 op=1 UNBIND
+6ad682b2.08eda942 0xffff47fff160 conn=1019 fd=12 closed
+6ad682b2.0c2d646f 0xffff477ef160 conn=1020 fd=12 ACCEPT from IP=127.0.0.1:49290 (IP=0.0.0.0:1389)
+6ad682b2.0c2e0bc1 0xffff477ef160 conn=1020 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.0c2e9984 0xffff477ef160 conn=1020 op=0 RESULT tag=97 err=49 qtime=0.000006 etime=0.000056 text=
+6ad682b2.0c2fa8d7 0xffff47fff160 conn=1020 op=1 UNBIND
+6ad682b2.0c303018 0xffff47fff160 conn=1020 fd=12 closed
+6ad682b2.0f6ff7ce 0xffff477ef160 conn=1021 fd=12 ACCEPT from IP=127.0.0.1:49294 (IP=0.0.0.0:1389)
+6ad682b2.0f710df6 0xffff47fff160 conn=1021 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.0f71af6b 0xffff47fff160 conn=1021 op=0 RESULT tag=97 err=49 qtime=0.000017 etime=0.000073 text=
+6ad682b2.0f72d7a5 0xffff477ef160 conn=1021 op=1 UNBIND
+6ad682b2.0f734f99 0xffff477ef160 conn=1021 fd=12 closed
+6ad682b2.12774ab7 0xffff47fff160 conn=1022 fd=12 ACCEPT from IP=127.0.0.1:49310 (IP=0.0.0.0:1389)
+6ad682b2.12780278 0xffff47fff160 conn=1022 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.12789354 0xffff47fff160 conn=1022 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000057 text=
+6ad682b2.1279ad3a 0xffff477ef160 conn=1022 op=1 UNBIND
+6ad682b2.127a65a3 0xffff477ef160 conn=1022 fd=12 closed
+6ad682b2.155b1fd9 0xffff47fff160 conn=1023 fd=12 ACCEPT from IP=127.0.0.1:49316 (IP=0.0.0.0:1389)
+6ad682b2.155bcea7 0xffff47fff160 conn=1023 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.155c5200 0xffff47fff160 conn=1023 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000053 text=
+6ad682b2.155d98d3 0xffff477ef160 conn=1023 op=1 UNBIND
+6ad682b2.155e2091 0xffff477ef160 conn=1023 fd=12 closed
+6ad682b2.1802975f 0xffff47fff160 conn=1024 fd=12 ACCEPT from IP=127.0.0.1:49332 (IP=0.0.0.0:1389)
+6ad682b2.18033b6f 0xffff47fff160 conn=1024 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.1803bda4 0xffff47fff160 conn=1024 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000052 text=
+6ad682b2.1804c386 0xffff477ef160 conn=1024 op=1 UNBIND
+6ad682b2.180565a2 0xffff477ef160 conn=1024 fd=12 closed
+6ad682b2.1ae02034 0xffff47fff160 conn=1025 fd=12 ACCEPT from IP=127.0.0.1:49336 (IP=0.0.0.0:1389)
+6ad682b2.1ae0c12c 0xffff47fff160 conn=1025 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.1ae16fa7 0xffff47fff160 conn=1025 op=0 RESULT tag=97 err=49 qtime=0.000004 etime=0.000063 text=
+6ad682b2.1ae28046 0xffff477ef160 conn=1025 op=1 UNBIND
+6ad682b2.1ae2ecac 0xffff477ef160 conn=1025 fd=12 closed
+6ad682b2.1d855b22 0xffff47fff160 conn=1026 fd=12 ACCEPT from IP=127.0.0.1:49352 (IP=0.0.0.0:1389)
+6ad682b2.1d860a43 0xffff47fff160 conn=1026 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.1d86bd4d 0xffff47fff160 conn=1026 op=0 RESULT tag=97 err=49 qtime=0.000007 etime=0.000067 text=
+6ad682b2.1d88257d 0xffff477ef160 conn=1026 op=1 UNBIND
+6ad682b2.1d88d22d 0xffff477ef160 conn=1026 fd=12 closed
+6ad682b2.20886ea4 0xffff47fff160 conn=1027 fd=12 ACCEPT from IP=127.0.0.1:49368 (IP=0.0.0.0:1389)
+6ad682b2.208911e4 0xffff47fff160 conn=1027 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.20899f7e 0xffff47fff160 conn=1027 op=0 RESULT tag=97 err=49 qtime=0.000006 etime=0.000055 text=
+6ad682b2.208aa8f4 0xffff477ef160 conn=1027 op=1 UNBIND
+6ad682b2.208b397c 0xffff477ef160 conn=1027 fd=12 closed
+6ad682b2.23b230a8 0xffff47fff160 conn=1028 fd=12 ACCEPT from IP=127.0.0.1:49376 (IP=0.0.0.0:1389)
+6ad682b2.23b2d7a6 0xffff47fff160 conn=1028 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.23b37bdf 0xffff47fff160 conn=1028 op=0 RESULT tag=97 err=49 qtime=0.000005 etime=0.000061 text=
+6ad682b2.23b511a2 0xffff477ef160 conn=1028 op=1 UNBIND
+6ad682b2.23b5bc88 0xffff477ef160 conn=1028 fd=12 closed
+6ad682b2.26d6d061 0xffff47fff160 conn=1029 fd=12 ACCEPT from IP=127.0.0.1:49392 (IP=0.0.0.0:1389)
+6ad682b2.26d79d9f 0xffff47fff160 conn=1029 op=0 BIND dn="cn=admin,dc=example,dc=org" method=128
+6ad682b2.26d84c19 0xffff47fff160 conn=1029 op=0 RESULT tag=97 err=49 qtime=0.000014 etime=0.000075 text=
+6ad682b2.26d9a5f7 0xffff477ef160 conn=1029 op=1 UNBIND
+6ad682b2.26da26df 0xffff477ef160 conn=1029 fd=12 closed

@@ -1,0 +1,420 @@
+2026-09-08T15:14:48+0000 INFO --- logging initialized ---
+2026-09-08T15:14:48+0000 DDEBUG timer: config: 4 ms
+2026-09-08T15:14:48+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2026-09-08T15:14:48+0000 DEBUG DNF version: 4.20.0
+2026-09-08T15:14:48+0000 DDEBUG Command: dnf install -y google-compute-engine google-osconfig-agent gce-disk-expand 
+2026-09-08T15:14:48+0000 DDEBUG Installroot: /
+2026-09-08T15:14:48+0000 DDEBUG Releasever: 10
+2026-09-08T15:14:48+0000 DEBUG cachedir: /var/cache/dnf
+2026-09-08T15:14:48+0000 DDEBUG Base command: install
+2026-09-08T15:14:48+0000 DDEBUG Extra commands: ['install', '-y', 'google-compute-engine', 'google-osconfig-agent', 'gce-disk-expand']
+2026-09-08T15:14:48+0000 DEBUG User-Agent: constructed: 'libdnf (CentOS Stream 10; generic; Linux.x86_64)'
+2026-09-08T15:14:49+0000 DEBUG repo: downloading from remote: baseos
+2026-09-08T15:14:49+0000 DEBUG countme: event triggered for baseos: bucket 1
+2026-09-08T15:14:50+0000 DEBUG baseos: using metadata from Tue Sep  1 14:29:25 2026.
+2026-09-08T15:14:50+0000 DEBUG repo: downloading from remote: appstream
+2026-09-08T15:14:50+0000 DEBUG countme: event triggered for appstream: bucket 1
+2026-09-08T15:14:52+0000 DEBUG appstream: using metadata from Tue Sep  1 14:32:22 2026.
+2026-09-08T15:14:52+0000 DEBUG repo: downloading from remote: extras-common
+2026-09-08T15:14:52+0000 DEBUG countme: no event for extras-common: budget to spend: 2
+2026-09-08T15:14:53+0000 DEBUG extras-common: using metadata from Wed Aug 19 12:10:13 2026.
+2026-09-08T15:14:53+0000 DEBUG repo: downloading from remote: google-compute-engine
+2026-09-08T15:14:53+0000 DEBUG google-compute-engine: using metadata from Tue Jun 11 01:34:43 1946.
+2026-09-08T15:14:53+0000 DEBUG repo: downloading from remote: google-cloud-sdk
+2026-09-08T15:14:54+0000 DEBUG google-cloud-sdk: using metadata from Tue May 14 02:03:56 1918.
+2026-09-08T15:14:54+0000 DDEBUG timer: sack setup: 5191 ms
+2026-09-08T15:14:54+0000 DEBUG Completion plugin: Generating completion cache...
+2026-09-08T15:14:54+0000 DEBUG --> Starting dependency resolution
+2026-09-08T15:14:54+0000 DEBUG ---> Package nvme-cli.x86_64 2.16-2.el10 will be installed
+2026-09-08T15:14:54+0000 DEBUG ---> Package boost-regex.x86_64 1.83.0-8.el10 will be installed
+2026-09-08T15:14:54+0000 DEBUG ---> Package gce-disk-expand.noarch 1:20250820.00-g1.el10 will be installed
+2026-09-08T15:14:54+0000 DEBUG ---> Package google-compute-engine.noarch 1:20260223.00-g1.el10 will be installed
+2026-09-08T15:14:54+0000 DEBUG ---> Package google-guest-agent.x86_64 1:20260715.00-g1.el10 will be installed
+2026-09-08T15:14:54+0000 DEBUG ---> Package google-compute-engine-oslogin.x86_64 1:20260605.00-g1.el10 will be installed
+2026-09-08T15:14:54+0000 DEBUG ---> Package google-osconfig-agent.x86_64 1:20260624.00-g1.el10 will be installed
+2026-09-08T15:14:54+0000 DEBUG --> Finished dependency resolution
+2026-09-08T15:14:54+0000 DDEBUG timer: depsolve: 31 ms
+2026-09-08T15:14:54+0000 INFO Dependencies resolved.
+2026-09-08T15:14:54+0000 INFO ===========================================================================================
+ Package                         Arch    Version               Repository              Size
+===========================================================================================
+Installing:
+ [1m[32mgce-disk-expand                [m noarch  1:20250820.00-g1.el10 google-compute-engine   12 k
+ [1m[32mgoogle-compute-engine          [m noarch  1:20260223.00-g1.el10 google-compute-engine   27 k
+ [1m[32mgoogle-osconfig-agent          [m x86_64  1:20260624.00-g1.el10 google-compute-engine   16 M
+Installing dependencies:
+ [1m[32mboost-regex                    [m x86_64  1.83.0-8.el10         appstream              109 k
+ [1m[32mgoogle-compute-engine-oslogin  [m x86_64  1:20260605.00-g1.el10 google-compute-engine  288 k
+ [1m[32mgoogle-guest-agent             [m x86_64  1:20260715.00-g1.el10 google-compute-engine   59 M
+ [1m[32mnvme-cli                       [m x86_64  2.16-2.el10           baseos                 1.2 M
+
+Transaction Summary
+===========================================================================================
+Install  7 Packages
+
+2026-09-08T15:14:54+0000 INFO Total download size: 76 M
+2026-09-08T15:14:54+0000 INFO Installed size: 291 M
+2026-09-08T15:14:54+0000 INFO Downloading Packages:
+2026-09-08T15:14:57+0000 INFO --------------------------------------------------------------------------------
+2026-09-08T15:14:57+0000 INFO Total                                            33 MB/s |  76 MB     00:02     
+2026-09-08T15:14:57+0000 DEBUG Using rpmkeys executable at /usr/bin/rpmkeys to verify signatures
+2026-09-08T15:14:57+0000 CRITICAL Importing GPG key 0x8483C65D:
+ Userid     : "CentOS (CentOS Official Signing Key) <security@centos.org>"
+ Fingerprint: 99DB 70FA E1D7 CE22 7FB6 4882 05B5 55B3 8483 C65D
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial-SHA256
+2026-09-08T15:14:57+0000 INFO Key imported successfully
+2026-09-08T15:14:57+0000 INFO Running transaction check
+2026-09-08T15:14:57+0000 INFO Transaction check succeeded.
+2026-09-08T15:14:57+0000 INFO Running transaction test
+2026-09-08T15:14:58+0000 INFO Transaction test succeeded.
+2026-09-08T15:14:58+0000 DDEBUG timer: transaction test: 517 ms
+2026-09-08T15:14:58+0000 INFO Running transaction
+2026-09-08T15:14:58+0000 DEBUG RPMDB altered outside of DNF.
+2026-09-08T15:14:58+0000 DDEBUG RPM transaction start.
+2026-09-08T15:15:09+0000 DDEBUG RPM transaction over.
+2026-09-08T15:15:10+0000 DDEBUG timer: verify transaction: 92 ms
+2026-09-08T15:15:10+0000 DDEBUG timer: transaction: 11879 ms
+2026-09-08T15:15:10+0000 DEBUG Completion plugin: Generating completion cache...
+2026-09-08T15:15:10+0000 DEBUG Installed: boost-regex-1.83.0-8.el10.x86_64
+2026-09-08T15:15:10+0000 DEBUG Installed: gce-disk-expand-1:20250820.00-g1.el10.noarch
+2026-09-08T15:15:10+0000 DEBUG Installed: google-compute-engine-1:20260223.00-g1.el10.noarch
+2026-09-08T15:15:10+0000 DEBUG Installed: google-compute-engine-oslogin-1:20260605.00-g1.el10.x86_64
+2026-09-08T15:15:10+0000 DEBUG Installed: google-guest-agent-1:20260715.00-g1.el10.x86_64
+2026-09-08T15:15:10+0000 DEBUG Installed: google-osconfig-agent-1:20260624.00-g1.el10.x86_64
+2026-09-08T15:15:10+0000 DEBUG Installed: nvme-cli-2.16-2.el10.x86_64
+2026-09-08T15:15:10+0000 INFO Complete!
+2026-09-08T15:15:10+0000 DDEBUG Cleaning up.
+2026-09-08T15:15:10+0000 DDEBUG /var/cache/dnf/google-compute-engine-0809bad6bccf8a04/packages/6d958ea0b01a20fe1a92d8554e300ca5631d7ddb6579e4cefe645cf9add7fdfc-google-guest-agent-20260715.00-g1.el10.x86_64.rpm removed
+2026-09-08T15:15:10+0000 DDEBUG /var/cache/dnf/google-compute-engine-0809bad6bccf8a04/packages/cf90e0d997d98db1ba4512718586aa4944481c750f31167eff8516a7ddecb27e-gce-disk-expand-20250820.00-g1.el10.noarch.rpm removed
+2026-09-08T15:15:10+0000 DDEBUG /var/cache/dnf/baseos-c4a5a8fa84d0aca6/packages/nvme-cli-2.16-2.el10.x86_64.rpm removed
+2026-09-08T15:15:10+0000 DDEBUG /var/cache/dnf/google-compute-engine-0809bad6bccf8a04/packages/9a0645f84844ab6345c2ccb5cf0075cfa40d80d96ee561725dd39c8306c37c4d-google-compute-engine-20260223.00-g1.el10.noarch.rpm removed
+2026-09-08T15:15:10+0000 DDEBUG /var/cache/dnf/google-compute-engine-0809bad6bccf8a04/packages/c2297c3f599f8fb96e17f3259e7a086c52935ccbd7da7c996f81df3e84a01933-google-osconfig-agent-20260624.00-g1.el10.x86_64.rpm removed
+2026-09-08T15:15:10+0000 DDEBUG /var/cache/dnf/appstream-25519c512d836b42/packages/boost-regex-1.83.0-8.el10.x86_64.rpm removed
+2026-09-08T15:15:10+0000 DDEBUG /var/cache/dnf/google-compute-engine-0809bad6bccf8a04/packages/e4127356896976b451e1d07238996efa3591339e0a7b18bf9586645d5bda0279-google-compute-engine-oslogin-20260605.00-g1.el10.x86_64.rpm removed
+2026-09-08T15:15:10+0000 DDEBUG Plugins were unloaded.
+2026-09-08T15:15:10+0000 INFO --- logging initialized ---
+2026-09-08T15:15:10+0000 DDEBUG timer: config: 4 ms
+2026-09-08T15:15:10+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2026-09-08T15:15:10+0000 DEBUG DNF version: 4.20.0
+2026-09-08T15:15:10+0000 DDEBUG Command: dnf install -y google-cloud-cli 
+2026-09-08T15:15:10+0000 DDEBUG Installroot: /
+2026-09-08T15:15:10+0000 DDEBUG Releasever: 10
+2026-09-08T15:15:10+0000 DEBUG cachedir: /var/cache/dnf
+2026-09-08T15:15:10+0000 DDEBUG Base command: install
+2026-09-08T15:15:10+0000 DDEBUG Extra commands: ['install', '-y', 'google-cloud-cli']
+2026-09-08T15:15:10+0000 DEBUG User-Agent: constructed: 'libdnf (CentOS Stream 10; generic; Linux.x86_64)'
+2026-09-08T15:15:10+0000 DEBUG repo: using cache for: baseos
+2026-09-08T15:15:10+0000 DEBUG baseos: using metadata from Tue Sep  1 14:29:25 2026.
+2026-09-08T15:15:10+0000 DEBUG repo: using cache for: appstream
+2026-09-08T15:15:10+0000 DEBUG appstream: using metadata from Tue Sep  1 14:32:22 2026.
+2026-09-08T15:15:10+0000 DEBUG repo: using cache for: extras-common
+2026-09-08T15:15:10+0000 DEBUG extras-common: using metadata from Wed Aug 19 12:10:13 2026.
+2026-09-08T15:15:10+0000 DEBUG repo: using cache for: google-compute-engine
+2026-09-08T15:15:10+0000 DEBUG google-compute-engine: using metadata from Tue Jun 11 01:34:43 1946.
+2026-09-08T15:15:10+0000 DEBUG repo: using cache for: google-cloud-sdk
+2026-09-08T15:15:10+0000 DEBUG google-cloud-sdk: using metadata from Tue May 14 02:03:56 1918.
+2026-09-08T15:15:10+0000 INFO Last metadata expiration check: 0:00:16 ago on Tue Sep  8 15:14:54 2026.
+2026-09-08T15:15:10+0000 DDEBUG timer: sack setup: 183 ms
+2026-09-08T15:15:10+0000 DEBUG --> Starting dependency resolution
+2026-09-08T15:15:10+0000 DEBUG ---> Package google-cloud-cli.x86_64 583.0.0-1.el10 will be installed
+2026-09-08T15:15:10+0000 DEBUG --> Finished dependency resolution
+2026-09-08T15:15:10+0000 DDEBUG timer: depsolve: 29 ms
+2026-09-08T15:15:10+0000 INFO Dependencies resolved.
+2026-09-08T15:15:10+0000 INFO ================================================================================
+ Package              Arch       Version             Repository            Size
+================================================================================
+Installing:
+ [1m[32mgoogle-cloud-cli    [m x86_64     583.0.0-1.el10      google-cloud-sdk      59 M
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+2026-09-08T15:15:10+0000 INFO Total download size: 59 M
+2026-09-08T15:15:10+0000 INFO Installed size: 383 M
+2026-09-08T15:15:10+0000 INFO Downloading Packages:
+2026-09-08T15:15:11+0000 INFO --------------------------------------------------------------------------------
+2026-09-08T15:15:11+0000 INFO Total                                            53 MB/s |  59 MB     00:01     
+2026-09-08T15:15:11+0000 DEBUG Using rpmkeys executable at /usr/bin/rpmkeys to verify signatures
+2026-09-08T15:15:12+0000 INFO Running transaction check
+2026-09-08T15:15:12+0000 INFO Transaction check succeeded.
+2026-09-08T15:15:12+0000 INFO Running transaction test
+2026-09-08T15:15:12+0000 INFO Transaction test succeeded.
+2026-09-08T15:15:12+0000 DDEBUG timer: transaction test: 639 ms
+2026-09-08T15:15:12+0000 INFO Running transaction
+2026-09-08T15:15:12+0000 DDEBUG RPM transaction start.
+2026-09-08T15:15:55+0000 DDEBUG RPM transaction over.
+2026-09-08T15:15:55+0000 DDEBUG timer: verify transaction: 76 ms
+2026-09-08T15:15:55+0000 DDEBUG timer: transaction: 42932 ms
+2026-09-08T15:15:55+0000 DEBUG Completion plugin: Generating completion cache...
+2026-09-08T15:15:55+0000 DEBUG Installed: google-cloud-cli-583.0.0-1.el10.x86_64
+2026-09-08T15:15:55+0000 INFO Complete!
+2026-09-08T15:15:55+0000 DDEBUG Cleaning up.
+2026-09-08T15:15:55+0000 DDEBUG /var/cache/dnf/google-cloud-sdk-32f5834858583bc4/packages/3c644801d17110a69d815e80806a3279412f6e3ecc8ac2d93e77f3a264b4bf6b-google-cloud-cli-583.0.0-1.el10.x86_64.rpm removed
+2026-09-08T15:15:55+0000 DDEBUG Plugins were unloaded.
+2026-09-08T15:15:56+0000 INFO --- logging initialized ---
+2026-09-08T15:15:56+0000 DDEBUG timer: config: 4 ms
+2026-09-08T15:15:56+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2026-09-08T15:15:56+0000 DEBUG DNF version: 4.20.0
+2026-09-08T15:15:56+0000 DDEBUG Command: dnf -y update 
+2026-09-08T15:15:56+0000 DDEBUG Installroot: /
+2026-09-08T15:15:56+0000 DDEBUG Releasever: 10
+2026-09-08T15:15:56+0000 DEBUG cachedir: /var/cache/dnf
+2026-09-08T15:15:56+0000 DDEBUG Base command: update
+2026-09-08T15:15:56+0000 DDEBUG Extra commands: ['-y', 'update']
+2026-09-08T15:15:56+0000 DEBUG User-Agent: constructed: 'libdnf (CentOS Stream 10; generic; Linux.x86_64)'
+2026-09-08T15:15:56+0000 DEBUG repo: using cache for: baseos
+2026-09-08T15:15:56+0000 DEBUG baseos: using metadata from Tue Sep  1 14:29:25 2026.
+2026-09-08T15:15:56+0000 DEBUG repo: using cache for: appstream
+2026-09-08T15:15:56+0000 DEBUG appstream: using metadata from Tue Sep  1 14:32:22 2026.
+2026-09-08T15:15:56+0000 DEBUG repo: using cache for: extras-common
+2026-09-08T15:15:56+0000 DEBUG extras-common: using metadata from Wed Aug 19 12:10:13 2026.
+2026-09-08T15:15:56+0000 DEBUG repo: using cache for: google-compute-engine
+2026-09-08T15:15:56+0000 DEBUG google-compute-engine: using metadata from Tue Jun 11 01:34:43 1946.
+2026-09-08T15:15:56+0000 DEBUG repo: using cache for: google-cloud-sdk
+2026-09-08T15:15:56+0000 DEBUG google-cloud-sdk: using metadata from Tue May 14 02:03:56 1918.
+2026-09-08T15:15:56+0000 INFO Last metadata expiration check: 0:01:02 ago on Tue Sep  8 15:14:54 2026.
+2026-09-08T15:15:56+0000 DDEBUG timer: sack setup: 174 ms
+2026-09-08T15:15:56+0000 DEBUG --> Starting dependency resolution
+2026-09-08T15:15:56+0000 DEBUG --> Finished dependency resolution
+2026-09-08T15:15:56+0000 DDEBUG timer: depsolve: 30 ms
+2026-09-08T15:15:56+0000 INFO Dependencies resolved.
+2026-09-08T15:15:56+0000 INFO Nothing to do.
+2026-09-08T15:15:56+0000 INFO Complete!
+2026-09-08T15:15:56+0000 DDEBUG Cleaning up.
+2026-09-08T15:15:56+0000 DDEBUG Plugins were unloaded.
+2026-09-08T15:15:57+0000 INFO --- logging initialized ---
+2026-09-08T15:15:57+0000 DDEBUG timer: config: 6 ms
+2026-09-08T15:15:57+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2026-09-08T15:15:57+0000 DEBUG DNF version: 4.20.0
+2026-09-08T15:15:57+0000 DDEBUG Command: dnf clean all 
+2026-09-08T15:15:57+0000 DDEBUG Installroot: /
+2026-09-08T15:15:57+0000 DDEBUG Releasever: 10
+2026-09-08T15:15:57+0000 DEBUG cachedir: /var/cache/dnf
+2026-09-08T15:15:57+0000 DDEBUG Base command: clean
+2026-09-08T15:15:57+0000 DDEBUG Extra commands: ['clean', 'all']
+2026-09-08T15:15:57+0000 DEBUG Cleaning data: metadata dbcache packages
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/baseos.solv
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/appstream.solv
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/extras-common.solv
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/google-compute-engine.solv
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/google-cloud-sdk.solv
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/baseos-c4a5a8fa84d0aca6/metalink.xml
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/baseos-c4a5a8fa84d0aca6/repodata/repomd.xml
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/baseos-c4a5a8fa84d0aca6/repodata/d9254ebc693c3517a42424c830ef6eff5c45a6eae0b03337e2609cea082016c4-primary.xml.gz
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/baseos-c4a5a8fa84d0aca6/repodata/52a0e57063729958b01f65d30a62571788de9a110250091446a24110dd76b903-comps-BaseOS.x86_64.xml.zst
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/appstream-25519c512d836b42/metalink.xml
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/appstream-25519c512d836b42/repodata/repomd.xml
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/appstream-25519c512d836b42/repodata/42d8a38f5faba29daebe2c6e45c29d974fd1243ce3099ca21702abb69169f5d0-primary.xml.gz
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/appstream-25519c512d836b42/repodata/440fab04ba96a4c09c4841f315764a7a815d3391a1c6c12bce0ff4743e54df91-comps-AppStream.x86_64.xml.zst
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/extras-common-267163e935c41040/metalink.xml
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/extras-common-267163e935c41040/repodata/repomd.xml
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/extras-common-267163e935c41040/repodata/4d5d72353b0e1859f5d68f4c22f9a0c011091bf85ea84cac6246c1acc3f1a732-primary.xml.gz
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/google-compute-engine-0809bad6bccf8a04/repodata/repomd.xml
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/google-compute-engine-0809bad6bccf8a04/repodata/primary.xml.gz
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/google-cloud-sdk-32f5834858583bc4/repodata/repomd.xml
+2026-09-08T15:15:57+0000 DDEBUG Removing file /var/cache/dnf/google-cloud-sdk-32f5834858583bc4/repodata/primary.xml.gz
+2026-09-08T15:15:57+0000 INFO 20 files removed
+2026-09-08T15:15:57+0000 DDEBUG Cleaning up.
+2026-09-08T15:15:58+0000 DDEBUG Plugins were unloaded.
+2026-09-08T15:15:58+0000 INFO --- logging initialized ---
+2026-09-08T15:15:58+0000 DDEBUG timer: config: 4 ms
+2026-09-08T15:15:58+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2026-09-08T15:15:58+0000 DEBUG DNF version: 4.20.0
+2026-09-08T15:15:58+0000 DDEBUG Command: dnf remove -y kernel-debug-core 
+2026-09-08T15:15:58+0000 DDEBUG Installroot: /
+2026-09-08T15:15:58+0000 DDEBUG Releasever: 10
+2026-09-08T15:15:58+0000 DEBUG cachedir: /var/cache/dnf
+2026-09-08T15:15:58+0000 DDEBUG Base command: remove
+2026-09-08T15:15:58+0000 DDEBUG Extra commands: ['remove', '-y', 'kernel-debug-core']
+2026-09-08T15:15:58+0000 DEBUG User-Agent: constructed: 'libdnf (CentOS Stream 10; generic; Linux.x86_64)'
+2026-09-08T15:15:58+0000 DDEBUG timer: sack setup: 90 ms
+2026-09-08T15:15:58+0000 DEBUG Completion plugin: Generating completion cache...
+2026-09-08T15:15:58+0000 INFO No match for argument: [1mkernel-debug-core[m
+2026-09-08T15:15:58+0000 WARNING No packages marked for removal.
+2026-09-08T15:15:58+0000 DEBUG --> Starting dependency resolution
+2026-09-08T15:15:58+0000 DEBUG --> Finished dependency resolution
+2026-09-08T15:15:58+0000 DDEBUG timer: depsolve: 10 ms
+2026-09-08T15:15:58+0000 INFO Dependencies resolved.
+2026-09-08T15:15:58+0000 INFO Nothing to do.
+2026-09-08T15:15:58+0000 INFO Complete!
+2026-09-08T15:15:58+0000 DDEBUG Cleaning up.
+2026-09-08T15:15:58+0000 DDEBUG Plugins were unloaded.
+2026-09-08T15:16:27+0000 INFO --- logging initialized ---
+2026-09-08T15:16:27+0000 DDEBUG timer: config: 4 ms
+2026-09-08T15:16:27+0000 DEBUG DNF version: 4.20.0
+2026-09-08T15:16:27+0000 DDEBUG Command: dnf --installroot=/mnt/sysimage remove -y --oldinstallonly kernel-core 
+2026-09-08T15:16:27+0000 DDEBUG Installroot: /mnt/sysimage
+2026-09-08T15:16:27+0000 DDEBUG Releasever: 10
+2026-09-08T15:16:27+0000 DEBUG cachedir: /mnt/sysimage/var/cache/dnf
+2026-09-08T15:16:27+0000 DDEBUG Base command: remove
+2026-09-08T15:16:27+0000 DDEBUG Extra commands: ['--installroot=/mnt/sysimage', 'remove', '-y', '--oldinstallonly', 'kernel-core']
+2026-09-08T15:16:27+0000 DEBUG User-Agent: constructed: 'libdnf (CentOS Stream 10; generic; Linux.x86_64)'
+2026-09-08T15:16:27+0000 DDEBUG timer: sack setup: 108 ms
+2026-09-08T15:16:27+0000 INFO No old installonly packages found for removal.
+2026-09-08T15:16:27+0000 DEBUG --> Starting dependency resolution
+2026-09-08T15:16:27+0000 DEBUG --> Finished dependency resolution
+2026-09-08T15:16:27+0000 DDEBUG timer: depsolve: 3 ms
+2026-09-08T15:16:27+0000 INFO Dependencies resolved.
+2026-09-08T15:16:27+0000 INFO Nothing to do.
+2026-09-08T15:16:27+0000 INFO Complete!
+2026-09-08T15:16:27+0000 DDEBUG Cleaning up.
+2026-09-08T15:16:27+0000 DDEBUG Plugins were unloaded.
+2026-10-13T03:53:50+0000 INFO --- logging initialized ---
+2026-10-13T03:53:50+0000 DDEBUG timer: config: 57 ms
+2026-10-13T03:53:50+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2026-10-13T03:53:50+0000 DEBUG DNF version: 4.20.0
+2026-10-13T03:53:50+0000 DDEBUG Command: dnf install -y -q nginx postgresql-server postgresql curl bzip2 time audit 
+2026-10-13T03:53:50+0000 DDEBUG Installroot: /
+2026-10-13T03:53:50+0000 DDEBUG Releasever: 10
+2026-10-13T03:53:50+0000 DEBUG cachedir: /var/cache/dnf
+2026-10-13T03:53:50+0000 DDEBUG Base command: install
+2026-10-13T03:53:50+0000 DDEBUG Extra commands: ['install', '-y', '-q', 'nginx', 'postgresql-server', 'postgresql', 'curl', 'bzip2', 'time', 'audit']
+2026-10-13T03:53:50+0000 DEBUG User-Agent: constructed: 'libdnf (CentOS Stream 10; generic; Linux.x86_64)'
+2026-10-13T03:53:51+0000 DEBUG repo: downloading from remote: baseos
+2026-10-13T03:53:51+0000 DEBUG countme: event triggered for baseos: bucket 3
+2026-10-13T03:53:53+0000 DEBUG baseos: using metadata from Tue 06 Oct 2026 03:25:25 PM UTC.
+2026-10-13T03:53:53+0000 DEBUG repo: downloading from remote: appstream
+2026-10-13T03:53:53+0000 DEBUG countme: event triggered for appstream: bucket 3
+2026-10-13T03:53:56+0000 DEBUG appstream: using metadata from Tue 06 Oct 2026 03:28:26 PM UTC.
+2026-10-13T03:53:56+0000 DEBUG repo: downloading from remote: extras-common
+2026-10-13T03:53:56+0000 DEBUG countme: no event for extras-common: budget to spend: 1
+2026-10-13T03:53:56+0000 DEBUG extras-common: using metadata from Thu 08 Oct 2026 08:33:32 PM UTC.
+2026-10-13T03:53:56+0000 DEBUG repo: downloading from remote: google-compute-engine
+2026-10-13T03:53:58+0000 DEBUG google-compute-engine: using metadata from Sat 20 Dec 2025 07:53:55 AM UTC.
+2026-10-13T03:53:58+0000 DEBUG repo: downloading from remote: google-cloud-sdk
+2026-10-13T03:53:59+0000 DEBUG google-cloud-sdk: using metadata from Sun 15 Jul 2001 01:17:47 PM UTC.
+2026-10-13T03:53:59+0000 DDEBUG timer: sack setup: 8462 ms
+2026-10-13T03:53:59+0000 DEBUG Completion plugin: Generating completion cache...
+2026-10-13T03:54:00+0000 INFO Package curl-8.12.1-6.el10.x86_64 is already installed.
+2026-10-13T03:54:00+0000 INFO Package audit-4.2.1-3.el10.x86_64 is already installed.
+2026-10-13T03:54:00+0000 DEBUG --> Starting dependency resolution
+2026-10-13T03:54:00+0000 DEBUG ---> Package bzip2.x86_64 1.0.8-25.el10 will be installed
+2026-10-13T03:54:00+0000 DEBUG ---> Package time.x86_64 1.9-25.el10 will be installed
+2026-10-13T03:54:00+0000 DEBUG ---> Package centos-logos-httpd.noarch 100.5-1.el10 will be installed
+2026-10-13T03:54:00+0000 DEBUG ---> Package nginx.x86_64 2:1.26.3-15.el10 will be installed
+2026-10-13T03:54:00+0000 DEBUG ---> Package nginx-core.x86_64 2:1.26.3-15.el10 will be installed
+2026-10-13T03:54:00+0000 DEBUG ---> Package nginx-filesystem.noarch 2:1.26.3-15.el10 will be installed
+2026-10-13T03:54:00+0000 DEBUG ---> Package postgresql.x86_64 16.14-3.el10 will be installed
+2026-10-13T03:54:00+0000 DEBUG ---> Package postgresql-private-libs.x86_64 16.14-3.el10 will be installed
+2026-10-13T03:54:00+0000 DEBUG ---> Package postgresql-server.x86_64 16.14-3.el10 will be installed
+2026-10-13T03:54:00+0000 DEBUG --> Finished dependency resolution
+2026-10-13T03:54:00+0000 DDEBUG timer: depsolve: 53 ms
+2026-10-13T03:54:00+0000 INFO Dependencies resolved.
+2026-10-13T03:54:00+0000 INFO ================================================================================
+ Package                    Arch      Version                Repository    Size
+================================================================================
+Installing:
+ bzip2                      x86_64    1.0.8-25.el10          baseos        54 k
+ nginx                      x86_64    2:1.26.3-15.el10       appstream     32 k
+ postgresql                 x86_64    16.14-3.el10           appstream    2.0 M
+ postgresql-server          x86_64    16.14-3.el10           appstream    7.0 M
+ time                       x86_64    1.9-25.el10            baseos        48 k
+Installing dependencies:
+ centos-logos-httpd         noarch    100.5-1.el10           appstream    854 k
+ nginx-core                 x86_64    2:1.26.3-15.el10       appstream    663 k
+ nginx-filesystem           noarch    2:1.26.3-15.el10       appstream     10 k
+ postgresql-private-libs    x86_64    16.14-3.el10           appstream    143 k
+
+Transaction Summary
+================================================================================
+Install  9 Packages
+
+2026-10-13T03:54:00+0000 INFO Total download size: 11 M
+2026-10-13T03:54:00+0000 INFO Installed size: 41 M
+2026-10-13T03:54:00+0000 INFO Downloading Packages:
+2026-10-13T03:54:01+0000 INFO --------------------------------------------------------------------------------
+2026-10-13T03:54:01+0000 INFO Total                                           8.8 MB/s |  11 MB     00:01     
+2026-10-13T03:54:01+0000 DEBUG Using rpmkeys executable at /bin/rpmkeys to verify signatures
+2026-10-13T03:54:01+0000 INFO Running transaction check
+2026-10-13T03:54:01+0000 INFO Transaction check succeeded.
+2026-10-13T03:54:01+0000 INFO Running transaction test
+2026-10-13T03:54:02+0000 INFO Transaction test succeeded.
+2026-10-13T03:54:02+0000 DDEBUG timer: transaction test: 602 ms
+2026-10-13T03:54:02+0000 INFO Running transaction
+2026-10-13T03:54:02+0000 DDEBUG RPM transaction start.
+2026-10-13T03:54:04+0000 DDEBUG RPM transaction over.
+2026-10-13T03:54:04+0000 DDEBUG timer: verify transaction: 143 ms
+2026-10-13T03:54:04+0000 DDEBUG timer: transaction: 2399 ms
+2026-10-13T03:54:04+0000 DEBUG Completion plugin: Generating completion cache...
+2026-10-13T03:54:05+0000 DEBUG Installed: bzip2-1.0.8-25.el10.x86_64
+2026-10-13T03:54:05+0000 DEBUG Installed: centos-logos-httpd-100.5-1.el10.noarch
+2026-10-13T03:54:05+0000 DEBUG Installed: nginx-2:1.26.3-15.el10.x86_64
+2026-10-13T03:54:05+0000 DEBUG Installed: nginx-core-2:1.26.3-15.el10.x86_64
+2026-10-13T03:54:05+0000 DEBUG Installed: nginx-filesystem-2:1.26.3-15.el10.noarch
+2026-10-13T03:54:05+0000 DEBUG Installed: postgresql-16.14-3.el10.x86_64
+2026-10-13T03:54:05+0000 DEBUG Installed: postgresql-private-libs-16.14-3.el10.x86_64
+2026-10-13T03:54:05+0000 DEBUG Installed: postgresql-server-16.14-3.el10.x86_64
+2026-10-13T03:54:05+0000 DEBUG Installed: time-1.9-25.el10.x86_64
+2026-10-13T03:54:05+0000 INFO Complete!
+2026-10-13T03:54:05+0000 DDEBUG Cleaning up.
+2026-10-13T03:54:05+0000 DDEBUG /var/cache/dnf/appstream-25519c512d836b42/packages/nginx-1.26.3-15.el10.x86_64.rpm removed
+2026-10-13T03:54:05+0000 DDEBUG /var/cache/dnf/appstream-25519c512d836b42/packages/postgresql-16.14-3.el10.x86_64.rpm removed
+2026-10-13T03:54:05+0000 DDEBUG /var/cache/dnf/baseos-c4a5a8fa84d0aca6/packages/bzip2-1.0.8-25.el10.x86_64.rpm removed
+2026-10-13T03:54:05+0000 DDEBUG /var/cache/dnf/appstream-25519c512d836b42/packages/postgresql-private-libs-16.14-3.el10.x86_64.rpm removed
+2026-10-13T03:54:05+0000 DDEBUG /var/cache/dnf/appstream-25519c512d836b42/packages/postgresql-server-16.14-3.el10.x86_64.rpm removed
+2026-10-13T03:54:05+0000 DDEBUG /var/cache/dnf/appstream-25519c512d836b42/packages/nginx-core-1.26.3-15.el10.x86_64.rpm removed
+2026-10-13T03:54:05+0000 DDEBUG /var/cache/dnf/baseos-c4a5a8fa84d0aca6/packages/time-1.9-25.el10.x86_64.rpm removed
+2026-10-13T03:54:05+0000 DDEBUG /var/cache/dnf/appstream-25519c512d836b42/packages/centos-logos-httpd-100.5-1.el10.noarch.rpm removed
+2026-10-13T03:54:05+0000 DDEBUG /var/cache/dnf/appstream-25519c512d836b42/packages/nginx-filesystem-1.26.3-15.el10.noarch.rpm removed
+2026-10-13T03:54:05+0000 DDEBUG Plugins were unloaded.
+2026-10-13T03:54:05+0000 INFO --- logging initialized ---
+2026-10-13T03:54:05+0000 DDEBUG timer: config: 7 ms
+2026-10-13T03:54:05+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2026-10-13T03:54:05+0000 DEBUG DNF version: 4.20.0
+2026-10-13T03:54:05+0000 DDEBUG Command: dnf install -y -q sshpass 
+2026-10-13T03:54:05+0000 DDEBUG Installroot: /
+2026-10-13T03:54:05+0000 DDEBUG Releasever: 10
+2026-10-13T03:54:05+0000 DEBUG cachedir: /var/cache/dnf
+2026-10-13T03:54:05+0000 DDEBUG Base command: install
+2026-10-13T03:54:05+0000 DDEBUG Extra commands: ['install', '-y', '-q', 'sshpass']
+2026-10-13T03:54:05+0000 DEBUG User-Agent: constructed: 'libdnf (CentOS Stream 10; generic; Linux.x86_64)'
+2026-10-13T03:54:05+0000 DEBUG repo: using cache for: baseos
+2026-10-13T03:54:05+0000 DEBUG baseos: using metadata from Tue 06 Oct 2026 03:25:25 PM UTC.
+2026-10-13T03:54:05+0000 DEBUG repo: using cache for: appstream
+2026-10-13T03:54:05+0000 DEBUG appstream: using metadata from Tue 06 Oct 2026 03:28:26 PM UTC.
+2026-10-13T03:54:05+0000 DEBUG repo: using cache for: extras-common
+2026-10-13T03:54:05+0000 DEBUG extras-common: using metadata from Thu 08 Oct 2026 08:33:32 PM UTC.
+2026-10-13T03:54:05+0000 DEBUG repo: using cache for: google-compute-engine
+2026-10-13T03:54:05+0000 DEBUG google-compute-engine: using metadata from Sat 20 Dec 2025 07:53:55 AM UTC.
+2026-10-13T03:54:05+0000 DEBUG repo: using cache for: google-cloud-sdk
+2026-10-13T03:54:05+0000 DEBUG google-cloud-sdk: using metadata from Sun 15 Jul 2001 01:17:47 PM UTC.
+2026-10-13T03:54:05+0000 INFO Last metadata expiration check: 0:00:06 ago on Tue 13 Oct 2026 03:53:59 AM UTC.
+2026-10-13T03:54:05+0000 DDEBUG timer: sack setup: 324 ms
+2026-10-13T03:54:05+0000 DEBUG --> Starting dependency resolution
+2026-10-13T03:54:05+0000 DEBUG ---> Package sshpass.x86_64 1.09-9.el10 will be installed
+2026-10-13T03:54:05+0000 DEBUG --> Finished dependency resolution
+2026-10-13T03:54:05+0000 DDEBUG timer: depsolve: 46 ms
+2026-10-13T03:54:05+0000 INFO Dependencies resolved.
+2026-10-13T03:54:05+0000 INFO ================================================================================
+ Package          Architecture    Version              Repository          Size
+================================================================================
+Installing:
+ sshpass          x86_64          1.09-9.el10          appstream           27 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+2026-10-13T03:54:05+0000 INFO Total download size: 27 k
+2026-10-13T03:54:05+0000 INFO Installed size: 47 k
+2026-10-13T03:54:05+0000 INFO Downloading Packages:
+2026-10-13T03:54:06+0000 INFO --------------------------------------------------------------------------------
+2026-10-13T03:54:06+0000 INFO Total                                            78 kB/s |  27 kB     00:00     
+2026-10-13T03:54:06+0000 DEBUG Using rpmkeys executable at /bin/rpmkeys to verify signatures
+2026-10-13T03:54:06+0000 INFO Running transaction check
+2026-10-13T03:54:06+0000 INFO Transaction check succeeded.
+2026-10-13T03:54:06+0000 INFO Running transaction test
+2026-10-13T03:54:06+0000 INFO Transaction test succeeded.
+2026-10-13T03:54:06+0000 DDEBUG timer: transaction test: 93 ms
+2026-10-13T03:54:06+0000 INFO Running transaction
+2026-10-13T03:54:06+0000 DDEBUG RPM transaction start.
+2026-10-13T03:54:06+0000 DDEBUG RPM transaction over.
+2026-10-13T03:54:06+0000 DDEBUG timer: verify transaction: 133 ms
+2026-10-13T03:54:06+0000 DDEBUG timer: transaction: 478 ms
+2026-10-13T03:54:06+0000 DEBUG Completion plugin: Generating completion cache...
+2026-10-13T03:54:07+0000 DEBUG Installed: sshpass-1.09-9.el10.x86_64
+2026-10-13T03:54:07+0000 INFO Complete!
+2026-10-13T03:54:07+0000 DDEBUG Cleaning up.
+2026-10-13T03:54:07+0000 DDEBUG /var/cache/dnf/appstream-25519c512d836b42/packages/sshpass-1.09-9.el10.x86_64.rpm removed
+2026-10-13T03:54:07+0000 DDEBUG Plugins were unloaded.

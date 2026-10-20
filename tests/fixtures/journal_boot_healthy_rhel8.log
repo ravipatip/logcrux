@@ -1,0 +1,1231 @@
+-- Logs begin at Tue 2026-10-13 07:24:58 UTC, end at Tue 2026-10-13 07:44:29 UTC. --
+Oct 13 07:24:58 localhost.localdomain kernel: Linux version 4.18.0-553.159.1.el8_10.x86_64 (mockbuild@x86-64-03.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-29) (GCC)) #1 SMP Mon Aug 31 12:19:33 EDT 2026
+Oct 13 07:24:58 localhost.localdomain kernel: Command line: BOOT_IMAGE=(hd0,gpt2)/boot/vmlinuz-4.18.0-553.159.1.el8_10.x86_64 root=UUID=75540320-b957-43b2-8431-d650c46370e7 ro net.ifnames=0 biosdevname=0 scsi_mod.use_blk_mq=Y crashkernel=auto console=ttyS0,115200
+Oct 13 07:24:58 localhost.localdomain kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Oct 13 07:24:58 localhost.localdomain kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Oct 13 07:24:58 localhost.localdomain kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Oct 13 07:24:58 localhost.localdomain kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Oct 13 07:24:58 localhost.localdomain kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Oct 13 07:24:58 localhost.localdomain kernel: signal: max sigframe size: 1776
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-provided physical RAM map:
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x0000000000000000-0x0000000000000fff] reserved
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x0000000000001000-0x0000000000054fff] usable
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x0000000000055000-0x000000000005ffff] reserved
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x0000000000060000-0x0000000000097fff] usable
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x0000000000098000-0x000000000009ffff] reserved
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000bf8ecfff] usable
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x00000000bf8ed000-0x00000000bfb6cfff] reserved
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x00000000bfb6d000-0x00000000bfb7efff] ACPI data
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x00000000bfb7f000-0x00000000bfbfefff] ACPI NVS
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x00000000bfbff000-0x00000000bffdffff] usable
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x00000000bffe0000-0x00000000bfffffff] reserved
+Oct 13 07:24:58 localhost.localdomain kernel: BIOS-e820: [mem 0x0000000100000000-0x000000023fffffff] usable
+Oct 13 07:24:58 localhost.localdomain kernel: NX (Execute Disable) protection: active
+Oct 13 07:24:58 localhost.localdomain kernel: efi: EFI v2.70 by EDK II
+Oct 13 07:24:58 localhost.localdomain kernel: efi:  TPMFinalLog=0xbfbf7000  ACPI=0xbfb7e000  ACPI 2.0=0xbfb7e014  SMBIOS=0xbf9ca000  MEMATTR=0xbd32d298  MOKvar=0xbf9c1000  RNG=0xbf9cb118  TPMEventLog=0xbd2f3018 
+Oct 13 07:24:58 localhost.localdomain kernel: efi: seeding entropy pool
+Oct 13 07:24:58 localhost.localdomain kernel: secureboot: Secure boot disabled
+Oct 13 07:24:58 localhost.localdomain kernel: SMBIOS 2.4 present.
+Oct 13 07:24:58 localhost.localdomain kernel: DMI: Google Google Compute Engine/Google Compute Engine, BIOS Google 07/24/2026
+Oct 13 07:24:58 localhost.localdomain kernel: Hypervisor detected: KVM
+Oct 13 07:24:58 localhost.localdomain kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Oct 13 07:24:58 localhost.localdomain kernel: kvm-clock: using sched offset of 12426436433 cycles
+Oct 13 07:24:58 localhost.localdomain kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Oct 13 07:24:58 localhost.localdomain kernel: tsc: Detected 2200.154 MHz processor
+Oct 13 07:24:58 localhost.localdomain kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Oct 13 07:24:58 localhost.localdomain kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Oct 13 07:24:58 localhost.localdomain kernel: last_pfn = 0x240000 max_arch_pfn = 0x400000000
+Oct 13 07:24:58 localhost.localdomain kernel: MTRR default type: write-back
+Oct 13 07:24:58 localhost.localdomain kernel: MTRR fixed ranges enabled:
+Oct 13 07:24:58 localhost.localdomain kernel:   00000-9FFFF write-back
+Oct 13 07:24:58 localhost.localdomain kernel:   A0000-FFFFF uncachable
+Oct 13 07:24:58 localhost.localdomain kernel: MTRR variable ranges enabled:
+Oct 13 07:24:58 localhost.localdomain kernel:   0 base 0000C0000000 mask 3FFFC0000000 uncachable
+Oct 13 07:24:58 localhost.localdomain kernel:   1 disabled
+Oct 13 07:24:58 localhost.localdomain kernel:   2 disabled
+Oct 13 07:24:58 localhost.localdomain kernel:   3 disabled
+Oct 13 07:24:58 localhost.localdomain kernel:   4 disabled
+Oct 13 07:24:58 localhost.localdomain kernel:   5 disabled
+Oct 13 07:24:58 localhost.localdomain kernel:   6 disabled
+Oct 13 07:24:58 localhost.localdomain kernel:   7 disabled
+Oct 13 07:24:58 localhost.localdomain kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Oct 13 07:24:58 localhost.localdomain kernel: last_pfn = 0xbffe0 max_arch_pfn = 0x400000000
+Oct 13 07:24:58 localhost.localdomain kernel: Using GB pages for direct mapping
+Oct 13 07:24:58 localhost.localdomain kernel: BRK [0x98401000, 0x98401fff] PGTABLE
+Oct 13 07:24:58 localhost.localdomain kernel: BRK [0x98402000, 0x98402fff] PGTABLE
+Oct 13 07:24:58 localhost.localdomain kernel: BRK [0x98403000, 0x98403fff] PGTABLE
+Oct 13 07:24:58 localhost.localdomain kernel: BRK [0x98404000, 0x98404fff] PGTABLE
+Oct 13 07:24:58 localhost.localdomain kernel: BRK [0x98405000, 0x98405fff] PGTABLE
+Oct 13 07:24:58 localhost.localdomain kernel: BRK [0x98406000, 0x98406fff] PGTABLE
+Oct 13 07:24:58 localhost.localdomain kernel: RAMDISK: [mem 0x5a415000-0x5c413fff]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Early table checksum verification disabled
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: RSDP 0x00000000BFB7E014 000024 (v02 Google)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: XSDT 0x00000000BFB7D0E8 00005C (v01 Google GOOGFACP 00000001      01000013)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: FACP 0x00000000BFB78000 0000F4 (v02 Google GOOGFACP 00000001 GOOG 00000001)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: DSDT 0x00000000BFB79000 001A64 (v01 Google GOOGDSDT 00000001 GOOG 00000001)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: FACS 0x00000000BFBF2000 000040
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: SSDT 0x00000000BFB7C000 000316 (v02 GOOGLE Tpm2Tabl 00001000 INTL 20250807)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: TPM2 0x00000000BFB7B000 000034 (v04 GOOGLE          00000001 GOOG 00000001)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: SRAT 0x00000000BFB77000 0000C8 (v03 Google GOOGSRAT 00000001 GOOG 00000001)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: APIC 0x00000000BFB76000 000076 (v05 Google GOOGAPIC 00000001 GOOG 00000001)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: SSDT 0x00000000BFB75000 000980 (v01 Google GOOGSSDT 00000001 GOOG 00000001)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: WAET 0x00000000BFB74000 000028 (v01 Google GOOGWAET 00000001 GOOG 00000001)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Reserving FACP table memory at [mem 0xbfb78000-0xbfb780f3]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Reserving DSDT table memory at [mem 0xbfb79000-0xbfb7aa63]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Reserving FACS table memory at [mem 0xbfbf2000-0xbfbf203f]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Reserving SSDT table memory at [mem 0xbfb7c000-0xbfb7c315]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Reserving TPM2 table memory at [mem 0xbfb7b000-0xbfb7b033]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Reserving SRAT table memory at [mem 0xbfb77000-0xbfb770c7]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Reserving APIC table memory at [mem 0xbfb76000-0xbfb76075]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Reserving SSDT table memory at [mem 0xbfb75000-0xbfb7597f]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Reserving WAET table memory at [mem 0xbfb74000-0xbfb74027]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Local APIC address 0xfee00000
+Oct 13 07:24:58 localhost.localdomain kernel: SRAT: PXM 0 -> APIC 0x00 -> Node 0
+Oct 13 07:24:58 localhost.localdomain kernel: SRAT: PXM 0 -> APIC 0x01 -> Node 0
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0x0009ffff]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00100000-0xbfffffff]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000-0x23fffffff]
+Oct 13 07:24:58 localhost.localdomain kernel: NUMA: Node 0 [mem 0x00000000-0x0009ffff] + [mem 0x00100000-0xbfffffff] -> [mem 0x00000000-0xbfffffff]
+Oct 13 07:24:58 localhost.localdomain kernel: NUMA: Node 0 [mem 0x00000000-0xbfffffff] + [mem 0x100000000-0x23fffffff] -> [mem 0x00000000-0x23fffffff]
+Oct 13 07:24:58 localhost.localdomain kernel: NODE_DATA(0) allocated [mem 0x23ffd3000-0x23fffdfff]
+Oct 13 07:24:58 localhost.localdomain kernel: Using crashkernel=auto, the size chosen is a best effort estimation.
+Oct 13 07:24:58 localhost.localdomain kernel: Reserving 256MB of memory at 2736MB for crashkernel (System RAM: 8188MB)
+Oct 13 07:24:58 localhost.localdomain kernel: Zone ranges:
+Oct 13 07:24:58 localhost.localdomain kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Oct 13 07:24:58 localhost.localdomain kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Oct 13 07:24:58 localhost.localdomain kernel:   Normal   [mem 0x0000000100000000-0x000000023fffffff]
+Oct 13 07:24:58 localhost.localdomain kernel:   Device   empty
+Oct 13 07:24:58 localhost.localdomain kernel: Movable zone start for each node
+Oct 13 07:24:58 localhost.localdomain kernel: Early memory node ranges
+Oct 13 07:24:58 localhost.localdomain kernel:   node   0: [mem 0x0000000000001000-0x0000000000054fff]
+Oct 13 07:24:58 localhost.localdomain kernel:   node   0: [mem 0x0000000000060000-0x0000000000097fff]
+Oct 13 07:24:58 localhost.localdomain kernel:   node   0: [mem 0x0000000000100000-0x00000000bf8ecfff]
+Oct 13 07:24:58 localhost.localdomain kernel:   node   0: [mem 0x00000000bfbff000-0x00000000bffdffff]
+Oct 13 07:24:58 localhost.localdomain kernel:   node   0: [mem 0x0000000100000000-0x000000023fffffff]
+Oct 13 07:24:58 localhost.localdomain kernel: Zeroed struct page in unavailable ranges: 934 pages
+Oct 13 07:24:58 localhost.localdomain kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000023fffffff]
+Oct 13 07:24:58 localhost.localdomain kernel: On node 0 totalpages: 2096218
+Oct 13 07:24:58 localhost.localdomain kernel:   DMA zone: 64 pages used for memmap
+Oct 13 07:24:58 localhost.localdomain kernel:   DMA zone: 2158 pages reserved
+Oct 13 07:24:58 localhost.localdomain kernel:   DMA zone: 3980 pages, LIFO batch:0
+Oct 13 07:24:58 localhost.localdomain kernel:   DMA32 zone: 12212 pages used for memmap
+Oct 13 07:24:58 localhost.localdomain kernel:   DMA32 zone: 781518 pages, LIFO batch:63
+Oct 13 07:24:58 localhost.localdomain kernel:   Normal zone: 20480 pages used for memmap
+Oct 13 07:24:58 localhost.localdomain kernel:   Normal zone: 1310720 pages, LIFO batch:63
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: PM-Timer IO Port: 0xb008
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Local APIC address 0xfee00000
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+Oct 13 07:24:58 localhost.localdomain kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: IRQ5 used by override.
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: IRQ9 used by override.
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: IRQ10 used by override.
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: IRQ11 used by override.
+Oct 13 07:24:58 localhost.localdomain kernel: Using ACPI (MADT) for SMP configuration information
+Oct 13 07:24:58 localhost.localdomain kernel: smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+Oct 13 07:24:58 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Oct 13 07:24:58 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x00055000-0x0005ffff]
+Oct 13 07:24:58 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x00098000-0x0009ffff]
+Oct 13 07:24:58 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+Oct 13 07:24:58 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0xbf8ed000-0xbfb6cfff]
+Oct 13 07:24:58 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0xbfb6d000-0xbfb7efff]
+Oct 13 07:24:58 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0xbfb7f000-0xbfbfefff]
+Oct 13 07:24:58 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0xbffe0000-0xbfffffff]
+Oct 13 07:24:58 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0xc0000000-0xffffffff]
+Oct 13 07:24:58 localhost.localdomain kernel: [mem 0xc0000000-0xffffffff] available for PCI devices
+Oct 13 07:24:58 localhost.localdomain kernel: Booting paravirtualized kernel on KVM
+Oct 13 07:24:58 localhost.localdomain kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Oct 13 07:24:58 localhost.localdomain kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+Oct 13 07:24:58 localhost.localdomain kernel: percpu: Embedded 63 pages/cpu s221184 r8192 d28672 u1048576
+Oct 13 07:24:58 localhost.localdomain kernel: pcpu-alloc: s221184 r8192 d28672 u1048576 alloc=1*2097152
+Oct 13 07:24:58 localhost.localdomain kernel: pcpu-alloc: [0] 0 1 
+Oct 13 07:24:58 localhost.localdomain kernel: kvm-guest: PV spinlocks enabled
+Oct 13 07:24:58 localhost.localdomain kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+Oct 13 07:24:58 localhost.localdomain kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2061304
+Oct 13 07:24:58 localhost.localdomain kernel: Policy zone: Normal
+Oct 13 07:24:58 localhost.localdomain kernel: Kernel command line: BOOT_IMAGE=(hd0,gpt2)/boot/vmlinuz-4.18.0-553.159.1.el8_10.x86_64 root=UUID=75540320-b957-43b2-8431-d650c46370e7 ro net.ifnames=0 biosdevname=0 scsi_mod.use_blk_mq=Y crashkernel=auto console=ttyS0,115200
+Oct 13 07:24:58 localhost.localdomain kernel: Specific versions of hardware are certified with Red Hat Enterprise Linux 8. Please see the list of hardware certified with Red Hat Enterprise Linux 8 at https://catalog.redhat.com.
+Oct 13 07:24:58 localhost.localdomain kernel: software IO TLB: area num 2.
+Oct 13 07:24:58 localhost.localdomain kernel: Memory: 2808048K/8384872K available (14339K kernel code, 5958K rwdata, 8584K rodata, 2820K init, 13784K bss, 597624K reserved, 0K cma-reserved)
+Oct 13 07:24:58 localhost.localdomain kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Oct 13 07:24:58 localhost.localdomain kernel: Kernel/User page tables isolation: enabled
+Oct 13 07:24:58 localhost.localdomain kernel: ftrace: allocating 41134 entries in 161 pages
+Oct 13 07:24:58 localhost.localdomain kernel: ftrace: allocated 161 pages with 3 groups
+Oct 13 07:24:58 localhost.localdomain kernel: rcu: Hierarchical RCU implementation.
+Oct 13 07:24:58 localhost.localdomain kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=2.
+Oct 13 07:24:58 localhost.localdomain kernel:         Rude variant of Tasks RCU enabled.
+Oct 13 07:24:58 localhost.localdomain kernel:         Tracing variant of Tasks RCU enabled.
+Oct 13 07:24:58 localhost.localdomain kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Oct 13 07:24:58 localhost.localdomain kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+Oct 13 07:24:58 localhost.localdomain kernel: NR_IRQS: 524544, nr_irqs: 440, preallocated irqs: 16
+Oct 13 07:24:58 localhost.localdomain kernel: random: crng done (trusting CPU's manufacturer)
+Oct 13 07:24:58 localhost.localdomain kernel: Console: colour dummy device 80x25
+Oct 13 07:24:58 localhost.localdomain kernel: printk: console [ttyS0] enabled
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Core revision 20220331
+Oct 13 07:24:58 localhost.localdomain kernel: APIC: Switch to symmetric I/O mode setup
+Oct 13 07:24:58 localhost.localdomain kernel: x2apic enabled
+Oct 13 07:24:58 localhost.localdomain kernel: Switched APIC routing to physical x2apic.
+Oct 13 07:24:58 localhost.localdomain kernel: ..TIMER: vector=0x30 apic1=0 pin1=0 apic2=-1 pin2=-1
+Oct 13 07:24:58 localhost.localdomain kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1fb6c45b8f7, max_idle_ns: 440795205637 ns
+Oct 13 07:24:58 localhost.localdomain kernel: Calibrating delay loop (skipped) preset value.. 4400.30 BogoMIPS (lpj=2200154)
+Oct 13 07:24:58 localhost.localdomain kernel: pid_max: default: 32768 minimum: 301
+Oct 13 07:24:58 localhost.localdomain kernel: LSM: Security Framework initializing
+Oct 13 07:24:58 localhost.localdomain kernel: Yama: becoming mindful.
+Oct 13 07:24:58 localhost.localdomain kernel: SELinux:  Initializing.
+Oct 13 07:24:58 localhost.localdomain kernel: LSM support for eBPF active
+Oct 13 07:24:58 localhost.localdomain kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Oct 13 07:24:58 localhost.localdomain kernel: Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+Oct 13 07:24:58 localhost.localdomain kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Oct 13 07:24:58 localhost.localdomain kernel: Spectre V2 : Mitigation: Retpolines
+Oct 13 07:24:58 localhost.localdomain kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Oct 13 07:24:58 localhost.localdomain kernel: Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+Oct 13 07:24:58 localhost.localdomain kernel: Spectre V2 : Enabling Restricted Speculation for firmware calls
+Oct 13 07:24:58 localhost.localdomain kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Oct 13 07:24:58 localhost.localdomain kernel: Spectre V2 : User space: Mitigation: STIBP via prctl
+Oct 13 07:24:58 localhost.localdomain kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+Oct 13 07:24:58 localhost.localdomain kernel: MDS: Mitigation: Clear CPU buffers
+Oct 13 07:24:58 localhost.localdomain kernel: TAA: Mitigation: Clear CPU buffers
+Oct 13 07:24:58 localhost.localdomain kernel: MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+Oct 13 07:24:58 localhost.localdomain kernel: Freeing SMP alternatives memory: 36K
+Oct 13 07:24:58 localhost.localdomain kernel: smpboot: CPU0: Intel(R) Xeon(R) CPU @ 2.20GHz (family: 0x6, model: 0x4f, stepping: 0x0)
+Oct 13 07:24:58 localhost.localdomain kernel: Performance Events: unsupported p6 CPU model 79 no PMU driver, software events only.
+Oct 13 07:24:58 localhost.localdomain kernel: rcu: Hierarchical SRCU implementation.
+Oct 13 07:24:58 localhost.localdomain kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+Oct 13 07:24:58 localhost.localdomain kernel: smp: Bringing up secondary CPUs ...
+Oct 13 07:24:58 localhost.localdomain kernel: x86: Booting SMP configuration:
+Oct 13 07:24:58 localhost.localdomain kernel: .... node  #0, CPUs:      #1
+Oct 13 07:24:58 localhost.localdomain kernel: MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+Oct 13 07:24:58 localhost.localdomain kernel: TAA CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/tsx_async_abort.html for more details.
+Oct 13 07:24:58 localhost.localdomain kernel: MMIO Stale Data CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/processor_mmio_stale_data.html for more details.
+Oct 13 07:24:58 localhost.localdomain kernel: smp: Brought up 1 node, 2 CPUs
+Oct 13 07:24:58 localhost.localdomain kernel: smpboot: Max logical packages: 1
+Oct 13 07:24:58 localhost.localdomain kernel: smpboot: Total of 2 processors activated (8800.61 BogoMIPS)
+Oct 13 07:24:58 localhost.localdomain kernel: node 0 deferred pages initialised in 35ms
+Oct 13 07:24:58 localhost.localdomain kernel: devtmpfs: initialized
+Oct 13 07:24:58 localhost.localdomain kernel: x86/mm: Memory block size: 128MB
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: PM: Registering ACPI NVS region [mem 0xbfb7f000-0xbfbfefff] (524288 bytes)
+Oct 13 07:24:58 localhost.localdomain kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Oct 13 07:24:58 localhost.localdomain kernel: futex hash table entries: 512 (order: 3, 32768 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: pinctrl core: initialized pinctrl subsystem
+Oct 13 07:24:58 localhost.localdomain kernel: NET: Registered protocol family 16
+Oct 13 07:24:58 localhost.localdomain kernel: DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+Oct 13 07:24:58 localhost.localdomain kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Oct 13 07:24:58 localhost.localdomain kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Oct 13 07:24:58 localhost.localdomain kernel: audit: initializing netlink subsys (disabled)
+Oct 13 07:24:58 localhost.localdomain kernel: audit: type=2000 audit(1791876296.362:1): state=initialized audit_enabled=0 res=1
+Oct 13 07:24:58 localhost.localdomain kernel: cpuidle: using governor menu
+Oct 13 07:24:58 localhost.localdomain kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Oct 13 07:24:58 localhost.localdomain kernel: PCI: Using configuration type 1 for base access
+Oct 13 07:24:58 localhost.localdomain kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+Oct 13 07:24:58 localhost.localdomain kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Oct 13 07:24:58 localhost.localdomain kernel: cryptd: max_cpu_qlen set to 1000
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Added _OSI(Module Device)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Added _OSI(Processor Device)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: 3 ACPI AML tables successfully acquired and loaded
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Interpreter enabled
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Using IOAPIC for interrupt routing
+Oct 13 07:24:58 localhost.localdomain kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Enabled 16 GPEs in block 00 to 0F
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Oct 13 07:24:58 localhost.localdomain kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR HPX-Type3]
+Oct 13 07:24:58 localhost.localdomain kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Oct 13 07:24:58 localhost.localdomain kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Oct 13 07:24:58 localhost.localdomain kernel: PCI host bridge to bus 0000:00
+Oct 13 07:24:58 localhost.localdomain kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Oct 13 07:24:58 localhost.localdomain kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Oct 13 07:24:58 localhost.localdomain kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Oct 13 07:24:58 localhost.localdomain kernel: pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfefff window]
+Oct 13 07:24:58 localhost.localdomain kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:01.0: [8086:7110] type 00 class 0x060100
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:03.0: [1af4:1004] type 00 class 0x000000
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:03.0: reg 0x10: [io  0xc040-0xc07f]
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:03.0: reg 0x14: [mem 0xc0001000-0xc000107f]
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:04.0: [1af4:1000] type 00 class 0x020000
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:04.0: reg 0x10: [io  0xc000-0xc03f]
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:04.0: reg 0x14: [mem 0xc0000000-0xc000007f]
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:05.0: [1af4:1002] type 00 class 0x00ff00
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:05.0: reg 0x10: [io  0xc0a0-0xc0bf]
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:06.0: [1af4:1005] type 00 class 0x00ff00
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:06.0: reg 0x10: [io  0xc080-0xc09f]
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:06.0: reg 0x14: [mem 0xc0002000-0xc000203f]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: PCI: Interrupt link LNKS configured for IRQ 9
+Oct 13 07:24:58 localhost.localdomain kernel: iommu: Default domain type: Passthrough 
+Oct 13 07:24:58 localhost.localdomain kernel: SCSI subsystem initialized
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: bus type USB registered
+Oct 13 07:24:58 localhost.localdomain kernel: usbcore: registered new interface driver usbfs
+Oct 13 07:24:58 localhost.localdomain kernel: usbcore: registered new interface driver hub
+Oct 13 07:24:58 localhost.localdomain kernel: usbcore: registered new device driver usb
+Oct 13 07:24:58 localhost.localdomain kernel: pps_core: LinuxPPS API ver. 1 registered
+Oct 13 07:24:58 localhost.localdomain kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 13 07:24:58 localhost.localdomain kernel: PTP clock support registered
+Oct 13 07:24:58 localhost.localdomain kernel: EDAC MC: Ver: 3.0.0
+Oct 13 07:24:58 localhost.localdomain kernel: Registered efivars operations
+Oct 13 07:24:58 localhost.localdomain kernel: PCI: Using ACPI for IRQ routing
+Oct 13 07:24:58 localhost.localdomain kernel: PCI: pci_cache_line_size set to 64 bytes
+Oct 13 07:24:58 localhost.localdomain kernel: e820: reserve RAM buffer [mem 0x00055000-0x0005ffff]
+Oct 13 07:24:58 localhost.localdomain kernel: e820: reserve RAM buffer [mem 0x00098000-0x0009ffff]
+Oct 13 07:24:58 localhost.localdomain kernel: e820: reserve RAM buffer [mem 0xbf8ed000-0xbfffffff]
+Oct 13 07:24:58 localhost.localdomain kernel: e820: reserve RAM buffer [mem 0xbffe0000-0xbfffffff]
+Oct 13 07:24:58 localhost.localdomain kernel: NetLabel: Initializing
+Oct 13 07:24:58 localhost.localdomain kernel: NetLabel:  domain hash size = 128
+Oct 13 07:24:58 localhost.localdomain kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct 13 07:24:58 localhost.localdomain kernel: NetLabel:  unlabeled traffic allowed by default
+Oct 13 07:24:58 localhost.localdomain kernel: vgaarb: loaded
+Oct 13 07:24:58 localhost.localdomain kernel: clocksource: Switched to clocksource kvm-clock
+Oct 13 07:24:58 localhost.localdomain kernel: VFS: Disk quotas dquot_6.6.0
+Oct 13 07:24:58 localhost.localdomain kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct 13 07:24:58 localhost.localdomain kernel: pnp: PnP ACPI init
+Oct 13 07:24:58 localhost.localdomain kernel: pnp 00:00: Plug and Play ACPI device, IDs PNP0b00 (active)
+Oct 13 07:24:58 localhost.localdomain kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0303 (active)
+Oct 13 07:24:58 localhost.localdomain kernel: pnp 00:02: Plug and Play ACPI device, IDs PNP0f13 (active)
+Oct 13 07:24:58 localhost.localdomain kernel: pnp 00:03: Plug and Play ACPI device, IDs PNP0501 (active)
+Oct 13 07:24:58 localhost.localdomain kernel: pnp 00:04: Plug and Play ACPI device, IDs PNP0501 (active)
+Oct 13 07:24:58 localhost.localdomain kernel: pnp 00:05: Plug and Play ACPI device, IDs PNP0501 (active)
+Oct 13 07:24:58 localhost.localdomain kernel: pnp 00:06: Plug and Play ACPI device, IDs PNP0501 (active)
+Oct 13 07:24:58 localhost.localdomain kernel: pnp: PnP ACPI: found 7 devices
+Oct 13 07:24:58 localhost.localdomain kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Oct 13 07:24:58 localhost.localdomain kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Oct 13 07:24:58 localhost.localdomain kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Oct 13 07:24:58 localhost.localdomain kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Oct 13 07:24:58 localhost.localdomain kernel: pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfefff window]
+Oct 13 07:24:58 localhost.localdomain kernel: NET: Registered protocol family 2
+Oct 13 07:24:58 localhost.localdomain kernel: IP idents hash table entries: 131072 (order: 8, 1048576 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: TCP: Hash tables configured (established 65536 bind 65536)
+Oct 13 07:24:58 localhost.localdomain kernel: MPTCP token hash table entries: 8192 (order: 5, 196608 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: UDP hash table entries: 4096 (order: 5, 131072 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, vmalloc)
+Oct 13 07:24:58 localhost.localdomain kernel: NET: Registered protocol family 1
+Oct 13 07:24:58 localhost.localdomain kernel: NET: Registered protocol family 44
+Oct 13 07:24:58 localhost.localdomain kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Oct 13 07:24:58 localhost.localdomain kernel: PCI: CLS 0 bytes, default 64
+Oct 13 07:24:58 localhost.localdomain kernel: Unpacking initramfs...
+Oct 13 07:24:58 localhost.localdomain kernel: Freeing initrd memory: 32764K
+Oct 13 07:24:58 localhost.localdomain kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Oct 13 07:24:58 localhost.localdomain kernel: software IO TLB: mapped [mem 0x00000000a7000000-0x00000000ab000000] (64MB)
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: bus type thunderbolt registered
+Oct 13 07:24:58 localhost.localdomain kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fb6c45b8f7, max_idle_ns: 440795205637 ns
+Oct 13 07:24:58 localhost.localdomain kernel: clocksource: Switched to clocksource tsc
+Oct 13 07:24:58 localhost.localdomain kernel: Initialise system trusted keyrings
+Oct 13 07:24:58 localhost.localdomain kernel: Key type blacklist registered
+Oct 13 07:24:58 localhost.localdomain kernel: workingset: timestamp_bits=36 max_order=21 bucket_order=0
+Oct 13 07:24:58 localhost.localdomain kernel: zbud: loaded
+Oct 13 07:24:58 localhost.localdomain kernel: pstore: using deflate compression
+Oct 13 07:24:58 localhost.localdomain kernel: Platform Keyring initialized
+Oct 13 07:24:58 localhost.localdomain kernel: NET: Registered protocol family 38
+Oct 13 07:24:58 localhost.localdomain kernel: Key type asymmetric registered
+Oct 13 07:24:58 localhost.localdomain kernel: Asymmetric key parser 'x509' registered
+Oct 13 07:24:58 localhost.localdomain kernel: Running certificate verification selftests
+Oct 13 07:24:58 localhost.localdomain kernel: Loaded X.509 cert 'Certificate verification self-testing key: f58703bb33ce1b73ee02eccdee5b8817518fe3db'
+Oct 13 07:24:58 localhost.localdomain kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+Oct 13 07:24:58 localhost.localdomain kernel: io scheduler mq-deadline registered
+Oct 13 07:24:58 localhost.localdomain kernel: io scheduler kyber registered
+Oct 13 07:24:58 localhost.localdomain kernel: io scheduler bfq registered
+Oct 13 07:24:58 localhost.localdomain kernel: atomic64_test: passed for x86-64 platform with CX8 and with SSE
+Oct 13 07:24:58 localhost.localdomain kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Oct 13 07:24:58 localhost.localdomain kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Power Button [PWRF]
+Oct 13 07:24:58 localhost.localdomain kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: Sleep Button [SLPF]
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: \_SB_.LNKC: Enabled at IRQ 11
+Oct 13 07:24:58 localhost.localdomain kernel: virtio-pci 0000:00:03.0: virtio_pci: leaving for legacy driver
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: \_SB_.LNKD: Enabled at IRQ 10
+Oct 13 07:24:58 localhost.localdomain kernel: virtio-pci 0000:00:04.0: virtio_pci: leaving for legacy driver
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: \_SB_.LNKA: Enabled at IRQ 10
+Oct 13 07:24:58 localhost.localdomain kernel: virtio-pci 0000:00:05.0: virtio_pci: leaving for legacy driver
+Oct 13 07:24:58 localhost.localdomain kernel: ACPI: \_SB_.LNKB: Enabled at IRQ 11
+Oct 13 07:24:58 localhost.localdomain kernel: virtio-pci 0000:00:06.0: virtio_pci: leaving for legacy driver
+Oct 13 07:24:58 localhost.localdomain kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Oct 13 07:24:58 localhost.localdomain kernel: 00:03: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Oct 13 07:24:58 localhost.localdomain kernel: 00:04: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+Oct 13 07:24:58 localhost.localdomain kernel: 00:05: ttyS2 at I/O 0x3e8 (irq = 6, base_baud = 115200) is a 16550A
+Oct 13 07:24:58 localhost.localdomain kernel: 00:06: ttyS3 at I/O 0x2e8 (irq = 7, base_baud = 115200) is a 16550A
+Oct 13 07:24:58 localhost.localdomain kernel: Non-volatile memory driver v1.3
+Oct 13 07:24:58 localhost.localdomain kernel: tpm_tis MSFT0101:00: 2.0 TPM (device-id 0x9009, rev-id 0)
+Oct 13 07:24:58 localhost.localdomain kernel: rdac: device handler registered
+Oct 13 07:24:58 localhost.localdomain kernel: hp_sw: device handler registered
+Oct 13 07:24:58 localhost.localdomain kernel: emc: device handler registered
+Oct 13 07:24:58 localhost.localdomain kernel: alua: device handler registered
+Oct 13 07:24:58 localhost.localdomain kernel: libphy: Fixed MDIO Bus: probed
+Oct 13 07:24:58 localhost.localdomain kernel: usbcore: registered new interface driver usbserial_generic
+Oct 13 07:24:58 localhost.localdomain kernel: usbserial: USB Serial support registered for generic
+Oct 13 07:24:58 localhost.localdomain kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+Oct 13 07:24:58 localhost.localdomain kernel: i8042: Warning: Keylock active
+Oct 13 07:24:58 localhost.localdomain kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Oct 13 07:24:58 localhost.localdomain kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Oct 13 07:24:58 localhost.localdomain kernel: mousedev: PS/2 mouse device common for all mice
+Oct 13 07:24:58 localhost.localdomain kernel: rtc_cmos 00:00: RTC can wake from S4
+Oct 13 07:24:58 localhost.localdomain kernel: rtc_cmos 00:00: registered as rtc0
+Oct 13 07:24:58 localhost.localdomain kernel: rtc_cmos 00:00: alarms up to one day, 114 bytes nvram
+Oct 13 07:24:58 localhost.localdomain kernel: intel_pstate: CPU model not supported
+Oct 13 07:24:58 localhost.localdomain kernel: EFI Variables Facility v0.08 2004-May-17
+Oct 13 07:24:58 localhost.localdomain kernel: hid: raw HID events driver (C) Jiri Kosina
+Oct 13 07:24:58 localhost.localdomain kernel: usbcore: registered new interface driver usbhid
+Oct 13 07:24:58 localhost.localdomain kernel: usbhid: USB HID core driver
+Oct 13 07:24:58 localhost.localdomain kernel: drop_monitor: Initializing network drop monitor service
+Oct 13 07:24:58 localhost.localdomain kernel: Initializing XFRM netlink socket
+Oct 13 07:24:58 localhost.localdomain kernel: NET: Registered protocol family 10
+Oct 13 07:24:58 localhost.localdomain kernel: Segment Routing with IPv6
+Oct 13 07:24:58 localhost.localdomain kernel: NET: Registered protocol family 17
+Oct 13 07:24:58 localhost.localdomain kernel: mpls_gso: MPLS GSO support
+Oct 13 07:24:58 localhost.localdomain kernel: No MBM correction factor available
+Oct 13 07:24:58 localhost.localdomain kernel: AVX2 version of gcm_enc/dec engaged.
+Oct 13 07:24:58 localhost.localdomain kernel: AES CTR mode by8 optimization enabled
+Oct 13 07:24:58 localhost.localdomain kernel: sched_clock: Marking stable (1422168267, 0)->(2453467411, -1031299144)
+Oct 13 07:24:58 localhost.localdomain kernel: registered taskstats version 1
+Oct 13 07:24:58 localhost.localdomain kernel: Loading compiled-in X.509 certificates
+Oct 13 07:24:58 localhost.localdomain kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kernel signing key: 19e05469da04a9c24663cc59aa5c1e35b32744a2'
+Oct 13 07:24:58 localhost.localdomain kernel: Loaded X.509 cert 'Red Hat Enterprise Linux Driver Update Program (key 3): bf57f3e87362bc7229d9f465321773dfd1f77a80'
+Oct 13 07:24:58 localhost.localdomain kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kpatch signing key: 4d38fd864ebe18c5f0b72e3852e2014c3a676fc8'
+Oct 13 07:24:58 localhost.localdomain kernel: zswap: loaded using pool lzo/zbud
+Oct 13 07:24:58 localhost.localdomain kernel: page_owner is disabled
+Oct 13 07:24:58 localhost.localdomain kernel: Key type big_key registered
+Oct 13 07:24:58 localhost.localdomain kernel: Key type trusted registered
+Oct 13 07:24:58 localhost.localdomain kernel: Key type encrypted registered
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loading X.509 certificate: UEFI:db
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loaded X.509 cert 'Microsoft UEFI CA 2023: 81aa6b3244c935bce0d6628af39827421e32497d'
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loaded X.509 cert 'Red Hat Secure Boot CA 5: cc6fa5e72868ba494e939bbd680b9144769a9f8f'
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Oct 13 07:24:58 localhost.localdomain kernel: integrity: Loaded X.509 cert 'Red Hat Secure Boot CA 8: e1c6c580aa1e21d585aad9bf20f3929e5ec1f08b'
+Oct 13 07:24:58 localhost.localdomain kernel: ima: Allocated hash algorithm: sha256
+Oct 13 07:24:58 localhost.localdomain kernel: ima: No architecture policies found
+Oct 13 07:24:58 localhost.localdomain kernel: evm: Initialising EVM extended attributes:
+Oct 13 07:24:58 localhost.localdomain kernel: evm: security.selinux
+Oct 13 07:24:58 localhost.localdomain kernel: evm: security.ima
+Oct 13 07:24:58 localhost.localdomain kernel: evm: security.capability
+Oct 13 07:24:58 localhost.localdomain kernel: evm: HMAC attrs: 0x1
+Oct 13 07:24:58 localhost.localdomain kernel: rtc_cmos 00:00: setting system clock to 2026-10-13 07:24:58 UTC (1791876298)
+Oct 13 07:24:58 localhost.localdomain kernel: Freeing unused decrypted memory: 2028K
+Oct 13 07:24:58 localhost.localdomain kernel: Freeing unused kernel image (initmem) memory: 2820K
+Oct 13 07:24:58 localhost.localdomain kernel: Write protecting the kernel read-only data: 26624k
+Oct 13 07:24:58 localhost.localdomain kernel: Freeing unused kernel image (text/rodata gap) memory: 2016K
+Oct 13 07:24:58 localhost.localdomain kernel: Freeing unused kernel image (rodata/data gap) memory: 1656K
+Oct 13 07:24:58 localhost.localdomain kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Oct 13 07:24:58 localhost.localdomain systemd[1]: systemd 239 (239-82.el8_10.19) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Detected virtualization kvm.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Detected architecture x86-64.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Running in initial RAM disk.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Set hostname to <localhost.localdomain>.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Reached target Timers.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Listening on udev Kernel Socket.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Reached target Local File Systems.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Reached target Slices.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Listening on Journal Socket (/dev/log).
+Oct 13 07:24:58 localhost.localdomain kernel: i2c /dev entries driver
+Oct 13 07:24:58 localhost.localdomain systemd-journald[227]: Journal started
+Oct 13 07:24:58 localhost.localdomain systemd-journald[227]: Runtime journal (/run/log/journal/78a05d990c6b04d1e3f8d90ea5874393) is 8.0M, max 384.7M, 376.7M free.
+Oct 13 07:24:58 localhost.localdomain systemd-modules-load[232]: Inserted module 'i2c_dev'
+Oct 13 07:24:58 localhost.localdomain systemd-modules-load[232]: Module 'msr' is builtin
+Oct 13 07:24:58 localhost.localdomain systemd[1]: systemd-vconsole-setup.service: Succeeded.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Started Setup Virtual Console.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Starting dracut ask for additional cmdline parameters...
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Started dracut ask for additional cmdline parameters.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Starting dracut cmdline hook...
+Oct 13 07:24:58 localhost.localdomain dracut-cmdline[261]: dracut-8.10 (Ootpa) dracut-049-246.git20260728.el8_10
+Oct 13 07:24:58 localhost.localdomain dracut-cmdline[261]: Using kernel command line parameters: rd.driver.pre=nvme rd.driver.pre=virtio_scsi BOOT_IMAGE=(hd0,gpt2)/boot/vmlinuz-4.18.0-553.159.1.el8_10.x86_64 root=UUID=75540320-b957-43b2-8431-d650c46370e7 ro net.ifnames=0 biosdevname=0 scsi_mod.use_blk_mq=Y crashkernel=auto console=ttyS0,115200
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Started dracut cmdline hook.
+Oct 13 07:24:58 localhost.localdomain systemd[1]: Starting dracut pre-udev hook...
+Oct 13 07:24:59 localhost.localdomain kernel: scsi host0: Virtio SCSI HBA
+Oct 13 07:24:59 localhost.localdomain kernel: blk-mq: reduced tag depth to 10240
+Oct 13 07:24:59 localhost.localdomain kernel: scsi 0:0:1:0: Direct-Access     Google   PersistentDisk   1    PQ: 0 ANSI: 6
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Started dracut pre-udev hook.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Starting udev Kernel Device Manager...
+Oct 13 07:24:59 localhost.localdomain systemd-udevd[338]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Started udev Kernel Device Manager.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Starting dracut pre-trigger hook...
+Oct 13 07:24:59 localhost.localdomain kernel: scsi 0:0:1:0: Attached scsi generic sg0 type 0
+Oct 13 07:24:59 localhost.localdomain kernel: sd 0:0:1:0: [sda] 62914560 512-byte logical blocks: (32.2 GB/30.0 GiB)
+Oct 13 07:24:59 localhost.localdomain kernel: sd 0:0:1:0: [sda] 4096-byte physical blocks
+Oct 13 07:24:59 localhost.localdomain systemd-udevd[338]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Started dracut pre-trigger hook.
+Oct 13 07:24:59 localhost.localdomain kernel: sd 0:0:1:0: [sda] Write Protect is off
+Oct 13 07:24:59 localhost.localdomain kernel: sd 0:0:1:0: [sda] Mode Sense: 1f 00 10 08
+Oct 13 07:24:59 localhost.localdomain kernel: sd 0:0:1:0: [sda] Write cache: enabled, read cache: enabled, supports DPO and FUA
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Starting udev Coldplug all Devices...
+Oct 13 07:24:59 localhost.localdomain kernel: GPT:Primary header thinks Alt. header is not at the end of the disk.
+Oct 13 07:24:59 localhost.localdomain kernel: GPT:41943039 != 62914559
+Oct 13 07:24:59 localhost.localdomain kernel: GPT:Alternate GPT header not at the end of the disk.
+Oct 13 07:24:59 localhost.localdomain kernel: GPT:41943039 != 62914559
+Oct 13 07:24:59 localhost.localdomain kernel: GPT: Use GNU Parted to correct GPT errors.
+Oct 13 07:24:59 localhost.localdomain kernel:  sda: sda1 sda2
+Oct 13 07:24:59 localhost.localdomain kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+Oct 13 07:24:59 localhost.localdomain kernel: sd 0:0:1:0: [sda] Attached SCSI disk
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Mounting Kernel Configuration File System...
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Mounted Kernel Configuration File System.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Started udev Coldplug all Devices.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Reached target System Initialization.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Starting dracut initqueue hook...
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Starting Show Plymouth Boot Screen...
+Oct 13 07:24:59 localhost.localdomain systemd-udevd[366]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Received SIGRTMIN+20 from PID 384 (plymouthd).
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Started Show Plymouth Boot Screen.
+Oct 13 07:24:59 localhost.localdomain systemd-udevd[357]: Using default interface naming scheme 'rhel-8.0'.
+Oct 13 07:24:59 localhost.localdomain systemd-udevd[357]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Found device PersistentDisk root.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Reached target Initrd Root Device.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Started Forward Password Requests to Plymouth Directory Watch.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Reached target Paths.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Reached target Basic System.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Started Hardware RNG Entropy Gatherer Daemon.
+Oct 13 07:24:59 localhost.localdomain rngd[399]: Disabling 7: PKCS11 Entropy generator (pkcs11)
+Oct 13 07:24:59 localhost.localdomain rngd[399]: Disabling 5: NIST Network Entropy Beacon (nist)
+Oct 13 07:24:59 localhost.localdomain rngd[399]: Disabling 9: Qrypt quantum entropy beacon (qrypt)
+Oct 13 07:24:59 localhost.localdomain rngd[399]: Initializing available sources
+Oct 13 07:24:59 localhost.localdomain rngd[399]: [hwrng ]: Initialized
+Oct 13 07:24:59 localhost.localdomain rngd[399]: [rdrand]: Enabling RDSEED rng support
+Oct 13 07:24:59 localhost.localdomain rngd[399]: [rdrand]: Initialized
+Oct 13 07:24:59 localhost.localdomain rngd[399]: [jitter]: JITTER timeout set to 5 sec
+Oct 13 07:24:59 localhost.localdomain rngd[399]: [jitter]: Initializing AES buffer
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Started dracut initqueue hook.
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Starting dracut pre-mount hook...
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Reached target Remote File Systems (Pre).
+Oct 13 07:24:59 localhost.localdomain systemd[1]: Reached target Remote File Systems.
+Oct 13 07:24:59 localhost.localdomain gce-disk-expand: Resizing disk /dev/sda2
+Oct 13 07:24:59 localhost.localdomain gce-disk-expand: Moving GPT header for /dev/sda with sgdisk.
+Oct 13 07:25:00 localhost.localdomain gce-disk-expand: Resizing /dev/sda partition 2 with parted.
+Oct 13 07:25:01 localhost.localdomain systemd[1]: Started dracut pre-mount hook.
+Oct 13 07:25:01 localhost.localdomain systemd[1]: Starting File System Check on /dev/disk/by-uuid/75540320-b957-43b2-8431-d650c46370e7...
+Oct 13 07:25:01 localhost.localdomain systemd-fsck[461]: /usr/sbin/fsck.xfs: XFS file system.
+Oct 13 07:25:01 localhost.localdomain systemd[1]: Started File System Check on /dev/disk/by-uuid/75540320-b957-43b2-8431-d650c46370e7.
+Oct 13 07:25:01 localhost.localdomain systemd[1]: Mounting /sysroot...
+Oct 13 07:25:01 localhost.localdomain kernel: SGI XFS with ACLs, security attributes, quota, no debug enabled
+Oct 13 07:25:01 localhost.localdomain kernel: XFS (sda2): Mounting V5 Filesystem
+Oct 13 07:25:02 localhost.localdomain kernel: XFS (sda2): Ending clean mount
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Mounted /sysroot.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Reached target Initrd Root File System.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Starting Reload Configuration from the Real Root...
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Reloading.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: initrd-parse-etc.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Started Reload Configuration from the Real Root.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Reached target Initrd File Systems.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Reached target Initrd Default Target.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Starting dracut pre-pivot and cleanup hook...
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Started dracut pre-pivot and cleanup hook.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Starting Cleaning Up and Shutting Down Daemons...
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Timers.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: dracut-pre-pivot.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped dracut pre-pivot and cleanup hook.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Starting Plymouth switch root service...
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Remote File Systems.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Remote File Systems (Pre).
+Oct 13 07:25:02 localhost.localdomain systemd[1]: dracut-pre-mount.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped dracut pre-mount hook.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: dracut-initqueue.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped dracut initqueue hook.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Initrd Default Target.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Initrd Root Device.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopping Hardware RNG Entropy Gatherer Daemon...
+Oct 13 07:25:02 localhost.localdomain systemd[1]: initrd-cleanup.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Started Cleaning Up and Shutting Down Daemons.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: rngd.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped Hardware RNG Entropy Gatherer Daemon.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Basic System.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Sockets.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Slices.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Paths.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target System Initialization.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: systemd-udev-trigger.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped udev Coldplug all Devices.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: dracut-pre-trigger.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped dracut pre-trigger hook.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopping udev Kernel Device Manager...
+Oct 13 07:25:02 localhost.localdomain systemd[1]: systemd-sysctl.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped Apply Kernel Variables.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Swap.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: systemd-tmpfiles-setup.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped Create Volatile Files and Directories.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped target Local File Systems.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: systemd-modules-load.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped Load Kernel Modules.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: systemd-udevd.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped udev Kernel Device Manager.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: systemd-tmpfiles-setup-dev.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped Create Static Device Nodes in /dev.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: kmod-static-nodes.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped Create list of required static device nodes for the current kernel.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: dracut-pre-udev.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped dracut pre-udev hook.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: dracut-cmdline.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped dracut cmdline hook.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: dracut-cmdline-ask.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Stopped dracut ask for additional cmdline parameters.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Starting Setup Virtual Console...
+Oct 13 07:25:02 localhost.localdomain systemd[1]: systemd-udevd-kernel.socket: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Closed udev Kernel Socket.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: systemd-udevd-control.socket: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Closed udev Control Socket.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Starting Cleanup udevd DB...
+Oct 13 07:25:02 localhost.localdomain systemd[1]: initrd-udevadm-cleanup-db.service: Succeeded.
+Oct 13 07:25:02 localhost.localdomain systemd[1]: Started Cleanup udevd DB.
+Oct 13 07:25:03 localhost.localdomain systemd[1]: Started Plymouth switch root service.
+Oct 13 07:25:03 localhost.localdomain systemd[1]: systemd-vconsole-setup.service: Succeeded.
+Oct 13 07:25:03 localhost.localdomain systemd[1]: Started Setup Virtual Console.
+Oct 13 07:25:03 localhost.localdomain systemd[1]: Reached target Switch Root.
+Oct 13 07:25:03 localhost.localdomain systemd[1]: Starting Switch Root...
+Oct 13 07:25:03 localhost.localdomain systemd[1]: Switching root.
+Oct 13 07:25:03 localhost.localdomain systemd-journald[227]: Journal stopped
+Oct 13 07:25:04 localhost.localdomain kernel: printk: systemd: 19 output lines suppressed due to ratelimiting
+Oct 13 07:25:04 localhost.localdomain kernel: audit: type=1404 audit(1791876303.347:2): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+Oct 13 07:25:04 localhost.localdomain kernel: SELinux:  policy capability network_peer_controls=1
+Oct 13 07:25:04 localhost.localdomain kernel: SELinux:  policy capability open_perms=1
+Oct 13 07:25:04 localhost.localdomain kernel: SELinux:  policy capability extended_socket_class=1
+Oct 13 07:25:04 localhost.localdomain kernel: SELinux:  policy capability always_check_network=0
+Oct 13 07:25:04 localhost.localdomain kernel: SELinux:  policy capability cgroup_seclabel=1
+Oct 13 07:25:04 localhost.localdomain kernel: SELinux:  policy capability nnp_nosuid_transition=1
+Oct 13 07:25:04 localhost.localdomain kernel: audit: type=1403 audit(1791876303.618:3): auid=4294967295 ses=4294967295 lsm=selinux res=1
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Successfully loaded SELinux policy in 276.176ms.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Relabelled /dev, /run and /sys/fs/cgroup in 21.812ms.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: systemd 239 (239-82.el8_10.19) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Detected virtualization kvm.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Detected architecture x86-64.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Set hostname to <localhost.localdomain>.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: initrd-switch-root.service: Succeeded.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Stopped Switch Root.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: systemd-journald.service: Service has no hold-off time (RestartSec=0), scheduling restart.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Stopped Journal Service.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Starting Journal Service...
+Oct 13 07:25:04 localhost.localdomain systemd-journald[569]: Journal started
+Oct 13 07:25:04 localhost.localdomain systemd-journald[569]: Runtime journal (/run/log/journal/78a05d990c6b04d1e3f8d90ea5874393) is 8.0M, max 384.7M, 376.7M free.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: systemd-journald.service: Succeeded.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Create list of required static device nodes for the current kernel.
+Oct 13 07:25:04 localhost.localdomain systemd-modules-load[580]: Module 'msr' is builtin
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Mounted POSIX Message Queue File System.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Mounted Huge Pages File System.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Mounted Kernel Debug File System.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Read and set NIS domainname from /etc/sysconfig/network.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Load Kernel Modules.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Starting Apply Kernel Variables...
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Remount Root and Kernel File Systems.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Starting Load/Save Random Seed...
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Starting Flush Journal to Persistent Storage...
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Starting Create System Users...
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Starting Rebuild Hardware Database...
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Apply Kernel Variables.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Load/Save Random Seed.
+Oct 13 07:25:04 localhost.localdomain systemd-journald[569]: Runtime journal (/run/log/journal/78a05d990c6b04d1e3f8d90ea5874393) is 8.0M, max 384.7M, 376.7M free.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Flush Journal to Persistent Storage.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Create System Users.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Starting Create Static Device Nodes in /dev...
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started udev Coldplug all Devices.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Create Static Device Nodes in /dev.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: systemd-vconsole-setup.service: Succeeded.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Setup Virtual Console.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Started Rebuild Hardware Database.
+Oct 13 07:25:04 localhost.localdomain systemd[1]: Starting udev Kernel Device Manager...
+Oct 13 07:25:05 localhost.localdomain systemd-udevd[608]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Started udev Kernel Device Manager.
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Reached target Local File Systems (Pre).
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Starting File System Check on /dev/disk/by-uuid/4FC8-ED51...
+Oct 13 07:25:05 localhost.localdomain systemd-fsck[623]: fsck.fat 4.1 (2017-01-24)
+Oct 13 07:25:05 localhost.localdomain systemd-fsck[623]: /dev/sda1: 14 files, 1566/51145 clusters
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Started File System Check on /dev/disk/by-uuid/4FC8-ED51.
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Mounting /boot/efi...
+Oct 13 07:25:05 localhost.localdomain kernel: input: PC Speaker as /devices/platform/pcspkr/input/input5
+Oct 13 07:25:05 localhost.localdomain kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Oct 13 07:25:05 localhost.localdomain systemd-udevd[609]: Using default interface naming scheme 'rhel-8.0'.
+Oct 13 07:25:05 localhost.localdomain systemd-udevd[609]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Oct 13 07:25:05 localhost.localdomain kernel: RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+Oct 13 07:25:05 localhost.localdomain systemd-udevd[620]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Oct 13 07:25:05 localhost.localdomain kernel: EDAC sbridge: Seeking for: PCI ID 8086:6fa0
+Oct 13 07:25:05 localhost.localdomain kernel: EDAC sbridge:  Ver: 1.1.2 
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Mounted /boot/efi.
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Reached target Local File Systems.
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Starting Import network configuration from initramfs...
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Starting Rebuild Dynamic Linker Cache...
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Starting Rebuild Journal Catalog...
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Received SIGRTMIN+20 from PID 384 (plymouthd).
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Started Rebuild Journal Catalog.
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Started Import network configuration from initramfs.
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Starting Create Volatile Files and Directories...
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Started Create Volatile Files and Directories.
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Starting Security Auditing Service...
+Oct 13 07:25:05 localhost.localdomain auditd[671]: No plugins found, not dispatching events
+Oct 13 07:25:05 localhost.localdomain auditd[671]: Init complete, auditd 3.1.2 listening for events (startup state enable)
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: No rules
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: enabled 1
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: failure 1
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: pid 671
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: rate_limit 0
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog_limit 8192
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: lost 0
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog 0
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog_wait_time 60000
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog_wait_time_actual 0
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: enabled 1
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: failure 1
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: pid 671
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: rate_limit 0
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog_limit 8192
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: lost 0
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog 4
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog_wait_time 60000
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog_wait_time_actual 0
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: enabled 1
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: failure 1
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: pid 671
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: rate_limit 0
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog_limit 8192
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: lost 0
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog 3
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog_wait_time 60000
+Oct 13 07:25:05 localhost.localdomain augenrules[692]: backlog_wait_time_actual 0
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Started Security Auditing Service.
+Oct 13 07:25:05 localhost.localdomain systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started Rebuild Dynamic Linker Cache.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Starting Update is Completed...
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started Update is Completed.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Reached target System Initialization.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Listening on SSSD Kerberos Cache Manager responder socket.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started Daily Cleanup of Temporary Directories.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Listening on D-Bus System Message Bus Socket.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Reached target Sockets.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started daily update of the root trust anchor for DNSSEC.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started dnf makecache --timer.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started NSS cache refresh timer.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started dnf-automatic timer.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started GCE Workload Certificate refresh timer.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Reached target Timers.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Starting Resize root filesystem if needed...
+Oct 13 07:25:06 localhost.localdomain google_disk_expand[704]: Checking if filesystem on /dev/sda2 needs resizing
+Oct 13 07:25:06 localhost.localdomain google_disk_expand[704]: Done.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: google-disk-expand.service: Succeeded.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started Resize root filesystem if needed.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Reached target Basic System.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Starting OpenSSH ecdsa Server Key Generation...
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started Hardware RNG Entropy Gatherer Daemon.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Starting NTP client/server...
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Reached target User and Group Name Lookups.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Starting Login Service...
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Starting Restore /run/initramfs on shutdown...
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Starting OpenSSH rsa Server Key Generation...
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Starting GCE Workload Certificate refresh...
+Oct 13 07:25:06 localhost.localdomain rngd[710]: Disabling 7: PKCS11 Entropy generator (pkcs11)
+Oct 13 07:25:06 localhost.localdomain rngd[710]: Disabling 5: NIST Network Entropy Beacon (nist)
+Oct 13 07:25:06 localhost.localdomain rngd[710]: Disabling 9: Qrypt quantum entropy beacon (qrypt)
+Oct 13 07:25:06 localhost.localdomain rngd[710]: Initializing available sources
+Oct 13 07:25:06 localhost.localdomain rngd[710]: [hwrng ]: Initialized
+Oct 13 07:25:06 localhost.localdomain rngd[710]: [rdrand]: Enabling RDSEED rng support
+Oct 13 07:25:06 localhost.localdomain rngd[710]: [rdrand]: Initialized
+Oct 13 07:25:06 localhost.localdomain rngd[710]: [jitter]: JITTER timeout set to 5 sec
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Starting OpenSSH ed25519 Server Key Generation...
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started D-Bus System Message Bus.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Starting firewalld - dynamic firewall daemon...
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started Restore /run/initramfs on shutdown.
+Oct 13 07:25:06 localhost.localdomain chronyd[732]: chronyd version 4.5 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +NTS +SECHASH +IPV6 +DEBUG)
+Oct 13 07:25:06 localhost.localdomain chronyd[732]: Loaded 0 symmetric keys
+Oct 13 07:25:06 localhost.localdomain chronyd[732]: Using right/UTC timezone to obtain leap second data
+Oct 13 07:25:06 localhost.localdomain systemd[1]: sshd-keygen@ecdsa.service: Succeeded.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started OpenSSH ecdsa Server Key Generation.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: sshd-keygen@ed25519.service: Succeeded.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started OpenSSH ed25519 Server Key Generation.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started NTP client/server.
+Oct 13 07:25:06 localhost.localdomain rngd[710]: [jitter]: Initializing AES buffer
+Oct 13 07:25:06 localhost.localdomain systemd-logind[714]: Watching system buttons on /dev/input/event0 (Power Button)
+Oct 13 07:25:06 localhost.localdomain systemd-logind[714]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Oct 13 07:25:06 localhost.localdomain systemd-logind[714]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Oct 13 07:25:06 localhost.localdomain systemd-logind[714]: New seat seat0.
+Oct 13 07:25:06 localhost.localdomain systemd[1]: Started Login Service.
+Oct 13 07:25:07 localhost.localdomain systemd[1]: sshd-keygen@rsa.service: Succeeded.
+Oct 13 07:25:07 localhost.localdomain systemd[1]: Started OpenSSH rsa Server Key Generation.
+Oct 13 07:25:07 localhost.localdomain systemd[1]: Reached target sshd-keygen.target.
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Started firewalld - dynamic firewall daemon.
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Reached target Network (Pre).
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Starting Network Manager...
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.5040] NetworkManager (version 1.40.16-21.el8_10) is starting... (boot:231fee92-19f6-458b-a308-85a34bbfbfce)
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.5053] Read config: /etc/NetworkManager/NetworkManager.conf (run: 15-carrier-timeout.conf)
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Started Network Manager.
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.5151] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Reached target Network.
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Starting Dynamic System Tuning Daemon...
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Starting Permit User Sessions...
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.5291] manager[0x55b241636080]: monitoring kernel firmware directory '/lib/firmware'.
+Oct 13 07:25:08 localhost.localdomain dbus-daemon[720]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.3' (uid=0 pid=764 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Starting Network Manager Wait Online...
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Starting Hostname Service...
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Started Permit User Sessions.
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Started Command Scheduler.
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Starting Terminate Plymouth Boot Screen...
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Starting Hold until boot process finishes up...
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Received SIGRTMIN+21 from PID 384 (plymouthd).
+Oct 13 07:25:08 localhost.localdomain crond[779]: (CRON) STARTUP (1.5.2)
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Received SIGRTMIN+21 from PID 384 (plymouthd).
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Started Terminate Plymouth Boot Screen.
+Oct 13 07:25:08 localhost.localdomain crond[779]: (CRON) INFO (Syslog will be used instead of sendmail.)
+Oct 13 07:25:08 localhost.localdomain crond[779]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 88% if used.)
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Started Hold until boot process finishes up.
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Started Serial Getty on ttyS0.
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Started Getty on tty1.
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Reached target Login Prompts.
+Oct 13 07:25:08 localhost.localdomain crond[779]: (CRON) INFO (running with inotify support)
+Oct 13 07:25:08 localhost.localdomain firewalld[727]: WARNING: AllowZoneDrifting is enabled. This is considered an insecure configuration option. It will be removed in a future release. Please consider disabling it now.
+Oct 13 07:25:08 localhost.localdomain dbus-daemon[720]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Started Hostname Service.
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9555] hostname: hostname: using hostnamed
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9556] hostname: static hostname changed from (none) to "localhost.localdomain"
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9563] dns-mgr: init: dns=default,systemd-resolved rc-manager=symlink
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9753] Loaded device plugin: NMTeamFactory (/usr/lib64/NetworkManager/1.40.16-21.el8_10/libnm-device-plugin-team.so)
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9754] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9755] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9755] manager: Networking is enabled by state file
+Oct 13 07:25:08 localhost.localdomain dbus-daemon[720]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.3' (uid=0 pid=764 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+Oct 13 07:25:08 localhost.localdomain systemd[1]: Starting Network Manager Script Dispatcher Service...
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9878] settings: Loaded settings plugin: ifcfg-rh ("/usr/lib64/NetworkManager/1.40.16-21.el8_10/libnm-settings-plugin-ifcfg-rh.so")
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9879] settings: Loaded settings plugin: keyfile (internal)
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9955] dhcp: init: Using DHCP client 'internal'
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9956] device (lo): carrier: link connected
+Oct 13 07:25:08 localhost.localdomain NetworkManager[764]: <info>  [1791876308.9960] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+Oct 13 07:25:09 localhost.localdomain NetworkManager[764]: <info>  [1791876309.0041] manager: (eth0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)
+Oct 13 07:25:09 localhost.localdomain NetworkManager[764]: <info>  [1791876309.0162] settings: (eth0): created default wired connection 'Wired connection 1'
+Oct 13 07:25:09 localhost.localdomain NetworkManager[764]: <info>  [1791876309.0163] device (eth0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Oct 13 07:25:09 localhost.localdomain kernel: IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Oct 13 07:25:09 localhost.localdomain NetworkManager[764]: <info>  [1791876309.0735] device (eth0): carrier: link connected
+Oct 13 07:25:09 localhost.localdomain NetworkManager[764]: <info>  [1791876309.0763] device (eth0): state change: unavailable -> disconnected (reason 'carrier-changed', sys-iface-state: 'managed')
+Oct 13 07:25:09 localhost.localdomain NetworkManager[764]: <info>  [1791876309.0785] policy: auto-activating connection 'Wired connection 1' (37315334-2bbe-32a0-88bf-cb408ce1b2ce)
+Oct 13 07:25:09 localhost.localdomain NetworkManager[764]: <info>  [1791876309.0819] device (eth0): Activation: starting connection 'Wired connection 1' (37315334-2bbe-32a0-88bf-cb408ce1b2ce)
+Oct 13 07:25:09 localhost.localdomain NetworkManager[764]: <info>  [1791876309.0824] device (eth0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:09 localhost.localdomain dbus-daemon[720]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Oct 13 07:25:09 localhost.localdomain systemd[1]: Started Network Manager Script Dispatcher Service.
+Oct 13 07:25:09 localhost.localdomain NetworkManager[764]: <info>  [1791876309.0902] manager: NetworkManager state is now CONNECTING
+Oct 13 07:25:09 localhost.localdomain NetworkManager[764]: <info>  [1791876309.0918] device (eth0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:10 localhost.localdomain dbus-daemon[720]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.2' (uid=0 pid=727 comm="/usr/libexec/platform-python -s /usr/sbin/firewall" label="system_u:system_r:firewalld_t:s0")
+Oct 13 07:25:10 localhost.localdomain systemd[1]: Starting Authorization Manager...
+Oct 13 07:25:10 localhost.localdomain polkitd[988]: Started polkitd version 0.115
+Oct 13 07:25:10 localhost.localdomain polkitd[988]: Loading rules from directory /etc/polkit-1/rules.d
+Oct 13 07:25:10 localhost.localdomain polkitd[988]: Loading rules from directory /usr/share/polkit-1/rules.d
+Oct 13 07:25:10 localhost.localdomain polkitd[988]: Finished loading, compiling and executing 3 rules
+Oct 13 07:25:10 localhost.localdomain dbus-daemon[720]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Oct 13 07:25:10 localhost.localdomain systemd[1]: Started Authorization Manager.
+Oct 13 07:25:10 localhost.localdomain polkitd[988]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Oct 13 07:25:10 localhost.localdomain NetworkManager[764]: <info>  [1791876310.7447] device (eth0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:10 localhost.localdomain NetworkManager[764]: <info>  [1791876310.7468] dhcp4 (eth0): activation: beginning transaction (timeout in 45 seconds)
+Oct 13 07:25:10 localhost.localdomain NetworkManager[764]: <info>  [1791876310.7497] dhcp4 (eth0): state changed new lease, address=10.128.0.2
+Oct 13 07:25:10 localhost.localdomain NetworkManager[764]: <info>  [1791876310.7505] policy: set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS
+Oct 13 07:25:10 localhost.localdomain NetworkManager[764]: <info>  [1791876310.7510] policy: set-hostname: set hostname to 'lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal' (from DHCPv4)
+Oct 13 07:25:10 localhost.localdomain dbus-daemon[720]: [system] Activating via systemd: service name='org.freedesktop.resolve1' unit='dbus-org.freedesktop.resolve1.service' requested by ':1.3' (uid=0 pid=764 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd-hostnamed[777]: Changed host name to 'lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal'
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal dbus-daemon[720]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.resolve1.service': Unit dbus-org.freedesktop.resolve1.service not found.
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal NetworkManager[764]: <info>  [1791876310.7632] device (eth0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal NetworkManager[764]: <info>  [1791876310.7715] device (eth0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal NetworkManager[764]: <info>  [1791876310.7718] device (eth0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal NetworkManager[764]: <info>  [1791876310.7721] manager: NetworkManager state is now CONNECTED_SITE
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal NetworkManager[764]: <info>  [1791876310.7725] device (eth0): Activation: successful, device activated.
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal NetworkManager[764]: <info>  [1791876310.7731] manager: NetworkManager state is now CONNECTED_GLOBAL
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal NetworkManager[764]: <info>  [1791876310.7748] manager: startup complete
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Started Network Manager Wait Online.
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Reached target Network is Online.
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal gce_workload_cert_refresh[717]: 2026/10/13 07:25:10: Done
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Starting NSS cache refresh...
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Starting System Logging Service...
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Starting Crash recovery kernel arming...
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Started Google OSConfig Agent.
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: gce-workload-cert-refresh.service: Succeeded.
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Started GCE Workload Certificate refresh.
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Started Dynamic System Tuning Daemon.
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal google_oslogin_nss_cache[1052]: oslogin_cache_refresh[1052]: Refreshing passwd entry cache
+Oct 13 07:25:10 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal oslogin_cache_refresh[1052]: Refreshing passwd entry cache
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal rngd[710]: [jitter]: Unable to obtain AES key, disabling JITTER source
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal oslogin_cache_refresh[1052]: Refreshing group entry cache
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal google_oslogin_nss_cache[1052]: oslogin_cache_refresh[1052]: Refreshing group entry cache
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal rngd[710]: [jitter]: Initialization Failed
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal rngd[710]: Process privileges have been dropped to 2:2
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: google-oslogin-cache.service: Succeeded.
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Started NSS cache refresh.
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal rsyslogd[1053]: [origin software="rsyslogd" swVersion="8.2102.0-15.el8_10.1" x-pid="1053" x-info="https://www.rsyslog.com"] start
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Started System Logging Service.
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Starting Google Compute Engine Shutdown Scripts...
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Starting Google Compute Engine Guest Compat Manager...
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Starting Google Compute Engine Guest Agent Plugin Manager...
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal rsyslogd[1053]: imjournal: No statefile exists, /var/lib/rsyslog/imjournal.state will be created (ignore if this is first run): No such file or directory [v8.2102.0-15.el8_10.1 try https://www.rsyslog.com/e/2040 ]
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal systemd[1]: Started Google Compute Engine Shutdown Scripts.
+Oct 13 07:25:11 lc-rhel-8.us-central1-a.c.logcrux-test2-cfaf25.internal rsyslogd[1053]: imjournal: journal files changed, reloading...  [v8.2102.0-15.el8_10.1 try https://www.rsyslog.com/e/0 ]
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: Initializing Google Guest Agent...
+Oct 13 07:25:11 lc-rhel-8 google_guest_compat_manager[1085]: Setting up guest compat manager
+Oct 13 07:25:11 lc-rhel-8 google_guest_compat_manager[1085]: Compat manager created with core plugin already enabled: true
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: Running Guest Agent setup with config: {Version:20260715.00 EnableACSWatcher:true CorePluginPath:/usr/lib/google/guest_agent/GuestAgentCorePlugin/core_plugin SkipCorePlugin:false EnableLocalPlugins:true}, runtime config: {id:7135104841157730880 svcActPresent:true}
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: Registered ACS watcher and handler
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: Initializing plugin manager for instance "7135104841157730880", agent version: "20260715.00"
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: Plugin manager initialized
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: Starting local plugins
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: Creating metric registry for "scheduled-job-manager" with flush interval: 1m0s, max records: 10
+Oct 13 07:25:11 lc-rhel-8 systemd[1]: Started Google Compute Engine Guest Compat Manager.
+Oct 13 07:25:11 lc-rhel-8 google_guest_compat_manager[1085]: Google Guest Compat Manager (version: "20260715.00") Initialized...
+Oct 13 07:25:11 lc-rhel-8 google_guest_compat_manager[1085]: Creating metric registry for "events_manager" with flush interval: 1m0s, max records: 10
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: Installing local plugins: [GuestAgentCorePlugin GuestTelemetryExtension]
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: Installing plugin "GuestAgentCorePlugin", revision "20260715.00"
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: No config provided for plugin "GuestAgentCorePlugin", setting empty config
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent_manager[1086]: Instance has service account: true, setting ACS client isEnabled to true
+Oct 13 07:25:11 lc-rhel-8 systemd-hostnamed[777]: Changed static host name to 'lc-rhel-8'
+Oct 13 07:25:11 lc-rhel-8 NetworkManager[764]: <info>  [1791876311.2674] hostname: static hostname changed from "localhost.localdomain" to "lc-rhel-8"
+Oct 13 07:25:11 lc-rhel-8 NetworkManager[764]: <info>  [1791876311.2780] policy: set-hostname: set hostname to 'lc-rhel-8' (from system configuration)
+Oct 13 07:25:11 lc-rhel-8 NetworkManager[764]: <info>  [1791876311.2782] audit: op="hostname-save" arg="lc-rhel-8" pid=1124 uid=0 result="success"
+Oct 13 07:25:11 lc-rhel-8 systemd-hostnamed[777]: Changed host name to 'lc-rhel-8'
+Oct 13 07:25:11 lc-rhel-8 nm-dispatcher[1161]: Unknown operation hostname.
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent[1151]: Initializing core plugin server...
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent[1151]: Core plugin server listening on "/run/google-guest-agent/plugin-connections/GuestAgentCorePlugin_20260715.00.sock" using "unix"
+Oct 13 07:25:11 lc-rhel-8 google_guest_agent[1151]: Core plugin server registered. Starting to serve requests...
+Oct 13 07:25:11 lc-rhel-8 systemd[1]: Stopping System Logging Service...
+Oct 13 07:25:11 lc-rhel-8 kdumpctl[1065]: kdump: No kdump initial ramdisk found.
+Oct 13 07:25:11 lc-rhel-8 kdumpctl[1065]: kdump: Rebuilding /boot/initramfs-4.18.0-553.159.1.el8_10.x86_64kdump.img
+Oct 13 07:25:11 lc-rhel-8 nm-dispatcher[1267]:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Oct 13 07:25:11 lc-rhel-8 nm-dispatcher[1267]:                                  Dload  Upload   Total   Spent    Left  Speed
+Oct 13 07:25:11 lc-rhel-8 nm-dispatcher[1267]: [158B blob data]
+Oct 13 07:25:11 lc-rhel-8 rsyslogd[1053]: [origin software="rsyslogd" swVersion="8.2102.0-15.el8_10.1" x-pid="1053" x-info="https://www.rsyslog.com"] exiting on signal 15.
+Oct 13 07:25:11 lc-rhel-8 dracut[1482]: dracut-049-246.git20260728.el8_10
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: Executing: /usr/bin/dracut --add kdumpbase --quiet --hostonly --hostonly-cmdline --hostonly-i18n --hostonly-mode strict --hostonly-nics  -o "plymouth dash resume ifcfg earlykdump" --compress=xz --mount "/dev/disk/by-uuid/75540320-b957-43b2-8431-d650c46370e7 /sysroot xfs rw,relatime,seclabel,attr2,inode64,logbufs=8,logbsize=32k,noquota,nofail,x-systemd.before=initrd-fs.target" --no-hostonly-default-device -f /boot/initramfs-4.18.0-553.159.1.el8_10.x86_64kdump.img 4.18.0-553.159.1.el8_10.x86_64
+Oct 13 07:25:12 lc-rhel-8 OSConfigAgent[1058]: 2026-10-13T07:25:12.0613Z OSConfigAgent Info: OSConfig Agent (version 20260624.00-g1.el8) started.
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent[1151]: Running core plugin...
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent_manager[1086]: Successfully started plugin "GuestAgentCorePlugin_20260715.00"
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent_manager[1086]: Successfully installed plugin "GuestAgentCorePlugin_20260715.00"
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent_manager[1086]: No local plugins to install
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent_manager[1086]: Creating metric registry for "events_manager" with flush interval: 1m0s, max records: 10
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent_manager[1086]: Installing plugin "GuestTelemetryExtension", revision "1.0"
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent_manager[1086]: No config provided for plugin "GuestTelemetryExtension", setting empty config
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent_manager[1086]: Starting plugin monitor job for plugin "GuestAgentCorePlugin_20260715.00"
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent_manager[1086]: Running in GDU universe: true
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent[1151]: Running firstboot setup...
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent_manager[1086]: Starting plugin metrics monitor job for plugin "GuestAgentCorePlugin_20260715.00"
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent[1151]: Successfully generated ecdsa type public key at "/etc/ssh/ssh_host_ecdsa_key.pub"
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent_manager[1086]: Cloud logging initialized (google_guest_agent_manager)
+Oct 13 07:25:12 lc-rhel-8 google_guest_agent[1151]: Successfully generated ed25519 type public key at "/etc/ssh/ssh_host_ed25519_key.pub"
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'ifcfg' will not be installed, because it's in the list to be omitted!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'plymouth' will not be installed, because it's in the list to be omitted!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'lvmmerge' will not be installed, because command 'lvm' could not be found!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'lvmthinpool-monitor' will not be installed, because command 'lvm' could not be found!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+Oct 13 07:25:12 lc-rhel-8 dracut[1484]: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+Oct 13 07:25:13 lc-rhel-8 dracut[1484]: 95nfs: Could not find any command of 'rpcbind portmap'!
+Oct 13 07:25:13 lc-rhel-8 dracut[1484]: dracut module 'resume' will not be installed, because it's in the list to be omitted!
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Successfully generated rsa type public key at "/etc/ssh/ssh_host_rsa_key.pub"
+Oct 13 07:25:13 lc-rhel-8 dracut[1484]: dracut module 'earlykdump' will not be installed, because it's in the list to be omitted!
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Finished firstboot setup.
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent_manager[1086]: Successfully started plugin "GuestTelemetryExtension_1.0"
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent_manager[1086]: Successfully installed plugin "GuestTelemetryExtension_1.0"
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent_manager[1086]: Starting plugin monitor job for plugin "GuestTelemetryExtension_1.0"
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent_manager[1086]: Starting plugin metrics monitor job for plugin "GuestTelemetryExtension_1.0"
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Running linux network management module setup.
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Rolling back changes for netplan with reload [true]
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Rolling back changes for NetworkManager with reload [false].
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4100] agent-manager: agent[7a1a583a61ead672,:1.15/nmcli-connect/0]: agent registered
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4118] device (eth0): state change: activated -> deactivating (reason 'new-activation', sys-iface-state: 'managed')
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4121] manager: NetworkManager state is now DISCONNECTING
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4129] device (eth0): disconnecting for new activation request.
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4131] audit: op="connection-activate" uuid="37315334-2bbe-32a0-88bf-cb408ce1b2ce" name="Wired connection 1" pid=2305 uid=0 result="success"
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4237] device (eth0): state change: deactivating -> disconnected (reason 'new-activation', sys-iface-state: 'managed')
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4375] dhcp4 (eth0): canceled DHCP transaction
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4377] dhcp4 (eth0): activation: beginning transaction (timeout in 45 seconds)
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4377] dhcp4 (eth0): state changed no lease
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4444] manager: NetworkManager state is now DISCONNECTED
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4446] device (eth0): Activation: starting connection 'Wired connection 1' (37315334-2bbe-32a0-88bf-cb408ce1b2ce)
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4458] device (eth0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4461] manager: NetworkManager state is now CONNECTING
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4463] device (eth0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:13 lc-rhel-8 chronyd[732]: Source 169.254.169.254 offline
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4856] device (eth0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4861] dhcp4 (eth0): activation: beginning transaction (timeout in 45 seconds)
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4875] dhcp4 (eth0): state changed new lease, address=10.128.0.2
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.4881] policy: set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.5006] device (eth0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.5072] device (eth0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.5075] device (eth0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.5079] manager: NetworkManager state is now CONNECTED_SITE
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.5082] device (eth0): Activation: successful, device activated.
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.5089] manager: NetworkManager state is now CONNECTED_GLOBAL
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Rolling back changes for systemd-networkd with reload [true].
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Rolling back changes for wicked with reload [true].
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Rolling back changes for dhclient.
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Rolled back network configuration for [netplan NetworkManager systemd-networkd wicked dhclient].
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Setting up NetworkManager interfaces.
+Oct 13 07:25:13 lc-rhel-8 chronyd[732]: Source 169.254.169.254 online
+Oct 13 07:25:13 lc-rhel-8 NetworkManager[764]: <info>  [1791876313.5689] audit: op="connections-reload" pid=2342 uid=0 result="success"
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Finished setting up NetworkManager interfaces.
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Finished linux network management module setup.
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Initialized (version: "20260715.00")
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Adjtime file "/etc/adjtime" exists, checking rtc mode
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Identified RTC mode isUTC to be: [true] from "/etc/adjtime"
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Clock drift token has changed, resetting clock skew.
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Instance id is already set, no update required.
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Creating metric registry for "scheduled-job-manager" with flush interval: 1m0s, max records: 10
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Skipping schedule job request for "gce-workload-cert-refresher"
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Instance has service account: true, setting ACS client isEnabled to true
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Bootstrapping MDS mTLS credentials
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Installing Root CA cert...
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Successfully installed Root CA cert
+Oct 13 07:25:13 lc-rhel-8 google_guest_agent[1151]: Installing client credentials...
+Oct 13 07:25:13 lc-rhel-8 kernel: fbcon: Taking over console
+Oct 13 07:25:13 lc-rhel-8 groupadd[2383]: group added to /etc/group: name=google-sudoers, GID=1000
+Oct 13 07:25:13 lc-rhel-8 groupadd[2383]: group added to /etc/gshadow: name=google-sudoers
+Oct 13 07:25:13 lc-rhel-8 groupadd[2383]: new group: name=google-sudoers, GID=1000
+Oct 13 07:25:14 lc-rhel-8 google_guest_agent[1151]: Successfully installed client credentials
+Oct 13 07:25:14 lc-rhel-8 google_guest_agent[1151]: Successfully bootstrapped MDS mTLS credentials
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: rsyslog.service: Succeeded.
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Stopped System Logging Service.
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Starting System Logging Service...
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: memstrack is available
+Oct 13 07:25:14 lc-rhel-8 groupadd[2536]: group added to /etc/group: name=dip, GID=1001
+Oct 13 07:25:14 lc-rhel-8 nm-dispatcher[2554]:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Oct 13 07:25:14 lc-rhel-8 nm-dispatcher[2554]:                                  Dload  Upload   Total   Spent    Left  Speed
+Oct 13 07:25:14 lc-rhel-8 nm-dispatcher[2554]: [158B blob data]
+Oct 13 07:25:14 lc-rhel-8 groupadd[2536]: group added to /etc/gshadow: name=dip
+Oct 13 07:25:14 lc-rhel-8 groupadd[2536]: new group: name=dip, GID=1001
+Oct 13 07:25:14 lc-rhel-8 rsyslogd[2553]: [origin software="rsyslogd" swVersion="8.2102.0-15.el8_10.1" x-pid="2553" x-info="https://www.rsyslog.com"] start
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Started System Logging Service.
+Oct 13 07:25:14 lc-rhel-8 rsyslogd[2553]: imjournal: journal files changed, reloading...  [v8.2102.0-15.el8_10.1 try https://www.rsyslog.com/e/0 ]
+Oct 13 07:25:14 lc-rhel-8 groupadd[2591]: group added to /etc/group: name=docker, GID=1002
+Oct 13 07:25:14 lc-rhel-8 google_guest_agent_manager[1086]: Google Guest Agent (version: "20260715.00") Initialized...
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Started Google Compute Engine Guest Agent Plugin Manager.
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Starting OpenSSH server daemon...
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Starting Google Compute Engine Startup Scripts...
+Oct 13 07:25:14 lc-rhel-8 groupadd[2591]: group added to /etc/gshadow: name=docker
+Oct 13 07:25:14 lc-rhel-8 sshd[2612]: Server listening on 0.0.0.0 port 22.
+Oct 13 07:25:14 lc-rhel-8 sshd[2612]: Server listening on :: port 22.
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Started OpenSSH server daemon.
+Oct 13 07:25:14 lc-rhel-8 groupadd[2591]: new group: name=docker, GID=1002
+Oct 13 07:25:14 lc-rhel-8 google_compat_metadata_script_runner[2621]: Initialized Metadata Script Runner Compat (version 20260715.00)
+Oct 13 07:25:14 lc-rhel-8 google_compat_metadata_script_runner[2621]: Enable core plugin set to: [true], launching script runner for event "startup" from "/usr/bin/gce_metadata_script_runner"
+Oct 13 07:25:14 lc-rhel-8 rsyslogd[2553]: imjournal: journal files changed, reloading...  [v8.2102.0-15.el8_10.1 try https://www.rsyslog.com/e/0 ]
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+Oct 13 07:25:14 lc-rhel-8 groupadd[2646]: group added to /etc/group: name=lxd, GID=1003
+Oct 13 07:25:14 lc-rhel-8 groupadd[2646]: group added to /etc/gshadow: name=lxd
+Oct 13 07:25:14 lc-rhel-8 groupadd[2646]: new group: name=lxd, GID=1003
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+Oct 13 07:25:14 lc-rhel-8 groupadd[2695]: group added to /etc/group: name=plugdev, GID=1004
+Oct 13 07:25:14 lc-rhel-8 groupadd[2695]: group added to /etc/gshadow: name=plugdev
+Oct 13 07:25:14 lc-rhel-8 groupadd[2695]: new group: name=plugdev, GID=1004
+Oct 13 07:25:14 lc-rhel-8 useradd[2753]: new group: name=operator, GID=1005
+Oct 13 07:25:14 lc-rhel-8 useradd[2753]: new user: name=operator, UID=1000, GID=1005, home=/home/operator, shell=/bin/bash
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'lvmmerge' will not be installed, because command 'lvm' could not be found!
+Oct 13 07:25:14 lc-rhel-8 google_metadata_script_runner[2647]: Running metadata script runner (version 20260715.00) for "startup" event
+Oct 13 07:25:14 lc-rhel-8 google_metadata_script_runner[2647]: No startup scripts to run
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'lvmthinpool-monitor' will not be installed, because command 'lvm' could not be found!
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: google-startup-scripts.service: Succeeded.
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Started Google Compute Engine Startup Scripts.
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Reached target Multi-User System.
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Starting Update UTMP about System Runlevel Changes...
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+Oct 13 07:25:14 lc-rhel-8 systemd[1]: Started Update UTMP about System Runlevel Changes.
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+Oct 13 07:25:14 lc-rhel-8 gpasswd[2839]: user operator added by root to group google-sudoers
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+Oct 13 07:25:14 lc-rhel-8 gpasswd[2872]: user operator added by root to group adm
+Oct 13 07:25:14 lc-rhel-8 gpasswd[2915]: user operator added by root to group dip
+Oct 13 07:25:14 lc-rhel-8 gpasswd[2953]: user operator added by root to group docker
+Oct 13 07:25:14 lc-rhel-8 gpasswd[2989]: user operator added by root to group lxd
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+Oct 13 07:25:14 lc-rhel-8 gpasswd[3028]: user operator added by root to group plugdev
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: 95nfs: Could not find any command of 'rpcbind portmap'!
+Oct 13 07:25:14 lc-rhel-8 gpasswd[3068]: user operator added by root to group video
+Oct 13 07:25:14 lc-rhel-8 google_guest_agent[1151]: Created user operator
+Oct 13 07:25:14 lc-rhel-8 gpasswd[3111]: user operator added by root to group google-sudoers
+Oct 13 07:25:14 lc-rhel-8 google_guest_agent[1151]: Creating metric registry for "events_manager" with flush interval: 1m0s, max records: 10
+Oct 13 07:25:14 lc-rhel-8 google_guest_agent[1151]: Cloud logging initialized (core_plugin)
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: *** Including module: bash ***
+Oct 13 07:25:14 lc-rhel-8 dracut[1484]: *** Including module: systemd ***
+Oct 13 07:25:15 lc-rhel-8 dracut[1484]: *** Including module: fips ***
+Oct 13 07:25:15 lc-rhel-8 google_guest_agent[1151]: Interface(lo) - State: {Index:1 MTU:65536 Name:lo HardwareAddr: Flags:up|loopback|running}, Addrs: [127.0.0.1/8 ::1/128]
+Oct 13 07:25:15 lc-rhel-8 google_guest_agent[1151]: Interface(eth0) - State: {Index:2 MTU:1460 Name:eth0 HardwareAddr:42:01:0a:80:00:02 Flags:up|broadcast|multicast|running}, Addrs: [10.128.0.2/32 fe80::c0ce:1483:775b:6872/64]
+Oct 13 07:25:15 lc-rhel-8 google_guest_agent[1151]: Local Routes: local 10.128.0.2 dev eth0 proto kernel scope host src 10.128.0.2 
+                                                    broadcast 127.0.0.0 dev lo proto kernel scope link src 127.0.0.1 
+                                                    local 127.0.0.0/8 dev lo proto kernel scope host src 127.0.0.1 
+                                                    local 127.0.0.1 dev lo proto kernel scope host src 127.0.0.1 
+                                                    broadcast 127.255.255.255 dev lo proto kernel scope link src 127.0.0.1
+Oct 13 07:25:15 lc-rhel-8 chronyd[732]: Selected source 169.254.169.254 (metadata.google.internal)
+Oct 13 07:25:15 lc-rhel-8 chronyd[732]: System clock TAI offset set to 37 seconds
+Oct 13 07:25:15 lc-rhel-8 dracut[1484]: *** Including module: systemd-initrd ***
+Oct 13 07:25:15 lc-rhel-8 dracut[1484]: *** Including module: watchdog-modules ***
+Oct 13 07:25:15 lc-rhel-8 dracut[1484]: *** Including module: nss-softokn ***
+Oct 13 07:25:15 lc-rhel-8 dracut[1484]: *** Including module: rngd ***
+Oct 13 07:25:15 lc-rhel-8 dracut[1484]: *** Including module: i18n ***
+Oct 13 07:25:15 lc-rhel-8 dracut[1484]: *** Including module: gcp-udev-rules ***
+Oct 13 07:25:15 lc-rhel-8 dracut[1484]: *** Including module: expand_root ***
+Oct 13 07:25:15 lc-rhel-8 dracut[1484]: *** Including module: prefixdevname ***
+Oct 13 07:25:15 lc-rhel-8 dracut[1484]: *** Including module: kernel-modules ***
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]: *** Including module: kernel-modules-extra ***
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]:   kernel-modules-extra: configuration source "/run/depmod.d/" does not exist
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]:   kernel-modules-extra: configuration source "/lib/depmod.d/" does not exist
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]:   kernel-modules-extra: parsing configuration file "/etc/depmod.d//dist.conf"
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]:   kernel-modules-extra: /etc/depmod.d//dist.conf: added "updates extra built-in weak-updates" to the list of search directories
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]: *** Including module: qemu ***
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]: *** Including module: fstab-sys ***
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]: *** Including module: rootfs-block ***
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]: *** Including module: terminfo ***
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]: *** Including module: udev-rules ***
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]: Skipping udev rule: 91-permissions.rules
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]: Skipping udev rule: 80-drivers-modprobe.rules
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]: *** Including module: biosdevname ***
+Oct 13 07:25:16 lc-rhel-8 dracut[1484]: *** Including module: dracut-systemd ***
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Including module: usrmount ***
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Including module: base ***
+Oct 13 07:25:17 lc-rhel-8 google_guest_agent_manager[1086]: Cloud Logging Client Error: rpc error: code = PermissionDenied desc = Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist).
+                                                            error details: name = ErrorInfo reason = IAM_PERMISSION_DENIED domain = iam.googleapis.com metadata = map[permission:logging.logEntries.create resource:projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager]
+                                                            error details: name = Unknown  desc = log_entry_errors:{key:0  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:1  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/diagnostic-log' (or it may not exist)."}}  log_entry_errors:{key:2  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:3  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:4  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:5  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:6  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:7  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:8  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:9  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:10  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:11  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:12  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:13  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:14  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:15  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:16  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:17  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:18  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:19  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:20  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:21  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:22  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:23  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:24  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:25  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}  log_entry_errors:{key:26  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgentManager' (or it may not exist)."}}
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Including module: fs-lib ***
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Including module: kdumpbase ***
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Including module: memstrack ***
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Including module: shutdown ***
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Including module: squash ***
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Including modules done ***
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Installing kernel module dependencies ***
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Installing kernel module dependencies done ***
+Oct 13 07:25:17 lc-rhel-8 dracut[1484]: *** Resolving executable dependencies ***
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: *** Resolving executable dependencies done***
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: *** Hardlinking files ***
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: *** Hardlinking files done ***
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: Could not find 'strip'. Not stripping the initramfs.
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: *** Generating early-microcode cpio image ***
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: *** Store current command line parameters ***
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: Stored kernel commandline:
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: rd.driver.pre=nvme
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: rd.driver.pre=virtio_scsi
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: *** Install squash loader ***
+Oct 13 07:25:19 lc-rhel-8 dracut[1484]: *** Squashing the files inside the initramfs ***
+Oct 13 07:25:19 lc-rhel-8 google_guest_agent[1151]: Cloud Logging Client Error: rpc error: code = PermissionDenied desc = Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist).
+                                                    error details: name = ErrorInfo reason = IAM_PERMISSION_DENIED domain = iam.googleapis.com metadata = map[permission:logging.logEntries.create resource:projects/logcrux-test2-cfaf25/logs/GCEGuestAgent]
+                                                    error details: name = Unknown  desc = log_entry_errors:{key:0  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:1  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/diagnostic-log' (or it may not exist)."}}  log_entry_errors:{key:2  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:3  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:4  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:5  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:6  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:7  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:8  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:9  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:10  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:11  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:12  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:13  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:14  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:15  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:16  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:17  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:18  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:19  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:20  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:21  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:22  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:23  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:24  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:25  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:26  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:27  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:28  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:29  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:30  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:31  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:32  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:33  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:34  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:35  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:36  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:37  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:38  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}  log_entry_errors:{key:39  value:{code:7  message:"Permission 'logging.logEntries.create' denied on resource '//logging.googleapis.com/projects/logcrux-test2-cfaf25/logs/GCEGuestAgent' (or it may not exist)."}}
+Oct 13 07:25:23 lc-rhel-8 systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Oct 13 07:25:30 lc-rhel-8 sshd[5156]: Accepted publickey for operator from 203.0.113.10 port 53306 ssh2: RSA SHA256:REDACTED
+Oct 13 07:25:30 lc-rhel-8 systemd[1]: Created slice User Slice of UID 1000.
+Oct 13 07:25:30 lc-rhel-8 systemd[1]: Starting User runtime directory /run/user/1000...
+Oct 13 07:25:30 lc-rhel-8 systemd-logind[714]: New session 1 of user operator.
+Oct 13 07:25:30 lc-rhel-8 systemd[1]: Started User runtime directory /run/user/1000.
+Oct 13 07:25:30 lc-rhel-8 systemd[1]: Starting User Manager for UID 1000...
+Oct 13 07:25:30 lc-rhel-8 systemd[5161]: pam_unix(systemd-user:session): session opened for user operator by (uid=0)
+Oct 13 07:25:31 lc-rhel-8 systemd[5161]: Reached target Paths.
+Oct 13 07:25:31 lc-rhel-8 systemd[5161]: Starting D-Bus User Message Bus Socket.
+Oct 13 07:25:31 lc-rhel-8 systemd[5161]: Started Mark boot as successful after the user session has run 2 minutes.
+Oct 13 07:25:31 lc-rhel-8 systemd[5161]: Reached target Timers.
+Oct 13 07:25:31 lc-rhel-8 systemd[5161]: Listening on D-Bus User Message Bus Socket.
+Oct 13 07:25:31 lc-rhel-8 systemd[5161]: Reached target Sockets.
+Oct 13 07:25:31 lc-rhel-8 systemd[5161]: Reached target Basic System.
+Oct 13 07:25:31 lc-rhel-8 systemd[5161]: Reached target Default.
+Oct 13 07:25:31 lc-rhel-8 systemd[5161]: Startup finished in 292ms.
+Oct 13 07:25:31 lc-rhel-8 systemd[1]: Started User Manager for UID 1000.
+Oct 13 07:25:31 lc-rhel-8 systemd[1]: Started Session 1 of user operator.
+Oct 13 07:25:31 lc-rhel-8 sshd[5156]: pam_unix(sshd:session): session opened for user operator by (uid=0)
+Oct 13 07:25:33 lc-rhel-8 dracut[1484]: *** Squashing the files inside the initramfs done ***
+Oct 13 07:25:33 lc-rhel-8 dracut[1484]: *** Creating image file '/boot/initramfs-4.18.0-553.159.1.el8_10.x86_64kdump.img' ***
+Oct 13 07:25:33 lc-rhel-8 dracut[1484]: *** Creating initramfs image file '/boot/initramfs-4.18.0-553.159.1.el8_10.x86_64kdump.img' done ***
+Oct 13 07:25:34 lc-rhel-8 kdumpctl[1065]: kdump: kexec: loaded kdump kernel
+Oct 13 07:25:34 lc-rhel-8 kdumpctl[1065]: kdump: Starting kdump: [OK]
+Oct 13 07:25:34 lc-rhel-8 systemd[1]: Started Crash recovery kernel arming.
+Oct 13 07:25:34 lc-rhel-8 systemd[1]: Startup finished in 1.566s (kernel) + 4.810s (initrd) + 31.180s (userspace) = 37.558s.
+Oct 13 07:25:41 lc-rhel-8 systemd[1]: systemd-hostnamed.service: Succeeded.
+Oct 13 07:28:16 lc-rhel-8 systemd[5161]: Starting Mark boot as successful...
+Oct 13 07:28:16 lc-rhel-8 systemd[5161]: Started Mark boot as successful.
+Oct 13 07:35:16 lc-rhel-8 systemd[1]: Starting GCE Workload Certificate refresh...
+Oct 13 07:35:16 lc-rhel-8 gce_workload_cert_refresh[5456]: 2026/10/13 07:35:16: Done
+Oct 13 07:35:16 lc-rhel-8 systemd[1]: gce-workload-cert-refresh.service: Succeeded.
+Oct 13 07:35:16 lc-rhel-8 systemd[1]: Started GCE Workload Certificate refresh.
+Oct 13 07:37:36 lc-rhel-8 sshd[5170]: Received disconnect from 203.0.113.10 port 53306:11: disconnected by user
+Oct 13 07:37:36 lc-rhel-8 sshd[5170]: Disconnected from user operator 203.0.113.10 port 53306
+Oct 13 07:37:37 lc-rhel-8 sshd[5156]: pam_unix(sshd:session): session closed for user operator
+Oct 13 07:37:37 lc-rhel-8 systemd[1]: session-1.scope: Succeeded.
+Oct 13 07:37:37 lc-rhel-8 systemd-logind[714]: Session 1 logged out. Waiting for processes to exit.
+Oct 13 07:37:37 lc-rhel-8 systemd-logind[714]: Removed session 1.
+Oct 13 07:37:41 lc-rhel-8 sshd[5499]: Accepted publickey for operator from 203.0.113.10 port 53421 ssh2: RSA SHA256:REDACTED
+Oct 13 07:37:41 lc-rhel-8 systemd-logind[714]: New session 3 of user operator.
+Oct 13 07:37:41 lc-rhel-8 systemd[1]: Started Session 3 of user operator.
+Oct 13 07:37:41 lc-rhel-8 sshd[5499]: pam_unix(sshd:session): session opened for user operator by (uid=0)
+Oct 13 07:37:42 lc-rhel-8 sudo[5523]: operator : PWD=/home/operator ; USER=root ; COMMAND=/bin/rm -rf /lc/out /lc/out-rhel-8.tgz
+Oct 13 07:37:42 lc-rhel-8 sudo[5523]: pam_unix(sudo:session): session opened for user root by (uid=1000)
+Oct 13 07:37:42 lc-rhel-8 sudo[5523]: pam_unix(sudo:session): session closed for user root
+Oct 13 07:37:42 lc-rhel-8 sudo[5526]: operator : PWD=/home/operator ; USER=root ; ENV=PHASE2=1 ; COMMAND=/bin/nohup bash /tmp/vm-run.sh rhel-8 /tmp/logcrux-0.9.1rc2-py3-none-any.whl
+Oct 13 07:37:42 lc-rhel-8 sudo[5526]: pam_unix(sudo:session): session opened for user root by (uid=1000)
+Oct 13 07:37:42 lc-rhel-8 sshd[5502]: Received disconnect from 203.0.113.10 port 53421:11: disconnected by user
+Oct 13 07:37:42 lc-rhel-8 sshd[5502]: Disconnected from user operator 203.0.113.10 port 53421
+Oct 13 07:37:42 lc-rhel-8 sshd[5499]: pam_unix(sshd:session): session closed for user operator
+Oct 13 07:37:42 lc-rhel-8 systemd-logind[714]: Session 3 logged out. Waiting for processes to exit.
+Oct 13 07:37:51 lc-rhel-8 sshd[5551]: Accepted publickey for operator from 203.0.113.10 port 53424 ssh2: RSA SHA256:REDACTED
+Oct 13 07:37:51 lc-rhel-8 systemd[1]: Started Session 4 of user operator.
+Oct 13 07:37:51 lc-rhel-8 systemd-logind[714]: New session 4 of user operator.
+Oct 13 07:37:51 lc-rhel-8 sshd[5551]: pam_unix(sshd:session): session opened for user operator by (uid=0)
+Oct 13 07:37:52 lc-rhel-8 sshd[5554]: Received disconnect from 203.0.113.10 port 53424:11: disconnected by user
+Oct 13 07:37:52 lc-rhel-8 sshd[5554]: Disconnected from user operator 203.0.113.10 port 53424
+Oct 13 07:37:52 lc-rhel-8 sshd[5551]: pam_unix(sshd:session): session closed for user operator
+Oct 13 07:37:52 lc-rhel-8 systemd[1]: session-4.scope: Succeeded.
+Oct 13 07:37:52 lc-rhel-8 systemd-logind[714]: Session 4 logged out. Waiting for processes to exit.
+Oct 13 07:37:52 lc-rhel-8 systemd-logind[714]: Removed session 4.
+Oct 13 07:38:07 lc-rhel-8 sshd[5586]: Accepted publickey for operator from 203.0.113.10 port 53444 ssh2: RSA SHA256:REDACTED
+Oct 13 07:38:07 lc-rhel-8 systemd[1]: Started Session 5 of user operator.
+Oct 13 07:38:07 lc-rhel-8 sshd[5586]: pam_unix(sshd:session): session opened for user operator by (uid=0)
+Oct 13 07:38:07 lc-rhel-8 systemd-logind[714]: New session 5 of user operator.
+Oct 13 07:38:09 lc-rhel-8 sshd[5589]: Received disconnect from 203.0.113.10 port 53444:11: disconnected by user
+Oct 13 07:38:09 lc-rhel-8 sshd[5589]: Disconnected from user operator 203.0.113.10 port 53444
+Oct 13 07:38:09 lc-rhel-8 sshd[5586]: pam_unix(sshd:session): session closed for user operator
+Oct 13 07:38:09 lc-rhel-8 systemd[1]: session-5.scope: Succeeded.
+Oct 13 07:38:09 lc-rhel-8 systemd-logind[714]: Session 5 logged out. Waiting for processes to exit.
+Oct 13 07:38:09 lc-rhel-8 systemd-logind[714]: Removed session 5.
+Oct 13 07:39:31 lc-rhel-8 sshd[5668]: Accepted publickey for operator from 203.0.113.10 port 53487 ssh2: RSA SHA256:REDACTED
+Oct 13 07:39:31 lc-rhel-8 systemd[1]: Started Session 6 of user operator.
+Oct 13 07:39:31 lc-rhel-8 systemd-logind[714]: New session 6 of user operator.
+Oct 13 07:39:31 lc-rhel-8 sshd[5668]: pam_unix(sshd:session): session opened for user operator by (uid=0)
+Oct 13 07:39:32 lc-rhel-8 sshd[5671]: Received disconnect from 203.0.113.10 port 53487:11: disconnected by user
+Oct 13 07:39:32 lc-rhel-8 sshd[5671]: Disconnected from user operator 203.0.113.10 port 53487
+Oct 13 07:39:32 lc-rhel-8 sshd[5668]: pam_unix(sshd:session): session closed for user operator
+Oct 13 07:39:32 lc-rhel-8 systemd[1]: session-6.scope: Succeeded.
+Oct 13 07:39:32 lc-rhel-8 systemd-logind[714]: Session 6 logged out. Waiting for processes to exit.
+Oct 13 07:39:32 lc-rhel-8 systemd-logind[714]: Removed session 6.
+Oct 13 07:40:16 lc-rhel-8 systemd[1]: Starting Cleanup of Temporary Directories...
+Oct 13 07:40:16 lc-rhel-8 systemd[1]: systemd-tmpfiles-clean.service: Succeeded.
+Oct 13 07:40:16 lc-rhel-8 systemd[1]: Started Cleanup of Temporary Directories.
+Oct 13 07:44:01 lc-rhel-8 groupadd[5941]: group added to /etc/group: name=nginx, GID=991
+Oct 13 07:44:01 lc-rhel-8 groupadd[5941]: group added to /etc/gshadow: name=nginx
+Oct 13 07:44:01 lc-rhel-8 groupadd[5941]: new group: name=nginx, GID=991
+Oct 13 07:44:01 lc-rhel-8 useradd[5948]: new user: name=nginx, UID=994, GID=991, home=/var/lib/nginx, shell=/sbin/nologin
+Oct 13 07:44:02 lc-rhel-8 systemd[1]: nginx.service: Unit cannot be reloaded because it is inactive.
+Oct 13 07:44:02 lc-rhel-8 groupadd[5969]: group added to /etc/group: name=postgres, GID=26
+Oct 13 07:44:02 lc-rhel-8 groupadd[5969]: group added to /etc/gshadow: name=postgres
+Oct 13 07:44:02 lc-rhel-8 groupadd[5969]: new group: name=postgres, GID=26
+Oct 13 07:44:02 lc-rhel-8 useradd[5975]: new user: name=postgres, UID=26, GID=26, home=/var/lib/pgsql, shell=/bin/bash
+Oct 13 07:44:03 lc-rhel-8 systemd[1]: Started /usr/bin/systemctl start man-db-cache-update.
+Oct 13 07:44:03 lc-rhel-8 systemd[1]: cgroup compatibility translation between legacy and unified hierarchy settings activated. See cgroup-compat debug messages for details.
+Oct 13 07:44:03 lc-rhel-8 systemd[1]: Starting man-db-cache-update.service...
+Oct 13 07:44:03 lc-rhel-8 systemd[1]: Reloading.
+Oct 13 07:44:21 lc-rhel-8 systemd[1]: man-db-cache-update.service: Succeeded.
+Oct 13 07:44:21 lc-rhel-8 systemd[1]: Started man-db-cache-update.service.
+Oct 13 07:44:21 lc-rhel-8 systemd[1]: run-r133b2c5b88ae416daee10006a51d9cff.service: Succeeded.
+Oct 13 07:44:28 lc-rhel-8 systemd[1]: Started /usr/bin/systemctl start man-db-cache-update.
+Oct 13 07:44:28 lc-rhel-8 systemd[1]: Starting man-db-cache-update.service...
+Oct 13 07:44:29 lc-rhel-8 systemd[1]: man-db-cache-update.service: Succeeded.
+Oct 13 07:44:29 lc-rhel-8 systemd[1]: Started man-db-cache-update.service.
+Oct 13 07:44:29 lc-rhel-8 systemd[1]: run-r090e0e0d34b94a848cc510c9c0649810.service: Succeeded.

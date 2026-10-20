@@ -1,0 +1,6 @@
+Oct 19 23:45:44 lc-debian-12 python3[8250]: INFO ingest: opening spool files
+Oct 19 23:45:44 lc-debian-12 python3[8250]: Traceback (most recent call last):
+Oct 19 23:45:44 lc-debian-12 python3[8250]:   File "<string>", line 7, in <module>
+Oct 19 23:45:44 lc-debian-12 python3[8250]: OSError: [Errno 24] Too many open files: '/etc/hostname'
+Oct 19 23:45:44 lc-debian-12 systemd[1]: lc-fdleak.service: Main process exited, code=exited, status=1/FAILURE
+Oct 19 23:45:44 lc-debian-12 systemd[1]: lc-fdleak.service: Failed with result 'exit-code'.

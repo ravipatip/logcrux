@@ -14,10 +14,26 @@ ERROR: Could not find a version that satisfies the requirement...
 1. Ensure Python 3.11+: `python --version`. On distros whose system Python is
    older (Amazon Linux 2023, RHEL 9, Ubuntu 22.04 all default to 3.9-3.10),
    either install a newer interpreter (`sudo dnf install python3.11` /
-   `sudo apt install python3.11`) or use `uv tool install logcrux` /
-   `uvx logcrux`, which fetches a matching Python automatically.
+   `sudo apt install python3.11`) or use `uv tool install --python 3.12 logcrux` /
+   `uvx --python 3.12 logcrux`, which fetches a matching Python automatically.
 2. Upgrade pip: `pip install --upgrade pip`
 3. Try with `--no-cache-dir`: `pip install --no-cache-dir -e ".[dev]"`
+
+### Issue: `uv tool install` says "You require CPython 3.15 (`cp315`)" / "AI classification unavailable"
+
+```
+hint: You require CPython 3.15 (`cp315`), but we only found wheels for `onnxruntime` ...
+```
+
+**Cause:** with no compatible system Python, uv downloads the newest release,
+and onnxruntime (which runs logcrux's small classification models) publishes
+no wheel for it yet. logcrux 0.10+ installs anyway and prints
+`AI classification unavailable` on stderr: detection works as usual, but
+incidents are named less precisely.
+
+**Solution:** pin an interpreter onnxruntime supports:
+`uv tool install --python 3.12 logcrux` (or `--reinstall` to switch an
+existing install).
 
 ### Issue: `externally-managed-environment` (pip)
 
@@ -28,7 +44,7 @@ error: externally-managed-environment
 **Cause:** PEP 668, on Ubuntu, Debian, and Fedora — the system Python refuses
 a global `pip install`.
 
-**Solution:** Install into a venv instead, or use `uv tool install logcrux` /
+**Solution:** Install into a venv instead, or use `uv tool install --python 3.12 logcrux` /
 `pipx install logcrux`, which avoid this automatically.
 
 ### Issue: `command not found: uv` (right after installing it)
@@ -101,7 +117,7 @@ ssh oldbox 'cat /var/log/secure' | logcrux
 **Cause:** Rocky Linux, AlmaLinux, and Amazon Linux 2023 default to Python
 3.9; openSUSE Leap defaults to 3.6. logcrux needs 3.11+.
 
-**Solution:** `uv tool install logcrux` sidesteps this entirely, since it
+**Solution:** `uv tool install --python 3.12 logcrux` sidesteps this entirely, since it
 supplies its own Python. For the `pip` path, install 3.11 explicitly first:
 ```bash
 # Rocky / AlmaLinux / Amazon Linux 2023

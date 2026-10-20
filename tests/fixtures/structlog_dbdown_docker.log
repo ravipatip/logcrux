@@ -1,0 +1,57 @@
+{"service": "billing", "event": "billing worker started", "level": "info", "timestamp": "2026-10-19T23:40:17.054297Z"}
+{"service": "billing", "invoice": 5000, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054332Z"}
+{"service": "billing", "invoice": 5001, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054346Z"}
+{"service": "billing", "invoice": 5002, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054355Z"}
+{"service": "billing", "invoice": 5003, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054364Z"}
+{"service": "billing", "invoice": 5004, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054375Z"}
+{"service": "billing", "invoice": 5005, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054383Z"}
+{"service": "billing", "invoice": 5006, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054391Z"}
+{"service": "billing", "invoice": 5007, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054399Z"}
+{"service": "billing", "invoice": 5008, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054405Z"}
+{"service": "billing", "invoice": 5009, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054414Z"}
+{"service": "billing", "invoice": 5010, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054421Z"}
+{"service": "billing", "invoice": 5011, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054431Z"}
+{"service": "billing", "invoice": 5012, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054437Z"}
+{"service": "billing", "invoice": 5013, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054443Z"}
+{"service": "billing", "invoice": 5014, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054449Z"}
+{"service": "billing", "invoice": 5015, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054455Z"}
+{"service": "billing", "invoice": 5016, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054464Z"}
+{"service": "billing", "invoice": 5017, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054469Z"}
+{"service": "billing", "invoice": 5018, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054480Z"}
+{"service": "billing", "invoice": 5019, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054486Z"}
+{"service": "billing", "invoice": 5020, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054491Z"}
+{"service": "billing", "invoice": 5021, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054496Z"}
+{"service": "billing", "invoice": 5022, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054500Z"}
+{"service": "billing", "invoice": 5023, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054505Z"}
+{"service": "billing", "invoice": 5024, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054515Z"}
+{"service": "billing", "invoice": 5025, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054520Z"}
+{"service": "billing", "invoice": 5026, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054525Z"}
+{"service": "billing", "invoice": 5027, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054530Z"}
+{"service": "billing", "invoice": 5028, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054548Z"}
+{"service": "billing", "invoice": 5029, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054557Z"}
+{"service": "billing", "invoice": 5030, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054563Z"}
+{"service": "billing", "invoice": 5031, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054569Z"}
+{"service": "billing", "invoice": 5032, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054574Z"}
+{"service": "billing", "invoice": 5033, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054582Z"}
+{"service": "billing", "invoice": 5034, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054587Z"}
+{"service": "billing", "invoice": 5035, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054596Z"}
+{"service": "billing", "invoice": 5036, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054602Z"}
+{"service": "billing", "invoice": 5037, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054681Z"}
+{"service": "billing", "invoice": 5038, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054715Z"}
+{"service": "billing", "invoice": 5039, "event": "invoice sent", "level": "info", "timestamp": "2026-10-19T23:40:17.054724Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 1, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.055365Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 2, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.115551Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 3, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.175737Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 4, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.236519Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 5, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.297341Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 6, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.358178Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 7, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.414263Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 8, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.468948Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 9, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.526540Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 10, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.579632Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 11, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.640053Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 12, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.698868Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 13, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.756492Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 14, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.807653Z"}
+{"service": "billing", "error": "[Errno 111] Connection refused", "attempt": 15, "event": "database connection failed", "level": "error", "timestamp": "2026-10-19T23:40:17.868032Z"}
+{"service": "billing", "event": "giving up: database unreachable", "level": "critical", "timestamp": "2026-10-19T23:40:17.921225Z"}

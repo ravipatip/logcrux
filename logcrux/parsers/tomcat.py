@@ -34,6 +34,12 @@ _LEVEL_MAP: dict[str, Severity] = {
 
 
 class TomcatParser(LogParser):
+    # Java stack traces and "Caused by:" chains under a SEVERE record. Without
+    # folding them a real startup failure (43 lines, 3 records) covered 7% and
+    # the file fell to generic (lab/apps3, tomcat 10.1, 2026-10-20).
+    CONTINUATION = re.compile(
+        r"^\s+\S|^Caused by: |^\s*\.\.\. \d+ more|^[a-z][\w.$]+(?:Exception|Error)\b"
+    )
     FORMAT_NAME = "tomcat"
 
     @classmethod

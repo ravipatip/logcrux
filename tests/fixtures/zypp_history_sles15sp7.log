@@ -1,0 +1,300 @@
+# warning: /var/cache/kiwi/packages/04e3ecacf36047e9af7978216ddb3107/libefivar1.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|libefivar1|37-6.12.1|x86_64||04e3ecacf36047e9af7978216ddb3107|a7c6e7d77c97f18174a7d9fbcd0e029ef9a03fcd2aaf9b64eeb8e5aa9b666004|
+# 2026-09-17 17:04:46 cpio.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/cpio.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|cpio|2.13-150400.3.10.1|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|c35bb83205440e80dffcb3be4fe3c6ec250df1b33e90629cb49478ddedb7fb66|
+# 2026-09-17 17:04:46 dmidecode.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/dmidecode.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|dmidecode|3.7-150400.16.14.1|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|9333e0c203042d72285ddd4407301354ad4b2d84c8a3ecb973760b9168d11995|
+# 2026-09-17 17:04:46 fdupes.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/fdupes.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|fdupes|2.3.0-150400.3.3.1|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|dceac73490031613f9cf3dbd9740060a1b3ad14c23f2767cdc7b5a383fe0339e|
+# 2026-09-17 17:04:46 groff.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/groff.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|groff|1.22.4-150400.5.2.1|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|d3b7e3102f24be3b2c41420cb7b1bebc640b51f68efa1012de36b8474547d344|
+# 2026-09-17 17:04:46 libasm1.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/libasm1.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|libasm1|0.185-150400.5.8.3|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|9ed3c6045b0914acfe3236c25099b10e2ac2338e08add780dd47e5f5b8626593|
+# 2026-09-17 17:04:46 libaudit1.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/libaudit1.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|libaudit1|3.0.6-150400.4.16.1|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|ca3d889253782b9a19217151fb9e6796d11fc50809951ef53407c61255d6128b|
+# 2026-09-17 17:04:46 libeconf0.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/libeconf0.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|libeconf0|0.5.2-150400.3.6.1|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|f740e03a398e1a5684f32e385c61748d73e3f5e0c80627f9b24f3decf10d06cf|
+# 2026-09-17 17:04:46 libfastjson4.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/libfastjson4.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|libfastjson4|0.99.9-150400.3.3.1|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|52b7874c3f9a5bfbd4f331460fcb8f21a1384837335ec6cf1a2890bfd3c2c55e|
+# 2026-09-17 17:04:46 libxslt1.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/libxslt1.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|libxslt1|1.1.34-150400.3.16.1|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|f10556135a4f071143aa8fded40e48e76cff1e7ce12a39504c6b50571c191730|
+# 2026-09-17 17:04:46 mozilla-nspr.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/mozilla-nspr.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|mozilla-nspr|4.39-150400.12.3.1|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|d5d69477c8cc83454238b8ec94bdf4369cf31506955be151d0bc1be31c635337|
+# 2026-09-17 17:04:46 strace.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/strace.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|strace|5.14-150400.3.3.2|x86_64|root@h01-ch3d|38c5e7c864d842ac8f11d241cdfba2bf|2c4f8ab7de07f0ac4011f48757db8b9787fa8fa17c8f85cac6f7b98a21207cd9|
+# 2026-09-17 17:04:46 efibootmgr.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/efibootmgr.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|efibootmgr|17-150400.3.2.2|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|51f73df6e9a9a658a7b884b206914891ab87a2c919cb13998af33e544db630a0|
+# 2026-09-17 17:04:46 elfutils.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/elfutils.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|elfutils|0.185-150400.5.8.3|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|3adfb77ba652370c6ddc367d825ec378f74a87e3e06a6061ebbf4dd6f597ecda|
+# 2026-09-17 17:04:46 libauparse0.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/libauparse0.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|libauparse0|3.0.6-150400.4.16.1|x86_64||38c5e7c864d842ac8f11d241cdfba2bf|6c0561449bbb0acb3f7485b0ebac38b857dd7a12614633608e18574e20e26465|
+# 2026-09-17 17:04:46 mozilla-nss-certs.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/38c5e7c864d842ac8f11d241cdfba2bf/mozilla-nss-certs.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:46|install|mozilla-nss-certs|3.125-150400.3.74.1|x86_64|root@h01-ch3d|38c5e7c864d842ac8f11d241cdfba2bf|81008c7b32952ff51a34be774549b6b19da071d03819dd694879f73631972b9d|
+# 2026-09-17 17:04:46 branding-SLE.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/branding-SLE.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:46|install|branding-SLE|15-150700.48.2|noarch||4c1aa72528c549a39f4a7e68ece97987|48d7f2e273832dbeb31bf79d6359d02a643852020cce839fbf90f6f911b13b06|
+# 2026-09-17 17:04:46 findutils.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/findutils.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:46|install|findutils|4.10.0-150700.2.6|x86_64||4c1aa72528c549a39f4a7e68ece97987|a30c7bcc65165c24b0792e7c2dfd2fa380a459cc08d606ab86d95712d29eb679|
+# 2026-09-17 17:04:46 libbpf1.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/libbpf1.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:46|install|libbpf1|1.5.0-150700.1.3|x86_64||4c1aa72528c549a39f4a7e68ece97987|1ddc03e8ed2967250de9d31705e6fec0547ea29ea864dca54dc77d30696fa956|
+# 2026-09-17 17:04:46 libnettle8.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/libnettle8.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:46|install|libnettle8|3.10.1-150700.2.16|x86_64||4c1aa72528c549a39f4a7e68ece97987|82da17919d9967a439e2863a5407c0f1890cb7409a1e0ab72041ad16cc137859|
+# 2026-09-17 17:04:46 libtalloc2.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/libtalloc2.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:46|install|libtalloc2|2.4.2-150700.1.6|x86_64||4c1aa72528c549a39f4a7e68ece97987|678cf639e93a7688e052016165d0688cf2b125565eafa1265029b520ebd73b7e|
+# 2026-09-17 17:04:46 libtdb1.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/libtdb1.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:46|install|libtdb1|1.4.12-150700.1.4|x86_64||4c1aa72528c549a39f4a7e68ece97987|0c8dba8f6daf8e481ec4c3dee9aef68ff1906c05780ce051e23f8ec33e1a11d9|
+# 2026-09-17 17:04:46 libx86emu3.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/libx86emu3.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:46|install|libx86emu3|3.7-150700.1.1|x86_64||4c1aa72528c549a39f4a7e68ece97987|223fefef84bc157a5cef0c20f00438c205a2139aec3589d701b4fb235d28a53a|
+# 2026-09-17 17:04:47 man-pages.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/man-pages.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:47|install|man-pages|6.9.1-150700.1.1|noarch|root@h01-ch3d|4c1aa72528c549a39f4a7e68ece97987|69e0171c0627a0a2d1a3ad245c7b6306fea50048eaa857417214aa00a8781f85|
+# 2026-09-17 17:04:47 pigz.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/pigz.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:47|install|pigz|2.8-150700.1.4|x86_64||4c1aa72528c549a39f4a7e68ece97987|0aa9ea3cd19fa54894b5cb1f29527672f1b94424c418f6a7585530d57beda7ab|
+# 2026-09-17 17:04:47 yast2-nfs-common.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/yast2-nfs-common.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:47|install|yast2-nfs-common|4.7.0-150700.1.1|noarch|root@h01-ch3d|4c1aa72528c549a39f4a7e68ece97987|8381dabad2180dc9da56bb5bc5ee972633e6bcceb0ba9942c4b6ad25102dd108|
+# 2026-09-17 17:04:47 yast2-schema-default.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/yast2-schema-default.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:47|install|yast2-schema-default|4.7.1-150700.1.1|x86_64|root@h01-ch3d|4c1aa72528c549a39f4a7e68ece97987|86a33f31c6d18b3e8d890b6fb06d10489437048e96bb6d3c76814beea0563d12|
+# 2026-09-17 17:04:47 zstd.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/zstd.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:47|install|zstd|1.5.7-150700.1.2|x86_64||4c1aa72528c549a39f4a7e68ece97987|4359ac8078346246e86e67a2aef8591d53a3a9dfe476e7bb248ee5ab56d72f10|
+# 2026-09-17 17:04:47 libhogweed6.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/libhogweed6.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:47|install|libhogweed6|3.10.1-150700.2.16|x86_64||4c1aa72528c549a39f4a7e68ece97987|a65549a00695c6b390408793feaa8bc1f50671da089c491a80898ba43ccc6a39|
+# 2026-09-17 17:04:47 libtevent0.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/4c1aa72528c549a39f4a7e68ece97987/libtevent0.rpm: Header V3 RSA/SHA256 Signature, key ID 3fa1d6ce: NOKEY
+# 
+2026-09-17 17:04:47|install|libtevent0|0.16.1-150700.1.6|x86_64||4c1aa72528c549a39f4a7e68ece97987|4059a309b84ed0fc60c9a0fddf30d8df7cbceba79019f8f3ab0d062d1fa6b793|
+# 2026-09-17 17:04:47 attr.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/attr.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|attr|2.6.0-150000.4.3.1|x86_64|root@h01-ch3d|5e29b31ed603408b997d9a273ffe76ee|62656ab7d8ff47c1f0c4e5a298d9a040901c26ab593d726734cffde751768617|
+# 2026-09-17 17:04:47 deltarpm.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/deltarpm.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|deltarpm|3.6.5-150000.5.6.3|x86_64|root@h01-ch3d|5e29b31ed603408b997d9a273ffe76ee|0d91148efe725d13933ec4173fba77cad6aec9699f29ee6503fc7c4e89b95805|
+# 2026-09-17 17:04:47 dosfstools.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/dosfstools.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|dosfstools|4.1-3.6.1|x86_64|root@h01-ch3d|5e29b31ed603408b997d9a273ffe76ee|4cb9f4da61c0060d83b7cba497d8b1c29fe4a1e048828255877fa4ae51d690cc|
+# 2026-09-17 17:04:47 file.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/file.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|file|5.32-7.14.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|274a693a9d9d7a945338046dbc7ccf08e15590045c96c003cdd4db3c8cfa7420|
+# 2026-09-17 17:04:47 keyutils.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/keyutils.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|keyutils|1.6.3-5.6.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|9ed7a5df977fe2629311b32c0586b289c146c6da662b80cf9ddbc0c492b87aa4|
+# 2026-09-17 17:04:47 libdialog14.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libdialog14.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libdialog14|1.3-3.3.7|x86_64||5e29b31ed603408b997d9a273ffe76ee|05b5b6bf6b6a30dc6d7d10430f436abde930b58858d850ff5f046df3618a30db|
+# 2026-09-17 17:04:47 libfuse2.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libfuse2.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libfuse2|2.9.7-3.3.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|f7cd423c03be76b3a641aa77fc6c20944ab980120c5fe37e3d9775c9b530e69a|
+# 2026-09-17 17:04:47 libjson-c3.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libjson-c3.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libjson-c3|0.13-3.3.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|c57ea3e167cc68bbe14eb0fdfb6e2afc806629f4ffdd4590e06a569f770690c2|
+# 2026-09-17 17:04:47 libmaxminddb0.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libmaxminddb0.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libmaxminddb0|1.4.3-150000.1.8.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|ae77a94c7bfa7c93d2eddd56c1a909eff3ecb83dde278f75941e4228f5f4d1e1|
+# 2026-09-17 17:04:47 libonig4.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libonig4.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libonig4|6.7.0-150000.3.6.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|bd0c6d331ce0c1463d27f4c79fbabaf983b23b31f4e778dfcad68b5ffcb7aca1|
+# 2026-09-17 17:04:47 libpcre1.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libpcre1.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libpcre1|8.45-150000.20.13.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|7ec244571a2a1237e11f045b60341a955c7bd3c96d98e7d1aa993edd236b8dfe|
+# 2026-09-17 17:04:47 libpipeline1.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libpipeline1.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libpipeline1|1.4.1-150000.3.2.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|b058d75fb733f31546fd4f7303fa1ba3b688e07740a015127ba45e1f2e13c2fb|
+# 2026-09-17 17:04:47 libsnappy1.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libsnappy1.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libsnappy1|1.1.8-3.3.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|302408ddea335b038dd9f19eedac9881699e6c720d2a329d597450cee1e08c1c|
+# 2026-09-17 17:04:47 libtasn1-6.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libtasn1-6.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libtasn1-6|4.13-150000.4.14.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|f147105c1ff8b1d6a13433d0d77e336565d4c5ad4243010e9a6c6af167fd0e52|
+# 2026-09-17 17:04:47 libtasn1.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libtasn1.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libtasn1|4.13-150000.4.14.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|5d6f3f9b3bed77211fdc91d1bdfeb370c586d4b029d49266e58844cfc895410c|
+# 2026-09-17 17:04:47 libyajl2.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libyajl2.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libyajl2|2.1.0-150000.4.6.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|9d868f581d56407bba87dfdabc6d4f597623039b3826c243825681610d3ae66c|
+# 2026-09-17 17:04:47 libyaml-0-2.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libyaml-0-2.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|libyaml-0-2|0.1.7-150000.3.4.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|f98cb5080f991c519322861b457aa4a31045033074924d3b840812d6900e1846|
+# 2026-09-17 17:04:47 ncurses-utils.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/ncurses-utils.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|ncurses-utils|6.1-150000.5.33.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|dc2f4bf456b6a05ac251a6f88da4e53055a264a64fd42aed1850d2aba7305c44|
+# 2026-09-17 17:04:47 netcfg.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/netcfg.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# warning: /etc/hosts created as /etc/hosts.rpmnew
+# 
+2026-09-17 17:04:47|install|netcfg|11.6-150000.3.6.1|noarch||5e29b31ed603408b997d9a273ffe76ee|cb90987f02fe5cc521bf1bd43f502fd77761d24b8f4d9e275a7d5e33d598e12a|
+# 2026-09-17 17:04:47 psmisc.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/psmisc.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|psmisc|23.0-150000.6.25.1|x86_64|root@h01-ch3d|5e29b31ed603408b997d9a273ffe76ee|7ddc64d7d38eb5278472270a1e7c1503bc9da3833579c425ab19cb404f381856|
+# 2026-09-17 17:04:47 sqlite3-tcl.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/sqlite3-tcl.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|sqlite3-tcl|3.53.2-150000.3.42.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|7a47fec31b3e1eef31a3922a489d848d42e95ca1b4261136dfbfd510eaf7c5ed|
+# 2026-09-17 17:04:47 suse-build-key.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/suse-build-key.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|suse-build-key|12.0-150000.8.64.1|noarch|root@h01-ch3d|5e29b31ed603408b997d9a273ffe76ee|bf9d432ac0af9de46debbcee73dc0413f878a4dfc312d9a6e5a26d52cc1d7a8c|
+# 2026-09-17 17:04:47 systemd-rpm-macros.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/systemd-rpm-macros.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:47|install|systemd-rpm-macros|16-150000.7.42.1|noarch||5e29b31ed603408b997d9a273ffe76ee|58c5f2776535170910f66d66306fc154124d90de953dc6905c27ed0525101653|
+# 2026-09-17 17:04:48 terminfo.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/terminfo.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:48|install|terminfo|6.1-150000.5.33.1|x86_64|root@h01-ch3d|5e29b31ed603408b997d9a273ffe76ee|f49ad3ff67d49534f2caee8f6e294c793d8f7c91733858a43073a6f354f9a8a3|
+# 2026-09-17 17:04:48 update-alternatives.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/update-alternatives.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:48|install|update-alternatives|1.19.0.4-150000.4.7.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|2fa94871cf88a03490bf47e28dbe99f67b306e7ee71eadfa3d101fff5fd5b6bd|
+# 2026-09-17 17:04:48 libjq1.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libjq1.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:48|install|libjq1|1.6-150000.3.20.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|bc6f9ab36fe4661269d31ae251b7a608ef7553e68607011bed0994b3e44ba17d|
+# 2026-09-17 17:04:48 libcares2.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/libcares2.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:48|install|libcares2|1.34.8-150000.3.29.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|8740364c950138f048cae10c070ae52b71e3a5bc4b2ee72163f7a35862cfc8a5|
+# 2026-09-17 17:04:48 dialog.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/dialog.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# 
+2026-09-17 17:04:48|install|dialog|1.3-3.3.7|x86_64||5e29b31ed603408b997d9a273ffe76ee|53ceccd1e671e8577939c89f7942475a02ad8b80c3628ac5ff4434d0ccec2817|
+# 2026-09-17 17:04:48 unzip.rpm installed ok
+# Additional rpm output:
+# warning: /var/cache/kiwi/packages/5e29b31ed603408b997d9a273ffe76ee/unzip.rpm: Header V3 RSA/SHA256 Signature, key ID 39db7c82: NOKEY
+# update-alternatives: using /usr/bin/unzip-plain to provide /usr/bin/unzip (unzip) in auto mode
+# update-alternatives: using /usr/bin/funzip-plain to provide /usr/bin/funzip (funzip) in auto mode
+# update-alternatives: using /usr/bin/unzipsfx-plain to provide /usr/bin/unzipsfx (unzipsfx) in auto mode
+# update-alternatives: using /usr/bin/zipgrep-plain to provide /usr/bin/zipgrep (zipgrep) in auto mode
+# 
+2026-09-17 17:04:48|install|unzip|6.00-150000.4.14.1|x86_64||5e29b31ed603408b997d9a273ffe76ee|1d7eb3f30fb4542384d55171ebf80f8cf6152ffb974f77f1364299740fe49450|
+# 2026-09-17 17:04:48 gawk.rpm installed ok
+# Additional rpm output:

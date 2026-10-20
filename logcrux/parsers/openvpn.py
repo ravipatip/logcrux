@@ -53,6 +53,7 @@ def _openvpn_severity(message: str) -> Severity:
 
 class OpenVPNParser(LogParser):
     FORMAT_NAME = "openvpn"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

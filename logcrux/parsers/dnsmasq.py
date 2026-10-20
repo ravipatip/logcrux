@@ -46,6 +46,7 @@ def _dnsmasq_severity(message: str) -> Severity:
 
 class DnsmasqParser(LogParser):
     FORMAT_NAME = "dnsmasq"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

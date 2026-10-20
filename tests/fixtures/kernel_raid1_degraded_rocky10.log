@@ -1,0 +1,2 @@
+Oct 13 07:35:42 lc-rocky-10 kernel: md/raid1:md127: Disk failure on loop1, disabling device.
+                                    md/raid1:md127: Operation continuing on 1 devices.

@@ -17,8 +17,11 @@ _SYSLOG_HDR = (
 _CURRENT_YEAR = __import__("datetime").datetime.now().year
 
 # HTTP mode: includes status code + request
+# The syslog header is optional: the official container image's documented
+# config is `log stdout format raw`, which writes the bare access line
+# (real haproxy 3.0 container, 2026-10-20).
 _HTTP_PATTERN = re.compile(
-    _SYSLOG_HDR
+    "(?:" + _SYSLOG_HDR + ")?"
     + r"(?P<client_ip>[\d.]+):(?P<client_port>\d+) "
     r"\[(?P<req_date>[^\]]+)\] "
     r"(?P<frontend>\S+) (?P<backend>\S+)/(?P<server>\S+) "
@@ -33,7 +36,7 @@ _HTTP_PATTERN = re.compile(
 
 # TCP mode: no status code
 _TCP_PATTERN = re.compile(
-    _SYSLOG_HDR
+    "(?:" + _SYSLOG_HDR + ")?"
     + r"(?P<client_ip>[\d.]+):(?P<client_port>\d+) "
     r"\[(?P<req_date>[^\]]+)\] "
     r"(?P<frontend>\S+) (?P<backend>\S+)/(?P<server>\S+) "
@@ -47,6 +50,24 @@ _TCP_PATTERN = re.compile(
 # available!", "Proxy http-in started."). These are the root-cause lines of an
 # outage, so dropping them as unparsed would hide exactly the events that matter.
 _ADMIN_PATTERN = re.compile(_SYSLOG_HDR + r"(?P<message>.+)")
+
+# The master/worker's own stderr in a container, and the same state changes
+# written raw to stdout:
+#   [WARNING]  (8) : Server be/app1 is DOWN, reason: Layer4 connection problem, ...
+#   [ALERT]    (8) : backend 'be' has no server available!
+#   Server be/app1 is DOWN, reason: Layer4 connection problem, ...
+_STDERR_PATTERN = re.compile(
+    r"^\[(?P<level>NOTICE|WARNING|ALERT|EMERG)\]\s+\(\d+\) : (?P<message>.+)"
+)
+_RAW_ADMIN_PATTERN = re.compile(
+    r"^(?P<message>(?:Server|Backup Server) \S+/\S+ is (?:UP|DOWN|going DOWN)\b.*"
+    r"|backend \S+ has no server available!.*|Proxy \S+ (?:started|stopped)\b.*)"
+)
+# The HTTP log's "<client>:<port> [dd/Mon/yyyy:HH:MM:SS.mmm] <fe> <be>/<srv> Tq/Tw/..."
+# shape is haproxy's own; nothing else writes backend/server plus five timers.
+_RAW_HTTP_DETECT = re.compile(
+    r"^\S+:\d+ \[\d\d/\w{3}/\d{4}:\d\d:\d\d:\d\d\.\d{3}\] \S+ \S+/\S+ -?\d+/-?\d+/"
+)
 
 # Simple detect: haproxy process field
 _DETECT = re.compile(r"\bhaproxy\[\d+\]:")
@@ -81,7 +102,8 @@ class HAProxyParser(LogParser):
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:
         if path and "haproxy" in str(path).lower():
             return True
-        return any(_DETECT.search(line) for line in sample_lines[:10])
+        return any(_DETECT.search(line) or _STDERR_PATTERN.match(line)
+                   or _RAW_HTTP_DETECT.match(line) for line in sample_lines[:10])
 
     def parse_line(self, line: str, line_number: int) -> ParsedEvent | None:
         if not line:
@@ -92,7 +114,16 @@ class HAProxyParser(LogParser):
         m = _TCP_PATTERN.match(line)
         if m:
             return self._parse_tcp(m, line, line_number)
-        m = _ADMIN_PATTERN.match(line)
+        m = _STDERR_PATTERN.match(line)
+        if m:
+            message = m["message"].strip()
+            sev = {"NOTICE": Severity.INFO, "WARNING": Severity.WARNING,
+                   "ALERT": Severity.ERROR, "EMERG": Severity.CRITICAL}[m["level"]]
+            if sev is not Severity.CRITICAL and _admin_severity(message) is Severity.ERROR:
+                sev = Severity.ERROR
+            return ParsedEvent(timestamp=None, severity=sev, source="haproxy", message=message,
+                               raw=line, line_number=line_number, extra={"kind": "admin"})
+        m = _ADMIN_PATTERN.match(line) or _RAW_ADMIN_PATTERN.match(line)
         if m:
             message = m["message"].strip()
             return ParsedEvent(
@@ -107,6 +138,15 @@ class HAProxyParser(LogParser):
         return None
 
     def _ts(self, m: re.Match[str]) -> datetime | None:
+        groups = m.groupdict()
+        if groups.get("month") is None:
+            req = groups.get("req_date")
+            if not req:
+                return None
+            try:
+                return datetime.strptime(req[:20], "%d/%b/%Y:%H:%M:%S")
+            except ValueError:
+                return None
         try:
             return dateparser.parse(
                 f"{m['month']} {m['day']} {_CURRENT_YEAR} {m['time']}"
@@ -135,6 +175,7 @@ class HAProxyParser(LogParser):
                 "response_time_ms": int(m["Tt"]),
                 "termination_state": termination,
                 "request": request,
+                **({"path": request.split()[1]} if len(request.split()) > 1 else {}),
             },
         )
 

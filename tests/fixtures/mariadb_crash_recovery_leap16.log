@@ -1,0 +1,26 @@
+2026-10-13 10:06:52 0 [Note] Starting MariaDB 11.8.8-MariaDB source revision 46a8eb42a520193686d9a16d4cea4b3e002917e4 server_uid 9hWBtZfZSbDdDre9ni+cRCnCuM8= as process 6429
+2026-10-13 10:06:52 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2026-10-13 10:06:52 0 [Note] InnoDB: Number of transaction pools: 1
+2026-10-13 10:06:52 0 [Note] InnoDB: Using ARMv8 crc32 + pmull instructions
+2026-10-13 10:06:52 0 [Note] InnoDB: Using Linux native AIO
+2026-10-13 10:06:52 0 [Note] InnoDB: innodb_buffer_pool_size_max=8388608m, innodb_buffer_pool_size=128m
+2026-10-13 10:06:52 0 [Note] InnoDB: Completed initialization of buffer pool
+2026-10-13 10:06:52 0 [Note] InnoDB: Buffered log writes (block size=512 bytes)
+2026-10-13 10:06:52 0 [Note] InnoDB: End of log at LSN=45568
+2026-10-13 10:06:52 0 [Note] InnoDB: Opened 3 undo tablespaces
+2026-10-13 10:06:52 0 [Note] InnoDB: 128 rollback segments in 3 undo tablespaces are active.
+2026-10-13 10:06:52 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2026-10-13 10:06:52 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2026-10-13 10:06:52 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2026-10-13 10:06:52 0 [Note] InnoDB: log sequence number 45568; transaction id 14
+2026-10-13 10:06:52 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2026-10-13 10:06:52 0 [Note] Plugin 'FEEDBACK' is disabled.
+2026-10-13 10:06:52 0 [Note] Plugin 'wsrep-provider' is disabled.
+2026-10-13 10:06:52 0 [Note] Recovering after a crash using tc.log
+2026-10-13 10:06:52 0 [Note] Starting table crash recovery...
+2026-10-13 10:06:52 0 [Note] Crash table recovery finished.
+2026-10-13 10:06:52 0 [Note] InnoDB: Buffer pool(s) load completed at 261013 10:06:52
+2026-10-13 10:06:56 0 [Note] Server socket created on IP: '127.0.0.1', port: '3306'.
+2026-10-13 10:06:56 0 [Note] mysqld: Event Scheduler: Loaded 0 events
+2026-10-13 10:06:56 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '11.8.8-MariaDB'  socket: '/run/mysql/mysql.sock'  port: 3306  MariaDB package

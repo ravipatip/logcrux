@@ -1,0 +1,18 @@
+/src/does-not-exist: stat: [Errno 2] No such file or directory: '/src/does-not-exist'
+------------------------------------------------------------------------------
+Repository: /repo
+Archive name: nightly-3
+Archive fingerprint: 39734445e80c050cc32393e1e7e500c60bed8759fa37187e8306a9c68d091f9a
+Time (start): Mon, 2026-10-19 23:26:35
+Time (end):   Mon, 2026-10-19 23:26:35
+Duration: 0.00 seconds
+Number of files: 0
+Utilization of max. archive size: 0%
+------------------------------------------------------------------------------
+                       Original size      Compressed size    Deduplicated size
+This archive:                  483 B                489 B                489 B
+All archives:              200.00 kB            200.09 kB            201.38 kB
+
+                       Unique chunks         Total chunks
+Chunk index:                       5                    5
+------------------------------------------------------------------------------

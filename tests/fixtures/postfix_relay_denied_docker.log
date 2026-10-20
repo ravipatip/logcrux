@@ -1,0 +1,132 @@
+★★★★★ POSTFIX STARTING UP (debian) ★★★★★
+‣ NOTE  System accounts: postfix=100:102, opendkim=101:104. Careful when switching distros.
+‣ INFO  Not setting any timezone for the container
+‣ DEBUG /tmp writable.
+‣ INFO  Using plain log format for rsyslog.
+‣ NOTE  Emails in the logs will not be anonymized. Set ANONYMIZE_EMAILS to enable this feature.
+‣ DEBUG Reowning root: /var/spool/postfix/
+‣ DEBUG Reowning root: /var/spool/postfix/pid/
+‣ DEBUG Reowning postfix:postdrop /var/spool/postfix/private/
+‣ DEBUG Reowning postfix:postdrop /var/spool/postfix/public/
+‣ INFO  Preparing files for Postfix chroot:
+cp: '/etc/localtime' and '/var/spool/postfix/etc/localtime' are the same file
+        mkdir: created directory '/var/spool/postfix/usr/share'
+        mkdir: created directory '/var/spool/postfix/usr/share/zoneinfo'
+        Copying /usr/share/zoneinfo -> /var/spool/postfix/usr/share/zoneinfo
+        '/etc/localtime' -> '/var/spool/postfix/etc/localtime'
+        '/etc/nsswitch.conf' -> '/var/spool/postfix/etc/nsswitch.conf'
+        '/etc/resolv.conf' -> '/var/spool/postfix/etc/resolv.conf'
+        '/etc/services' -> '/var/spool/postfix/etc/services'
+        '/etc/host.conf' -> '/var/spool/postfix/etc/host.conf'
+        '/etc/hosts' -> '/var/spool/postfix/etc/hosts'
+        '/etc/passwd' -> '/var/spool/postfix/etc/passwd'
+‣ NOTE  Switching default_database_type to lmdb to ensure cross-distro compatibility.
+‣ WARN  Detected old hash: and btree: references in the config file, which are not supported anymore. Upgrading to lmdb:
+‣ DEBUG Creating new postalias for lmdb:/etc/aliases.
+‣ DEBUG Creating new postalias for lmdb:/etc/aliases.
+‣ INFO  Using unlimited message size.
+‣ INFO  Setting smtp_tls_security_level: may
+‣ NOTE  Postfix is configured to deliver messages directly (without relaying). Make sure your DNS is setup properly! If unsure, read the docs.
+‣ INFO  Using default private network list for trusted networks.
+‣ INFO  Debugging is disabled.
+‣ INFO  Setting up allowed SENDER domains: example.org
+‣ DEBUG DKIM_AUTOGENERATE not set -- you will need to provide your own keys.
+‣ INFO  No DKIM keys found, will not use DKIM.
+‣ INFO  Applying custom postfix setting: message_size_limit=0
+‣ INFO  Applying custom postfix setting: myhostname=606af9f4a9a9
+‣ INFO  Applying custom postfix setting: mynetworks=127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
+‣ INFO  Applying custom postfix setting: smtp_tls_security_level=may
+‣ NOTE  Starting: rsyslog, crond, postfix
+2026-10-19 23:26:41,446 INFO Set uid to user 0 succeeded
+2026-10-19 23:26:41,447 INFO supervisord started with pid 7
+2026-10-19 23:26:42,455 INFO spawned: 'cron' with pid 418
+2026-10-19 23:26:42,457 INFO spawned: 'opendkim' with pid 419
+2026-10-19 23:26:42,458 INFO spawned: 'postfix' with pid 420
+2026-10-19 23:26:42,460 INFO spawned: 'rsyslog' with pid 421
+2026-10-19T23:26:42.466647+00:00 INFO    rsyslogd: [origin software="rsyslogd" swVersion="8.2302.0" x-pid="421" x-info="https://www.rsyslog.com"] start
+2026-10-19 23:26:42,467 INFO success: cron entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2026-10-19 23:26:42,467 INFO success: postfix entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2026-10-19T23:26:43.644078+00:00 INFO    postfix/postfix-script[1409]: starting the Postfix mail system
+2026-10-19T23:26:43.645625+00:00 INFO    postfix/master[1410]: daemon started -- version 3.7.11, configuration /etc/postfix
+2026-10-19 23:26:44,651 INFO success: rsyslog entered RUNNING state, process has stayed up for > than 2 seconds (startsecs)
+2026-10-19 23:26:47,664 INFO success: opendkim entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2026-10-19T23:26:47.860698+00:00 INFO    postfix/smtpd[1425]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.869307+00:00 INFO    postfix/smtpd[1425]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot0@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.873853+00:00 INFO    postfix/smtpd[1430]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.874010+00:00 INFO    postfix/smtpd[1425]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.874018+00:00 INFO    postfix/smtpd[1425]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.879583+00:00 INFO    postfix/smtpd[1430]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot1@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.880034+00:00 INFO    postfix/smtpd[1425]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.880167+00:00 INFO    postfix/smtpd[1430]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.880200+00:00 INFO    postfix/smtpd[1430]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.885358+00:00 INFO    postfix/smtpd[1425]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot2@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.885854+00:00 INFO    postfix/smtpd[1430]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.885970+00:00 INFO    postfix/smtpd[1425]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.885999+00:00 INFO    postfix/smtpd[1425]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.891008+00:00 INFO    postfix/smtpd[1430]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot3@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.891445+00:00 INFO    postfix/smtpd[1425]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.891548+00:00 INFO    postfix/smtpd[1430]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.891554+00:00 INFO    postfix/smtpd[1430]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.896230+00:00 INFO    postfix/smtpd[1425]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot4@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.896604+00:00 INFO    postfix/smtpd[1430]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.896694+00:00 INFO    postfix/smtpd[1425]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.896703+00:00 INFO    postfix/smtpd[1425]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.901355+00:00 INFO    postfix/smtpd[1430]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot5@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.901711+00:00 INFO    postfix/smtpd[1425]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.901807+00:00 INFO    postfix/smtpd[1430]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.901814+00:00 INFO    postfix/smtpd[1430]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.906953+00:00 INFO    postfix/smtpd[1425]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot6@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.907377+00:00 INFO    postfix/smtpd[1430]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.907491+00:00 INFO    postfix/smtpd[1425]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.907497+00:00 INFO    postfix/smtpd[1425]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.912654+00:00 INFO    postfix/smtpd[1430]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot7@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.913081+00:00 INFO    postfix/smtpd[1425]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.913191+00:00 INFO    postfix/smtpd[1430]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.913199+00:00 INFO    postfix/smtpd[1430]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.918152+00:00 INFO    postfix/smtpd[1425]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot8@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.918629+00:00 INFO    postfix/smtpd[1430]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.918740+00:00 INFO    postfix/smtpd[1425]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.918747+00:00 INFO    postfix/smtpd[1425]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.923494+00:00 INFO    postfix/smtpd[1430]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot9@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.923883+00:00 INFO    postfix/smtpd[1425]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.923985+00:00 INFO    postfix/smtpd[1430]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.923992+00:00 INFO    postfix/smtpd[1430]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.928909+00:00 INFO    postfix/smtpd[1425]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot10@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.929328+00:00 INFO    postfix/smtpd[1430]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.929431+00:00 INFO    postfix/smtpd[1425]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.929439+00:00 INFO    postfix/smtpd[1425]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.933480+00:00 INFO    postfix/smtpd[1430]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot11@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.933869+00:00 INFO    postfix/smtpd[1425]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.933976+00:00 INFO    postfix/smtpd[1430]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.933985+00:00 INFO    postfix/smtpd[1430]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.937861+00:00 INFO    postfix/smtpd[1425]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot12@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.938302+00:00 INFO    postfix/smtpd[1430]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.938408+00:00 INFO    postfix/smtpd[1425]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.938415+00:00 INFO    postfix/smtpd[1425]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.942365+00:00 INFO    postfix/smtpd[1430]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot13@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.942759+00:00 INFO    postfix/smtpd[1425]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.942873+00:00 INFO    postfix/smtpd[1430]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.942882+00:00 INFO    postfix/smtpd[1430]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.946942+00:00 INFO    postfix/smtpd[1425]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot14@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.947364+00:00 INFO    postfix/smtpd[1430]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.947469+00:00 INFO    postfix/smtpd[1425]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.947477+00:00 INFO    postfix/smtpd[1425]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.956343+00:00 INFO    postfix/smtpd[1430]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot15@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.956839+00:00 INFO    postfix/smtpd[1425]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.956962+00:00 INFO    postfix/smtpd[1430]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.956968+00:00 INFO    postfix/smtpd[1430]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.961680+00:00 INFO    postfix/smtpd[1425]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot16@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.962097+00:00 INFO    postfix/smtpd[1430]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.962216+00:00 INFO    postfix/smtpd[1425]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.962222+00:00 INFO    postfix/smtpd[1425]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.966831+00:00 INFO    postfix/smtpd[1430]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot17@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.967254+00:00 INFO    postfix/smtpd[1425]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.967355+00:00 INFO    postfix/smtpd[1430]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.967363+00:00 INFO    postfix/smtpd[1430]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.972296+00:00 INFO    postfix/smtpd[1425]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot18@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.972694+00:00 INFO    postfix/smtpd[1430]: connect from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.972800+00:00 INFO    postfix/smtpd[1425]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.972808+00:00 INFO    postfix/smtpd[1425]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+2026-10-19T23:26:47.977514+00:00 INFO    postfix/smtpd[1430]: NOQUEUE: reject: RCPT from loving_lewin.lc6[172.23.0.3]: 450 4.1.2 <victim@elsewhere.invalid>: Recipient address rejected: Domain not found; from=<bot19@spam.invalid> to=<victim@elsewhere.invalid> proto=ESMTP helo=<spam.invalid>
+2026-10-19T23:26:47.978578+00:00 INFO    postfix/smtpd[1430]: lost connection after RSET from loving_lewin.lc6[172.23.0.3]
+2026-10-19T23:26:47.978583+00:00 INFO    postfix/smtpd[1430]: disconnect from loving_lewin.lc6[172.23.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4

@@ -1,0 +1,57 @@
+{"level":"info","message":"inventory service started","service":"inventory","timestamp":"2026-10-19T23:40:12.666Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A0","timestamp":"2026-10-19T23:40:12.667Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A1","timestamp":"2026-10-19T23:40:12.667Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A2","timestamp":"2026-10-19T23:40:12.667Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A3","timestamp":"2026-10-19T23:40:12.668Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A4","timestamp":"2026-10-19T23:40:12.668Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A5","timestamp":"2026-10-19T23:40:12.668Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A6","timestamp":"2026-10-19T23:40:12.668Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A7","timestamp":"2026-10-19T23:40:12.668Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A8","timestamp":"2026-10-19T23:40:12.668Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A9","timestamp":"2026-10-19T23:40:12.668Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A10","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A11","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A12","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A13","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A14","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A15","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A16","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A17","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A18","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A19","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A20","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A21","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A22","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A23","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A24","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A25","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A26","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A27","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A28","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A29","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A30","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A31","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A32","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A33","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A34","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A35","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A36","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A37","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A38","timestamp":"2026-10-19T23:40:12.669Z"}
+{"level":"info","message":"stock updated","service":"inventory","sku":"A39","timestamp":"2026-10-19T23:40:12.669Z"}
+{"attempt":1,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:12.731Z"}
+{"attempt":2,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:12.783Z"}
+{"attempt":3,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:12.844Z"}
+{"attempt":4,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:12.897Z"}
+{"attempt":5,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:12.948Z"}
+{"attempt":6,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:12.999Z"}
+{"attempt":7,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:13.054Z"}
+{"attempt":8,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:13.108Z"}
+{"attempt":9,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:13.162Z"}
+{"attempt":10,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:13.213Z"}
+{"attempt":11,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:13.271Z"}
+{"attempt":12,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:13.326Z"}
+{"attempt":13,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:13.386Z"}
+{"attempt":14,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:13.437Z"}
+{"attempt":15,"error":"connect ECONNREFUSED 127.0.0.1:6379","level":"error","message":"cache connection failed","service":"inventory","timestamp":"2026-10-19T23:40:13.489Z"}
+{"level":"error","message":"fatal: cache unreachable, exiting","service":"inventory","timestamp":"2026-10-19T23:40:13.489Z"}

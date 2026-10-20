@@ -29,6 +29,7 @@ _WARN_CLASSES = ("statechange", "scrub", "resilver", "degraded", "trim",
 
 class ZfsParser(LogParser):
     FORMAT_NAME = "zfs"
+    SYSLOG_FALLBACK = True
 
     @classmethod
     def can_parse(cls, path: Path | None, sample_lines: list[str]) -> bool:

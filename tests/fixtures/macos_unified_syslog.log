@@ -1,0 +1,300 @@
+Timestamp                       (process)[PID]    
+2026-10-20 06:36:27.888749+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.888770+1100  localhost kernel[0]: [589941.721654]: arm_cpu_init(): cpu 11 online
+2026-10-20 06:36:27.888778+1100  localhost kernel[0]: [589941.728021]: arm_cpu_init(): cpu 4 online
+2026-10-20 06:36:27.888779+1100  localhost kernel[0]: [589941.728027]: arm_cpu_init(): cpu 6 online
+2026-10-20 06:36:27.888780+1100  localhost kernel[0]: [589941.728029]: arm_cpu_init(): cpu 8 online
+2026-10-20 06:36:27.888780+1100  localhost kernel[0]: [589941.931709]: arm_cpu_init(): cpu 9 online
+2026-10-20 06:36:27.888781+1100  localhost kernel[0]: [589941.957169]: arm_cpu_init(): cpu 10 online
+2026-10-20 06:36:27.888782+1100  localhost kernel[0]: [589941.957173]: arm_cpu_init(): cpu 13 online
+2026-10-20 06:36:27.888782+1100  localhost kernel[0]: [589941.961626]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888785+1100  localhost kernel[0]: [589941.961658]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888786+1100  localhost kernel[0]: [589941.961692]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888787+1100  localhost kernel[0]: [589941.961740]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888788+1100  localhost kernel[0]: [589941.961853]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888789+1100  localhost kernel[0]: [589941.961920]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888802+1100  localhost kernel[0]: [589941.961951]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888803+1100  localhost kernel[0]: [589941.962005]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888804+1100  localhost kernel[0]: [589941.962127]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888806+1100  localhost kernel[0]: [589941.962243]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888807+1100  localhost kernel[0]: [589941.962368]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d addrl/addrh:0x0/0x0 timestamp:0x0 errorvec:0x10
+2026-10-20 06:36:27.888808+1100  localhost kernel[0]: [589941.962470]: Ignored NI0 NI0 niGeneral 1 NO_ACCESS error (0x00000010) cmd/st:0x14(ncrdincr)/0x0 vc/sc/tz/crh/tid:0x2/0x1/0x0/0x0/0x2d size:0x3 piopkt:0x0 user:0x4 userext:0x0 hasdata/has2data:0x0/0x0 dstchildid/dstparentid:0x3f/0x1 srcchildid/srcparentid:0x8ea/0x1d a
+2026-10-20 06:36:27.889035+1100  localhost kernel[0]: [com.apple.xnu:virtual-memory] vm: host_statistics64() count is larger than expected (actual:104 > HOST_VM_INFO64_COUNT:62). This is most likely a bug in Stats [9694] and is likely to result in memory corruption. The buffer count must be passed in units of integer_t's. HOST_VM_INFO64_COUNT may be used as shorthand.
+2026-10-20 06:36:27.889791+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.890107+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.890511+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.890814+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.891107+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.891392+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.891699+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.891999+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.892285+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.892642+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.892894+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.893099+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.893263+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.893454+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.893655+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.893883+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.894117+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.894119+1100  localhost kernel[0]: [589942.240936]: arm_cpu_init(): cpu 12 online
+2026-10-20 06:36:27.894228+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET TX RATE] (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=61939 info=(null))
+2026-10-20 06:36:27.894328+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.894893+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.895177+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.895390+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET TX RATE] took 0.001095375s (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=61939 err=0 reply=<redacted>
+2026-10-20 06:36:27.895453+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.895710+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.895796+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET TX RATE] (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=84E42 info=(null))
+2026-10-20 06:36:27.895893+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.896154+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.896359+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET TX RATE] took 0.000524541s (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=84E42 err=0 reply=<redacted>
+2026-10-20 06:36:27.896406+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.896632+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.896827+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET TX RATE] (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=20EB9 info=(null))
+2026-10-20 06:36:27.896840+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.897042+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.897254+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.897408+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET TX RATE] took 0.000550083s (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=20EB9 err=0 reply=<redacted>
+2026-10-20 06:36:27.897520+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.897722+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.897934+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.898200+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.898409+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.898618+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.898812+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:27.966973+1100  localhost kernel[0]: (com.apple.DriverKit-AppleBCMWLAN.dext) wlan0:com.apple.p2p.awdl0: isInfraRealtimePacketThresholdAllowed allowed:1 option:32 threshold:50 noRegistrations:1 cachedPeerCount:0 fastDiscoveryInactive:1 fastDiscoveryOnSince:41133580
+2026-10-20 06:36:27.966978+1100  localhost kernel[0]: [589942.292137]: arm_cpu_init(): cpu 10 online
+2026-10-20 06:36:27.967016+1100  localhost kernel[0]: (com.apple.DriverKit-AppleBCMWLAN.dext) wlan0:com.apple.p2p.awdl0: currentInfraTrafficType:9273 checking if realtime upgrade required with inputPackets:2027 outputPackets:959 packetThreshold:50
+2026-10-20 06:36:28.036889+1100  localhost PerfPowerServices[44016]: (CoreLocation) Created Activity ID: 0x363c79, Description: CL: CLCopyAppsUsingLocation
+2026-10-20 06:36:28.036896+1100  localhost PerfPowerServices[44016]: (CoreLocation) [com.apple.locationd.Core:Client] {"msg":"CLCopyAppsUsingLocation", "event":"activity"}
+2026-10-20 06:36:28.037124+1100  localhost locationd[379]: Created Activity ID: 0x363e99, Parent ID: 0x8000000000363c79, Description: CL: _CLDaemonGetAppsUsingLocation
+2026-10-20 06:36:28.103356+1100  localhost kernel[0]: [com.apple.xnu.net.tcp:] tcp_connection_summary (tcp_usrclosed:3224)[<IPv4-redacted>:49367<-><IPv4-redacted>:443] interface: en0 (skipped: 0)
+so_gencnt: 1349736 t_state: FIN_WAIT_1 process: com.docker.backe:12180 Duration: 22.317 sec Conn_Time: 0.017 sec bytes in/out: 690569/2231 pkts in/out: 322/6 pkt rxmit: 0 ooo pkts: 22 dup bytes in: 1444 ACKs delayed: 223 delayed ACKs sent: 0
+rtt: 22.062 ms rttvar: 8.437 ms base rtt: 6 ms so_error: 0 svc/tc: 0 flow: 0xb0798436
+2026-10-20 06:36:28.103357+1100  localhost kernel[0]: [589942.341291]: arm_cpu_init(): cpu 9 online
+2026-10-20 06:36:28.103360+1100  localhost kernel[0]: [589942.341296]: arm_cpu_init(): cpu 12 online
+2026-10-20 06:36:28.103360+1100  localhost kernel[0]: [589942.341298]: arm_cpu_init(): cpu 13 online
+2026-10-20 06:36:28.103360+1100  localhost kernel[0]: [589942.366548]: arm_cpu_init(): cpu 9 online
+2026-10-20 06:36:28.103361+1100  localhost kernel[0]: [589942.366553]: arm_cpu_init(): cpu 12 online
+2026-10-20 06:36:28.103361+1100  localhost kernel[0]: [589942.427522]: arm_cpu_init(): cpu 4 online
+2026-10-20 06:36:28.103361+1100  localhost kernel[0]: [589942.427528]: arm_cpu_init(): cpu 7 online
+2026-10-20 06:36:28.103361+1100  localhost kernel[0]: [589942.427532]: arm_cpu_init(): cpu 8 online
+2026-10-20 06:36:28.103369+1100  localhost kernel[0]: [com.apple.xnu.net.tcp:] tcp_connection_summary [<IPv4-redacted>:49367<-><IPv4-redacted>:443] interface: en0 (skipped: 0)
+so_gencnt: 1349736 t_state: FIN_WAIT_1 process: com.docker.backe:12180 flowctl: 0us (0x) SYN in/out: 1/1 FIN in/out: 0/0 RST in/out: 0/0 AccECN (client/server): Disabled/Disabled
+2026-10-20 06:36:28.103385+1100  localhost kernel[0]: [com.apple.xnu.net.tcp:] tcp_connection_summary (tcp_usrclosed:3224)[<IPv4-redacted>:49334<-><IPv4-redacted>:443] interface: en0 (skipped: 0)
+so_gencnt: 1349493 t_state: FIN_WAIT_1 process: com.docker.backe:12180 Duration: 24.550 sec Conn_Time: 0.032 sec bytes in/out: 34381173/8010 pkts in/out: 15428/73 pkt rxmit: 1 ooo pkts: 1275 dup bytes in: 28880 ACKs delayed: 4809 delayed ACKs sent: 4
+rtt: 86.218 ms rttvar: 45.187 ms base rtt: 5 ms so_error: 0 svc/tc: 0 flow: 0x998f96e0
+2026-10-20 06:36:28.103395+1100  localhost kernel[0]: [com.apple.xnu.net.tcp:] tcp_connection_summary [<IPv4-redacted>:49334<-><IPv4-redacted>:443] interface: en0 (skipped: 0)
+so_gencnt: 1349493 t_state: FIN_WAIT_1 process: com.docker.backe:12180 flowctl: 0us (0x) SYN in/out: 1/1 FIN in/out: 0/0 RST in/out: 0/0 AccECN (client/server): Disabled/Disabled
+2026-10-20 06:36:28.468109+1100  localhost watchdogd[356]: [com.apple.watchdogd:service-monitoring-thread] 41134081897958: <private>
+2026-10-20 06:36:28.468125+1100  localhost watchdogd[356]: [com.apple.watchdogd:service-monitoring-thread] 41134082064666: <private>
+2026-10-20 06:36:28.468150+1100  localhost watchdogd[356]: [com.apple.watchdogd:service-monitoring-thread] 41134082070916: <private>
+2026-10-20 06:36:28.468152+1100  localhost watchdogd[356]: [com.apple.watchdogd:service-monitoring-thread] 41134082074083: <private>
+2026-10-20 06:36:28.468153+1100  localhost watchdogd[356]: [com.apple.watchdogd:service-monitoring-thread] 41134082075166: <private>
+2026-10-20 06:36:28.468154+1100  localhost watchdogd[356]: [com.apple.watchdogd:service-monitoring-thread] 41134082075916: <private>
+2026-10-20 06:36:28.860109+1100  localhost kernel[0]: [com.apple.xnu:virtual-memory] vm: host_statistics64() count is larger than expected (actual:104 > HOST_VM_INFO64_COUNT:62). This is most likely a bug in Stats [9694] and is likely to result in memory corruption. The buffer count must be passed in units of integer_t's. HOST_VM_INFO64_COUNT may be used as shorthand.
+2026-10-20 06:36:28.860110+1100  localhost kernel[0]: [589942.942906]: arm_cpu_init(): cpu 4 online
+2026-10-20 06:36:28.860114+1100  localhost kernel[0]: [589942.942910]: arm_cpu_init(): cpu 7 online
+2026-10-20 06:36:28.860116+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.860235+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.860437+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.860597+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.860816+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.861080+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.861290+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.861561+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.861841+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.862061+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.862317+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.862509+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.862744+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.863055+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.863604+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.863626+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.863912+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.864167+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.864361+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET TX RATE] (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=564C5 info=(null))
+2026-10-20 06:36:28.864419+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.864620+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.864692+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.864946+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.865215+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.865415+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.865523+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET TX RATE] took 0.001103708s (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=564C5 err=0 reply=<redacted>
+2026-10-20 06:36:28.865608+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.865612+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.865798+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.865978+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET TX RATE] (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=0F60F info=(null))
+2026-10-20 06:36:28.865990+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.866416+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.866575+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.866681+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.866697+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] getSiblings: finding volumes that belong to <private>
+2026-10-20 06:36:28.866744+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET TX RATE] took 0.000717167s (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=0F60F err=0 reply=<redacted>
+2026-10-20 06:36:28.866900+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.867089+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.867278+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.867295+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] BEGIN REQ [GET TX RATE] (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=BB555 info=(null))
+2026-10-20 06:36:28.867513+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.867745+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] GetAPFSVolumeRole error for <private>
+2026-10-20 06:36:28.867751+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.867804+1100  localhost airportd[452]: (CoreWiFi) [com.apple.WiFiManager:] [corewifi] END REQ [GET TX RATE] took 0.000485583s (pid=9694 proc=Stats bundleID=eu.exelban.Stats codesignID=eu.exelban.Stats service=com.apple.corewlan-xpc qos=21 intf=en0 uuid=BB555 err=0 reply=<redacted>
+2026-10-20 06:36:28.867950+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.868153+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.868177+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 8
+2026-10-20 06:36:28.868343+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.868535+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.868551+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 16
+2026-10-20 06:36:28.868716+1100  localhost kernel[0]: (CoreAnalyticsFamily) kern_return_t IOCoreAnalyticsSendEvent(uint64_t, OSString *, OSDictionary *)::1002:CoreAnalyticsSendEvent failed for eventName com.apple.smc.keys_entitlement
+2026-10-20 06:36:28.869015+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 192
+2026-10-20 06:36:28.869413+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 256
+2026-10-20 06:36:28.869645+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 16
+2026-10-20 06:36:28.869862+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 320
+2026-10-20 06:36:28.870124+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.870834+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] GetAPFSVolumeRole error for <private>
+2026-10-20 06:36:28.871144+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] GetAPFSVolumeRole error for <private>
+2026-10-20 06:36:28.871417+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.871464+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] getSiblings: adding <private> <private>
+2026-10-20 06:36:28.871464+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] multi volume:
+2026-10-20 06:36:28.871465+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private>
+2026-10-20 06:36:28.871712+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.871956+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.872198+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.872430+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.872660+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.872914+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.873208+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.873448+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.873911+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.873935+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] CacheDeleteVolume effective_size: <private> container size: <private>, effective size: <private>
+2026-10-20 06:36:28.874339+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.875298+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.875622+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] <private> role: 64
+2026-10-20 06:36:28.875634+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] 380 CDRecentVolumeInfo _recentInfoAtUrgency, volume: /System/Volumes/Data, urgency: 3, result:
+2026-10-20 06:36:28.875637+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.fspurgeable_data : 3468685312
+2026-10-20 06:36:28.875638+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.cache_delete_app_container_caches : 603574272
+2026-10-20 06:36:28.875639+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.quicklook.ThumbnailsAgent.CacheDelete : 264006
+2026-10-20 06:36:28.875640+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.cloudd.cache-delete : 0
+2026-10-20 06:36:28.875640+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.triald.cache-delete : 0
+2026-10-20 06:36:28.875641+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.VIDEO : 0
+2026-10-20 06:36:28.875642+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.TMCacheDelete : 0
+2026-10-20 06:36:28.875642+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.mobileassetd.cache-delete : 61680640
+2026-10-20 06:36:28.875643+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_SHARED_PURGEABLE : 6855002234
+2026-10-20 06:36:28.875643+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.metadata.mds.cachedelete : 659289332
+2026-10-20 06:36:28.875644+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.cloudd.system.cache-delete : 0
+2026-10-20 06:36:28.875645+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.ibooks.CacheDeleteExtension : 0
+2026-10-20 06:36:28.875645+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.geod.cachedelete : 0
+2026-10-20 06:36:28.875646+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.corespotlightd.cachedelete : 0
+2026-10-20 06:36:28.875646+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.spotlightknowledged.updater.cachedelete : 0
+2026-10-20 06:36:28.875647+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.AssetCache.builtin.CacheDelete : 73728
+2026-10-20 06:36:28.875647+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.Music.MusicCacheExtension : 0
+2026-10-20 06:36:28.875648+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_VOLUME : /System/Volumes/Data
+2026-10-20 06:36:28.875649+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.managedcorespotlightd.F5757848-93C9-E333-A412-8FCF77BCDF9F.cachedelete : 0
+2026-10-20 06:36:28.875649+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.cache_delete_orphan_dir_handler : 0
+2026-10-20 06:36:28.875650+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.MailCacheDelete : 0
+2026-10-20 06:36:28.875650+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.TV.TVCacheExtension : 0
+2026-10-20 06:36:28.875650+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.appstoreagent.CacheDelete : 0
+2026-10-20 06:36:28.875651+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.replayd-cache-delete : 64
+2026-10-20 06:36:28.875652+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.triald.system.cache-delete : 0
+2026-10-20 06:36:28.875652+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.MOVIE : 0
+2026-10-20 06:36:28.875652+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.MUSIC : 0
+2026-10-20 06:36:28.875653+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.logd.cachedelete : 0
+2026-10-20 06:36:28.875653+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.Safari.CacheDeleteExtension : 0
+2026-10-20 06:36:28.875654+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.FileProvider.cache-delete : 0
+2026-10-20 06:36:28.875654+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] CACHE_DELETE_NAME_MAP: {
+2026-10-20 06:36:28.875668+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.fspurgeable_data : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875676+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.quicklook.ThumbnailsAgent.CacheDelete : {
+    "CACHE_DELETE_PROCNAME" = "com.apple.quicklook.ThumbnailsA";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.quicklook.ThumbnailsAgent";
+}
+2026-10-20 06:36:28.875682+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.cloudd.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = cloudd;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.cloudd";
+}
+2026-10-20 06:36:28.875687+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.triald.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = triald;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.triald";
+}
+2026-10-20 06:36:28.875692+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.VIDEO : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875696+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.TMCacheDelete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.backupd-helper";
+}
+2026-10-20 06:36:28.875700+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.mobileassetd.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.mobileassetd";
+}
+2026-10-20 06:36:28.875710+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.metadata.mds.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.mds";
+}
+2026-10-20 06:36:28.875715+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.cloudd.system.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.cloudd";
+}
+2026-10-20 06:36:28.875719+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.ibooks.CacheDeleteExtension : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875724+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.geod.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = geodMachServiceBridge;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.geodMachServiceBridge";
+}
+2026-10-20 06:36:28.875729+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.corespotlightd.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = corespotlightd;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.corespotlightd";
+}
+2026-10-20 06:36:28.875735+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.spotlightknowledged.updater.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = "spotlightknowledged.updater";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.spotlightknowledged.updater";
+}
+2026-10-20 06:36:28.875739+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.AssetCache.builtin.CacheDelete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.AssetCache";
+}
+2026-10-20 06:36:28.875744+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.Music.MusicCacheExtension : {
+    "CACHE_DELETE_PROCNAME" = MusicCacheExtension;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.Music.MusicCacheExtension";
+}
+2026-10-20 06:36:28.875749+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.managedcorespotlightd.F5757848-93C9-E333-A412-8FCF77BCDF9F.cachedelete : {
+    "CACHE_DELETE_PROCNAME" = managedcorespotlightd;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.managedcorespotlightd";
+}
+2026-10-20 06:36:28.875753+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.cache_delete_orphan_dir_handler : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875758+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.MailCacheDelete : {
+    "CACHE_DELETE_PROCNAME" = MailCacheDelete;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.MailCacheDelete";
+}
+2026-10-20 06:36:28.875762+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.TV.TVCacheExtension : {
+    "CACHE_DELETE_PROCNAME" = TVCacheExtension;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.TV.TVCacheExtension";
+}
+2026-10-20 06:36:28.875767+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.appstoreagent.CacheDelete : {
+    "CACHE_DELETE_PROCNAME" = appstoreagent;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.appstoreagent";
+}
+2026-10-20 06:36:28.875771+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.replayd-cache-delete : {
+    "CACHE_DELETE_PROCNAME" = replayd;
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.replayd";
+}
+2026-10-20 06:36:28.875775+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.triald.system.cache-delete : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.triald.system";
+}
+2026-10-20 06:36:28.875779+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.MOVIE : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";
+}
+2026-10-20 06:36:28.875783+1100  localhost Stats[9694]: (CacheDelete) [com.apple.cache_delete:client] com.apple.MUSIC : {
+    "CACHE_DELETE_PROCNAME" = "";
+    "CACHE_DELETE_SIGNING_ID" = "com.apple.deleted_helper";

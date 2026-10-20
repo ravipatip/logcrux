@@ -1,0 +1,11 @@
+2026-10-13 04:07:13.278 UTC   [3055]LOG:  client backend (PID 3168) was terminated by signal 9: Killed
+2026-10-13 04:07:13.278 UTC   [3055]DETAIL:  Failed process was running: select pg_sleep(60)
+2026-10-13 04:07:13.278 UTC   [3055]LOG:  terminating any other active server processes
+2026-10-13 04:07:13.282 UTC   [3055]LOG:  all server processes terminated; reinitializing
+2026-10-13 04:07:13.402 UTC   [3176]LOG:  database system was interrupted; last known up at 2026-10-13 04:07:08 UTC
+2026-10-13 04:07:13.427 UTC   [3176]LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-13 04:07:13.430 UTC   [3176]LOG:  invalid record length at 0/17A1A58: expected at least 24, got 0
+2026-10-13 04:07:13.430 UTC   [3176]LOG:  redo is not required
+2026-10-13 04:07:13.435 UTC   [3177]LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-13 04:07:13.450 UTC   [3177]LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.005 s, total=0.018 s; sync files=2, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/17A1A58, redo lsn=0/17A1A58
+2026-10-13 04:07:13.454 UTC   [3055]LOG:  database system is ready to accept connections

@@ -1,0 +1,8 @@
+# zypp history
+2026-07-28 00:15:51|command|root@buildhost|'zypper' '-n' 'install' 'zsh' 'vim'|
+2026-07-28 00:15:51|install|libgdbm6|1.24-160000.2.2|aarch64||openSUSE:repo-oss|b29dfcbf0e6ea7dca8ba46d7a229e4e18a2ae25d86c3ba60ec9d296ce7a5d44b|
+2026-07-28 00:15:52|install|zsh|5.9-160000.1.5|aarch64|root@buildhost|openSUSE:repo-oss|9c7dc361928021ed1da886b6248ec5bf9b3b793582e0b6fb5556bbee649909f0|
+2026-07-28 00:15:52|patch  |openSUSE-Leap-16.0-1283|1|noarch|openSUSE:repo-oss|important|security|not-needed|applied|
+2026-07-28 00:15:52|patch  |openSUSE-Leap-16.0-1215|1|noarch|openSUSE:repo-oss|moderate|recommended|not-needed|applied|
+2026-07-28 00:16:03|remove |vim|9.1.1418-16.1|aarch64|root@buildhost|
+2026-07-28 00:16:04|radd   |openSUSE:repo-update|https://download.opensuse.org/update/leap/16.0/oss/|

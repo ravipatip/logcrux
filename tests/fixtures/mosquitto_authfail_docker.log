@@ -1,0 +1,62 @@
+chown: /mosquitto/config/mosquitto.conf: Read-only file system
+chown: /mosquitto/config/passwd: Read-only file system
+1792444067: mosquitto version 2.0.20 starting
+1792444067: Config loaded from /mosquitto/config/mosquitto.conf.
+1792444067: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+1792444067: Opening ipv4 listen socket on port 1883.
+1792444067: Opening ipv6 listen socket on port 1883.
+1792444067: mosquitto version 2.0.20 running
+1792444069: New connection from 127.0.0.1:48598 on port 1883.
+1792444069: New client connected from 127.0.0.1:48598 as auto-D8955934-4A36-89CD-BF98-4EAA41D433DA (p2, c1, k60, u'sensor').
+1792444069: Client auto-D8955934-4A36-89CD-BF98-4EAA41D433DA disconnected.
+1792444069: New connection from 127.0.0.1:48612 on port 1883.
+1792444069: Client auto-82A53015-D363-732B-D05B-21611F9CA616 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48618 on port 1883.
+1792444069: Client auto-63643160-189C-F538-17FE-084B8BBE27FA disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48634 on port 1883.
+1792444069: Client auto-3CCD32AE-F8BB-617B-5D2A-9A27938392D4 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48644 on port 1883.
+1792444069: Client auto-CF83E30C-6311-54A1-8448-165279FF3A02 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48658 on port 1883.
+1792444069: Client auto-FC5C6403-E853-8C75-9C49-605FD2380A83 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48668 on port 1883.
+1792444069: Client auto-93E9B841-03D1-A580-5B09-F086968AAB20 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48680 on port 1883.
+1792444069: Client auto-6CE5BD1C-853F-9832-31B5-EB2D6C1B714B disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48690 on port 1883.
+1792444069: Client auto-0A85C24A-4D76-9FB2-7121-9FF1AB798A13 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48700 on port 1883.
+1792444069: Client auto-79F48CAA-3CE5-D346-9D51-3FB9CD6159F1 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48710 on port 1883.
+1792444069: Client auto-3DC92DEE-27AA-AABB-6BFC-AD335481C385 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48714 on port 1883.
+1792444069: Client auto-B6C0B998-A73A-803E-79CE-EC7E87F3B713 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48724 on port 1883.
+1792444069: Client auto-6EC4450F-2CD0-4739-9B2D-E6B61512C9FF disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48734 on port 1883.
+1792444069: Client auto-A61CD148-9FF6-2ED2-A64C-4B1548D46B2F disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48746 on port 1883.
+1792444069: Client auto-341EE68F-3AF5-2E82-5D79-FCCFF6510936 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48754 on port 1883.
+1792444069: Client auto-CC941FDB-4623-9DD2-70F0-5CA62DD8ED45 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48764 on port 1883.
+1792444069: Client auto-4827230F-B62B-3172-DEAD-10822A4D17D8 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48774 on port 1883.
+1792444069: Client auto-A02AC49B-AC63-D614-3FB9-17B4098743CA disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48788 on port 1883.
+1792444069: Client auto-6A98236F-04D5-0C85-DD38-CE068A9CA8E3 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48790 on port 1883.
+1792444069: Client auto-46BDB228-0365-8AB8-CA73-8BCAA734001C disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48794 on port 1883.
+1792444069: Client auto-77F65103-703C-8322-7FBE-5F9E9E1BDC33 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48800 on port 1883.
+1792444069: Client auto-877FCB59-9978-25DD-92FB-EA50D8FEB90E disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48806 on port 1883.
+1792444069: Client auto-C6A26E13-7C4C-0432-A32C-BC6ABDAD47A7 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48822 on port 1883.
+1792444069: Client auto-A9E178D0-CBCD-90E6-9E55-37870362E245 disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48834 on port 1883.
+1792444069: Client auto-37FE5CB8-2BA7-5B32-F7BD-E5CD1FD8D8FC disconnected, not authorised.
+1792444069: New connection from 127.0.0.1:48842 on port 1883.
+1792444069: Client auto-28D370C9-3465-7914-CBAE-A3F0A4E66BC0 disconnected, not authorised.

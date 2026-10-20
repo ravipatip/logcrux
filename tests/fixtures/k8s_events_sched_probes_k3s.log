@@ -1,0 +1,27 @@
+LAST SEEN   TYPE      REASON                           OBJECT              MESSAGE
+2m6s        Normal    Starting                         node/a9ed302ad065   
+2m          Warning   FailedScheduling                 pod/too-big         0/1 nodes are available: 1 Insufficient memory. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+2m          Normal    Scheduled                        pod/liveness-kill   Successfully assigned default/liveness-kill to a9ed302ad065
+2m          Normal    Scheduled                        pod/never-ready     Successfully assigned default/never-ready to a9ed302ad065
+2m7s        Normal    NodeHasNoDiskPressure            node/a9ed302ad065   Node a9ed302ad065 status is now: NodeHasNoDiskPressure
+2m7s        Normal    NodeAllocatableEnforced          node/a9ed302ad065   Updated Node Allocatable limit across pods
+2m7s        Normal    NodeHasSufficientPID             node/a9ed302ad065   Node a9ed302ad065 status is now: NodeHasSufficientPID
+2m7s        Normal    NodeReady                        node/a9ed302ad065   Node a9ed302ad065 status is now: NodeReady
+2m7s        Normal    NodeHasSufficientMemory          node/a9ed302ad065   Node a9ed302ad065 status is now: NodeHasSufficientMemory
+2m7s        Normal    Starting                         node/a9ed302ad065   Starting kubelet.
+2m7s        Warning   InvalidDiskCapacity              node/a9ed302ad065   invalid capacity 0 on image filesystem
+2m3s        Normal    NodePasswordValidationComplete   node/a9ed302ad065   Deferred node password secret validation complete
+2m3s        Normal    Synced                           node/a9ed302ad065   Node synced successfully
+2m2s        Normal    RegisteredNode                   node/a9ed302ad065   Node a9ed302ad065 event: Registered Node a9ed302ad065 in Controller
+114s        Normal    Pulling                          pod/liveness-kill   Pulling image "busybox:1.36"
+114s        Normal    Pulling                          pod/never-ready     Pulling image "busybox:1.36"
+104s        Normal    Pulled                           pod/never-ready     Successfully pulled image "busybox:1.36" in 10.632s (10.632s including waiting). Image size: 1906887 bytes.
+104s        Normal    Created                          pod/never-ready     Created container web
+104s        Normal    Started                          pod/never-ready     Started container web
+104s        Normal    Pulled                           pod/liveness-kill   Successfully pulled image "busybox:1.36" in 10.633s (10.633s including waiting). Image size: 1906887 bytes.
+48s         Warning   Unhealthy                        pod/never-ready     Readiness probe failed: cat: can't open '/tmp/ready': No such file or directory
+45s         Normal    Killing                          pod/liveness-kill   Container api failed liveness probe, will be restarted
+15s         Normal    Started                          pod/liveness-kill   Started container api
+15s         Normal    Pulled                           pod/liveness-kill   Container image "busybox:1.36" already present on machine
+15s         Normal    Created                          pod/liveness-kill   Created container api
+3s          Warning   Unhealthy                        pod/liveness-kill   Liveness probe failed: cat: can't open '/tmp/alive': No such file or directory
